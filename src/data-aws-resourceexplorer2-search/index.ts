@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/resourceexplorer2_search
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/resourceexplorer2_search
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsResourceexplorer2SearchConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/resourceexplorer2_search#query_string DataAwsResourceexplorer2Search#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/resourceexplorer2_search#query_string DataAwsResourceexplorer2Search#query_string}
   */
   readonly queryString: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/resourceexplorer2_search#region DataAwsResourceexplorer2Search#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/resourceexplorer2_search#region DataAwsResourceexplorer2Search#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/resourceexplorer2_search#view_arn DataAwsResourceexplorer2Search#view_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/resourceexplorer2_search#view_arn DataAwsResourceexplorer2Search#view_arn}
   */
   readonly viewArn?: string;
 }
@@ -33,7 +33,7 @@ export interface DataAwsResourceexplorer2SearchResourceCount {
 export function dataAwsResourceexplorer2SearchResourceCountToTerraform(struct?: DataAwsResourceexplorer2SearchResourceCount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -43,7 +43,7 @@ export function dataAwsResourceexplorer2SearchResourceCountToTerraform(struct?: 
 export function dataAwsResourceexplorer2SearchResourceCountToHclTerraform(struct?: DataAwsResourceexplorer2SearchResourceCount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -113,7 +113,7 @@ export interface DataAwsResourceexplorer2SearchResourcesProperties {
 export function dataAwsResourceexplorer2SearchResourcesPropertiesToTerraform(struct?: DataAwsResourceexplorer2SearchResourcesProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -123,7 +123,7 @@ export function dataAwsResourceexplorer2SearchResourcesPropertiesToTerraform(str
 export function dataAwsResourceexplorer2SearchResourcesPropertiesToHclTerraform(struct?: DataAwsResourceexplorer2SearchResourcesProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -198,7 +198,7 @@ export interface DataAwsResourceexplorer2SearchResources {
 export function dataAwsResourceexplorer2SearchResourcesToTerraform(struct?: DataAwsResourceexplorer2SearchResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -208,7 +208,7 @@ export function dataAwsResourceexplorer2SearchResourcesToTerraform(struct?: Data
 export function dataAwsResourceexplorer2SearchResourcesToHclTerraform(struct?: DataAwsResourceexplorer2SearchResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -300,7 +300,7 @@ export class DataAwsResourceexplorer2SearchResourcesList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search}
 */
 export class DataAwsResourceexplorer2Search extends cdktn.TerraformDataSource {
 
@@ -316,7 +316,7 @@ export class DataAwsResourceexplorer2Search extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsResourceexplorer2Search resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsResourceexplorer2Search to import
-  * @param importFromId The id of the existing DataAwsResourceexplorer2Search that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/resourceexplorer2_search#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsResourceexplorer2Search that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/resourceexplorer2_search#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsResourceexplorer2Search to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -328,7 +328,7 @@ export class DataAwsResourceexplorer2Search extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -339,7 +339,7 @@ export class DataAwsResourceexplorer2Search extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_resourceexplorer2_search',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

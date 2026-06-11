@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/devopsguru_notification_channel
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/devopsguru_notification_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface DevopsguruNotificationChannelConfig extends cdktn.TerraformMeta
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
   */
   readonly region?: string;
   /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
   */
   readonly filters?: DevopsguruNotificationChannelFilters[] | cdktn.IResolvable;
   /**
   * sns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
   */
   readonly sns?: DevopsguruNotificationChannelSns[] | cdktn.IResolvable;
 }
 export interface DevopsguruNotificationChannelFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}
   */
   readonly messageTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}
   */
   readonly severities?: string[];
 }
@@ -45,7 +45,7 @@ export interface DevopsguruNotificationChannelFilters {
 export function devopsguruNotificationChannelFiltersToTerraform(struct?: DevopsguruNotificationChannelFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     message_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.messageTypes),
@@ -57,7 +57,7 @@ export function devopsguruNotificationChannelFiltersToTerraform(struct?: Devopsg
 export function devopsguruNotificationChannelFiltersToHclTerraform(struct?: DevopsguruNotificationChannelFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     message_types: {
@@ -182,7 +182,7 @@ export class DevopsguruNotificationChannelFiltersList extends cdktn.ComplexList 
 }
 export interface DevopsguruNotificationChannelSns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}
   */
   readonly topicArn: string;
 }
@@ -190,7 +190,7 @@ export interface DevopsguruNotificationChannelSns {
 export function devopsguruNotificationChannelSnsToTerraform(struct?: DevopsguruNotificationChannelSns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     topic_arn: cdktn.stringToTerraform(struct!.topicArn),
@@ -201,7 +201,7 @@ export function devopsguruNotificationChannelSnsToTerraform(struct?: DevopsguruN
 export function devopsguruNotificationChannelSnsToHclTerraform(struct?: DevopsguruNotificationChannelSns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     topic_arn: {
@@ -295,7 +295,7 @@ export class DevopsguruNotificationChannelSnsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}
 */
 export class DevopsguruNotificationChannel extends cdktn.TerraformResource {
 
@@ -311,7 +311,7 @@ export class DevopsguruNotificationChannel extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DevopsguruNotificationChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsguruNotificationChannel to import
-  * @param importFromId The id of the existing DevopsguruNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DevopsguruNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsguruNotificationChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -323,7 +323,7 @@ export class DevopsguruNotificationChannel extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +334,7 @@ export class DevopsguruNotificationChannel extends cdktn.TerraformResource {
       terraformResourceType: 'aws_devopsguru_notification_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

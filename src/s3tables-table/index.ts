@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,53 @@ import * as cdktn from 'cdktn';
 
 export interface S3TablesTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#encryption_configuration S3TablesTable#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#encryption_configuration S3TablesTable#encryption_configuration}
   */
   readonly encryptionConfiguration?: S3TablesTableEncryptionConfiguration;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#format S3TablesTable#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#format S3TablesTable#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#maintenance_configuration S3TablesTable#maintenance_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#maintenance_configuration S3TablesTable#maintenance_configuration}
   */
   readonly maintenanceConfiguration?: S3TablesTableMaintenanceConfiguration;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#name S3TablesTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#name S3TablesTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#namespace S3TablesTable#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#namespace S3TablesTable#namespace}
   */
   readonly namespace: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#region S3TablesTable#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#region S3TablesTable#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#table_bucket_arn S3TablesTable#table_bucket_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#table_bucket_arn S3TablesTable#table_bucket_arn}
   */
   readonly tableBucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#tags S3TablesTable#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#tags S3TablesTable#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#metadata S3TablesTable#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#metadata S3TablesTable#metadata}
   */
   readonly metadata?: S3TablesTableMetadata[] | cdktn.IResolvable;
 }
 export interface S3TablesTableEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#kms_key_arn S3TablesTable#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#kms_key_arn S3TablesTable#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#sse_algorithm S3TablesTable#sse_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#sse_algorithm S3TablesTable#sse_algorithm}
   */
   readonly sseAlgorithm?: string;
 }
@@ -67,7 +67,7 @@ export interface S3TablesTableEncryptionConfiguration {
 export function s3TablesTableEncryptionConfigurationToTerraform(struct?: S3TablesTableEncryptionConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
@@ -79,7 +79,7 @@ export function s3TablesTableEncryptionConfigurationToTerraform(struct?: S3Table
 export function s3TablesTableEncryptionConfigurationToHclTerraform(struct?: S3TablesTableEncryptionConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     kms_key_arn: {
@@ -182,7 +182,7 @@ export class S3TablesTableEncryptionConfigurationOutputReference extends cdktn.C
 }
 export interface S3TablesTableMaintenanceConfigurationIcebergCompactionSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#target_file_size_mb S3TablesTable#target_file_size_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#target_file_size_mb S3TablesTable#target_file_size_mb}
   */
   readonly targetFileSizeMb?: number;
 }
@@ -190,7 +190,7 @@ export interface S3TablesTableMaintenanceConfigurationIcebergCompactionSettings 
 export function s3TablesTableMaintenanceConfigurationIcebergCompactionSettingsToTerraform(struct?: S3TablesTableMaintenanceConfigurationIcebergCompactionSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     target_file_size_mb: cdktn.numberToTerraform(struct!.targetFileSizeMb),
@@ -201,7 +201,7 @@ export function s3TablesTableMaintenanceConfigurationIcebergCompactionSettingsTo
 export function s3TablesTableMaintenanceConfigurationIcebergCompactionSettingsToHclTerraform(struct?: S3TablesTableMaintenanceConfigurationIcebergCompactionSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     target_file_size_mb: {
@@ -276,11 +276,11 @@ export class S3TablesTableMaintenanceConfigurationIcebergCompactionSettingsOutpu
 }
 export interface S3TablesTableMaintenanceConfigurationIcebergCompaction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#settings S3TablesTable#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#settings S3TablesTable#settings}
   */
   readonly settings?: S3TablesTableMaintenanceConfigurationIcebergCompactionSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#status S3TablesTable#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#status S3TablesTable#status}
   */
   readonly status?: string;
 }
@@ -288,7 +288,7 @@ export interface S3TablesTableMaintenanceConfigurationIcebergCompaction {
 export function s3TablesTableMaintenanceConfigurationIcebergCompactionToTerraform(struct?: S3TablesTableMaintenanceConfigurationIcebergCompaction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     settings: s3TablesTableMaintenanceConfigurationIcebergCompactionSettingsToTerraform(struct!.settings),
@@ -300,7 +300,7 @@ export function s3TablesTableMaintenanceConfigurationIcebergCompactionToTerrafor
 export function s3TablesTableMaintenanceConfigurationIcebergCompactionToHclTerraform(struct?: S3TablesTableMaintenanceConfigurationIcebergCompaction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     settings: {
@@ -403,11 +403,11 @@ export class S3TablesTableMaintenanceConfigurationIcebergCompactionOutputReferen
 }
 export interface S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#max_snapshot_age_hours S3TablesTable#max_snapshot_age_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#max_snapshot_age_hours S3TablesTable#max_snapshot_age_hours}
   */
   readonly maxSnapshotAgeHours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#min_snapshots_to_keep S3TablesTable#min_snapshots_to_keep}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#min_snapshots_to_keep S3TablesTable#min_snapshots_to_keep}
   */
   readonly minSnapshotsToKeep?: number;
 }
@@ -415,7 +415,7 @@ export interface S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementS
 export function s3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettingsToTerraform(struct?: S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_snapshot_age_hours: cdktn.numberToTerraform(struct!.maxSnapshotAgeHours),
@@ -427,7 +427,7 @@ export function s3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSe
 export function s3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettingsToHclTerraform(struct?: S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_snapshot_age_hours: {
@@ -530,11 +530,11 @@ export class S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSetti
 }
 export interface S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#settings S3TablesTable#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#settings S3TablesTable#settings}
   */
   readonly settings?: S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#status S3TablesTable#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#status S3TablesTable#status}
   */
   readonly status?: string;
 }
@@ -542,7 +542,7 @@ export interface S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement 
 export function s3TablesTableMaintenanceConfigurationIcebergSnapshotManagementToTerraform(struct?: S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     settings: s3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettingsToTerraform(struct!.settings),
@@ -554,7 +554,7 @@ export function s3TablesTableMaintenanceConfigurationIcebergSnapshotManagementTo
 export function s3TablesTableMaintenanceConfigurationIcebergSnapshotManagementToHclTerraform(struct?: S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     settings: {
@@ -657,11 +657,11 @@ export class S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementOutpu
 }
 export interface S3TablesTableMaintenanceConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#iceberg_compaction S3TablesTable#iceberg_compaction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#iceberg_compaction S3TablesTable#iceberg_compaction}
   */
   readonly icebergCompaction?: S3TablesTableMaintenanceConfigurationIcebergCompaction;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#iceberg_snapshot_management S3TablesTable#iceberg_snapshot_management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#iceberg_snapshot_management S3TablesTable#iceberg_snapshot_management}
   */
   readonly icebergSnapshotManagement?: S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement;
 }
@@ -669,7 +669,7 @@ export interface S3TablesTableMaintenanceConfiguration {
 export function s3TablesTableMaintenanceConfigurationToTerraform(struct?: S3TablesTableMaintenanceConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     iceberg_compaction: s3TablesTableMaintenanceConfigurationIcebergCompactionToTerraform(struct!.icebergCompaction),
@@ -681,7 +681,7 @@ export function s3TablesTableMaintenanceConfigurationToTerraform(struct?: S3Tabl
 export function s3TablesTableMaintenanceConfigurationToHclTerraform(struct?: S3TablesTableMaintenanceConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     iceberg_compaction: {
@@ -786,19 +786,19 @@ export interface S3TablesTableMetadataIcebergSchemaField {
   /**
   * The name of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#name S3TablesTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#name S3TablesTable#name}
   */
   readonly name: string;
   /**
   * A Boolean value that specifies whether values are required for each row in this field. Default: false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#required S3TablesTable#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#required S3TablesTable#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
   * The field type. S3 Tables supports all Apache Iceberg primitive types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#type S3TablesTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#type S3TablesTable#type}
   */
   readonly type: string;
 }
@@ -806,7 +806,7 @@ export interface S3TablesTableMetadataIcebergSchemaField {
 export function s3TablesTableMetadataIcebergSchemaFieldToTerraform(struct?: S3TablesTableMetadataIcebergSchemaField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -819,7 +819,7 @@ export function s3TablesTableMetadataIcebergSchemaFieldToTerraform(struct?: S3Ta
 export function s3TablesTableMetadataIcebergSchemaFieldToHclTerraform(struct?: S3TablesTableMetadataIcebergSchemaField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -968,7 +968,7 @@ export interface S3TablesTableMetadataIcebergSchema {
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#field S3TablesTable#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#field S3TablesTable#field}
   */
   readonly field?: S3TablesTableMetadataIcebergSchemaField[] | cdktn.IResolvable;
 }
@@ -976,7 +976,7 @@ export interface S3TablesTableMetadataIcebergSchema {
 export function s3TablesTableMetadataIcebergSchemaToTerraform(struct?: S3TablesTableMetadataIcebergSchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field: cdktn.listMapper(s3TablesTableMetadataIcebergSchemaFieldToTerraform, true)(struct!.field),
@@ -987,7 +987,7 @@ export function s3TablesTableMetadataIcebergSchemaToTerraform(struct?: S3TablesT
 export function s3TablesTableMetadataIcebergSchemaToHclTerraform(struct?: S3TablesTableMetadataIcebergSchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field: {
@@ -1086,7 +1086,7 @@ export interface S3TablesTableMetadataIceberg {
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#schema S3TablesTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#schema S3TablesTable#schema}
   */
   readonly schema?: S3TablesTableMetadataIcebergSchema[] | cdktn.IResolvable;
 }
@@ -1094,7 +1094,7 @@ export interface S3TablesTableMetadataIceberg {
 export function s3TablesTableMetadataIcebergToTerraform(struct?: S3TablesTableMetadataIceberg | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     schema: cdktn.listMapper(s3TablesTableMetadataIcebergSchemaToTerraform, true)(struct!.schema),
@@ -1105,7 +1105,7 @@ export function s3TablesTableMetadataIcebergToTerraform(struct?: S3TablesTableMe
 export function s3TablesTableMetadataIcebergToHclTerraform(struct?: S3TablesTableMetadataIceberg | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     schema: {
@@ -1204,7 +1204,7 @@ export interface S3TablesTableMetadata {
   /**
   * iceberg block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#iceberg S3TablesTable#iceberg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#iceberg S3TablesTable#iceberg}
   */
   readonly iceberg?: S3TablesTableMetadataIceberg[] | cdktn.IResolvable;
 }
@@ -1212,7 +1212,7 @@ export interface S3TablesTableMetadata {
 export function s3TablesTableMetadataToTerraform(struct?: S3TablesTableMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     iceberg: cdktn.listMapper(s3TablesTableMetadataIcebergToTerraform, true)(struct!.iceberg),
@@ -1223,7 +1223,7 @@ export function s3TablesTableMetadataToTerraform(struct?: S3TablesTableMetadata 
 export function s3TablesTableMetadataToHclTerraform(struct?: S3TablesTableMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     iceberg: {
@@ -1320,7 +1320,7 @@ export class S3TablesTableMetadataList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table aws_s3tables_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table aws_s3tables_table}
 */
 export class S3TablesTable extends cdktn.TerraformResource {
 
@@ -1336,7 +1336,7 @@ export class S3TablesTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a S3TablesTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3TablesTable to import
-  * @param importFromId The id of the existing S3TablesTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3TablesTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3TablesTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1348,7 +1348,7 @@ export class S3TablesTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_table aws_s3tables_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3tables_table aws_s3tables_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1359,7 +1359,7 @@ export class S3TablesTable extends cdktn.TerraformResource {
       terraformResourceType: 'aws_s3tables_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

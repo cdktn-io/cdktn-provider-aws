@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,96 +13,96 @@ import * as cdktn from 'cdktn';
 
 export interface GameliftFleetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#build_id GameliftFleet#build_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#build_id GameliftFleet#build_id}
   */
   readonly buildId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#description GameliftFleet#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#description GameliftFleet#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#ec2_instance_type GameliftFleet#ec2_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#ec2_instance_type GameliftFleet#ec2_instance_type}
   */
   readonly ec2InstanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#fleet_type GameliftFleet#fleet_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#fleet_type GameliftFleet#fleet_type}
   */
   readonly fleetType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#id GameliftFleet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#id GameliftFleet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#instance_role_arn GameliftFleet#instance_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#instance_role_arn GameliftFleet#instance_role_arn}
   */
   readonly instanceRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#metric_groups GameliftFleet#metric_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#metric_groups GameliftFleet#metric_groups}
   */
   readonly metricGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#name GameliftFleet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#name GameliftFleet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#new_game_session_protection_policy GameliftFleet#new_game_session_protection_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#new_game_session_protection_policy GameliftFleet#new_game_session_protection_policy}
   */
   readonly newGameSessionProtectionPolicy?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#region GameliftFleet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#region GameliftFleet#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#script_id GameliftFleet#script_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#script_id GameliftFleet#script_id}
   */
   readonly scriptId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#tags GameliftFleet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#tags GameliftFleet#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#tags_all GameliftFleet#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#tags_all GameliftFleet#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * certificate_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#certificate_configuration GameliftFleet#certificate_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#certificate_configuration GameliftFleet#certificate_configuration}
   */
   readonly certificateConfiguration?: GameliftFleetCertificateConfiguration;
   /**
   * ec2_inbound_permission block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#ec2_inbound_permission GameliftFleet#ec2_inbound_permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#ec2_inbound_permission GameliftFleet#ec2_inbound_permission}
   */
   readonly ec2InboundPermission?: GameliftFleetEc2InboundPermission[] | cdktn.IResolvable;
   /**
   * resource_creation_limit_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#resource_creation_limit_policy GameliftFleet#resource_creation_limit_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#resource_creation_limit_policy GameliftFleet#resource_creation_limit_policy}
   */
   readonly resourceCreationLimitPolicy?: GameliftFleetResourceCreationLimitPolicy;
   /**
   * runtime_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#runtime_configuration GameliftFleet#runtime_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#runtime_configuration GameliftFleet#runtime_configuration}
   */
   readonly runtimeConfiguration?: GameliftFleetRuntimeConfiguration;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#timeouts GameliftFleet#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#timeouts GameliftFleet#timeouts}
   */
   readonly timeouts?: GameliftFleetTimeouts;
 }
 export interface GameliftFleetCertificateConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#certificate_type GameliftFleet#certificate_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#certificate_type GameliftFleet#certificate_type}
   */
   readonly certificateType?: string;
 }
@@ -110,7 +110,7 @@ export interface GameliftFleetCertificateConfiguration {
 export function gameliftFleetCertificateConfigurationToTerraform(struct?: GameliftFleetCertificateConfigurationOutputReference | GameliftFleetCertificateConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     certificate_type: cdktn.stringToTerraform(struct!.certificateType),
@@ -121,7 +121,7 @@ export function gameliftFleetCertificateConfigurationToTerraform(struct?: Gameli
 export function gameliftFleetCertificateConfigurationToHclTerraform(struct?: GameliftFleetCertificateConfigurationOutputReference | GameliftFleetCertificateConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     certificate_type: {
@@ -186,19 +186,19 @@ export class GameliftFleetCertificateConfigurationOutputReference extends cdktn.
 }
 export interface GameliftFleetEc2InboundPermission {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#from_port GameliftFleet#from_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#from_port GameliftFleet#from_port}
   */
   readonly fromPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#ip_range GameliftFleet#ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#ip_range GameliftFleet#ip_range}
   */
   readonly ipRange: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#protocol GameliftFleet#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#protocol GameliftFleet#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#to_port GameliftFleet#to_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#to_port GameliftFleet#to_port}
   */
   readonly toPort: number;
 }
@@ -206,7 +206,7 @@ export interface GameliftFleetEc2InboundPermission {
 export function gameliftFleetEc2InboundPermissionToTerraform(struct?: GameliftFleetEc2InboundPermission | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     from_port: cdktn.numberToTerraform(struct!.fromPort),
@@ -220,7 +220,7 @@ export function gameliftFleetEc2InboundPermissionToTerraform(struct?: GameliftFl
 export function gameliftFleetEc2InboundPermissionToHclTerraform(struct?: GameliftFleetEc2InboundPermission | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     from_port: {
@@ -389,11 +389,11 @@ export class GameliftFleetEc2InboundPermissionList extends cdktn.ComplexList {
 }
 export interface GameliftFleetResourceCreationLimitPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#new_game_sessions_per_creator GameliftFleet#new_game_sessions_per_creator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#new_game_sessions_per_creator GameliftFleet#new_game_sessions_per_creator}
   */
   readonly newGameSessionsPerCreator?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#policy_period_in_minutes GameliftFleet#policy_period_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#policy_period_in_minutes GameliftFleet#policy_period_in_minutes}
   */
   readonly policyPeriodInMinutes?: number;
 }
@@ -401,7 +401,7 @@ export interface GameliftFleetResourceCreationLimitPolicy {
 export function gameliftFleetResourceCreationLimitPolicyToTerraform(struct?: GameliftFleetResourceCreationLimitPolicyOutputReference | GameliftFleetResourceCreationLimitPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     new_game_sessions_per_creator: cdktn.numberToTerraform(struct!.newGameSessionsPerCreator),
@@ -413,7 +413,7 @@ export function gameliftFleetResourceCreationLimitPolicyToTerraform(struct?: Gam
 export function gameliftFleetResourceCreationLimitPolicyToHclTerraform(struct?: GameliftFleetResourceCreationLimitPolicyOutputReference | GameliftFleetResourceCreationLimitPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     new_game_sessions_per_creator: {
@@ -506,15 +506,15 @@ export class GameliftFleetResourceCreationLimitPolicyOutputReference extends cdk
 }
 export interface GameliftFleetRuntimeConfigurationServerProcess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#concurrent_executions GameliftFleet#concurrent_executions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#concurrent_executions GameliftFleet#concurrent_executions}
   */
   readonly concurrentExecutions: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#launch_path GameliftFleet#launch_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#launch_path GameliftFleet#launch_path}
   */
   readonly launchPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#parameters GameliftFleet#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#parameters GameliftFleet#parameters}
   */
   readonly parameters?: string;
 }
@@ -522,7 +522,7 @@ export interface GameliftFleetRuntimeConfigurationServerProcess {
 export function gameliftFleetRuntimeConfigurationServerProcessToTerraform(struct?: GameliftFleetRuntimeConfigurationServerProcess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     concurrent_executions: cdktn.numberToTerraform(struct!.concurrentExecutions),
@@ -535,7 +535,7 @@ export function gameliftFleetRuntimeConfigurationServerProcessToTerraform(struct
 export function gameliftFleetRuntimeConfigurationServerProcessToHclTerraform(struct?: GameliftFleetRuntimeConfigurationServerProcess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     concurrent_executions: {
@@ -682,17 +682,17 @@ export class GameliftFleetRuntimeConfigurationServerProcessList extends cdktn.Co
 }
 export interface GameliftFleetRuntimeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#game_session_activation_timeout_seconds GameliftFleet#game_session_activation_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#game_session_activation_timeout_seconds GameliftFleet#game_session_activation_timeout_seconds}
   */
   readonly gameSessionActivationTimeoutSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#max_concurrent_game_session_activations GameliftFleet#max_concurrent_game_session_activations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#max_concurrent_game_session_activations GameliftFleet#max_concurrent_game_session_activations}
   */
   readonly maxConcurrentGameSessionActivations?: number;
   /**
   * server_process block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#server_process GameliftFleet#server_process}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#server_process GameliftFleet#server_process}
   */
   readonly serverProcess?: GameliftFleetRuntimeConfigurationServerProcess[] | cdktn.IResolvable;
 }
@@ -700,7 +700,7 @@ export interface GameliftFleetRuntimeConfiguration {
 export function gameliftFleetRuntimeConfigurationToTerraform(struct?: GameliftFleetRuntimeConfigurationOutputReference | GameliftFleetRuntimeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     game_session_activation_timeout_seconds: cdktn.numberToTerraform(struct!.gameSessionActivationTimeoutSeconds),
@@ -713,7 +713,7 @@ export function gameliftFleetRuntimeConfigurationToTerraform(struct?: GameliftFl
 export function gameliftFleetRuntimeConfigurationToHclTerraform(struct?: GameliftFleetRuntimeConfigurationOutputReference | GameliftFleetRuntimeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     game_session_activation_timeout_seconds: {
@@ -834,11 +834,11 @@ export class GameliftFleetRuntimeConfigurationOutputReference extends cdktn.Comp
 }
 export interface GameliftFleetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#create GameliftFleet#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#create GameliftFleet#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#delete GameliftFleet#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#delete GameliftFleet#delete}
   */
   readonly delete?: string;
 }
@@ -846,7 +846,7 @@ export interface GameliftFleetTimeouts {
 export function gameliftFleetTimeoutsToTerraform(struct?: GameliftFleetTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -858,7 +858,7 @@ export function gameliftFleetTimeoutsToTerraform(struct?: GameliftFleetTimeouts 
 export function gameliftFleetTimeoutsToHclTerraform(struct?: GameliftFleetTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -961,7 +961,7 @@ export class GameliftFleetTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet aws_gamelift_fleet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet aws_gamelift_fleet}
 */
 export class GameliftFleet extends cdktn.TerraformResource {
 
@@ -977,7 +977,7 @@ export class GameliftFleet extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a GameliftFleet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GameliftFleet to import
-  * @param importFromId The id of the existing GameliftFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GameliftFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GameliftFleet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -989,7 +989,7 @@ export class GameliftFleet extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/gamelift_fleet aws_gamelift_fleet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/gamelift_fleet aws_gamelift_fleet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1000,7 +1000,7 @@ export class GameliftFleet extends cdktn.TerraformResource {
       terraformResourceType: 'aws_gamelift_fleet',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

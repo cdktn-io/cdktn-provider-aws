@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,88 +13,88 @@ import * as cdktn from 'cdktn';
 
 export interface ElastictranscoderPresetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#container ElastictranscoderPreset#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#container ElastictranscoderPreset#container}
   */
   readonly container: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#description ElastictranscoderPreset#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#description ElastictranscoderPreset#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#id ElastictranscoderPreset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#id ElastictranscoderPreset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#name ElastictranscoderPreset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#name ElastictranscoderPreset#name}
   */
   readonly name?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#region ElastictranscoderPreset#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#region ElastictranscoderPreset#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#type ElastictranscoderPreset#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#type ElastictranscoderPreset#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#video_codec_options ElastictranscoderPreset#video_codec_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#video_codec_options ElastictranscoderPreset#video_codec_options}
   */
   readonly videoCodecOptions?: { [key: string]: string };
   /**
   * audio block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#audio ElastictranscoderPreset#audio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#audio ElastictranscoderPreset#audio}
   */
   readonly audio?: ElastictranscoderPresetAudio;
   /**
   * audio_codec_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#audio_codec_options ElastictranscoderPreset#audio_codec_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#audio_codec_options ElastictranscoderPreset#audio_codec_options}
   */
   readonly audioCodecOptions?: ElastictranscoderPresetAudioCodecOptions;
   /**
   * thumbnails block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#thumbnails ElastictranscoderPreset#thumbnails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#thumbnails ElastictranscoderPreset#thumbnails}
   */
   readonly thumbnails?: ElastictranscoderPresetThumbnails;
   /**
   * video block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#video ElastictranscoderPreset#video}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#video ElastictranscoderPreset#video}
   */
   readonly video?: ElastictranscoderPresetVideo;
   /**
   * video_watermarks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#video_watermarks ElastictranscoderPreset#video_watermarks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#video_watermarks ElastictranscoderPreset#video_watermarks}
   */
   readonly videoWatermarks?: ElastictranscoderPresetVideoWatermarks[] | cdktn.IResolvable;
 }
 export interface ElastictranscoderPresetAudio {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#audio_packing_mode ElastictranscoderPreset#audio_packing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#audio_packing_mode ElastictranscoderPreset#audio_packing_mode}
   */
   readonly audioPackingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#bit_rate ElastictranscoderPreset#bit_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#bit_rate ElastictranscoderPreset#bit_rate}
   */
   readonly bitRate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#channels ElastictranscoderPreset#channels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#channels ElastictranscoderPreset#channels}
   */
   readonly channels?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#codec ElastictranscoderPreset#codec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#codec ElastictranscoderPreset#codec}
   */
   readonly codec?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#sample_rate ElastictranscoderPreset#sample_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#sample_rate ElastictranscoderPreset#sample_rate}
   */
   readonly sampleRate?: string;
 }
@@ -102,7 +102,7 @@ export interface ElastictranscoderPresetAudio {
 export function elastictranscoderPresetAudioToTerraform(struct?: ElastictranscoderPresetAudioOutputReference | ElastictranscoderPresetAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audio_packing_mode: cdktn.stringToTerraform(struct!.audioPackingMode),
@@ -117,7 +117,7 @@ export function elastictranscoderPresetAudioToTerraform(struct?: Elastictranscod
 export function elastictranscoderPresetAudioToHclTerraform(struct?: ElastictranscoderPresetAudioOutputReference | ElastictranscoderPresetAudio): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audio_packing_mode: {
@@ -294,19 +294,19 @@ export class ElastictranscoderPresetAudioOutputReference extends cdktn.ComplexOb
 }
 export interface ElastictranscoderPresetAudioCodecOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#bit_depth ElastictranscoderPreset#bit_depth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#bit_depth ElastictranscoderPreset#bit_depth}
   */
   readonly bitDepth?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#bit_order ElastictranscoderPreset#bit_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#bit_order ElastictranscoderPreset#bit_order}
   */
   readonly bitOrder?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#profile ElastictranscoderPreset#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#profile ElastictranscoderPreset#profile}
   */
   readonly profile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#signed ElastictranscoderPreset#signed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#signed ElastictranscoderPreset#signed}
   */
   readonly signed?: string;
 }
@@ -314,7 +314,7 @@ export interface ElastictranscoderPresetAudioCodecOptions {
 export function elastictranscoderPresetAudioCodecOptionsToTerraform(struct?: ElastictranscoderPresetAudioCodecOptionsOutputReference | ElastictranscoderPresetAudioCodecOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bit_depth: cdktn.stringToTerraform(struct!.bitDepth),
@@ -328,7 +328,7 @@ export function elastictranscoderPresetAudioCodecOptionsToTerraform(struct?: Ela
 export function elastictranscoderPresetAudioCodecOptionsToHclTerraform(struct?: ElastictranscoderPresetAudioCodecOptionsOutputReference | ElastictranscoderPresetAudioCodecOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bit_depth: {
@@ -477,35 +477,35 @@ export class ElastictranscoderPresetAudioCodecOptionsOutputReference extends cdk
 }
 export interface ElastictranscoderPresetThumbnails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#aspect_ratio ElastictranscoderPreset#aspect_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#aspect_ratio ElastictranscoderPreset#aspect_ratio}
   */
   readonly aspectRatio?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#format ElastictranscoderPreset#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#format ElastictranscoderPreset#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#interval ElastictranscoderPreset#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#interval ElastictranscoderPreset#interval}
   */
   readonly interval?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#max_height ElastictranscoderPreset#max_height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#max_height ElastictranscoderPreset#max_height}
   */
   readonly maxHeight?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#max_width ElastictranscoderPreset#max_width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#max_width ElastictranscoderPreset#max_width}
   */
   readonly maxWidth?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#padding_policy ElastictranscoderPreset#padding_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#padding_policy ElastictranscoderPreset#padding_policy}
   */
   readonly paddingPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#resolution ElastictranscoderPreset#resolution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#resolution ElastictranscoderPreset#resolution}
   */
   readonly resolution?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#sizing_policy ElastictranscoderPreset#sizing_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#sizing_policy ElastictranscoderPreset#sizing_policy}
   */
   readonly sizingPolicy?: string;
 }
@@ -513,7 +513,7 @@ export interface ElastictranscoderPresetThumbnails {
 export function elastictranscoderPresetThumbnailsToTerraform(struct?: ElastictranscoderPresetThumbnailsOutputReference | ElastictranscoderPresetThumbnails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aspect_ratio: cdktn.stringToTerraform(struct!.aspectRatio),
@@ -531,7 +531,7 @@ export function elastictranscoderPresetThumbnailsToTerraform(struct?: Elastictra
 export function elastictranscoderPresetThumbnailsToHclTerraform(struct?: ElastictranscoderPresetThumbnailsOutputReference | ElastictranscoderPresetThumbnails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aspect_ratio: {
@@ -792,55 +792,55 @@ export class ElastictranscoderPresetThumbnailsOutputReference extends cdktn.Comp
 }
 export interface ElastictranscoderPresetVideo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#aspect_ratio ElastictranscoderPreset#aspect_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#aspect_ratio ElastictranscoderPreset#aspect_ratio}
   */
   readonly aspectRatio?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#bit_rate ElastictranscoderPreset#bit_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#bit_rate ElastictranscoderPreset#bit_rate}
   */
   readonly bitRate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#codec ElastictranscoderPreset#codec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#codec ElastictranscoderPreset#codec}
   */
   readonly codec?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#display_aspect_ratio ElastictranscoderPreset#display_aspect_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#display_aspect_ratio ElastictranscoderPreset#display_aspect_ratio}
   */
   readonly displayAspectRatio?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#fixed_gop ElastictranscoderPreset#fixed_gop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#fixed_gop ElastictranscoderPreset#fixed_gop}
   */
   readonly fixedGop?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#frame_rate ElastictranscoderPreset#frame_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#frame_rate ElastictranscoderPreset#frame_rate}
   */
   readonly frameRate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#keyframes_max_dist ElastictranscoderPreset#keyframes_max_dist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#keyframes_max_dist ElastictranscoderPreset#keyframes_max_dist}
   */
   readonly keyframesMaxDist?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#max_frame_rate ElastictranscoderPreset#max_frame_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#max_frame_rate ElastictranscoderPreset#max_frame_rate}
   */
   readonly maxFrameRate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#max_height ElastictranscoderPreset#max_height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#max_height ElastictranscoderPreset#max_height}
   */
   readonly maxHeight?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#max_width ElastictranscoderPreset#max_width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#max_width ElastictranscoderPreset#max_width}
   */
   readonly maxWidth?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#padding_policy ElastictranscoderPreset#padding_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#padding_policy ElastictranscoderPreset#padding_policy}
   */
   readonly paddingPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#resolution ElastictranscoderPreset#resolution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#resolution ElastictranscoderPreset#resolution}
   */
   readonly resolution?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#sizing_policy ElastictranscoderPreset#sizing_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#sizing_policy ElastictranscoderPreset#sizing_policy}
   */
   readonly sizingPolicy?: string;
 }
@@ -848,7 +848,7 @@ export interface ElastictranscoderPresetVideo {
 export function elastictranscoderPresetVideoToTerraform(struct?: ElastictranscoderPresetVideoOutputReference | ElastictranscoderPresetVideo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aspect_ratio: cdktn.stringToTerraform(struct!.aspectRatio),
@@ -871,7 +871,7 @@ export function elastictranscoderPresetVideoToTerraform(struct?: Elastictranscod
 export function elastictranscoderPresetVideoToHclTerraform(struct?: ElastictranscoderPresetVideoOutputReference | ElastictranscoderPresetVideo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aspect_ratio: {
@@ -1272,46 +1272,46 @@ export class ElastictranscoderPresetVideoOutputReference extends cdktn.ComplexOb
 }
 export interface ElastictranscoderPresetVideoWatermarks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#horizontal_align ElastictranscoderPreset#horizontal_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#horizontal_align ElastictranscoderPreset#horizontal_align}
   */
   readonly horizontalAlign?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#horizontal_offset ElastictranscoderPreset#horizontal_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#horizontal_offset ElastictranscoderPreset#horizontal_offset}
   */
   readonly horizontalOffset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#id ElastictranscoderPreset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#id ElastictranscoderPreset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#max_height ElastictranscoderPreset#max_height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#max_height ElastictranscoderPreset#max_height}
   */
   readonly maxHeight?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#max_width ElastictranscoderPreset#max_width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#max_width ElastictranscoderPreset#max_width}
   */
   readonly maxWidth?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#opacity ElastictranscoderPreset#opacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#opacity ElastictranscoderPreset#opacity}
   */
   readonly opacity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#sizing_policy ElastictranscoderPreset#sizing_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#sizing_policy ElastictranscoderPreset#sizing_policy}
   */
   readonly sizingPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#target ElastictranscoderPreset#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#target ElastictranscoderPreset#target}
   */
   readonly target?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#vertical_align ElastictranscoderPreset#vertical_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#vertical_align ElastictranscoderPreset#vertical_align}
   */
   readonly verticalAlign?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#vertical_offset ElastictranscoderPreset#vertical_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#vertical_offset ElastictranscoderPreset#vertical_offset}
   */
   readonly verticalOffset?: string;
 }
@@ -1319,7 +1319,7 @@ export interface ElastictranscoderPresetVideoWatermarks {
 export function elastictranscoderPresetVideoWatermarksToTerraform(struct?: ElastictranscoderPresetVideoWatermarks | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     horizontal_align: cdktn.stringToTerraform(struct!.horizontalAlign),
@@ -1339,7 +1339,7 @@ export function elastictranscoderPresetVideoWatermarksToTerraform(struct?: Elast
 export function elastictranscoderPresetVideoWatermarksToHclTerraform(struct?: ElastictranscoderPresetVideoWatermarks | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     horizontal_align: {
@@ -1688,7 +1688,7 @@ export class ElastictranscoderPresetVideoWatermarksList extends cdktn.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset aws_elastictranscoder_preset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset aws_elastictranscoder_preset}
 */
 export class ElastictranscoderPreset extends cdktn.TerraformResource {
 
@@ -1704,7 +1704,7 @@ export class ElastictranscoderPreset extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ElastictranscoderPreset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElastictranscoderPreset to import
-  * @param importFromId The id of the existing ElastictranscoderPreset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ElastictranscoderPreset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElastictranscoderPreset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1716,7 +1716,7 @@ export class ElastictranscoderPreset extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/elastictranscoder_preset aws_elastictranscoder_preset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/elastictranscoder_preset aws_elastictranscoder_preset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1727,7 +1727,7 @@ export class ElastictranscoderPreset extends cdktn.TerraformResource {
       terraformResourceType: 'aws_elastictranscoder_preset',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

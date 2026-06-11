@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface LakeformationOptInConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#region LakeformationOptIn#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#region LakeformationOptIn#region}
   */
   readonly region?: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#condition LakeformationOptIn#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#condition LakeformationOptIn#condition}
   */
   readonly condition?: LakeformationOptInCondition[] | cdktn.IResolvable;
   /**
   * principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#principal LakeformationOptIn#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#principal LakeformationOptIn#principal}
   */
   readonly principal?: LakeformationOptInPrincipal[] | cdktn.IResolvable;
   /**
   * resource_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#resource_data LakeformationOptIn#resource_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#resource_data LakeformationOptIn#resource_data}
   */
   readonly resourceData?: LakeformationOptInResourceData[] | cdktn.IResolvable;
 }
@@ -43,7 +43,7 @@ export interface LakeformationOptInCondition {
 export function lakeformationOptInConditionToTerraform(struct?: LakeformationOptInCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -53,7 +53,7 @@ export function lakeformationOptInConditionToTerraform(struct?: LakeformationOpt
 export function lakeformationOptInConditionToHclTerraform(struct?: LakeformationOptInCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -125,7 +125,7 @@ export class LakeformationOptInConditionList extends cdktn.ComplexList {
 }
 export interface LakeformationOptInPrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#data_lake_principal_identifier LakeformationOptIn#data_lake_principal_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#data_lake_principal_identifier LakeformationOptIn#data_lake_principal_identifier}
   */
   readonly dataLakePrincipalIdentifier: string;
 }
@@ -133,7 +133,7 @@ export interface LakeformationOptInPrincipal {
 export function lakeformationOptInPrincipalToTerraform(struct?: LakeformationOptInPrincipal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_lake_principal_identifier: cdktn.stringToTerraform(struct!.dataLakePrincipalIdentifier),
@@ -144,7 +144,7 @@ export function lakeformationOptInPrincipalToTerraform(struct?: LakeformationOpt
 export function lakeformationOptInPrincipalToHclTerraform(struct?: LakeformationOptInPrincipal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_lake_principal_identifier: {
@@ -238,7 +238,7 @@ export class LakeformationOptInPrincipalList extends cdktn.ComplexList {
 }
 export interface LakeformationOptInResourceDataCatalog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#id LakeformationOptIn#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#id LakeformationOptIn#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -249,7 +249,7 @@ export interface LakeformationOptInResourceDataCatalog {
 export function lakeformationOptInResourceDataCatalogToTerraform(struct?: LakeformationOptInResourceDataCatalog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -260,7 +260,7 @@ export function lakeformationOptInResourceDataCatalogToTerraform(struct?: Lakefo
 export function lakeformationOptInResourceDataCatalogToHclTerraform(struct?: LakeformationOptInResourceDataCatalog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -357,19 +357,19 @@ export class LakeformationOptInResourceDataCatalogList extends cdktn.ComplexList
 }
 export interface LakeformationOptInResourceDataDataCellsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}
   */
   readonly databaseName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#table_catalog_id LakeformationOptIn#table_catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#table_catalog_id LakeformationOptIn#table_catalog_id}
   */
   readonly tableCatalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#table_name LakeformationOptIn#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#table_name LakeformationOptIn#table_name}
   */
   readonly tableName?: string;
 }
@@ -377,7 +377,7 @@ export interface LakeformationOptInResourceDataDataCellsFilter {
 export function lakeformationOptInResourceDataDataCellsFilterToTerraform(struct?: LakeformationOptInResourceDataDataCellsFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     database_name: cdktn.stringToTerraform(struct!.databaseName),
@@ -391,7 +391,7 @@ export function lakeformationOptInResourceDataDataCellsFilterToTerraform(struct?
 export function lakeformationOptInResourceDataDataCellsFilterToHclTerraform(struct?: LakeformationOptInResourceDataDataCellsFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     database_name: {
@@ -572,11 +572,11 @@ export class LakeformationOptInResourceDataDataCellsFilterList extends cdktn.Com
 }
 export interface LakeformationOptInResourceDataDataLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#resource_arn LakeformationOptIn#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#resource_arn LakeformationOptIn#resource_arn}
   */
   readonly resourceArn: string;
 }
@@ -584,7 +584,7 @@ export interface LakeformationOptInResourceDataDataLocation {
 export function lakeformationOptInResourceDataDataLocationToTerraform(struct?: LakeformationOptInResourceDataDataLocation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_id: cdktn.stringToTerraform(struct!.catalogId),
@@ -596,7 +596,7 @@ export function lakeformationOptInResourceDataDataLocationToTerraform(struct?: L
 export function lakeformationOptInResourceDataDataLocationToHclTerraform(struct?: LakeformationOptInResourceDataDataLocation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_id: {
@@ -718,11 +718,11 @@ export class LakeformationOptInResourceDataDataLocationList extends cdktn.Comple
 }
 export interface LakeformationOptInResourceDataDatabase {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}
   */
   readonly name: string;
 }
@@ -730,7 +730,7 @@ export interface LakeformationOptInResourceDataDatabase {
 export function lakeformationOptInResourceDataDatabaseToTerraform(struct?: LakeformationOptInResourceDataDatabase | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_id: cdktn.stringToTerraform(struct!.catalogId),
@@ -742,7 +742,7 @@ export function lakeformationOptInResourceDataDatabaseToTerraform(struct?: Lakef
 export function lakeformationOptInResourceDataDatabaseToHclTerraform(struct?: LakeformationOptInResourceDataDatabase | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_id: {
@@ -864,15 +864,15 @@ export class LakeformationOptInResourceDataDatabaseList extends cdktn.ComplexLis
 }
 export interface LakeformationOptInResourceDataLfTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#key LakeformationOptIn#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#key LakeformationOptIn#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#values LakeformationOptIn#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#values LakeformationOptIn#values}
   */
   readonly values: string[];
 }
@@ -880,7 +880,7 @@ export interface LakeformationOptInResourceDataLfTag {
 export function lakeformationOptInResourceDataLfTagToTerraform(struct?: LakeformationOptInResourceDataLfTag | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_id: cdktn.stringToTerraform(struct!.catalogId),
@@ -893,7 +893,7 @@ export function lakeformationOptInResourceDataLfTagToTerraform(struct?: Lakeform
 export function lakeformationOptInResourceDataLfTagToHclTerraform(struct?: LakeformationOptInResourceDataLfTag | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_id: {
@@ -1040,11 +1040,11 @@ export class LakeformationOptInResourceDataLfTagList extends cdktn.ComplexList {
 }
 export interface LakeformationOptInResourceDataLfTagExpression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}
   */
   readonly name: string;
 }
@@ -1052,7 +1052,7 @@ export interface LakeformationOptInResourceDataLfTagExpression {
 export function lakeformationOptInResourceDataLfTagExpressionToTerraform(struct?: LakeformationOptInResourceDataLfTagExpression | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_id: cdktn.stringToTerraform(struct!.catalogId),
@@ -1064,7 +1064,7 @@ export function lakeformationOptInResourceDataLfTagExpressionToTerraform(struct?
 export function lakeformationOptInResourceDataLfTagExpressionToHclTerraform(struct?: LakeformationOptInResourceDataLfTagExpression | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_id: {
@@ -1186,19 +1186,19 @@ export class LakeformationOptInResourceDataLfTagExpressionList extends cdktn.Com
 }
 export interface LakeformationOptInResourceDataLfTagPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#expression LakeformationOptIn#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#expression LakeformationOptIn#expression}
   */
   readonly expression?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#expression_name LakeformationOptIn#expression_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#expression_name LakeformationOptIn#expression_name}
   */
   readonly expressionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#resource_type LakeformationOptIn#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#resource_type LakeformationOptIn#resource_type}
   */
   readonly resourceType: string;
 }
@@ -1206,7 +1206,7 @@ export interface LakeformationOptInResourceDataLfTagPolicy {
 export function lakeformationOptInResourceDataLfTagPolicyToTerraform(struct?: LakeformationOptInResourceDataLfTagPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_id: cdktn.stringToTerraform(struct!.catalogId),
@@ -1220,7 +1220,7 @@ export function lakeformationOptInResourceDataLfTagPolicyToTerraform(struct?: La
 export function lakeformationOptInResourceDataLfTagPolicyToHclTerraform(struct?: LakeformationOptInResourceDataLfTagPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_id: {
@@ -1398,19 +1398,19 @@ export class LakeformationOptInResourceDataLfTagPolicyList extends cdktn.Complex
 }
 export interface LakeformationOptInResourceDataTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#wildcard LakeformationOptIn#wildcard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#wildcard LakeformationOptIn#wildcard}
   */
   readonly wildcard?: boolean | cdktn.IResolvable;
 }
@@ -1418,7 +1418,7 @@ export interface LakeformationOptInResourceDataTable {
 export function lakeformationOptInResourceDataTableToTerraform(struct?: LakeformationOptInResourceDataTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_id: cdktn.stringToTerraform(struct!.catalogId),
@@ -1432,7 +1432,7 @@ export function lakeformationOptInResourceDataTableToTerraform(struct?: Lakeform
 export function lakeformationOptInResourceDataTableToHclTerraform(struct?: LakeformationOptInResourceDataTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_id: {
@@ -1610,7 +1610,7 @@ export class LakeformationOptInResourceDataTableList extends cdktn.ComplexList {
 }
 export interface LakeformationOptInResourceDataTableWithColumnsColumnWildcard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#excluded_column_names LakeformationOptIn#excluded_column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#excluded_column_names LakeformationOptIn#excluded_column_names}
   */
   readonly excludedColumnNames?: string[];
 }
@@ -1618,7 +1618,7 @@ export interface LakeformationOptInResourceDataTableWithColumnsColumnWildcard {
 export function lakeformationOptInResourceDataTableWithColumnsColumnWildcardToTerraform(struct?: LakeformationOptInResourceDataTableWithColumnsColumnWildcard | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excluded_column_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedColumnNames),
@@ -1629,7 +1629,7 @@ export function lakeformationOptInResourceDataTableWithColumnsColumnWildcardToTe
 export function lakeformationOptInResourceDataTableWithColumnsColumnWildcardToHclTerraform(struct?: LakeformationOptInResourceDataTableWithColumnsColumnWildcard | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excluded_column_names: {
@@ -1726,25 +1726,25 @@ export class LakeformationOptInResourceDataTableWithColumnsColumnWildcardList ex
 }
 export interface LakeformationOptInResourceDataTableWithColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#column_names LakeformationOptIn#column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#column_names LakeformationOptIn#column_names}
   */
   readonly columnNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}
   */
   readonly name: string;
   /**
   * column_wildcard block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#column_wildcard LakeformationOptIn#column_wildcard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#column_wildcard LakeformationOptIn#column_wildcard}
   */
   readonly columnWildcard?: LakeformationOptInResourceDataTableWithColumnsColumnWildcard[] | cdktn.IResolvable;
 }
@@ -1752,7 +1752,7 @@ export interface LakeformationOptInResourceDataTableWithColumns {
 export function lakeformationOptInResourceDataTableWithColumnsToTerraform(struct?: LakeformationOptInResourceDataTableWithColumns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_id: cdktn.stringToTerraform(struct!.catalogId),
@@ -1767,7 +1767,7 @@ export function lakeformationOptInResourceDataTableWithColumnsToTerraform(struct
 export function lakeformationOptInResourceDataTableWithColumnsToHclTerraform(struct?: LakeformationOptInResourceDataTableWithColumns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_id: {
@@ -1972,55 +1972,55 @@ export interface LakeformationOptInResourceData {
   /**
   * catalog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#catalog LakeformationOptIn#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#catalog LakeformationOptIn#catalog}
   */
   readonly catalog?: LakeformationOptInResourceDataCatalog[] | cdktn.IResolvable;
   /**
   * data_cells_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#data_cells_filter LakeformationOptIn#data_cells_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#data_cells_filter LakeformationOptIn#data_cells_filter}
   */
   readonly dataCellsFilter?: LakeformationOptInResourceDataDataCellsFilter[] | cdktn.IResolvable;
   /**
   * data_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#data_location LakeformationOptIn#data_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#data_location LakeformationOptIn#data_location}
   */
   readonly dataLocation?: LakeformationOptInResourceDataDataLocation[] | cdktn.IResolvable;
   /**
   * database block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#database LakeformationOptIn#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#database LakeformationOptIn#database}
   */
   readonly database?: LakeformationOptInResourceDataDatabase[] | cdktn.IResolvable;
   /**
   * lf_tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#lf_tag LakeformationOptIn#lf_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#lf_tag LakeformationOptIn#lf_tag}
   */
   readonly lfTag?: LakeformationOptInResourceDataLfTag[] | cdktn.IResolvable;
   /**
   * lf_tag_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#lf_tag_expression LakeformationOptIn#lf_tag_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#lf_tag_expression LakeformationOptIn#lf_tag_expression}
   */
   readonly lfTagExpression?: LakeformationOptInResourceDataLfTagExpression[] | cdktn.IResolvable;
   /**
   * lf_tag_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#lf_tag_policy LakeformationOptIn#lf_tag_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#lf_tag_policy LakeformationOptIn#lf_tag_policy}
   */
   readonly lfTagPolicy?: LakeformationOptInResourceDataLfTagPolicy[] | cdktn.IResolvable;
   /**
   * table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#table LakeformationOptIn#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#table LakeformationOptIn#table}
   */
   readonly table?: LakeformationOptInResourceDataTable[] | cdktn.IResolvable;
   /**
   * table_with_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#table_with_columns LakeformationOptIn#table_with_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#table_with_columns LakeformationOptIn#table_with_columns}
   */
   readonly tableWithColumns?: LakeformationOptInResourceDataTableWithColumns[] | cdktn.IResolvable;
 }
@@ -2028,7 +2028,7 @@ export interface LakeformationOptInResourceData {
 export function lakeformationOptInResourceDataToTerraform(struct?: LakeformationOptInResourceData | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog: cdktn.listMapper(lakeformationOptInResourceDataCatalogToTerraform, true)(struct!.catalog),
@@ -2047,7 +2047,7 @@ export function lakeformationOptInResourceDataToTerraform(struct?: Lakeformation
 export function lakeformationOptInResourceDataToHclTerraform(struct?: LakeformationOptInResourceData | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog: {
@@ -2368,7 +2368,7 @@ export class LakeformationOptInResourceDataList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in}
 */
 export class LakeformationOptIn extends cdktn.TerraformResource {
 
@@ -2384,7 +2384,7 @@ export class LakeformationOptIn extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LakeformationOptIn resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakeformationOptIn to import
-  * @param importFromId The id of the existing LakeformationOptIn that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LakeformationOptIn that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakeformationOptIn to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2396,7 +2396,7 @@ export class LakeformationOptIn extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2407,7 +2407,7 @@ export class LakeformationOptIn extends cdktn.TerraformResource {
       terraformResourceType: 'aws_lakeformation_opt_in',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

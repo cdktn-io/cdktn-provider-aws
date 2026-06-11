@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktn from 'cdktn';
 
 export interface CloudwatchEventConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#authorization_type CloudwatchEventConnection#authorization_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#authorization_type CloudwatchEventConnection#authorization_type}
   */
   readonly authorizationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#description CloudwatchEventConnection#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#description CloudwatchEventConnection#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#id CloudwatchEventConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#id CloudwatchEventConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#kms_key_identifier CloudwatchEventConnection#kms_key_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#kms_key_identifier CloudwatchEventConnection#kms_key_identifier}
   */
   readonly kmsKeyIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#name CloudwatchEventConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#name CloudwatchEventConnection#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#region CloudwatchEventConnection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#region CloudwatchEventConnection#region}
   */
   readonly region?: string;
   /**
   * auth_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#auth_parameters CloudwatchEventConnection#auth_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#auth_parameters CloudwatchEventConnection#auth_parameters}
   */
   readonly authParameters: CloudwatchEventConnectionAuthParameters;
   /**
   * invocation_connectivity_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#invocation_connectivity_parameters CloudwatchEventConnection#invocation_connectivity_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#invocation_connectivity_parameters CloudwatchEventConnection#invocation_connectivity_parameters}
   */
   readonly invocationConnectivityParameters?: CloudwatchEventConnectionInvocationConnectivityParameters;
 }
 export interface CloudwatchEventConnectionAuthParametersApiKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value: string;
 }
@@ -68,7 +68,7 @@ export interface CloudwatchEventConnectionAuthParametersApiKey {
 export function cloudwatchEventConnectionAuthParametersApiKeyToTerraform(struct?: CloudwatchEventConnectionAuthParametersApiKeyOutputReference | CloudwatchEventConnectionAuthParametersApiKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -80,7 +80,7 @@ export function cloudwatchEventConnectionAuthParametersApiKeyToTerraform(struct?
 export function cloudwatchEventConnectionAuthParametersApiKeyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersApiKeyOutputReference | CloudwatchEventConnectionAuthParametersApiKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -167,11 +167,11 @@ export class CloudwatchEventConnectionAuthParametersApiKeyOutputReference extend
 }
 export interface CloudwatchEventConnectionAuthParametersBasic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#password CloudwatchEventConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#password CloudwatchEventConnection#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#username CloudwatchEventConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#username CloudwatchEventConnection#username}
   */
   readonly username: string;
 }
@@ -179,7 +179,7 @@ export interface CloudwatchEventConnectionAuthParametersBasic {
 export function cloudwatchEventConnectionAuthParametersBasicToTerraform(struct?: CloudwatchEventConnectionAuthParametersBasicOutputReference | CloudwatchEventConnectionAuthParametersBasic): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     password: cdktn.stringToTerraform(struct!.password),
@@ -191,7 +191,7 @@ export function cloudwatchEventConnectionAuthParametersBasicToTerraform(struct?:
 export function cloudwatchEventConnectionAuthParametersBasicToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersBasicOutputReference | CloudwatchEventConnectionAuthParametersBasic): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     password: {
@@ -278,7 +278,7 @@ export class CloudwatchEventConnectionAuthParametersBasicOutputReference extends
 }
 export interface CloudwatchEventConnectionAuthParametersConnectivityParametersResourceParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#resource_configuration_arn CloudwatchEventConnection#resource_configuration_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#resource_configuration_arn CloudwatchEventConnection#resource_configuration_arn}
   */
   readonly resourceConfigurationArn: string;
 }
@@ -286,7 +286,7 @@ export interface CloudwatchEventConnectionAuthParametersConnectivityParametersRe
 export function cloudwatchEventConnectionAuthParametersConnectivityParametersResourceParametersToTerraform(struct?: CloudwatchEventConnectionAuthParametersConnectivityParametersResourceParametersOutputReference | CloudwatchEventConnectionAuthParametersConnectivityParametersResourceParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     resource_configuration_arn: cdktn.stringToTerraform(struct!.resourceConfigurationArn),
@@ -297,7 +297,7 @@ export function cloudwatchEventConnectionAuthParametersConnectivityParametersRes
 export function cloudwatchEventConnectionAuthParametersConnectivityParametersResourceParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersConnectivityParametersResourceParametersOutputReference | CloudwatchEventConnectionAuthParametersConnectivityParametersResourceParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     resource_configuration_arn: {
@@ -366,7 +366,7 @@ export interface CloudwatchEventConnectionAuthParametersConnectivityParameters {
   /**
   * resource_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#resource_parameters CloudwatchEventConnection#resource_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#resource_parameters CloudwatchEventConnection#resource_parameters}
   */
   readonly resourceParameters: CloudwatchEventConnectionAuthParametersConnectivityParametersResourceParameters;
 }
@@ -374,7 +374,7 @@ export interface CloudwatchEventConnectionAuthParametersConnectivityParameters {
 export function cloudwatchEventConnectionAuthParametersConnectivityParametersToTerraform(struct?: CloudwatchEventConnectionAuthParametersConnectivityParametersOutputReference | CloudwatchEventConnectionAuthParametersConnectivityParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     resource_parameters: cloudwatchEventConnectionAuthParametersConnectivityParametersResourceParametersToTerraform(struct!.resourceParameters),
@@ -385,7 +385,7 @@ export function cloudwatchEventConnectionAuthParametersConnectivityParametersToT
 export function cloudwatchEventConnectionAuthParametersConnectivityParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersConnectivityParametersOutputReference | CloudwatchEventConnectionAuthParametersConnectivityParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     resource_parameters: {
@@ -447,15 +447,15 @@ export class CloudwatchEventConnectionAuthParametersConnectivityParametersOutput
 }
 export interface CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -463,7 +463,7 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
 export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
@@ -476,7 +476,7 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersB
 export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_value_secret: {
@@ -629,15 +629,15 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody
 }
 export interface CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -645,7 +645,7 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
 export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
@@ -658,7 +658,7 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersH
 export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_value_secret: {
@@ -811,15 +811,15 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHead
 }
 export interface CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -827,7 +827,7 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
 export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
@@ -840,7 +840,7 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQ
 export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_value_secret: {
@@ -995,19 +995,19 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   /**
   * body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
   */
   readonly body?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktn.IResolvable;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
   */
   readonly header?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktn.IResolvable;
   /**
   * query_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
   */
   readonly queryString?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktn.IResolvable;
 }
@@ -1015,7 +1015,7 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
 export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersToTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference | CloudwatchEventConnectionAuthParametersInvocationHttpParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     body: cdktn.listMapper(cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToTerraform, true)(struct!.body),
@@ -1028,7 +1028,7 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersT
 export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference | CloudwatchEventConnectionAuthParametersInvocationHttpParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     body: {
@@ -1149,11 +1149,11 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutp
 }
 export interface CloudwatchEventConnectionAuthParametersOauthClientParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#client_id CloudwatchEventConnection#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#client_id CloudwatchEventConnection#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#client_secret CloudwatchEventConnection#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#client_secret CloudwatchEventConnection#client_secret}
   */
   readonly clientSecret: string;
 }
@@ -1161,7 +1161,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthClientParameters {
 export function cloudwatchEventConnectionAuthParametersOauthClientParametersToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference | CloudwatchEventConnectionAuthParametersOauthClientParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -1173,7 +1173,7 @@ export function cloudwatchEventConnectionAuthParametersOauthClientParametersToTe
 export function cloudwatchEventConnectionAuthParametersOauthClientParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference | CloudwatchEventConnectionAuthParametersOauthClientParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -1260,15 +1260,15 @@ export class CloudwatchEventConnectionAuthParametersOauthClientParametersOutputR
 }
 export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -1276,7 +1276,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
 export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
@@ -1289,7 +1289,7 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersB
 export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_value_secret: {
@@ -1442,15 +1442,15 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody
 }
 export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -1458,7 +1458,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
 export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
@@ -1471,7 +1471,7 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersH
 export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_value_secret: {
@@ -1624,15 +1624,15 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHead
 }
 export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -1640,7 +1640,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
 export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_value_secret: cdktn.booleanToTerraform(struct!.isValueSecret),
@@ -1653,7 +1653,7 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQ
 export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_value_secret: {
@@ -1808,19 +1808,19 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   /**
   * body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
   */
   readonly body?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktn.IResolvable;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
   */
   readonly header?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktn.IResolvable;
   /**
   * query_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
   */
   readonly queryString?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktn.IResolvable;
 }
@@ -1828,7 +1828,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
 export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference | CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     body: cdktn.listMapper(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToTerraform, true)(struct!.body),
@@ -1841,7 +1841,7 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersT
 export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference | CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     body: {
@@ -1962,23 +1962,23 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutp
 }
 export interface CloudwatchEventConnectionAuthParametersOauth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#authorization_endpoint CloudwatchEventConnection#authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#authorization_endpoint CloudwatchEventConnection#authorization_endpoint}
   */
   readonly authorizationEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#http_method CloudwatchEventConnection#http_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#http_method CloudwatchEventConnection#http_method}
   */
   readonly httpMethod: string;
   /**
   * client_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#client_parameters CloudwatchEventConnection#client_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#client_parameters CloudwatchEventConnection#client_parameters}
   */
   readonly clientParameters?: CloudwatchEventConnectionAuthParametersOauthClientParameters;
   /**
   * oauth_http_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#oauth_http_parameters CloudwatchEventConnection#oauth_http_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#oauth_http_parameters CloudwatchEventConnection#oauth_http_parameters}
   */
   readonly oauthHttpParameters: CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters;
 }
@@ -1986,7 +1986,7 @@ export interface CloudwatchEventConnectionAuthParametersOauth {
 export function cloudwatchEventConnectionAuthParametersOauthToTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOutputReference | CloudwatchEventConnectionAuthParametersOauth): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authorization_endpoint: cdktn.stringToTerraform(struct!.authorizationEndpoint),
@@ -2000,7 +2000,7 @@ export function cloudwatchEventConnectionAuthParametersOauthToTerraform(struct?:
 export function cloudwatchEventConnectionAuthParametersOauthToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOutputReference | CloudwatchEventConnectionAuthParametersOauth): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authorization_endpoint: {
@@ -2142,31 +2142,31 @@ export interface CloudwatchEventConnectionAuthParameters {
   /**
   * api_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#api_key CloudwatchEventConnection#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#api_key CloudwatchEventConnection#api_key}
   */
   readonly apiKey?: CloudwatchEventConnectionAuthParametersApiKey;
   /**
   * basic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#basic CloudwatchEventConnection#basic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#basic CloudwatchEventConnection#basic}
   */
   readonly basic?: CloudwatchEventConnectionAuthParametersBasic;
   /**
   * connectivity_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#connectivity_parameters CloudwatchEventConnection#connectivity_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#connectivity_parameters CloudwatchEventConnection#connectivity_parameters}
   */
   readonly connectivityParameters?: CloudwatchEventConnectionAuthParametersConnectivityParameters;
   /**
   * invocation_http_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#invocation_http_parameters CloudwatchEventConnection#invocation_http_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#invocation_http_parameters CloudwatchEventConnection#invocation_http_parameters}
   */
   readonly invocationHttpParameters?: CloudwatchEventConnectionAuthParametersInvocationHttpParameters;
   /**
   * oauth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#oauth CloudwatchEventConnection#oauth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#oauth CloudwatchEventConnection#oauth}
   */
   readonly oauth?: CloudwatchEventConnectionAuthParametersOauth;
 }
@@ -2174,7 +2174,7 @@ export interface CloudwatchEventConnectionAuthParameters {
 export function cloudwatchEventConnectionAuthParametersToTerraform(struct?: CloudwatchEventConnectionAuthParametersOutputReference | CloudwatchEventConnectionAuthParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_key: cloudwatchEventConnectionAuthParametersApiKeyToTerraform(struct!.apiKey),
@@ -2189,7 +2189,7 @@ export function cloudwatchEventConnectionAuthParametersToTerraform(struct?: Clou
 export function cloudwatchEventConnectionAuthParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOutputReference | CloudwatchEventConnectionAuthParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_key: {
@@ -2366,7 +2366,7 @@ export class CloudwatchEventConnectionAuthParametersOutputReference extends cdkt
 }
 export interface CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#resource_configuration_arn CloudwatchEventConnection#resource_configuration_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#resource_configuration_arn CloudwatchEventConnection#resource_configuration_arn}
   */
   readonly resourceConfigurationArn: string;
 }
@@ -2374,7 +2374,7 @@ export interface CloudwatchEventConnectionInvocationConnectivityParametersResour
 export function cloudwatchEventConnectionInvocationConnectivityParametersResourceParametersToTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     resource_configuration_arn: cdktn.stringToTerraform(struct!.resourceConfigurationArn),
@@ -2385,7 +2385,7 @@ export function cloudwatchEventConnectionInvocationConnectivityParametersResourc
 export function cloudwatchEventConnectionInvocationConnectivityParametersResourceParametersToHclTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     resource_configuration_arn: {
@@ -2454,7 +2454,7 @@ export interface CloudwatchEventConnectionInvocationConnectivityParameters {
   /**
   * resource_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#resource_parameters CloudwatchEventConnection#resource_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#resource_parameters CloudwatchEventConnection#resource_parameters}
   */
   readonly resourceParameters: CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters;
 }
@@ -2462,7 +2462,7 @@ export interface CloudwatchEventConnectionInvocationConnectivityParameters {
 export function cloudwatchEventConnectionInvocationConnectivityParametersToTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     resource_parameters: cloudwatchEventConnectionInvocationConnectivityParametersResourceParametersToTerraform(struct!.resourceParameters),
@@ -2473,7 +2473,7 @@ export function cloudwatchEventConnectionInvocationConnectivityParametersToTerra
 export function cloudwatchEventConnectionInvocationConnectivityParametersToHclTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     resource_parameters: {
@@ -2535,7 +2535,7 @@ export class CloudwatchEventConnectionInvocationConnectivityParametersOutputRefe
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}
 */
 export class CloudwatchEventConnection extends cdktn.TerraformResource {
 
@@ -2551,7 +2551,7 @@ export class CloudwatchEventConnection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CloudwatchEventConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchEventConnection to import
-  * @param importFromId The id of the existing CloudwatchEventConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudwatchEventConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchEventConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2563,7 +2563,7 @@ export class CloudwatchEventConnection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2574,7 +2574,7 @@ export class CloudwatchEventConnection extends cdktn.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_event_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

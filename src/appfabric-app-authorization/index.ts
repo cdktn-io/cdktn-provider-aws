@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,49 +13,49 @@ import * as cdktn from 'cdktn';
 
 export interface AppfabricAppAuthorizationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#app AppfabricAppAuthorization#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#app AppfabricAppAuthorization#app}
   */
   readonly app: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#app_bundle_arn AppfabricAppAuthorization#app_bundle_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#app_bundle_arn AppfabricAppAuthorization#app_bundle_arn}
   */
   readonly appBundleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#auth_type AppfabricAppAuthorization#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#auth_type AppfabricAppAuthorization#auth_type}
   */
   readonly authType: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#region AppfabricAppAuthorization#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#region AppfabricAppAuthorization#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#tags AppfabricAppAuthorization#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#tags AppfabricAppAuthorization#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#credential AppfabricAppAuthorization#credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#credential AppfabricAppAuthorization#credential}
   */
   readonly credential?: AppfabricAppAuthorizationCredential[] | cdktn.IResolvable;
   /**
   * tenant block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#tenant AppfabricAppAuthorization#tenant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#tenant AppfabricAppAuthorization#tenant}
   */
   readonly tenant?: AppfabricAppAuthorizationTenant[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#timeouts AppfabricAppAuthorization#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#timeouts AppfabricAppAuthorization#timeouts}
   */
   readonly timeouts?: AppfabricAppAuthorizationTimeouts;
 }
 export interface AppfabricAppAuthorizationCredentialApiKeyCredential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#api_key AppfabricAppAuthorization#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#api_key AppfabricAppAuthorization#api_key}
   */
   readonly apiKey: string;
 }
@@ -63,7 +63,7 @@ export interface AppfabricAppAuthorizationCredentialApiKeyCredential {
 export function appfabricAppAuthorizationCredentialApiKeyCredentialToTerraform(struct?: AppfabricAppAuthorizationCredentialApiKeyCredential | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_key: cdktn.stringToTerraform(struct!.apiKey),
@@ -74,7 +74,7 @@ export function appfabricAppAuthorizationCredentialApiKeyCredentialToTerraform(s
 export function appfabricAppAuthorizationCredentialApiKeyCredentialToHclTerraform(struct?: AppfabricAppAuthorizationCredentialApiKeyCredential | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_key: {
@@ -168,11 +168,11 @@ export class AppfabricAppAuthorizationCredentialApiKeyCredentialList extends cdk
 }
 export interface AppfabricAppAuthorizationCredentialOauth2Credential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#client_id AppfabricAppAuthorization#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#client_id AppfabricAppAuthorization#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#client_secret AppfabricAppAuthorization#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#client_secret AppfabricAppAuthorization#client_secret}
   */
   readonly clientSecret: string;
 }
@@ -180,7 +180,7 @@ export interface AppfabricAppAuthorizationCredentialOauth2Credential {
 export function appfabricAppAuthorizationCredentialOauth2CredentialToTerraform(struct?: AppfabricAppAuthorizationCredentialOauth2Credential | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -192,7 +192,7 @@ export function appfabricAppAuthorizationCredentialOauth2CredentialToTerraform(s
 export function appfabricAppAuthorizationCredentialOauth2CredentialToHclTerraform(struct?: AppfabricAppAuthorizationCredentialOauth2Credential | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -313,13 +313,13 @@ export interface AppfabricAppAuthorizationCredential {
   /**
   * api_key_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#api_key_credential AppfabricAppAuthorization#api_key_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#api_key_credential AppfabricAppAuthorization#api_key_credential}
   */
   readonly apiKeyCredential?: AppfabricAppAuthorizationCredentialApiKeyCredential[] | cdktn.IResolvable;
   /**
   * oauth2_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#oauth2_credential AppfabricAppAuthorization#oauth2_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#oauth2_credential AppfabricAppAuthorization#oauth2_credential}
   */
   readonly oauth2Credential?: AppfabricAppAuthorizationCredentialOauth2Credential[] | cdktn.IResolvable;
 }
@@ -327,7 +327,7 @@ export interface AppfabricAppAuthorizationCredential {
 export function appfabricAppAuthorizationCredentialToTerraform(struct?: AppfabricAppAuthorizationCredential | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_key_credential: cdktn.listMapper(appfabricAppAuthorizationCredentialApiKeyCredentialToTerraform, true)(struct!.apiKeyCredential),
@@ -339,7 +339,7 @@ export function appfabricAppAuthorizationCredentialToTerraform(struct?: Appfabri
 export function appfabricAppAuthorizationCredentialToHclTerraform(struct?: AppfabricAppAuthorizationCredential | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_key_credential: {
@@ -464,11 +464,11 @@ export class AppfabricAppAuthorizationCredentialList extends cdktn.ComplexList {
 }
 export interface AppfabricAppAuthorizationTenant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#tenant_display_name AppfabricAppAuthorization#tenant_display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#tenant_display_name AppfabricAppAuthorization#tenant_display_name}
   */
   readonly tenantDisplayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#tenant_identifier AppfabricAppAuthorization#tenant_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#tenant_identifier AppfabricAppAuthorization#tenant_identifier}
   */
   readonly tenantIdentifier: string;
 }
@@ -476,7 +476,7 @@ export interface AppfabricAppAuthorizationTenant {
 export function appfabricAppAuthorizationTenantToTerraform(struct?: AppfabricAppAuthorizationTenant | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     tenant_display_name: cdktn.stringToTerraform(struct!.tenantDisplayName),
@@ -488,7 +488,7 @@ export function appfabricAppAuthorizationTenantToTerraform(struct?: AppfabricApp
 export function appfabricAppAuthorizationTenantToHclTerraform(struct?: AppfabricAppAuthorizationTenant | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     tenant_display_name: {
@@ -609,19 +609,19 @@ export interface AppfabricAppAuthorizationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#create AppfabricAppAuthorization#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#create AppfabricAppAuthorization#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#delete AppfabricAppAuthorization#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#delete AppfabricAppAuthorization#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#update AppfabricAppAuthorization#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#update AppfabricAppAuthorization#update}
   */
   readonly update?: string;
 }
@@ -629,7 +629,7 @@ export interface AppfabricAppAuthorizationTimeouts {
 export function appfabricAppAuthorizationTimeoutsToTerraform(struct?: AppfabricAppAuthorizationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -642,7 +642,7 @@ export function appfabricAppAuthorizationTimeoutsToTerraform(struct?: AppfabricA
 export function appfabricAppAuthorizationTimeoutsToHclTerraform(struct?: AppfabricAppAuthorizationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -773,7 +773,7 @@ export class AppfabricAppAuthorizationTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization}
 */
 export class AppfabricAppAuthorization extends cdktn.TerraformResource {
 
@@ -789,7 +789,7 @@ export class AppfabricAppAuthorization extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AppfabricAppAuthorization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppfabricAppAuthorization to import
-  * @param importFromId The id of the existing AppfabricAppAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppfabricAppAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppfabricAppAuthorization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -801,7 +801,7 @@ export class AppfabricAppAuthorization extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -812,7 +812,7 @@ export class AppfabricAppAuthorization extends cdktn.TerraformResource {
       terraformResourceType: 'aws_appfabric_app_authorization',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

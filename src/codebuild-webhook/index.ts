@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,64 @@ import * as cdktn from 'cdktn';
 
 export interface CodebuildWebhookConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}
   */
   readonly branchFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}
   */
   readonly buildType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#manual_creation CodebuildWebhook#manual_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#manual_creation CodebuildWebhook#manual_creation}
   */
   readonly manualCreation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}
   */
   readonly projectName: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#region CodebuildWebhook#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#region CodebuildWebhook#region}
   */
   readonly region?: string;
   /**
   * filter_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
   */
   readonly filterGroup?: CodebuildWebhookFilterGroup[] | cdktn.IResolvable;
   /**
   * pull_request_build_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#pull_request_build_policy CodebuildWebhook#pull_request_build_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#pull_request_build_policy CodebuildWebhook#pull_request_build_policy}
   */
   readonly pullRequestBuildPolicy?: CodebuildWebhookPullRequestBuildPolicy;
   /**
   * scope_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#scope_configuration CodebuildWebhook#scope_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#scope_configuration CodebuildWebhook#scope_configuration}
   */
   readonly scopeConfiguration?: CodebuildWebhookScopeConfiguration;
 }
 export interface CodebuildWebhookFilterGroupFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}
   */
   readonly excludeMatchedPattern?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}
   */
   readonly pattern: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#type CodebuildWebhook#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#type CodebuildWebhook#type}
   */
   readonly type: string;
 }
@@ -78,7 +78,7 @@ export interface CodebuildWebhookFilterGroupFilter {
 export function codebuildWebhookFilterGroupFilterToTerraform(struct?: CodebuildWebhookFilterGroupFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exclude_matched_pattern: cdktn.booleanToTerraform(struct!.excludeMatchedPattern),
@@ -91,7 +91,7 @@ export function codebuildWebhookFilterGroupFilterToTerraform(struct?: CodebuildW
 export function codebuildWebhookFilterGroupFilterToHclTerraform(struct?: CodebuildWebhookFilterGroupFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exclude_matched_pattern: {
@@ -240,7 +240,7 @@ export interface CodebuildWebhookFilterGroup {
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#filter CodebuildWebhook#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#filter CodebuildWebhook#filter}
   */
   readonly filter?: CodebuildWebhookFilterGroupFilter[] | cdktn.IResolvable;
 }
@@ -248,7 +248,7 @@ export interface CodebuildWebhookFilterGroup {
 export function codebuildWebhookFilterGroupToTerraform(struct?: CodebuildWebhookFilterGroup | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter: cdktn.listMapper(codebuildWebhookFilterGroupFilterToTerraform, true)(struct!.filter),
@@ -259,7 +259,7 @@ export function codebuildWebhookFilterGroupToTerraform(struct?: CodebuildWebhook
 export function codebuildWebhookFilterGroupToHclTerraform(struct?: CodebuildWebhookFilterGroup | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter: {
@@ -356,11 +356,11 @@ export class CodebuildWebhookFilterGroupList extends cdktn.ComplexList {
 }
 export interface CodebuildWebhookPullRequestBuildPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#approver_roles CodebuildWebhook#approver_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#approver_roles CodebuildWebhook#approver_roles}
   */
   readonly approverRoles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#requires_comment_approval CodebuildWebhook#requires_comment_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#requires_comment_approval CodebuildWebhook#requires_comment_approval}
   */
   readonly requiresCommentApproval: string;
 }
@@ -368,7 +368,7 @@ export interface CodebuildWebhookPullRequestBuildPolicy {
 export function codebuildWebhookPullRequestBuildPolicyToTerraform(struct?: CodebuildWebhookPullRequestBuildPolicyOutputReference | CodebuildWebhookPullRequestBuildPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     approver_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.approverRoles),
@@ -380,7 +380,7 @@ export function codebuildWebhookPullRequestBuildPolicyToTerraform(struct?: Codeb
 export function codebuildWebhookPullRequestBuildPolicyToHclTerraform(struct?: CodebuildWebhookPullRequestBuildPolicyOutputReference | CodebuildWebhookPullRequestBuildPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     approver_roles: {
@@ -470,15 +470,15 @@ export class CodebuildWebhookPullRequestBuildPolicyOutputReference extends cdktn
 }
 export interface CodebuildWebhookScopeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#domain CodebuildWebhook#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#domain CodebuildWebhook#domain}
   */
   readonly domain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#name CodebuildWebhook#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#name CodebuildWebhook#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#scope CodebuildWebhook#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#scope CodebuildWebhook#scope}
   */
   readonly scope: string;
 }
@@ -486,7 +486,7 @@ export interface CodebuildWebhookScopeConfiguration {
 export function codebuildWebhookScopeConfigurationToTerraform(struct?: CodebuildWebhookScopeConfigurationOutputReference | CodebuildWebhookScopeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     domain: cdktn.stringToTerraform(struct!.domain),
@@ -499,7 +499,7 @@ export function codebuildWebhookScopeConfigurationToTerraform(struct?: Codebuild
 export function codebuildWebhookScopeConfigurationToHclTerraform(struct?: CodebuildWebhookScopeConfigurationOutputReference | CodebuildWebhookScopeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     domain: {
@@ -614,7 +614,7 @@ export class CodebuildWebhookScopeConfigurationOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook aws_codebuild_webhook}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook aws_codebuild_webhook}
 */
 export class CodebuildWebhook extends cdktn.TerraformResource {
 
@@ -630,7 +630,7 @@ export class CodebuildWebhook extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CodebuildWebhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodebuildWebhook to import
-  * @param importFromId The id of the existing CodebuildWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodebuildWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodebuildWebhook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -642,7 +642,7 @@ export class CodebuildWebhook extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -653,7 +653,7 @@ export class CodebuildWebhook extends cdktn.TerraformResource {
       terraformResourceType: 'aws_codebuild_webhook',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

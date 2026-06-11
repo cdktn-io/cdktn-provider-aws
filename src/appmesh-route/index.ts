@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktn from 'cdktn';
 
 export interface AppmeshRouteConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#id AppmeshRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#id AppmeshRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#mesh_name AppmeshRoute#mesh_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#mesh_name AppmeshRoute#mesh_name}
   */
   readonly meshName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#mesh_owner AppmeshRoute#mesh_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#mesh_owner AppmeshRoute#mesh_owner}
   */
   readonly meshOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#name AppmeshRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#name AppmeshRoute#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#region AppmeshRoute#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#region AppmeshRoute#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#tags AppmeshRoute#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#tags AppmeshRoute#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#tags_all AppmeshRoute#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#tags_all AppmeshRoute#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#virtual_router_name AppmeshRoute#virtual_router_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#virtual_router_name AppmeshRoute#virtual_router_name}
   */
   readonly virtualRouterName: string;
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#spec AppmeshRoute#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#spec AppmeshRoute#spec}
   */
   readonly spec: AppmeshRouteSpec;
 }
 export interface AppmeshRouteSpecGrpcRouteActionWeightedTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#port AppmeshRoute#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#port AppmeshRoute#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}
   */
   readonly weight: number;
 }
@@ -74,7 +74,7 @@ export interface AppmeshRouteSpecGrpcRouteActionWeightedTarget {
 export function appmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform(struct?: AppmeshRouteSpecGrpcRouteActionWeightedTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -87,7 +87,7 @@ export function appmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform(struct?
 export function appmeshRouteSpecGrpcRouteActionWeightedTargetToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteActionWeightedTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -236,7 +236,7 @@ export interface AppmeshRouteSpecGrpcRouteAction {
   /**
   * weighted_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
   */
   readonly weightedTarget: AppmeshRouteSpecGrpcRouteActionWeightedTarget[] | cdktn.IResolvable;
 }
@@ -244,7 +244,7 @@ export interface AppmeshRouteSpecGrpcRouteAction {
 export function appmeshRouteSpecGrpcRouteActionToTerraform(struct?: AppmeshRouteSpecGrpcRouteActionOutputReference | AppmeshRouteSpecGrpcRouteAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     weighted_target: cdktn.listMapper(appmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform, true)(struct!.weightedTarget),
@@ -255,7 +255,7 @@ export function appmeshRouteSpecGrpcRouteActionToTerraform(struct?: AppmeshRoute
 export function appmeshRouteSpecGrpcRouteActionToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteActionOutputReference | AppmeshRouteSpecGrpcRouteAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     weighted_target: {
@@ -317,11 +317,11 @@ export class AppmeshRouteSpecGrpcRouteActionOutputReference extends cdktn.Comple
 }
 export interface AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#end AppmeshRoute#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#end AppmeshRoute#end}
   */
   readonly end: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#start AppmeshRoute#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#start AppmeshRoute#start}
   */
   readonly start: number;
 }
@@ -329,7 +329,7 @@ export interface AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange {
 export function appmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToTerraform(struct?: AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference | AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.numberToTerraform(struct!.end),
@@ -341,7 +341,7 @@ export function appmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToTerraform(stru
 export function appmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference | AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -428,25 +428,25 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference ext
 }
 export interface AppmeshRouteSpecGrpcRouteMatchMetadataMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
   */
   readonly exact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}
   */
   readonly suffix?: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#range AppmeshRoute#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#range AppmeshRoute#range}
   */
   readonly range?: AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange;
 }
@@ -454,7 +454,7 @@ export interface AppmeshRouteSpecGrpcRouteMatchMetadataMatch {
 export function appmeshRouteSpecGrpcRouteMatchMetadataMatchToTerraform(struct?: AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference | AppmeshRouteSpecGrpcRouteMatchMetadataMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exact: cdktn.stringToTerraform(struct!.exact),
@@ -469,7 +469,7 @@ export function appmeshRouteSpecGrpcRouteMatchMetadataMatchToTerraform(struct?: 
 export function appmeshRouteSpecGrpcRouteMatchMetadataMatchToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference | AppmeshRouteSpecGrpcRouteMatchMetadataMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exact: {
@@ -646,17 +646,17 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends 
 }
 export interface AppmeshRouteSpecGrpcRouteMatchMetadata {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}
   */
   readonly invert?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#name AppmeshRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#name AppmeshRoute#name}
   */
   readonly name: string;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecGrpcRouteMatchMetadataMatch;
 }
@@ -664,7 +664,7 @@ export interface AppmeshRouteSpecGrpcRouteMatchMetadata {
 export function appmeshRouteSpecGrpcRouteMatchMetadataToTerraform(struct?: AppmeshRouteSpecGrpcRouteMatchMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     invert: cdktn.booleanToTerraform(struct!.invert),
@@ -677,7 +677,7 @@ export function appmeshRouteSpecGrpcRouteMatchMetadataToTerraform(struct?: Appme
 export function appmeshRouteSpecGrpcRouteMatchMetadataToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteMatchMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     invert: {
@@ -827,25 +827,25 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataList extends cdktn.ComplexLis
 }
 export interface AppmeshRouteSpecGrpcRouteMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#method_name AppmeshRoute#method_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#method_name AppmeshRoute#method_name}
   */
   readonly methodName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#port AppmeshRoute#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#port AppmeshRoute#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#service_name AppmeshRoute#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#service_name AppmeshRoute#service_name}
   */
   readonly serviceName?: string;
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#metadata AppmeshRoute#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#metadata AppmeshRoute#metadata}
   */
   readonly metadata?: AppmeshRouteSpecGrpcRouteMatchMetadata[] | cdktn.IResolvable;
 }
@@ -853,7 +853,7 @@ export interface AppmeshRouteSpecGrpcRouteMatch {
 export function appmeshRouteSpecGrpcRouteMatchToTerraform(struct?: AppmeshRouteSpecGrpcRouteMatchOutputReference | AppmeshRouteSpecGrpcRouteMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     method_name: cdktn.stringToTerraform(struct!.methodName),
@@ -868,7 +868,7 @@ export function appmeshRouteSpecGrpcRouteMatchToTerraform(struct?: AppmeshRouteS
 export function appmeshRouteSpecGrpcRouteMatchToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteMatchOutputReference | AppmeshRouteSpecGrpcRouteMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     method_name: {
@@ -1045,11 +1045,11 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktn.Complex
 }
 export interface AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -1057,7 +1057,7 @@ export interface AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout {
 export function appmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToTerraform(struct?: AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference | AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -1069,7 +1069,7 @@ export function appmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToTerraform(s
 export function appmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference | AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -1156,25 +1156,25 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference 
 }
 export interface AppmeshRouteSpecGrpcRouteRetryPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#grpc_retry_events AppmeshRoute#grpc_retry_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#grpc_retry_events AppmeshRoute#grpc_retry_events}
   */
   readonly grpcRetryEvents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}
   */
   readonly httpRetryEvents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}
   */
   readonly maxRetries: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}
   */
   readonly tcpRetryEvents?: string[];
   /**
   * per_retry_timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
   */
   readonly perRetryTimeout: AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout;
 }
@@ -1182,7 +1182,7 @@ export interface AppmeshRouteSpecGrpcRouteRetryPolicy {
 export function appmeshRouteSpecGrpcRouteRetryPolicyToTerraform(struct?: AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference | AppmeshRouteSpecGrpcRouteRetryPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     grpc_retry_events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.grpcRetryEvents),
@@ -1197,7 +1197,7 @@ export function appmeshRouteSpecGrpcRouteRetryPolicyToTerraform(struct?: Appmesh
 export function appmeshRouteSpecGrpcRouteRetryPolicyToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference | AppmeshRouteSpecGrpcRouteRetryPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     grpc_retry_events: {
@@ -1368,11 +1368,11 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktn.C
 }
 export interface AppmeshRouteSpecGrpcRouteTimeoutIdle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -1380,7 +1380,7 @@ export interface AppmeshRouteSpecGrpcRouteTimeoutIdle {
 export function appmeshRouteSpecGrpcRouteTimeoutIdleToTerraform(struct?: AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference | AppmeshRouteSpecGrpcRouteTimeoutIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -1392,7 +1392,7 @@ export function appmeshRouteSpecGrpcRouteTimeoutIdleToTerraform(struct?: Appmesh
 export function appmeshRouteSpecGrpcRouteTimeoutIdleToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference | AppmeshRouteSpecGrpcRouteTimeoutIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -1479,11 +1479,11 @@ export class AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends cdktn.C
 }
 export interface AppmeshRouteSpecGrpcRouteTimeoutPerRequest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -1491,7 +1491,7 @@ export interface AppmeshRouteSpecGrpcRouteTimeoutPerRequest {
 export function appmeshRouteSpecGrpcRouteTimeoutPerRequestToTerraform(struct?: AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference | AppmeshRouteSpecGrpcRouteTimeoutPerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -1503,7 +1503,7 @@ export function appmeshRouteSpecGrpcRouteTimeoutPerRequestToTerraform(struct?: A
 export function appmeshRouteSpecGrpcRouteTimeoutPerRequestToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference | AppmeshRouteSpecGrpcRouteTimeoutPerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -1592,13 +1592,13 @@ export interface AppmeshRouteSpecGrpcRouteTimeout {
   /**
   * idle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
   */
   readonly idle?: AppmeshRouteSpecGrpcRouteTimeoutIdle;
   /**
   * per_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
   */
   readonly perRequest?: AppmeshRouteSpecGrpcRouteTimeoutPerRequest;
 }
@@ -1606,7 +1606,7 @@ export interface AppmeshRouteSpecGrpcRouteTimeout {
 export function appmeshRouteSpecGrpcRouteTimeoutToTerraform(struct?: AppmeshRouteSpecGrpcRouteTimeoutOutputReference | AppmeshRouteSpecGrpcRouteTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     idle: appmeshRouteSpecGrpcRouteTimeoutIdleToTerraform(struct!.idle),
@@ -1618,7 +1618,7 @@ export function appmeshRouteSpecGrpcRouteTimeoutToTerraform(struct?: AppmeshRout
 export function appmeshRouteSpecGrpcRouteTimeoutToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteTimeoutOutputReference | AppmeshRouteSpecGrpcRouteTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     idle: {
@@ -1713,25 +1713,25 @@ export interface AppmeshRouteSpecGrpcRoute {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#action AppmeshRoute#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#action AppmeshRoute#action}
   */
   readonly action: AppmeshRouteSpecGrpcRouteAction;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecGrpcRouteMatch;
   /**
   * retry_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
   */
   readonly retryPolicy?: AppmeshRouteSpecGrpcRouteRetryPolicy;
   /**
   * timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
   */
   readonly timeout?: AppmeshRouteSpecGrpcRouteTimeout;
 }
@@ -1739,7 +1739,7 @@ export interface AppmeshRouteSpecGrpcRoute {
 export function appmeshRouteSpecGrpcRouteToTerraform(struct?: AppmeshRouteSpecGrpcRouteOutputReference | AppmeshRouteSpecGrpcRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: appmeshRouteSpecGrpcRouteActionToTerraform(struct!.action),
@@ -1753,7 +1753,7 @@ export function appmeshRouteSpecGrpcRouteToTerraform(struct?: AppmeshRouteSpecGr
 export function appmeshRouteSpecGrpcRouteToHclTerraform(struct?: AppmeshRouteSpecGrpcRouteOutputReference | AppmeshRouteSpecGrpcRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -1899,15 +1899,15 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktn.ComplexObjec
 }
 export interface AppmeshRouteSpecHttp2RouteActionWeightedTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#port AppmeshRoute#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#port AppmeshRoute#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}
   */
   readonly weight: number;
 }
@@ -1915,7 +1915,7 @@ export interface AppmeshRouteSpecHttp2RouteActionWeightedTarget {
 export function appmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform(struct?: AppmeshRouteSpecHttp2RouteActionWeightedTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -1928,7 +1928,7 @@ export function appmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform(struct
 export function appmeshRouteSpecHttp2RouteActionWeightedTargetToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteActionWeightedTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -2077,7 +2077,7 @@ export interface AppmeshRouteSpecHttp2RouteAction {
   /**
   * weighted_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
   */
   readonly weightedTarget: AppmeshRouteSpecHttp2RouteActionWeightedTarget[] | cdktn.IResolvable;
 }
@@ -2085,7 +2085,7 @@ export interface AppmeshRouteSpecHttp2RouteAction {
 export function appmeshRouteSpecHttp2RouteActionToTerraform(struct?: AppmeshRouteSpecHttp2RouteActionOutputReference | AppmeshRouteSpecHttp2RouteAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     weighted_target: cdktn.listMapper(appmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform, true)(struct!.weightedTarget),
@@ -2096,7 +2096,7 @@ export function appmeshRouteSpecHttp2RouteActionToTerraform(struct?: AppmeshRout
 export function appmeshRouteSpecHttp2RouteActionToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteActionOutputReference | AppmeshRouteSpecHttp2RouteAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     weighted_target: {
@@ -2158,11 +2158,11 @@ export class AppmeshRouteSpecHttp2RouteActionOutputReference extends cdktn.Compl
 }
 export interface AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#end AppmeshRoute#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#end AppmeshRoute#end}
   */
   readonly end: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#start AppmeshRoute#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#start AppmeshRoute#start}
   */
   readonly start: number;
 }
@@ -2170,7 +2170,7 @@ export interface AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange {
 export function appmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference | AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.numberToTerraform(struct!.end),
@@ -2182,7 +2182,7 @@ export function appmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToTerraform(struc
 export function appmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference | AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -2269,25 +2269,25 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference exte
 }
 export interface AppmeshRouteSpecHttp2RouteMatchHeaderMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
   */
   readonly exact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}
   */
   readonly suffix?: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#range AppmeshRoute#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#range AppmeshRoute#range}
   */
   readonly range?: AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange;
 }
@@ -2295,7 +2295,7 @@ export interface AppmeshRouteSpecHttp2RouteMatchHeaderMatch {
 export function appmeshRouteSpecHttp2RouteMatchHeaderMatchToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference | AppmeshRouteSpecHttp2RouteMatchHeaderMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exact: cdktn.stringToTerraform(struct!.exact),
@@ -2310,7 +2310,7 @@ export function appmeshRouteSpecHttp2RouteMatchHeaderMatchToTerraform(struct?: A
 export function appmeshRouteSpecHttp2RouteMatchHeaderMatchToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference | AppmeshRouteSpecHttp2RouteMatchHeaderMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exact: {
@@ -2487,17 +2487,17 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends c
 }
 export interface AppmeshRouteSpecHttp2RouteMatchHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}
   */
   readonly invert?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#name AppmeshRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#name AppmeshRoute#name}
   */
   readonly name: string;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecHttp2RouteMatchHeaderMatch;
 }
@@ -2505,7 +2505,7 @@ export interface AppmeshRouteSpecHttp2RouteMatchHeader {
 export function appmeshRouteSpecHttp2RouteMatchHeaderToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     invert: cdktn.booleanToTerraform(struct!.invert),
@@ -2518,7 +2518,7 @@ export function appmeshRouteSpecHttp2RouteMatchHeaderToTerraform(struct?: Appmes
 export function appmeshRouteSpecHttp2RouteMatchHeaderToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     invert: {
@@ -2668,11 +2668,11 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderList extends cdktn.ComplexList
 }
 export interface AppmeshRouteSpecHttp2RouteMatchPath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
   */
   readonly exact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}
   */
   readonly regex?: string;
 }
@@ -2680,7 +2680,7 @@ export interface AppmeshRouteSpecHttp2RouteMatchPath {
 export function appmeshRouteSpecHttp2RouteMatchPathToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchPathOutputReference | AppmeshRouteSpecHttp2RouteMatchPath): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exact: cdktn.stringToTerraform(struct!.exact),
@@ -2692,7 +2692,7 @@ export function appmeshRouteSpecHttp2RouteMatchPathToTerraform(struct?: AppmeshR
 export function appmeshRouteSpecHttp2RouteMatchPathToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchPathOutputReference | AppmeshRouteSpecHttp2RouteMatchPath): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exact: {
@@ -2785,7 +2785,7 @@ export class AppmeshRouteSpecHttp2RouteMatchPathOutputReference extends cdktn.Co
 }
 export interface AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
   */
   readonly exact?: string;
 }
@@ -2793,7 +2793,7 @@ export interface AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch {
 export function appmeshRouteSpecHttp2RouteMatchQueryParameterMatchToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference | AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exact: cdktn.stringToTerraform(struct!.exact),
@@ -2804,7 +2804,7 @@ export function appmeshRouteSpecHttp2RouteMatchQueryParameterMatchToTerraform(st
 export function appmeshRouteSpecHttp2RouteMatchQueryParameterMatchToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference | AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exact: {
@@ -2869,13 +2869,13 @@ export class AppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference e
 }
 export interface AppmeshRouteSpecHttp2RouteMatchQueryParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#name AppmeshRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#name AppmeshRoute#name}
   */
   readonly name: string;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch;
 }
@@ -2883,7 +2883,7 @@ export interface AppmeshRouteSpecHttp2RouteMatchQueryParameter {
 export function appmeshRouteSpecHttp2RouteMatchQueryParameterToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchQueryParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2895,7 +2895,7 @@ export function appmeshRouteSpecHttp2RouteMatchQueryParameterToTerraform(struct?
 export function appmeshRouteSpecHttp2RouteMatchQueryParameterToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchQueryParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -3017,37 +3017,37 @@ export class AppmeshRouteSpecHttp2RouteMatchQueryParameterList extends cdktn.Com
 }
 export interface AppmeshRouteSpecHttp2RouteMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#method AppmeshRoute#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#method AppmeshRoute#method}
   */
   readonly method?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#port AppmeshRoute#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#port AppmeshRoute#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}
   */
   readonly scheme?: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#header AppmeshRoute#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#header AppmeshRoute#header}
   */
   readonly header?: AppmeshRouteSpecHttp2RouteMatchHeader[] | cdktn.IResolvable;
   /**
   * path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#path AppmeshRoute#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#path AppmeshRoute#path}
   */
   readonly path?: AppmeshRouteSpecHttp2RouteMatchPath;
   /**
   * query_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#query_parameter AppmeshRoute#query_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#query_parameter AppmeshRoute#query_parameter}
   */
   readonly queryParameter?: AppmeshRouteSpecHttp2RouteMatchQueryParameter[] | cdktn.IResolvable;
 }
@@ -3055,7 +3055,7 @@ export interface AppmeshRouteSpecHttp2RouteMatch {
 export function appmeshRouteSpecHttp2RouteMatchToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchOutputReference | AppmeshRouteSpecHttp2RouteMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     method: cdktn.stringToTerraform(struct!.method),
@@ -3072,7 +3072,7 @@ export function appmeshRouteSpecHttp2RouteMatchToTerraform(struct?: AppmeshRoute
 export function appmeshRouteSpecHttp2RouteMatchToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchOutputReference | AppmeshRouteSpecHttp2RouteMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     method: {
@@ -3305,11 +3305,11 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktn.Comple
 }
 export interface AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -3317,7 +3317,7 @@ export interface AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout {
 export function appmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToTerraform(struct?: AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference | AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -3329,7 +3329,7 @@ export function appmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToTerraform(
 export function appmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference | AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -3416,21 +3416,21 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference
 }
 export interface AppmeshRouteSpecHttp2RouteRetryPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}
   */
   readonly httpRetryEvents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}
   */
   readonly maxRetries: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}
   */
   readonly tcpRetryEvents?: string[];
   /**
   * per_retry_timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
   */
   readonly perRetryTimeout: AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout;
 }
@@ -3438,7 +3438,7 @@ export interface AppmeshRouteSpecHttp2RouteRetryPolicy {
 export function appmeshRouteSpecHttp2RouteRetryPolicyToTerraform(struct?: AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference | AppmeshRouteSpecHttp2RouteRetryPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     http_retry_events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.httpRetryEvents),
@@ -3452,7 +3452,7 @@ export function appmeshRouteSpecHttp2RouteRetryPolicyToTerraform(struct?: Appmes
 export function appmeshRouteSpecHttp2RouteRetryPolicyToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference | AppmeshRouteSpecHttp2RouteRetryPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     http_retry_events: {
@@ -3595,11 +3595,11 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktn.
 }
 export interface AppmeshRouteSpecHttp2RouteTimeoutIdle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -3607,7 +3607,7 @@ export interface AppmeshRouteSpecHttp2RouteTimeoutIdle {
 export function appmeshRouteSpecHttp2RouteTimeoutIdleToTerraform(struct?: AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference | AppmeshRouteSpecHttp2RouteTimeoutIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -3619,7 +3619,7 @@ export function appmeshRouteSpecHttp2RouteTimeoutIdleToTerraform(struct?: Appmes
 export function appmeshRouteSpecHttp2RouteTimeoutIdleToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference | AppmeshRouteSpecHttp2RouteTimeoutIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -3706,11 +3706,11 @@ export class AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends cdktn.
 }
 export interface AppmeshRouteSpecHttp2RouteTimeoutPerRequest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -3718,7 +3718,7 @@ export interface AppmeshRouteSpecHttp2RouteTimeoutPerRequest {
 export function appmeshRouteSpecHttp2RouteTimeoutPerRequestToTerraform(struct?: AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference | AppmeshRouteSpecHttp2RouteTimeoutPerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -3730,7 +3730,7 @@ export function appmeshRouteSpecHttp2RouteTimeoutPerRequestToTerraform(struct?: 
 export function appmeshRouteSpecHttp2RouteTimeoutPerRequestToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference | AppmeshRouteSpecHttp2RouteTimeoutPerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -3819,13 +3819,13 @@ export interface AppmeshRouteSpecHttp2RouteTimeout {
   /**
   * idle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
   */
   readonly idle?: AppmeshRouteSpecHttp2RouteTimeoutIdle;
   /**
   * per_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
   */
   readonly perRequest?: AppmeshRouteSpecHttp2RouteTimeoutPerRequest;
 }
@@ -3833,7 +3833,7 @@ export interface AppmeshRouteSpecHttp2RouteTimeout {
 export function appmeshRouteSpecHttp2RouteTimeoutToTerraform(struct?: AppmeshRouteSpecHttp2RouteTimeoutOutputReference | AppmeshRouteSpecHttp2RouteTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     idle: appmeshRouteSpecHttp2RouteTimeoutIdleToTerraform(struct!.idle),
@@ -3845,7 +3845,7 @@ export function appmeshRouteSpecHttp2RouteTimeoutToTerraform(struct?: AppmeshRou
 export function appmeshRouteSpecHttp2RouteTimeoutToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteTimeoutOutputReference | AppmeshRouteSpecHttp2RouteTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     idle: {
@@ -3940,25 +3940,25 @@ export interface AppmeshRouteSpecHttp2Route {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#action AppmeshRoute#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#action AppmeshRoute#action}
   */
   readonly action: AppmeshRouteSpecHttp2RouteAction;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#match AppmeshRoute#match}
   */
   readonly match: AppmeshRouteSpecHttp2RouteMatch;
   /**
   * retry_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
   */
   readonly retryPolicy?: AppmeshRouteSpecHttp2RouteRetryPolicy;
   /**
   * timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
   */
   readonly timeout?: AppmeshRouteSpecHttp2RouteTimeout;
 }
@@ -3966,7 +3966,7 @@ export interface AppmeshRouteSpecHttp2Route {
 export function appmeshRouteSpecHttp2RouteToTerraform(struct?: AppmeshRouteSpecHttp2RouteOutputReference | AppmeshRouteSpecHttp2Route): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: appmeshRouteSpecHttp2RouteActionToTerraform(struct!.action),
@@ -3980,7 +3980,7 @@ export function appmeshRouteSpecHttp2RouteToTerraform(struct?: AppmeshRouteSpecH
 export function appmeshRouteSpecHttp2RouteToHclTerraform(struct?: AppmeshRouteSpecHttp2RouteOutputReference | AppmeshRouteSpecHttp2Route): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -4123,15 +4123,15 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktn.ComplexObje
 }
 export interface AppmeshRouteSpecHttpRouteActionWeightedTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#port AppmeshRoute#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#port AppmeshRoute#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}
   */
   readonly weight: number;
 }
@@ -4139,7 +4139,7 @@ export interface AppmeshRouteSpecHttpRouteActionWeightedTarget {
 export function appmeshRouteSpecHttpRouteActionWeightedTargetToTerraform(struct?: AppmeshRouteSpecHttpRouteActionWeightedTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -4152,7 +4152,7 @@ export function appmeshRouteSpecHttpRouteActionWeightedTargetToTerraform(struct?
 export function appmeshRouteSpecHttpRouteActionWeightedTargetToHclTerraform(struct?: AppmeshRouteSpecHttpRouteActionWeightedTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -4301,7 +4301,7 @@ export interface AppmeshRouteSpecHttpRouteAction {
   /**
   * weighted_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
   */
   readonly weightedTarget: AppmeshRouteSpecHttpRouteActionWeightedTarget[] | cdktn.IResolvable;
 }
@@ -4309,7 +4309,7 @@ export interface AppmeshRouteSpecHttpRouteAction {
 export function appmeshRouteSpecHttpRouteActionToTerraform(struct?: AppmeshRouteSpecHttpRouteActionOutputReference | AppmeshRouteSpecHttpRouteAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     weighted_target: cdktn.listMapper(appmeshRouteSpecHttpRouteActionWeightedTargetToTerraform, true)(struct!.weightedTarget),
@@ -4320,7 +4320,7 @@ export function appmeshRouteSpecHttpRouteActionToTerraform(struct?: AppmeshRoute
 export function appmeshRouteSpecHttpRouteActionToHclTerraform(struct?: AppmeshRouteSpecHttpRouteActionOutputReference | AppmeshRouteSpecHttpRouteAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     weighted_target: {
@@ -4382,11 +4382,11 @@ export class AppmeshRouteSpecHttpRouteActionOutputReference extends cdktn.Comple
 }
 export interface AppmeshRouteSpecHttpRouteMatchHeaderMatchRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#end AppmeshRoute#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#end AppmeshRoute#end}
   */
   readonly end: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#start AppmeshRoute#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#start AppmeshRoute#start}
   */
   readonly start: number;
 }
@@ -4394,7 +4394,7 @@ export interface AppmeshRouteSpecHttpRouteMatchHeaderMatchRange {
 export function appmeshRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference | AppmeshRouteSpecHttpRouteMatchHeaderMatchRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.numberToTerraform(struct!.end),
@@ -4406,7 +4406,7 @@ export function appmeshRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform(struct
 export function appmeshRouteSpecHttpRouteMatchHeaderMatchRangeToHclTerraform(struct?: AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference | AppmeshRouteSpecHttpRouteMatchHeaderMatchRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -4493,25 +4493,25 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference exten
 }
 export interface AppmeshRouteSpecHttpRouteMatchHeaderMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
   */
   readonly exact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#suffix AppmeshRoute#suffix}
   */
   readonly suffix?: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#range AppmeshRoute#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#range AppmeshRoute#range}
   */
   readonly range?: AppmeshRouteSpecHttpRouteMatchHeaderMatchRange;
 }
@@ -4519,7 +4519,7 @@ export interface AppmeshRouteSpecHttpRouteMatchHeaderMatch {
 export function appmeshRouteSpecHttpRouteMatchHeaderMatchToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference | AppmeshRouteSpecHttpRouteMatchHeaderMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exact: cdktn.stringToTerraform(struct!.exact),
@@ -4534,7 +4534,7 @@ export function appmeshRouteSpecHttpRouteMatchHeaderMatchToTerraform(struct?: Ap
 export function appmeshRouteSpecHttpRouteMatchHeaderMatchToHclTerraform(struct?: AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference | AppmeshRouteSpecHttpRouteMatchHeaderMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exact: {
@@ -4711,17 +4711,17 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cd
 }
 export interface AppmeshRouteSpecHttpRouteMatchHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#invert AppmeshRoute#invert}
   */
   readonly invert?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#name AppmeshRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#name AppmeshRoute#name}
   */
   readonly name: string;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecHttpRouteMatchHeaderMatch;
 }
@@ -4729,7 +4729,7 @@ export interface AppmeshRouteSpecHttpRouteMatchHeader {
 export function appmeshRouteSpecHttpRouteMatchHeaderToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     invert: cdktn.booleanToTerraform(struct!.invert),
@@ -4742,7 +4742,7 @@ export function appmeshRouteSpecHttpRouteMatchHeaderToTerraform(struct?: Appmesh
 export function appmeshRouteSpecHttpRouteMatchHeaderToHclTerraform(struct?: AppmeshRouteSpecHttpRouteMatchHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     invert: {
@@ -4892,11 +4892,11 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderList extends cdktn.ComplexList 
 }
 export interface AppmeshRouteSpecHttpRouteMatchPath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
   */
   readonly exact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#regex AppmeshRoute#regex}
   */
   readonly regex?: string;
 }
@@ -4904,7 +4904,7 @@ export interface AppmeshRouteSpecHttpRouteMatchPath {
 export function appmeshRouteSpecHttpRouteMatchPathToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchPathOutputReference | AppmeshRouteSpecHttpRouteMatchPath): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exact: cdktn.stringToTerraform(struct!.exact),
@@ -4916,7 +4916,7 @@ export function appmeshRouteSpecHttpRouteMatchPathToTerraform(struct?: AppmeshRo
 export function appmeshRouteSpecHttpRouteMatchPathToHclTerraform(struct?: AppmeshRouteSpecHttpRouteMatchPathOutputReference | AppmeshRouteSpecHttpRouteMatchPath): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exact: {
@@ -5009,7 +5009,7 @@ export class AppmeshRouteSpecHttpRouteMatchPathOutputReference extends cdktn.Com
 }
 export interface AppmeshRouteSpecHttpRouteMatchQueryParameterMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}
   */
   readonly exact?: string;
 }
@@ -5017,7 +5017,7 @@ export interface AppmeshRouteSpecHttpRouteMatchQueryParameterMatch {
 export function appmeshRouteSpecHttpRouteMatchQueryParameterMatchToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference | AppmeshRouteSpecHttpRouteMatchQueryParameterMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exact: cdktn.stringToTerraform(struct!.exact),
@@ -5028,7 +5028,7 @@ export function appmeshRouteSpecHttpRouteMatchQueryParameterMatchToTerraform(str
 export function appmeshRouteSpecHttpRouteMatchQueryParameterMatchToHclTerraform(struct?: AppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference | AppmeshRouteSpecHttpRouteMatchQueryParameterMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exact: {
@@ -5093,13 +5093,13 @@ export class AppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference ex
 }
 export interface AppmeshRouteSpecHttpRouteMatchQueryParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#name AppmeshRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#name AppmeshRoute#name}
   */
   readonly name: string;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecHttpRouteMatchQueryParameterMatch;
 }
@@ -5107,7 +5107,7 @@ export interface AppmeshRouteSpecHttpRouteMatchQueryParameter {
 export function appmeshRouteSpecHttpRouteMatchQueryParameterToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchQueryParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -5119,7 +5119,7 @@ export function appmeshRouteSpecHttpRouteMatchQueryParameterToTerraform(struct?:
 export function appmeshRouteSpecHttpRouteMatchQueryParameterToHclTerraform(struct?: AppmeshRouteSpecHttpRouteMatchQueryParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -5241,37 +5241,37 @@ export class AppmeshRouteSpecHttpRouteMatchQueryParameterList extends cdktn.Comp
 }
 export interface AppmeshRouteSpecHttpRouteMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#method AppmeshRoute#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#method AppmeshRoute#method}
   */
   readonly method?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#port AppmeshRoute#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#port AppmeshRoute#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#scheme AppmeshRoute#scheme}
   */
   readonly scheme?: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#header AppmeshRoute#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#header AppmeshRoute#header}
   */
   readonly header?: AppmeshRouteSpecHttpRouteMatchHeader[] | cdktn.IResolvable;
   /**
   * path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#path AppmeshRoute#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#path AppmeshRoute#path}
   */
   readonly path?: AppmeshRouteSpecHttpRouteMatchPath;
   /**
   * query_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#query_parameter AppmeshRoute#query_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#query_parameter AppmeshRoute#query_parameter}
   */
   readonly queryParameter?: AppmeshRouteSpecHttpRouteMatchQueryParameter[] | cdktn.IResolvable;
 }
@@ -5279,7 +5279,7 @@ export interface AppmeshRouteSpecHttpRouteMatch {
 export function appmeshRouteSpecHttpRouteMatchToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchOutputReference | AppmeshRouteSpecHttpRouteMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     method: cdktn.stringToTerraform(struct!.method),
@@ -5296,7 +5296,7 @@ export function appmeshRouteSpecHttpRouteMatchToTerraform(struct?: AppmeshRouteS
 export function appmeshRouteSpecHttpRouteMatchToHclTerraform(struct?: AppmeshRouteSpecHttpRouteMatchOutputReference | AppmeshRouteSpecHttpRouteMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     method: {
@@ -5529,11 +5529,11 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktn.Complex
 }
 export interface AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -5541,7 +5541,7 @@ export interface AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout {
 export function appmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToTerraform(struct?: AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference | AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -5553,7 +5553,7 @@ export function appmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToTerraform(s
 export function appmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToHclTerraform(struct?: AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference | AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -5640,21 +5640,21 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference 
 }
 export interface AppmeshRouteSpecHttpRouteRetryPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}
   */
   readonly httpRetryEvents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#max_retries AppmeshRoute#max_retries}
   */
   readonly maxRetries: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}
   */
   readonly tcpRetryEvents?: string[];
   /**
   * per_retry_timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
   */
   readonly perRetryTimeout: AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout;
 }
@@ -5662,7 +5662,7 @@ export interface AppmeshRouteSpecHttpRouteRetryPolicy {
 export function appmeshRouteSpecHttpRouteRetryPolicyToTerraform(struct?: AppmeshRouteSpecHttpRouteRetryPolicyOutputReference | AppmeshRouteSpecHttpRouteRetryPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     http_retry_events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.httpRetryEvents),
@@ -5676,7 +5676,7 @@ export function appmeshRouteSpecHttpRouteRetryPolicyToTerraform(struct?: Appmesh
 export function appmeshRouteSpecHttpRouteRetryPolicyToHclTerraform(struct?: AppmeshRouteSpecHttpRouteRetryPolicyOutputReference | AppmeshRouteSpecHttpRouteRetryPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     http_retry_events: {
@@ -5819,11 +5819,11 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktn.C
 }
 export interface AppmeshRouteSpecHttpRouteTimeoutIdle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -5831,7 +5831,7 @@ export interface AppmeshRouteSpecHttpRouteTimeoutIdle {
 export function appmeshRouteSpecHttpRouteTimeoutIdleToTerraform(struct?: AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference | AppmeshRouteSpecHttpRouteTimeoutIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -5843,7 +5843,7 @@ export function appmeshRouteSpecHttpRouteTimeoutIdleToTerraform(struct?: Appmesh
 export function appmeshRouteSpecHttpRouteTimeoutIdleToHclTerraform(struct?: AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference | AppmeshRouteSpecHttpRouteTimeoutIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -5930,11 +5930,11 @@ export class AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends cdktn.C
 }
 export interface AppmeshRouteSpecHttpRouteTimeoutPerRequest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -5942,7 +5942,7 @@ export interface AppmeshRouteSpecHttpRouteTimeoutPerRequest {
 export function appmeshRouteSpecHttpRouteTimeoutPerRequestToTerraform(struct?: AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference | AppmeshRouteSpecHttpRouteTimeoutPerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -5954,7 +5954,7 @@ export function appmeshRouteSpecHttpRouteTimeoutPerRequestToTerraform(struct?: A
 export function appmeshRouteSpecHttpRouteTimeoutPerRequestToHclTerraform(struct?: AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference | AppmeshRouteSpecHttpRouteTimeoutPerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -6043,13 +6043,13 @@ export interface AppmeshRouteSpecHttpRouteTimeout {
   /**
   * idle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
   */
   readonly idle?: AppmeshRouteSpecHttpRouteTimeoutIdle;
   /**
   * per_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#per_request AppmeshRoute#per_request}
   */
   readonly perRequest?: AppmeshRouteSpecHttpRouteTimeoutPerRequest;
 }
@@ -6057,7 +6057,7 @@ export interface AppmeshRouteSpecHttpRouteTimeout {
 export function appmeshRouteSpecHttpRouteTimeoutToTerraform(struct?: AppmeshRouteSpecHttpRouteTimeoutOutputReference | AppmeshRouteSpecHttpRouteTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     idle: appmeshRouteSpecHttpRouteTimeoutIdleToTerraform(struct!.idle),
@@ -6069,7 +6069,7 @@ export function appmeshRouteSpecHttpRouteTimeoutToTerraform(struct?: AppmeshRout
 export function appmeshRouteSpecHttpRouteTimeoutToHclTerraform(struct?: AppmeshRouteSpecHttpRouteTimeoutOutputReference | AppmeshRouteSpecHttpRouteTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     idle: {
@@ -6164,25 +6164,25 @@ export interface AppmeshRouteSpecHttpRoute {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#action AppmeshRoute#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#action AppmeshRoute#action}
   */
   readonly action: AppmeshRouteSpecHttpRouteAction;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#match AppmeshRoute#match}
   */
   readonly match: AppmeshRouteSpecHttpRouteMatch;
   /**
   * retry_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
   */
   readonly retryPolicy?: AppmeshRouteSpecHttpRouteRetryPolicy;
   /**
   * timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
   */
   readonly timeout?: AppmeshRouteSpecHttpRouteTimeout;
 }
@@ -6190,7 +6190,7 @@ export interface AppmeshRouteSpecHttpRoute {
 export function appmeshRouteSpecHttpRouteToTerraform(struct?: AppmeshRouteSpecHttpRouteOutputReference | AppmeshRouteSpecHttpRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: appmeshRouteSpecHttpRouteActionToTerraform(struct!.action),
@@ -6204,7 +6204,7 @@ export function appmeshRouteSpecHttpRouteToTerraform(struct?: AppmeshRouteSpecHt
 export function appmeshRouteSpecHttpRouteToHclTerraform(struct?: AppmeshRouteSpecHttpRouteOutputReference | AppmeshRouteSpecHttpRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -6347,15 +6347,15 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktn.ComplexObjec
 }
 export interface AppmeshRouteSpecTcpRouteActionWeightedTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#port AppmeshRoute#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#port AppmeshRoute#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#weight AppmeshRoute#weight}
   */
   readonly weight: number;
 }
@@ -6363,7 +6363,7 @@ export interface AppmeshRouteSpecTcpRouteActionWeightedTarget {
 export function appmeshRouteSpecTcpRouteActionWeightedTargetToTerraform(struct?: AppmeshRouteSpecTcpRouteActionWeightedTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -6376,7 +6376,7 @@ export function appmeshRouteSpecTcpRouteActionWeightedTargetToTerraform(struct?:
 export function appmeshRouteSpecTcpRouteActionWeightedTargetToHclTerraform(struct?: AppmeshRouteSpecTcpRouteActionWeightedTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -6525,7 +6525,7 @@ export interface AppmeshRouteSpecTcpRouteAction {
   /**
   * weighted_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
   */
   readonly weightedTarget: AppmeshRouteSpecTcpRouteActionWeightedTarget[] | cdktn.IResolvable;
 }
@@ -6533,7 +6533,7 @@ export interface AppmeshRouteSpecTcpRouteAction {
 export function appmeshRouteSpecTcpRouteActionToTerraform(struct?: AppmeshRouteSpecTcpRouteActionOutputReference | AppmeshRouteSpecTcpRouteAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     weighted_target: cdktn.listMapper(appmeshRouteSpecTcpRouteActionWeightedTargetToTerraform, true)(struct!.weightedTarget),
@@ -6544,7 +6544,7 @@ export function appmeshRouteSpecTcpRouteActionToTerraform(struct?: AppmeshRouteS
 export function appmeshRouteSpecTcpRouteActionToHclTerraform(struct?: AppmeshRouteSpecTcpRouteActionOutputReference | AppmeshRouteSpecTcpRouteAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     weighted_target: {
@@ -6606,7 +6606,7 @@ export class AppmeshRouteSpecTcpRouteActionOutputReference extends cdktn.Complex
 }
 export interface AppmeshRouteSpecTcpRouteMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#port AppmeshRoute#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#port AppmeshRoute#port}
   */
   readonly port?: number;
 }
@@ -6614,7 +6614,7 @@ export interface AppmeshRouteSpecTcpRouteMatch {
 export function appmeshRouteSpecTcpRouteMatchToTerraform(struct?: AppmeshRouteSpecTcpRouteMatchOutputReference | AppmeshRouteSpecTcpRouteMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -6625,7 +6625,7 @@ export function appmeshRouteSpecTcpRouteMatchToTerraform(struct?: AppmeshRouteSp
 export function appmeshRouteSpecTcpRouteMatchToHclTerraform(struct?: AppmeshRouteSpecTcpRouteMatchOutputReference | AppmeshRouteSpecTcpRouteMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -6690,11 +6690,11 @@ export class AppmeshRouteSpecTcpRouteMatchOutputReference extends cdktn.ComplexO
 }
 export interface AppmeshRouteSpecTcpRouteTimeoutIdle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -6702,7 +6702,7 @@ export interface AppmeshRouteSpecTcpRouteTimeoutIdle {
 export function appmeshRouteSpecTcpRouteTimeoutIdleToTerraform(struct?: AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference | AppmeshRouteSpecTcpRouteTimeoutIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -6714,7 +6714,7 @@ export function appmeshRouteSpecTcpRouteTimeoutIdleToTerraform(struct?: AppmeshR
 export function appmeshRouteSpecTcpRouteTimeoutIdleToHclTerraform(struct?: AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference | AppmeshRouteSpecTcpRouteTimeoutIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -6803,7 +6803,7 @@ export interface AppmeshRouteSpecTcpRouteTimeout {
   /**
   * idle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#idle AppmeshRoute#idle}
   */
   readonly idle?: AppmeshRouteSpecTcpRouteTimeoutIdle;
 }
@@ -6811,7 +6811,7 @@ export interface AppmeshRouteSpecTcpRouteTimeout {
 export function appmeshRouteSpecTcpRouteTimeoutToTerraform(struct?: AppmeshRouteSpecTcpRouteTimeoutOutputReference | AppmeshRouteSpecTcpRouteTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     idle: appmeshRouteSpecTcpRouteTimeoutIdleToTerraform(struct!.idle),
@@ -6822,7 +6822,7 @@ export function appmeshRouteSpecTcpRouteTimeoutToTerraform(struct?: AppmeshRoute
 export function appmeshRouteSpecTcpRouteTimeoutToHclTerraform(struct?: AppmeshRouteSpecTcpRouteTimeoutOutputReference | AppmeshRouteSpecTcpRouteTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     idle: {
@@ -6889,19 +6889,19 @@ export interface AppmeshRouteSpecTcpRoute {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#action AppmeshRoute#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#action AppmeshRoute#action}
   */
   readonly action: AppmeshRouteSpecTcpRouteAction;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecTcpRouteMatch;
   /**
   * timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
   */
   readonly timeout?: AppmeshRouteSpecTcpRouteTimeout;
 }
@@ -6909,7 +6909,7 @@ export interface AppmeshRouteSpecTcpRoute {
 export function appmeshRouteSpecTcpRouteToTerraform(struct?: AppmeshRouteSpecTcpRouteOutputReference | AppmeshRouteSpecTcpRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: appmeshRouteSpecTcpRouteActionToTerraform(struct!.action),
@@ -6922,7 +6922,7 @@ export function appmeshRouteSpecTcpRouteToTerraform(struct?: AppmeshRouteSpecTcp
 export function appmeshRouteSpecTcpRouteToHclTerraform(struct?: AppmeshRouteSpecTcpRouteOutputReference | AppmeshRouteSpecTcpRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -7040,31 +7040,31 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktn.ComplexObject
 }
 export interface AppmeshRouteSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#priority AppmeshRoute#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#priority AppmeshRoute#priority}
   */
   readonly priority?: number;
   /**
   * grpc_route block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#grpc_route AppmeshRoute#grpc_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#grpc_route AppmeshRoute#grpc_route}
   */
   readonly grpcRoute?: AppmeshRouteSpecGrpcRoute;
   /**
   * http2_route block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#http2_route AppmeshRoute#http2_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#http2_route AppmeshRoute#http2_route}
   */
   readonly http2Route?: AppmeshRouteSpecHttp2Route;
   /**
   * http_route block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#http_route AppmeshRoute#http_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#http_route AppmeshRoute#http_route}
   */
   readonly httpRoute?: AppmeshRouteSpecHttpRoute;
   /**
   * tcp_route block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#tcp_route AppmeshRoute#tcp_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#tcp_route AppmeshRoute#tcp_route}
   */
   readonly tcpRoute?: AppmeshRouteSpecTcpRoute;
 }
@@ -7072,7 +7072,7 @@ export interface AppmeshRouteSpec {
 export function appmeshRouteSpecToTerraform(struct?: AppmeshRouteSpecOutputReference | AppmeshRouteSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     priority: cdktn.numberToTerraform(struct!.priority),
@@ -7087,7 +7087,7 @@ export function appmeshRouteSpecToTerraform(struct?: AppmeshRouteSpecOutputRefer
 export function appmeshRouteSpecToHclTerraform(struct?: AppmeshRouteSpecOutputReference | AppmeshRouteSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     priority: {
@@ -7264,7 +7264,7 @@ export class AppmeshRouteSpecOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route aws_appmesh_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route aws_appmesh_route}
 */
 export class AppmeshRoute extends cdktn.TerraformResource {
 
@@ -7280,7 +7280,7 @@ export class AppmeshRoute extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AppmeshRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppmeshRoute to import
-  * @param importFromId The id of the existing AppmeshRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppmeshRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppmeshRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -7292,7 +7292,7 @@ export class AppmeshRoute extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/appmesh_route aws_appmesh_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/appmesh_route aws_appmesh_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -7303,7 +7303,7 @@ export class AppmeshRoute extends cdktn.TerraformResource {
       terraformResourceType: 'aws_appmesh_route',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

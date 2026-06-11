@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,112 +13,112 @@ import * as cdktn from 'cdktn';
 
 export interface EmrserverlessApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#architecture EmrserverlessApplication#architecture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#architecture EmrserverlessApplication#architecture}
   */
   readonly architecture?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#id EmrserverlessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#id EmrserverlessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#region EmrserverlessApplication#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#region EmrserverlessApplication#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#release_label EmrserverlessApplication#release_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#release_label EmrserverlessApplication#release_label}
   */
   readonly releaseLabel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#tags EmrserverlessApplication#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#tags EmrserverlessApplication#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#tags_all EmrserverlessApplication#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#tags_all EmrserverlessApplication#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#type EmrserverlessApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#type EmrserverlessApplication#type}
   */
   readonly type: string;
   /**
   * auto_start_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#auto_start_configuration EmrserverlessApplication#auto_start_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#auto_start_configuration EmrserverlessApplication#auto_start_configuration}
   */
   readonly autoStartConfiguration?: EmrserverlessApplicationAutoStartConfiguration;
   /**
   * auto_stop_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#auto_stop_configuration EmrserverlessApplication#auto_stop_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#auto_stop_configuration EmrserverlessApplication#auto_stop_configuration}
   */
   readonly autoStopConfiguration?: EmrserverlessApplicationAutoStopConfiguration;
   /**
   * image_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#image_configuration EmrserverlessApplication#image_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#image_configuration EmrserverlessApplication#image_configuration}
   */
   readonly imageConfiguration?: EmrserverlessApplicationImageConfiguration;
   /**
   * initial_capacity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#initial_capacity EmrserverlessApplication#initial_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#initial_capacity EmrserverlessApplication#initial_capacity}
   */
   readonly initialCapacity?: EmrserverlessApplicationInitialCapacity[] | cdktn.IResolvable;
   /**
   * interactive_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#interactive_configuration EmrserverlessApplication#interactive_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#interactive_configuration EmrserverlessApplication#interactive_configuration}
   */
   readonly interactiveConfiguration?: EmrserverlessApplicationInteractiveConfiguration;
   /**
   * job_level_cost_allocation_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#job_level_cost_allocation_configuration EmrserverlessApplication#job_level_cost_allocation_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#job_level_cost_allocation_configuration EmrserverlessApplication#job_level_cost_allocation_configuration}
   */
   readonly jobLevelCostAllocationConfiguration?: EmrserverlessApplicationJobLevelCostAllocationConfiguration;
   /**
   * maximum_capacity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#maximum_capacity EmrserverlessApplication#maximum_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#maximum_capacity EmrserverlessApplication#maximum_capacity}
   */
   readonly maximumCapacity?: EmrserverlessApplicationMaximumCapacity;
   /**
   * monitoring_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#monitoring_configuration EmrserverlessApplication#monitoring_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#monitoring_configuration EmrserverlessApplication#monitoring_configuration}
   */
   readonly monitoringConfiguration?: EmrserverlessApplicationMonitoringConfiguration;
   /**
   * network_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#network_configuration EmrserverlessApplication#network_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#network_configuration EmrserverlessApplication#network_configuration}
   */
   readonly networkConfiguration?: EmrserverlessApplicationNetworkConfiguration;
   /**
   * runtime_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#runtime_configuration EmrserverlessApplication#runtime_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#runtime_configuration EmrserverlessApplication#runtime_configuration}
   */
   readonly runtimeConfiguration?: EmrserverlessApplicationRuntimeConfiguration[] | cdktn.IResolvable;
   /**
   * scheduler_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#scheduler_configuration EmrserverlessApplication#scheduler_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#scheduler_configuration EmrserverlessApplication#scheduler_configuration}
   */
   readonly schedulerConfiguration?: EmrserverlessApplicationSchedulerConfiguration;
 }
 export interface EmrserverlessApplicationAutoStartConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -126,7 +126,7 @@ export interface EmrserverlessApplicationAutoStartConfiguration {
 export function emrserverlessApplicationAutoStartConfigurationToTerraform(struct?: EmrserverlessApplicationAutoStartConfigurationOutputReference | EmrserverlessApplicationAutoStartConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -137,7 +137,7 @@ export function emrserverlessApplicationAutoStartConfigurationToTerraform(struct
 export function emrserverlessApplicationAutoStartConfigurationToHclTerraform(struct?: EmrserverlessApplicationAutoStartConfigurationOutputReference | EmrserverlessApplicationAutoStartConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -202,11 +202,11 @@ export class EmrserverlessApplicationAutoStartConfigurationOutputReference exten
 }
 export interface EmrserverlessApplicationAutoStopConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#idle_timeout_minutes EmrserverlessApplication#idle_timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#idle_timeout_minutes EmrserverlessApplication#idle_timeout_minutes}
   */
   readonly idleTimeoutMinutes?: number;
 }
@@ -214,7 +214,7 @@ export interface EmrserverlessApplicationAutoStopConfiguration {
 export function emrserverlessApplicationAutoStopConfigurationToTerraform(struct?: EmrserverlessApplicationAutoStopConfigurationOutputReference | EmrserverlessApplicationAutoStopConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -226,7 +226,7 @@ export function emrserverlessApplicationAutoStopConfigurationToTerraform(struct?
 export function emrserverlessApplicationAutoStopConfigurationToHclTerraform(struct?: EmrserverlessApplicationAutoStopConfigurationOutputReference | EmrserverlessApplicationAutoStopConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -319,7 +319,7 @@ export class EmrserverlessApplicationAutoStopConfigurationOutputReference extend
 }
 export interface EmrserverlessApplicationImageConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#image_uri EmrserverlessApplication#image_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#image_uri EmrserverlessApplication#image_uri}
   */
   readonly imageUri: string;
 }
@@ -327,7 +327,7 @@ export interface EmrserverlessApplicationImageConfiguration {
 export function emrserverlessApplicationImageConfigurationToTerraform(struct?: EmrserverlessApplicationImageConfigurationOutputReference | EmrserverlessApplicationImageConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     image_uri: cdktn.stringToTerraform(struct!.imageUri),
@@ -338,7 +338,7 @@ export function emrserverlessApplicationImageConfigurationToTerraform(struct?: E
 export function emrserverlessApplicationImageConfigurationToHclTerraform(struct?: EmrserverlessApplicationImageConfigurationOutputReference | EmrserverlessApplicationImageConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     image_uri: {
@@ -400,15 +400,15 @@ export class EmrserverlessApplicationImageConfigurationOutputReference extends c
 }
 export interface EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}
   */
   readonly cpu: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}
   */
   readonly disk?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}
   */
   readonly memory: string;
 }
@@ -416,7 +416,7 @@ export interface EmrserverlessApplicationInitialCapacityInitialCapacityConfigWor
 export function emrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationToTerraform(struct?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference | EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cpu: cdktn.stringToTerraform(struct!.cpu),
@@ -429,7 +429,7 @@ export function emrserverlessApplicationInitialCapacityInitialCapacityConfigWork
 export function emrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationToHclTerraform(struct?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference | EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cpu: {
@@ -544,13 +544,13 @@ export class EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerC
 }
 export interface EmrserverlessApplicationInitialCapacityInitialCapacityConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#worker_count EmrserverlessApplication#worker_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#worker_count EmrserverlessApplication#worker_count}
   */
   readonly workerCount: number;
   /**
   * worker_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#worker_configuration EmrserverlessApplication#worker_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#worker_configuration EmrserverlessApplication#worker_configuration}
   */
   readonly workerConfiguration?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration;
 }
@@ -558,7 +558,7 @@ export interface EmrserverlessApplicationInitialCapacityInitialCapacityConfig {
 export function emrserverlessApplicationInitialCapacityInitialCapacityConfigToTerraform(struct?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference | EmrserverlessApplicationInitialCapacityInitialCapacityConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     worker_count: cdktn.numberToTerraform(struct!.workerCount),
@@ -570,7 +570,7 @@ export function emrserverlessApplicationInitialCapacityInitialCapacityConfigToTe
 export function emrserverlessApplicationInitialCapacityInitialCapacityConfigToHclTerraform(struct?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference | EmrserverlessApplicationInitialCapacityInitialCapacityConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     worker_count: {
@@ -660,13 +660,13 @@ export class EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputR
 }
 export interface EmrserverlessApplicationInitialCapacity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#initial_capacity_type EmrserverlessApplication#initial_capacity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#initial_capacity_type EmrserverlessApplication#initial_capacity_type}
   */
   readonly initialCapacityType: string;
   /**
   * initial_capacity_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#initial_capacity_config EmrserverlessApplication#initial_capacity_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#initial_capacity_config EmrserverlessApplication#initial_capacity_config}
   */
   readonly initialCapacityConfig?: EmrserverlessApplicationInitialCapacityInitialCapacityConfig;
 }
@@ -674,7 +674,7 @@ export interface EmrserverlessApplicationInitialCapacity {
 export function emrserverlessApplicationInitialCapacityToTerraform(struct?: EmrserverlessApplicationInitialCapacity | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     initial_capacity_type: cdktn.stringToTerraform(struct!.initialCapacityType),
@@ -686,7 +686,7 @@ export function emrserverlessApplicationInitialCapacityToTerraform(struct?: Emrs
 export function emrserverlessApplicationInitialCapacityToHclTerraform(struct?: EmrserverlessApplicationInitialCapacity | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     initial_capacity_type: {
@@ -808,11 +808,11 @@ export class EmrserverlessApplicationInitialCapacityList extends cdktn.ComplexLi
 }
 export interface EmrserverlessApplicationInteractiveConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#livy_endpoint_enabled EmrserverlessApplication#livy_endpoint_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#livy_endpoint_enabled EmrserverlessApplication#livy_endpoint_enabled}
   */
   readonly livyEndpointEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#studio_enabled EmrserverlessApplication#studio_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#studio_enabled EmrserverlessApplication#studio_enabled}
   */
   readonly studioEnabled?: boolean | cdktn.IResolvable;
 }
@@ -820,7 +820,7 @@ export interface EmrserverlessApplicationInteractiveConfiguration {
 export function emrserverlessApplicationInteractiveConfigurationToTerraform(struct?: EmrserverlessApplicationInteractiveConfigurationOutputReference | EmrserverlessApplicationInteractiveConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     livy_endpoint_enabled: cdktn.booleanToTerraform(struct!.livyEndpointEnabled),
@@ -832,7 +832,7 @@ export function emrserverlessApplicationInteractiveConfigurationToTerraform(stru
 export function emrserverlessApplicationInteractiveConfigurationToHclTerraform(struct?: EmrserverlessApplicationInteractiveConfigurationOutputReference | EmrserverlessApplicationInteractiveConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     livy_endpoint_enabled: {
@@ -925,7 +925,7 @@ export class EmrserverlessApplicationInteractiveConfigurationOutputReference ext
 }
 export interface EmrserverlessApplicationJobLevelCostAllocationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -933,7 +933,7 @@ export interface EmrserverlessApplicationJobLevelCostAllocationConfiguration {
 export function emrserverlessApplicationJobLevelCostAllocationConfigurationToTerraform(struct?: EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference | EmrserverlessApplicationJobLevelCostAllocationConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -944,7 +944,7 @@ export function emrserverlessApplicationJobLevelCostAllocationConfigurationToTer
 export function emrserverlessApplicationJobLevelCostAllocationConfigurationToHclTerraform(struct?: EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference | EmrserverlessApplicationJobLevelCostAllocationConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -1009,15 +1009,15 @@ export class EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputRe
 }
 export interface EmrserverlessApplicationMaximumCapacity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}
   */
   readonly cpu: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}
   */
   readonly disk?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}
   */
   readonly memory: string;
 }
@@ -1025,7 +1025,7 @@ export interface EmrserverlessApplicationMaximumCapacity {
 export function emrserverlessApplicationMaximumCapacityToTerraform(struct?: EmrserverlessApplicationMaximumCapacityOutputReference | EmrserverlessApplicationMaximumCapacity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cpu: cdktn.stringToTerraform(struct!.cpu),
@@ -1038,7 +1038,7 @@ export function emrserverlessApplicationMaximumCapacityToTerraform(struct?: Emrs
 export function emrserverlessApplicationMaximumCapacityToHclTerraform(struct?: EmrserverlessApplicationMaximumCapacityOutputReference | EmrserverlessApplicationMaximumCapacity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cpu: {
@@ -1153,11 +1153,11 @@ export class EmrserverlessApplicationMaximumCapacityOutputReference extends cdkt
 }
 export interface EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#values EmrserverlessApplication#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#values EmrserverlessApplication#values}
   */
   readonly values: string[];
 }
@@ -1165,7 +1165,7 @@ export interface EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggin
 export function emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1177,7 +1177,7 @@ export function emrserverlessApplicationMonitoringConfigurationCloudwatchLogging
 export function emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1296,25 +1296,25 @@ export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingCon
 }
 export interface EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}
   */
   readonly encryptionKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#log_group_name EmrserverlessApplication#log_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#log_group_name EmrserverlessApplication#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#log_stream_name_prefix EmrserverlessApplication#log_stream_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#log_stream_name_prefix EmrserverlessApplication#log_stream_name_prefix}
   */
   readonly logStreamNamePrefix?: string;
   /**
   * log_types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#log_types EmrserverlessApplication#log_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#log_types EmrserverlessApplication#log_types}
   */
   readonly logTypes?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes[] | cdktn.IResolvable;
 }
@@ -1322,7 +1322,7 @@ export interface EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggin
 export function emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -1337,7 +1337,7 @@ export function emrserverlessApplicationMonitoringConfigurationCloudwatchLogging
 export function emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -1511,11 +1511,11 @@ export class EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingCon
 }
 export interface EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}
   */
   readonly encryptionKeyArn?: string;
 }
@@ -1523,7 +1523,7 @@ export interface EmrserverlessApplicationMonitoringConfigurationManagedPersisten
 export function emrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -1535,7 +1535,7 @@ export function emrserverlessApplicationMonitoringConfigurationManagedPersistenc
 export function emrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -1628,7 +1628,7 @@ export class EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMo
 }
 export interface EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#remote_write_url EmrserverlessApplication#remote_write_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#remote_write_url EmrserverlessApplication#remote_write_url}
   */
   readonly remoteWriteUrl?: string;
 }
@@ -1636,7 +1636,7 @@ export interface EmrserverlessApplicationMonitoringConfigurationPrometheusMonito
 export function emrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     remote_write_url: cdktn.stringToTerraform(struct!.remoteWriteUrl),
@@ -1647,7 +1647,7 @@ export function emrserverlessApplicationMonitoringConfigurationPrometheusMonitor
 export function emrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     remote_write_url: {
@@ -1712,11 +1712,11 @@ export class EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoring
 }
 export interface EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}
   */
   readonly encryptionKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#log_uri EmrserverlessApplication#log_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#log_uri EmrserverlessApplication#log_uri}
   */
   readonly logUri?: string;
 }
@@ -1724,7 +1724,7 @@ export interface EmrserverlessApplicationMonitoringConfigurationS3MonitoringConf
 export function emrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     encryption_key_arn: cdktn.stringToTerraform(struct!.encryptionKeyArn),
@@ -1736,7 +1736,7 @@ export function emrserverlessApplicationMonitoringConfigurationS3MonitoringConfi
 export function emrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     encryption_key_arn: {
@@ -1831,25 +1831,25 @@ export interface EmrserverlessApplicationMonitoringConfiguration {
   /**
   * cloudwatch_logging_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#cloudwatch_logging_configuration EmrserverlessApplication#cloudwatch_logging_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#cloudwatch_logging_configuration EmrserverlessApplication#cloudwatch_logging_configuration}
   */
   readonly cloudwatchLoggingConfiguration?: EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration;
   /**
   * managed_persistence_monitoring_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#managed_persistence_monitoring_configuration EmrserverlessApplication#managed_persistence_monitoring_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#managed_persistence_monitoring_configuration EmrserverlessApplication#managed_persistence_monitoring_configuration}
   */
   readonly managedPersistenceMonitoringConfiguration?: EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration;
   /**
   * prometheus_monitoring_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#prometheus_monitoring_configuration EmrserverlessApplication#prometheus_monitoring_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#prometheus_monitoring_configuration EmrserverlessApplication#prometheus_monitoring_configuration}
   */
   readonly prometheusMonitoringConfiguration?: EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration;
   /**
   * s3_monitoring_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#s3_monitoring_configuration EmrserverlessApplication#s3_monitoring_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#s3_monitoring_configuration EmrserverlessApplication#s3_monitoring_configuration}
   */
   readonly s3MonitoringConfiguration?: EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration;
 }
@@ -1857,7 +1857,7 @@ export interface EmrserverlessApplicationMonitoringConfiguration {
 export function emrserverlessApplicationMonitoringConfigurationToTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudwatch_logging_configuration: emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationToTerraform(struct!.cloudwatchLoggingConfiguration),
@@ -1871,7 +1871,7 @@ export function emrserverlessApplicationMonitoringConfigurationToTerraform(struc
 export function emrserverlessApplicationMonitoringConfigurationToHclTerraform(struct?: EmrserverlessApplicationMonitoringConfigurationOutputReference | EmrserverlessApplicationMonitoringConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudwatch_logging_configuration: {
@@ -2020,11 +2020,11 @@ export class EmrserverlessApplicationMonitoringConfigurationOutputReference exte
 }
 export interface EmrserverlessApplicationNetworkConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#security_group_ids EmrserverlessApplication#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#security_group_ids EmrserverlessApplication#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#subnet_ids EmrserverlessApplication#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#subnet_ids EmrserverlessApplication#subnet_ids}
   */
   readonly subnetIds?: string[];
 }
@@ -2032,7 +2032,7 @@ export interface EmrserverlessApplicationNetworkConfiguration {
 export function emrserverlessApplicationNetworkConfigurationToTerraform(struct?: EmrserverlessApplicationNetworkConfigurationOutputReference | EmrserverlessApplicationNetworkConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
@@ -2044,7 +2044,7 @@ export function emrserverlessApplicationNetworkConfigurationToTerraform(struct?:
 export function emrserverlessApplicationNetworkConfigurationToHclTerraform(struct?: EmrserverlessApplicationNetworkConfigurationOutputReference | EmrserverlessApplicationNetworkConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     security_group_ids: {
@@ -2137,11 +2137,11 @@ export class EmrserverlessApplicationNetworkConfigurationOutputReference extends
 }
 export interface EmrserverlessApplicationRuntimeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#classification EmrserverlessApplication#classification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#classification EmrserverlessApplication#classification}
   */
   readonly classification: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#properties EmrserverlessApplication#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#properties EmrserverlessApplication#properties}
   */
   readonly properties?: { [key: string]: string };
 }
@@ -2149,7 +2149,7 @@ export interface EmrserverlessApplicationRuntimeConfiguration {
 export function emrserverlessApplicationRuntimeConfigurationToTerraform(struct?: EmrserverlessApplicationRuntimeConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     classification: cdktn.stringToTerraform(struct!.classification),
@@ -2161,7 +2161,7 @@ export function emrserverlessApplicationRuntimeConfigurationToTerraform(struct?:
 export function emrserverlessApplicationRuntimeConfigurationToHclTerraform(struct?: EmrserverlessApplicationRuntimeConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     classification: {
@@ -2283,11 +2283,11 @@ export class EmrserverlessApplicationRuntimeConfigurationList extends cdktn.Comp
 }
 export interface EmrserverlessApplicationSchedulerConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#max_concurrent_runs EmrserverlessApplication#max_concurrent_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#max_concurrent_runs EmrserverlessApplication#max_concurrent_runs}
   */
   readonly maxConcurrentRuns?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#queue_timeout_minutes EmrserverlessApplication#queue_timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#queue_timeout_minutes EmrserverlessApplication#queue_timeout_minutes}
   */
   readonly queueTimeoutMinutes?: number;
 }
@@ -2295,7 +2295,7 @@ export interface EmrserverlessApplicationSchedulerConfiguration {
 export function emrserverlessApplicationSchedulerConfigurationToTerraform(struct?: EmrserverlessApplicationSchedulerConfigurationOutputReference | EmrserverlessApplicationSchedulerConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_concurrent_runs: cdktn.numberToTerraform(struct!.maxConcurrentRuns),
@@ -2307,7 +2307,7 @@ export function emrserverlessApplicationSchedulerConfigurationToTerraform(struct
 export function emrserverlessApplicationSchedulerConfigurationToHclTerraform(struct?: EmrserverlessApplicationSchedulerConfigurationOutputReference | EmrserverlessApplicationSchedulerConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_concurrent_runs: {
@@ -2400,7 +2400,7 @@ export class EmrserverlessApplicationSchedulerConfigurationOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application aws_emrserverless_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application aws_emrserverless_application}
 */
 export class EmrserverlessApplication extends cdktn.TerraformResource {
 
@@ -2416,7 +2416,7 @@ export class EmrserverlessApplication extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EmrserverlessApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmrserverlessApplication to import
-  * @param importFromId The id of the existing EmrserverlessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmrserverlessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmrserverlessApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2428,7 +2428,7 @@ export class EmrserverlessApplication extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2439,7 +2439,7 @@ export class EmrserverlessApplication extends cdktn.TerraformResource {
       terraformResourceType: 'aws_emrserverless_application',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

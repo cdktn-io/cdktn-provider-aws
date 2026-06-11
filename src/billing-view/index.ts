@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +13,41 @@ import * as cdktn from 'cdktn';
 
 export interface BillingViewConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#description BillingView#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#description BillingView#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#name BillingView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#name BillingView#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#source_views BillingView#source_views}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#source_views BillingView#source_views}
   */
   readonly sourceViews?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#tags BillingView#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#tags BillingView#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * data_filter_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#data_filter_expression BillingView#data_filter_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#data_filter_expression BillingView#data_filter_expression}
   */
   readonly dataFilterExpression?: BillingViewDataFilterExpression[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#timeouts BillingView#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#timeouts BillingView#timeouts}
   */
   readonly timeouts?: BillingViewTimeouts;
 }
 export interface BillingViewDataFilterExpressionDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#key BillingView#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#key BillingView#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#values BillingView#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#values BillingView#values}
   */
   readonly values: string[];
 }
@@ -55,7 +55,7 @@ export interface BillingViewDataFilterExpressionDimensions {
 export function billingViewDataFilterExpressionDimensionsToTerraform(struct?: BillingViewDataFilterExpressionDimensions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -67,7 +67,7 @@ export function billingViewDataFilterExpressionDimensionsToTerraform(struct?: Bi
 export function billingViewDataFilterExpressionDimensionsToHclTerraform(struct?: BillingViewDataFilterExpressionDimensions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -186,11 +186,11 @@ export class BillingViewDataFilterExpressionDimensionsList extends cdktn.Complex
 }
 export interface BillingViewDataFilterExpressionTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#key BillingView#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#key BillingView#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#values BillingView#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#values BillingView#values}
   */
   readonly values: string[];
 }
@@ -198,7 +198,7 @@ export interface BillingViewDataFilterExpressionTags {
 export function billingViewDataFilterExpressionTagsToTerraform(struct?: BillingViewDataFilterExpressionTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -210,7 +210,7 @@ export function billingViewDataFilterExpressionTagsToTerraform(struct?: BillingV
 export function billingViewDataFilterExpressionTagsToHclTerraform(struct?: BillingViewDataFilterExpressionTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -329,11 +329,11 @@ export class BillingViewDataFilterExpressionTagsList extends cdktn.ComplexList {
 }
 export interface BillingViewDataFilterExpressionTimeRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#begin_date_inclusive BillingView#begin_date_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#begin_date_inclusive BillingView#begin_date_inclusive}
   */
   readonly beginDateInclusive: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#end_date_inclusive BillingView#end_date_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#end_date_inclusive BillingView#end_date_inclusive}
   */
   readonly endDateInclusive: string;
 }
@@ -341,7 +341,7 @@ export interface BillingViewDataFilterExpressionTimeRange {
 export function billingViewDataFilterExpressionTimeRangeToTerraform(struct?: BillingViewDataFilterExpressionTimeRange | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     begin_date_inclusive: cdktn.stringToTerraform(struct!.beginDateInclusive),
@@ -353,7 +353,7 @@ export function billingViewDataFilterExpressionTimeRangeToTerraform(struct?: Bil
 export function billingViewDataFilterExpressionTimeRangeToHclTerraform(struct?: BillingViewDataFilterExpressionTimeRange | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     begin_date_inclusive: {
@@ -474,19 +474,19 @@ export interface BillingViewDataFilterExpression {
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#dimensions BillingView#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#dimensions BillingView#dimensions}
   */
   readonly dimensions?: BillingViewDataFilterExpressionDimensions[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#tags BillingView#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#tags BillingView#tags}
   */
   readonly tags?: BillingViewDataFilterExpressionTags[] | cdktn.IResolvable;
   /**
   * time_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#time_range BillingView#time_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#time_range BillingView#time_range}
   */
   readonly timeRange?: BillingViewDataFilterExpressionTimeRange[] | cdktn.IResolvable;
 }
@@ -494,7 +494,7 @@ export interface BillingViewDataFilterExpression {
 export function billingViewDataFilterExpressionToTerraform(struct?: BillingViewDataFilterExpression | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dimensions: cdktn.listMapper(billingViewDataFilterExpressionDimensionsToTerraform, true)(struct!.dimensions),
@@ -507,7 +507,7 @@ export function billingViewDataFilterExpressionToTerraform(struct?: BillingViewD
 export function billingViewDataFilterExpressionToHclTerraform(struct?: BillingViewDataFilterExpression | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dimensions: {
@@ -662,19 +662,19 @@ export interface BillingViewTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#create BillingView#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#create BillingView#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#delete BillingView#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#delete BillingView#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#update BillingView#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#update BillingView#update}
   */
   readonly update?: string;
 }
@@ -682,7 +682,7 @@ export interface BillingViewTimeouts {
 export function billingViewTimeoutsToTerraform(struct?: BillingViewTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -695,7 +695,7 @@ export function billingViewTimeoutsToTerraform(struct?: BillingViewTimeouts | cd
 export function billingViewTimeoutsToHclTerraform(struct?: BillingViewTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -826,7 +826,7 @@ export class BillingViewTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view aws_billing_view}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view aws_billing_view}
 */
 export class BillingView extends cdktn.TerraformResource {
 
@@ -842,7 +842,7 @@ export class BillingView extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BillingView resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BillingView to import
-  * @param importFromId The id of the existing BillingView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BillingView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BillingView to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -854,7 +854,7 @@ export class BillingView extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/billing_view aws_billing_view} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/billing_view aws_billing_view} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -865,7 +865,7 @@ export class BillingView extends cdktn.TerraformResource {
       terraformResourceType: 'aws_billing_view',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktn from 'cdktn';
 
 export interface EvidentlyFeatureConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#default_variation EvidentlyFeature#default_variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#default_variation EvidentlyFeature#default_variation}
   */
   readonly defaultVariation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#description EvidentlyFeature#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#description EvidentlyFeature#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#entity_overrides EvidentlyFeature#entity_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#entity_overrides EvidentlyFeature#entity_overrides}
   */
   readonly entityOverrides?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#evaluation_strategy EvidentlyFeature#evaluation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#evaluation_strategy EvidentlyFeature#evaluation_strategy}
   */
   readonly evaluationStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#id EvidentlyFeature#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#id EvidentlyFeature#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#name EvidentlyFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#name EvidentlyFeature#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#project EvidentlyFeature#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#project EvidentlyFeature#project}
   */
   readonly project: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#region EvidentlyFeature#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#region EvidentlyFeature#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#tags EvidentlyFeature#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#tags EvidentlyFeature#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#tags_all EvidentlyFeature#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#tags_all EvidentlyFeature#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#timeouts EvidentlyFeature#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#timeouts EvidentlyFeature#timeouts}
   */
   readonly timeouts?: EvidentlyFeatureTimeouts;
   /**
   * variations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#variations EvidentlyFeature#variations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#variations EvidentlyFeature#variations}
   */
   readonly variations: EvidentlyFeatureVariations[] | cdktn.IResolvable;
 }
@@ -76,7 +76,7 @@ export interface EvidentlyFeatureEvaluationRules {
 export function evidentlyFeatureEvaluationRulesToTerraform(struct?: EvidentlyFeatureEvaluationRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -86,7 +86,7 @@ export function evidentlyFeatureEvaluationRulesToTerraform(struct?: EvidentlyFea
 export function evidentlyFeatureEvaluationRulesToHclTerraform(struct?: EvidentlyFeatureEvaluationRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -152,15 +152,15 @@ export class EvidentlyFeatureEvaluationRulesList extends cdktn.ComplexList {
 }
 export interface EvidentlyFeatureTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#create EvidentlyFeature#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#create EvidentlyFeature#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#delete EvidentlyFeature#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#delete EvidentlyFeature#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#update EvidentlyFeature#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#update EvidentlyFeature#update}
   */
   readonly update?: string;
 }
@@ -168,7 +168,7 @@ export interface EvidentlyFeatureTimeouts {
 export function evidentlyFeatureTimeoutsToTerraform(struct?: EvidentlyFeatureTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -181,7 +181,7 @@ export function evidentlyFeatureTimeoutsToTerraform(struct?: EvidentlyFeatureTim
 export function evidentlyFeatureTimeoutsToHclTerraform(struct?: EvidentlyFeatureTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -312,19 +312,19 @@ export class EvidentlyFeatureTimeoutsOutputReference extends cdktn.ComplexObject
 }
 export interface EvidentlyFeatureVariationsValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#bool_value EvidentlyFeature#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#bool_value EvidentlyFeature#bool_value}
   */
   readonly boolValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#double_value EvidentlyFeature#double_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#double_value EvidentlyFeature#double_value}
   */
   readonly doubleValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#long_value EvidentlyFeature#long_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#long_value EvidentlyFeature#long_value}
   */
   readonly longValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#string_value EvidentlyFeature#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#string_value EvidentlyFeature#string_value}
   */
   readonly stringValue?: string;
 }
@@ -332,7 +332,7 @@ export interface EvidentlyFeatureVariationsValue {
 export function evidentlyFeatureVariationsValueToTerraform(struct?: EvidentlyFeatureVariationsValueOutputReference | EvidentlyFeatureVariationsValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bool_value: cdktn.stringToTerraform(struct!.boolValue),
@@ -346,7 +346,7 @@ export function evidentlyFeatureVariationsValueToTerraform(struct?: EvidentlyFea
 export function evidentlyFeatureVariationsValueToHclTerraform(struct?: EvidentlyFeatureVariationsValueOutputReference | EvidentlyFeatureVariationsValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bool_value: {
@@ -495,13 +495,13 @@ export class EvidentlyFeatureVariationsValueOutputReference extends cdktn.Comple
 }
 export interface EvidentlyFeatureVariations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#name EvidentlyFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#name EvidentlyFeature#name}
   */
   readonly name: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#value EvidentlyFeature#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#value EvidentlyFeature#value}
   */
   readonly value: EvidentlyFeatureVariationsValue;
 }
@@ -509,7 +509,7 @@ export interface EvidentlyFeatureVariations {
 export function evidentlyFeatureVariationsToTerraform(struct?: EvidentlyFeatureVariations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -521,7 +521,7 @@ export function evidentlyFeatureVariationsToTerraform(struct?: EvidentlyFeatureV
 export function evidentlyFeatureVariationsToHclTerraform(struct?: EvidentlyFeatureVariations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -640,7 +640,7 @@ export class EvidentlyFeatureVariationsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature aws_evidently_feature}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature aws_evidently_feature}
 */
 export class EvidentlyFeature extends cdktn.TerraformResource {
 
@@ -656,7 +656,7 @@ export class EvidentlyFeature extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EvidentlyFeature resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EvidentlyFeature to import
-  * @param importFromId The id of the existing EvidentlyFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EvidentlyFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EvidentlyFeature to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -668,7 +668,7 @@ export class EvidentlyFeature extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/evidently_feature aws_evidently_feature} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/evidently_feature aws_evidently_feature} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -679,7 +679,7 @@ export class EvidentlyFeature extends cdktn.TerraformResource {
       terraformResourceType: 'aws_evidently_feature',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

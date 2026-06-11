@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsCeTagsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#id DataAwsCeTags#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#id DataAwsCeTags#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#search_string DataAwsCeTags#search_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#search_string DataAwsCeTags#search_string}
   */
   readonly searchString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#tag_key DataAwsCeTags#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#tag_key DataAwsCeTags#tag_key}
   */
   readonly tagKey?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#filter DataAwsCeTags#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#filter DataAwsCeTags#filter}
   */
   readonly filter?: DataAwsCeTagsFilter;
   /**
   * sort_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#sort_by DataAwsCeTags#sort_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#sort_by DataAwsCeTags#sort_by}
   */
   readonly sortBy?: DataAwsCeTagsSortBy[] | cdktn.IResolvable;
   /**
   * time_period block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#time_period DataAwsCeTags#time_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#time_period DataAwsCeTags#time_period}
   */
   readonly timePeriod: DataAwsCeTagsTimePeriod;
 }
 export interface DataAwsCeTagsFilterAndCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -64,7 +64,7 @@ export interface DataAwsCeTagsFilterAndCostCategory {
 export function dataAwsCeTagsFilterAndCostCategoryToTerraform(struct?: DataAwsCeTagsFilterAndCostCategoryOutputReference | DataAwsCeTagsFilterAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -77,7 +77,7 @@ export function dataAwsCeTagsFilterAndCostCategoryToTerraform(struct?: DataAwsCe
 export function dataAwsCeTagsFilterAndCostCategoryToHclTerraform(struct?: DataAwsCeTagsFilterAndCostCategoryOutputReference | DataAwsCeTagsFilterAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -198,15 +198,15 @@ export class DataAwsCeTagsFilterAndCostCategoryOutputReference extends cdktn.Com
 }
 export interface DataAwsCeTagsFilterAndDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -214,7 +214,7 @@ export interface DataAwsCeTagsFilterAndDimension {
 export function dataAwsCeTagsFilterAndDimensionToTerraform(struct?: DataAwsCeTagsFilterAndDimensionOutputReference | DataAwsCeTagsFilterAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -227,7 +227,7 @@ export function dataAwsCeTagsFilterAndDimensionToTerraform(struct?: DataAwsCeTag
 export function dataAwsCeTagsFilterAndDimensionToHclTerraform(struct?: DataAwsCeTagsFilterAndDimensionOutputReference | DataAwsCeTagsFilterAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -348,15 +348,15 @@ export class DataAwsCeTagsFilterAndDimensionOutputReference extends cdktn.Comple
 }
 export interface DataAwsCeTagsFilterAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -364,7 +364,7 @@ export interface DataAwsCeTagsFilterAndTags {
 export function dataAwsCeTagsFilterAndTagsToTerraform(struct?: DataAwsCeTagsFilterAndTagsOutputReference | DataAwsCeTagsFilterAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -377,7 +377,7 @@ export function dataAwsCeTagsFilterAndTagsToTerraform(struct?: DataAwsCeTagsFilt
 export function dataAwsCeTagsFilterAndTagsToHclTerraform(struct?: DataAwsCeTagsFilterAndTagsOutputReference | DataAwsCeTagsFilterAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -500,19 +500,19 @@ export interface DataAwsCeTagsFilterAnd {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
   */
   readonly costCategory?: DataAwsCeTagsFilterAndCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
   */
   readonly dimension?: DataAwsCeTagsFilterAndDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
   */
   readonly tags?: DataAwsCeTagsFilterAndTags;
 }
@@ -520,7 +520,7 @@ export interface DataAwsCeTagsFilterAnd {
 export function dataAwsCeTagsFilterAndToTerraform(struct?: DataAwsCeTagsFilterAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: dataAwsCeTagsFilterAndCostCategoryToTerraform(struct!.costCategory),
@@ -533,7 +533,7 @@ export function dataAwsCeTagsFilterAndToTerraform(struct?: DataAwsCeTagsFilterAn
 export function dataAwsCeTagsFilterAndToHclTerraform(struct?: DataAwsCeTagsFilterAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -686,15 +686,15 @@ export class DataAwsCeTagsFilterAndList extends cdktn.ComplexList {
 }
 export interface DataAwsCeTagsFilterCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -702,7 +702,7 @@ export interface DataAwsCeTagsFilterCostCategory {
 export function dataAwsCeTagsFilterCostCategoryToTerraform(struct?: DataAwsCeTagsFilterCostCategoryOutputReference | DataAwsCeTagsFilterCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -715,7 +715,7 @@ export function dataAwsCeTagsFilterCostCategoryToTerraform(struct?: DataAwsCeTag
 export function dataAwsCeTagsFilterCostCategoryToHclTerraform(struct?: DataAwsCeTagsFilterCostCategoryOutputReference | DataAwsCeTagsFilterCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -836,15 +836,15 @@ export class DataAwsCeTagsFilterCostCategoryOutputReference extends cdktn.Comple
 }
 export interface DataAwsCeTagsFilterDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -852,7 +852,7 @@ export interface DataAwsCeTagsFilterDimension {
 export function dataAwsCeTagsFilterDimensionToTerraform(struct?: DataAwsCeTagsFilterDimensionOutputReference | DataAwsCeTagsFilterDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -865,7 +865,7 @@ export function dataAwsCeTagsFilterDimensionToTerraform(struct?: DataAwsCeTagsFi
 export function dataAwsCeTagsFilterDimensionToHclTerraform(struct?: DataAwsCeTagsFilterDimensionOutputReference | DataAwsCeTagsFilterDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -986,15 +986,15 @@ export class DataAwsCeTagsFilterDimensionOutputReference extends cdktn.ComplexOb
 }
 export interface DataAwsCeTagsFilterNotCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -1002,7 +1002,7 @@ export interface DataAwsCeTagsFilterNotCostCategory {
 export function dataAwsCeTagsFilterNotCostCategoryToTerraform(struct?: DataAwsCeTagsFilterNotCostCategoryOutputReference | DataAwsCeTagsFilterNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1015,7 +1015,7 @@ export function dataAwsCeTagsFilterNotCostCategoryToTerraform(struct?: DataAwsCe
 export function dataAwsCeTagsFilterNotCostCategoryToHclTerraform(struct?: DataAwsCeTagsFilterNotCostCategoryOutputReference | DataAwsCeTagsFilterNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1136,15 +1136,15 @@ export class DataAwsCeTagsFilterNotCostCategoryOutputReference extends cdktn.Com
 }
 export interface DataAwsCeTagsFilterNotDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -1152,7 +1152,7 @@ export interface DataAwsCeTagsFilterNotDimension {
 export function dataAwsCeTagsFilterNotDimensionToTerraform(struct?: DataAwsCeTagsFilterNotDimensionOutputReference | DataAwsCeTagsFilterNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1165,7 +1165,7 @@ export function dataAwsCeTagsFilterNotDimensionToTerraform(struct?: DataAwsCeTag
 export function dataAwsCeTagsFilterNotDimensionToHclTerraform(struct?: DataAwsCeTagsFilterNotDimensionOutputReference | DataAwsCeTagsFilterNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1286,15 +1286,15 @@ export class DataAwsCeTagsFilterNotDimensionOutputReference extends cdktn.Comple
 }
 export interface DataAwsCeTagsFilterNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -1302,7 +1302,7 @@ export interface DataAwsCeTagsFilterNotTags {
 export function dataAwsCeTagsFilterNotTagsToTerraform(struct?: DataAwsCeTagsFilterNotTagsOutputReference | DataAwsCeTagsFilterNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1315,7 +1315,7 @@ export function dataAwsCeTagsFilterNotTagsToTerraform(struct?: DataAwsCeTagsFilt
 export function dataAwsCeTagsFilterNotTagsToHclTerraform(struct?: DataAwsCeTagsFilterNotTagsOutputReference | DataAwsCeTagsFilterNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1438,19 +1438,19 @@ export interface DataAwsCeTagsFilterNot {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
   */
   readonly costCategory?: DataAwsCeTagsFilterNotCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
   */
   readonly dimension?: DataAwsCeTagsFilterNotDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
   */
   readonly tags?: DataAwsCeTagsFilterNotTags;
 }
@@ -1458,7 +1458,7 @@ export interface DataAwsCeTagsFilterNot {
 export function dataAwsCeTagsFilterNotToTerraform(struct?: DataAwsCeTagsFilterNotOutputReference | DataAwsCeTagsFilterNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: dataAwsCeTagsFilterNotCostCategoryToTerraform(struct!.costCategory),
@@ -1471,7 +1471,7 @@ export function dataAwsCeTagsFilterNotToTerraform(struct?: DataAwsCeTagsFilterNo
 export function dataAwsCeTagsFilterNotToHclTerraform(struct?: DataAwsCeTagsFilterNotOutputReference | DataAwsCeTagsFilterNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -1592,15 +1592,15 @@ export class DataAwsCeTagsFilterNotOutputReference extends cdktn.ComplexObject {
 }
 export interface DataAwsCeTagsFilterOrCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -1608,7 +1608,7 @@ export interface DataAwsCeTagsFilterOrCostCategory {
 export function dataAwsCeTagsFilterOrCostCategoryToTerraform(struct?: DataAwsCeTagsFilterOrCostCategoryOutputReference | DataAwsCeTagsFilterOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1621,7 +1621,7 @@ export function dataAwsCeTagsFilterOrCostCategoryToTerraform(struct?: DataAwsCeT
 export function dataAwsCeTagsFilterOrCostCategoryToHclTerraform(struct?: DataAwsCeTagsFilterOrCostCategoryOutputReference | DataAwsCeTagsFilterOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1742,15 +1742,15 @@ export class DataAwsCeTagsFilterOrCostCategoryOutputReference extends cdktn.Comp
 }
 export interface DataAwsCeTagsFilterOrDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -1758,7 +1758,7 @@ export interface DataAwsCeTagsFilterOrDimension {
 export function dataAwsCeTagsFilterOrDimensionToTerraform(struct?: DataAwsCeTagsFilterOrDimensionOutputReference | DataAwsCeTagsFilterOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1771,7 +1771,7 @@ export function dataAwsCeTagsFilterOrDimensionToTerraform(struct?: DataAwsCeTags
 export function dataAwsCeTagsFilterOrDimensionToHclTerraform(struct?: DataAwsCeTagsFilterOrDimensionOutputReference | DataAwsCeTagsFilterOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1892,15 +1892,15 @@ export class DataAwsCeTagsFilterOrDimensionOutputReference extends cdktn.Complex
 }
 export interface DataAwsCeTagsFilterOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -1908,7 +1908,7 @@ export interface DataAwsCeTagsFilterOrTags {
 export function dataAwsCeTagsFilterOrTagsToTerraform(struct?: DataAwsCeTagsFilterOrTagsOutputReference | DataAwsCeTagsFilterOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1921,7 +1921,7 @@ export function dataAwsCeTagsFilterOrTagsToTerraform(struct?: DataAwsCeTagsFilte
 export function dataAwsCeTagsFilterOrTagsToHclTerraform(struct?: DataAwsCeTagsFilterOrTagsOutputReference | DataAwsCeTagsFilterOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2044,19 +2044,19 @@ export interface DataAwsCeTagsFilterOr {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
   */
   readonly costCategory?: DataAwsCeTagsFilterOrCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
   */
   readonly dimension?: DataAwsCeTagsFilterOrDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
   */
   readonly tags?: DataAwsCeTagsFilterOrTags;
 }
@@ -2064,7 +2064,7 @@ export interface DataAwsCeTagsFilterOr {
 export function dataAwsCeTagsFilterOrToTerraform(struct?: DataAwsCeTagsFilterOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: dataAwsCeTagsFilterOrCostCategoryToTerraform(struct!.costCategory),
@@ -2077,7 +2077,7 @@ export function dataAwsCeTagsFilterOrToTerraform(struct?: DataAwsCeTagsFilterOr 
 export function dataAwsCeTagsFilterOrToHclTerraform(struct?: DataAwsCeTagsFilterOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -2230,15 +2230,15 @@ export class DataAwsCeTagsFilterOrList extends cdktn.ComplexList {
 }
 export interface DataAwsCeTagsFilterTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#match_options DataAwsCeTags#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#values DataAwsCeTags#values}
   */
   readonly values?: string[];
 }
@@ -2246,7 +2246,7 @@ export interface DataAwsCeTagsFilterTags {
 export function dataAwsCeTagsFilterTagsToTerraform(struct?: DataAwsCeTagsFilterTagsOutputReference | DataAwsCeTagsFilterTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2259,7 +2259,7 @@ export function dataAwsCeTagsFilterTagsToTerraform(struct?: DataAwsCeTagsFilterT
 export function dataAwsCeTagsFilterTagsToHclTerraform(struct?: DataAwsCeTagsFilterTagsOutputReference | DataAwsCeTagsFilterTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2382,37 +2382,37 @@ export interface DataAwsCeTagsFilter {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#and DataAwsCeTags#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#and DataAwsCeTags#and}
   */
   readonly and?: DataAwsCeTagsFilterAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
   */
   readonly costCategory?: DataAwsCeTagsFilterCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
   */
   readonly dimension?: DataAwsCeTagsFilterDimension;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#not DataAwsCeTags#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#not DataAwsCeTags#not}
   */
   readonly not?: DataAwsCeTagsFilterNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#or DataAwsCeTags#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#or DataAwsCeTags#or}
   */
   readonly or?: DataAwsCeTagsFilterOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
   */
   readonly tags?: DataAwsCeTagsFilterTags;
 }
@@ -2420,7 +2420,7 @@ export interface DataAwsCeTagsFilter {
 export function dataAwsCeTagsFilterToTerraform(struct?: DataAwsCeTagsFilterOutputReference | DataAwsCeTagsFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(dataAwsCeTagsFilterAndToTerraform, true)(struct!.and),
@@ -2436,7 +2436,7 @@ export function dataAwsCeTagsFilterToTerraform(struct?: DataAwsCeTagsFilterOutpu
 export function dataAwsCeTagsFilterToHclTerraform(struct?: DataAwsCeTagsFilterOutputReference | DataAwsCeTagsFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -2641,11 +2641,11 @@ export class DataAwsCeTagsFilterOutputReference extends cdktn.ComplexObject {
 }
 export interface DataAwsCeTagsSortBy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#key DataAwsCeTags#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#sort_order DataAwsCeTags#sort_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#sort_order DataAwsCeTags#sort_order}
   */
   readonly sortOrder?: string;
 }
@@ -2653,7 +2653,7 @@ export interface DataAwsCeTagsSortBy {
 export function dataAwsCeTagsSortByToTerraform(struct?: DataAwsCeTagsSortBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2665,7 +2665,7 @@ export function dataAwsCeTagsSortByToTerraform(struct?: DataAwsCeTagsSortBy | cd
 export function dataAwsCeTagsSortByToHclTerraform(struct?: DataAwsCeTagsSortBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2790,11 +2790,11 @@ export class DataAwsCeTagsSortByList extends cdktn.ComplexList {
 }
 export interface DataAwsCeTagsTimePeriod {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#end DataAwsCeTags#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#end DataAwsCeTags#end}
   */
   readonly end: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#start DataAwsCeTags#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#start DataAwsCeTags#start}
   */
   readonly start: string;
 }
@@ -2802,7 +2802,7 @@ export interface DataAwsCeTagsTimePeriod {
 export function dataAwsCeTagsTimePeriodToTerraform(struct?: DataAwsCeTagsTimePeriodOutputReference | DataAwsCeTagsTimePeriod): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -2814,7 +2814,7 @@ export function dataAwsCeTagsTimePeriodToTerraform(struct?: DataAwsCeTagsTimePer
 export function dataAwsCeTagsTimePeriodToHclTerraform(struct?: DataAwsCeTagsTimePeriodOutputReference | DataAwsCeTagsTimePeriod): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -2901,7 +2901,7 @@ export class DataAwsCeTagsTimePeriodOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags aws_ce_tags}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags aws_ce_tags}
 */
 export class DataAwsCeTags extends cdktn.TerraformDataSource {
 
@@ -2917,7 +2917,7 @@ export class DataAwsCeTags extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsCeTags resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCeTags to import
-  * @param importFromId The id of the existing DataAwsCeTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCeTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCeTags to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2929,7 +2929,7 @@ export class DataAwsCeTags extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_tags aws_ce_tags} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_tags aws_ce_tags} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2940,7 +2940,7 @@ export class DataAwsCeTags extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_ce_tags',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

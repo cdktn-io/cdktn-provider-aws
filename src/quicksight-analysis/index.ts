@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,84 +13,84 @@ import * as cdktn from 'cdktn';
 
 export interface QuicksightAnalysisConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}
   */
   readonly analysisId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}
   */
   readonly recoveryWindowInDays?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#region QuicksightAnalysis#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#region QuicksightAnalysis#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}
   */
   readonly themeArn?: string;
   /**
   * definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#definition QuicksightAnalysis#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#definition QuicksightAnalysis#definition}
   */
   readonly definition?: any;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#parameters QuicksightAnalysis#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#parameters QuicksightAnalysis#parameters}
   */
   readonly parameters?: QuicksightAnalysisParameters;
   /**
   * permissions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#permissions QuicksightAnalysis#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#permissions QuicksightAnalysis#permissions}
   */
   readonly permissions?: QuicksightAnalysisPermissions[] | cdktn.IResolvable;
   /**
   * source_entity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#source_entity QuicksightAnalysis#source_entity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#source_entity QuicksightAnalysis#source_entity}
   */
   readonly sourceEntity?: QuicksightAnalysisSourceEntity;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#timeouts QuicksightAnalysis#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#timeouts QuicksightAnalysis#timeouts}
   */
   readonly timeouts?: QuicksightAnalysisTimeouts;
 }
 export interface QuicksightAnalysisParametersDateTimeParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}
   */
   readonly values: string[];
 }
@@ -98,7 +98,7 @@ export interface QuicksightAnalysisParametersDateTimeParameters {
 export function quicksightAnalysisParametersDateTimeParametersToTerraform(struct?: QuicksightAnalysisParametersDateTimeParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -110,7 +110,7 @@ export function quicksightAnalysisParametersDateTimeParametersToTerraform(struct
 export function quicksightAnalysisParametersDateTimeParametersToHclTerraform(struct?: QuicksightAnalysisParametersDateTimeParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -229,11 +229,11 @@ export class QuicksightAnalysisParametersDateTimeParametersList extends cdktn.Co
 }
 export interface QuicksightAnalysisParametersDecimalParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}
   */
   readonly values: number[];
 }
@@ -241,7 +241,7 @@ export interface QuicksightAnalysisParametersDecimalParameters {
 export function quicksightAnalysisParametersDecimalParametersToTerraform(struct?: QuicksightAnalysisParametersDecimalParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -253,7 +253,7 @@ export function quicksightAnalysisParametersDecimalParametersToTerraform(struct?
 export function quicksightAnalysisParametersDecimalParametersToHclTerraform(struct?: QuicksightAnalysisParametersDecimalParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -372,11 +372,11 @@ export class QuicksightAnalysisParametersDecimalParametersList extends cdktn.Com
 }
 export interface QuicksightAnalysisParametersIntegerParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}
   */
   readonly values: number[];
 }
@@ -384,7 +384,7 @@ export interface QuicksightAnalysisParametersIntegerParameters {
 export function quicksightAnalysisParametersIntegerParametersToTerraform(struct?: QuicksightAnalysisParametersIntegerParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -396,7 +396,7 @@ export function quicksightAnalysisParametersIntegerParametersToTerraform(struct?
 export function quicksightAnalysisParametersIntegerParametersToHclTerraform(struct?: QuicksightAnalysisParametersIntegerParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -515,11 +515,11 @@ export class QuicksightAnalysisParametersIntegerParametersList extends cdktn.Com
 }
 export interface QuicksightAnalysisParametersStringParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}
   */
   readonly values: string[];
 }
@@ -527,7 +527,7 @@ export interface QuicksightAnalysisParametersStringParameters {
 export function quicksightAnalysisParametersStringParametersToTerraform(struct?: QuicksightAnalysisParametersStringParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -539,7 +539,7 @@ export function quicksightAnalysisParametersStringParametersToTerraform(struct?:
 export function quicksightAnalysisParametersStringParametersToHclTerraform(struct?: QuicksightAnalysisParametersStringParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -660,25 +660,25 @@ export interface QuicksightAnalysisParameters {
   /**
   * date_time_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#date_time_parameters QuicksightAnalysis#date_time_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#date_time_parameters QuicksightAnalysis#date_time_parameters}
   */
   readonly dateTimeParameters?: QuicksightAnalysisParametersDateTimeParameters[] | cdktn.IResolvable;
   /**
   * decimal_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#decimal_parameters QuicksightAnalysis#decimal_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#decimal_parameters QuicksightAnalysis#decimal_parameters}
   */
   readonly decimalParameters?: QuicksightAnalysisParametersDecimalParameters[] | cdktn.IResolvable;
   /**
   * integer_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#integer_parameters QuicksightAnalysis#integer_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#integer_parameters QuicksightAnalysis#integer_parameters}
   */
   readonly integerParameters?: QuicksightAnalysisParametersIntegerParameters[] | cdktn.IResolvable;
   /**
   * string_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#string_parameters QuicksightAnalysis#string_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#string_parameters QuicksightAnalysis#string_parameters}
   */
   readonly stringParameters?: QuicksightAnalysisParametersStringParameters[] | cdktn.IResolvable;
 }
@@ -686,7 +686,7 @@ export interface QuicksightAnalysisParameters {
 export function quicksightAnalysisParametersToTerraform(struct?: QuicksightAnalysisParametersOutputReference | QuicksightAnalysisParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     date_time_parameters: cdktn.listMapper(quicksightAnalysisParametersDateTimeParametersToTerraform, true)(struct!.dateTimeParameters),
@@ -700,7 +700,7 @@ export function quicksightAnalysisParametersToTerraform(struct?: QuicksightAnaly
 export function quicksightAnalysisParametersToHclTerraform(struct?: QuicksightAnalysisParametersOutputReference | QuicksightAnalysisParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     date_time_parameters: {
@@ -849,11 +849,11 @@ export class QuicksightAnalysisParametersOutputReference extends cdktn.ComplexOb
 }
 export interface QuicksightAnalysisPermissions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#actions QuicksightAnalysis#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#actions QuicksightAnalysis#actions}
   */
   readonly actions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#principal QuicksightAnalysis#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#principal QuicksightAnalysis#principal}
   */
   readonly principal: string;
 }
@@ -861,7 +861,7 @@ export interface QuicksightAnalysisPermissions {
 export function quicksightAnalysisPermissionsToTerraform(struct?: QuicksightAnalysisPermissions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
@@ -873,7 +873,7 @@ export function quicksightAnalysisPermissionsToTerraform(struct?: QuicksightAnal
 export function quicksightAnalysisPermissionsToHclTerraform(struct?: QuicksightAnalysisPermissions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     actions: {
@@ -992,11 +992,11 @@ export class QuicksightAnalysisPermissionsList extends cdktn.ComplexList {
 }
 export interface QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#data_set_arn QuicksightAnalysis#data_set_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#data_set_arn QuicksightAnalysis#data_set_arn}
   */
   readonly dataSetArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#data_set_placeholder QuicksightAnalysis#data_set_placeholder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#data_set_placeholder QuicksightAnalysis#data_set_placeholder}
   */
   readonly dataSetPlaceholder: string;
 }
@@ -1004,7 +1004,7 @@ export interface QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences {
 export function quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_set_arn: cdktn.stringToTerraform(struct!.dataSetArn),
@@ -1016,7 +1016,7 @@ export function quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToT
 export function quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToHclTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_set_arn: {
@@ -1135,13 +1135,13 @@ export class QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesList e
 }
 export interface QuicksightAnalysisSourceEntitySourceTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}
   */
   readonly arn: string;
   /**
   * data_set_references block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#data_set_references QuicksightAnalysis#data_set_references}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#data_set_references QuicksightAnalysis#data_set_references}
   */
   readonly dataSetReferences: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences[] | cdktn.IResolvable;
 }
@@ -1149,7 +1149,7 @@ export interface QuicksightAnalysisSourceEntitySourceTemplate {
 export function quicksightAnalysisSourceEntitySourceTemplateToTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateOutputReference | QuicksightAnalysisSourceEntitySourceTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
@@ -1161,7 +1161,7 @@ export function quicksightAnalysisSourceEntitySourceTemplateToTerraform(struct?:
 export function quicksightAnalysisSourceEntitySourceTemplateToHclTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateOutputReference | QuicksightAnalysisSourceEntitySourceTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arn: {
@@ -1250,7 +1250,7 @@ export interface QuicksightAnalysisSourceEntity {
   /**
   * source_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#source_template QuicksightAnalysis#source_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#source_template QuicksightAnalysis#source_template}
   */
   readonly sourceTemplate?: QuicksightAnalysisSourceEntitySourceTemplate;
 }
@@ -1258,7 +1258,7 @@ export interface QuicksightAnalysisSourceEntity {
 export function quicksightAnalysisSourceEntityToTerraform(struct?: QuicksightAnalysisSourceEntityOutputReference | QuicksightAnalysisSourceEntity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source_template: quicksightAnalysisSourceEntitySourceTemplateToTerraform(struct!.sourceTemplate),
@@ -1269,7 +1269,7 @@ export function quicksightAnalysisSourceEntityToTerraform(struct?: QuicksightAna
 export function quicksightAnalysisSourceEntityToHclTerraform(struct?: QuicksightAnalysisSourceEntityOutputReference | QuicksightAnalysisSourceEntity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source_template: {
@@ -1334,15 +1334,15 @@ export class QuicksightAnalysisSourceEntityOutputReference extends cdktn.Complex
 }
 export interface QuicksightAnalysisTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}
   */
   readonly update?: string;
 }
@@ -1350,7 +1350,7 @@ export interface QuicksightAnalysisTimeouts {
 export function quicksightAnalysisTimeoutsToTerraform(struct?: QuicksightAnalysisTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1363,7 +1363,7 @@ export function quicksightAnalysisTimeoutsToTerraform(struct?: QuicksightAnalysi
 export function quicksightAnalysisTimeoutsToHclTerraform(struct?: QuicksightAnalysisTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1494,7 +1494,7 @@ export class QuicksightAnalysisTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis aws_quicksight_analysis}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis aws_quicksight_analysis}
 */
 export class QuicksightAnalysis extends cdktn.TerraformResource {
 
@@ -1510,7 +1510,7 @@ export class QuicksightAnalysis extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a QuicksightAnalysis resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightAnalysis to import
-  * @param importFromId The id of the existing QuicksightAnalysis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QuicksightAnalysis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightAnalysis to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1522,7 +1522,7 @@ export class QuicksightAnalysis extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1533,7 +1533,7 @@ export class QuicksightAnalysis extends cdktn.TerraformResource {
       terraformResourceType: 'aws_quicksight_analysis',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### DataAwsIamRolePolicyAttachments <a name="DataAwsIamRolePolicyAttachments" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_role_policy_attachments aws_iam_role_policy_attachments}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_role_policy_attachments aws_iam_role_policy_attachments}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments(
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.Initializer.parameter.roleName">role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_role_policy_attachments#role_name DataAwsIamRolePolicyAttachments#role_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.Initializer.parameter.pathPrefix">path_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_role_policy_attachments#path_prefix DataAwsIamRolePolicyAttachments#path_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.Initializer.parameter.roleName">role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_role_policy_attachments#role_name DataAwsIamRolePolicyAttachments#role_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.Initializer.parameter.pathPrefix">path_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_role_policy_attachments#path_prefix DataAwsIamRolePolicyAttachments#path_prefix}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_role_policy_attachments#role_name DataAwsIamRolePolicyAttachments#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_role_policy_attachments#role_name DataAwsIamRolePolicyAttachments#role_name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_role_policy_attachments#path_prefix DataAwsIamRolePolicyAttachments#path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_role_policy_attachments#path_prefix DataAwsIamRolePolicyAttachments#path_prefix}.
 
 ---
 
@@ -504,7 +504,7 @@ The construct id used in the generated config for the DataAwsIamRolePolicyAttach
 
 The id of the existing DataAwsIamRolePolicyAttachments that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_role_policy_attachments#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_role_policy_attachments#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,8 +774,8 @@ dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsConfig.property.roleName">role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_role_policy_attachments#role_name DataAwsIamRolePolicyAttachments#role_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsConfig.property.pathPrefix">path_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_role_policy_attachments#path_prefix DataAwsIamRolePolicyAttachments#path_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsConfig.property.roleName">role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_role_policy_attachments#role_name DataAwsIamRolePolicyAttachments#role_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsConfig.property.pathPrefix">path_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_role_policy_attachments#path_prefix DataAwsIamRolePolicyAttachments#path_prefix}. |
 
 ---
 
@@ -857,7 +857,7 @@ role_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_role_policy_attachments#role_name DataAwsIamRolePolicyAttachments#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_role_policy_attachments#role_name DataAwsIamRolePolicyAttachments#role_name}.
 
 ---
 
@@ -869,7 +869,7 @@ path_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_role_policy_attachments#path_prefix DataAwsIamRolePolicyAttachments#path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_role_policy_attachments#path_prefix DataAwsIamRolePolicyAttachments#path_prefix}.
 
 ---
 

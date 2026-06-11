@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,39 +15,39 @@ export interface SecuritylakeSubscriberNotificationConfig extends cdktn.Terrafor
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#region SecuritylakeSubscriberNotification#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#region SecuritylakeSubscriberNotification#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#subscriber_id SecuritylakeSubscriberNotification#subscriber_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#subscriber_id SecuritylakeSubscriberNotification#subscriber_id}
   */
   readonly subscriberId: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#configuration SecuritylakeSubscriberNotification#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#configuration SecuritylakeSubscriberNotification#configuration}
   */
   readonly configuration?: SecuritylakeSubscriberNotificationConfiguration[] | cdktn.IResolvable;
 }
 export interface SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_name SecuritylakeSubscriberNotification#authorization_api_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_name SecuritylakeSubscriberNotification#authorization_api_key_name}
   */
   readonly authorizationApiKeyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_value SecuritylakeSubscriberNotification#authorization_api_key_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_value SecuritylakeSubscriberNotification#authorization_api_key_value}
   */
   readonly authorizationApiKeyValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#endpoint SecuritylakeSubscriberNotification#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#endpoint SecuritylakeSubscriberNotification#endpoint}
   */
   readonly endpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#http_method SecuritylakeSubscriberNotification#http_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#http_method SecuritylakeSubscriberNotification#http_method}
   */
   readonly httpMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#target_role_arn SecuritylakeSubscriberNotification#target_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#target_role_arn SecuritylakeSubscriberNotification#target_role_arn}
   */
   readonly targetRoleArn: string;
 }
@@ -55,7 +55,7 @@ export interface SecuritylakeSubscriberNotificationConfigurationHttpsNotificatio
 export function securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authorization_api_key_name: cdktn.stringToTerraform(struct!.authorizationApiKeyName),
@@ -70,7 +70,7 @@ export function securitylakeSubscriberNotificationConfigurationHttpsNotification
 export function securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToHclTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authorization_api_key_name: {
@@ -277,7 +277,7 @@ export interface SecuritylakeSubscriberNotificationConfigurationSqsNotificationC
 export function securitylakeSubscriberNotificationConfigurationSqsNotificationConfigurationToTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -287,7 +287,7 @@ export function securitylakeSubscriberNotificationConfigurationSqsNotificationCo
 export function securitylakeSubscriberNotificationConfigurationSqsNotificationConfigurationToHclTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -356,13 +356,13 @@ export interface SecuritylakeSubscriberNotificationConfiguration {
   /**
   * https_notification_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#https_notification_configuration SecuritylakeSubscriberNotification#https_notification_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#https_notification_configuration SecuritylakeSubscriberNotification#https_notification_configuration}
   */
   readonly httpsNotificationConfiguration?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration[] | cdktn.IResolvable;
   /**
   * sqs_notification_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#sqs_notification_configuration SecuritylakeSubscriberNotification#sqs_notification_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#sqs_notification_configuration SecuritylakeSubscriberNotification#sqs_notification_configuration}
   */
   readonly sqsNotificationConfiguration?: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration[] | cdktn.IResolvable;
 }
@@ -370,7 +370,7 @@ export interface SecuritylakeSubscriberNotificationConfiguration {
 export function securitylakeSubscriberNotificationConfigurationToTerraform(struct?: SecuritylakeSubscriberNotificationConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     https_notification_configuration: cdktn.listMapper(securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToTerraform, true)(struct!.httpsNotificationConfiguration),
@@ -382,7 +382,7 @@ export function securitylakeSubscriberNotificationConfigurationToTerraform(struc
 export function securitylakeSubscriberNotificationConfigurationToHclTerraform(struct?: SecuritylakeSubscriberNotificationConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     https_notification_configuration: {
@@ -507,7 +507,7 @@ export class SecuritylakeSubscriberNotificationConfigurationList extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification aws_securitylake_subscriber_notification}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification aws_securitylake_subscriber_notification}
 */
 export class SecuritylakeSubscriberNotification extends cdktn.TerraformResource {
 
@@ -523,7 +523,7 @@ export class SecuritylakeSubscriberNotification extends cdktn.TerraformResource 
   * Generates CDKTN code for importing a SecuritylakeSubscriberNotification resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecuritylakeSubscriberNotification to import
-  * @param importFromId The id of the existing SecuritylakeSubscriberNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecuritylakeSubscriberNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecuritylakeSubscriberNotification to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -535,7 +535,7 @@ export class SecuritylakeSubscriberNotification extends cdktn.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_subscriber_notification aws_securitylake_subscriber_notification} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_subscriber_notification aws_securitylake_subscriber_notification} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -546,7 +546,7 @@ export class SecuritylakeSubscriberNotification extends cdktn.TerraformResource 
       terraformResourceType: 'aws_securitylake_subscriber_notification',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

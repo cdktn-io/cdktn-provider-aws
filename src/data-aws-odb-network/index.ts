@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/odb_network
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/odb_network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsOdbNetworkConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/odb_network#id DataAwsOdbNetwork#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/odb_network#id DataAwsOdbNetwork#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataAwsOdbNetworkConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/odb_network#region DataAwsOdbNetwork#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/odb_network#region DataAwsOdbNetwork#region}
   */
   readonly region?: string;
 }
@@ -32,7 +32,7 @@ export interface DataAwsOdbNetworkManagedServicesCrossRegionS3RestoreSourcesAcce
 export function dataAwsOdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessToTerraform(struct?: DataAwsOdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -42,7 +42,7 @@ export function dataAwsOdbNetworkManagedServicesCrossRegionS3RestoreSourcesAcces
 export function dataAwsOdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessToHclTerraform(struct?: DataAwsOdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -117,7 +117,7 @@ export interface DataAwsOdbNetworkManagedServicesKmsAccess {
 export function dataAwsOdbNetworkManagedServicesKmsAccessToTerraform(struct?: DataAwsOdbNetworkManagedServicesKmsAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -127,7 +127,7 @@ export function dataAwsOdbNetworkManagedServicesKmsAccessToTerraform(struct?: Da
 export function dataAwsOdbNetworkManagedServicesKmsAccessToHclTerraform(struct?: DataAwsOdbNetworkManagedServicesKmsAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -207,7 +207,7 @@ export interface DataAwsOdbNetworkManagedServicesManagedS3BackupAccess {
 export function dataAwsOdbNetworkManagedServicesManagedS3BackupAccessToTerraform(struct?: DataAwsOdbNetworkManagedServicesManagedS3BackupAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -217,7 +217,7 @@ export function dataAwsOdbNetworkManagedServicesManagedS3BackupAccessToTerraform
 export function dataAwsOdbNetworkManagedServicesManagedS3BackupAccessToHclTerraform(struct?: DataAwsOdbNetworkManagedServicesManagedS3BackupAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -287,7 +287,7 @@ export interface DataAwsOdbNetworkManagedServicesS3Access {
 export function dataAwsOdbNetworkManagedServicesS3AccessToTerraform(struct?: DataAwsOdbNetworkManagedServicesS3Access): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -297,7 +297,7 @@ export function dataAwsOdbNetworkManagedServicesS3AccessToTerraform(struct?: Dat
 export function dataAwsOdbNetworkManagedServicesS3AccessToHclTerraform(struct?: DataAwsOdbNetworkManagedServicesS3Access): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -377,7 +377,7 @@ export interface DataAwsOdbNetworkManagedServicesServiceNetworkEndpoint {
 export function dataAwsOdbNetworkManagedServicesServiceNetworkEndpointToTerraform(struct?: DataAwsOdbNetworkManagedServicesServiceNetworkEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -387,7 +387,7 @@ export function dataAwsOdbNetworkManagedServicesServiceNetworkEndpointToTerrafor
 export function dataAwsOdbNetworkManagedServicesServiceNetworkEndpointToHclTerraform(struct?: DataAwsOdbNetworkManagedServicesServiceNetworkEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -457,7 +457,7 @@ export interface DataAwsOdbNetworkManagedServicesStsAccess {
 export function dataAwsOdbNetworkManagedServicesStsAccessToTerraform(struct?: DataAwsOdbNetworkManagedServicesStsAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -467,7 +467,7 @@ export function dataAwsOdbNetworkManagedServicesStsAccessToTerraform(struct?: Da
 export function dataAwsOdbNetworkManagedServicesStsAccessToHclTerraform(struct?: DataAwsOdbNetworkManagedServicesStsAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -547,7 +547,7 @@ export interface DataAwsOdbNetworkManagedServicesZeroTlAccess {
 export function dataAwsOdbNetworkManagedServicesZeroTlAccessToTerraform(struct?: DataAwsOdbNetworkManagedServicesZeroTlAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -557,7 +557,7 @@ export function dataAwsOdbNetworkManagedServicesZeroTlAccessToTerraform(struct?:
 export function dataAwsOdbNetworkManagedServicesZeroTlAccessToHclTerraform(struct?: DataAwsOdbNetworkManagedServicesZeroTlAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -627,7 +627,7 @@ export interface DataAwsOdbNetworkManagedServices {
 export function dataAwsOdbNetworkManagedServicesToTerraform(struct?: DataAwsOdbNetworkManagedServices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -637,7 +637,7 @@ export function dataAwsOdbNetworkManagedServicesToTerraform(struct?: DataAwsOdbN
 export function dataAwsOdbNetworkManagedServicesToHclTerraform(struct?: DataAwsOdbNetworkManagedServices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -754,7 +754,7 @@ export interface DataAwsOdbNetworkOciDnsForwardingConfigs {
 export function dataAwsOdbNetworkOciDnsForwardingConfigsToTerraform(struct?: DataAwsOdbNetworkOciDnsForwardingConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -764,7 +764,7 @@ export function dataAwsOdbNetworkOciDnsForwardingConfigsToTerraform(struct?: Dat
 export function dataAwsOdbNetworkOciDnsForwardingConfigsToHclTerraform(struct?: DataAwsOdbNetworkOciDnsForwardingConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -830,7 +830,7 @@ export class DataAwsOdbNetworkOciDnsForwardingConfigsList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/odb_network aws_odb_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/odb_network aws_odb_network}
 */
 export class DataAwsOdbNetwork extends cdktn.TerraformDataSource {
 
@@ -846,7 +846,7 @@ export class DataAwsOdbNetwork extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsOdbNetwork resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbNetwork to import
-  * @param importFromId The id of the existing DataAwsOdbNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/odb_network#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOdbNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/odb_network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbNetwork to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -858,7 +858,7 @@ export class DataAwsOdbNetwork extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/odb_network aws_odb_network} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/odb_network aws_odb_network} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -869,7 +869,7 @@ export class DataAwsOdbNetwork extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_odb_network',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktn from 'cdktn';
 
 export interface Ec2NetworkInsightsAnalysisConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis#filter_in_arns Ec2NetworkInsightsAnalysis#filter_in_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis#filter_in_arns Ec2NetworkInsightsAnalysis#filter_in_arns}
   */
   readonly filterInArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis#id Ec2NetworkInsightsAnalysis#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis#id Ec2NetworkInsightsAnalysis#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis#network_insights_path_id Ec2NetworkInsightsAnalysis#network_insights_path_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis#network_insights_path_id Ec2NetworkInsightsAnalysis#network_insights_path_id}
   */
   readonly networkInsightsPathId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis#region Ec2NetworkInsightsAnalysis#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis#region Ec2NetworkInsightsAnalysis#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis#tags Ec2NetworkInsightsAnalysis#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis#tags Ec2NetworkInsightsAnalysis#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis#tags_all Ec2NetworkInsightsAnalysis#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis#tags_all Ec2NetworkInsightsAnalysis#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis#wait_for_completion Ec2NetworkInsightsAnalysis#wait_for_completion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis#wait_for_completion Ec2NetworkInsightsAnalysis#wait_for_completion}
   */
   readonly waitForCompletion?: boolean | cdktn.IResolvable;
 }
@@ -52,7 +52,7 @@ export interface Ec2NetworkInsightsAnalysisAlternatePathHints {
 export function ec2NetworkInsightsAnalysisAlternatePathHintsToTerraform(struct?: Ec2NetworkInsightsAnalysisAlternatePathHints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -62,7 +62,7 @@ export function ec2NetworkInsightsAnalysisAlternatePathHintsToTerraform(struct?:
 export function ec2NetworkInsightsAnalysisAlternatePathHintsToHclTerraform(struct?: Ec2NetworkInsightsAnalysisAlternatePathHints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -132,7 +132,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsAcl {
 export function ec2NetworkInsightsAnalysisExplanationsAclToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsAcl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -142,7 +142,7 @@ export function ec2NetworkInsightsAnalysisExplanationsAclToTerraform(struct?: Ec
 export function ec2NetworkInsightsAnalysisExplanationsAclToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsAcl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -217,7 +217,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsAclRulePortRange {
 export function ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsAclRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -227,7 +227,7 @@ export function ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeToTerrafor
 export function ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsAclRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -297,7 +297,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsAclRule {
 export function ec2NetworkInsightsAnalysisExplanationsAclRuleToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsAclRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -307,7 +307,7 @@ export function ec2NetworkInsightsAnalysisExplanationsAclRuleToTerraform(struct?
 export function ec2NetworkInsightsAnalysisExplanationsAclRuleToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsAclRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -398,7 +398,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsAttachedTo {
 export function ec2NetworkInsightsAnalysisExplanationsAttachedToToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsAttachedTo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -408,7 +408,7 @@ export function ec2NetworkInsightsAnalysisExplanationsAttachedToToTerraform(stru
 export function ec2NetworkInsightsAnalysisExplanationsAttachedToToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsAttachedTo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -483,7 +483,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListen
 export function ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListener): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -493,7 +493,7 @@ export function ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListene
 export function ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListener): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -563,7 +563,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsComponent {
 export function ec2NetworkInsightsAnalysisExplanationsComponentToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsComponent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -573,7 +573,7 @@ export function ec2NetworkInsightsAnalysisExplanationsComponentToTerraform(struc
 export function ec2NetworkInsightsAnalysisExplanationsComponentToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsComponent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -648,7 +648,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsCustomerGateway {
 export function ec2NetworkInsightsAnalysisExplanationsCustomerGatewayToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsCustomerGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -658,7 +658,7 @@ export function ec2NetworkInsightsAnalysisExplanationsCustomerGatewayToTerraform
 export function ec2NetworkInsightsAnalysisExplanationsCustomerGatewayToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsCustomerGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -733,7 +733,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsDestination {
 export function ec2NetworkInsightsAnalysisExplanationsDestinationToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsDestination): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -743,7 +743,7 @@ export function ec2NetworkInsightsAnalysisExplanationsDestinationToTerraform(str
 export function ec2NetworkInsightsAnalysisExplanationsDestinationToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsDestination): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -818,7 +818,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsDestinationVpc {
 export function ec2NetworkInsightsAnalysisExplanationsDestinationVpcToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsDestinationVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -828,7 +828,7 @@ export function ec2NetworkInsightsAnalysisExplanationsDestinationVpcToTerraform(
 export function ec2NetworkInsightsAnalysisExplanationsDestinationVpcToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsDestinationVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -903,7 +903,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListen
 export function ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListener): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -913,7 +913,7 @@ export function ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListene
 export function ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListener): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -988,7 +988,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsIngressRouteTable {
 export function ec2NetworkInsightsAnalysisExplanationsIngressRouteTableToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsIngressRouteTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -998,7 +998,7 @@ export function ec2NetworkInsightsAnalysisExplanationsIngressRouteTableToTerrafo
 export function ec2NetworkInsightsAnalysisExplanationsIngressRouteTableToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsIngressRouteTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1073,7 +1073,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsInternetGateway {
 export function ec2NetworkInsightsAnalysisExplanationsInternetGatewayToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsInternetGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1083,7 +1083,7 @@ export function ec2NetworkInsightsAnalysisExplanationsInternetGatewayToTerraform
 export function ec2NetworkInsightsAnalysisExplanationsInternetGatewayToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsInternetGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1158,7 +1158,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup {
 export function ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1168,7 +1168,7 @@ export function ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupToT
 export function ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1243,7 +1243,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups 
 export function ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1253,7 +1253,7 @@ export function ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsTo
 export function ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1328,7 +1328,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsNatGateway {
 export function ec2NetworkInsightsAnalysisExplanationsNatGatewayToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsNatGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1338,7 +1338,7 @@ export function ec2NetworkInsightsAnalysisExplanationsNatGatewayToTerraform(stru
 export function ec2NetworkInsightsAnalysisExplanationsNatGatewayToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsNatGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1413,7 +1413,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsNetworkInterface {
 export function ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsNetworkInterface): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1423,7 +1423,7 @@ export function ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceToTerrafor
 export function ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsNetworkInterface): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1498,7 +1498,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsPortRanges {
 export function ec2NetworkInsightsAnalysisExplanationsPortRangesToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsPortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1508,7 +1508,7 @@ export function ec2NetworkInsightsAnalysisExplanationsPortRangesToTerraform(stru
 export function ec2NetworkInsightsAnalysisExplanationsPortRangesToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsPortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1578,7 +1578,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct {
 export function ec2NetworkInsightsAnalysisExplanationsPrefixListStructToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1588,7 +1588,7 @@ export function ec2NetworkInsightsAnalysisExplanationsPrefixListStructToTerrafor
 export function ec2NetworkInsightsAnalysisExplanationsPrefixListStructToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1663,7 +1663,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsRouteTable {
 export function ec2NetworkInsightsAnalysisExplanationsRouteTableToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsRouteTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1673,7 +1673,7 @@ export function ec2NetworkInsightsAnalysisExplanationsRouteTableToTerraform(stru
 export function ec2NetworkInsightsAnalysisExplanationsRouteTableToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsRouteTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1748,7 +1748,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsRouteTableRoute {
 export function ec2NetworkInsightsAnalysisExplanationsRouteTableRouteToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1758,7 +1758,7 @@ export function ec2NetworkInsightsAnalysisExplanationsRouteTableRouteToTerraform
 export function ec2NetworkInsightsAnalysisExplanationsRouteTableRouteToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1868,7 +1868,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsSecurityGroup {
 export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSecurityGroup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1878,7 +1878,7 @@ export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupToTerraform(s
 export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSecurityGroup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1953,7 +1953,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRang
 export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1963,7 +1963,7 @@ export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange
 export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2033,7 +2033,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRule {
 export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2043,7 +2043,7 @@ export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleToTerrafo
 export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2134,7 +2134,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsSecurityGroups {
 export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupsToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSecurityGroups): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2144,7 +2144,7 @@ export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupsToTerraform(
 export function ec2NetworkInsightsAnalysisExplanationsSecurityGroupsToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSecurityGroups): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2219,7 +2219,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsSourceVpc {
 export function ec2NetworkInsightsAnalysisExplanationsSourceVpcToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSourceVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2229,7 +2229,7 @@ export function ec2NetworkInsightsAnalysisExplanationsSourceVpcToTerraform(struc
 export function ec2NetworkInsightsAnalysisExplanationsSourceVpcToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSourceVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2304,7 +2304,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsSubnet {
 export function ec2NetworkInsightsAnalysisExplanationsSubnetToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSubnet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2314,7 +2314,7 @@ export function ec2NetworkInsightsAnalysisExplanationsSubnetToTerraform(struct?:
 export function ec2NetworkInsightsAnalysisExplanationsSubnetToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSubnet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2389,7 +2389,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTable {
 export function ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2399,7 +2399,7 @@ export function ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableToTerrafor
 export function ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2474,7 +2474,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsTransitGateway {
 export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsTransitGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2484,7 +2484,7 @@ export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayToTerraform(
 export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsTransitGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2559,7 +2559,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment 
 export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2569,7 +2569,7 @@ export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentTo
 export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2644,7 +2644,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable 
 export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2654,7 +2654,7 @@ export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableTo
 export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2729,7 +2729,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableR
 export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2739,7 +2739,7 @@ export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRo
 export function ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2834,7 +2834,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsVpc {
 export function ec2NetworkInsightsAnalysisExplanationsVpcToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2844,7 +2844,7 @@ export function ec2NetworkInsightsAnalysisExplanationsVpcToTerraform(struct?: Ec
 export function ec2NetworkInsightsAnalysisExplanationsVpcToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2919,7 +2919,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsVpcEndpoint {
 export function ec2NetworkInsightsAnalysisExplanationsVpcEndpointToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsVpcEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2929,7 +2929,7 @@ export function ec2NetworkInsightsAnalysisExplanationsVpcEndpointToTerraform(str
 export function ec2NetworkInsightsAnalysisExplanationsVpcEndpointToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsVpcEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3004,7 +3004,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnection {
 export function ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3014,7 +3014,7 @@ export function ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionToTerr
 export function ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3089,7 +3089,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsVpnConnection {
 export function ec2NetworkInsightsAnalysisExplanationsVpnConnectionToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsVpnConnection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3099,7 +3099,7 @@ export function ec2NetworkInsightsAnalysisExplanationsVpnConnectionToTerraform(s
 export function ec2NetworkInsightsAnalysisExplanationsVpnConnectionToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsVpnConnection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3174,7 +3174,7 @@ export interface Ec2NetworkInsightsAnalysisExplanationsVpnGateway {
 export function ec2NetworkInsightsAnalysisExplanationsVpnGatewayToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsVpnGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3184,7 +3184,7 @@ export function ec2NetworkInsightsAnalysisExplanationsVpnGatewayToTerraform(stru
 export function ec2NetworkInsightsAnalysisExplanationsVpnGatewayToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanationsVpnGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3259,7 +3259,7 @@ export interface Ec2NetworkInsightsAnalysisExplanations {
 export function ec2NetworkInsightsAnalysisExplanationsToTerraform(struct?: Ec2NetworkInsightsAnalysisExplanations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3269,7 +3269,7 @@ export function ec2NetworkInsightsAnalysisExplanationsToTerraform(struct?: Ec2Ne
 export function ec2NetworkInsightsAnalysisExplanationsToHclTerraform(struct?: Ec2NetworkInsightsAnalysisExplanations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3603,7 +3603,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange
 export function ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3613,7 +3613,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeT
 export function ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3683,7 +3683,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsAclRule {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsAclRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3693,7 +3693,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleToTerrafor
 export function ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsAclRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3784,7 +3784,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetail
 export function ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3794,7 +3794,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails
 export function ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3869,7 +3869,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetail
 export function ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3879,7 +3879,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails
 export function ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3950,7 +3950,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedTo {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedTo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3960,7 +3960,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToToTerra
 export function ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedTo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4035,7 +4035,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsComponent {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsComponentToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsComponent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4045,7 +4045,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsComponentToTerraf
 export function ec2NetworkInsightsAnalysisForwardPathComponentsComponentToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsComponent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4120,7 +4120,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4130,7 +4130,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcToT
 export function ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4205,7 +4205,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDes
 export function ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4215,7 +4215,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDest
 export function ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4285,7 +4285,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSou
 export function ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4295,7 +4295,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSour
 export function ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4365,7 +4365,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeader {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4375,7 +4375,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderToTe
 export function ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4462,7 +4462,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDe
 export function ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4472,7 +4472,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDes
 export function ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4542,7 +4542,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSo
 export function ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4552,7 +4552,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSou
 export function ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4622,7 +4622,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4632,7 +4632,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderToT
 export function ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4719,7 +4719,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute 
 export function ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4729,7 +4729,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteTo
 export function ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4839,7 +4839,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRul
 export function ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4849,7 +4849,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule
 export function ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4919,7 +4919,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRul
 export function ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4929,7 +4929,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule
 export function ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5020,7 +5020,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpc {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5030,7 +5030,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcToTerraf
 export function ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5105,7 +5105,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsSubnet {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsSubnetToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsSubnet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5115,7 +5115,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsSubnetToTerraform
 export function ec2NetworkInsightsAnalysisForwardPathComponentsSubnetToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsSubnet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5190,7 +5190,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGateway {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5200,7 +5200,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayToT
 export function ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5275,7 +5275,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRo
 export function ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5285,7 +5285,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRou
 export function ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5380,7 +5380,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponentsVpc {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsVpcToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5390,7 +5390,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsVpcToTerraform(st
 export function ec2NetworkInsightsAnalysisForwardPathComponentsVpcToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponentsVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5465,7 +5465,7 @@ export interface Ec2NetworkInsightsAnalysisForwardPathComponents {
 export function ec2NetworkInsightsAnalysisForwardPathComponentsToTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5475,7 +5475,7 @@ export function ec2NetworkInsightsAnalysisForwardPathComponentsToTerraform(struc
 export function ec2NetworkInsightsAnalysisForwardPathComponentsToHclTerraform(struct?: Ec2NetworkInsightsAnalysisForwardPathComponents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5624,7 +5624,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange 
 export function ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5634,7 +5634,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeTo
 export function ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5704,7 +5704,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsAclRule {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsAclRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5714,7 +5714,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleToTerraform
 export function ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsAclRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5805,7 +5805,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails
 export function ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5815,7 +5815,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsC
 export function ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5890,7 +5890,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails
 export function ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5900,7 +5900,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsT
 export function ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5971,7 +5971,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedTo {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedTo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5981,7 +5981,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToToTerraf
 export function ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedTo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6056,7 +6056,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsComponent {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsComponentToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsComponent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6066,7 +6066,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsComponentToTerrafo
 export function ec2NetworkInsightsAnalysisReturnPathComponentsComponentToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsComponent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6141,7 +6141,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6151,7 +6151,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcToTe
 export function ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6226,7 +6226,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDest
 export function ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6236,7 +6236,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDesti
 export function ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6306,7 +6306,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSour
 export function ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6316,7 +6316,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourc
 export function ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6386,7 +6386,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeader {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6396,7 +6396,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderToTer
 export function ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6483,7 +6483,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDes
 export function ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6493,7 +6493,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDest
 export function ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6563,7 +6563,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSou
 export function ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6573,7 +6573,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSour
 export function ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRanges): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6643,7 +6643,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6653,7 +6653,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderToTe
 export function ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6740,7 +6740,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6750,7 +6750,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteToT
 export function ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6860,7 +6860,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule
 export function ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6870,7 +6870,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleP
 export function ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -6940,7 +6940,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule
 export function ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -6950,7 +6950,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleT
 export function ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -7041,7 +7041,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpc {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -7051,7 +7051,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcToTerrafo
 export function ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -7126,7 +7126,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsSubnet {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsSubnetToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsSubnet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -7136,7 +7136,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsSubnetToTerraform(
 export function ec2NetworkInsightsAnalysisReturnPathComponentsSubnetToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsSubnet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -7211,7 +7211,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGateway {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -7221,7 +7221,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayToTe
 export function ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -7296,7 +7296,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRou
 export function ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -7306,7 +7306,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRout
 export function ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -7401,7 +7401,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponentsVpc {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsVpcToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -7411,7 +7411,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsVpcToTerraform(str
 export function ec2NetworkInsightsAnalysisReturnPathComponentsVpcToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponentsVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -7486,7 +7486,7 @@ export interface Ec2NetworkInsightsAnalysisReturnPathComponents {
 export function ec2NetworkInsightsAnalysisReturnPathComponentsToTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -7496,7 +7496,7 @@ export function ec2NetworkInsightsAnalysisReturnPathComponentsToTerraform(struct
 export function ec2NetworkInsightsAnalysisReturnPathComponentsToHclTerraform(struct?: Ec2NetworkInsightsAnalysisReturnPathComponents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -7641,7 +7641,7 @@ export class Ec2NetworkInsightsAnalysisReturnPathComponentsList extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis aws_ec2_network_insights_analysis}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis aws_ec2_network_insights_analysis}
 */
 export class Ec2NetworkInsightsAnalysis extends cdktn.TerraformResource {
 
@@ -7657,7 +7657,7 @@ export class Ec2NetworkInsightsAnalysis extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Ec2NetworkInsightsAnalysis resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2NetworkInsightsAnalysis to import
-  * @param importFromId The id of the existing Ec2NetworkInsightsAnalysis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Ec2NetworkInsightsAnalysis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2NetworkInsightsAnalysis to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -7669,7 +7669,7 @@ export class Ec2NetworkInsightsAnalysis extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ec2_network_insights_analysis aws_ec2_network_insights_analysis} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ec2_network_insights_analysis aws_ec2_network_insights_analysis} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -7680,7 +7680,7 @@ export class Ec2NetworkInsightsAnalysis extends cdktn.TerraformResource {
       terraformResourceType: 'aws_ec2_network_insights_analysis',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsGlueCatalogConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog#name DataAwsGlueCatalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog#name DataAwsGlueCatalog#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog#region DataAwsGlueCatalog#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog#region DataAwsGlueCatalog#region}
   */
   readonly region?: string;
 }
@@ -29,7 +29,7 @@ export interface DataAwsGlueCatalogCatalogPropertiesDataLakeAccessProperties {
 export function dataAwsGlueCatalogCatalogPropertiesDataLakeAccessPropertiesToTerraform(struct?: DataAwsGlueCatalogCatalogPropertiesDataLakeAccessProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -39,7 +39,7 @@ export function dataAwsGlueCatalogCatalogPropertiesDataLakeAccessPropertiesToTer
 export function dataAwsGlueCatalogCatalogPropertiesDataLakeAccessPropertiesToHclTerraform(struct?: DataAwsGlueCatalogCatalogPropertiesDataLakeAccessProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -139,7 +139,7 @@ export interface DataAwsGlueCatalogCatalogPropertiesIcebergOptimizationPropertie
 export function dataAwsGlueCatalogCatalogPropertiesIcebergOptimizationPropertiesToTerraform(struct?: DataAwsGlueCatalogCatalogPropertiesIcebergOptimizationProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -149,7 +149,7 @@ export function dataAwsGlueCatalogCatalogPropertiesIcebergOptimizationProperties
 export function dataAwsGlueCatalogCatalogPropertiesIcebergOptimizationPropertiesToHclTerraform(struct?: DataAwsGlueCatalogCatalogPropertiesIcebergOptimizationProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -232,7 +232,7 @@ export interface DataAwsGlueCatalogCatalogProperties {
 export function dataAwsGlueCatalogCatalogPropertiesToTerraform(struct?: DataAwsGlueCatalogCatalogProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -242,7 +242,7 @@ export function dataAwsGlueCatalogCatalogPropertiesToTerraform(struct?: DataAwsG
 export function dataAwsGlueCatalogCatalogPropertiesToHclTerraform(struct?: DataAwsGlueCatalogCatalogProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -320,7 +320,7 @@ export interface DataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipal {
 export function dataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipalToTerraform(struct?: DataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -330,7 +330,7 @@ export function dataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipalToTer
 export function dataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipalToHclTerraform(struct?: DataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -395,7 +395,7 @@ export interface DataAwsGlueCatalogCreateDatabaseDefaultPermissions {
 export function dataAwsGlueCatalogCreateDatabaseDefaultPermissionsToTerraform(struct?: DataAwsGlueCatalogCreateDatabaseDefaultPermissions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -405,7 +405,7 @@ export function dataAwsGlueCatalogCreateDatabaseDefaultPermissionsToTerraform(st
 export function dataAwsGlueCatalogCreateDatabaseDefaultPermissionsToHclTerraform(struct?: DataAwsGlueCatalogCreateDatabaseDefaultPermissions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -476,7 +476,7 @@ export interface DataAwsGlueCatalogCreateTableDefaultPermissionsPrincipal {
 export function dataAwsGlueCatalogCreateTableDefaultPermissionsPrincipalToTerraform(struct?: DataAwsGlueCatalogCreateTableDefaultPermissionsPrincipal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -486,7 +486,7 @@ export function dataAwsGlueCatalogCreateTableDefaultPermissionsPrincipalToTerraf
 export function dataAwsGlueCatalogCreateTableDefaultPermissionsPrincipalToHclTerraform(struct?: DataAwsGlueCatalogCreateTableDefaultPermissionsPrincipal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -551,7 +551,7 @@ export interface DataAwsGlueCatalogCreateTableDefaultPermissions {
 export function dataAwsGlueCatalogCreateTableDefaultPermissionsToTerraform(struct?: DataAwsGlueCatalogCreateTableDefaultPermissions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -561,7 +561,7 @@ export function dataAwsGlueCatalogCreateTableDefaultPermissionsToTerraform(struc
 export function dataAwsGlueCatalogCreateTableDefaultPermissionsToHclTerraform(struct?: DataAwsGlueCatalogCreateTableDefaultPermissions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -632,7 +632,7 @@ export interface DataAwsGlueCatalogFederatedCatalog {
 export function dataAwsGlueCatalogFederatedCatalogToTerraform(struct?: DataAwsGlueCatalogFederatedCatalog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -642,7 +642,7 @@ export function dataAwsGlueCatalogFederatedCatalogToTerraform(struct?: DataAwsGl
 export function dataAwsGlueCatalogFederatedCatalogToHclTerraform(struct?: DataAwsGlueCatalogFederatedCatalog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -717,7 +717,7 @@ export interface DataAwsGlueCatalogTargetRedshiftCatalog {
 export function dataAwsGlueCatalogTargetRedshiftCatalogToTerraform(struct?: DataAwsGlueCatalogTargetRedshiftCatalog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -727,7 +727,7 @@ export function dataAwsGlueCatalogTargetRedshiftCatalogToTerraform(struct?: Data
 export function dataAwsGlueCatalogTargetRedshiftCatalogToHclTerraform(struct?: DataAwsGlueCatalogTargetRedshiftCatalog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -788,7 +788,7 @@ export class DataAwsGlueCatalogTargetRedshiftCatalogList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog aws_glue_catalog}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog aws_glue_catalog}
 */
 export class DataAwsGlueCatalog extends cdktn.TerraformDataSource {
 
@@ -804,7 +804,7 @@ export class DataAwsGlueCatalog extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsGlueCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsGlueCatalog to import
-  * @param importFromId The id of the existing DataAwsGlueCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsGlueCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsGlueCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -816,7 +816,7 @@ export class DataAwsGlueCatalog extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog aws_glue_catalog} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog aws_glue_catalog} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -827,7 +827,7 @@ export class DataAwsGlueCatalog extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_glue_catalog',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

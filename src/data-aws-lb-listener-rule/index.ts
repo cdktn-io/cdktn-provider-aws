@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +13,39 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsLbListenerRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}
   */
   readonly listenerArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}
   */
   readonly priority?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#region DataAwsLbListenerRule#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#region DataAwsLbListenerRule#region}
   */
   readonly region?: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
   */
   readonly action?: DataAwsLbListenerRuleAction[] | cdktn.IResolvable;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
   */
   readonly condition?: DataAwsLbListenerRuleCondition[] | cdktn.IResolvable;
   /**
   * transform block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#transform DataAwsLbListenerRule#transform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#transform DataAwsLbListenerRule#transform}
   */
   readonly transform?: DataAwsLbListenerRuleTransform[] | cdktn.IResolvable;
 }
@@ -55,7 +55,7 @@ export interface DataAwsLbListenerRuleActionAuthenticateCognito {
 export function dataAwsLbListenerRuleActionAuthenticateCognitoToTerraform(struct?: DataAwsLbListenerRuleActionAuthenticateCognito | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -65,7 +65,7 @@ export function dataAwsLbListenerRuleActionAuthenticateCognitoToTerraform(struct
 export function dataAwsLbListenerRuleActionAuthenticateCognitoToHclTerraform(struct?: DataAwsLbListenerRuleActionAuthenticateCognito | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -177,7 +177,7 @@ export interface DataAwsLbListenerRuleActionAuthenticateOidc {
 export function dataAwsLbListenerRuleActionAuthenticateOidcToTerraform(struct?: DataAwsLbListenerRuleActionAuthenticateOidc | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -187,7 +187,7 @@ export function dataAwsLbListenerRuleActionAuthenticateOidcToTerraform(struct?: 
 export function dataAwsLbListenerRuleActionAuthenticateOidcToHclTerraform(struct?: DataAwsLbListenerRuleActionAuthenticateOidc | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -309,7 +309,7 @@ export interface DataAwsLbListenerRuleActionFixedResponse {
 export function dataAwsLbListenerRuleActionFixedResponseToTerraform(struct?: DataAwsLbListenerRuleActionFixedResponse | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -319,7 +319,7 @@ export function dataAwsLbListenerRuleActionFixedResponseToTerraform(struct?: Dat
 export function dataAwsLbListenerRuleActionFixedResponseToHclTerraform(struct?: DataAwsLbListenerRuleActionFixedResponse | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -405,7 +405,7 @@ export interface DataAwsLbListenerRuleActionForwardStickiness {
 export function dataAwsLbListenerRuleActionForwardStickinessToTerraform(struct?: DataAwsLbListenerRuleActionForwardStickiness | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -415,7 +415,7 @@ export function dataAwsLbListenerRuleActionForwardStickinessToTerraform(struct?:
 export function dataAwsLbListenerRuleActionForwardStickinessToHclTerraform(struct?: DataAwsLbListenerRuleActionForwardStickiness | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -496,7 +496,7 @@ export interface DataAwsLbListenerRuleActionForwardTargetGroup {
 export function dataAwsLbListenerRuleActionForwardTargetGroupToTerraform(struct?: DataAwsLbListenerRuleActionForwardTargetGroup | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -506,7 +506,7 @@ export function dataAwsLbListenerRuleActionForwardTargetGroupToTerraform(struct?
 export function dataAwsLbListenerRuleActionForwardTargetGroupToHclTerraform(struct?: DataAwsLbListenerRuleActionForwardTargetGroup | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -585,13 +585,13 @@ export interface DataAwsLbListenerRuleActionForward {
   /**
   * stickiness block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#stickiness DataAwsLbListenerRule#stickiness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#stickiness DataAwsLbListenerRule#stickiness}
   */
   readonly stickiness?: DataAwsLbListenerRuleActionForwardStickiness[] | cdktn.IResolvable;
   /**
   * target_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
   */
   readonly targetGroup?: DataAwsLbListenerRuleActionForwardTargetGroup[] | cdktn.IResolvable;
 }
@@ -599,7 +599,7 @@ export interface DataAwsLbListenerRuleActionForward {
 export function dataAwsLbListenerRuleActionForwardToTerraform(struct?: DataAwsLbListenerRuleActionForward | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     stickiness: cdktn.listMapper(dataAwsLbListenerRuleActionForwardStickinessToTerraform, true)(struct!.stickiness),
@@ -611,7 +611,7 @@ export function dataAwsLbListenerRuleActionForwardToTerraform(struct?: DataAwsLb
 export function dataAwsLbListenerRuleActionForwardToHclTerraform(struct?: DataAwsLbListenerRuleActionForward | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     stickiness: {
@@ -740,7 +740,7 @@ export interface DataAwsLbListenerRuleActionJwtValidationAdditionalClaim {
 export function dataAwsLbListenerRuleActionJwtValidationAdditionalClaimToTerraform(struct?: DataAwsLbListenerRuleActionJwtValidationAdditionalClaim | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -750,7 +750,7 @@ export function dataAwsLbListenerRuleActionJwtValidationAdditionalClaimToTerrafo
 export function dataAwsLbListenerRuleActionJwtValidationAdditionalClaimToHclTerraform(struct?: DataAwsLbListenerRuleActionJwtValidationAdditionalClaim | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -834,7 +834,7 @@ export interface DataAwsLbListenerRuleActionJwtValidation {
   /**
   * additional_claim block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#additional_claim DataAwsLbListenerRule#additional_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#additional_claim DataAwsLbListenerRule#additional_claim}
   */
   readonly additionalClaim?: DataAwsLbListenerRuleActionJwtValidationAdditionalClaim[] | cdktn.IResolvable;
 }
@@ -842,7 +842,7 @@ export interface DataAwsLbListenerRuleActionJwtValidation {
 export function dataAwsLbListenerRuleActionJwtValidationToTerraform(struct?: DataAwsLbListenerRuleActionJwtValidation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_claim: cdktn.listMapper(dataAwsLbListenerRuleActionJwtValidationAdditionalClaimToTerraform, true)(struct!.additionalClaim),
@@ -853,7 +853,7 @@ export function dataAwsLbListenerRuleActionJwtValidationToTerraform(struct?: Dat
 export function dataAwsLbListenerRuleActionJwtValidationToHclTerraform(struct?: DataAwsLbListenerRuleActionJwtValidation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_claim: {
@@ -964,7 +964,7 @@ export interface DataAwsLbListenerRuleActionRedirect {
 export function dataAwsLbListenerRuleActionRedirectToTerraform(struct?: DataAwsLbListenerRuleActionRedirect | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -974,7 +974,7 @@ export function dataAwsLbListenerRuleActionRedirectToTerraform(struct?: DataAwsL
 export function dataAwsLbListenerRuleActionRedirectToHclTerraform(struct?: DataAwsLbListenerRuleActionRedirect | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1073,37 +1073,37 @@ export interface DataAwsLbListenerRuleAction {
   /**
   * authenticate_cognito block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#authenticate_cognito DataAwsLbListenerRule#authenticate_cognito}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#authenticate_cognito DataAwsLbListenerRule#authenticate_cognito}
   */
   readonly authenticateCognito?: DataAwsLbListenerRuleActionAuthenticateCognito[] | cdktn.IResolvable;
   /**
   * authenticate_oidc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#authenticate_oidc DataAwsLbListenerRule#authenticate_oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#authenticate_oidc DataAwsLbListenerRule#authenticate_oidc}
   */
   readonly authenticateOidc?: DataAwsLbListenerRuleActionAuthenticateOidc[] | cdktn.IResolvable;
   /**
   * fixed_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#fixed_response DataAwsLbListenerRule#fixed_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#fixed_response DataAwsLbListenerRule#fixed_response}
   */
   readonly fixedResponse?: DataAwsLbListenerRuleActionFixedResponse[] | cdktn.IResolvable;
   /**
   * forward block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
   */
   readonly forward?: DataAwsLbListenerRuleActionForward[] | cdktn.IResolvable;
   /**
   * jwt_validation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#jwt_validation DataAwsLbListenerRule#jwt_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#jwt_validation DataAwsLbListenerRule#jwt_validation}
   */
   readonly jwtValidation?: DataAwsLbListenerRuleActionJwtValidation[] | cdktn.IResolvable;
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#redirect DataAwsLbListenerRule#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#redirect DataAwsLbListenerRule#redirect}
   */
   readonly redirect?: DataAwsLbListenerRuleActionRedirect[] | cdktn.IResolvable;
 }
@@ -1111,7 +1111,7 @@ export interface DataAwsLbListenerRuleAction {
 export function dataAwsLbListenerRuleActionToTerraform(struct?: DataAwsLbListenerRuleAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authenticate_cognito: cdktn.listMapper(dataAwsLbListenerRuleActionAuthenticateCognitoToTerraform, true)(struct!.authenticateCognito),
@@ -1127,7 +1127,7 @@ export function dataAwsLbListenerRuleActionToTerraform(struct?: DataAwsLbListene
 export function dataAwsLbListenerRuleActionToHclTerraform(struct?: DataAwsLbListenerRuleAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authenticate_cognito: {
@@ -1378,7 +1378,7 @@ export interface DataAwsLbListenerRuleConditionHostHeader {
 export function dataAwsLbListenerRuleConditionHostHeaderToTerraform(struct?: DataAwsLbListenerRuleConditionHostHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1388,7 +1388,7 @@ export function dataAwsLbListenerRuleConditionHostHeaderToTerraform(struct?: Dat
 export function dataAwsLbListenerRuleConditionHostHeaderToHclTerraform(struct?: DataAwsLbListenerRuleConditionHostHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1469,7 +1469,7 @@ export interface DataAwsLbListenerRuleConditionHttpHeader {
 export function dataAwsLbListenerRuleConditionHttpHeaderToTerraform(struct?: DataAwsLbListenerRuleConditionHttpHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1479,7 +1479,7 @@ export function dataAwsLbListenerRuleConditionHttpHeaderToTerraform(struct?: Dat
 export function dataAwsLbListenerRuleConditionHttpHeaderToHclTerraform(struct?: DataAwsLbListenerRuleConditionHttpHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1565,7 +1565,7 @@ export interface DataAwsLbListenerRuleConditionHttpRequestMethod {
 export function dataAwsLbListenerRuleConditionHttpRequestMethodToTerraform(struct?: DataAwsLbListenerRuleConditionHttpRequestMethod | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1575,7 +1575,7 @@ export function dataAwsLbListenerRuleConditionHttpRequestMethodToTerraform(struc
 export function dataAwsLbListenerRuleConditionHttpRequestMethodToHclTerraform(struct?: DataAwsLbListenerRuleConditionHttpRequestMethod | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1651,7 +1651,7 @@ export interface DataAwsLbListenerRuleConditionPathPattern {
 export function dataAwsLbListenerRuleConditionPathPatternToTerraform(struct?: DataAwsLbListenerRuleConditionPathPattern | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1661,7 +1661,7 @@ export function dataAwsLbListenerRuleConditionPathPatternToTerraform(struct?: Da
 export function dataAwsLbListenerRuleConditionPathPatternToHclTerraform(struct?: DataAwsLbListenerRuleConditionPathPattern | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1742,7 +1742,7 @@ export interface DataAwsLbListenerRuleConditionQueryStringValues {
 export function dataAwsLbListenerRuleConditionQueryStringValuesToTerraform(struct?: DataAwsLbListenerRuleConditionQueryStringValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1752,7 +1752,7 @@ export function dataAwsLbListenerRuleConditionQueryStringValuesToTerraform(struc
 export function dataAwsLbListenerRuleConditionQueryStringValuesToHclTerraform(struct?: DataAwsLbListenerRuleConditionQueryStringValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1831,7 +1831,7 @@ export interface DataAwsLbListenerRuleConditionQueryString {
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
   */
   readonly values?: DataAwsLbListenerRuleConditionQueryStringValues[] | cdktn.IResolvable;
 }
@@ -1839,7 +1839,7 @@ export interface DataAwsLbListenerRuleConditionQueryString {
 export function dataAwsLbListenerRuleConditionQueryStringToTerraform(struct?: DataAwsLbListenerRuleConditionQueryString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(dataAwsLbListenerRuleConditionQueryStringValuesToTerraform, true)(struct!.values),
@@ -1850,7 +1850,7 @@ export function dataAwsLbListenerRuleConditionQueryStringToTerraform(struct?: Da
 export function dataAwsLbListenerRuleConditionQueryStringToHclTerraform(struct?: DataAwsLbListenerRuleConditionQueryString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -1951,7 +1951,7 @@ export interface DataAwsLbListenerRuleConditionSourceIp {
 export function dataAwsLbListenerRuleConditionSourceIpToTerraform(struct?: DataAwsLbListenerRuleConditionSourceIp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1961,7 +1961,7 @@ export function dataAwsLbListenerRuleConditionSourceIpToTerraform(struct?: DataA
 export function dataAwsLbListenerRuleConditionSourceIpToHclTerraform(struct?: DataAwsLbListenerRuleConditionSourceIp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2035,37 +2035,37 @@ export interface DataAwsLbListenerRuleCondition {
   /**
   * host_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#host_header DataAwsLbListenerRule#host_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#host_header DataAwsLbListenerRule#host_header}
   */
   readonly hostHeader?: DataAwsLbListenerRuleConditionHostHeader[] | cdktn.IResolvable;
   /**
   * http_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#http_header DataAwsLbListenerRule#http_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#http_header DataAwsLbListenerRule#http_header}
   */
   readonly httpHeader?: DataAwsLbListenerRuleConditionHttpHeader[] | cdktn.IResolvable;
   /**
   * http_request_method block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#http_request_method DataAwsLbListenerRule#http_request_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#http_request_method DataAwsLbListenerRule#http_request_method}
   */
   readonly httpRequestMethod?: DataAwsLbListenerRuleConditionHttpRequestMethod[] | cdktn.IResolvable;
   /**
   * path_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#path_pattern DataAwsLbListenerRule#path_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#path_pattern DataAwsLbListenerRule#path_pattern}
   */
   readonly pathPattern?: DataAwsLbListenerRuleConditionPathPattern[] | cdktn.IResolvable;
   /**
   * query_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#query_string DataAwsLbListenerRule#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#query_string DataAwsLbListenerRule#query_string}
   */
   readonly queryString?: DataAwsLbListenerRuleConditionQueryString[] | cdktn.IResolvable;
   /**
   * source_ip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#source_ip DataAwsLbListenerRule#source_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#source_ip DataAwsLbListenerRule#source_ip}
   */
   readonly sourceIp?: DataAwsLbListenerRuleConditionSourceIp[] | cdktn.IResolvable;
 }
@@ -2073,7 +2073,7 @@ export interface DataAwsLbListenerRuleCondition {
 export function dataAwsLbListenerRuleConditionToTerraform(struct?: DataAwsLbListenerRuleCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host_header: cdktn.listMapper(dataAwsLbListenerRuleConditionHostHeaderToTerraform, true)(struct!.hostHeader),
@@ -2089,7 +2089,7 @@ export function dataAwsLbListenerRuleConditionToTerraform(struct?: DataAwsLbList
 export function dataAwsLbListenerRuleConditionToHclTerraform(struct?: DataAwsLbListenerRuleCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host_header: {
@@ -2330,7 +2330,7 @@ export interface DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite {
 export function dataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteToTerraform(struct?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2340,7 +2340,7 @@ export function dataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteToTe
 export function dataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteToHclTerraform(struct?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2419,7 +2419,7 @@ export interface DataAwsLbListenerRuleTransformHostHeaderRewriteConfig {
   /**
   * rewrite block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
   */
   readonly rewrite?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite[] | cdktn.IResolvable;
 }
@@ -2427,7 +2427,7 @@ export interface DataAwsLbListenerRuleTransformHostHeaderRewriteConfig {
 export function dataAwsLbListenerRuleTransformHostHeaderRewriteConfigToTerraform(struct?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rewrite: cdktn.listMapper(dataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteToTerraform, true)(struct!.rewrite),
@@ -2438,7 +2438,7 @@ export function dataAwsLbListenerRuleTransformHostHeaderRewriteConfigToTerraform
 export function dataAwsLbListenerRuleTransformHostHeaderRewriteConfigToHclTerraform(struct?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rewrite: {
@@ -2539,7 +2539,7 @@ export interface DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite {
 export function dataAwsLbListenerRuleTransformUrlRewriteConfigRewriteToTerraform(struct?: DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2549,7 +2549,7 @@ export function dataAwsLbListenerRuleTransformUrlRewriteConfigRewriteToTerraform
 export function dataAwsLbListenerRuleTransformUrlRewriteConfigRewriteToHclTerraform(struct?: DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2628,7 +2628,7 @@ export interface DataAwsLbListenerRuleTransformUrlRewriteConfig {
   /**
   * rewrite block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
   */
   readonly rewrite?: DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite[] | cdktn.IResolvable;
 }
@@ -2636,7 +2636,7 @@ export interface DataAwsLbListenerRuleTransformUrlRewriteConfig {
 export function dataAwsLbListenerRuleTransformUrlRewriteConfigToTerraform(struct?: DataAwsLbListenerRuleTransformUrlRewriteConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rewrite: cdktn.listMapper(dataAwsLbListenerRuleTransformUrlRewriteConfigRewriteToTerraform, true)(struct!.rewrite),
@@ -2647,7 +2647,7 @@ export function dataAwsLbListenerRuleTransformUrlRewriteConfigToTerraform(struct
 export function dataAwsLbListenerRuleTransformUrlRewriteConfigToHclTerraform(struct?: DataAwsLbListenerRuleTransformUrlRewriteConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rewrite: {
@@ -2746,13 +2746,13 @@ export interface DataAwsLbListenerRuleTransform {
   /**
   * host_header_rewrite_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#host_header_rewrite_config DataAwsLbListenerRule#host_header_rewrite_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#host_header_rewrite_config DataAwsLbListenerRule#host_header_rewrite_config}
   */
   readonly hostHeaderRewriteConfig?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfig[] | cdktn.IResolvable;
   /**
   * url_rewrite_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#url_rewrite_config DataAwsLbListenerRule#url_rewrite_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#url_rewrite_config DataAwsLbListenerRule#url_rewrite_config}
   */
   readonly urlRewriteConfig?: DataAwsLbListenerRuleTransformUrlRewriteConfig[] | cdktn.IResolvable;
 }
@@ -2760,7 +2760,7 @@ export interface DataAwsLbListenerRuleTransform {
 export function dataAwsLbListenerRuleTransformToTerraform(struct?: DataAwsLbListenerRuleTransform | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host_header_rewrite_config: cdktn.listMapper(dataAwsLbListenerRuleTransformHostHeaderRewriteConfigToTerraform, true)(struct!.hostHeaderRewriteConfig),
@@ -2772,7 +2772,7 @@ export function dataAwsLbListenerRuleTransformToTerraform(struct?: DataAwsLbList
 export function dataAwsLbListenerRuleTransformToHclTerraform(struct?: DataAwsLbListenerRuleTransform | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host_header_rewrite_config: {
@@ -2902,7 +2902,7 @@ export class DataAwsLbListenerRuleTransformList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}
 */
 export class DataAwsLbListenerRule extends cdktn.TerraformDataSource {
 
@@ -2918,7 +2918,7 @@ export class DataAwsLbListenerRule extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsLbListenerRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLbListenerRule to import
-  * @param importFromId The id of the existing DataAwsLbListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLbListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLbListenerRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2930,7 +2930,7 @@ export class DataAwsLbListenerRule extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2941,7 +2941,7 @@ export class DataAwsLbListenerRule extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_lb_listener_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

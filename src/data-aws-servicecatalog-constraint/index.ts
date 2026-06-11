@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/servicecatalog_constraint
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/servicecatalog_constraint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsServicecatalogConstraintConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/servicecatalog_constraint#accept_language DataAwsServicecatalogConstraint#accept_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/servicecatalog_constraint#accept_language DataAwsServicecatalogConstraint#accept_language}
   */
   readonly acceptLanguage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/servicecatalog_constraint#description DataAwsServicecatalogConstraint#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/servicecatalog_constraint#description DataAwsServicecatalogConstraint#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/servicecatalog_constraint#id DataAwsServicecatalogConstraint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/servicecatalog_constraint#id DataAwsServicecatalogConstraint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,19 +30,19 @@ export interface DataAwsServicecatalogConstraintConfig extends cdktn.TerraformMe
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/servicecatalog_constraint#region DataAwsServicecatalogConstraint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/servicecatalog_constraint#region DataAwsServicecatalogConstraint#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/servicecatalog_constraint#timeouts DataAwsServicecatalogConstraint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/servicecatalog_constraint#timeouts DataAwsServicecatalogConstraint#timeouts}
   */
   readonly timeouts?: DataAwsServicecatalogConstraintTimeouts;
 }
 export interface DataAwsServicecatalogConstraintTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/servicecatalog_constraint#read DataAwsServicecatalogConstraint#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/servicecatalog_constraint#read DataAwsServicecatalogConstraint#read}
   */
   readonly read?: string;
 }
@@ -50,7 +50,7 @@ export interface DataAwsServicecatalogConstraintTimeouts {
 export function dataAwsServicecatalogConstraintTimeoutsToTerraform(struct?: DataAwsServicecatalogConstraintTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -61,7 +61,7 @@ export function dataAwsServicecatalogConstraintTimeoutsToTerraform(struct?: Data
 export function dataAwsServicecatalogConstraintTimeoutsToHclTerraform(struct?: DataAwsServicecatalogConstraintTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -136,7 +136,7 @@ export class DataAwsServicecatalogConstraintTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint}
 */
 export class DataAwsServicecatalogConstraint extends cdktn.TerraformDataSource {
 
@@ -152,7 +152,7 @@ export class DataAwsServicecatalogConstraint extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsServicecatalogConstraint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsServicecatalogConstraint to import
-  * @param importFromId The id of the existing DataAwsServicecatalogConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/servicecatalog_constraint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsServicecatalogConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/servicecatalog_constraint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsServicecatalogConstraint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -164,7 +164,7 @@ export class DataAwsServicecatalogConstraint extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -175,7 +175,7 @@ export class DataAwsServicecatalogConstraint extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_servicecatalog_constraint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

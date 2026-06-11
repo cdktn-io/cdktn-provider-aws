@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,98 +13,98 @@ import * as cdktn from 'cdktn';
 
 export interface MskconnectConnectorConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#connector_configuration MskconnectConnector#connector_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#connector_configuration MskconnectConnector#connector_configuration}
   */
   readonly connectorConfiguration: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#description MskconnectConnector#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#description MskconnectConnector#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#id MskconnectConnector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#id MskconnectConnector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#kafkaconnect_version MskconnectConnector#kafkaconnect_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#kafkaconnect_version MskconnectConnector#kafkaconnect_version}
   */
   readonly kafkaconnectVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#name MskconnectConnector#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#name MskconnectConnector#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#region MskconnectConnector#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#region MskconnectConnector#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#service_execution_role_arn MskconnectConnector#service_execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#service_execution_role_arn MskconnectConnector#service_execution_role_arn}
   */
   readonly serviceExecutionRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#tags MskconnectConnector#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#tags MskconnectConnector#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#tags_all MskconnectConnector#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#tags_all MskconnectConnector#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * capacity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#capacity MskconnectConnector#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#capacity MskconnectConnector#capacity}
   */
   readonly capacity: MskconnectConnectorCapacity;
   /**
   * kafka_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#kafka_cluster MskconnectConnector#kafka_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#kafka_cluster MskconnectConnector#kafka_cluster}
   */
   readonly kafkaCluster: MskconnectConnectorKafkaCluster;
   /**
   * kafka_cluster_client_authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#kafka_cluster_client_authentication MskconnectConnector#kafka_cluster_client_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#kafka_cluster_client_authentication MskconnectConnector#kafka_cluster_client_authentication}
   */
   readonly kafkaClusterClientAuthentication: MskconnectConnectorKafkaClusterClientAuthentication;
   /**
   * kafka_cluster_encryption_in_transit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#kafka_cluster_encryption_in_transit MskconnectConnector#kafka_cluster_encryption_in_transit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#kafka_cluster_encryption_in_transit MskconnectConnector#kafka_cluster_encryption_in_transit}
   */
   readonly kafkaClusterEncryptionInTransit: MskconnectConnectorKafkaClusterEncryptionInTransit;
   /**
   * log_delivery block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#log_delivery MskconnectConnector#log_delivery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#log_delivery MskconnectConnector#log_delivery}
   */
   readonly logDelivery?: MskconnectConnectorLogDelivery;
   /**
   * plugin block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#plugin MskconnectConnector#plugin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#plugin MskconnectConnector#plugin}
   */
   readonly plugin: MskconnectConnectorPlugin[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#timeouts MskconnectConnector#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#timeouts MskconnectConnector#timeouts}
   */
   readonly timeouts?: MskconnectConnectorTimeouts;
   /**
   * worker_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#worker_configuration MskconnectConnector#worker_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#worker_configuration MskconnectConnector#worker_configuration}
   */
   readonly workerConfiguration?: MskconnectConnectorWorkerConfiguration;
 }
 export interface MskconnectConnectorCapacityAutoscalingScaleInPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}
   */
   readonly cpuUtilizationPercentage?: number;
 }
@@ -112,7 +112,7 @@ export interface MskconnectConnectorCapacityAutoscalingScaleInPolicy {
 export function mskconnectConnectorCapacityAutoscalingScaleInPolicyToTerraform(struct?: MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference | MskconnectConnectorCapacityAutoscalingScaleInPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cpu_utilization_percentage: cdktn.numberToTerraform(struct!.cpuUtilizationPercentage),
@@ -123,7 +123,7 @@ export function mskconnectConnectorCapacityAutoscalingScaleInPolicyToTerraform(s
 export function mskconnectConnectorCapacityAutoscalingScaleInPolicyToHclTerraform(struct?: MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference | MskconnectConnectorCapacityAutoscalingScaleInPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cpu_utilization_percentage: {
@@ -188,7 +188,7 @@ export class MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference 
 }
 export interface MskconnectConnectorCapacityAutoscalingScaleOutPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}
   */
   readonly cpuUtilizationPercentage?: number;
 }
@@ -196,7 +196,7 @@ export interface MskconnectConnectorCapacityAutoscalingScaleOutPolicy {
 export function mskconnectConnectorCapacityAutoscalingScaleOutPolicyToTerraform(struct?: MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference | MskconnectConnectorCapacityAutoscalingScaleOutPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cpu_utilization_percentage: cdktn.numberToTerraform(struct!.cpuUtilizationPercentage),
@@ -207,7 +207,7 @@ export function mskconnectConnectorCapacityAutoscalingScaleOutPolicyToTerraform(
 export function mskconnectConnectorCapacityAutoscalingScaleOutPolicyToHclTerraform(struct?: MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference | MskconnectConnectorCapacityAutoscalingScaleOutPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cpu_utilization_percentage: {
@@ -272,27 +272,27 @@ export class MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference
 }
 export interface MskconnectConnectorCapacityAutoscaling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#max_worker_count MskconnectConnector#max_worker_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#max_worker_count MskconnectConnector#max_worker_count}
   */
   readonly maxWorkerCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}
   */
   readonly mcuCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#min_worker_count MskconnectConnector#min_worker_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#min_worker_count MskconnectConnector#min_worker_count}
   */
   readonly minWorkerCount: number;
   /**
   * scale_in_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#scale_in_policy MskconnectConnector#scale_in_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#scale_in_policy MskconnectConnector#scale_in_policy}
   */
   readonly scaleInPolicy?: MskconnectConnectorCapacityAutoscalingScaleInPolicy;
   /**
   * scale_out_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#scale_out_policy MskconnectConnector#scale_out_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#scale_out_policy MskconnectConnector#scale_out_policy}
   */
   readonly scaleOutPolicy?: MskconnectConnectorCapacityAutoscalingScaleOutPolicy;
 }
@@ -300,7 +300,7 @@ export interface MskconnectConnectorCapacityAutoscaling {
 export function mskconnectConnectorCapacityAutoscalingToTerraform(struct?: MskconnectConnectorCapacityAutoscalingOutputReference | MskconnectConnectorCapacityAutoscaling): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_worker_count: cdktn.numberToTerraform(struct!.maxWorkerCount),
@@ -315,7 +315,7 @@ export function mskconnectConnectorCapacityAutoscalingToTerraform(struct?: Mskco
 export function mskconnectConnectorCapacityAutoscalingToHclTerraform(struct?: MskconnectConnectorCapacityAutoscalingOutputReference | MskconnectConnectorCapacityAutoscaling): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_worker_count: {
@@ -486,11 +486,11 @@ export class MskconnectConnectorCapacityAutoscalingOutputReference extends cdktn
 }
 export interface MskconnectConnectorCapacityProvisionedCapacity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}
   */
   readonly mcuCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#worker_count MskconnectConnector#worker_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#worker_count MskconnectConnector#worker_count}
   */
   readonly workerCount: number;
 }
@@ -498,7 +498,7 @@ export interface MskconnectConnectorCapacityProvisionedCapacity {
 export function mskconnectConnectorCapacityProvisionedCapacityToTerraform(struct?: MskconnectConnectorCapacityProvisionedCapacityOutputReference | MskconnectConnectorCapacityProvisionedCapacity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mcu_count: cdktn.numberToTerraform(struct!.mcuCount),
@@ -510,7 +510,7 @@ export function mskconnectConnectorCapacityProvisionedCapacityToTerraform(struct
 export function mskconnectConnectorCapacityProvisionedCapacityToHclTerraform(struct?: MskconnectConnectorCapacityProvisionedCapacityOutputReference | MskconnectConnectorCapacityProvisionedCapacity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mcu_count: {
@@ -602,13 +602,13 @@ export interface MskconnectConnectorCapacity {
   /**
   * autoscaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#autoscaling MskconnectConnector#autoscaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#autoscaling MskconnectConnector#autoscaling}
   */
   readonly autoscaling?: MskconnectConnectorCapacityAutoscaling;
   /**
   * provisioned_capacity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#provisioned_capacity MskconnectConnector#provisioned_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#provisioned_capacity MskconnectConnector#provisioned_capacity}
   */
   readonly provisionedCapacity?: MskconnectConnectorCapacityProvisionedCapacity;
 }
@@ -616,7 +616,7 @@ export interface MskconnectConnectorCapacity {
 export function mskconnectConnectorCapacityToTerraform(struct?: MskconnectConnectorCapacityOutputReference | MskconnectConnectorCapacity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     autoscaling: mskconnectConnectorCapacityAutoscalingToTerraform(struct!.autoscaling),
@@ -628,7 +628,7 @@ export function mskconnectConnectorCapacityToTerraform(struct?: MskconnectConnec
 export function mskconnectConnectorCapacityToHclTerraform(struct?: MskconnectConnectorCapacityOutputReference | MskconnectConnectorCapacity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     autoscaling: {
@@ -721,11 +721,11 @@ export class MskconnectConnectorCapacityOutputReference extends cdktn.ComplexObj
 }
 export interface MskconnectConnectorKafkaClusterApacheKafkaClusterVpc {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#security_groups MskconnectConnector#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#security_groups MskconnectConnector#security_groups}
   */
   readonly securityGroups: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#subnets MskconnectConnector#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#subnets MskconnectConnector#subnets}
   */
   readonly subnets: string[];
 }
@@ -733,7 +733,7 @@ export interface MskconnectConnectorKafkaClusterApacheKafkaClusterVpc {
 export function mskconnectConnectorKafkaClusterApacheKafkaClusterVpcToTerraform(struct?: MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference | MskconnectConnectorKafkaClusterApacheKafkaClusterVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroups),
@@ -745,7 +745,7 @@ export function mskconnectConnectorKafkaClusterApacheKafkaClusterVpcToTerraform(
 export function mskconnectConnectorKafkaClusterApacheKafkaClusterVpcToHclTerraform(struct?: MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference | MskconnectConnectorKafkaClusterApacheKafkaClusterVpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     security_groups: {
@@ -832,13 +832,13 @@ export class MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference
 }
 export interface MskconnectConnectorKafkaClusterApacheKafkaCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#bootstrap_servers MskconnectConnector#bootstrap_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#bootstrap_servers MskconnectConnector#bootstrap_servers}
   */
   readonly bootstrapServers: string;
   /**
   * vpc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#vpc MskconnectConnector#vpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#vpc MskconnectConnector#vpc}
   */
   readonly vpc: MskconnectConnectorKafkaClusterApacheKafkaClusterVpc;
 }
@@ -846,7 +846,7 @@ export interface MskconnectConnectorKafkaClusterApacheKafkaCluster {
 export function mskconnectConnectorKafkaClusterApacheKafkaClusterToTerraform(struct?: MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference | MskconnectConnectorKafkaClusterApacheKafkaCluster): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bootstrap_servers: cdktn.stringToTerraform(struct!.bootstrapServers),
@@ -858,7 +858,7 @@ export function mskconnectConnectorKafkaClusterApacheKafkaClusterToTerraform(str
 export function mskconnectConnectorKafkaClusterApacheKafkaClusterToHclTerraform(struct?: MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference | MskconnectConnectorKafkaClusterApacheKafkaCluster): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bootstrap_servers: {
@@ -947,7 +947,7 @@ export interface MskconnectConnectorKafkaCluster {
   /**
   * apache_kafka_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#apache_kafka_cluster MskconnectConnector#apache_kafka_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#apache_kafka_cluster MskconnectConnector#apache_kafka_cluster}
   */
   readonly apacheKafkaCluster: MskconnectConnectorKafkaClusterApacheKafkaCluster;
 }
@@ -955,7 +955,7 @@ export interface MskconnectConnectorKafkaCluster {
 export function mskconnectConnectorKafkaClusterToTerraform(struct?: MskconnectConnectorKafkaClusterOutputReference | MskconnectConnectorKafkaCluster): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     apache_kafka_cluster: mskconnectConnectorKafkaClusterApacheKafkaClusterToTerraform(struct!.apacheKafkaCluster),
@@ -966,7 +966,7 @@ export function mskconnectConnectorKafkaClusterToTerraform(struct?: MskconnectCo
 export function mskconnectConnectorKafkaClusterToHclTerraform(struct?: MskconnectConnectorKafkaClusterOutputReference | MskconnectConnectorKafkaCluster): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     apache_kafka_cluster: {
@@ -1028,7 +1028,7 @@ export class MskconnectConnectorKafkaClusterOutputReference extends cdktn.Comple
 }
 export interface MskconnectConnectorKafkaClusterClientAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#authentication_type MskconnectConnector#authentication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#authentication_type MskconnectConnector#authentication_type}
   */
   readonly authenticationType?: string;
 }
@@ -1036,7 +1036,7 @@ export interface MskconnectConnectorKafkaClusterClientAuthentication {
 export function mskconnectConnectorKafkaClusterClientAuthenticationToTerraform(struct?: MskconnectConnectorKafkaClusterClientAuthenticationOutputReference | MskconnectConnectorKafkaClusterClientAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication_type: cdktn.stringToTerraform(struct!.authenticationType),
@@ -1047,7 +1047,7 @@ export function mskconnectConnectorKafkaClusterClientAuthenticationToTerraform(s
 export function mskconnectConnectorKafkaClusterClientAuthenticationToHclTerraform(struct?: MskconnectConnectorKafkaClusterClientAuthenticationOutputReference | MskconnectConnectorKafkaClusterClientAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication_type: {
@@ -1112,7 +1112,7 @@ export class MskconnectConnectorKafkaClusterClientAuthenticationOutputReference 
 }
 export interface MskconnectConnectorKafkaClusterEncryptionInTransit {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#encryption_type MskconnectConnector#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#encryption_type MskconnectConnector#encryption_type}
   */
   readonly encryptionType?: string;
 }
@@ -1120,7 +1120,7 @@ export interface MskconnectConnectorKafkaClusterEncryptionInTransit {
 export function mskconnectConnectorKafkaClusterEncryptionInTransitToTerraform(struct?: MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference | MskconnectConnectorKafkaClusterEncryptionInTransit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
@@ -1131,7 +1131,7 @@ export function mskconnectConnectorKafkaClusterEncryptionInTransitToTerraform(st
 export function mskconnectConnectorKafkaClusterEncryptionInTransitToHclTerraform(struct?: MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference | MskconnectConnectorKafkaClusterEncryptionInTransit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     encryption_type: {
@@ -1196,11 +1196,11 @@ export class MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference e
 }
 export interface MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#log_group MskconnectConnector#log_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#log_group MskconnectConnector#log_group}
   */
   readonly logGroup?: string;
 }
@@ -1208,7 +1208,7 @@ export interface MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs {
 export function mskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsToTerraform(struct?: MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference | MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -1220,7 +1220,7 @@ export function mskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsToT
 export function mskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsToHclTerraform(struct?: MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference | MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -1310,11 +1310,11 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutput
 }
 export interface MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#delivery_stream MskconnectConnector#delivery_stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#delivery_stream MskconnectConnector#delivery_stream}
   */
   readonly deliveryStream?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -1322,7 +1322,7 @@ export interface MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose {
 export function mskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseToTerraform(struct?: MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference | MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     delivery_stream: cdktn.stringToTerraform(struct!.deliveryStream),
@@ -1334,7 +1334,7 @@ export function mskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseToTerrafo
 export function mskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseToHclTerraform(struct?: MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference | MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     delivery_stream: {
@@ -1424,15 +1424,15 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputRefere
 }
 export interface MskconnectConnectorLogDeliveryWorkerLogDeliveryS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#bucket MskconnectConnector#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#bucket MskconnectConnector#bucket}
   */
   readonly bucket?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#prefix MskconnectConnector#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#prefix MskconnectConnector#prefix}
   */
   readonly prefix?: string;
 }
@@ -1440,7 +1440,7 @@ export interface MskconnectConnectorLogDeliveryWorkerLogDeliveryS3 {
 export function mskconnectConnectorLogDeliveryWorkerLogDeliveryS3ToTerraform(struct?: MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference | MskconnectConnectorLogDeliveryWorkerLogDeliveryS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket: cdktn.stringToTerraform(struct!.bucket),
@@ -1453,7 +1453,7 @@ export function mskconnectConnectorLogDeliveryWorkerLogDeliveryS3ToTerraform(str
 export function mskconnectConnectorLogDeliveryWorkerLogDeliveryS3ToHclTerraform(struct?: MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference | MskconnectConnectorLogDeliveryWorkerLogDeliveryS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket: {
@@ -1573,19 +1573,19 @@ export interface MskconnectConnectorLogDeliveryWorkerLogDelivery {
   /**
   * cloudwatch_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#cloudwatch_logs MskconnectConnector#cloudwatch_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#cloudwatch_logs MskconnectConnector#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs;
   /**
   * firehose block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#firehose MskconnectConnector#firehose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#firehose MskconnectConnector#firehose}
   */
   readonly firehose?: MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#s3 MskconnectConnector#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#s3 MskconnectConnector#s3}
   */
   readonly s3?: MskconnectConnectorLogDeliveryWorkerLogDeliveryS3;
 }
@@ -1593,7 +1593,7 @@ export interface MskconnectConnectorLogDeliveryWorkerLogDelivery {
 export function mskconnectConnectorLogDeliveryWorkerLogDeliveryToTerraform(struct?: MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference | MskconnectConnectorLogDeliveryWorkerLogDelivery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudwatch_logs: mskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsToTerraform(struct!.cloudwatchLogs),
@@ -1606,7 +1606,7 @@ export function mskconnectConnectorLogDeliveryWorkerLogDeliveryToTerraform(struc
 export function mskconnectConnectorLogDeliveryWorkerLogDeliveryToHclTerraform(struct?: MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference | MskconnectConnectorLogDeliveryWorkerLogDelivery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudwatch_logs: {
@@ -1729,7 +1729,7 @@ export interface MskconnectConnectorLogDelivery {
   /**
   * worker_log_delivery block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#worker_log_delivery MskconnectConnector#worker_log_delivery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#worker_log_delivery MskconnectConnector#worker_log_delivery}
   */
   readonly workerLogDelivery: MskconnectConnectorLogDeliveryWorkerLogDelivery;
 }
@@ -1737,7 +1737,7 @@ export interface MskconnectConnectorLogDelivery {
 export function mskconnectConnectorLogDeliveryToTerraform(struct?: MskconnectConnectorLogDeliveryOutputReference | MskconnectConnectorLogDelivery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     worker_log_delivery: mskconnectConnectorLogDeliveryWorkerLogDeliveryToTerraform(struct!.workerLogDelivery),
@@ -1748,7 +1748,7 @@ export function mskconnectConnectorLogDeliveryToTerraform(struct?: MskconnectCon
 export function mskconnectConnectorLogDeliveryToHclTerraform(struct?: MskconnectConnectorLogDeliveryOutputReference | MskconnectConnectorLogDelivery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     worker_log_delivery: {
@@ -1810,11 +1810,11 @@ export class MskconnectConnectorLogDeliveryOutputReference extends cdktn.Complex
 }
 export interface MskconnectConnectorPluginCustomPlugin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}
   */
   readonly revision: number;
 }
@@ -1822,7 +1822,7 @@ export interface MskconnectConnectorPluginCustomPlugin {
 export function mskconnectConnectorPluginCustomPluginToTerraform(struct?: MskconnectConnectorPluginCustomPluginOutputReference | MskconnectConnectorPluginCustomPlugin): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
@@ -1834,7 +1834,7 @@ export function mskconnectConnectorPluginCustomPluginToTerraform(struct?: Mskcon
 export function mskconnectConnectorPluginCustomPluginToHclTerraform(struct?: MskconnectConnectorPluginCustomPluginOutputReference | MskconnectConnectorPluginCustomPlugin): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arn: {
@@ -1923,7 +1923,7 @@ export interface MskconnectConnectorPlugin {
   /**
   * custom_plugin block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#custom_plugin MskconnectConnector#custom_plugin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#custom_plugin MskconnectConnector#custom_plugin}
   */
   readonly customPlugin: MskconnectConnectorPluginCustomPlugin;
 }
@@ -1931,7 +1931,7 @@ export interface MskconnectConnectorPlugin {
 export function mskconnectConnectorPluginToTerraform(struct?: MskconnectConnectorPlugin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom_plugin: mskconnectConnectorPluginCustomPluginToTerraform(struct!.customPlugin),
@@ -1942,7 +1942,7 @@ export function mskconnectConnectorPluginToTerraform(struct?: MskconnectConnecto
 export function mskconnectConnectorPluginToHclTerraform(struct?: MskconnectConnectorPlugin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom_plugin: {
@@ -2036,15 +2036,15 @@ export class MskconnectConnectorPluginList extends cdktn.ComplexList {
 }
 export interface MskconnectConnectorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#create MskconnectConnector#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#create MskconnectConnector#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#delete MskconnectConnector#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#delete MskconnectConnector#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#update MskconnectConnector#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#update MskconnectConnector#update}
   */
   readonly update?: string;
 }
@@ -2052,7 +2052,7 @@ export interface MskconnectConnectorTimeouts {
 export function mskconnectConnectorTimeoutsToTerraform(struct?: MskconnectConnectorTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2065,7 +2065,7 @@ export function mskconnectConnectorTimeoutsToTerraform(struct?: MskconnectConnec
 export function mskconnectConnectorTimeoutsToHclTerraform(struct?: MskconnectConnectorTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2196,11 +2196,11 @@ export class MskconnectConnectorTimeoutsOutputReference extends cdktn.ComplexObj
 }
 export interface MskconnectConnectorWorkerConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}
   */
   readonly revision: number;
 }
@@ -2208,7 +2208,7 @@ export interface MskconnectConnectorWorkerConfiguration {
 export function mskconnectConnectorWorkerConfigurationToTerraform(struct?: MskconnectConnectorWorkerConfigurationOutputReference | MskconnectConnectorWorkerConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
@@ -2220,7 +2220,7 @@ export function mskconnectConnectorWorkerConfigurationToTerraform(struct?: Mskco
 export function mskconnectConnectorWorkerConfigurationToHclTerraform(struct?: MskconnectConnectorWorkerConfigurationOutputReference | MskconnectConnectorWorkerConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arn: {
@@ -2307,7 +2307,7 @@ export class MskconnectConnectorWorkerConfigurationOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector aws_mskconnect_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector aws_mskconnect_connector}
 */
 export class MskconnectConnector extends cdktn.TerraformResource {
 
@@ -2323,7 +2323,7 @@ export class MskconnectConnector extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MskconnectConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MskconnectConnector to import
-  * @param importFromId The id of the existing MskconnectConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MskconnectConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MskconnectConnector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2335,7 +2335,7 @@ export class MskconnectConnector extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2346,7 +2346,7 @@ export class MskconnectConnector extends cdktn.TerraformResource {
       terraformResourceType: 'aws_mskconnect_connector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

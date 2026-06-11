@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/eks_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/eks_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsEksClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/eks_cluster#id DataAwsEksCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/eks_cluster#id DataAwsEksCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/eks_cluster#name DataAwsEksCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/eks_cluster#name DataAwsEksCluster#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/eks_cluster#region DataAwsEksCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/eks_cluster#region DataAwsEksCluster#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/eks_cluster#tags DataAwsEksCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/eks_cluster#tags DataAwsEksCluster#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -40,7 +40,7 @@ export interface DataAwsEksClusterAccessConfig {
 export function dataAwsEksClusterAccessConfigToTerraform(struct?: DataAwsEksClusterAccessConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAwsEksClusterAccessConfigToTerraform(struct?: DataAwsEksClus
 export function dataAwsEksClusterAccessConfigToHclTerraform(struct?: DataAwsEksClusterAccessConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -120,7 +120,7 @@ export interface DataAwsEksClusterCertificateAuthority {
 export function dataAwsEksClusterCertificateAuthorityToTerraform(struct?: DataAwsEksClusterCertificateAuthority): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -130,7 +130,7 @@ export function dataAwsEksClusterCertificateAuthorityToTerraform(struct?: DataAw
 export function dataAwsEksClusterCertificateAuthorityToHclTerraform(struct?: DataAwsEksClusterCertificateAuthority): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -195,7 +195,7 @@ export interface DataAwsEksClusterComputeConfig {
 export function dataAwsEksClusterComputeConfigToTerraform(struct?: DataAwsEksClusterComputeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -205,7 +205,7 @@ export function dataAwsEksClusterComputeConfigToTerraform(struct?: DataAwsEksClu
 export function dataAwsEksClusterComputeConfigToHclTerraform(struct?: DataAwsEksClusterComputeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -280,7 +280,7 @@ export interface DataAwsEksClusterControlPlaneScalingConfig {
 export function dataAwsEksClusterControlPlaneScalingConfigToTerraform(struct?: DataAwsEksClusterControlPlaneScalingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -290,7 +290,7 @@ export function dataAwsEksClusterControlPlaneScalingConfigToTerraform(struct?: D
 export function dataAwsEksClusterControlPlaneScalingConfigToHclTerraform(struct?: DataAwsEksClusterControlPlaneScalingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -355,7 +355,7 @@ export interface DataAwsEksClusterIdentityOidc {
 export function dataAwsEksClusterIdentityOidcToTerraform(struct?: DataAwsEksClusterIdentityOidc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -365,7 +365,7 @@ export function dataAwsEksClusterIdentityOidcToTerraform(struct?: DataAwsEksClus
 export function dataAwsEksClusterIdentityOidcToHclTerraform(struct?: DataAwsEksClusterIdentityOidc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -430,7 +430,7 @@ export interface DataAwsEksClusterIdentity {
 export function dataAwsEksClusterIdentityToTerraform(struct?: DataAwsEksClusterIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -440,7 +440,7 @@ export function dataAwsEksClusterIdentityToTerraform(struct?: DataAwsEksClusterI
 export function dataAwsEksClusterIdentityToHclTerraform(struct?: DataAwsEksClusterIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -506,7 +506,7 @@ export interface DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancing {
 export function dataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingToTerraform(struct?: DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancing): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -516,7 +516,7 @@ export function dataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingToTe
 export function dataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingToHclTerraform(struct?: DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancing): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -581,7 +581,7 @@ export interface DataAwsEksClusterKubernetesNetworkConfig {
 export function dataAwsEksClusterKubernetesNetworkConfigToTerraform(struct?: DataAwsEksClusterKubernetesNetworkConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -591,7 +591,7 @@ export function dataAwsEksClusterKubernetesNetworkConfigToTerraform(struct?: Dat
 export function dataAwsEksClusterKubernetesNetworkConfigToHclTerraform(struct?: DataAwsEksClusterKubernetesNetworkConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -672,7 +672,7 @@ export interface DataAwsEksClusterOutpostConfigControlPlanePlacement {
 export function dataAwsEksClusterOutpostConfigControlPlanePlacementToTerraform(struct?: DataAwsEksClusterOutpostConfigControlPlanePlacement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -682,7 +682,7 @@ export function dataAwsEksClusterOutpostConfigControlPlanePlacementToTerraform(s
 export function dataAwsEksClusterOutpostConfigControlPlanePlacementToHclTerraform(struct?: DataAwsEksClusterOutpostConfigControlPlanePlacement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -747,7 +747,7 @@ export interface DataAwsEksClusterOutpostConfig {
 export function dataAwsEksClusterOutpostConfigToTerraform(struct?: DataAwsEksClusterOutpostConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -757,7 +757,7 @@ export function dataAwsEksClusterOutpostConfigToTerraform(struct?: DataAwsEksClu
 export function dataAwsEksClusterOutpostConfigToHclTerraform(struct?: DataAwsEksClusterOutpostConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -833,7 +833,7 @@ export interface DataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworks {
 export function dataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworksToTerraform(struct?: DataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -843,7 +843,7 @@ export function dataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworksToTerrafor
 export function dataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworksToHclTerraform(struct?: DataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -908,7 +908,7 @@ export interface DataAwsEksClusterRemoteNetworkConfigRemotePodNetworks {
 export function dataAwsEksClusterRemoteNetworkConfigRemotePodNetworksToTerraform(struct?: DataAwsEksClusterRemoteNetworkConfigRemotePodNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -918,7 +918,7 @@ export function dataAwsEksClusterRemoteNetworkConfigRemotePodNetworksToTerraform
 export function dataAwsEksClusterRemoteNetworkConfigRemotePodNetworksToHclTerraform(struct?: DataAwsEksClusterRemoteNetworkConfigRemotePodNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -983,7 +983,7 @@ export interface DataAwsEksClusterRemoteNetworkConfig {
 export function dataAwsEksClusterRemoteNetworkConfigToTerraform(struct?: DataAwsEksClusterRemoteNetworkConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -993,7 +993,7 @@ export function dataAwsEksClusterRemoteNetworkConfigToTerraform(struct?: DataAws
 export function dataAwsEksClusterRemoteNetworkConfigToHclTerraform(struct?: DataAwsEksClusterRemoteNetworkConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1065,7 +1065,7 @@ export interface DataAwsEksClusterStorageConfigBlockStorage {
 export function dataAwsEksClusterStorageConfigBlockStorageToTerraform(struct?: DataAwsEksClusterStorageConfigBlockStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1075,7 +1075,7 @@ export function dataAwsEksClusterStorageConfigBlockStorageToTerraform(struct?: D
 export function dataAwsEksClusterStorageConfigBlockStorageToHclTerraform(struct?: DataAwsEksClusterStorageConfigBlockStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1140,7 +1140,7 @@ export interface DataAwsEksClusterStorageConfig {
 export function dataAwsEksClusterStorageConfigToTerraform(struct?: DataAwsEksClusterStorageConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1150,7 +1150,7 @@ export function dataAwsEksClusterStorageConfigToTerraform(struct?: DataAwsEksClu
 export function dataAwsEksClusterStorageConfigToHclTerraform(struct?: DataAwsEksClusterStorageConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1216,7 +1216,7 @@ export interface DataAwsEksClusterUpgradePolicy {
 export function dataAwsEksClusterUpgradePolicyToTerraform(struct?: DataAwsEksClusterUpgradePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1226,7 +1226,7 @@ export function dataAwsEksClusterUpgradePolicyToTerraform(struct?: DataAwsEksClu
 export function dataAwsEksClusterUpgradePolicyToHclTerraform(struct?: DataAwsEksClusterUpgradePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1291,7 +1291,7 @@ export interface DataAwsEksClusterVpcConfig {
 export function dataAwsEksClusterVpcConfigToTerraform(struct?: DataAwsEksClusterVpcConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1301,7 +1301,7 @@ export function dataAwsEksClusterVpcConfigToTerraform(struct?: DataAwsEksCluster
 export function dataAwsEksClusterVpcConfigToHclTerraform(struct?: DataAwsEksClusterVpcConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1396,7 +1396,7 @@ export interface DataAwsEksClusterZonalShiftConfig {
 export function dataAwsEksClusterZonalShiftConfigToTerraform(struct?: DataAwsEksClusterZonalShiftConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1406,7 +1406,7 @@ export function dataAwsEksClusterZonalShiftConfigToTerraform(struct?: DataAwsEks
 export function dataAwsEksClusterZonalShiftConfigToHclTerraform(struct?: DataAwsEksClusterZonalShiftConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1467,7 +1467,7 @@ export class DataAwsEksClusterZonalShiftConfigList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/eks_cluster aws_eks_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/eks_cluster aws_eks_cluster}
 */
 export class DataAwsEksCluster extends cdktn.TerraformDataSource {
 
@@ -1483,7 +1483,7 @@ export class DataAwsEksCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsEksCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEksCluster to import
-  * @param importFromId The id of the existing DataAwsEksCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/eks_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEksCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/eks_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEksCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1495,7 +1495,7 @@ export class DataAwsEksCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/eks_cluster aws_eks_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/eks_cluster aws_eks_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1506,7 +1506,7 @@ export class DataAwsEksCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_eks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,59 +13,59 @@ import * as cdktn from 'cdktn';
 
 export interface RedshiftIdcApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#application_type RedshiftIdcApplication#application_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#application_type RedshiftIdcApplication#application_type}
   */
   readonly applicationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#iam_role_arn RedshiftIdcApplication#iam_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#iam_role_arn RedshiftIdcApplication#iam_role_arn}
   */
   readonly iamRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#idc_display_name RedshiftIdcApplication#idc_display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#idc_display_name RedshiftIdcApplication#idc_display_name}
   */
   readonly idcDisplayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#idc_instance_arn RedshiftIdcApplication#idc_instance_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#idc_instance_arn RedshiftIdcApplication#idc_instance_arn}
   */
   readonly idcInstanceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#identity_namespace RedshiftIdcApplication#identity_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#identity_namespace RedshiftIdcApplication#identity_namespace}
   */
   readonly identityNamespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#redshift_idc_application_name RedshiftIdcApplication#redshift_idc_application_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#redshift_idc_application_name RedshiftIdcApplication#redshift_idc_application_name}
   */
   readonly redshiftIdcApplicationName: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#region RedshiftIdcApplication#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#region RedshiftIdcApplication#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#tags RedshiftIdcApplication#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#tags RedshiftIdcApplication#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * authorized_token_issuer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#authorized_token_issuer RedshiftIdcApplication#authorized_token_issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#authorized_token_issuer RedshiftIdcApplication#authorized_token_issuer}
   */
   readonly authorizedTokenIssuer?: RedshiftIdcApplicationAuthorizedTokenIssuer[] | cdktn.IResolvable;
   /**
   * service_integration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#service_integration RedshiftIdcApplication#service_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#service_integration RedshiftIdcApplication#service_integration}
   */
   readonly serviceIntegration?: RedshiftIdcApplicationServiceIntegration[] | cdktn.IResolvable;
 }
 export interface RedshiftIdcApplicationAuthorizedTokenIssuer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#authorized_audiences_list RedshiftIdcApplication#authorized_audiences_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#authorized_audiences_list RedshiftIdcApplication#authorized_audiences_list}
   */
   readonly authorizedAudiencesList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#trusted_token_issuer_arn RedshiftIdcApplication#trusted_token_issuer_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#trusted_token_issuer_arn RedshiftIdcApplication#trusted_token_issuer_arn}
   */
   readonly trustedTokenIssuerArn?: string;
 }
@@ -73,7 +73,7 @@ export interface RedshiftIdcApplicationAuthorizedTokenIssuer {
 export function redshiftIdcApplicationAuthorizedTokenIssuerToTerraform(struct?: RedshiftIdcApplicationAuthorizedTokenIssuer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authorized_audiences_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.authorizedAudiencesList),
@@ -85,7 +85,7 @@ export function redshiftIdcApplicationAuthorizedTokenIssuerToTerraform(struct?: 
 export function redshiftIdcApplicationAuthorizedTokenIssuerToHclTerraform(struct?: RedshiftIdcApplicationAuthorizedTokenIssuer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authorized_audiences_list: {
@@ -210,7 +210,7 @@ export class RedshiftIdcApplicationAuthorizedTokenIssuerList extends cdktn.Compl
 }
 export interface RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#authorization RedshiftIdcApplication#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#authorization RedshiftIdcApplication#authorization}
   */
   readonly authorization: string;
 }
@@ -218,7 +218,7 @@ export interface RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormat
 export function redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authorization: cdktn.stringToTerraform(struct!.authorization),
@@ -229,7 +229,7 @@ export function redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormati
 export function redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authorization: {
@@ -325,7 +325,7 @@ export interface RedshiftIdcApplicationServiceIntegrationLakeFormation {
   /**
   * lake_formation_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#lake_formation_query RedshiftIdcApplication#lake_formation_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#lake_formation_query RedshiftIdcApplication#lake_formation_query}
   */
   readonly lakeFormationQuery?: RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery[] | cdktn.IResolvable;
 }
@@ -333,7 +333,7 @@ export interface RedshiftIdcApplicationServiceIntegrationLakeFormation {
 export function redshiftIdcApplicationServiceIntegrationLakeFormationToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     lake_formation_query: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryToTerraform, true)(struct!.lakeFormationQuery),
@@ -344,7 +344,7 @@ export function redshiftIdcApplicationServiceIntegrationLakeFormationToTerraform
 export function redshiftIdcApplicationServiceIntegrationLakeFormationToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationLakeFormation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     lake_formation_query: {
@@ -441,7 +441,7 @@ export class RedshiftIdcApplicationServiceIntegrationLakeFormationList extends c
 }
 export interface RedshiftIdcApplicationServiceIntegrationRedshiftConnect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#authorization RedshiftIdcApplication#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#authorization RedshiftIdcApplication#authorization}
   */
   readonly authorization: string;
 }
@@ -449,7 +449,7 @@ export interface RedshiftIdcApplicationServiceIntegrationRedshiftConnect {
 export function redshiftIdcApplicationServiceIntegrationRedshiftConnectToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshiftConnect | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authorization: cdktn.stringToTerraform(struct!.authorization),
@@ -460,7 +460,7 @@ export function redshiftIdcApplicationServiceIntegrationRedshiftConnectToTerrafo
 export function redshiftIdcApplicationServiceIntegrationRedshiftConnectToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshiftConnect | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authorization: {
@@ -556,7 +556,7 @@ export interface RedshiftIdcApplicationServiceIntegrationRedshift {
   /**
   * connect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#connect RedshiftIdcApplication#connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#connect RedshiftIdcApplication#connect}
   */
   readonly connect?: RedshiftIdcApplicationServiceIntegrationRedshiftConnect[] | cdktn.IResolvable;
 }
@@ -564,7 +564,7 @@ export interface RedshiftIdcApplicationServiceIntegrationRedshift {
 export function redshiftIdcApplicationServiceIntegrationRedshiftToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshift | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connect: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationRedshiftConnectToTerraform, true)(struct!.connect),
@@ -575,7 +575,7 @@ export function redshiftIdcApplicationServiceIntegrationRedshiftToTerraform(stru
 export function redshiftIdcApplicationServiceIntegrationRedshiftToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationRedshift | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connect: {
@@ -672,7 +672,7 @@ export class RedshiftIdcApplicationServiceIntegrationRedshiftList extends cdktn.
 }
 export interface RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#authorization RedshiftIdcApplication#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#authorization RedshiftIdcApplication#authorization}
   */
   readonly authorization: string;
 }
@@ -680,7 +680,7 @@ export interface RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWrite
 export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authorization: cdktn.stringToTerraform(struct!.authorization),
@@ -691,7 +691,7 @@ export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteA
 export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authorization: {
@@ -787,7 +787,7 @@ export interface RedshiftIdcApplicationServiceIntegrationS3AccessGrants {
   /**
   * read_write_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#read_write_access RedshiftIdcApplication#read_write_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#read_write_access RedshiftIdcApplication#read_write_access}
   */
   readonly readWriteAccess?: RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess[] | cdktn.IResolvable;
 }
@@ -795,7 +795,7 @@ export interface RedshiftIdcApplicationServiceIntegrationS3AccessGrants {
 export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsToTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrants | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read_write_access: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessToTerraform, true)(struct!.readWriteAccess),
@@ -806,7 +806,7 @@ export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsToTerrafor
 export function redshiftIdcApplicationServiceIntegrationS3AccessGrantsToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegrationS3AccessGrants | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read_write_access: {
@@ -905,19 +905,19 @@ export interface RedshiftIdcApplicationServiceIntegration {
   /**
   * lake_formation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#lake_formation RedshiftIdcApplication#lake_formation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#lake_formation RedshiftIdcApplication#lake_formation}
   */
   readonly lakeFormation?: RedshiftIdcApplicationServiceIntegrationLakeFormation[] | cdktn.IResolvable;
   /**
   * redshift block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#redshift RedshiftIdcApplication#redshift}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#redshift RedshiftIdcApplication#redshift}
   */
   readonly redshift?: RedshiftIdcApplicationServiceIntegrationRedshift[] | cdktn.IResolvable;
   /**
   * s3_access_grants block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#s3_access_grants RedshiftIdcApplication#s3_access_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#s3_access_grants RedshiftIdcApplication#s3_access_grants}
   */
   readonly s3AccessGrants?: RedshiftIdcApplicationServiceIntegrationS3AccessGrants[] | cdktn.IResolvable;
 }
@@ -925,7 +925,7 @@ export interface RedshiftIdcApplicationServiceIntegration {
 export function redshiftIdcApplicationServiceIntegrationToTerraform(struct?: RedshiftIdcApplicationServiceIntegration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     lake_formation: cdktn.listMapper(redshiftIdcApplicationServiceIntegrationLakeFormationToTerraform, true)(struct!.lakeFormation),
@@ -938,7 +938,7 @@ export function redshiftIdcApplicationServiceIntegrationToTerraform(struct?: Red
 export function redshiftIdcApplicationServiceIntegrationToHclTerraform(struct?: RedshiftIdcApplicationServiceIntegration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     lake_formation: {
@@ -1091,7 +1091,7 @@ export class RedshiftIdcApplicationServiceIntegrationList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application aws_redshift_idc_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application aws_redshift_idc_application}
 */
 export class RedshiftIdcApplication extends cdktn.TerraformResource {
 
@@ -1107,7 +1107,7 @@ export class RedshiftIdcApplication extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RedshiftIdcApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftIdcApplication to import
-  * @param importFromId The id of the existing RedshiftIdcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RedshiftIdcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftIdcApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1119,7 +1119,7 @@ export class RedshiftIdcApplication extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/redshift_idc_application aws_redshift_idc_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/redshift_idc_application aws_redshift_idc_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1130,7 +1130,7 @@ export class RedshiftIdcApplication extends cdktn.TerraformResource {
       terraformResourceType: 'aws_redshift_idc_application',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

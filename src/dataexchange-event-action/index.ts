@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface DataexchangeEventActionConfig extends cdktn.TerraformMetaArgume
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#region DataexchangeEventAction#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#region DataexchangeEventAction#region}
   */
   readonly region?: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
   */
   readonly action?: DataexchangeEventActionAction[] | cdktn.IResolvable;
   /**
   * event block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
   */
   readonly event?: DataexchangeEventActionEvent[] | cdktn.IResolvable;
 }
 export interface DataexchangeEventActionActionExportRevisionToS3Encryption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#kms_key_arn DataexchangeEventAction#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#kms_key_arn DataexchangeEventAction#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#type DataexchangeEventAction#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#type DataexchangeEventAction#type}
   */
   readonly type?: string;
 }
@@ -45,7 +45,7 @@ export interface DataexchangeEventActionActionExportRevisionToS3Encryption {
 export function dataexchangeEventActionActionExportRevisionToS3EncryptionToTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3Encryption | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
@@ -57,7 +57,7 @@ export function dataexchangeEventActionActionExportRevisionToS3EncryptionToTerra
 export function dataexchangeEventActionActionExportRevisionToS3EncryptionToHclTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3Encryption | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     kms_key_arn: {
@@ -182,11 +182,11 @@ export class DataexchangeEventActionActionExportRevisionToS3EncryptionList exten
 }
 export interface DataexchangeEventActionActionExportRevisionToS3RevisionDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#bucket DataexchangeEventAction#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#bucket DataexchangeEventAction#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#key_pattern DataexchangeEventAction#key_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#key_pattern DataexchangeEventAction#key_pattern}
   */
   readonly keyPattern?: string;
 }
@@ -194,7 +194,7 @@ export interface DataexchangeEventActionActionExportRevisionToS3RevisionDestinat
 export function dataexchangeEventActionActionExportRevisionToS3RevisionDestinationToTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3RevisionDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket: cdktn.stringToTerraform(struct!.bucket),
@@ -206,7 +206,7 @@ export function dataexchangeEventActionActionExportRevisionToS3RevisionDestinati
 export function dataexchangeEventActionActionExportRevisionToS3RevisionDestinationToHclTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3RevisionDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket: {
@@ -330,13 +330,13 @@ export interface DataexchangeEventActionActionExportRevisionToS3 {
   /**
   * encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#encryption DataexchangeEventAction#encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#encryption DataexchangeEventAction#encryption}
   */
   readonly encryption?: DataexchangeEventActionActionExportRevisionToS3Encryption[] | cdktn.IResolvable;
   /**
   * revision_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#revision_destination DataexchangeEventAction#revision_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#revision_destination DataexchangeEventAction#revision_destination}
   */
   readonly revisionDestination?: DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] | cdktn.IResolvable;
 }
@@ -344,7 +344,7 @@ export interface DataexchangeEventActionActionExportRevisionToS3 {
 export function dataexchangeEventActionActionExportRevisionToS3ToTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     encryption: cdktn.listMapper(dataexchangeEventActionActionExportRevisionToS3EncryptionToTerraform, true)(struct!.encryption),
@@ -356,7 +356,7 @@ export function dataexchangeEventActionActionExportRevisionToS3ToTerraform(struc
 export function dataexchangeEventActionActionExportRevisionToS3ToHclTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     encryption: {
@@ -483,7 +483,7 @@ export interface DataexchangeEventActionAction {
   /**
   * export_revision_to_s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#export_revision_to_s3 DataexchangeEventAction#export_revision_to_s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#export_revision_to_s3 DataexchangeEventAction#export_revision_to_s3}
   */
   readonly exportRevisionToS3?: DataexchangeEventActionActionExportRevisionToS3[] | cdktn.IResolvable;
 }
@@ -491,7 +491,7 @@ export interface DataexchangeEventActionAction {
 export function dataexchangeEventActionActionToTerraform(struct?: DataexchangeEventActionAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     export_revision_to_s3: cdktn.listMapper(dataexchangeEventActionActionExportRevisionToS3ToTerraform, true)(struct!.exportRevisionToS3),
@@ -502,7 +502,7 @@ export function dataexchangeEventActionActionToTerraform(struct?: DataexchangeEv
 export function dataexchangeEventActionActionToHclTerraform(struct?: DataexchangeEventActionAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     export_revision_to_s3: {
@@ -599,7 +599,7 @@ export class DataexchangeEventActionActionList extends cdktn.ComplexList {
 }
 export interface DataexchangeEventActionEventRevisionPublished {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#data_set_id DataexchangeEventAction#data_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#data_set_id DataexchangeEventAction#data_set_id}
   */
   readonly dataSetId: string;
 }
@@ -607,7 +607,7 @@ export interface DataexchangeEventActionEventRevisionPublished {
 export function dataexchangeEventActionEventRevisionPublishedToTerraform(struct?: DataexchangeEventActionEventRevisionPublished | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_set_id: cdktn.stringToTerraform(struct!.dataSetId),
@@ -618,7 +618,7 @@ export function dataexchangeEventActionEventRevisionPublishedToTerraform(struct?
 export function dataexchangeEventActionEventRevisionPublishedToHclTerraform(struct?: DataexchangeEventActionEventRevisionPublished | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_set_id: {
@@ -714,7 +714,7 @@ export interface DataexchangeEventActionEvent {
   /**
   * revision_published block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#revision_published DataexchangeEventAction#revision_published}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#revision_published DataexchangeEventAction#revision_published}
   */
   readonly revisionPublished?: DataexchangeEventActionEventRevisionPublished[] | cdktn.IResolvable;
 }
@@ -722,7 +722,7 @@ export interface DataexchangeEventActionEvent {
 export function dataexchangeEventActionEventToTerraform(struct?: DataexchangeEventActionEvent | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     revision_published: cdktn.listMapper(dataexchangeEventActionEventRevisionPublishedToTerraform, true)(struct!.revisionPublished),
@@ -733,7 +733,7 @@ export function dataexchangeEventActionEventToTerraform(struct?: DataexchangeEve
 export function dataexchangeEventActionEventToHclTerraform(struct?: DataexchangeEventActionEvent | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     revision_published: {
@@ -830,7 +830,7 @@ export class DataexchangeEventActionEventList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action aws_dataexchange_event_action}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action aws_dataexchange_event_action}
 */
 export class DataexchangeEventAction extends cdktn.TerraformResource {
 
@@ -846,7 +846,7 @@ export class DataexchangeEventAction extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataexchangeEventAction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataexchangeEventAction to import
-  * @param importFromId The id of the existing DataexchangeEventAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataexchangeEventAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataexchangeEventAction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -858,7 +858,7 @@ export class DataexchangeEventAction extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dataexchange_event_action aws_dataexchange_event_action} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dataexchange_event_action aws_dataexchange_event_action} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -869,7 +869,7 @@ export class DataexchangeEventAction extends cdktn.TerraformResource {
       terraformResourceType: 'aws_dataexchange_event_action',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

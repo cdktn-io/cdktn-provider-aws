@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cloudfront_origin_request_policy
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_request_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,14 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsCloudfrontOriginRequestPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cloudfront_origin_request_policy#id DataAwsCloudfrontOriginRequestPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_request_policy#id DataAwsCloudfrontOriginRequestPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cloudfront_origin_request_policy#name DataAwsCloudfrontOriginRequestPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_request_policy#name DataAwsCloudfrontOriginRequestPolicy#name}
   */
   readonly name?: string;
 }
@@ -30,7 +30,7 @@ export interface DataAwsCloudfrontOriginRequestPolicyCookiesConfigCookies {
 export function dataAwsCloudfrontOriginRequestPolicyCookiesConfigCookiesToTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyCookiesConfigCookies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -40,7 +40,7 @@ export function dataAwsCloudfrontOriginRequestPolicyCookiesConfigCookiesToTerraf
 export function dataAwsCloudfrontOriginRequestPolicyCookiesConfigCookiesToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyCookiesConfigCookies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -105,7 +105,7 @@ export interface DataAwsCloudfrontOriginRequestPolicyCookiesConfig {
 export function dataAwsCloudfrontOriginRequestPolicyCookiesConfigToTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyCookiesConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -115,7 +115,7 @@ export function dataAwsCloudfrontOriginRequestPolicyCookiesConfigToTerraform(str
 export function dataAwsCloudfrontOriginRequestPolicyCookiesConfigToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyCookiesConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -186,7 +186,7 @@ export interface DataAwsCloudfrontOriginRequestPolicyHeadersConfigHeaders {
 export function dataAwsCloudfrontOriginRequestPolicyHeadersConfigHeadersToTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyHeadersConfigHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -196,7 +196,7 @@ export function dataAwsCloudfrontOriginRequestPolicyHeadersConfigHeadersToTerraf
 export function dataAwsCloudfrontOriginRequestPolicyHeadersConfigHeadersToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyHeadersConfigHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -261,7 +261,7 @@ export interface DataAwsCloudfrontOriginRequestPolicyHeadersConfig {
 export function dataAwsCloudfrontOriginRequestPolicyHeadersConfigToTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyHeadersConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -271,7 +271,7 @@ export function dataAwsCloudfrontOriginRequestPolicyHeadersConfigToTerraform(str
 export function dataAwsCloudfrontOriginRequestPolicyHeadersConfigToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyHeadersConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -342,7 +342,7 @@ export interface DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStri
 export function dataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsToTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -352,7 +352,7 @@ export function dataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStrin
 export function dataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -417,7 +417,7 @@ export interface DataAwsCloudfrontOriginRequestPolicyQueryStringsConfig {
 export function dataAwsCloudfrontOriginRequestPolicyQueryStringsConfigToTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyQueryStringsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -427,7 +427,7 @@ export function dataAwsCloudfrontOriginRequestPolicyQueryStringsConfigToTerrafor
 export function dataAwsCloudfrontOriginRequestPolicyQueryStringsConfigToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyQueryStringsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -494,7 +494,7 @@ export class DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigList extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy}
 */
 export class DataAwsCloudfrontOriginRequestPolicy extends cdktn.TerraformDataSource {
 
@@ -510,7 +510,7 @@ export class DataAwsCloudfrontOriginRequestPolicy extends cdktn.TerraformDataSou
   * Generates CDKTN code for importing a DataAwsCloudfrontOriginRequestPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCloudfrontOriginRequestPolicy to import
-  * @param importFromId The id of the existing DataAwsCloudfrontOriginRequestPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cloudfront_origin_request_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCloudfrontOriginRequestPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_request_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCloudfrontOriginRequestPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -522,7 +522,7 @@ export class DataAwsCloudfrontOriginRequestPolicy extends cdktn.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -533,7 +533,7 @@ export class DataAwsCloudfrontOriginRequestPolicy extends cdktn.TerraformDataSou
       terraformResourceType: 'aws_cloudfront_origin_request_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

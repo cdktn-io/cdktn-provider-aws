@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktn from 'cdktn';
 
 export interface EmrcontainersVirtualClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#id EmrcontainersVirtualCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#id EmrcontainersVirtualCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#name EmrcontainersVirtualCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#name EmrcontainersVirtualCluster#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#region EmrcontainersVirtualCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#region EmrcontainersVirtualCluster#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#tags EmrcontainersVirtualCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#tags EmrcontainersVirtualCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#tags_all EmrcontainersVirtualCluster#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#tags_all EmrcontainersVirtualCluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * container_provider block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#container_provider EmrcontainersVirtualCluster#container_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#container_provider EmrcontainersVirtualCluster#container_provider}
   */
   readonly containerProvider: EmrcontainersVirtualClusterContainerProvider;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#timeouts EmrcontainersVirtualCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#timeouts EmrcontainersVirtualCluster#timeouts}
   */
   readonly timeouts?: EmrcontainersVirtualClusterTimeouts;
 }
 export interface EmrcontainersVirtualClusterContainerProviderInfoEksInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#namespace EmrcontainersVirtualCluster#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#namespace EmrcontainersVirtualCluster#namespace}
   */
   readonly namespace?: string;
 }
@@ -60,7 +60,7 @@ export interface EmrcontainersVirtualClusterContainerProviderInfoEksInfo {
 export function emrcontainersVirtualClusterContainerProviderInfoEksInfoToTerraform(struct?: EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference | EmrcontainersVirtualClusterContainerProviderInfoEksInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     namespace: cdktn.stringToTerraform(struct!.namespace),
@@ -71,7 +71,7 @@ export function emrcontainersVirtualClusterContainerProviderInfoEksInfoToTerrafo
 export function emrcontainersVirtualClusterContainerProviderInfoEksInfoToHclTerraform(struct?: EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference | EmrcontainersVirtualClusterContainerProviderInfoEksInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     namespace: {
@@ -138,7 +138,7 @@ export interface EmrcontainersVirtualClusterContainerProviderInfo {
   /**
   * eks_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#eks_info EmrcontainersVirtualCluster#eks_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#eks_info EmrcontainersVirtualCluster#eks_info}
   */
   readonly eksInfo: EmrcontainersVirtualClusterContainerProviderInfoEksInfo;
 }
@@ -146,7 +146,7 @@ export interface EmrcontainersVirtualClusterContainerProviderInfo {
 export function emrcontainersVirtualClusterContainerProviderInfoToTerraform(struct?: EmrcontainersVirtualClusterContainerProviderInfoOutputReference | EmrcontainersVirtualClusterContainerProviderInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     eks_info: emrcontainersVirtualClusterContainerProviderInfoEksInfoToTerraform(struct!.eksInfo),
@@ -157,7 +157,7 @@ export function emrcontainersVirtualClusterContainerProviderInfoToTerraform(stru
 export function emrcontainersVirtualClusterContainerProviderInfoToHclTerraform(struct?: EmrcontainersVirtualClusterContainerProviderInfoOutputReference | EmrcontainersVirtualClusterContainerProviderInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     eks_info: {
@@ -219,20 +219,20 @@ export class EmrcontainersVirtualClusterContainerProviderInfoOutputReference ext
 }
 export interface EmrcontainersVirtualClusterContainerProvider {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#id EmrcontainersVirtualCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#id EmrcontainersVirtualCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#type EmrcontainersVirtualCluster#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#type EmrcontainersVirtualCluster#type}
   */
   readonly type: string;
   /**
   * info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#info EmrcontainersVirtualCluster#info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#info EmrcontainersVirtualCluster#info}
   */
   readonly info: EmrcontainersVirtualClusterContainerProviderInfo;
 }
@@ -240,7 +240,7 @@ export interface EmrcontainersVirtualClusterContainerProvider {
 export function emrcontainersVirtualClusterContainerProviderToTerraform(struct?: EmrcontainersVirtualClusterContainerProviderOutputReference | EmrcontainersVirtualClusterContainerProvider): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -253,7 +253,7 @@ export function emrcontainersVirtualClusterContainerProviderToTerraform(struct?:
 export function emrcontainersVirtualClusterContainerProviderToHclTerraform(struct?: EmrcontainersVirtualClusterContainerProviderOutputReference | EmrcontainersVirtualClusterContainerProvider): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -365,7 +365,7 @@ export class EmrcontainersVirtualClusterContainerProviderOutputReference extends
 }
 export interface EmrcontainersVirtualClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#delete EmrcontainersVirtualCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#delete EmrcontainersVirtualCluster#delete}
   */
   readonly delete?: string;
 }
@@ -373,7 +373,7 @@ export interface EmrcontainersVirtualClusterTimeouts {
 export function emrcontainersVirtualClusterTimeoutsToTerraform(struct?: EmrcontainersVirtualClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     delete: cdktn.stringToTerraform(struct!.delete),
@@ -384,7 +384,7 @@ export function emrcontainersVirtualClusterTimeoutsToTerraform(struct?: Emrconta
 export function emrcontainersVirtualClusterTimeoutsToHclTerraform(struct?: EmrcontainersVirtualClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     delete: {
@@ -459,7 +459,7 @@ export class EmrcontainersVirtualClusterTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}
 */
 export class EmrcontainersVirtualCluster extends cdktn.TerraformResource {
 
@@ -475,7 +475,7 @@ export class EmrcontainersVirtualCluster extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EmrcontainersVirtualCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmrcontainersVirtualCluster to import
-  * @param importFromId The id of the existing EmrcontainersVirtualCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmrcontainersVirtualCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmrcontainersVirtualCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -487,7 +487,7 @@ export class EmrcontainersVirtualCluster extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -498,7 +498,7 @@ export class EmrcontainersVirtualCluster extends cdktn.TerraformResource {
       terraformResourceType: 'aws_emrcontainers_virtual_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

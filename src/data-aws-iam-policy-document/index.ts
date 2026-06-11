@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsIamPolicyDocumentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#id DataAwsIamPolicyDocument#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#id DataAwsIamPolicyDocument#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#override_json DataAwsIamPolicyDocument#override_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#override_json DataAwsIamPolicyDocument#override_json}
   */
   readonly overrideJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#override_policy_documents DataAwsIamPolicyDocument#override_policy_documents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#override_policy_documents DataAwsIamPolicyDocument#override_policy_documents}
   */
   readonly overridePolicyDocuments?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#policy_id DataAwsIamPolicyDocument#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#policy_id DataAwsIamPolicyDocument#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#source_json DataAwsIamPolicyDocument#source_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#source_json DataAwsIamPolicyDocument#source_json}
   */
   readonly sourceJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#source_policy_documents DataAwsIamPolicyDocument#source_policy_documents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#source_policy_documents DataAwsIamPolicyDocument#source_policy_documents}
   */
   readonly sourcePolicyDocuments?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#version DataAwsIamPolicyDocument#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#version DataAwsIamPolicyDocument#version}
   */
   readonly version?: string;
   /**
   * statement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#statement DataAwsIamPolicyDocument#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#statement DataAwsIamPolicyDocument#statement}
   */
   readonly statement?: DataAwsIamPolicyDocumentStatement[] | cdktn.IResolvable;
 }
 export interface DataAwsIamPolicyDocumentStatementCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#test DataAwsIamPolicyDocument#test}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#test DataAwsIamPolicyDocument#test}
   */
   readonly test: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#values DataAwsIamPolicyDocument#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#values DataAwsIamPolicyDocument#values}
   */
   readonly values: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#variable DataAwsIamPolicyDocument#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#variable DataAwsIamPolicyDocument#variable}
   */
   readonly variable: string;
 }
@@ -68,7 +68,7 @@ export interface DataAwsIamPolicyDocumentStatementCondition {
 export function dataAwsIamPolicyDocumentStatementConditionToTerraform(struct?: DataAwsIamPolicyDocumentStatementCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     test: cdktn.stringToTerraform(struct!.test),
@@ -81,7 +81,7 @@ export function dataAwsIamPolicyDocumentStatementConditionToTerraform(struct?: D
 export function dataAwsIamPolicyDocumentStatementConditionToHclTerraform(struct?: DataAwsIamPolicyDocumentStatementCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     test: {
@@ -225,11 +225,11 @@ export class DataAwsIamPolicyDocumentStatementConditionList extends cdktn.Comple
 }
 export interface DataAwsIamPolicyDocumentStatementNotPrincipals {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#identifiers DataAwsIamPolicyDocument#identifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#identifiers DataAwsIamPolicyDocument#identifiers}
   */
   readonly identifiers: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#type DataAwsIamPolicyDocument#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#type DataAwsIamPolicyDocument#type}
   */
   readonly type: string;
 }
@@ -237,7 +237,7 @@ export interface DataAwsIamPolicyDocumentStatementNotPrincipals {
 export function dataAwsIamPolicyDocumentStatementNotPrincipalsToTerraform(struct?: DataAwsIamPolicyDocumentStatementNotPrincipals | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identifiers),
@@ -249,7 +249,7 @@ export function dataAwsIamPolicyDocumentStatementNotPrincipalsToTerraform(struct
 export function dataAwsIamPolicyDocumentStatementNotPrincipalsToHclTerraform(struct?: DataAwsIamPolicyDocumentStatementNotPrincipals | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identifiers: {
@@ -368,11 +368,11 @@ export class DataAwsIamPolicyDocumentStatementNotPrincipalsList extends cdktn.Co
 }
 export interface DataAwsIamPolicyDocumentStatementPrincipals {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#identifiers DataAwsIamPolicyDocument#identifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#identifiers DataAwsIamPolicyDocument#identifiers}
   */
   readonly identifiers: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#type DataAwsIamPolicyDocument#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#type DataAwsIamPolicyDocument#type}
   */
   readonly type: string;
 }
@@ -380,7 +380,7 @@ export interface DataAwsIamPolicyDocumentStatementPrincipals {
 export function dataAwsIamPolicyDocumentStatementPrincipalsToTerraform(struct?: DataAwsIamPolicyDocumentStatementPrincipals | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identifiers),
@@ -392,7 +392,7 @@ export function dataAwsIamPolicyDocumentStatementPrincipalsToTerraform(struct?: 
 export function dataAwsIamPolicyDocumentStatementPrincipalsToHclTerraform(struct?: DataAwsIamPolicyDocumentStatementPrincipals | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identifiers: {
@@ -511,45 +511,45 @@ export class DataAwsIamPolicyDocumentStatementPrincipalsList extends cdktn.Compl
 }
 export interface DataAwsIamPolicyDocumentStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#actions DataAwsIamPolicyDocument#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#actions DataAwsIamPolicyDocument#actions}
   */
   readonly actions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#effect DataAwsIamPolicyDocument#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#effect DataAwsIamPolicyDocument#effect}
   */
   readonly effect?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#not_actions DataAwsIamPolicyDocument#not_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#not_actions DataAwsIamPolicyDocument#not_actions}
   */
   readonly notActions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#not_resources DataAwsIamPolicyDocument#not_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#not_resources DataAwsIamPolicyDocument#not_resources}
   */
   readonly notResources?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#resources DataAwsIamPolicyDocument#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#resources DataAwsIamPolicyDocument#resources}
   */
   readonly resources?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#sid DataAwsIamPolicyDocument#sid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#sid DataAwsIamPolicyDocument#sid}
   */
   readonly sid?: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#condition DataAwsIamPolicyDocument#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#condition DataAwsIamPolicyDocument#condition}
   */
   readonly condition?: DataAwsIamPolicyDocumentStatementCondition[] | cdktn.IResolvable;
   /**
   * not_principals block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#not_principals DataAwsIamPolicyDocument#not_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#not_principals DataAwsIamPolicyDocument#not_principals}
   */
   readonly notPrincipals?: DataAwsIamPolicyDocumentStatementNotPrincipals[] | cdktn.IResolvable;
   /**
   * principals block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#principals DataAwsIamPolicyDocument#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#principals DataAwsIamPolicyDocument#principals}
   */
   readonly principals?: DataAwsIamPolicyDocumentStatementPrincipals[] | cdktn.IResolvable;
 }
@@ -557,7 +557,7 @@ export interface DataAwsIamPolicyDocumentStatement {
 export function dataAwsIamPolicyDocumentStatementToTerraform(struct?: DataAwsIamPolicyDocumentStatement | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
@@ -576,7 +576,7 @@ export function dataAwsIamPolicyDocumentStatementToTerraform(struct?: DataAwsIam
 export function dataAwsIamPolicyDocumentStatementToHclTerraform(struct?: DataAwsIamPolicyDocumentStatement | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     actions: {
@@ -897,7 +897,7 @@ export class DataAwsIamPolicyDocumentStatementList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document aws_iam_policy_document}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document aws_iam_policy_document}
 */
 export class DataAwsIamPolicyDocument extends cdktn.TerraformDataSource {
 
@@ -913,7 +913,7 @@ export class DataAwsIamPolicyDocument extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsIamPolicyDocument resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIamPolicyDocument to import
-  * @param importFromId The id of the existing DataAwsIamPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsIamPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIamPolicyDocument to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -925,7 +925,7 @@ export class DataAwsIamPolicyDocument extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -936,7 +936,7 @@ export class DataAwsIamPolicyDocument extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_iam_policy_document',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

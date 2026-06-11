@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktn from 'cdktn';
 
 export interface S3BucketInventoryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#enabled S3BucketInventory#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#enabled S3BucketInventory#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#id S3BucketInventory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#id S3BucketInventory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#included_object_versions S3BucketInventory#included_object_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#included_object_versions S3BucketInventory#included_object_versions}
   */
   readonly includedObjectVersions: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#name S3BucketInventory#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#name S3BucketInventory#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#optional_fields S3BucketInventory#optional_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#optional_fields S3BucketInventory#optional_fields}
   */
   readonly optionalFields?: string[];
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#region S3BucketInventory#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#region S3BucketInventory#region}
   */
   readonly region?: string;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#destination S3BucketInventory#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#destination S3BucketInventory#destination}
   */
   readonly destination: S3BucketInventoryDestination;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#filter S3BucketInventory#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#filter S3BucketInventory#filter}
   */
   readonly filter?: S3BucketInventoryFilter;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#schedule S3BucketInventory#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#schedule S3BucketInventory#schedule}
   */
   readonly schedule: S3BucketInventorySchedule;
 }
 export interface S3BucketInventoryDestinationBucketEncryptionSseKms {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#key_id S3BucketInventory#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#key_id S3BucketInventory#key_id}
   */
   readonly keyId: string;
 }
@@ -74,7 +74,7 @@ export interface S3BucketInventoryDestinationBucketEncryptionSseKms {
 export function s3BucketInventoryDestinationBucketEncryptionSseKmsToTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference | S3BucketInventoryDestinationBucketEncryptionSseKms): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key_id: cdktn.stringToTerraform(struct!.keyId),
@@ -85,7 +85,7 @@ export function s3BucketInventoryDestinationBucketEncryptionSseKmsToTerraform(st
 export function s3BucketInventoryDestinationBucketEncryptionSseKmsToHclTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference | S3BucketInventoryDestinationBucketEncryptionSseKms): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key_id: {
@@ -151,7 +151,7 @@ export interface S3BucketInventoryDestinationBucketEncryptionSseS3 {
 export function s3BucketInventoryDestinationBucketEncryptionSseS3ToTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference | S3BucketInventoryDestinationBucketEncryptionSseS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -161,7 +161,7 @@ export function s3BucketInventoryDestinationBucketEncryptionSseS3ToTerraform(str
 export function s3BucketInventoryDestinationBucketEncryptionSseS3ToHclTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference | S3BucketInventoryDestinationBucketEncryptionSseS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -198,13 +198,13 @@ export interface S3BucketInventoryDestinationBucketEncryption {
   /**
   * sse_kms block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#sse_kms S3BucketInventory#sse_kms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#sse_kms S3BucketInventory#sse_kms}
   */
   readonly sseKms?: S3BucketInventoryDestinationBucketEncryptionSseKms;
   /**
   * sse_s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#sse_s3 S3BucketInventory#sse_s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#sse_s3 S3BucketInventory#sse_s3}
   */
   readonly sseS3?: S3BucketInventoryDestinationBucketEncryptionSseS3;
 }
@@ -212,7 +212,7 @@ export interface S3BucketInventoryDestinationBucketEncryption {
 export function s3BucketInventoryDestinationBucketEncryptionToTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionOutputReference | S3BucketInventoryDestinationBucketEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     sse_kms: s3BucketInventoryDestinationBucketEncryptionSseKmsToTerraform(struct!.sseKms),
@@ -224,7 +224,7 @@ export function s3BucketInventoryDestinationBucketEncryptionToTerraform(struct?:
 export function s3BucketInventoryDestinationBucketEncryptionToHclTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionOutputReference | S3BucketInventoryDestinationBucketEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     sse_kms: {
@@ -317,25 +317,25 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
 }
 export interface S3BucketInventoryDestinationBucket {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#account_id S3BucketInventory#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#account_id S3BucketInventory#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#bucket_arn S3BucketInventory#bucket_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#bucket_arn S3BucketInventory#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#format S3BucketInventory#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#format S3BucketInventory#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}
   */
   readonly prefix?: string;
   /**
   * encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#encryption S3BucketInventory#encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#encryption S3BucketInventory#encryption}
   */
   readonly encryption?: S3BucketInventoryDestinationBucketEncryption;
 }
@@ -343,7 +343,7 @@ export interface S3BucketInventoryDestinationBucket {
 export function s3BucketInventoryDestinationBucketToTerraform(struct?: S3BucketInventoryDestinationBucketOutputReference | S3BucketInventoryDestinationBucket): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_id: cdktn.stringToTerraform(struct!.accountId),
@@ -358,7 +358,7 @@ export function s3BucketInventoryDestinationBucketToTerraform(struct?: S3BucketI
 export function s3BucketInventoryDestinationBucketToHclTerraform(struct?: S3BucketInventoryDestinationBucketOutputReference | S3BucketInventoryDestinationBucket): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_id: {
@@ -531,7 +531,7 @@ export interface S3BucketInventoryDestination {
   /**
   * bucket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}
   */
   readonly bucket: S3BucketInventoryDestinationBucket;
 }
@@ -539,7 +539,7 @@ export interface S3BucketInventoryDestination {
 export function s3BucketInventoryDestinationToTerraform(struct?: S3BucketInventoryDestinationOutputReference | S3BucketInventoryDestination): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket: s3BucketInventoryDestinationBucketToTerraform(struct!.bucket),
@@ -550,7 +550,7 @@ export function s3BucketInventoryDestinationToTerraform(struct?: S3BucketInvento
 export function s3BucketInventoryDestinationToHclTerraform(struct?: S3BucketInventoryDestinationOutputReference | S3BucketInventoryDestination): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket: {
@@ -612,7 +612,7 @@ export class S3BucketInventoryDestinationOutputReference extends cdktn.ComplexOb
 }
 export interface S3BucketInventoryFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}
   */
   readonly prefix?: string;
 }
@@ -620,7 +620,7 @@ export interface S3BucketInventoryFilter {
 export function s3BucketInventoryFilterToTerraform(struct?: S3BucketInventoryFilterOutputReference | S3BucketInventoryFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     prefix: cdktn.stringToTerraform(struct!.prefix),
@@ -631,7 +631,7 @@ export function s3BucketInventoryFilterToTerraform(struct?: S3BucketInventoryFil
 export function s3BucketInventoryFilterToHclTerraform(struct?: S3BucketInventoryFilterOutputReference | S3BucketInventoryFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     prefix: {
@@ -696,7 +696,7 @@ export class S3BucketInventoryFilterOutputReference extends cdktn.ComplexObject 
 }
 export interface S3BucketInventorySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#frequency S3BucketInventory#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#frequency S3BucketInventory#frequency}
   */
   readonly frequency: string;
 }
@@ -704,7 +704,7 @@ export interface S3BucketInventorySchedule {
 export function s3BucketInventoryScheduleToTerraform(struct?: S3BucketInventoryScheduleOutputReference | S3BucketInventorySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     frequency: cdktn.stringToTerraform(struct!.frequency),
@@ -715,7 +715,7 @@ export function s3BucketInventoryScheduleToTerraform(struct?: S3BucketInventoryS
 export function s3BucketInventoryScheduleToHclTerraform(struct?: S3BucketInventoryScheduleOutputReference | S3BucketInventorySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     frequency: {
@@ -777,7 +777,7 @@ export class S3BucketInventoryScheduleOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory}
 */
 export class S3BucketInventory extends cdktn.TerraformResource {
 
@@ -793,7 +793,7 @@ export class S3BucketInventory extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a S3BucketInventory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketInventory to import
-  * @param importFromId The id of the existing S3BucketInventory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3BucketInventory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketInventory to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -805,7 +805,7 @@ export class S3BucketInventory extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -816,7 +816,7 @@ export class S3BucketInventory extends cdktn.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_inventory',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,166 +13,166 @@ import * as cdktn from 'cdktn';
 
 export interface DynamodbTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}
   */
   readonly billingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}
   */
   readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}
   */
   readonly hashKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#id DynamodbTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#id DynamodbTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#name DynamodbTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#name DynamodbTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}
   */
   readonly rangeKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}
   */
   readonly readCapacity?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#region DynamodbTable#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#region DynamodbTable#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#restore_backup_arn DynamodbTable#restore_backup_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#restore_backup_arn DynamodbTable#restore_backup_arn}
   */
   readonly restoreBackupArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}
   */
   readonly restoreDateTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}
   */
   readonly restoreSourceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#restore_source_table_arn DynamodbTable#restore_source_table_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#restore_source_table_arn DynamodbTable#restore_source_table_arn}
   */
   readonly restoreSourceTableArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}
   */
   readonly restoreToLatestTime?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}
   */
   readonly streamEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}
   */
   readonly streamViewType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}
   */
   readonly tableClass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#tags DynamodbTable#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#tags DynamodbTable#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#tags_all DynamodbTable#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#tags_all DynamodbTable#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}
   */
   readonly writeCapacity?: number;
   /**
   * attribute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#attribute DynamodbTable#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#attribute DynamodbTable#attribute}
   */
   readonly attribute?: DynamodbTableAttribute[] | cdktn.IResolvable;
   /**
   * global_secondary_index block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#global_secondary_index DynamodbTable#global_secondary_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#global_secondary_index DynamodbTable#global_secondary_index}
   */
   readonly globalSecondaryIndex?: DynamodbTableGlobalSecondaryIndex[] | cdktn.IResolvable;
   /**
   * global_table_witness block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#global_table_witness DynamodbTable#global_table_witness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#global_table_witness DynamodbTable#global_table_witness}
   */
   readonly globalTableWitness?: DynamodbTableGlobalTableWitness;
   /**
   * import_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#import_table DynamodbTable#import_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#import_table DynamodbTable#import_table}
   */
   readonly importTable?: DynamodbTableImportTable;
   /**
   * local_secondary_index block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#local_secondary_index DynamodbTable#local_secondary_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#local_secondary_index DynamodbTable#local_secondary_index}
   */
   readonly localSecondaryIndex?: DynamodbTableLocalSecondaryIndex[] | cdktn.IResolvable;
   /**
   * on_demand_throughput block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#on_demand_throughput DynamodbTable#on_demand_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#on_demand_throughput DynamodbTable#on_demand_throughput}
   */
   readonly onDemandThroughput?: DynamodbTableOnDemandThroughput;
   /**
   * point_in_time_recovery block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
   */
   readonly pointInTimeRecovery?: DynamodbTablePointInTimeRecovery;
   /**
   * replica block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#replica DynamodbTable#replica}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#replica DynamodbTable#replica}
   */
   readonly replica?: DynamodbTableReplica[] | cdktn.IResolvable;
   /**
   * server_side_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#server_side_encryption DynamodbTable#server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#server_side_encryption DynamodbTable#server_side_encryption}
   */
   readonly serverSideEncryption?: DynamodbTableServerSideEncryption;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#timeouts DynamodbTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#timeouts DynamodbTable#timeouts}
   */
   readonly timeouts?: DynamodbTableTimeouts;
   /**
   * ttl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#ttl DynamodbTable#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#ttl DynamodbTable#ttl}
   */
   readonly ttl?: DynamodbTableTtl;
   /**
   * warm_throughput block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#warm_throughput DynamodbTable#warm_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#warm_throughput DynamodbTable#warm_throughput}
   */
   readonly warmThroughput?: DynamodbTableWarmThroughput;
 }
 export interface DynamodbTableAttribute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#name DynamodbTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#name DynamodbTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#type DynamodbTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#type DynamodbTable#type}
   */
   readonly type: string;
 }
@@ -180,7 +180,7 @@ export interface DynamodbTableAttribute {
 export function dynamodbTableAttributeToTerraform(struct?: DynamodbTableAttribute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -192,7 +192,7 @@ export function dynamodbTableAttributeToTerraform(struct?: DynamodbTableAttribut
 export function dynamodbTableAttributeToHclTerraform(struct?: DynamodbTableAttribute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -311,11 +311,11 @@ export class DynamodbTableAttributeList extends cdktn.ComplexList {
 }
 export interface DynamodbTableGlobalSecondaryIndexKeySchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}
   */
   readonly attributeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#key_type DynamodbTable#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#key_type DynamodbTable#key_type}
   */
   readonly keyType: string;
 }
@@ -323,7 +323,7 @@ export interface DynamodbTableGlobalSecondaryIndexKeySchema {
 export function dynamodbTableGlobalSecondaryIndexKeySchemaToTerraform(struct?: DynamodbTableGlobalSecondaryIndexKeySchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute_name: cdktn.stringToTerraform(struct!.attributeName),
@@ -335,7 +335,7 @@ export function dynamodbTableGlobalSecondaryIndexKeySchemaToTerraform(struct?: D
 export function dynamodbTableGlobalSecondaryIndexKeySchemaToHclTerraform(struct?: DynamodbTableGlobalSecondaryIndexKeySchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute_name: {
@@ -454,11 +454,11 @@ export class DynamodbTableGlobalSecondaryIndexKeySchemaList extends cdktn.Comple
 }
 export interface DynamodbTableGlobalSecondaryIndexOnDemandThroughput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}
   */
   readonly maxReadRequestUnits?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}
   */
   readonly maxWriteRequestUnits?: number;
 }
@@ -466,7 +466,7 @@ export interface DynamodbTableGlobalSecondaryIndexOnDemandThroughput {
 export function dynamodbTableGlobalSecondaryIndexOnDemandThroughputToTerraform(struct?: DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference | DynamodbTableGlobalSecondaryIndexOnDemandThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_read_request_units: cdktn.numberToTerraform(struct!.maxReadRequestUnits),
@@ -478,7 +478,7 @@ export function dynamodbTableGlobalSecondaryIndexOnDemandThroughputToTerraform(s
 export function dynamodbTableGlobalSecondaryIndexOnDemandThroughputToHclTerraform(struct?: DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference | DynamodbTableGlobalSecondaryIndexOnDemandThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_read_request_units: {
@@ -571,11 +571,11 @@ export class DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference 
 }
 export interface DynamodbTableGlobalSecondaryIndexWarmThroughput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}
   */
   readonly readUnitsPerSecond?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}
   */
   readonly writeUnitsPerSecond?: number;
 }
@@ -583,7 +583,7 @@ export interface DynamodbTableGlobalSecondaryIndexWarmThroughput {
 export function dynamodbTableGlobalSecondaryIndexWarmThroughputToTerraform(struct?: DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference | DynamodbTableGlobalSecondaryIndexWarmThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read_units_per_second: cdktn.numberToTerraform(struct!.readUnitsPerSecond),
@@ -595,7 +595,7 @@ export function dynamodbTableGlobalSecondaryIndexWarmThroughputToTerraform(struc
 export function dynamodbTableGlobalSecondaryIndexWarmThroughputToHclTerraform(struct?: DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference | DynamodbTableGlobalSecondaryIndexWarmThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read_units_per_second: {
@@ -688,49 +688,49 @@ export class DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference exte
 }
 export interface DynamodbTableGlobalSecondaryIndex {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}
   */
   readonly hashKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#name DynamodbTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#name DynamodbTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}
   */
   readonly nonKeyAttributes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}
   */
   readonly projectionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}
   */
   readonly rangeKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}
   */
   readonly readCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}
   */
   readonly writeCapacity?: number;
   /**
   * key_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#key_schema DynamodbTable#key_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#key_schema DynamodbTable#key_schema}
   */
   readonly keySchema?: DynamodbTableGlobalSecondaryIndexKeySchema[] | cdktn.IResolvable;
   /**
   * on_demand_throughput block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#on_demand_throughput DynamodbTable#on_demand_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#on_demand_throughput DynamodbTable#on_demand_throughput}
   */
   readonly onDemandThroughput?: DynamodbTableGlobalSecondaryIndexOnDemandThroughput;
   /**
   * warm_throughput block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#warm_throughput DynamodbTable#warm_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#warm_throughput DynamodbTable#warm_throughput}
   */
   readonly warmThroughput?: DynamodbTableGlobalSecondaryIndexWarmThroughput;
 }
@@ -738,7 +738,7 @@ export interface DynamodbTableGlobalSecondaryIndex {
 export function dynamodbTableGlobalSecondaryIndexToTerraform(struct?: DynamodbTableGlobalSecondaryIndex | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hash_key: cdktn.stringToTerraform(struct!.hashKey),
@@ -758,7 +758,7 @@ export function dynamodbTableGlobalSecondaryIndexToTerraform(struct?: DynamodbTa
 export function dynamodbTableGlobalSecondaryIndexToHclTerraform(struct?: DynamodbTableGlobalSecondaryIndex | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hash_key: {
@@ -1101,7 +1101,7 @@ export class DynamodbTableGlobalSecondaryIndexList extends cdktn.ComplexList {
 }
 export interface DynamodbTableGlobalTableWitness {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}
   */
   readonly regionName?: string;
 }
@@ -1109,7 +1109,7 @@ export interface DynamodbTableGlobalTableWitness {
 export function dynamodbTableGlobalTableWitnessToTerraform(struct?: DynamodbTableGlobalTableWitnessOutputReference | DynamodbTableGlobalTableWitness): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     region_name: cdktn.stringToTerraform(struct!.regionName),
@@ -1120,7 +1120,7 @@ export function dynamodbTableGlobalTableWitnessToTerraform(struct?: DynamodbTabl
 export function dynamodbTableGlobalTableWitnessToHclTerraform(struct?: DynamodbTableGlobalTableWitnessOutputReference | DynamodbTableGlobalTableWitness): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     region_name: {
@@ -1185,11 +1185,11 @@ export class DynamodbTableGlobalTableWitnessOutputReference extends cdktn.Comple
 }
 export interface DynamodbTableImportTableInputFormatOptionsCsv {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#delimiter DynamodbTable#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#delimiter DynamodbTable#delimiter}
   */
   readonly delimiter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#header_list DynamodbTable#header_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#header_list DynamodbTable#header_list}
   */
   readonly headerList?: string[];
 }
@@ -1197,7 +1197,7 @@ export interface DynamodbTableImportTableInputFormatOptionsCsv {
 export function dynamodbTableImportTableInputFormatOptionsCsvToTerraform(struct?: DynamodbTableImportTableInputFormatOptionsCsvOutputReference | DynamodbTableImportTableInputFormatOptionsCsv): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     delimiter: cdktn.stringToTerraform(struct!.delimiter),
@@ -1209,7 +1209,7 @@ export function dynamodbTableImportTableInputFormatOptionsCsvToTerraform(struct?
 export function dynamodbTableImportTableInputFormatOptionsCsvToHclTerraform(struct?: DynamodbTableImportTableInputFormatOptionsCsvOutputReference | DynamodbTableImportTableInputFormatOptionsCsv): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     delimiter: {
@@ -1304,7 +1304,7 @@ export interface DynamodbTableImportTableInputFormatOptions {
   /**
   * csv block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#csv DynamodbTable#csv}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#csv DynamodbTable#csv}
   */
   readonly csv?: DynamodbTableImportTableInputFormatOptionsCsv;
 }
@@ -1312,7 +1312,7 @@ export interface DynamodbTableImportTableInputFormatOptions {
 export function dynamodbTableImportTableInputFormatOptionsToTerraform(struct?: DynamodbTableImportTableInputFormatOptionsOutputReference | DynamodbTableImportTableInputFormatOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     csv: dynamodbTableImportTableInputFormatOptionsCsvToTerraform(struct!.csv),
@@ -1323,7 +1323,7 @@ export function dynamodbTableImportTableInputFormatOptionsToTerraform(struct?: D
 export function dynamodbTableImportTableInputFormatOptionsToHclTerraform(struct?: DynamodbTableImportTableInputFormatOptionsOutputReference | DynamodbTableImportTableInputFormatOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     csv: {
@@ -1388,15 +1388,15 @@ export class DynamodbTableImportTableInputFormatOptionsOutputReference extends c
 }
 export interface DynamodbTableImportTableS3BucketSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#bucket DynamodbTable#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#bucket DynamodbTable#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#bucket_owner DynamodbTable#bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#bucket_owner DynamodbTable#bucket_owner}
   */
   readonly bucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#key_prefix DynamodbTable#key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#key_prefix DynamodbTable#key_prefix}
   */
   readonly keyPrefix?: string;
 }
@@ -1404,7 +1404,7 @@ export interface DynamodbTableImportTableS3BucketSource {
 export function dynamodbTableImportTableS3BucketSourceToTerraform(struct?: DynamodbTableImportTableS3BucketSourceOutputReference | DynamodbTableImportTableS3BucketSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket: cdktn.stringToTerraform(struct!.bucket),
@@ -1417,7 +1417,7 @@ export function dynamodbTableImportTableS3BucketSourceToTerraform(struct?: Dynam
 export function dynamodbTableImportTableS3BucketSourceToHclTerraform(struct?: DynamodbTableImportTableS3BucketSourceOutputReference | DynamodbTableImportTableS3BucketSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket: {
@@ -1535,23 +1535,23 @@ export class DynamodbTableImportTableS3BucketSourceOutputReference extends cdktn
 }
 export interface DynamodbTableImportTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#input_compression_type DynamodbTable#input_compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#input_compression_type DynamodbTable#input_compression_type}
   */
   readonly inputCompressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#input_format DynamodbTable#input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#input_format DynamodbTable#input_format}
   */
   readonly inputFormat: string;
   /**
   * input_format_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#input_format_options DynamodbTable#input_format_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#input_format_options DynamodbTable#input_format_options}
   */
   readonly inputFormatOptions?: DynamodbTableImportTableInputFormatOptions;
   /**
   * s3_bucket_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#s3_bucket_source DynamodbTable#s3_bucket_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#s3_bucket_source DynamodbTable#s3_bucket_source}
   */
   readonly s3BucketSource: DynamodbTableImportTableS3BucketSource;
 }
@@ -1559,7 +1559,7 @@ export interface DynamodbTableImportTable {
 export function dynamodbTableImportTableToTerraform(struct?: DynamodbTableImportTableOutputReference | DynamodbTableImportTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input_compression_type: cdktn.stringToTerraform(struct!.inputCompressionType),
@@ -1573,7 +1573,7 @@ export function dynamodbTableImportTableToTerraform(struct?: DynamodbTableImport
 export function dynamodbTableImportTableToHclTerraform(struct?: DynamodbTableImportTableOutputReference | DynamodbTableImportTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input_compression_type: {
@@ -1716,19 +1716,19 @@ export class DynamodbTableImportTableOutputReference extends cdktn.ComplexObject
 }
 export interface DynamodbTableLocalSecondaryIndex {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#name DynamodbTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#name DynamodbTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}
   */
   readonly nonKeyAttributes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}
   */
   readonly projectionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}
   */
   readonly rangeKey: string;
 }
@@ -1736,7 +1736,7 @@ export interface DynamodbTableLocalSecondaryIndex {
 export function dynamodbTableLocalSecondaryIndexToTerraform(struct?: DynamodbTableLocalSecondaryIndex | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1750,7 +1750,7 @@ export function dynamodbTableLocalSecondaryIndexToTerraform(struct?: DynamodbTab
 export function dynamodbTableLocalSecondaryIndexToHclTerraform(struct?: DynamodbTableLocalSecondaryIndex | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1922,11 +1922,11 @@ export class DynamodbTableLocalSecondaryIndexList extends cdktn.ComplexList {
 }
 export interface DynamodbTableOnDemandThroughput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}
   */
   readonly maxReadRequestUnits?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}
   */
   readonly maxWriteRequestUnits?: number;
 }
@@ -1934,7 +1934,7 @@ export interface DynamodbTableOnDemandThroughput {
 export function dynamodbTableOnDemandThroughputToTerraform(struct?: DynamodbTableOnDemandThroughputOutputReference | DynamodbTableOnDemandThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_read_request_units: cdktn.numberToTerraform(struct!.maxReadRequestUnits),
@@ -1946,7 +1946,7 @@ export function dynamodbTableOnDemandThroughputToTerraform(struct?: DynamodbTabl
 export function dynamodbTableOnDemandThroughputToHclTerraform(struct?: DynamodbTableOnDemandThroughputOutputReference | DynamodbTableOnDemandThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_read_request_units: {
@@ -2039,11 +2039,11 @@ export class DynamodbTableOnDemandThroughputOutputReference extends cdktn.Comple
 }
 export interface DynamodbTablePointInTimeRecovery {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#recovery_period_in_days DynamodbTable#recovery_period_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#recovery_period_in_days DynamodbTable#recovery_period_in_days}
   */
   readonly recoveryPeriodInDays?: number;
 }
@@ -2051,7 +2051,7 @@ export interface DynamodbTablePointInTimeRecovery {
 export function dynamodbTablePointInTimeRecoveryToTerraform(struct?: DynamodbTablePointInTimeRecoveryOutputReference | DynamodbTablePointInTimeRecovery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -2063,7 +2063,7 @@ export function dynamodbTablePointInTimeRecoveryToTerraform(struct?: DynamodbTab
 export function dynamodbTablePointInTimeRecoveryToHclTerraform(struct?: DynamodbTablePointInTimeRecoveryOutputReference | DynamodbTablePointInTimeRecovery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -2153,27 +2153,27 @@ export class DynamodbTablePointInTimeRecoveryOutputReference extends cdktn.Compl
 }
 export interface DynamodbTableReplica {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#consistency_mode DynamodbTable#consistency_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#consistency_mode DynamodbTable#consistency_mode}
   */
   readonly consistencyMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}
   */
   readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
   */
   readonly pointInTimeRecovery?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#propagate_tags DynamodbTable#propagate_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#propagate_tags DynamodbTable#propagate_tags}
   */
   readonly propagateTags?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}
   */
   readonly regionName: string;
 }
@@ -2181,7 +2181,7 @@ export interface DynamodbTableReplica {
 export function dynamodbTableReplicaToTerraform(struct?: DynamodbTableReplica | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     consistency_mode: cdktn.stringToTerraform(struct!.consistencyMode),
@@ -2197,7 +2197,7 @@ export function dynamodbTableReplicaToTerraform(struct?: DynamodbTableReplica | 
 export function dynamodbTableReplicaToHclTerraform(struct?: DynamodbTableReplica | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     consistency_mode: {
@@ -2446,11 +2446,11 @@ export class DynamodbTableReplicaList extends cdktn.ComplexList {
 }
 export interface DynamodbTableServerSideEncryption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
 }
@@ -2458,7 +2458,7 @@ export interface DynamodbTableServerSideEncryption {
 export function dynamodbTableServerSideEncryptionToTerraform(struct?: DynamodbTableServerSideEncryptionOutputReference | DynamodbTableServerSideEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -2470,7 +2470,7 @@ export function dynamodbTableServerSideEncryptionToTerraform(struct?: DynamodbTa
 export function dynamodbTableServerSideEncryptionToHclTerraform(struct?: DynamodbTableServerSideEncryptionOutputReference | DynamodbTableServerSideEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -2560,15 +2560,15 @@ export class DynamodbTableServerSideEncryptionOutputReference extends cdktn.Comp
 }
 export interface DynamodbTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#create DynamodbTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#create DynamodbTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#delete DynamodbTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#delete DynamodbTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#update DynamodbTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#update DynamodbTable#update}
   */
   readonly update?: string;
 }
@@ -2576,7 +2576,7 @@ export interface DynamodbTableTimeouts {
 export function dynamodbTableTimeoutsToTerraform(struct?: DynamodbTableTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2589,7 +2589,7 @@ export function dynamodbTableTimeoutsToTerraform(struct?: DynamodbTableTimeouts 
 export function dynamodbTableTimeoutsToHclTerraform(struct?: DynamodbTableTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2720,11 +2720,11 @@ export class DynamodbTableTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 export interface DynamodbTableTtl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}
   */
   readonly attributeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2732,7 +2732,7 @@ export interface DynamodbTableTtl {
 export function dynamodbTableTtlToTerraform(struct?: DynamodbTableTtlOutputReference | DynamodbTableTtl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute_name: cdktn.stringToTerraform(struct!.attributeName),
@@ -2744,7 +2744,7 @@ export function dynamodbTableTtlToTerraform(struct?: DynamodbTableTtlOutputRefer
 export function dynamodbTableTtlToHclTerraform(struct?: DynamodbTableTtlOutputReference | DynamodbTableTtl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute_name: {
@@ -2837,11 +2837,11 @@ export class DynamodbTableTtlOutputReference extends cdktn.ComplexObject {
 }
 export interface DynamodbTableWarmThroughput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}
   */
   readonly readUnitsPerSecond?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}
   */
   readonly writeUnitsPerSecond?: number;
 }
@@ -2849,7 +2849,7 @@ export interface DynamodbTableWarmThroughput {
 export function dynamodbTableWarmThroughputToTerraform(struct?: DynamodbTableWarmThroughputOutputReference | DynamodbTableWarmThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read_units_per_second: cdktn.numberToTerraform(struct!.readUnitsPerSecond),
@@ -2861,7 +2861,7 @@ export function dynamodbTableWarmThroughputToTerraform(struct?: DynamodbTableWar
 export function dynamodbTableWarmThroughputToHclTerraform(struct?: DynamodbTableWarmThroughputOutputReference | DynamodbTableWarmThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read_units_per_second: {
@@ -2954,7 +2954,7 @@ export class DynamodbTableWarmThroughputOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table aws_dynamodb_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table aws_dynamodb_table}
 */
 export class DynamodbTable extends cdktn.TerraformResource {
 
@@ -2970,7 +2970,7 @@ export class DynamodbTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DynamodbTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamodbTable to import
-  * @param importFromId The id of the existing DynamodbTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DynamodbTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamodbTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2982,7 +2982,7 @@ export class DynamodbTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2993,7 +2993,7 @@ export class DynamodbTable extends cdktn.TerraformResource {
       terraformResourceType: 'aws_dynamodb_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

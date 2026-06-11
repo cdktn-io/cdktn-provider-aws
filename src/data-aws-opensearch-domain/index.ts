@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/opensearch_domain
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/opensearch_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsOpensearchDomainConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/opensearch_domain#domain_name DataAwsOpensearchDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/opensearch_domain#domain_name DataAwsOpensearchDomain#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/opensearch_domain#id DataAwsOpensearchDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/opensearch_domain#id DataAwsOpensearchDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,11 +26,11 @@ export interface DataAwsOpensearchDomainConfig extends cdktn.TerraformMetaArgume
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/opensearch_domain#region DataAwsOpensearchDomain#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/opensearch_domain#region DataAwsOpensearchDomain#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/opensearch_domain#tags DataAwsOpensearchDomain#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/opensearch_domain#tags DataAwsOpensearchDomain#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -40,7 +40,7 @@ export interface DataAwsOpensearchDomainAdvancedSecurityOptionsJwtOptions {
 export function dataAwsOpensearchDomainAdvancedSecurityOptionsJwtOptionsToTerraform(struct?: DataAwsOpensearchDomainAdvancedSecurityOptionsJwtOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAwsOpensearchDomainAdvancedSecurityOptionsJwtOptionsToTerraf
 export function dataAwsOpensearchDomainAdvancedSecurityOptionsJwtOptionsToHclTerraform(struct?: DataAwsOpensearchDomainAdvancedSecurityOptionsJwtOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -135,7 +135,7 @@ export interface DataAwsOpensearchDomainAdvancedSecurityOptions {
 export function dataAwsOpensearchDomainAdvancedSecurityOptionsToTerraform(struct?: DataAwsOpensearchDomainAdvancedSecurityOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -145,7 +145,7 @@ export function dataAwsOpensearchDomainAdvancedSecurityOptionsToTerraform(struct
 export function dataAwsOpensearchDomainAdvancedSecurityOptionsToHclTerraform(struct?: DataAwsOpensearchDomainAdvancedSecurityOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -226,7 +226,7 @@ export interface DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurati
 export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationToTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -236,7 +236,7 @@ export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuratio
 export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationToHclTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -306,7 +306,7 @@ export interface DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule {
 export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -316,7 +316,7 @@ export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleToTerra
 export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleToHclTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -392,7 +392,7 @@ export interface DataAwsOpensearchDomainAutoTuneOptions {
 export function dataAwsOpensearchDomainAutoTuneOptionsToTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -402,7 +402,7 @@ export function dataAwsOpensearchDomainAutoTuneOptionsToTerraform(struct?: DataA
 export function dataAwsOpensearchDomainAutoTuneOptionsToHclTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -483,7 +483,7 @@ export interface DataAwsOpensearchDomainClusterConfigColdStorageOptions {
 export function dataAwsOpensearchDomainClusterConfigColdStorageOptionsToTerraform(struct?: DataAwsOpensearchDomainClusterConfigColdStorageOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -493,7 +493,7 @@ export function dataAwsOpensearchDomainClusterConfigColdStorageOptionsToTerrafor
 export function dataAwsOpensearchDomainClusterConfigColdStorageOptionsToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfigColdStorageOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -558,7 +558,7 @@ export interface DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfig {
 export function dataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigToTerraform(struct?: DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -568,7 +568,7 @@ export function dataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigToTerra
 export function dataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -643,7 +643,7 @@ export interface DataAwsOpensearchDomainClusterConfigNodeOptions {
 export function dataAwsOpensearchDomainClusterConfigNodeOptionsToTerraform(struct?: DataAwsOpensearchDomainClusterConfigNodeOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -653,7 +653,7 @@ export function dataAwsOpensearchDomainClusterConfigNodeOptionsToTerraform(struc
 export function dataAwsOpensearchDomainClusterConfigNodeOptionsToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfigNodeOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -724,7 +724,7 @@ export interface DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig {
 export function dataAwsOpensearchDomainClusterConfigZoneAwarenessConfigToTerraform(struct?: DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -734,7 +734,7 @@ export function dataAwsOpensearchDomainClusterConfigZoneAwarenessConfigToTerrafo
 export function dataAwsOpensearchDomainClusterConfigZoneAwarenessConfigToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -799,7 +799,7 @@ export interface DataAwsOpensearchDomainClusterConfig {
 export function dataAwsOpensearchDomainClusterConfigToTerraform(struct?: DataAwsOpensearchDomainClusterConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -809,7 +809,7 @@ export function dataAwsOpensearchDomainClusterConfigToTerraform(struct?: DataAws
 export function dataAwsOpensearchDomainClusterConfigToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -937,7 +937,7 @@ export interface DataAwsOpensearchDomainCognitoOptions {
 export function dataAwsOpensearchDomainCognitoOptionsToTerraform(struct?: DataAwsOpensearchDomainCognitoOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -947,7 +947,7 @@ export function dataAwsOpensearchDomainCognitoOptionsToTerraform(struct?: DataAw
 export function dataAwsOpensearchDomainCognitoOptionsToHclTerraform(struct?: DataAwsOpensearchDomainCognitoOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1027,7 +1027,7 @@ export interface DataAwsOpensearchDomainDeploymentStrategyOptions {
 export function dataAwsOpensearchDomainDeploymentStrategyOptionsToTerraform(struct?: DataAwsOpensearchDomainDeploymentStrategyOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1037,7 +1037,7 @@ export function dataAwsOpensearchDomainDeploymentStrategyOptionsToTerraform(stru
 export function dataAwsOpensearchDomainDeploymentStrategyOptionsToHclTerraform(struct?: DataAwsOpensearchDomainDeploymentStrategyOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1102,7 +1102,7 @@ export interface DataAwsOpensearchDomainEbsOptions {
 export function dataAwsOpensearchDomainEbsOptionsToTerraform(struct?: DataAwsOpensearchDomainEbsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1112,7 +1112,7 @@ export function dataAwsOpensearchDomainEbsOptionsToTerraform(struct?: DataAwsOpe
 export function dataAwsOpensearchDomainEbsOptionsToHclTerraform(struct?: DataAwsOpensearchDomainEbsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1197,7 +1197,7 @@ export interface DataAwsOpensearchDomainEncryptionAtRest {
 export function dataAwsOpensearchDomainEncryptionAtRestToTerraform(struct?: DataAwsOpensearchDomainEncryptionAtRest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1207,7 +1207,7 @@ export function dataAwsOpensearchDomainEncryptionAtRestToTerraform(struct?: Data
 export function dataAwsOpensearchDomainEncryptionAtRestToHclTerraform(struct?: DataAwsOpensearchDomainEncryptionAtRest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1277,7 +1277,7 @@ export interface DataAwsOpensearchDomainIdentityCenterOptions {
 export function dataAwsOpensearchDomainIdentityCenterOptionsToTerraform(struct?: DataAwsOpensearchDomainIdentityCenterOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1287,7 +1287,7 @@ export function dataAwsOpensearchDomainIdentityCenterOptionsToTerraform(struct?:
 export function dataAwsOpensearchDomainIdentityCenterOptionsToHclTerraform(struct?: DataAwsOpensearchDomainIdentityCenterOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1367,7 +1367,7 @@ export interface DataAwsOpensearchDomainLogPublishingOptions {
 export function dataAwsOpensearchDomainLogPublishingOptionsToTerraform(struct?: DataAwsOpensearchDomainLogPublishingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1377,7 +1377,7 @@ export function dataAwsOpensearchDomainLogPublishingOptionsToTerraform(struct?: 
 export function dataAwsOpensearchDomainLogPublishingOptionsToHclTerraform(struct?: DataAwsOpensearchDomainLogPublishingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1452,7 +1452,7 @@ export interface DataAwsOpensearchDomainNodeToNodeEncryption {
 export function dataAwsOpensearchDomainNodeToNodeEncryptionToTerraform(struct?: DataAwsOpensearchDomainNodeToNodeEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1462,7 +1462,7 @@ export function dataAwsOpensearchDomainNodeToNodeEncryptionToTerraform(struct?: 
 export function dataAwsOpensearchDomainNodeToNodeEncryptionToHclTerraform(struct?: DataAwsOpensearchDomainNodeToNodeEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1527,7 +1527,7 @@ export interface DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowS
 export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1537,7 +1537,7 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowSt
 export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1607,7 +1607,7 @@ export interface DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow {
 export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1617,7 +1617,7 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToTerraf
 export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1683,7 +1683,7 @@ export interface DataAwsOpensearchDomainOffPeakWindowOptions {
 export function dataAwsOpensearchDomainOffPeakWindowOptionsToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1693,7 +1693,7 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsToTerraform(struct?: 
 export function dataAwsOpensearchDomainOffPeakWindowOptionsToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1764,7 +1764,7 @@ export interface DataAwsOpensearchDomainSnapshotOptions {
 export function dataAwsOpensearchDomainSnapshotOptionsToTerraform(struct?: DataAwsOpensearchDomainSnapshotOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1774,7 +1774,7 @@ export function dataAwsOpensearchDomainSnapshotOptionsToTerraform(struct?: DataA
 export function dataAwsOpensearchDomainSnapshotOptionsToHclTerraform(struct?: DataAwsOpensearchDomainSnapshotOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1839,7 +1839,7 @@ export interface DataAwsOpensearchDomainSoftwareUpdateOptions {
 export function dataAwsOpensearchDomainSoftwareUpdateOptionsToTerraform(struct?: DataAwsOpensearchDomainSoftwareUpdateOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1849,7 +1849,7 @@ export function dataAwsOpensearchDomainSoftwareUpdateOptionsToTerraform(struct?:
 export function dataAwsOpensearchDomainSoftwareUpdateOptionsToHclTerraform(struct?: DataAwsOpensearchDomainSoftwareUpdateOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1914,7 +1914,7 @@ export interface DataAwsOpensearchDomainVpcOptions {
 export function dataAwsOpensearchDomainVpcOptionsToTerraform(struct?: DataAwsOpensearchDomainVpcOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1924,7 +1924,7 @@ export function dataAwsOpensearchDomainVpcOptionsToTerraform(struct?: DataAwsOpe
 export function dataAwsOpensearchDomainVpcOptionsToHclTerraform(struct?: DataAwsOpensearchDomainVpcOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2000,7 +2000,7 @@ export class DataAwsOpensearchDomainVpcOptionsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/opensearch_domain aws_opensearch_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/opensearch_domain aws_opensearch_domain}
 */
 export class DataAwsOpensearchDomain extends cdktn.TerraformDataSource {
 
@@ -2016,7 +2016,7 @@ export class DataAwsOpensearchDomain extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsOpensearchDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOpensearchDomain to import
-  * @param importFromId The id of the existing DataAwsOpensearchDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/opensearch_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOpensearchDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/opensearch_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOpensearchDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2028,7 +2028,7 @@ export class DataAwsOpensearchDomain extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2039,7 +2039,7 @@ export class DataAwsOpensearchDomain extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_opensearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

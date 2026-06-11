@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsGlueCatalogTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table#catalog_id DataAwsGlueCatalogTable#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table#catalog_id DataAwsGlueCatalogTable#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table#database_name DataAwsGlueCatalogTable#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table#database_name DataAwsGlueCatalogTable#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table#id DataAwsGlueCatalogTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table#id DataAwsGlueCatalogTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table#name DataAwsGlueCatalogTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table#name DataAwsGlueCatalogTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table#query_as_of_time DataAwsGlueCatalogTable#query_as_of_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table#query_as_of_time DataAwsGlueCatalogTable#query_as_of_time}
   */
   readonly queryAsOfTime?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table#region DataAwsGlueCatalogTable#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table#region DataAwsGlueCatalogTable#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table#transaction_id DataAwsGlueCatalogTable#transaction_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table#transaction_id DataAwsGlueCatalogTable#transaction_id}
   */
   readonly transactionId?: number;
 }
@@ -52,7 +52,7 @@ export interface DataAwsGlueCatalogTablePartitionIndex {
 export function dataAwsGlueCatalogTablePartitionIndexToTerraform(struct?: DataAwsGlueCatalogTablePartitionIndex): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -62,7 +62,7 @@ export function dataAwsGlueCatalogTablePartitionIndexToTerraform(struct?: DataAw
 export function dataAwsGlueCatalogTablePartitionIndexToHclTerraform(struct?: DataAwsGlueCatalogTablePartitionIndex): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -137,7 +137,7 @@ export interface DataAwsGlueCatalogTablePartitionKeys {
 export function dataAwsGlueCatalogTablePartitionKeysToTerraform(struct?: DataAwsGlueCatalogTablePartitionKeys): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -147,7 +147,7 @@ export function dataAwsGlueCatalogTablePartitionKeysToTerraform(struct?: DataAws
 export function dataAwsGlueCatalogTablePartitionKeysToHclTerraform(struct?: DataAwsGlueCatalogTablePartitionKeys): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -228,7 +228,7 @@ export interface DataAwsGlueCatalogTableStorageDescriptorColumns {
 export function dataAwsGlueCatalogTableStorageDescriptorColumnsToTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorColumns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -238,7 +238,7 @@ export function dataAwsGlueCatalogTableStorageDescriptorColumnsToTerraform(struc
 export function dataAwsGlueCatalogTableStorageDescriptorColumnsToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorColumns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -319,7 +319,7 @@ export interface DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaId
 export function dataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdToTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -329,7 +329,7 @@ export function dataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdT
 export function dataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -404,7 +404,7 @@ export interface DataAwsGlueCatalogTableStorageDescriptorSchemaReference {
 export function dataAwsGlueCatalogTableStorageDescriptorSchemaReferenceToTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSchemaReference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -414,7 +414,7 @@ export function dataAwsGlueCatalogTableStorageDescriptorSchemaReferenceToTerrafo
 export function dataAwsGlueCatalogTableStorageDescriptorSchemaReferenceToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSchemaReference): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -490,7 +490,7 @@ export interface DataAwsGlueCatalogTableStorageDescriptorSerDeInfo {
 export function dataAwsGlueCatalogTableStorageDescriptorSerDeInfoToTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSerDeInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -500,7 +500,7 @@ export function dataAwsGlueCatalogTableStorageDescriptorSerDeInfoToTerraform(str
 export function dataAwsGlueCatalogTableStorageDescriptorSerDeInfoToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSerDeInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -576,7 +576,7 @@ export interface DataAwsGlueCatalogTableStorageDescriptorSkewedInfo {
 export function dataAwsGlueCatalogTableStorageDescriptorSkewedInfoToTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSkewedInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -586,7 +586,7 @@ export function dataAwsGlueCatalogTableStorageDescriptorSkewedInfoToTerraform(st
 export function dataAwsGlueCatalogTableStorageDescriptorSkewedInfoToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSkewedInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -662,7 +662,7 @@ export interface DataAwsGlueCatalogTableStorageDescriptorSortColumns {
 export function dataAwsGlueCatalogTableStorageDescriptorSortColumnsToTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSortColumns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -672,7 +672,7 @@ export function dataAwsGlueCatalogTableStorageDescriptorSortColumnsToTerraform(s
 export function dataAwsGlueCatalogTableStorageDescriptorSortColumnsToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptorSortColumns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -742,7 +742,7 @@ export interface DataAwsGlueCatalogTableStorageDescriptor {
 export function dataAwsGlueCatalogTableStorageDescriptorToTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -752,7 +752,7 @@ export function dataAwsGlueCatalogTableStorageDescriptorToTerraform(struct?: Dat
 export function dataAwsGlueCatalogTableStorageDescriptorToHclTerraform(struct?: DataAwsGlueCatalogTableStorageDescriptor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -888,7 +888,7 @@ export interface DataAwsGlueCatalogTableTargetTable {
 export function dataAwsGlueCatalogTableTargetTableToTerraform(struct?: DataAwsGlueCatalogTableTargetTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -898,7 +898,7 @@ export function dataAwsGlueCatalogTableTargetTableToTerraform(struct?: DataAwsGl
 export function dataAwsGlueCatalogTableTargetTableToHclTerraform(struct?: DataAwsGlueCatalogTableTargetTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -974,7 +974,7 @@ export class DataAwsGlueCatalogTableTargetTableList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table}
 */
 export class DataAwsGlueCatalogTable extends cdktn.TerraformDataSource {
 
@@ -990,7 +990,7 @@ export class DataAwsGlueCatalogTable extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsGlueCatalogTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsGlueCatalogTable to import
-  * @param importFromId The id of the existing DataAwsGlueCatalogTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsGlueCatalogTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsGlueCatalogTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1002,7 +1002,7 @@ export class DataAwsGlueCatalogTable extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1013,7 +1013,7 @@ export class DataAwsGlueCatalogTable extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_glue_catalog_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

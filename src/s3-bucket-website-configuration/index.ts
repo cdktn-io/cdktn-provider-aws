@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktn from 'cdktn';
 
 export interface S3BucketWebsiteConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#bucket S3BucketWebsiteConfiguration#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#bucket S3BucketWebsiteConfiguration#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#expected_bucket_owner S3BucketWebsiteConfiguration#expected_bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#expected_bucket_owner S3BucketWebsiteConfiguration#expected_bucket_owner}
   */
   readonly expectedBucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#id S3BucketWebsiteConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#id S3BucketWebsiteConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,41 +30,41 @@ export interface S3BucketWebsiteConfigurationConfig extends cdktn.TerraformMetaA
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#region S3BucketWebsiteConfiguration#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#region S3BucketWebsiteConfiguration#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#routing_rules S3BucketWebsiteConfiguration#routing_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#routing_rules S3BucketWebsiteConfiguration#routing_rules}
   */
   readonly routingRules?: string;
   /**
   * error_document block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#error_document S3BucketWebsiteConfiguration#error_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#error_document S3BucketWebsiteConfiguration#error_document}
   */
   readonly errorDocument?: S3BucketWebsiteConfigurationErrorDocument;
   /**
   * index_document block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#index_document S3BucketWebsiteConfiguration#index_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#index_document S3BucketWebsiteConfiguration#index_document}
   */
   readonly indexDocument?: S3BucketWebsiteConfigurationIndexDocument;
   /**
   * redirect_all_requests_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#redirect_all_requests_to S3BucketWebsiteConfiguration#redirect_all_requests_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#redirect_all_requests_to S3BucketWebsiteConfiguration#redirect_all_requests_to}
   */
   readonly redirectAllRequestsTo?: S3BucketWebsiteConfigurationRedirectAllRequestsTo;
   /**
   * routing_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#routing_rule S3BucketWebsiteConfiguration#routing_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#routing_rule S3BucketWebsiteConfiguration#routing_rule}
   */
   readonly routingRule?: S3BucketWebsiteConfigurationRoutingRule[] | cdktn.IResolvable;
 }
 export interface S3BucketWebsiteConfigurationErrorDocument {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#key S3BucketWebsiteConfiguration#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#key S3BucketWebsiteConfiguration#key}
   */
   readonly key: string;
 }
@@ -72,7 +72,7 @@ export interface S3BucketWebsiteConfigurationErrorDocument {
 export function s3BucketWebsiteConfigurationErrorDocumentToTerraform(struct?: S3BucketWebsiteConfigurationErrorDocumentOutputReference | S3BucketWebsiteConfigurationErrorDocument): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -83,7 +83,7 @@ export function s3BucketWebsiteConfigurationErrorDocumentToTerraform(struct?: S3
 export function s3BucketWebsiteConfigurationErrorDocumentToHclTerraform(struct?: S3BucketWebsiteConfigurationErrorDocumentOutputReference | S3BucketWebsiteConfigurationErrorDocument): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -145,7 +145,7 @@ export class S3BucketWebsiteConfigurationErrorDocumentOutputReference extends cd
 }
 export interface S3BucketWebsiteConfigurationIndexDocument {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#suffix S3BucketWebsiteConfiguration#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#suffix S3BucketWebsiteConfiguration#suffix}
   */
   readonly suffix: string;
 }
@@ -153,7 +153,7 @@ export interface S3BucketWebsiteConfigurationIndexDocument {
 export function s3BucketWebsiteConfigurationIndexDocumentToTerraform(struct?: S3BucketWebsiteConfigurationIndexDocumentOutputReference | S3BucketWebsiteConfigurationIndexDocument): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     suffix: cdktn.stringToTerraform(struct!.suffix),
@@ -164,7 +164,7 @@ export function s3BucketWebsiteConfigurationIndexDocumentToTerraform(struct?: S3
 export function s3BucketWebsiteConfigurationIndexDocumentToHclTerraform(struct?: S3BucketWebsiteConfigurationIndexDocumentOutputReference | S3BucketWebsiteConfigurationIndexDocument): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     suffix: {
@@ -226,11 +226,11 @@ export class S3BucketWebsiteConfigurationIndexDocumentOutputReference extends cd
 }
 export interface S3BucketWebsiteConfigurationRedirectAllRequestsTo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
   */
   readonly hostName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
   */
   readonly protocol?: string;
 }
@@ -238,7 +238,7 @@ export interface S3BucketWebsiteConfigurationRedirectAllRequestsTo {
 export function s3BucketWebsiteConfigurationRedirectAllRequestsToToTerraform(struct?: S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference | S3BucketWebsiteConfigurationRedirectAllRequestsTo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host_name: cdktn.stringToTerraform(struct!.hostName),
@@ -250,7 +250,7 @@ export function s3BucketWebsiteConfigurationRedirectAllRequestsToToTerraform(str
 export function s3BucketWebsiteConfigurationRedirectAllRequestsToToHclTerraform(struct?: S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference | S3BucketWebsiteConfigurationRedirectAllRequestsTo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host_name: {
@@ -340,11 +340,11 @@ export class S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference ex
 }
 export interface S3BucketWebsiteConfigurationRoutingRuleCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#http_error_code_returned_equals S3BucketWebsiteConfiguration#http_error_code_returned_equals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#http_error_code_returned_equals S3BucketWebsiteConfiguration#http_error_code_returned_equals}
   */
   readonly httpErrorCodeReturnedEquals?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#key_prefix_equals S3BucketWebsiteConfiguration#key_prefix_equals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#key_prefix_equals S3BucketWebsiteConfiguration#key_prefix_equals}
   */
   readonly keyPrefixEquals?: string;
 }
@@ -352,7 +352,7 @@ export interface S3BucketWebsiteConfigurationRoutingRuleCondition {
 export function s3BucketWebsiteConfigurationRoutingRuleConditionToTerraform(struct?: S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference | S3BucketWebsiteConfigurationRoutingRuleCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     http_error_code_returned_equals: cdktn.stringToTerraform(struct!.httpErrorCodeReturnedEquals),
@@ -364,7 +364,7 @@ export function s3BucketWebsiteConfigurationRoutingRuleConditionToTerraform(stru
 export function s3BucketWebsiteConfigurationRoutingRuleConditionToHclTerraform(struct?: S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference | S3BucketWebsiteConfigurationRoutingRuleCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     http_error_code_returned_equals: {
@@ -457,23 +457,23 @@ export class S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference ext
 }
 export interface S3BucketWebsiteConfigurationRoutingRuleRedirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
   */
   readonly hostName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#http_redirect_code S3BucketWebsiteConfiguration#http_redirect_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#http_redirect_code S3BucketWebsiteConfiguration#http_redirect_code}
   */
   readonly httpRedirectCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#replace_key_prefix_with S3BucketWebsiteConfiguration#replace_key_prefix_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#replace_key_prefix_with S3BucketWebsiteConfiguration#replace_key_prefix_with}
   */
   readonly replaceKeyPrefixWith?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#replace_key_with S3BucketWebsiteConfiguration#replace_key_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#replace_key_with S3BucketWebsiteConfiguration#replace_key_with}
   */
   readonly replaceKeyWith?: string;
 }
@@ -481,7 +481,7 @@ export interface S3BucketWebsiteConfigurationRoutingRuleRedirect {
 export function s3BucketWebsiteConfigurationRoutingRuleRedirectToTerraform(struct?: S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference | S3BucketWebsiteConfigurationRoutingRuleRedirect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host_name: cdktn.stringToTerraform(struct!.hostName),
@@ -496,7 +496,7 @@ export function s3BucketWebsiteConfigurationRoutingRuleRedirectToTerraform(struc
 export function s3BucketWebsiteConfigurationRoutingRuleRedirectToHclTerraform(struct?: S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference | S3BucketWebsiteConfigurationRoutingRuleRedirect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host_name: {
@@ -675,13 +675,13 @@ export interface S3BucketWebsiteConfigurationRoutingRule {
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#condition S3BucketWebsiteConfiguration#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#condition S3BucketWebsiteConfiguration#condition}
   */
   readonly condition?: S3BucketWebsiteConfigurationRoutingRuleCondition;
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#redirect S3BucketWebsiteConfiguration#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#redirect S3BucketWebsiteConfiguration#redirect}
   */
   readonly redirect: S3BucketWebsiteConfigurationRoutingRuleRedirect;
 }
@@ -689,7 +689,7 @@ export interface S3BucketWebsiteConfigurationRoutingRule {
 export function s3BucketWebsiteConfigurationRoutingRuleToTerraform(struct?: S3BucketWebsiteConfigurationRoutingRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: s3BucketWebsiteConfigurationRoutingRuleConditionToTerraform(struct!.condition),
@@ -701,7 +701,7 @@ export function s3BucketWebsiteConfigurationRoutingRuleToTerraform(struct?: S3Bu
 export function s3BucketWebsiteConfigurationRoutingRuleToHclTerraform(struct?: S3BucketWebsiteConfigurationRoutingRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -823,7 +823,7 @@ export class S3BucketWebsiteConfigurationRoutingRuleList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration}
 */
 export class S3BucketWebsiteConfiguration extends cdktn.TerraformResource {
 
@@ -839,7 +839,7 @@ export class S3BucketWebsiteConfiguration extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a S3BucketWebsiteConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketWebsiteConfiguration to import
-  * @param importFromId The id of the existing S3BucketWebsiteConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3BucketWebsiteConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketWebsiteConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -851,7 +851,7 @@ export class S3BucketWebsiteConfiguration extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -862,7 +862,7 @@ export class S3BucketWebsiteConfiguration extends cdktn.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_website_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

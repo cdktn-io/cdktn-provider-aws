@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,64 @@ import * as cdktn from 'cdktn';
 
 export interface CodepipelineConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}
   */
   readonly executionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#id Codepipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#id Codepipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}
   */
   readonly pipelineType?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#region Codepipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#region Codepipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#tags Codepipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#tags Codepipeline#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#tags_all Codepipeline#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#tags_all Codepipeline#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * artifact_store block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
   */
   readonly artifactStore: CodepipelineArtifactStore[] | cdktn.IResolvable;
   /**
   * stage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#stage Codepipeline#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#stage Codepipeline#stage}
   */
   readonly stage: CodepipelineStage[] | cdktn.IResolvable;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#trigger Codepipeline#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#trigger Codepipeline#trigger}
   */
   readonly trigger?: CodepipelineTrigger[] | cdktn.IResolvable;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#variable Codepipeline#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#variable Codepipeline#variable}
   */
   readonly variable?: CodepipelineVariable[] | cdktn.IResolvable;
 }
@@ -80,7 +80,7 @@ export interface CodepipelineTriggerAllGitConfigurationPullRequestBranches {
 export function codepipelineTriggerAllGitConfigurationPullRequestBranchesToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequestBranches): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -90,7 +90,7 @@ export function codepipelineTriggerAllGitConfigurationPullRequestBranchesToTerra
 export function codepipelineTriggerAllGitConfigurationPullRequestBranchesToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequestBranches): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -160,7 +160,7 @@ export interface CodepipelineTriggerAllGitConfigurationPullRequestFilePaths {
 export function codepipelineTriggerAllGitConfigurationPullRequestFilePathsToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequestFilePaths): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -170,7 +170,7 @@ export function codepipelineTriggerAllGitConfigurationPullRequestFilePathsToTerr
 export function codepipelineTriggerAllGitConfigurationPullRequestFilePathsToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequestFilePaths): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -240,7 +240,7 @@ export interface CodepipelineTriggerAllGitConfigurationPullRequest {
 export function codepipelineTriggerAllGitConfigurationPullRequestToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -250,7 +250,7 @@ export function codepipelineTriggerAllGitConfigurationPullRequestToTerraform(str
 export function codepipelineTriggerAllGitConfigurationPullRequestToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -327,7 +327,7 @@ export interface CodepipelineTriggerAllGitConfigurationPushBranches {
 export function codepipelineTriggerAllGitConfigurationPushBranchesToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushBranches): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -337,7 +337,7 @@ export function codepipelineTriggerAllGitConfigurationPushBranchesToTerraform(st
 export function codepipelineTriggerAllGitConfigurationPushBranchesToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushBranches): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -407,7 +407,7 @@ export interface CodepipelineTriggerAllGitConfigurationPushFilePaths {
 export function codepipelineTriggerAllGitConfigurationPushFilePathsToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushFilePaths): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -417,7 +417,7 @@ export function codepipelineTriggerAllGitConfigurationPushFilePathsToTerraform(s
 export function codepipelineTriggerAllGitConfigurationPushFilePathsToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushFilePaths): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -487,7 +487,7 @@ export interface CodepipelineTriggerAllGitConfigurationPushTags {
 export function codepipelineTriggerAllGitConfigurationPushTagsToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -497,7 +497,7 @@ export function codepipelineTriggerAllGitConfigurationPushTagsToTerraform(struct
 export function codepipelineTriggerAllGitConfigurationPushTagsToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -567,7 +567,7 @@ export interface CodepipelineTriggerAllGitConfigurationPush {
 export function codepipelineTriggerAllGitConfigurationPushToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPush): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -577,7 +577,7 @@ export function codepipelineTriggerAllGitConfigurationPushToTerraform(struct?: C
 export function codepipelineTriggerAllGitConfigurationPushToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPush): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -655,7 +655,7 @@ export interface CodepipelineTriggerAllGitConfiguration {
 export function codepipelineTriggerAllGitConfigurationToTerraform(struct?: CodepipelineTriggerAllGitConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -665,7 +665,7 @@ export function codepipelineTriggerAllGitConfigurationToTerraform(struct?: Codep
 export function codepipelineTriggerAllGitConfigurationToHclTerraform(struct?: CodepipelineTriggerAllGitConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -742,7 +742,7 @@ export interface CodepipelineTriggerAll {
 export function codepipelineTriggerAllToTerraform(struct?: CodepipelineTriggerAll): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -752,7 +752,7 @@ export function codepipelineTriggerAllToTerraform(struct?: CodepipelineTriggerAl
 export function codepipelineTriggerAllToHclTerraform(struct?: CodepipelineTriggerAll): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -819,14 +819,14 @@ export class CodepipelineTriggerAllList extends cdktn.ComplexList {
 }
 export interface CodepipelineArtifactStoreEncryptionKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#id Codepipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#id Codepipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#type Codepipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#type Codepipeline#type}
   */
   readonly type: string;
 }
@@ -834,7 +834,7 @@ export interface CodepipelineArtifactStoreEncryptionKey {
 export function codepipelineArtifactStoreEncryptionKeyToTerraform(struct?: CodepipelineArtifactStoreEncryptionKeyOutputReference | CodepipelineArtifactStoreEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -846,7 +846,7 @@ export function codepipelineArtifactStoreEncryptionKeyToTerraform(struct?: Codep
 export function codepipelineArtifactStoreEncryptionKeyToHclTerraform(struct?: CodepipelineArtifactStoreEncryptionKeyOutputReference | CodepipelineArtifactStoreEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -933,21 +933,21 @@ export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktn
 }
 export interface CodepipelineArtifactStore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#location Codepipeline#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#location Codepipeline#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#region Codepipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#region Codepipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#type Codepipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#type Codepipeline#type}
   */
   readonly type: string;
   /**
   * encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#encryption_key Codepipeline#encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#encryption_key Codepipeline#encryption_key}
   */
   readonly encryptionKey?: CodepipelineArtifactStoreEncryptionKey;
 }
@@ -955,7 +955,7 @@ export interface CodepipelineArtifactStore {
 export function codepipelineArtifactStoreToTerraform(struct?: CodepipelineArtifactStore | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     location: cdktn.stringToTerraform(struct!.location),
@@ -969,7 +969,7 @@ export function codepipelineArtifactStoreToTerraform(struct?: CodepipelineArtifa
 export function codepipelineArtifactStoreToHclTerraform(struct?: CodepipelineArtifactStore | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     location: {
@@ -1144,55 +1144,55 @@ export class CodepipelineArtifactStoreList extends cdktn.ComplexList {
 }
 export interface CodepipelineStageAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#category Codepipeline#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#category Codepipeline#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
   */
   readonly configuration?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
   */
   readonly inputArtifacts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#namespace Codepipeline#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#namespace Codepipeline#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#output_artifacts Codepipeline#output_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#output_artifacts Codepipeline#output_artifacts}
   */
   readonly outputArtifacts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#owner Codepipeline#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#owner Codepipeline#owner}
   */
   readonly owner: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#provider Codepipeline#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#provider Codepipeline#provider}
   */
   readonly provider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#region Codepipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#region Codepipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#run_order Codepipeline#run_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#run_order Codepipeline#run_order}
   */
   readonly runOrder?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
   */
   readonly timeoutInMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#version Codepipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#version Codepipeline#version}
   */
   readonly version: string;
 }
@@ -1200,7 +1200,7 @@ export interface CodepipelineStageAction {
 export function codepipelineStageActionToTerraform(struct?: CodepipelineStageAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     category: cdktn.stringToTerraform(struct!.category),
@@ -1223,7 +1223,7 @@ export function codepipelineStageActionToTerraform(struct?: CodepipelineStageAct
 export function codepipelineStageActionToHclTerraform(struct?: CodepipelineStageAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     category: {
@@ -1641,19 +1641,19 @@ export class CodepipelineStageActionList extends cdktn.ComplexList {
 }
 export interface CodepipelineStageBeforeEntryConditionRuleRuleTypeId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#category Codepipeline#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#category Codepipeline#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#owner Codepipeline#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#owner Codepipeline#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#provider Codepipeline#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#provider Codepipeline#provider}
   */
   readonly provider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#version Codepipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#version Codepipeline#version}
   */
   readonly version?: string;
 }
@@ -1661,7 +1661,7 @@ export interface CodepipelineStageBeforeEntryConditionRuleRuleTypeId {
 export function codepipelineStageBeforeEntryConditionRuleRuleTypeIdToTerraform(struct?: CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference | CodepipelineStageBeforeEntryConditionRuleRuleTypeId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     category: cdktn.stringToTerraform(struct!.category),
@@ -1675,7 +1675,7 @@ export function codepipelineStageBeforeEntryConditionRuleRuleTypeIdToTerraform(s
 export function codepipelineStageBeforeEntryConditionRuleRuleTypeIdToHclTerraform(struct?: CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference | CodepipelineStageBeforeEntryConditionRuleRuleTypeId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     category: {
@@ -1818,37 +1818,37 @@ export class CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference 
 }
 export interface CodepipelineStageBeforeEntryConditionRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#commands Codepipeline#commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#commands Codepipeline#commands}
   */
   readonly commands?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
   */
   readonly configuration?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
   */
   readonly inputArtifacts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#region Codepipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#region Codepipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
   */
   readonly timeoutInMinutes?: number;
   /**
   * rule_type_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
   */
   readonly ruleTypeId: CodepipelineStageBeforeEntryConditionRuleRuleTypeId;
 }
@@ -1856,7 +1856,7 @@ export interface CodepipelineStageBeforeEntryConditionRule {
 export function codepipelineStageBeforeEntryConditionRuleToTerraform(struct?: CodepipelineStageBeforeEntryConditionRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     commands: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.commands),
@@ -1874,7 +1874,7 @@ export function codepipelineStageBeforeEntryConditionRuleToTerraform(struct?: Co
 export function codepipelineStageBeforeEntryConditionRuleToHclTerraform(struct?: CodepipelineStageBeforeEntryConditionRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     commands: {
@@ -2161,13 +2161,13 @@ export class CodepipelineStageBeforeEntryConditionRuleList extends cdktn.Complex
 }
 export interface CodepipelineStageBeforeEntryCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#result Codepipeline#result}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#result Codepipeline#result}
   */
   readonly result?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#rule Codepipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#rule Codepipeline#rule}
   */
   readonly rule: CodepipelineStageBeforeEntryConditionRule[] | cdktn.IResolvable;
 }
@@ -2175,7 +2175,7 @@ export interface CodepipelineStageBeforeEntryCondition {
 export function codepipelineStageBeforeEntryConditionToTerraform(struct?: CodepipelineStageBeforeEntryConditionOutputReference | CodepipelineStageBeforeEntryCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     result: cdktn.stringToTerraform(struct!.result),
@@ -2187,7 +2187,7 @@ export function codepipelineStageBeforeEntryConditionToTerraform(struct?: Codepi
 export function codepipelineStageBeforeEntryConditionToHclTerraform(struct?: CodepipelineStageBeforeEntryConditionOutputReference | CodepipelineStageBeforeEntryCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     result: {
@@ -2279,7 +2279,7 @@ export interface CodepipelineStageBeforeEntry {
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#condition Codepipeline#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#condition Codepipeline#condition}
   */
   readonly condition: CodepipelineStageBeforeEntryCondition;
 }
@@ -2287,7 +2287,7 @@ export interface CodepipelineStageBeforeEntry {
 export function codepipelineStageBeforeEntryToTerraform(struct?: CodepipelineStageBeforeEntryOutputReference | CodepipelineStageBeforeEntry): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: codepipelineStageBeforeEntryConditionToTerraform(struct!.condition),
@@ -2298,7 +2298,7 @@ export function codepipelineStageBeforeEntryToTerraform(struct?: CodepipelineSta
 export function codepipelineStageBeforeEntryToHclTerraform(struct?: CodepipelineStageBeforeEntryOutputReference | CodepipelineStageBeforeEntry): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -2360,19 +2360,19 @@ export class CodepipelineStageBeforeEntryOutputReference extends cdktn.ComplexOb
 }
 export interface CodepipelineStageOnFailureConditionRuleRuleTypeId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#category Codepipeline#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#category Codepipeline#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#owner Codepipeline#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#owner Codepipeline#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#provider Codepipeline#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#provider Codepipeline#provider}
   */
   readonly provider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#version Codepipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#version Codepipeline#version}
   */
   readonly version?: string;
 }
@@ -2380,7 +2380,7 @@ export interface CodepipelineStageOnFailureConditionRuleRuleTypeId {
 export function codepipelineStageOnFailureConditionRuleRuleTypeIdToTerraform(struct?: CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnFailureConditionRuleRuleTypeId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     category: cdktn.stringToTerraform(struct!.category),
@@ -2394,7 +2394,7 @@ export function codepipelineStageOnFailureConditionRuleRuleTypeIdToTerraform(str
 export function codepipelineStageOnFailureConditionRuleRuleTypeIdToHclTerraform(struct?: CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnFailureConditionRuleRuleTypeId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     category: {
@@ -2537,37 +2537,37 @@ export class CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference ex
 }
 export interface CodepipelineStageOnFailureConditionRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#commands Codepipeline#commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#commands Codepipeline#commands}
   */
   readonly commands?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
   */
   readonly configuration?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
   */
   readonly inputArtifacts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#region Codepipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#region Codepipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
   */
   readonly timeoutInMinutes?: number;
   /**
   * rule_type_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
   */
   readonly ruleTypeId: CodepipelineStageOnFailureConditionRuleRuleTypeId;
 }
@@ -2575,7 +2575,7 @@ export interface CodepipelineStageOnFailureConditionRule {
 export function codepipelineStageOnFailureConditionRuleToTerraform(struct?: CodepipelineStageOnFailureConditionRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     commands: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.commands),
@@ -2593,7 +2593,7 @@ export function codepipelineStageOnFailureConditionRuleToTerraform(struct?: Code
 export function codepipelineStageOnFailureConditionRuleToHclTerraform(struct?: CodepipelineStageOnFailureConditionRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     commands: {
@@ -2880,13 +2880,13 @@ export class CodepipelineStageOnFailureConditionRuleList extends cdktn.ComplexLi
 }
 export interface CodepipelineStageOnFailureCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#result Codepipeline#result}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#result Codepipeline#result}
   */
   readonly result?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#rule Codepipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#rule Codepipeline#rule}
   */
   readonly rule: CodepipelineStageOnFailureConditionRule[] | cdktn.IResolvable;
 }
@@ -2894,7 +2894,7 @@ export interface CodepipelineStageOnFailureCondition {
 export function codepipelineStageOnFailureConditionToTerraform(struct?: CodepipelineStageOnFailureConditionOutputReference | CodepipelineStageOnFailureCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     result: cdktn.stringToTerraform(struct!.result),
@@ -2906,7 +2906,7 @@ export function codepipelineStageOnFailureConditionToTerraform(struct?: Codepipe
 export function codepipelineStageOnFailureConditionToHclTerraform(struct?: CodepipelineStageOnFailureConditionOutputReference | CodepipelineStageOnFailureCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     result: {
@@ -2996,7 +2996,7 @@ export class CodepipelineStageOnFailureConditionOutputReference extends cdktn.Co
 }
 export interface CodepipelineStageOnFailureRetryConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#retry_mode Codepipeline#retry_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#retry_mode Codepipeline#retry_mode}
   */
   readonly retryMode?: string;
 }
@@ -3004,7 +3004,7 @@ export interface CodepipelineStageOnFailureRetryConfiguration {
 export function codepipelineStageOnFailureRetryConfigurationToTerraform(struct?: CodepipelineStageOnFailureRetryConfigurationOutputReference | CodepipelineStageOnFailureRetryConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     retry_mode: cdktn.stringToTerraform(struct!.retryMode),
@@ -3015,7 +3015,7 @@ export function codepipelineStageOnFailureRetryConfigurationToTerraform(struct?:
 export function codepipelineStageOnFailureRetryConfigurationToHclTerraform(struct?: CodepipelineStageOnFailureRetryConfigurationOutputReference | CodepipelineStageOnFailureRetryConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     retry_mode: {
@@ -3080,19 +3080,19 @@ export class CodepipelineStageOnFailureRetryConfigurationOutputReference extends
 }
 export interface CodepipelineStageOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#result Codepipeline#result}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#result Codepipeline#result}
   */
   readonly result?: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#condition Codepipeline#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#condition Codepipeline#condition}
   */
   readonly condition?: CodepipelineStageOnFailureCondition;
   /**
   * retry_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#retry_configuration Codepipeline#retry_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#retry_configuration Codepipeline#retry_configuration}
   */
   readonly retryConfiguration?: CodepipelineStageOnFailureRetryConfiguration;
 }
@@ -3100,7 +3100,7 @@ export interface CodepipelineStageOnFailure {
 export function codepipelineStageOnFailureToTerraform(struct?: CodepipelineStageOnFailureOutputReference | CodepipelineStageOnFailure): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     result: cdktn.stringToTerraform(struct!.result),
@@ -3113,7 +3113,7 @@ export function codepipelineStageOnFailureToTerraform(struct?: CodepipelineStage
 export function codepipelineStageOnFailureToHclTerraform(struct?: CodepipelineStageOnFailureOutputReference | CodepipelineStageOnFailure): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     result: {
@@ -3234,19 +3234,19 @@ export class CodepipelineStageOnFailureOutputReference extends cdktn.ComplexObje
 }
 export interface CodepipelineStageOnSuccessConditionRuleRuleTypeId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#category Codepipeline#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#category Codepipeline#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#owner Codepipeline#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#owner Codepipeline#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#provider Codepipeline#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#provider Codepipeline#provider}
   */
   readonly provider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#version Codepipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#version Codepipeline#version}
   */
   readonly version?: string;
 }
@@ -3254,7 +3254,7 @@ export interface CodepipelineStageOnSuccessConditionRuleRuleTypeId {
 export function codepipelineStageOnSuccessConditionRuleRuleTypeIdToTerraform(struct?: CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnSuccessConditionRuleRuleTypeId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     category: cdktn.stringToTerraform(struct!.category),
@@ -3268,7 +3268,7 @@ export function codepipelineStageOnSuccessConditionRuleRuleTypeIdToTerraform(str
 export function codepipelineStageOnSuccessConditionRuleRuleTypeIdToHclTerraform(struct?: CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnSuccessConditionRuleRuleTypeId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     category: {
@@ -3411,37 +3411,37 @@ export class CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference ex
 }
 export interface CodepipelineStageOnSuccessConditionRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#commands Codepipeline#commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#commands Codepipeline#commands}
   */
   readonly commands?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
   */
   readonly configuration?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
   */
   readonly inputArtifacts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#region Codepipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#region Codepipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
   */
   readonly timeoutInMinutes?: number;
   /**
   * rule_type_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
   */
   readonly ruleTypeId: CodepipelineStageOnSuccessConditionRuleRuleTypeId;
 }
@@ -3449,7 +3449,7 @@ export interface CodepipelineStageOnSuccessConditionRule {
 export function codepipelineStageOnSuccessConditionRuleToTerraform(struct?: CodepipelineStageOnSuccessConditionRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     commands: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.commands),
@@ -3467,7 +3467,7 @@ export function codepipelineStageOnSuccessConditionRuleToTerraform(struct?: Code
 export function codepipelineStageOnSuccessConditionRuleToHclTerraform(struct?: CodepipelineStageOnSuccessConditionRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     commands: {
@@ -3754,13 +3754,13 @@ export class CodepipelineStageOnSuccessConditionRuleList extends cdktn.ComplexLi
 }
 export interface CodepipelineStageOnSuccessCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#result Codepipeline#result}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#result Codepipeline#result}
   */
   readonly result?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#rule Codepipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#rule Codepipeline#rule}
   */
   readonly rule: CodepipelineStageOnSuccessConditionRule[] | cdktn.IResolvable;
 }
@@ -3768,7 +3768,7 @@ export interface CodepipelineStageOnSuccessCondition {
 export function codepipelineStageOnSuccessConditionToTerraform(struct?: CodepipelineStageOnSuccessConditionOutputReference | CodepipelineStageOnSuccessCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     result: cdktn.stringToTerraform(struct!.result),
@@ -3780,7 +3780,7 @@ export function codepipelineStageOnSuccessConditionToTerraform(struct?: Codepipe
 export function codepipelineStageOnSuccessConditionToHclTerraform(struct?: CodepipelineStageOnSuccessConditionOutputReference | CodepipelineStageOnSuccessCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     result: {
@@ -3872,7 +3872,7 @@ export interface CodepipelineStageOnSuccess {
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#condition Codepipeline#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#condition Codepipeline#condition}
   */
   readonly condition: CodepipelineStageOnSuccessCondition;
 }
@@ -3880,7 +3880,7 @@ export interface CodepipelineStageOnSuccess {
 export function codepipelineStageOnSuccessToTerraform(struct?: CodepipelineStageOnSuccessOutputReference | CodepipelineStageOnSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: codepipelineStageOnSuccessConditionToTerraform(struct!.condition),
@@ -3891,7 +3891,7 @@ export function codepipelineStageOnSuccessToTerraform(struct?: CodepipelineStage
 export function codepipelineStageOnSuccessToHclTerraform(struct?: CodepipelineStageOnSuccessOutputReference | CodepipelineStageOnSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -3953,31 +3953,31 @@ export class CodepipelineStageOnSuccessOutputReference extends cdktn.ComplexObje
 }
 export interface CodepipelineStage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#action Codepipeline#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#action Codepipeline#action}
   */
   readonly action: CodepipelineStageAction[] | cdktn.IResolvable;
   /**
   * before_entry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#before_entry Codepipeline#before_entry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#before_entry Codepipeline#before_entry}
   */
   readonly beforeEntry?: CodepipelineStageBeforeEntry;
   /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#on_failure Codepipeline#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#on_failure Codepipeline#on_failure}
   */
   readonly onFailure?: CodepipelineStageOnFailure;
   /**
   * on_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#on_success Codepipeline#on_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#on_success Codepipeline#on_success}
   */
   readonly onSuccess?: CodepipelineStageOnSuccess;
 }
@@ -3985,7 +3985,7 @@ export interface CodepipelineStage {
 export function codepipelineStageToTerraform(struct?: CodepipelineStage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -4000,7 +4000,7 @@ export function codepipelineStageToTerraform(struct?: CodepipelineStage | cdktn.
 export function codepipelineStageToHclTerraform(struct?: CodepipelineStage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -4203,11 +4203,11 @@ export class CodepipelineStageList extends cdktn.ComplexList {
 }
 export interface CodepipelineTriggerGitConfigurationPullRequestBranches {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
   */
   readonly excludes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#includes Codepipeline#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#includes Codepipeline#includes}
   */
   readonly includes?: string[];
 }
@@ -4215,7 +4215,7 @@ export interface CodepipelineTriggerGitConfigurationPullRequestBranches {
 export function codepipelineTriggerGitConfigurationPullRequestBranchesToTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequestBranchesOutputReference | CodepipelineTriggerGitConfigurationPullRequestBranches): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludes),
@@ -4227,7 +4227,7 @@ export function codepipelineTriggerGitConfigurationPullRequestBranchesToTerrafor
 export function codepipelineTriggerGitConfigurationPullRequestBranchesToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequestBranchesOutputReference | CodepipelineTriggerGitConfigurationPullRequestBranches): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excludes: {
@@ -4320,11 +4320,11 @@ export class CodepipelineTriggerGitConfigurationPullRequestBranchesOutputReferen
 }
 export interface CodepipelineTriggerGitConfigurationPullRequestFilePaths {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
   */
   readonly excludes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#includes Codepipeline#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#includes Codepipeline#includes}
   */
   readonly includes?: string[];
 }
@@ -4332,7 +4332,7 @@ export interface CodepipelineTriggerGitConfigurationPullRequestFilePaths {
 export function codepipelineTriggerGitConfigurationPullRequestFilePathsToTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequestFilePathsOutputReference | CodepipelineTriggerGitConfigurationPullRequestFilePaths): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludes),
@@ -4344,7 +4344,7 @@ export function codepipelineTriggerGitConfigurationPullRequestFilePathsToTerrafo
 export function codepipelineTriggerGitConfigurationPullRequestFilePathsToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequestFilePathsOutputReference | CodepipelineTriggerGitConfigurationPullRequestFilePaths): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excludes: {
@@ -4437,19 +4437,19 @@ export class CodepipelineTriggerGitConfigurationPullRequestFilePathsOutputRefere
 }
 export interface CodepipelineTriggerGitConfigurationPullRequest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#events Codepipeline#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#events Codepipeline#events}
   */
   readonly events?: string[];
   /**
   * branches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#branches Codepipeline#branches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#branches Codepipeline#branches}
   */
   readonly branches?: CodepipelineTriggerGitConfigurationPullRequestBranches;
   /**
   * file_paths block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
   */
   readonly filePaths?: CodepipelineTriggerGitConfigurationPullRequestFilePaths;
 }
@@ -4457,7 +4457,7 @@ export interface CodepipelineTriggerGitConfigurationPullRequest {
 export function codepipelineTriggerGitConfigurationPullRequestToTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequest | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
@@ -4470,7 +4470,7 @@ export function codepipelineTriggerGitConfigurationPullRequestToTerraform(struct
 export function codepipelineTriggerGitConfigurationPullRequestToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequest | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     events: {
@@ -4623,11 +4623,11 @@ export class CodepipelineTriggerGitConfigurationPullRequestList extends cdktn.Co
 }
 export interface CodepipelineTriggerGitConfigurationPushBranches {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
   */
   readonly excludes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#includes Codepipeline#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#includes Codepipeline#includes}
   */
   readonly includes?: string[];
 }
@@ -4635,7 +4635,7 @@ export interface CodepipelineTriggerGitConfigurationPushBranches {
 export function codepipelineTriggerGitConfigurationPushBranchesToTerraform(struct?: CodepipelineTriggerGitConfigurationPushBranchesOutputReference | CodepipelineTriggerGitConfigurationPushBranches): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludes),
@@ -4647,7 +4647,7 @@ export function codepipelineTriggerGitConfigurationPushBranchesToTerraform(struc
 export function codepipelineTriggerGitConfigurationPushBranchesToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPushBranchesOutputReference | CodepipelineTriggerGitConfigurationPushBranches): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excludes: {
@@ -4740,11 +4740,11 @@ export class CodepipelineTriggerGitConfigurationPushBranchesOutputReference exte
 }
 export interface CodepipelineTriggerGitConfigurationPushFilePaths {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
   */
   readonly excludes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#includes Codepipeline#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#includes Codepipeline#includes}
   */
   readonly includes?: string[];
 }
@@ -4752,7 +4752,7 @@ export interface CodepipelineTriggerGitConfigurationPushFilePaths {
 export function codepipelineTriggerGitConfigurationPushFilePathsToTerraform(struct?: CodepipelineTriggerGitConfigurationPushFilePathsOutputReference | CodepipelineTriggerGitConfigurationPushFilePaths): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludes),
@@ -4764,7 +4764,7 @@ export function codepipelineTriggerGitConfigurationPushFilePathsToTerraform(stru
 export function codepipelineTriggerGitConfigurationPushFilePathsToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPushFilePathsOutputReference | CodepipelineTriggerGitConfigurationPushFilePaths): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excludes: {
@@ -4857,11 +4857,11 @@ export class CodepipelineTriggerGitConfigurationPushFilePathsOutputReference ext
 }
 export interface CodepipelineTriggerGitConfigurationPushTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
   */
   readonly excludes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#includes Codepipeline#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#includes Codepipeline#includes}
   */
   readonly includes?: string[];
 }
@@ -4869,7 +4869,7 @@ export interface CodepipelineTriggerGitConfigurationPushTags {
 export function codepipelineTriggerGitConfigurationPushTagsToTerraform(struct?: CodepipelineTriggerGitConfigurationPushTagsOutputReference | CodepipelineTriggerGitConfigurationPushTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludes),
@@ -4881,7 +4881,7 @@ export function codepipelineTriggerGitConfigurationPushTagsToTerraform(struct?: 
 export function codepipelineTriggerGitConfigurationPushTagsToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPushTagsOutputReference | CodepipelineTriggerGitConfigurationPushTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excludes: {
@@ -4976,19 +4976,19 @@ export interface CodepipelineTriggerGitConfigurationPush {
   /**
   * branches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#branches Codepipeline#branches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#branches Codepipeline#branches}
   */
   readonly branches?: CodepipelineTriggerGitConfigurationPushBranches;
   /**
   * file_paths block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
   */
   readonly filePaths?: CodepipelineTriggerGitConfigurationPushFilePaths;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#tags Codepipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#tags Codepipeline#tags}
   */
   readonly tags?: CodepipelineTriggerGitConfigurationPushTags;
 }
@@ -4996,7 +4996,7 @@ export interface CodepipelineTriggerGitConfigurationPush {
 export function codepipelineTriggerGitConfigurationPushToTerraform(struct?: CodepipelineTriggerGitConfigurationPush | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     branches: codepipelineTriggerGitConfigurationPushBranchesToTerraform(struct!.branches),
@@ -5009,7 +5009,7 @@ export function codepipelineTriggerGitConfigurationPushToTerraform(struct?: Code
 export function codepipelineTriggerGitConfigurationPushToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPush | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     branches: {
@@ -5162,19 +5162,19 @@ export class CodepipelineTriggerGitConfigurationPushList extends cdktn.ComplexLi
 }
 export interface CodepipelineTriggerGitConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#source_action_name Codepipeline#source_action_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#source_action_name Codepipeline#source_action_name}
   */
   readonly sourceActionName: string;
   /**
   * pull_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#pull_request Codepipeline#pull_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#pull_request Codepipeline#pull_request}
   */
   readonly pullRequest?: CodepipelineTriggerGitConfigurationPullRequest[] | cdktn.IResolvable;
   /**
   * push block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#push Codepipeline#push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#push Codepipeline#push}
   */
   readonly push?: CodepipelineTriggerGitConfigurationPush[] | cdktn.IResolvable;
 }
@@ -5182,7 +5182,7 @@ export interface CodepipelineTriggerGitConfiguration {
 export function codepipelineTriggerGitConfigurationToTerraform(struct?: CodepipelineTriggerGitConfigurationOutputReference | CodepipelineTriggerGitConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source_action_name: cdktn.stringToTerraform(struct!.sourceActionName),
@@ -5195,7 +5195,7 @@ export function codepipelineTriggerGitConfigurationToTerraform(struct?: Codepipe
 export function codepipelineTriggerGitConfigurationToHclTerraform(struct?: CodepipelineTriggerGitConfigurationOutputReference | CodepipelineTriggerGitConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source_action_name: {
@@ -5313,13 +5313,13 @@ export class CodepipelineTriggerGitConfigurationOutputReference extends cdktn.Co
 }
 export interface CodepipelineTrigger {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#provider_type Codepipeline#provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#provider_type Codepipeline#provider_type}
   */
   readonly providerType: string;
   /**
   * git_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#git_configuration Codepipeline#git_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#git_configuration Codepipeline#git_configuration}
   */
   readonly gitConfiguration: CodepipelineTriggerGitConfiguration;
 }
@@ -5327,7 +5327,7 @@ export interface CodepipelineTrigger {
 export function codepipelineTriggerToTerraform(struct?: CodepipelineTrigger | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     provider_type: cdktn.stringToTerraform(struct!.providerType),
@@ -5339,7 +5339,7 @@ export function codepipelineTriggerToTerraform(struct?: CodepipelineTrigger | cd
 export function codepipelineTriggerToHclTerraform(struct?: CodepipelineTrigger | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     provider_type: {
@@ -5458,15 +5458,15 @@ export class CodepipelineTriggerList extends cdktn.ComplexList {
 }
 export interface CodepipelineVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#default_value Codepipeline#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#default_value Codepipeline#default_value}
   */
   readonly defaultValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#description Codepipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#description Codepipeline#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
 }
@@ -5474,7 +5474,7 @@ export interface CodepipelineVariable {
 export function codepipelineVariableToTerraform(struct?: CodepipelineVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_value: cdktn.stringToTerraform(struct!.defaultValue),
@@ -5487,7 +5487,7 @@ export function codepipelineVariableToTerraform(struct?: CodepipelineVariable | 
 export function codepipelineVariableToHclTerraform(struct?: CodepipelineVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_value: {
@@ -5637,7 +5637,7 @@ export class CodepipelineVariableList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline aws_codepipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline aws_codepipeline}
 */
 export class Codepipeline extends cdktn.TerraformResource {
 
@@ -5653,7 +5653,7 @@ export class Codepipeline extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Codepipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Codepipeline to import
-  * @param importFromId The id of the existing Codepipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Codepipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Codepipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5665,7 +5665,7 @@ export class Codepipeline extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/codepipeline aws_codepipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/codepipeline aws_codepipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5676,7 +5676,7 @@ export class Codepipeline extends cdktn.TerraformResource {
       terraformResourceType: 'aws_codepipeline',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

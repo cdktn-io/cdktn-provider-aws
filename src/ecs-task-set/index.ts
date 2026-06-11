@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,104 +13,104 @@ import * as cdktn from 'cdktn';
 
 export interface EcsTaskSetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#cluster EcsTaskSet#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#cluster EcsTaskSet#cluster}
   */
   readonly cluster: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#external_id EcsTaskSet#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#external_id EcsTaskSet#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#force_delete EcsTaskSet#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#force_delete EcsTaskSet#force_delete}
   */
   readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#id EcsTaskSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#id EcsTaskSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#launch_type EcsTaskSet#launch_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#launch_type EcsTaskSet#launch_type}
   */
   readonly launchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#platform_version EcsTaskSet#platform_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#platform_version EcsTaskSet#platform_version}
   */
   readonly platformVersion?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#region EcsTaskSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#region EcsTaskSet#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#service EcsTaskSet#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#service EcsTaskSet#service}
   */
   readonly service: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#tags EcsTaskSet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#tags EcsTaskSet#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#tags_all EcsTaskSet#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#tags_all EcsTaskSet#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#task_definition EcsTaskSet#task_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#task_definition EcsTaskSet#task_definition}
   */
   readonly taskDefinition: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#wait_until_stable EcsTaskSet#wait_until_stable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#wait_until_stable EcsTaskSet#wait_until_stable}
   */
   readonly waitUntilStable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#wait_until_stable_timeout EcsTaskSet#wait_until_stable_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#wait_until_stable_timeout EcsTaskSet#wait_until_stable_timeout}
   */
   readonly waitUntilStableTimeout?: string;
   /**
   * capacity_provider_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#capacity_provider_strategy EcsTaskSet#capacity_provider_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#capacity_provider_strategy EcsTaskSet#capacity_provider_strategy}
   */
   readonly capacityProviderStrategy?: EcsTaskSetCapacityProviderStrategy[] | cdktn.IResolvable;
   /**
   * load_balancer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#load_balancer EcsTaskSet#load_balancer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#load_balancer EcsTaskSet#load_balancer}
   */
   readonly loadBalancer?: EcsTaskSetLoadBalancer[] | cdktn.IResolvable;
   /**
   * network_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#network_configuration EcsTaskSet#network_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#network_configuration EcsTaskSet#network_configuration}
   */
   readonly networkConfiguration?: EcsTaskSetNetworkConfiguration;
   /**
   * scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#scale EcsTaskSet#scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#scale EcsTaskSet#scale}
   */
   readonly scale?: EcsTaskSetScale;
   /**
   * service_registries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#service_registries EcsTaskSet#service_registries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#service_registries EcsTaskSet#service_registries}
   */
   readonly serviceRegistries?: EcsTaskSetServiceRegistries;
 }
 export interface EcsTaskSetCapacityProviderStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#base EcsTaskSet#base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#base EcsTaskSet#base}
   */
   readonly base?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#capacity_provider EcsTaskSet#capacity_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#capacity_provider EcsTaskSet#capacity_provider}
   */
   readonly capacityProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#weight EcsTaskSet#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#weight EcsTaskSet#weight}
   */
   readonly weight: number;
 }
@@ -118,7 +118,7 @@ export interface EcsTaskSetCapacityProviderStrategy {
 export function ecsTaskSetCapacityProviderStrategyToTerraform(struct?: EcsTaskSetCapacityProviderStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     base: cdktn.numberToTerraform(struct!.base),
@@ -131,7 +131,7 @@ export function ecsTaskSetCapacityProviderStrategyToTerraform(struct?: EcsTaskSe
 export function ecsTaskSetCapacityProviderStrategyToHclTerraform(struct?: EcsTaskSetCapacityProviderStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     base: {
@@ -278,19 +278,19 @@ export class EcsTaskSetCapacityProviderStrategyList extends cdktn.ComplexList {
 }
 export interface EcsTaskSetLoadBalancer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}
   */
   readonly containerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}
   */
   readonly containerPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#load_balancer_name EcsTaskSet#load_balancer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#load_balancer_name EcsTaskSet#load_balancer_name}
   */
   readonly loadBalancerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#target_group_arn EcsTaskSet#target_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#target_group_arn EcsTaskSet#target_group_arn}
   */
   readonly targetGroupArn?: string;
 }
@@ -298,7 +298,7 @@ export interface EcsTaskSetLoadBalancer {
 export function ecsTaskSetLoadBalancerToTerraform(struct?: EcsTaskSetLoadBalancer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_name: cdktn.stringToTerraform(struct!.containerName),
@@ -312,7 +312,7 @@ export function ecsTaskSetLoadBalancerToTerraform(struct?: EcsTaskSetLoadBalance
 export function ecsTaskSetLoadBalancerToHclTerraform(struct?: EcsTaskSetLoadBalancer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_name: {
@@ -490,15 +490,15 @@ export class EcsTaskSetLoadBalancerList extends cdktn.ComplexList {
 }
 export interface EcsTaskSetNetworkConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#assign_public_ip EcsTaskSet#assign_public_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#assign_public_ip EcsTaskSet#assign_public_ip}
   */
   readonly assignPublicIp?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#security_groups EcsTaskSet#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#security_groups EcsTaskSet#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#subnets EcsTaskSet#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#subnets EcsTaskSet#subnets}
   */
   readonly subnets: string[];
 }
@@ -506,7 +506,7 @@ export interface EcsTaskSetNetworkConfiguration {
 export function ecsTaskSetNetworkConfigurationToTerraform(struct?: EcsTaskSetNetworkConfigurationOutputReference | EcsTaskSetNetworkConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     assign_public_ip: cdktn.booleanToTerraform(struct!.assignPublicIp),
@@ -519,7 +519,7 @@ export function ecsTaskSetNetworkConfigurationToTerraform(struct?: EcsTaskSetNet
 export function ecsTaskSetNetworkConfigurationToHclTerraform(struct?: EcsTaskSetNetworkConfigurationOutputReference | EcsTaskSetNetworkConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     assign_public_ip: {
@@ -637,11 +637,11 @@ export class EcsTaskSetNetworkConfigurationOutputReference extends cdktn.Complex
 }
 export interface EcsTaskSetScale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#unit EcsTaskSet#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#unit EcsTaskSet#unit}
   */
   readonly unit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#value EcsTaskSet#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#value EcsTaskSet#value}
   */
   readonly value?: number;
 }
@@ -649,7 +649,7 @@ export interface EcsTaskSetScale {
 export function ecsTaskSetScaleToTerraform(struct?: EcsTaskSetScaleOutputReference | EcsTaskSetScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -661,7 +661,7 @@ export function ecsTaskSetScaleToTerraform(struct?: EcsTaskSetScaleOutputReferen
 export function ecsTaskSetScaleToHclTerraform(struct?: EcsTaskSetScaleOutputReference | EcsTaskSetScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -754,19 +754,19 @@ export class EcsTaskSetScaleOutputReference extends cdktn.ComplexObject {
 }
 export interface EcsTaskSetServiceRegistries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}
   */
   readonly containerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}
   */
   readonly containerPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#port EcsTaskSet#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#port EcsTaskSet#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#registry_arn EcsTaskSet#registry_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#registry_arn EcsTaskSet#registry_arn}
   */
   readonly registryArn: string;
 }
@@ -774,7 +774,7 @@ export interface EcsTaskSetServiceRegistries {
 export function ecsTaskSetServiceRegistriesToTerraform(struct?: EcsTaskSetServiceRegistriesOutputReference | EcsTaskSetServiceRegistries): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_name: cdktn.stringToTerraform(struct!.containerName),
@@ -788,7 +788,7 @@ export function ecsTaskSetServiceRegistriesToTerraform(struct?: EcsTaskSetServic
 export function ecsTaskSetServiceRegistriesToHclTerraform(struct?: EcsTaskSetServiceRegistriesOutputReference | EcsTaskSetServiceRegistries): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_name: {
@@ -934,7 +934,7 @@ export class EcsTaskSetServiceRegistriesOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set aws_ecs_task_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set aws_ecs_task_set}
 */
 export class EcsTaskSet extends cdktn.TerraformResource {
 
@@ -950,7 +950,7 @@ export class EcsTaskSet extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EcsTaskSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcsTaskSet to import
-  * @param importFromId The id of the existing EcsTaskSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EcsTaskSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcsTaskSet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -962,7 +962,7 @@ export class EcsTaskSet extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_task_set aws_ecs_task_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_task_set aws_ecs_task_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -973,7 +973,7 @@ export class EcsTaskSet extends cdktn.TerraformResource {
       terraformResourceType: 'aws_ecs_task_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
