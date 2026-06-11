@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/codebuild_fleet
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/codebuild_fleet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsCodebuildFleetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/codebuild_fleet#name DataAwsCodebuildFleet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/codebuild_fleet#name DataAwsCodebuildFleet#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/codebuild_fleet#region DataAwsCodebuildFleet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/codebuild_fleet#region DataAwsCodebuildFleet#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/codebuild_fleet#tags DataAwsCodebuildFleet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/codebuild_fleet#tags DataAwsCodebuildFleet#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -33,7 +33,7 @@ export interface DataAwsCodebuildFleetComputeConfiguration {
 export function dataAwsCodebuildFleetComputeConfigurationToTerraform(struct?: DataAwsCodebuildFleetComputeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -43,7 +43,7 @@ export function dataAwsCodebuildFleetComputeConfigurationToTerraform(struct?: Da
 export function dataAwsCodebuildFleetComputeConfigurationToHclTerraform(struct?: DataAwsCodebuildFleetComputeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -128,7 +128,7 @@ export interface DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingC
 export function dataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsToTerraform(struct?: DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -138,7 +138,7 @@ export function dataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingCo
 export function dataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsToHclTerraform(struct?: DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -208,7 +208,7 @@ export interface DataAwsCodebuildFleetScalingConfiguration {
 export function dataAwsCodebuildFleetScalingConfigurationToTerraform(struct?: DataAwsCodebuildFleetScalingConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -218,7 +218,7 @@ export function dataAwsCodebuildFleetScalingConfigurationToTerraform(struct?: Da
 export function dataAwsCodebuildFleetScalingConfigurationToHclTerraform(struct?: DataAwsCodebuildFleetScalingConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -299,7 +299,7 @@ export interface DataAwsCodebuildFleetStatus {
 export function dataAwsCodebuildFleetStatusToTerraform(struct?: DataAwsCodebuildFleetStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -309,7 +309,7 @@ export function dataAwsCodebuildFleetStatusToTerraform(struct?: DataAwsCodebuild
 export function dataAwsCodebuildFleetStatusToHclTerraform(struct?: DataAwsCodebuildFleetStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -384,7 +384,7 @@ export interface DataAwsCodebuildFleetVpcConfig {
 export function dataAwsCodebuildFleetVpcConfigToTerraform(struct?: DataAwsCodebuildFleetVpcConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -394,7 +394,7 @@ export function dataAwsCodebuildFleetVpcConfigToTerraform(struct?: DataAwsCodebu
 export function dataAwsCodebuildFleetVpcConfigToHclTerraform(struct?: DataAwsCodebuildFleetVpcConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -465,7 +465,7 @@ export class DataAwsCodebuildFleetVpcConfigList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet}
 */
 export class DataAwsCodebuildFleet extends cdktn.TerraformDataSource {
 
@@ -481,7 +481,7 @@ export class DataAwsCodebuildFleet extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsCodebuildFleet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCodebuildFleet to import
-  * @param importFromId The id of the existing DataAwsCodebuildFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCodebuildFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCodebuildFleet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -493,7 +493,7 @@ export class DataAwsCodebuildFleet extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -504,7 +504,7 @@ export class DataAwsCodebuildFleet extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_codebuild_fleet',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

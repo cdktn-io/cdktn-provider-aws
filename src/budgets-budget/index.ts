@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,104 +13,104 @@ import * as cdktn from 'cdktn';
 
 export interface BudgetsBudgetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}
   */
   readonly billingViewArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}
   */
   readonly budgetType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#id BudgetsBudget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#id BudgetsBudget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}
   */
   readonly limitAmount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}
   */
   readonly limitUnit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#metrics BudgetsBudget#metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#metrics BudgetsBudget#metrics}
   */
   readonly metrics?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name BudgetsBudget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name BudgetsBudget#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}
   */
   readonly timePeriodEnd?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}
   */
   readonly timePeriodStart?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}
   */
   readonly timeUnit: string;
   /**
   * auto_adjust_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#auto_adjust_data BudgetsBudget#auto_adjust_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#auto_adjust_data BudgetsBudget#auto_adjust_data}
   */
   readonly autoAdjustData?: BudgetsBudgetAutoAdjustData;
   /**
   * cost_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
   */
   readonly costFilter?: BudgetsBudgetCostFilter[] | cdktn.IResolvable;
   /**
   * cost_types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_types BudgetsBudget#cost_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_types BudgetsBudget#cost_types}
   */
   readonly costTypes?: BudgetsBudgetCostTypes;
   /**
   * filter_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#filter_expression BudgetsBudget#filter_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#filter_expression BudgetsBudget#filter_expression}
   */
   readonly filterExpression?: BudgetsBudgetFilterExpression;
   /**
   * notification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#notification BudgetsBudget#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#notification BudgetsBudget#notification}
   */
   readonly notification?: BudgetsBudgetNotification[] | cdktn.IResolvable;
   /**
   * planned_limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
   */
   readonly plannedLimit?: BudgetsBudgetPlannedLimit[] | cdktn.IResolvable;
 }
 export interface BudgetsBudgetAutoAdjustDataHistoricalOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}
   */
   readonly budgetAdjustmentPeriod: number;
 }
@@ -118,7 +118,7 @@ export interface BudgetsBudgetAutoAdjustDataHistoricalOptions {
 export function budgetsBudgetAutoAdjustDataHistoricalOptionsToTerraform(struct?: BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference | BudgetsBudgetAutoAdjustDataHistoricalOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     budget_adjustment_period: cdktn.numberToTerraform(struct!.budgetAdjustmentPeriod),
@@ -129,7 +129,7 @@ export function budgetsBudgetAutoAdjustDataHistoricalOptionsToTerraform(struct?:
 export function budgetsBudgetAutoAdjustDataHistoricalOptionsToHclTerraform(struct?: BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference | BudgetsBudgetAutoAdjustDataHistoricalOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     budget_adjustment_period: {
@@ -196,13 +196,13 @@ export class BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference extends
 }
 export interface BudgetsBudgetAutoAdjustData {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}
   */
   readonly autoAdjustType: string;
   /**
   * historical_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#historical_options BudgetsBudget#historical_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#historical_options BudgetsBudget#historical_options}
   */
   readonly historicalOptions?: BudgetsBudgetAutoAdjustDataHistoricalOptions;
 }
@@ -210,7 +210,7 @@ export interface BudgetsBudgetAutoAdjustData {
 export function budgetsBudgetAutoAdjustDataToTerraform(struct?: BudgetsBudgetAutoAdjustDataOutputReference | BudgetsBudgetAutoAdjustData): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auto_adjust_type: cdktn.stringToTerraform(struct!.autoAdjustType),
@@ -222,7 +222,7 @@ export function budgetsBudgetAutoAdjustDataToTerraform(struct?: BudgetsBudgetAut
 export function budgetsBudgetAutoAdjustDataToHclTerraform(struct?: BudgetsBudgetAutoAdjustDataOutputReference | BudgetsBudgetAutoAdjustData): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auto_adjust_type: {
@@ -317,11 +317,11 @@ export class BudgetsBudgetAutoAdjustDataOutputReference extends cdktn.ComplexObj
 }
 export interface BudgetsBudgetCostFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name BudgetsBudget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name BudgetsBudget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -329,7 +329,7 @@ export interface BudgetsBudgetCostFilter {
 export function budgetsBudgetCostFilterToTerraform(struct?: BudgetsBudgetCostFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -341,7 +341,7 @@ export function budgetsBudgetCostFilterToTerraform(struct?: BudgetsBudgetCostFil
 export function budgetsBudgetCostFilterToHclTerraform(struct?: BudgetsBudgetCostFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -460,47 +460,47 @@ export class BudgetsBudgetCostFilterList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetCostTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}
   */
   readonly includeCredit?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}
   */
   readonly includeDiscount?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}
   */
   readonly includeOtherSubscription?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}
   */
   readonly includeRecurring?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}
   */
   readonly includeRefund?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}
   */
   readonly includeSubscription?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}
   */
   readonly includeSupport?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}
   */
   readonly includeTax?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}
   */
   readonly includeUpfront?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}
   */
   readonly useAmortized?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}
   */
   readonly useBlended?: boolean | cdktn.IResolvable;
 }
@@ -508,7 +508,7 @@ export interface BudgetsBudgetCostTypes {
 export function budgetsBudgetCostTypesToTerraform(struct?: BudgetsBudgetCostTypesOutputReference | BudgetsBudgetCostTypes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_credit: cdktn.booleanToTerraform(struct!.includeCredit),
@@ -529,7 +529,7 @@ export function budgetsBudgetCostTypesToTerraform(struct?: BudgetsBudgetCostType
 export function budgetsBudgetCostTypesToHclTerraform(struct?: BudgetsBudgetCostTypesOutputReference | BudgetsBudgetCostTypes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_credit: {
@@ -874,15 +874,15 @@ export class BudgetsBudgetCostTypesOutputReference extends cdktn.ComplexObject {
 }
 export interface BudgetsBudgetFilterExpressionAndAndCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -890,7 +890,7 @@ export interface BudgetsBudgetFilterExpressionAndAndCostCategories {
 export function budgetsBudgetFilterExpressionAndAndCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionAndAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndAndCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -903,7 +903,7 @@ export function budgetsBudgetFilterExpressionAndAndCostCategoriesToTerraform(str
 export function budgetsBudgetFilterExpressionAndAndCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndAndCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1024,15 +1024,15 @@ export class BudgetsBudgetFilterExpressionAndAndCostCategoriesOutputReference ex
 }
 export interface BudgetsBudgetFilterExpressionAndAndDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -1040,7 +1040,7 @@ export interface BudgetsBudgetFilterExpressionAndAndDimensions {
 export function budgetsBudgetFilterExpressionAndAndDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionAndAndDimensionsOutputReference | BudgetsBudgetFilterExpressionAndAndDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1053,7 +1053,7 @@ export function budgetsBudgetFilterExpressionAndAndDimensionsToTerraform(struct?
 export function budgetsBudgetFilterExpressionAndAndDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndAndDimensionsOutputReference | BudgetsBudgetFilterExpressionAndAndDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1168,15 +1168,15 @@ export class BudgetsBudgetFilterExpressionAndAndDimensionsOutputReference extend
 }
 export interface BudgetsBudgetFilterExpressionAndAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -1184,7 +1184,7 @@ export interface BudgetsBudgetFilterExpressionAndAndTags {
 export function budgetsBudgetFilterExpressionAndAndTagsToTerraform(struct?: BudgetsBudgetFilterExpressionAndAndTagsOutputReference | BudgetsBudgetFilterExpressionAndAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1197,7 +1197,7 @@ export function budgetsBudgetFilterExpressionAndAndTagsToTerraform(struct?: Budg
 export function budgetsBudgetFilterExpressionAndAndTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndAndTagsOutputReference | BudgetsBudgetFilterExpressionAndAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1320,19 +1320,19 @@ export interface BudgetsBudgetFilterExpressionAndAnd {
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionAndAndCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionAndAndDimensions;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionAndAndTags;
 }
@@ -1340,7 +1340,7 @@ export interface BudgetsBudgetFilterExpressionAndAnd {
 export function budgetsBudgetFilterExpressionAndAndToTerraform(struct?: BudgetsBudgetFilterExpressionAndAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_categories: budgetsBudgetFilterExpressionAndAndCostCategoriesToTerraform(struct!.costCategories),
@@ -1353,7 +1353,7 @@ export function budgetsBudgetFilterExpressionAndAndToTerraform(struct?: BudgetsB
 export function budgetsBudgetFilterExpressionAndAndToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_categories: {
@@ -1506,15 +1506,15 @@ export class BudgetsBudgetFilterExpressionAndAndList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetFilterExpressionAndCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -1522,7 +1522,7 @@ export interface BudgetsBudgetFilterExpressionAndCostCategories {
 export function budgetsBudgetFilterExpressionAndCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1535,7 +1535,7 @@ export function budgetsBudgetFilterExpressionAndCostCategoriesToTerraform(struct
 export function budgetsBudgetFilterExpressionAndCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1656,15 +1656,15 @@ export class BudgetsBudgetFilterExpressionAndCostCategoriesOutputReference exten
 }
 export interface BudgetsBudgetFilterExpressionAndDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -1672,7 +1672,7 @@ export interface BudgetsBudgetFilterExpressionAndDimensions {
 export function budgetsBudgetFilterExpressionAndDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionAndDimensionsOutputReference | BudgetsBudgetFilterExpressionAndDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1685,7 +1685,7 @@ export function budgetsBudgetFilterExpressionAndDimensionsToTerraform(struct?: B
 export function budgetsBudgetFilterExpressionAndDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndDimensionsOutputReference | BudgetsBudgetFilterExpressionAndDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1800,15 +1800,15 @@ export class BudgetsBudgetFilterExpressionAndDimensionsOutputReference extends c
 }
 export interface BudgetsBudgetFilterExpressionAndNotCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -1816,7 +1816,7 @@ export interface BudgetsBudgetFilterExpressionAndNotCostCategories {
 export function budgetsBudgetFilterExpressionAndNotCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionAndNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndNotCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1829,7 +1829,7 @@ export function budgetsBudgetFilterExpressionAndNotCostCategoriesToTerraform(str
 export function budgetsBudgetFilterExpressionAndNotCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndNotCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1950,15 +1950,15 @@ export class BudgetsBudgetFilterExpressionAndNotCostCategoriesOutputReference ex
 }
 export interface BudgetsBudgetFilterExpressionAndNotDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -1966,7 +1966,7 @@ export interface BudgetsBudgetFilterExpressionAndNotDimensions {
 export function budgetsBudgetFilterExpressionAndNotDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionAndNotDimensionsOutputReference | BudgetsBudgetFilterExpressionAndNotDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1979,7 +1979,7 @@ export function budgetsBudgetFilterExpressionAndNotDimensionsToTerraform(struct?
 export function budgetsBudgetFilterExpressionAndNotDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndNotDimensionsOutputReference | BudgetsBudgetFilterExpressionAndNotDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2094,15 +2094,15 @@ export class BudgetsBudgetFilterExpressionAndNotDimensionsOutputReference extend
 }
 export interface BudgetsBudgetFilterExpressionAndNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -2110,7 +2110,7 @@ export interface BudgetsBudgetFilterExpressionAndNotTags {
 export function budgetsBudgetFilterExpressionAndNotTagsToTerraform(struct?: BudgetsBudgetFilterExpressionAndNotTagsOutputReference | BudgetsBudgetFilterExpressionAndNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2123,7 +2123,7 @@ export function budgetsBudgetFilterExpressionAndNotTagsToTerraform(struct?: Budg
 export function budgetsBudgetFilterExpressionAndNotTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndNotTagsOutputReference | BudgetsBudgetFilterExpressionAndNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2246,19 +2246,19 @@ export interface BudgetsBudgetFilterExpressionAndNot {
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionAndNotCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionAndNotDimensions;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionAndNotTags;
 }
@@ -2266,7 +2266,7 @@ export interface BudgetsBudgetFilterExpressionAndNot {
 export function budgetsBudgetFilterExpressionAndNotToTerraform(struct?: BudgetsBudgetFilterExpressionAndNotOutputReference | BudgetsBudgetFilterExpressionAndNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_categories: budgetsBudgetFilterExpressionAndNotCostCategoriesToTerraform(struct!.costCategories),
@@ -2279,7 +2279,7 @@ export function budgetsBudgetFilterExpressionAndNotToTerraform(struct?: BudgetsB
 export function budgetsBudgetFilterExpressionAndNotToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndNotOutputReference | BudgetsBudgetFilterExpressionAndNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_categories: {
@@ -2400,15 +2400,15 @@ export class BudgetsBudgetFilterExpressionAndNotOutputReference extends cdktn.Co
 }
 export interface BudgetsBudgetFilterExpressionAndOrCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -2416,7 +2416,7 @@ export interface BudgetsBudgetFilterExpressionAndOrCostCategories {
 export function budgetsBudgetFilterExpressionAndOrCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionAndOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndOrCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2429,7 +2429,7 @@ export function budgetsBudgetFilterExpressionAndOrCostCategoriesToTerraform(stru
 export function budgetsBudgetFilterExpressionAndOrCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndOrCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2550,15 +2550,15 @@ export class BudgetsBudgetFilterExpressionAndOrCostCategoriesOutputReference ext
 }
 export interface BudgetsBudgetFilterExpressionAndOrDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -2566,7 +2566,7 @@ export interface BudgetsBudgetFilterExpressionAndOrDimensions {
 export function budgetsBudgetFilterExpressionAndOrDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionAndOrDimensionsOutputReference | BudgetsBudgetFilterExpressionAndOrDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2579,7 +2579,7 @@ export function budgetsBudgetFilterExpressionAndOrDimensionsToTerraform(struct?:
 export function budgetsBudgetFilterExpressionAndOrDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndOrDimensionsOutputReference | BudgetsBudgetFilterExpressionAndOrDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2694,15 +2694,15 @@ export class BudgetsBudgetFilterExpressionAndOrDimensionsOutputReference extends
 }
 export interface BudgetsBudgetFilterExpressionAndOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -2710,7 +2710,7 @@ export interface BudgetsBudgetFilterExpressionAndOrTags {
 export function budgetsBudgetFilterExpressionAndOrTagsToTerraform(struct?: BudgetsBudgetFilterExpressionAndOrTagsOutputReference | BudgetsBudgetFilterExpressionAndOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2723,7 +2723,7 @@ export function budgetsBudgetFilterExpressionAndOrTagsToTerraform(struct?: Budge
 export function budgetsBudgetFilterExpressionAndOrTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndOrTagsOutputReference | BudgetsBudgetFilterExpressionAndOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2846,19 +2846,19 @@ export interface BudgetsBudgetFilterExpressionAndOr {
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionAndOrCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionAndOrDimensions;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionAndOrTags;
 }
@@ -2866,7 +2866,7 @@ export interface BudgetsBudgetFilterExpressionAndOr {
 export function budgetsBudgetFilterExpressionAndOrToTerraform(struct?: BudgetsBudgetFilterExpressionAndOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_categories: budgetsBudgetFilterExpressionAndOrCostCategoriesToTerraform(struct!.costCategories),
@@ -2879,7 +2879,7 @@ export function budgetsBudgetFilterExpressionAndOrToTerraform(struct?: BudgetsBu
 export function budgetsBudgetFilterExpressionAndOrToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_categories: {
@@ -3032,15 +3032,15 @@ export class BudgetsBudgetFilterExpressionAndOrList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetFilterExpressionAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -3048,7 +3048,7 @@ export interface BudgetsBudgetFilterExpressionAndTags {
 export function budgetsBudgetFilterExpressionAndTagsToTerraform(struct?: BudgetsBudgetFilterExpressionAndTagsOutputReference | BudgetsBudgetFilterExpressionAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3061,7 +3061,7 @@ export function budgetsBudgetFilterExpressionAndTagsToTerraform(struct?: Budgets
 export function budgetsBudgetFilterExpressionAndTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndTagsOutputReference | BudgetsBudgetFilterExpressionAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3184,37 +3184,37 @@ export interface BudgetsBudgetFilterExpressionAnd {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#and BudgetsBudget#and}
   */
   readonly and?: BudgetsBudgetFilterExpressionAndAnd[] | cdktn.IResolvable;
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionAndCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionAndDimensions;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#not BudgetsBudget#not}
   */
   readonly not?: BudgetsBudgetFilterExpressionAndNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#or BudgetsBudget#or}
   */
   readonly or?: BudgetsBudgetFilterExpressionAndOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionAndTags;
 }
@@ -3222,7 +3222,7 @@ export interface BudgetsBudgetFilterExpressionAnd {
 export function budgetsBudgetFilterExpressionAndToTerraform(struct?: BudgetsBudgetFilterExpressionAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(budgetsBudgetFilterExpressionAndAndToTerraform, true)(struct!.and),
@@ -3238,7 +3238,7 @@ export function budgetsBudgetFilterExpressionAndToTerraform(struct?: BudgetsBudg
 export function budgetsBudgetFilterExpressionAndToHclTerraform(struct?: BudgetsBudgetFilterExpressionAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -3475,15 +3475,15 @@ export class BudgetsBudgetFilterExpressionAndList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetFilterExpressionCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -3491,7 +3491,7 @@ export interface BudgetsBudgetFilterExpressionCostCategories {
 export function budgetsBudgetFilterExpressionCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionCostCategoriesOutputReference | BudgetsBudgetFilterExpressionCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3504,7 +3504,7 @@ export function budgetsBudgetFilterExpressionCostCategoriesToTerraform(struct?: 
 export function budgetsBudgetFilterExpressionCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionCostCategoriesOutputReference | BudgetsBudgetFilterExpressionCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3625,15 +3625,15 @@ export class BudgetsBudgetFilterExpressionCostCategoriesOutputReference extends 
 }
 export interface BudgetsBudgetFilterExpressionDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -3641,7 +3641,7 @@ export interface BudgetsBudgetFilterExpressionDimensions {
 export function budgetsBudgetFilterExpressionDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionDimensionsOutputReference | BudgetsBudgetFilterExpressionDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3654,7 +3654,7 @@ export function budgetsBudgetFilterExpressionDimensionsToTerraform(struct?: Budg
 export function budgetsBudgetFilterExpressionDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionDimensionsOutputReference | BudgetsBudgetFilterExpressionDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3769,15 +3769,15 @@ export class BudgetsBudgetFilterExpressionDimensionsOutputReference extends cdkt
 }
 export interface BudgetsBudgetFilterExpressionNotAndCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -3785,7 +3785,7 @@ export interface BudgetsBudgetFilterExpressionNotAndCostCategories {
 export function budgetsBudgetFilterExpressionNotAndCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionNotAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotAndCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3798,7 +3798,7 @@ export function budgetsBudgetFilterExpressionNotAndCostCategoriesToTerraform(str
 export function budgetsBudgetFilterExpressionNotAndCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotAndCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3919,15 +3919,15 @@ export class BudgetsBudgetFilterExpressionNotAndCostCategoriesOutputReference ex
 }
 export interface BudgetsBudgetFilterExpressionNotAndDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -3935,7 +3935,7 @@ export interface BudgetsBudgetFilterExpressionNotAndDimensions {
 export function budgetsBudgetFilterExpressionNotAndDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionNotAndDimensionsOutputReference | BudgetsBudgetFilterExpressionNotAndDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3948,7 +3948,7 @@ export function budgetsBudgetFilterExpressionNotAndDimensionsToTerraform(struct?
 export function budgetsBudgetFilterExpressionNotAndDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotAndDimensionsOutputReference | BudgetsBudgetFilterExpressionNotAndDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4063,15 +4063,15 @@ export class BudgetsBudgetFilterExpressionNotAndDimensionsOutputReference extend
 }
 export interface BudgetsBudgetFilterExpressionNotAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -4079,7 +4079,7 @@ export interface BudgetsBudgetFilterExpressionNotAndTags {
 export function budgetsBudgetFilterExpressionNotAndTagsToTerraform(struct?: BudgetsBudgetFilterExpressionNotAndTagsOutputReference | BudgetsBudgetFilterExpressionNotAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4092,7 +4092,7 @@ export function budgetsBudgetFilterExpressionNotAndTagsToTerraform(struct?: Budg
 export function budgetsBudgetFilterExpressionNotAndTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotAndTagsOutputReference | BudgetsBudgetFilterExpressionNotAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4215,19 +4215,19 @@ export interface BudgetsBudgetFilterExpressionNotAnd {
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionNotAndCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionNotAndDimensions;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionNotAndTags;
 }
@@ -4235,7 +4235,7 @@ export interface BudgetsBudgetFilterExpressionNotAnd {
 export function budgetsBudgetFilterExpressionNotAndToTerraform(struct?: BudgetsBudgetFilterExpressionNotAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_categories: budgetsBudgetFilterExpressionNotAndCostCategoriesToTerraform(struct!.costCategories),
@@ -4248,7 +4248,7 @@ export function budgetsBudgetFilterExpressionNotAndToTerraform(struct?: BudgetsB
 export function budgetsBudgetFilterExpressionNotAndToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_categories: {
@@ -4401,15 +4401,15 @@ export class BudgetsBudgetFilterExpressionNotAndList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetFilterExpressionNotCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -4417,7 +4417,7 @@ export interface BudgetsBudgetFilterExpressionNotCostCategories {
 export function budgetsBudgetFilterExpressionNotCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4430,7 +4430,7 @@ export function budgetsBudgetFilterExpressionNotCostCategoriesToTerraform(struct
 export function budgetsBudgetFilterExpressionNotCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4551,15 +4551,15 @@ export class BudgetsBudgetFilterExpressionNotCostCategoriesOutputReference exten
 }
 export interface BudgetsBudgetFilterExpressionNotDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -4567,7 +4567,7 @@ export interface BudgetsBudgetFilterExpressionNotDimensions {
 export function budgetsBudgetFilterExpressionNotDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionNotDimensionsOutputReference | BudgetsBudgetFilterExpressionNotDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4580,7 +4580,7 @@ export function budgetsBudgetFilterExpressionNotDimensionsToTerraform(struct?: B
 export function budgetsBudgetFilterExpressionNotDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotDimensionsOutputReference | BudgetsBudgetFilterExpressionNotDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4695,15 +4695,15 @@ export class BudgetsBudgetFilterExpressionNotDimensionsOutputReference extends c
 }
 export interface BudgetsBudgetFilterExpressionNotNotCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -4711,7 +4711,7 @@ export interface BudgetsBudgetFilterExpressionNotNotCostCategories {
 export function budgetsBudgetFilterExpressionNotNotCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionNotNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotNotCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4724,7 +4724,7 @@ export function budgetsBudgetFilterExpressionNotNotCostCategoriesToTerraform(str
 export function budgetsBudgetFilterExpressionNotNotCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotNotCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4845,15 +4845,15 @@ export class BudgetsBudgetFilterExpressionNotNotCostCategoriesOutputReference ex
 }
 export interface BudgetsBudgetFilterExpressionNotNotDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -4861,7 +4861,7 @@ export interface BudgetsBudgetFilterExpressionNotNotDimensions {
 export function budgetsBudgetFilterExpressionNotNotDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionNotNotDimensionsOutputReference | BudgetsBudgetFilterExpressionNotNotDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4874,7 +4874,7 @@ export function budgetsBudgetFilterExpressionNotNotDimensionsToTerraform(struct?
 export function budgetsBudgetFilterExpressionNotNotDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotNotDimensionsOutputReference | BudgetsBudgetFilterExpressionNotNotDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4989,15 +4989,15 @@ export class BudgetsBudgetFilterExpressionNotNotDimensionsOutputReference extend
 }
 export interface BudgetsBudgetFilterExpressionNotNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -5005,7 +5005,7 @@ export interface BudgetsBudgetFilterExpressionNotNotTags {
 export function budgetsBudgetFilterExpressionNotNotTagsToTerraform(struct?: BudgetsBudgetFilterExpressionNotNotTagsOutputReference | BudgetsBudgetFilterExpressionNotNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -5018,7 +5018,7 @@ export function budgetsBudgetFilterExpressionNotNotTagsToTerraform(struct?: Budg
 export function budgetsBudgetFilterExpressionNotNotTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotNotTagsOutputReference | BudgetsBudgetFilterExpressionNotNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -5141,19 +5141,19 @@ export interface BudgetsBudgetFilterExpressionNotNot {
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionNotNotCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionNotNotDimensions;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionNotNotTags;
 }
@@ -5161,7 +5161,7 @@ export interface BudgetsBudgetFilterExpressionNotNot {
 export function budgetsBudgetFilterExpressionNotNotToTerraform(struct?: BudgetsBudgetFilterExpressionNotNotOutputReference | BudgetsBudgetFilterExpressionNotNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_categories: budgetsBudgetFilterExpressionNotNotCostCategoriesToTerraform(struct!.costCategories),
@@ -5174,7 +5174,7 @@ export function budgetsBudgetFilterExpressionNotNotToTerraform(struct?: BudgetsB
 export function budgetsBudgetFilterExpressionNotNotToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotNotOutputReference | BudgetsBudgetFilterExpressionNotNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_categories: {
@@ -5295,15 +5295,15 @@ export class BudgetsBudgetFilterExpressionNotNotOutputReference extends cdktn.Co
 }
 export interface BudgetsBudgetFilterExpressionNotOrCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -5311,7 +5311,7 @@ export interface BudgetsBudgetFilterExpressionNotOrCostCategories {
 export function budgetsBudgetFilterExpressionNotOrCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionNotOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotOrCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -5324,7 +5324,7 @@ export function budgetsBudgetFilterExpressionNotOrCostCategoriesToTerraform(stru
 export function budgetsBudgetFilterExpressionNotOrCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotOrCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -5445,15 +5445,15 @@ export class BudgetsBudgetFilterExpressionNotOrCostCategoriesOutputReference ext
 }
 export interface BudgetsBudgetFilterExpressionNotOrDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -5461,7 +5461,7 @@ export interface BudgetsBudgetFilterExpressionNotOrDimensions {
 export function budgetsBudgetFilterExpressionNotOrDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionNotOrDimensionsOutputReference | BudgetsBudgetFilterExpressionNotOrDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -5474,7 +5474,7 @@ export function budgetsBudgetFilterExpressionNotOrDimensionsToTerraform(struct?:
 export function budgetsBudgetFilterExpressionNotOrDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotOrDimensionsOutputReference | BudgetsBudgetFilterExpressionNotOrDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -5589,15 +5589,15 @@ export class BudgetsBudgetFilterExpressionNotOrDimensionsOutputReference extends
 }
 export interface BudgetsBudgetFilterExpressionNotOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -5605,7 +5605,7 @@ export interface BudgetsBudgetFilterExpressionNotOrTags {
 export function budgetsBudgetFilterExpressionNotOrTagsToTerraform(struct?: BudgetsBudgetFilterExpressionNotOrTagsOutputReference | BudgetsBudgetFilterExpressionNotOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -5618,7 +5618,7 @@ export function budgetsBudgetFilterExpressionNotOrTagsToTerraform(struct?: Budge
 export function budgetsBudgetFilterExpressionNotOrTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotOrTagsOutputReference | BudgetsBudgetFilterExpressionNotOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -5741,19 +5741,19 @@ export interface BudgetsBudgetFilterExpressionNotOr {
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionNotOrCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionNotOrDimensions;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionNotOrTags;
 }
@@ -5761,7 +5761,7 @@ export interface BudgetsBudgetFilterExpressionNotOr {
 export function budgetsBudgetFilterExpressionNotOrToTerraform(struct?: BudgetsBudgetFilterExpressionNotOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_categories: budgetsBudgetFilterExpressionNotOrCostCategoriesToTerraform(struct!.costCategories),
@@ -5774,7 +5774,7 @@ export function budgetsBudgetFilterExpressionNotOrToTerraform(struct?: BudgetsBu
 export function budgetsBudgetFilterExpressionNotOrToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_categories: {
@@ -5927,15 +5927,15 @@ export class BudgetsBudgetFilterExpressionNotOrList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetFilterExpressionNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -5943,7 +5943,7 @@ export interface BudgetsBudgetFilterExpressionNotTags {
 export function budgetsBudgetFilterExpressionNotTagsToTerraform(struct?: BudgetsBudgetFilterExpressionNotTagsOutputReference | BudgetsBudgetFilterExpressionNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -5956,7 +5956,7 @@ export function budgetsBudgetFilterExpressionNotTagsToTerraform(struct?: Budgets
 export function budgetsBudgetFilterExpressionNotTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotTagsOutputReference | BudgetsBudgetFilterExpressionNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6079,37 +6079,37 @@ export interface BudgetsBudgetFilterExpressionNot {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#and BudgetsBudget#and}
   */
   readonly and?: BudgetsBudgetFilterExpressionNotAnd[] | cdktn.IResolvable;
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionNotCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionNotDimensions;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#not BudgetsBudget#not}
   */
   readonly not?: BudgetsBudgetFilterExpressionNotNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#or BudgetsBudget#or}
   */
   readonly or?: BudgetsBudgetFilterExpressionNotOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionNotTags;
 }
@@ -6117,7 +6117,7 @@ export interface BudgetsBudgetFilterExpressionNot {
 export function budgetsBudgetFilterExpressionNotToTerraform(struct?: BudgetsBudgetFilterExpressionNotOutputReference | BudgetsBudgetFilterExpressionNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(budgetsBudgetFilterExpressionNotAndToTerraform, true)(struct!.and),
@@ -6133,7 +6133,7 @@ export function budgetsBudgetFilterExpressionNotToTerraform(struct?: BudgetsBudg
 export function budgetsBudgetFilterExpressionNotToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotOutputReference | BudgetsBudgetFilterExpressionNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -6338,15 +6338,15 @@ export class BudgetsBudgetFilterExpressionNotOutputReference extends cdktn.Compl
 }
 export interface BudgetsBudgetFilterExpressionOrAndCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -6354,7 +6354,7 @@ export interface BudgetsBudgetFilterExpressionOrAndCostCategories {
 export function budgetsBudgetFilterExpressionOrAndCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionOrAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrAndCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6367,7 +6367,7 @@ export function budgetsBudgetFilterExpressionOrAndCostCategoriesToTerraform(stru
 export function budgetsBudgetFilterExpressionOrAndCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrAndCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6488,15 +6488,15 @@ export class BudgetsBudgetFilterExpressionOrAndCostCategoriesOutputReference ext
 }
 export interface BudgetsBudgetFilterExpressionOrAndDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -6504,7 +6504,7 @@ export interface BudgetsBudgetFilterExpressionOrAndDimensions {
 export function budgetsBudgetFilterExpressionOrAndDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionOrAndDimensionsOutputReference | BudgetsBudgetFilterExpressionOrAndDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6517,7 +6517,7 @@ export function budgetsBudgetFilterExpressionOrAndDimensionsToTerraform(struct?:
 export function budgetsBudgetFilterExpressionOrAndDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrAndDimensionsOutputReference | BudgetsBudgetFilterExpressionOrAndDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6632,15 +6632,15 @@ export class BudgetsBudgetFilterExpressionOrAndDimensionsOutputReference extends
 }
 export interface BudgetsBudgetFilterExpressionOrAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -6648,7 +6648,7 @@ export interface BudgetsBudgetFilterExpressionOrAndTags {
 export function budgetsBudgetFilterExpressionOrAndTagsToTerraform(struct?: BudgetsBudgetFilterExpressionOrAndTagsOutputReference | BudgetsBudgetFilterExpressionOrAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6661,7 +6661,7 @@ export function budgetsBudgetFilterExpressionOrAndTagsToTerraform(struct?: Budge
 export function budgetsBudgetFilterExpressionOrAndTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrAndTagsOutputReference | BudgetsBudgetFilterExpressionOrAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6784,19 +6784,19 @@ export interface BudgetsBudgetFilterExpressionOrAnd {
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionOrAndCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionOrAndDimensions;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionOrAndTags;
 }
@@ -6804,7 +6804,7 @@ export interface BudgetsBudgetFilterExpressionOrAnd {
 export function budgetsBudgetFilterExpressionOrAndToTerraform(struct?: BudgetsBudgetFilterExpressionOrAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_categories: budgetsBudgetFilterExpressionOrAndCostCategoriesToTerraform(struct!.costCategories),
@@ -6817,7 +6817,7 @@ export function budgetsBudgetFilterExpressionOrAndToTerraform(struct?: BudgetsBu
 export function budgetsBudgetFilterExpressionOrAndToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_categories: {
@@ -6970,15 +6970,15 @@ export class BudgetsBudgetFilterExpressionOrAndList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetFilterExpressionOrCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -6986,7 +6986,7 @@ export interface BudgetsBudgetFilterExpressionOrCostCategories {
 export function budgetsBudgetFilterExpressionOrCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6999,7 +6999,7 @@ export function budgetsBudgetFilterExpressionOrCostCategoriesToTerraform(struct?
 export function budgetsBudgetFilterExpressionOrCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -7120,15 +7120,15 @@ export class BudgetsBudgetFilterExpressionOrCostCategoriesOutputReference extend
 }
 export interface BudgetsBudgetFilterExpressionOrDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -7136,7 +7136,7 @@ export interface BudgetsBudgetFilterExpressionOrDimensions {
 export function budgetsBudgetFilterExpressionOrDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionOrDimensionsOutputReference | BudgetsBudgetFilterExpressionOrDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -7149,7 +7149,7 @@ export function budgetsBudgetFilterExpressionOrDimensionsToTerraform(struct?: Bu
 export function budgetsBudgetFilterExpressionOrDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrDimensionsOutputReference | BudgetsBudgetFilterExpressionOrDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -7264,15 +7264,15 @@ export class BudgetsBudgetFilterExpressionOrDimensionsOutputReference extends cd
 }
 export interface BudgetsBudgetFilterExpressionOrNotCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -7280,7 +7280,7 @@ export interface BudgetsBudgetFilterExpressionOrNotCostCategories {
 export function budgetsBudgetFilterExpressionOrNotCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionOrNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrNotCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -7293,7 +7293,7 @@ export function budgetsBudgetFilterExpressionOrNotCostCategoriesToTerraform(stru
 export function budgetsBudgetFilterExpressionOrNotCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrNotCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -7414,15 +7414,15 @@ export class BudgetsBudgetFilterExpressionOrNotCostCategoriesOutputReference ext
 }
 export interface BudgetsBudgetFilterExpressionOrNotDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -7430,7 +7430,7 @@ export interface BudgetsBudgetFilterExpressionOrNotDimensions {
 export function budgetsBudgetFilterExpressionOrNotDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionOrNotDimensionsOutputReference | BudgetsBudgetFilterExpressionOrNotDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -7443,7 +7443,7 @@ export function budgetsBudgetFilterExpressionOrNotDimensionsToTerraform(struct?:
 export function budgetsBudgetFilterExpressionOrNotDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrNotDimensionsOutputReference | BudgetsBudgetFilterExpressionOrNotDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -7558,15 +7558,15 @@ export class BudgetsBudgetFilterExpressionOrNotDimensionsOutputReference extends
 }
 export interface BudgetsBudgetFilterExpressionOrNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -7574,7 +7574,7 @@ export interface BudgetsBudgetFilterExpressionOrNotTags {
 export function budgetsBudgetFilterExpressionOrNotTagsToTerraform(struct?: BudgetsBudgetFilterExpressionOrNotTagsOutputReference | BudgetsBudgetFilterExpressionOrNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -7587,7 +7587,7 @@ export function budgetsBudgetFilterExpressionOrNotTagsToTerraform(struct?: Budge
 export function budgetsBudgetFilterExpressionOrNotTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrNotTagsOutputReference | BudgetsBudgetFilterExpressionOrNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -7710,19 +7710,19 @@ export interface BudgetsBudgetFilterExpressionOrNot {
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionOrNotCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionOrNotDimensions;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionOrNotTags;
 }
@@ -7730,7 +7730,7 @@ export interface BudgetsBudgetFilterExpressionOrNot {
 export function budgetsBudgetFilterExpressionOrNotToTerraform(struct?: BudgetsBudgetFilterExpressionOrNotOutputReference | BudgetsBudgetFilterExpressionOrNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_categories: budgetsBudgetFilterExpressionOrNotCostCategoriesToTerraform(struct!.costCategories),
@@ -7743,7 +7743,7 @@ export function budgetsBudgetFilterExpressionOrNotToTerraform(struct?: BudgetsBu
 export function budgetsBudgetFilterExpressionOrNotToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrNotOutputReference | BudgetsBudgetFilterExpressionOrNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_categories: {
@@ -7864,15 +7864,15 @@ export class BudgetsBudgetFilterExpressionOrNotOutputReference extends cdktn.Com
 }
 export interface BudgetsBudgetFilterExpressionOrOrCostCategories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -7880,7 +7880,7 @@ export interface BudgetsBudgetFilterExpressionOrOrCostCategories {
 export function budgetsBudgetFilterExpressionOrOrCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionOrOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrOrCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -7893,7 +7893,7 @@ export function budgetsBudgetFilterExpressionOrOrCostCategoriesToTerraform(struc
 export function budgetsBudgetFilterExpressionOrOrCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrOrCostCategories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -8014,15 +8014,15 @@ export class BudgetsBudgetFilterExpressionOrOrCostCategoriesOutputReference exte
 }
 export interface BudgetsBudgetFilterExpressionOrOrDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -8030,7 +8030,7 @@ export interface BudgetsBudgetFilterExpressionOrOrDimensions {
 export function budgetsBudgetFilterExpressionOrOrDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionOrOrDimensionsOutputReference | BudgetsBudgetFilterExpressionOrOrDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -8043,7 +8043,7 @@ export function budgetsBudgetFilterExpressionOrOrDimensionsToTerraform(struct?: 
 export function budgetsBudgetFilterExpressionOrOrDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrOrDimensionsOutputReference | BudgetsBudgetFilterExpressionOrOrDimensions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -8158,15 +8158,15 @@ export class BudgetsBudgetFilterExpressionOrOrDimensionsOutputReference extends 
 }
 export interface BudgetsBudgetFilterExpressionOrOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -8174,7 +8174,7 @@ export interface BudgetsBudgetFilterExpressionOrOrTags {
 export function budgetsBudgetFilterExpressionOrOrTagsToTerraform(struct?: BudgetsBudgetFilterExpressionOrOrTagsOutputReference | BudgetsBudgetFilterExpressionOrOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -8187,7 +8187,7 @@ export function budgetsBudgetFilterExpressionOrOrTagsToTerraform(struct?: Budget
 export function budgetsBudgetFilterExpressionOrOrTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrOrTagsOutputReference | BudgetsBudgetFilterExpressionOrOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -8310,19 +8310,19 @@ export interface BudgetsBudgetFilterExpressionOrOr {
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionOrOrCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionOrOrDimensions;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionOrOrTags;
 }
@@ -8330,7 +8330,7 @@ export interface BudgetsBudgetFilterExpressionOrOr {
 export function budgetsBudgetFilterExpressionOrOrToTerraform(struct?: BudgetsBudgetFilterExpressionOrOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_categories: budgetsBudgetFilterExpressionOrOrCostCategoriesToTerraform(struct!.costCategories),
@@ -8343,7 +8343,7 @@ export function budgetsBudgetFilterExpressionOrOrToTerraform(struct?: BudgetsBud
 export function budgetsBudgetFilterExpressionOrOrToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_categories: {
@@ -8496,15 +8496,15 @@ export class BudgetsBudgetFilterExpressionOrOrList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetFilterExpressionOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -8512,7 +8512,7 @@ export interface BudgetsBudgetFilterExpressionOrTags {
 export function budgetsBudgetFilterExpressionOrTagsToTerraform(struct?: BudgetsBudgetFilterExpressionOrTagsOutputReference | BudgetsBudgetFilterExpressionOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -8525,7 +8525,7 @@ export function budgetsBudgetFilterExpressionOrTagsToTerraform(struct?: BudgetsB
 export function budgetsBudgetFilterExpressionOrTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrTagsOutputReference | BudgetsBudgetFilterExpressionOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -8648,37 +8648,37 @@ export interface BudgetsBudgetFilterExpressionOr {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#and BudgetsBudget#and}
   */
   readonly and?: BudgetsBudgetFilterExpressionOrAnd[] | cdktn.IResolvable;
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionOrCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionOrDimensions;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#not BudgetsBudget#not}
   */
   readonly not?: BudgetsBudgetFilterExpressionOrNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#or BudgetsBudget#or}
   */
   readonly or?: BudgetsBudgetFilterExpressionOrOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionOrTags;
 }
@@ -8686,7 +8686,7 @@ export interface BudgetsBudgetFilterExpressionOr {
 export function budgetsBudgetFilterExpressionOrToTerraform(struct?: BudgetsBudgetFilterExpressionOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(budgetsBudgetFilterExpressionOrAndToTerraform, true)(struct!.and),
@@ -8702,7 +8702,7 @@ export function budgetsBudgetFilterExpressionOrToTerraform(struct?: BudgetsBudge
 export function budgetsBudgetFilterExpressionOrToHclTerraform(struct?: BudgetsBudgetFilterExpressionOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -8939,15 +8939,15 @@ export class BudgetsBudgetFilterExpressionOrList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetFilterExpressionTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values?: string[];
 }
@@ -8955,7 +8955,7 @@ export interface BudgetsBudgetFilterExpressionTags {
 export function budgetsBudgetFilterExpressionTagsToTerraform(struct?: BudgetsBudgetFilterExpressionTagsOutputReference | BudgetsBudgetFilterExpressionTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -8968,7 +8968,7 @@ export function budgetsBudgetFilterExpressionTagsToTerraform(struct?: BudgetsBud
 export function budgetsBudgetFilterExpressionTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionTagsOutputReference | BudgetsBudgetFilterExpressionTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -9091,37 +9091,37 @@ export interface BudgetsBudgetFilterExpression {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#and BudgetsBudget#and}
   */
   readonly and?: BudgetsBudgetFilterExpressionAnd[] | cdktn.IResolvable;
   /**
   * cost_categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
   */
   readonly costCategories?: BudgetsBudgetFilterExpressionCostCategories;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
   */
   readonly dimensions?: BudgetsBudgetFilterExpressionDimensions;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#not BudgetsBudget#not}
   */
   readonly not?: BudgetsBudgetFilterExpressionNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#or BudgetsBudget#or}
   */
   readonly or?: BudgetsBudgetFilterExpressionOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: BudgetsBudgetFilterExpressionTags;
 }
@@ -9129,7 +9129,7 @@ export interface BudgetsBudgetFilterExpression {
 export function budgetsBudgetFilterExpressionToTerraform(struct?: BudgetsBudgetFilterExpressionOutputReference | BudgetsBudgetFilterExpression): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(budgetsBudgetFilterExpressionAndToTerraform, true)(struct!.and),
@@ -9145,7 +9145,7 @@ export function budgetsBudgetFilterExpressionToTerraform(struct?: BudgetsBudgetF
 export function budgetsBudgetFilterExpressionToHclTerraform(struct?: BudgetsBudgetFilterExpressionOutputReference | BudgetsBudgetFilterExpression): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -9350,27 +9350,27 @@ export class BudgetsBudgetFilterExpressionOutputReference extends cdktn.ComplexO
 }
 export interface BudgetsBudgetNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#comparison_operator BudgetsBudget#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#comparison_operator BudgetsBudget#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#notification_type BudgetsBudget#notification_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#notification_type BudgetsBudget#notification_type}
   */
   readonly notificationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#subscriber_email_addresses BudgetsBudget#subscriber_email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#subscriber_email_addresses BudgetsBudget#subscriber_email_addresses}
   */
   readonly subscriberEmailAddresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#subscriber_sns_topic_arns BudgetsBudget#subscriber_sns_topic_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#subscriber_sns_topic_arns BudgetsBudget#subscriber_sns_topic_arns}
   */
   readonly subscriberSnsTopicArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#threshold BudgetsBudget#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#threshold BudgetsBudget#threshold}
   */
   readonly threshold: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#threshold_type BudgetsBudget#threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#threshold_type BudgetsBudget#threshold_type}
   */
   readonly thresholdType: string;
 }
@@ -9378,7 +9378,7 @@ export interface BudgetsBudgetNotification {
 export function budgetsBudgetNotificationToTerraform(struct?: BudgetsBudgetNotification | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison_operator: cdktn.stringToTerraform(struct!.comparisonOperator),
@@ -9394,7 +9394,7 @@ export function budgetsBudgetNotificationToTerraform(struct?: BudgetsBudgetNotif
 export function budgetsBudgetNotificationToHclTerraform(struct?: BudgetsBudgetNotification | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison_operator: {
@@ -9619,15 +9619,15 @@ export class BudgetsBudgetNotificationList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetPlannedLimit {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#amount BudgetsBudget#amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#amount BudgetsBudget#amount}
   */
   readonly amount: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#start_time BudgetsBudget#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#start_time BudgetsBudget#start_time}
   */
   readonly startTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#unit BudgetsBudget#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#unit BudgetsBudget#unit}
   */
   readonly unit: string;
 }
@@ -9635,7 +9635,7 @@ export interface BudgetsBudgetPlannedLimit {
 export function budgetsBudgetPlannedLimitToTerraform(struct?: BudgetsBudgetPlannedLimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     amount: cdktn.stringToTerraform(struct!.amount),
@@ -9648,7 +9648,7 @@ export function budgetsBudgetPlannedLimitToTerraform(struct?: BudgetsBudgetPlann
 export function budgetsBudgetPlannedLimitToHclTerraform(struct?: BudgetsBudgetPlannedLimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     amount: {
@@ -9792,7 +9792,7 @@ export class BudgetsBudgetPlannedLimitList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget aws_budgets_budget}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget aws_budgets_budget}
 */
 export class BudgetsBudget extends cdktn.TerraformResource {
 
@@ -9808,7 +9808,7 @@ export class BudgetsBudget extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BudgetsBudget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BudgetsBudget to import
-  * @param importFromId The id of the existing BudgetsBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BudgetsBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BudgetsBudget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -9820,7 +9820,7 @@ export class BudgetsBudget extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget aws_budgets_budget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget aws_budgets_budget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -9831,7 +9831,7 @@ export class BudgetsBudget extends cdktn.TerraformResource {
       terraformResourceType: 'aws_budgets_budget',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +13,41 @@ import * as cdktn from 'cdktn';
 
 export interface BedrockagentPromptConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#customer_encryption_key_arn BedrockagentPrompt#customer_encryption_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#customer_encryption_key_arn BedrockagentPrompt#customer_encryption_key_arn}
   */
   readonly customerEncryptionKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#default_variant BedrockagentPrompt#default_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#default_variant BedrockagentPrompt#default_variant}
   */
   readonly defaultVariant?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#description BedrockagentPrompt#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#description BedrockagentPrompt#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#region BedrockagentPrompt#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#region BedrockagentPrompt#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#tags BedrockagentPrompt#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#tags BedrockagentPrompt#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * variant block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#variant BedrockagentPrompt#variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#variant BedrockagentPrompt#variant}
   */
   readonly variant?: BedrockagentPromptVariant[] | cdktn.IResolvable;
 }
 export interface BedrockagentPromptVariantGenAiResourceAgent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#agent_identifier BedrockagentPrompt#agent_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#agent_identifier BedrockagentPrompt#agent_identifier}
   */
   readonly agentIdentifier: string;
 }
@@ -55,7 +55,7 @@ export interface BedrockagentPromptVariantGenAiResourceAgent {
 export function bedrockagentPromptVariantGenAiResourceAgentToTerraform(struct?: BedrockagentPromptVariantGenAiResourceAgent | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     agent_identifier: cdktn.stringToTerraform(struct!.agentIdentifier),
@@ -66,7 +66,7 @@ export function bedrockagentPromptVariantGenAiResourceAgentToTerraform(struct?: 
 export function bedrockagentPromptVariantGenAiResourceAgentToHclTerraform(struct?: BedrockagentPromptVariantGenAiResourceAgent | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     agent_identifier: {
@@ -162,7 +162,7 @@ export interface BedrockagentPromptVariantGenAiResource {
   /**
   * agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#agent BedrockagentPrompt#agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#agent BedrockagentPrompt#agent}
   */
   readonly agent?: BedrockagentPromptVariantGenAiResourceAgent[] | cdktn.IResolvable;
 }
@@ -170,7 +170,7 @@ export interface BedrockagentPromptVariantGenAiResource {
 export function bedrockagentPromptVariantGenAiResourceToTerraform(struct?: BedrockagentPromptVariantGenAiResource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     agent: cdktn.listMapper(bedrockagentPromptVariantGenAiResourceAgentToTerraform, true)(struct!.agent),
@@ -181,7 +181,7 @@ export function bedrockagentPromptVariantGenAiResourceToTerraform(struct?: Bedro
 export function bedrockagentPromptVariantGenAiResourceToHclTerraform(struct?: BedrockagentPromptVariantGenAiResource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     agent: {
@@ -278,19 +278,19 @@ export class BedrockagentPromptVariantGenAiResourceList extends cdktn.ComplexLis
 }
 export interface BedrockagentPromptVariantInferenceConfigurationText {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#max_tokens BedrockagentPrompt#max_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#max_tokens BedrockagentPrompt#max_tokens}
   */
   readonly maxTokens?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#stop_sequences BedrockagentPrompt#stop_sequences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#stop_sequences BedrockagentPrompt#stop_sequences}
   */
   readonly stopSequences?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#temperature BedrockagentPrompt#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#temperature BedrockagentPrompt#temperature}
   */
   readonly temperature?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#top_p BedrockagentPrompt#top_p}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#top_p BedrockagentPrompt#top_p}
   */
   readonly topP?: number;
 }
@@ -298,7 +298,7 @@ export interface BedrockagentPromptVariantInferenceConfigurationText {
 export function bedrockagentPromptVariantInferenceConfigurationTextToTerraform(struct?: BedrockagentPromptVariantInferenceConfigurationText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_tokens: cdktn.numberToTerraform(struct!.maxTokens),
@@ -312,7 +312,7 @@ export function bedrockagentPromptVariantInferenceConfigurationTextToTerraform(s
 export function bedrockagentPromptVariantInferenceConfigurationTextToHclTerraform(struct?: BedrockagentPromptVariantInferenceConfigurationText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_tokens: {
@@ -495,7 +495,7 @@ export interface BedrockagentPromptVariantInferenceConfiguration {
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
   */
   readonly text?: BedrockagentPromptVariantInferenceConfigurationText[] | cdktn.IResolvable;
 }
@@ -503,7 +503,7 @@ export interface BedrockagentPromptVariantInferenceConfiguration {
 export function bedrockagentPromptVariantInferenceConfigurationToTerraform(struct?: BedrockagentPromptVariantInferenceConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.listMapper(bedrockagentPromptVariantInferenceConfigurationTextToTerraform, true)(struct!.text),
@@ -514,7 +514,7 @@ export function bedrockagentPromptVariantInferenceConfigurationToTerraform(struc
 export function bedrockagentPromptVariantInferenceConfigurationToHclTerraform(struct?: BedrockagentPromptVariantInferenceConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -611,11 +611,11 @@ export class BedrockagentPromptVariantInferenceConfigurationList extends cdktn.C
 }
 export interface BedrockagentPromptVariantMetadata {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#key BedrockagentPrompt#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#key BedrockagentPrompt#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#value BedrockagentPrompt#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#value BedrockagentPrompt#value}
   */
   readonly value: string;
 }
@@ -623,7 +623,7 @@ export interface BedrockagentPromptVariantMetadata {
 export function bedrockagentPromptVariantMetadataToTerraform(struct?: BedrockagentPromptVariantMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -635,7 +635,7 @@ export function bedrockagentPromptVariantMetadataToTerraform(struct?: Bedrockage
 export function bedrockagentPromptVariantMetadataToHclTerraform(struct?: BedrockagentPromptVariantMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -754,7 +754,7 @@ export class BedrockagentPromptVariantMetadataList extends cdktn.ComplexList {
 }
 export interface BedrockagentPromptVariantTemplateConfigurationChatInputVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
   */
   readonly name: string;
 }
@@ -762,7 +762,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatInputVariable
 export function bedrockagentPromptVariantTemplateConfigurationChatInputVariableToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatInputVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -773,7 +773,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatInputVariableT
 export function bedrockagentPromptVariantTemplateConfigurationChatInputVariableToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatInputVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -867,7 +867,7 @@ export class BedrockagentPromptVariantTemplateConfigurationChatInputVariableList
 }
 export interface BedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#type BedrockagentPrompt#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#type BedrockagentPrompt#type}
   */
   readonly type: string;
 }
@@ -875,7 +875,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatMessageConten
 export function bedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePointToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePoint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -886,7 +886,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatMessageContent
 export function bedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePointToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePoint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -980,13 +980,13 @@ export class BedrockagentPromptVariantTemplateConfigurationChatMessageContentCac
 }
 export interface BedrockagentPromptVariantTemplateConfigurationChatMessageContent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
   */
   readonly text?: string;
   /**
   * cache_point block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#cache_point BedrockagentPrompt#cache_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#cache_point BedrockagentPrompt#cache_point}
   */
   readonly cachePoint?: BedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePoint[] | cdktn.IResolvable;
 }
@@ -994,7 +994,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatMessageConten
 export function bedrockagentPromptVariantTemplateConfigurationChatMessageContentToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatMessageContent | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.stringToTerraform(struct!.text),
@@ -1006,7 +1006,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatMessageContent
 export function bedrockagentPromptVariantTemplateConfigurationChatMessageContentToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatMessageContent | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -1131,13 +1131,13 @@ export class BedrockagentPromptVariantTemplateConfigurationChatMessageContentLis
 }
 export interface BedrockagentPromptVariantTemplateConfigurationChatMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#role BedrockagentPrompt#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#role BedrockagentPrompt#role}
   */
   readonly role: string;
   /**
   * content block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#content BedrockagentPrompt#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#content BedrockagentPrompt#content}
   */
   readonly content?: BedrockagentPromptVariantTemplateConfigurationChatMessageContent[] | cdktn.IResolvable;
 }
@@ -1145,7 +1145,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatMessage {
 export function bedrockagentPromptVariantTemplateConfigurationChatMessageToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatMessage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     role: cdktn.stringToTerraform(struct!.role),
@@ -1157,7 +1157,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatMessageToTerra
 export function bedrockagentPromptVariantTemplateConfigurationChatMessageToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatMessage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     role: {
@@ -1279,7 +1279,7 @@ export class BedrockagentPromptVariantTemplateConfigurationChatMessageList exten
 }
 export interface BedrockagentPromptVariantTemplateConfigurationChatSystemCachePoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#type BedrockagentPrompt#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#type BedrockagentPrompt#type}
   */
   readonly type: string;
 }
@@ -1287,7 +1287,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatSystemCachePo
 export function bedrockagentPromptVariantTemplateConfigurationChatSystemCachePointToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatSystemCachePoint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -1298,7 +1298,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatSystemCachePoi
 export function bedrockagentPromptVariantTemplateConfigurationChatSystemCachePointToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatSystemCachePoint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -1392,13 +1392,13 @@ export class BedrockagentPromptVariantTemplateConfigurationChatSystemCachePointL
 }
 export interface BedrockagentPromptVariantTemplateConfigurationChatSystem {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
   */
   readonly text?: string;
   /**
   * cache_point block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#cache_point BedrockagentPrompt#cache_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#cache_point BedrockagentPrompt#cache_point}
   */
   readonly cachePoint?: BedrockagentPromptVariantTemplateConfigurationChatSystemCachePoint[] | cdktn.IResolvable;
 }
@@ -1406,7 +1406,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatSystem {
 export function bedrockagentPromptVariantTemplateConfigurationChatSystemToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatSystem | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.stringToTerraform(struct!.text),
@@ -1418,7 +1418,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatSystemToTerraf
 export function bedrockagentPromptVariantTemplateConfigurationChatSystemToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatSystem | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -1543,7 +1543,7 @@ export class BedrockagentPromptVariantTemplateConfigurationChatSystemList extend
 }
 export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#type BedrockagentPrompt#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#type BedrockagentPrompt#type}
   */
   readonly type: string;
 }
@@ -1551,7 +1551,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePoint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -1562,7 +1562,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurat
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePoint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -1656,7 +1656,7 @@ export class BedrockagentPromptVariantTemplateConfigurationChatToolConfiguration
 }
 export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#json BedrockagentPrompt#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#json BedrockagentPrompt#json}
   */
   readonly json?: string;
 }
@@ -1664,7 +1664,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     json: cdktn.stringToTerraform(struct!.json),
@@ -1675,7 +1675,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurat
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     json: {
@@ -1772,17 +1772,17 @@ export class BedrockagentPromptVariantTemplateConfigurationChatToolConfiguration
 }
 export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#description BedrockagentPrompt#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#description BedrockagentPrompt#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
   */
   readonly name: string;
   /**
   * input_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#input_schema BedrockagentPrompt#input_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#input_schema BedrockagentPrompt#input_schema}
   */
   readonly inputSchema?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema[] | cdktn.IResolvable;
 }
@@ -1790,7 +1790,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -1803,7 +1803,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurat
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -1955,13 +1955,13 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
   /**
   * cache_point block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#cache_point BedrockagentPrompt#cache_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#cache_point BedrockagentPrompt#cache_point}
   */
   readonly cachePoint?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePoint[] | cdktn.IResolvable;
   /**
   * tool_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#tool_spec BedrockagentPrompt#tool_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#tool_spec BedrockagentPrompt#tool_spec}
   */
   readonly toolSpec?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpec[] | cdktn.IResolvable;
 }
@@ -1969,7 +1969,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationTool | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cache_point: cdktn.listMapper(bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointToTerraform, true)(struct!.cachePoint),
@@ -1981,7 +1981,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurat
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationTool | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cache_point: {
@@ -2110,7 +2110,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAny | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2120,7 +2120,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurat
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAny | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2191,7 +2191,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAutoToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2201,7 +2201,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurat
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAutoToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2268,7 +2268,7 @@ export class BedrockagentPromptVariantTemplateConfigurationChatToolConfiguration
 }
 export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceTool {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
   */
   readonly name: string;
 }
@@ -2276,7 +2276,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceTool | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2287,7 +2287,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurat
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceTool | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2383,19 +2383,19 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
   /**
   * any block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#any BedrockagentPrompt#any}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#any BedrockagentPrompt#any}
   */
   readonly any?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAny[] | cdktn.IResolvable;
   /**
   * auto block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#auto BedrockagentPrompt#auto}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#auto BedrockagentPrompt#auto}
   */
   readonly auto?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto[] | cdktn.IResolvable;
   /**
   * tool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#tool BedrockagentPrompt#tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#tool BedrockagentPrompt#tool}
   */
   readonly tool?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceTool[] | cdktn.IResolvable;
 }
@@ -2403,7 +2403,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoice | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     any: cdktn.listMapper(bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyToTerraform, true)(struct!.any),
@@ -2416,7 +2416,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurat
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoice | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     any: {
@@ -2571,13 +2571,13 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
   /**
   * tool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#tool BedrockagentPrompt#tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#tool BedrockagentPrompt#tool}
   */
   readonly tool?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationTool[] | cdktn.IResolvable;
   /**
   * tool_choice block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#tool_choice BedrockagentPrompt#tool_choice}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#tool_choice BedrockagentPrompt#tool_choice}
   */
   readonly toolChoice?: BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoice[] | cdktn.IResolvable;
 }
@@ -2585,7 +2585,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChatToolConfigura
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     tool: cdktn.listMapper(bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToTerraform, true)(struct!.tool),
@@ -2597,7 +2597,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurat
 export function bedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChatToolConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     tool: {
@@ -2724,25 +2724,25 @@ export interface BedrockagentPromptVariantTemplateConfigurationChat {
   /**
   * input_variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#input_variable BedrockagentPrompt#input_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#input_variable BedrockagentPrompt#input_variable}
   */
   readonly inputVariable?: BedrockagentPromptVariantTemplateConfigurationChatInputVariable[] | cdktn.IResolvable;
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#message BedrockagentPrompt#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#message BedrockagentPrompt#message}
   */
   readonly message?: BedrockagentPromptVariantTemplateConfigurationChatMessage[] | cdktn.IResolvable;
   /**
   * system block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#system BedrockagentPrompt#system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#system BedrockagentPrompt#system}
   */
   readonly systemAttribute?: BedrockagentPromptVariantTemplateConfigurationChatSystem[] | cdktn.IResolvable;
   /**
   * tool_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#tool_configuration BedrockagentPrompt#tool_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#tool_configuration BedrockagentPrompt#tool_configuration}
   */
   readonly toolConfiguration?: BedrockagentPromptVariantTemplateConfigurationChatToolConfiguration[] | cdktn.IResolvable;
 }
@@ -2750,7 +2750,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationChat {
 export function bedrockagentPromptVariantTemplateConfigurationChatToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChat | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input_variable: cdktn.listMapper(bedrockagentPromptVariantTemplateConfigurationChatInputVariableToTerraform, true)(struct!.inputVariable),
@@ -2764,7 +2764,7 @@ export function bedrockagentPromptVariantTemplateConfigurationChatToTerraform(st
 export function bedrockagentPromptVariantTemplateConfigurationChatToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationChat | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input_variable: {
@@ -2945,7 +2945,7 @@ export class BedrockagentPromptVariantTemplateConfigurationChatList extends cdkt
 }
 export interface BedrockagentPromptVariantTemplateConfigurationTextCachePoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#type BedrockagentPrompt#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#type BedrockagentPrompt#type}
   */
   readonly type: string;
 }
@@ -2953,7 +2953,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationTextCachePoint {
 export function bedrockagentPromptVariantTemplateConfigurationTextCachePointToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationTextCachePoint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -2964,7 +2964,7 @@ export function bedrockagentPromptVariantTemplateConfigurationTextCachePointToTe
 export function bedrockagentPromptVariantTemplateConfigurationTextCachePointToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationTextCachePoint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -3058,7 +3058,7 @@ export class BedrockagentPromptVariantTemplateConfigurationTextCachePointList ex
 }
 export interface BedrockagentPromptVariantTemplateConfigurationTextInputVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
   */
   readonly name: string;
 }
@@ -3066,7 +3066,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationTextInputVariable
 export function bedrockagentPromptVariantTemplateConfigurationTextInputVariableToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationTextInputVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -3077,7 +3077,7 @@ export function bedrockagentPromptVariantTemplateConfigurationTextInputVariableT
 export function bedrockagentPromptVariantTemplateConfigurationTextInputVariableToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationTextInputVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -3171,19 +3171,19 @@ export class BedrockagentPromptVariantTemplateConfigurationTextInputVariableList
 }
 export interface BedrockagentPromptVariantTemplateConfigurationText {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
   */
   readonly text: string;
   /**
   * cache_point block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#cache_point BedrockagentPrompt#cache_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#cache_point BedrockagentPrompt#cache_point}
   */
   readonly cachePoint?: BedrockagentPromptVariantTemplateConfigurationTextCachePoint[] | cdktn.IResolvable;
   /**
   * input_variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#input_variable BedrockagentPrompt#input_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#input_variable BedrockagentPrompt#input_variable}
   */
   readonly inputVariable?: BedrockagentPromptVariantTemplateConfigurationTextInputVariable[] | cdktn.IResolvable;
 }
@@ -3191,7 +3191,7 @@ export interface BedrockagentPromptVariantTemplateConfigurationText {
 export function bedrockagentPromptVariantTemplateConfigurationTextToTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: cdktn.stringToTerraform(struct!.text),
@@ -3204,7 +3204,7 @@ export function bedrockagentPromptVariantTemplateConfigurationTextToTerraform(st
 export function bedrockagentPromptVariantTemplateConfigurationTextToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfigurationText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -3356,13 +3356,13 @@ export interface BedrockagentPromptVariantTemplateConfiguration {
   /**
   * chat block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#chat BedrockagentPrompt#chat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#chat BedrockagentPrompt#chat}
   */
   readonly chat?: BedrockagentPromptVariantTemplateConfigurationChat[] | cdktn.IResolvable;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
   */
   readonly text?: BedrockagentPromptVariantTemplateConfigurationText[] | cdktn.IResolvable;
 }
@@ -3370,7 +3370,7 @@ export interface BedrockagentPromptVariantTemplateConfiguration {
 export function bedrockagentPromptVariantTemplateConfigurationToTerraform(struct?: BedrockagentPromptVariantTemplateConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     chat: cdktn.listMapper(bedrockagentPromptVariantTemplateConfigurationChatToTerraform, true)(struct!.chat),
@@ -3382,7 +3382,7 @@ export function bedrockagentPromptVariantTemplateConfigurationToTerraform(struct
 export function bedrockagentPromptVariantTemplateConfigurationToHclTerraform(struct?: BedrockagentPromptVariantTemplateConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     chat: {
@@ -3507,43 +3507,43 @@ export class BedrockagentPromptVariantTemplateConfigurationList extends cdktn.Co
 }
 export interface BedrockagentPromptVariant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#additional_model_request_fields BedrockagentPrompt#additional_model_request_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#additional_model_request_fields BedrockagentPrompt#additional_model_request_fields}
   */
   readonly additionalModelRequestFields?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#model_id BedrockagentPrompt#model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#model_id BedrockagentPrompt#model_id}
   */
   readonly modelId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#template_type BedrockagentPrompt#template_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#template_type BedrockagentPrompt#template_type}
   */
   readonly templateType: string;
   /**
   * gen_ai_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#gen_ai_resource BedrockagentPrompt#gen_ai_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#gen_ai_resource BedrockagentPrompt#gen_ai_resource}
   */
   readonly genAiResource?: BedrockagentPromptVariantGenAiResource[] | cdktn.IResolvable;
   /**
   * inference_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#inference_configuration BedrockagentPrompt#inference_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#inference_configuration BedrockagentPrompt#inference_configuration}
   */
   readonly inferenceConfiguration?: BedrockagentPromptVariantInferenceConfiguration[] | cdktn.IResolvable;
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#metadata BedrockagentPrompt#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#metadata BedrockagentPrompt#metadata}
   */
   readonly metadata?: BedrockagentPromptVariantMetadata[] | cdktn.IResolvable;
   /**
   * template_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#template_configuration BedrockagentPrompt#template_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#template_configuration BedrockagentPrompt#template_configuration}
   */
   readonly templateConfiguration?: BedrockagentPromptVariantTemplateConfiguration[] | cdktn.IResolvable;
 }
@@ -3551,7 +3551,7 @@ export interface BedrockagentPromptVariant {
 export function bedrockagentPromptVariantToTerraform(struct?: BedrockagentPromptVariant | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_model_request_fields: cdktn.stringToTerraform(struct!.additionalModelRequestFields),
@@ -3569,7 +3569,7 @@ export function bedrockagentPromptVariantToTerraform(struct?: BedrockagentPrompt
 export function bedrockagentPromptVariantToHclTerraform(struct?: BedrockagentPromptVariant | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_model_request_fields: {
@@ -3856,7 +3856,7 @@ export class BedrockagentPromptVariantList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt aws_bedrockagent_prompt}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt aws_bedrockagent_prompt}
 */
 export class BedrockagentPrompt extends cdktn.TerraformResource {
 
@@ -3872,7 +3872,7 @@ export class BedrockagentPrompt extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BedrockagentPrompt resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentPrompt to import
-  * @param importFromId The id of the existing BedrockagentPrompt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockagentPrompt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentPrompt to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3884,7 +3884,7 @@ export class BedrockagentPrompt extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/bedrockagent_prompt aws_bedrockagent_prompt} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/bedrockagent_prompt aws_bedrockagent_prompt} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3895,7 +3895,7 @@ export class BedrockagentPrompt extends cdktn.TerraformResource {
       terraformResourceType: 'aws_bedrockagent_prompt',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

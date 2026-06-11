@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,56 @@ import * as cdktn from 'cdktn';
 
 export interface CeCostCategoryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}
   */
   readonly defaultValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}
   */
   readonly effectiveStart?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#id CeCostCategory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#id CeCostCategory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#name CeCostCategory#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#name CeCostCategory#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}
   */
   readonly ruleVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
   */
   readonly rule: CeCostCategoryRule[] | cdktn.IResolvable;
   /**
   * split_charge_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
   */
   readonly splitChargeRule?: CeCostCategorySplitChargeRule[] | cdktn.IResolvable;
 }
 export interface CeCostCategoryRuleInheritedValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}
   */
   readonly dimensionKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}
   */
   readonly dimensionName?: string;
 }
@@ -70,7 +70,7 @@ export interface CeCostCategoryRuleInheritedValue {
 export function ceCostCategoryRuleInheritedValueToTerraform(struct?: CeCostCategoryRuleInheritedValueOutputReference | CeCostCategoryRuleInheritedValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dimension_key: cdktn.stringToTerraform(struct!.dimensionKey),
@@ -82,7 +82,7 @@ export function ceCostCategoryRuleInheritedValueToTerraform(struct?: CeCostCateg
 export function ceCostCategoryRuleInheritedValueToHclTerraform(struct?: CeCostCategoryRuleInheritedValueOutputReference | CeCostCategoryRuleInheritedValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dimension_key: {
@@ -175,15 +175,15 @@ export class CeCostCategoryRuleInheritedValueOutputReference extends cdktn.Compl
 }
 export interface CeCostCategoryRuleRuleAndAndCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -191,7 +191,7 @@ export interface CeCostCategoryRuleRuleAndAndCostCategory {
 export function ceCostCategoryRuleRuleAndAndCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleAndAndCostCategoryOutputReference | CeCostCategoryRuleRuleAndAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -204,7 +204,7 @@ export function ceCostCategoryRuleRuleAndAndCostCategoryToTerraform(struct?: CeC
 export function ceCostCategoryRuleRuleAndAndCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleAndAndCostCategoryOutputReference | CeCostCategoryRuleRuleAndAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -325,15 +325,15 @@ export class CeCostCategoryRuleRuleAndAndCostCategoryOutputReference extends cdk
 }
 export interface CeCostCategoryRuleRuleAndAndDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -341,7 +341,7 @@ export interface CeCostCategoryRuleRuleAndAndDimension {
 export function ceCostCategoryRuleRuleAndAndDimensionToTerraform(struct?: CeCostCategoryRuleRuleAndAndDimensionOutputReference | CeCostCategoryRuleRuleAndAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -354,7 +354,7 @@ export function ceCostCategoryRuleRuleAndAndDimensionToTerraform(struct?: CeCost
 export function ceCostCategoryRuleRuleAndAndDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleAndAndDimensionOutputReference | CeCostCategoryRuleRuleAndAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -475,15 +475,15 @@ export class CeCostCategoryRuleRuleAndAndDimensionOutputReference extends cdktn.
 }
 export interface CeCostCategoryRuleRuleAndAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -491,7 +491,7 @@ export interface CeCostCategoryRuleRuleAndAndTags {
 export function ceCostCategoryRuleRuleAndAndTagsToTerraform(struct?: CeCostCategoryRuleRuleAndAndTagsOutputReference | CeCostCategoryRuleRuleAndAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -504,7 +504,7 @@ export function ceCostCategoryRuleRuleAndAndTagsToTerraform(struct?: CeCostCateg
 export function ceCostCategoryRuleRuleAndAndTagsToHclTerraform(struct?: CeCostCategoryRuleRuleAndAndTagsOutputReference | CeCostCategoryRuleRuleAndAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -627,19 +627,19 @@ export interface CeCostCategoryRuleRuleAndAnd {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleAndAndCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleAndAndDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleAndAndTags;
 }
@@ -647,7 +647,7 @@ export interface CeCostCategoryRuleRuleAndAnd {
 export function ceCostCategoryRuleRuleAndAndToTerraform(struct?: CeCostCategoryRuleRuleAndAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: ceCostCategoryRuleRuleAndAndCostCategoryToTerraform(struct!.costCategory),
@@ -660,7 +660,7 @@ export function ceCostCategoryRuleRuleAndAndToTerraform(struct?: CeCostCategoryR
 export function ceCostCategoryRuleRuleAndAndToHclTerraform(struct?: CeCostCategoryRuleRuleAndAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -813,15 +813,15 @@ export class CeCostCategoryRuleRuleAndAndList extends cdktn.ComplexList {
 }
 export interface CeCostCategoryRuleRuleAndCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -829,7 +829,7 @@ export interface CeCostCategoryRuleRuleAndCostCategory {
 export function ceCostCategoryRuleRuleAndCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleAndCostCategoryOutputReference | CeCostCategoryRuleRuleAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -842,7 +842,7 @@ export function ceCostCategoryRuleRuleAndCostCategoryToTerraform(struct?: CeCost
 export function ceCostCategoryRuleRuleAndCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleAndCostCategoryOutputReference | CeCostCategoryRuleRuleAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -963,15 +963,15 @@ export class CeCostCategoryRuleRuleAndCostCategoryOutputReference extends cdktn.
 }
 export interface CeCostCategoryRuleRuleAndDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -979,7 +979,7 @@ export interface CeCostCategoryRuleRuleAndDimension {
 export function ceCostCategoryRuleRuleAndDimensionToTerraform(struct?: CeCostCategoryRuleRuleAndDimensionOutputReference | CeCostCategoryRuleRuleAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -992,7 +992,7 @@ export function ceCostCategoryRuleRuleAndDimensionToTerraform(struct?: CeCostCat
 export function ceCostCategoryRuleRuleAndDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleAndDimensionOutputReference | CeCostCategoryRuleRuleAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1113,15 +1113,15 @@ export class CeCostCategoryRuleRuleAndDimensionOutputReference extends cdktn.Com
 }
 export interface CeCostCategoryRuleRuleAndNotCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1129,7 +1129,7 @@ export interface CeCostCategoryRuleRuleAndNotCostCategory {
 export function ceCostCategoryRuleRuleAndNotCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleAndNotCostCategoryOutputReference | CeCostCategoryRuleRuleAndNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1142,7 +1142,7 @@ export function ceCostCategoryRuleRuleAndNotCostCategoryToTerraform(struct?: CeC
 export function ceCostCategoryRuleRuleAndNotCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleAndNotCostCategoryOutputReference | CeCostCategoryRuleRuleAndNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1263,15 +1263,15 @@ export class CeCostCategoryRuleRuleAndNotCostCategoryOutputReference extends cdk
 }
 export interface CeCostCategoryRuleRuleAndNotDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1279,7 +1279,7 @@ export interface CeCostCategoryRuleRuleAndNotDimension {
 export function ceCostCategoryRuleRuleAndNotDimensionToTerraform(struct?: CeCostCategoryRuleRuleAndNotDimensionOutputReference | CeCostCategoryRuleRuleAndNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1292,7 +1292,7 @@ export function ceCostCategoryRuleRuleAndNotDimensionToTerraform(struct?: CeCost
 export function ceCostCategoryRuleRuleAndNotDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleAndNotDimensionOutputReference | CeCostCategoryRuleRuleAndNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1413,15 +1413,15 @@ export class CeCostCategoryRuleRuleAndNotDimensionOutputReference extends cdktn.
 }
 export interface CeCostCategoryRuleRuleAndNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1429,7 +1429,7 @@ export interface CeCostCategoryRuleRuleAndNotTags {
 export function ceCostCategoryRuleRuleAndNotTagsToTerraform(struct?: CeCostCategoryRuleRuleAndNotTagsOutputReference | CeCostCategoryRuleRuleAndNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1442,7 +1442,7 @@ export function ceCostCategoryRuleRuleAndNotTagsToTerraform(struct?: CeCostCateg
 export function ceCostCategoryRuleRuleAndNotTagsToHclTerraform(struct?: CeCostCategoryRuleRuleAndNotTagsOutputReference | CeCostCategoryRuleRuleAndNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1565,19 +1565,19 @@ export interface CeCostCategoryRuleRuleAndNot {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleAndNotCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleAndNotDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleAndNotTags;
 }
@@ -1585,7 +1585,7 @@ export interface CeCostCategoryRuleRuleAndNot {
 export function ceCostCategoryRuleRuleAndNotToTerraform(struct?: CeCostCategoryRuleRuleAndNotOutputReference | CeCostCategoryRuleRuleAndNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: ceCostCategoryRuleRuleAndNotCostCategoryToTerraform(struct!.costCategory),
@@ -1598,7 +1598,7 @@ export function ceCostCategoryRuleRuleAndNotToTerraform(struct?: CeCostCategoryR
 export function ceCostCategoryRuleRuleAndNotToHclTerraform(struct?: CeCostCategoryRuleRuleAndNotOutputReference | CeCostCategoryRuleRuleAndNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -1719,15 +1719,15 @@ export class CeCostCategoryRuleRuleAndNotOutputReference extends cdktn.ComplexOb
 }
 export interface CeCostCategoryRuleRuleAndOrCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1735,7 +1735,7 @@ export interface CeCostCategoryRuleRuleAndOrCostCategory {
 export function ceCostCategoryRuleRuleAndOrCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleAndOrCostCategoryOutputReference | CeCostCategoryRuleRuleAndOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1748,7 +1748,7 @@ export function ceCostCategoryRuleRuleAndOrCostCategoryToTerraform(struct?: CeCo
 export function ceCostCategoryRuleRuleAndOrCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleAndOrCostCategoryOutputReference | CeCostCategoryRuleRuleAndOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1869,15 +1869,15 @@ export class CeCostCategoryRuleRuleAndOrCostCategoryOutputReference extends cdkt
 }
 export interface CeCostCategoryRuleRuleAndOrDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1885,7 +1885,7 @@ export interface CeCostCategoryRuleRuleAndOrDimension {
 export function ceCostCategoryRuleRuleAndOrDimensionToTerraform(struct?: CeCostCategoryRuleRuleAndOrDimensionOutputReference | CeCostCategoryRuleRuleAndOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1898,7 +1898,7 @@ export function ceCostCategoryRuleRuleAndOrDimensionToTerraform(struct?: CeCostC
 export function ceCostCategoryRuleRuleAndOrDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleAndOrDimensionOutputReference | CeCostCategoryRuleRuleAndOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2019,15 +2019,15 @@ export class CeCostCategoryRuleRuleAndOrDimensionOutputReference extends cdktn.C
 }
 export interface CeCostCategoryRuleRuleAndOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -2035,7 +2035,7 @@ export interface CeCostCategoryRuleRuleAndOrTags {
 export function ceCostCategoryRuleRuleAndOrTagsToTerraform(struct?: CeCostCategoryRuleRuleAndOrTagsOutputReference | CeCostCategoryRuleRuleAndOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2048,7 +2048,7 @@ export function ceCostCategoryRuleRuleAndOrTagsToTerraform(struct?: CeCostCatego
 export function ceCostCategoryRuleRuleAndOrTagsToHclTerraform(struct?: CeCostCategoryRuleRuleAndOrTagsOutputReference | CeCostCategoryRuleRuleAndOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2171,19 +2171,19 @@ export interface CeCostCategoryRuleRuleAndOr {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleAndOrCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleAndOrDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleAndOrTags;
 }
@@ -2191,7 +2191,7 @@ export interface CeCostCategoryRuleRuleAndOr {
 export function ceCostCategoryRuleRuleAndOrToTerraform(struct?: CeCostCategoryRuleRuleAndOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: ceCostCategoryRuleRuleAndOrCostCategoryToTerraform(struct!.costCategory),
@@ -2204,7 +2204,7 @@ export function ceCostCategoryRuleRuleAndOrToTerraform(struct?: CeCostCategoryRu
 export function ceCostCategoryRuleRuleAndOrToHclTerraform(struct?: CeCostCategoryRuleRuleAndOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -2357,15 +2357,15 @@ export class CeCostCategoryRuleRuleAndOrList extends cdktn.ComplexList {
 }
 export interface CeCostCategoryRuleRuleAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -2373,7 +2373,7 @@ export interface CeCostCategoryRuleRuleAndTags {
 export function ceCostCategoryRuleRuleAndTagsToTerraform(struct?: CeCostCategoryRuleRuleAndTagsOutputReference | CeCostCategoryRuleRuleAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2386,7 +2386,7 @@ export function ceCostCategoryRuleRuleAndTagsToTerraform(struct?: CeCostCategory
 export function ceCostCategoryRuleRuleAndTagsToHclTerraform(struct?: CeCostCategoryRuleRuleAndTagsOutputReference | CeCostCategoryRuleRuleAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2509,37 +2509,37 @@ export interface CeCostCategoryRuleRuleAnd {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#and CeCostCategory#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#and CeCostCategory#and}
   */
   readonly and?: CeCostCategoryRuleRuleAndAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleAndCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleAndDimension;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#not CeCostCategory#not}
   */
   readonly not?: CeCostCategoryRuleRuleAndNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#or CeCostCategory#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#or CeCostCategory#or}
   */
   readonly or?: CeCostCategoryRuleRuleAndOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleAndTags;
 }
@@ -2547,7 +2547,7 @@ export interface CeCostCategoryRuleRuleAnd {
 export function ceCostCategoryRuleRuleAndToTerraform(struct?: CeCostCategoryRuleRuleAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(ceCostCategoryRuleRuleAndAndToTerraform, true)(struct!.and),
@@ -2563,7 +2563,7 @@ export function ceCostCategoryRuleRuleAndToTerraform(struct?: CeCostCategoryRule
 export function ceCostCategoryRuleRuleAndToHclTerraform(struct?: CeCostCategoryRuleRuleAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -2800,15 +2800,15 @@ export class CeCostCategoryRuleRuleAndList extends cdktn.ComplexList {
 }
 export interface CeCostCategoryRuleRuleCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -2816,7 +2816,7 @@ export interface CeCostCategoryRuleRuleCostCategory {
 export function ceCostCategoryRuleRuleCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleCostCategoryOutputReference | CeCostCategoryRuleRuleCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2829,7 +2829,7 @@ export function ceCostCategoryRuleRuleCostCategoryToTerraform(struct?: CeCostCat
 export function ceCostCategoryRuleRuleCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleCostCategoryOutputReference | CeCostCategoryRuleRuleCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2950,15 +2950,15 @@ export class CeCostCategoryRuleRuleCostCategoryOutputReference extends cdktn.Com
 }
 export interface CeCostCategoryRuleRuleDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -2966,7 +2966,7 @@ export interface CeCostCategoryRuleRuleDimension {
 export function ceCostCategoryRuleRuleDimensionToTerraform(struct?: CeCostCategoryRuleRuleDimensionOutputReference | CeCostCategoryRuleRuleDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2979,7 +2979,7 @@ export function ceCostCategoryRuleRuleDimensionToTerraform(struct?: CeCostCatego
 export function ceCostCategoryRuleRuleDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleDimensionOutputReference | CeCostCategoryRuleRuleDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3100,15 +3100,15 @@ export class CeCostCategoryRuleRuleDimensionOutputReference extends cdktn.Comple
 }
 export interface CeCostCategoryRuleRuleNotAndCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -3116,7 +3116,7 @@ export interface CeCostCategoryRuleRuleNotAndCostCategory {
 export function ceCostCategoryRuleRuleNotAndCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleNotAndCostCategoryOutputReference | CeCostCategoryRuleRuleNotAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3129,7 +3129,7 @@ export function ceCostCategoryRuleRuleNotAndCostCategoryToTerraform(struct?: CeC
 export function ceCostCategoryRuleRuleNotAndCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleNotAndCostCategoryOutputReference | CeCostCategoryRuleRuleNotAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3250,15 +3250,15 @@ export class CeCostCategoryRuleRuleNotAndCostCategoryOutputReference extends cdk
 }
 export interface CeCostCategoryRuleRuleNotAndDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -3266,7 +3266,7 @@ export interface CeCostCategoryRuleRuleNotAndDimension {
 export function ceCostCategoryRuleRuleNotAndDimensionToTerraform(struct?: CeCostCategoryRuleRuleNotAndDimensionOutputReference | CeCostCategoryRuleRuleNotAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3279,7 +3279,7 @@ export function ceCostCategoryRuleRuleNotAndDimensionToTerraform(struct?: CeCost
 export function ceCostCategoryRuleRuleNotAndDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleNotAndDimensionOutputReference | CeCostCategoryRuleRuleNotAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3400,15 +3400,15 @@ export class CeCostCategoryRuleRuleNotAndDimensionOutputReference extends cdktn.
 }
 export interface CeCostCategoryRuleRuleNotAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -3416,7 +3416,7 @@ export interface CeCostCategoryRuleRuleNotAndTags {
 export function ceCostCategoryRuleRuleNotAndTagsToTerraform(struct?: CeCostCategoryRuleRuleNotAndTagsOutputReference | CeCostCategoryRuleRuleNotAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3429,7 +3429,7 @@ export function ceCostCategoryRuleRuleNotAndTagsToTerraform(struct?: CeCostCateg
 export function ceCostCategoryRuleRuleNotAndTagsToHclTerraform(struct?: CeCostCategoryRuleRuleNotAndTagsOutputReference | CeCostCategoryRuleRuleNotAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3552,19 +3552,19 @@ export interface CeCostCategoryRuleRuleNotAnd {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleNotAndCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleNotAndDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleNotAndTags;
 }
@@ -3572,7 +3572,7 @@ export interface CeCostCategoryRuleRuleNotAnd {
 export function ceCostCategoryRuleRuleNotAndToTerraform(struct?: CeCostCategoryRuleRuleNotAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: ceCostCategoryRuleRuleNotAndCostCategoryToTerraform(struct!.costCategory),
@@ -3585,7 +3585,7 @@ export function ceCostCategoryRuleRuleNotAndToTerraform(struct?: CeCostCategoryR
 export function ceCostCategoryRuleRuleNotAndToHclTerraform(struct?: CeCostCategoryRuleRuleNotAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -3738,15 +3738,15 @@ export class CeCostCategoryRuleRuleNotAndList extends cdktn.ComplexList {
 }
 export interface CeCostCategoryRuleRuleNotCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -3754,7 +3754,7 @@ export interface CeCostCategoryRuleRuleNotCostCategory {
 export function ceCostCategoryRuleRuleNotCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleNotCostCategoryOutputReference | CeCostCategoryRuleRuleNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3767,7 +3767,7 @@ export function ceCostCategoryRuleRuleNotCostCategoryToTerraform(struct?: CeCost
 export function ceCostCategoryRuleRuleNotCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleNotCostCategoryOutputReference | CeCostCategoryRuleRuleNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3888,15 +3888,15 @@ export class CeCostCategoryRuleRuleNotCostCategoryOutputReference extends cdktn.
 }
 export interface CeCostCategoryRuleRuleNotDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -3904,7 +3904,7 @@ export interface CeCostCategoryRuleRuleNotDimension {
 export function ceCostCategoryRuleRuleNotDimensionToTerraform(struct?: CeCostCategoryRuleRuleNotDimensionOutputReference | CeCostCategoryRuleRuleNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3917,7 +3917,7 @@ export function ceCostCategoryRuleRuleNotDimensionToTerraform(struct?: CeCostCat
 export function ceCostCategoryRuleRuleNotDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleNotDimensionOutputReference | CeCostCategoryRuleRuleNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4038,15 +4038,15 @@ export class CeCostCategoryRuleRuleNotDimensionOutputReference extends cdktn.Com
 }
 export interface CeCostCategoryRuleRuleNotNotCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -4054,7 +4054,7 @@ export interface CeCostCategoryRuleRuleNotNotCostCategory {
 export function ceCostCategoryRuleRuleNotNotCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleNotNotCostCategoryOutputReference | CeCostCategoryRuleRuleNotNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4067,7 +4067,7 @@ export function ceCostCategoryRuleRuleNotNotCostCategoryToTerraform(struct?: CeC
 export function ceCostCategoryRuleRuleNotNotCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleNotNotCostCategoryOutputReference | CeCostCategoryRuleRuleNotNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4188,15 +4188,15 @@ export class CeCostCategoryRuleRuleNotNotCostCategoryOutputReference extends cdk
 }
 export interface CeCostCategoryRuleRuleNotNotDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -4204,7 +4204,7 @@ export interface CeCostCategoryRuleRuleNotNotDimension {
 export function ceCostCategoryRuleRuleNotNotDimensionToTerraform(struct?: CeCostCategoryRuleRuleNotNotDimensionOutputReference | CeCostCategoryRuleRuleNotNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4217,7 +4217,7 @@ export function ceCostCategoryRuleRuleNotNotDimensionToTerraform(struct?: CeCost
 export function ceCostCategoryRuleRuleNotNotDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleNotNotDimensionOutputReference | CeCostCategoryRuleRuleNotNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4338,15 +4338,15 @@ export class CeCostCategoryRuleRuleNotNotDimensionOutputReference extends cdktn.
 }
 export interface CeCostCategoryRuleRuleNotNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -4354,7 +4354,7 @@ export interface CeCostCategoryRuleRuleNotNotTags {
 export function ceCostCategoryRuleRuleNotNotTagsToTerraform(struct?: CeCostCategoryRuleRuleNotNotTagsOutputReference | CeCostCategoryRuleRuleNotNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4367,7 +4367,7 @@ export function ceCostCategoryRuleRuleNotNotTagsToTerraform(struct?: CeCostCateg
 export function ceCostCategoryRuleRuleNotNotTagsToHclTerraform(struct?: CeCostCategoryRuleRuleNotNotTagsOutputReference | CeCostCategoryRuleRuleNotNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4490,19 +4490,19 @@ export interface CeCostCategoryRuleRuleNotNot {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleNotNotCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleNotNotDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleNotNotTags;
 }
@@ -4510,7 +4510,7 @@ export interface CeCostCategoryRuleRuleNotNot {
 export function ceCostCategoryRuleRuleNotNotToTerraform(struct?: CeCostCategoryRuleRuleNotNotOutputReference | CeCostCategoryRuleRuleNotNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: ceCostCategoryRuleRuleNotNotCostCategoryToTerraform(struct!.costCategory),
@@ -4523,7 +4523,7 @@ export function ceCostCategoryRuleRuleNotNotToTerraform(struct?: CeCostCategoryR
 export function ceCostCategoryRuleRuleNotNotToHclTerraform(struct?: CeCostCategoryRuleRuleNotNotOutputReference | CeCostCategoryRuleRuleNotNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -4644,15 +4644,15 @@ export class CeCostCategoryRuleRuleNotNotOutputReference extends cdktn.ComplexOb
 }
 export interface CeCostCategoryRuleRuleNotOrCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -4660,7 +4660,7 @@ export interface CeCostCategoryRuleRuleNotOrCostCategory {
 export function ceCostCategoryRuleRuleNotOrCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleNotOrCostCategoryOutputReference | CeCostCategoryRuleRuleNotOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4673,7 +4673,7 @@ export function ceCostCategoryRuleRuleNotOrCostCategoryToTerraform(struct?: CeCo
 export function ceCostCategoryRuleRuleNotOrCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleNotOrCostCategoryOutputReference | CeCostCategoryRuleRuleNotOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4794,15 +4794,15 @@ export class CeCostCategoryRuleRuleNotOrCostCategoryOutputReference extends cdkt
 }
 export interface CeCostCategoryRuleRuleNotOrDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -4810,7 +4810,7 @@ export interface CeCostCategoryRuleRuleNotOrDimension {
 export function ceCostCategoryRuleRuleNotOrDimensionToTerraform(struct?: CeCostCategoryRuleRuleNotOrDimensionOutputReference | CeCostCategoryRuleRuleNotOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4823,7 +4823,7 @@ export function ceCostCategoryRuleRuleNotOrDimensionToTerraform(struct?: CeCostC
 export function ceCostCategoryRuleRuleNotOrDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleNotOrDimensionOutputReference | CeCostCategoryRuleRuleNotOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -4944,15 +4944,15 @@ export class CeCostCategoryRuleRuleNotOrDimensionOutputReference extends cdktn.C
 }
 export interface CeCostCategoryRuleRuleNotOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -4960,7 +4960,7 @@ export interface CeCostCategoryRuleRuleNotOrTags {
 export function ceCostCategoryRuleRuleNotOrTagsToTerraform(struct?: CeCostCategoryRuleRuleNotOrTagsOutputReference | CeCostCategoryRuleRuleNotOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -4973,7 +4973,7 @@ export function ceCostCategoryRuleRuleNotOrTagsToTerraform(struct?: CeCostCatego
 export function ceCostCategoryRuleRuleNotOrTagsToHclTerraform(struct?: CeCostCategoryRuleRuleNotOrTagsOutputReference | CeCostCategoryRuleRuleNotOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -5096,19 +5096,19 @@ export interface CeCostCategoryRuleRuleNotOr {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleNotOrCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleNotOrDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleNotOrTags;
 }
@@ -5116,7 +5116,7 @@ export interface CeCostCategoryRuleRuleNotOr {
 export function ceCostCategoryRuleRuleNotOrToTerraform(struct?: CeCostCategoryRuleRuleNotOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: ceCostCategoryRuleRuleNotOrCostCategoryToTerraform(struct!.costCategory),
@@ -5129,7 +5129,7 @@ export function ceCostCategoryRuleRuleNotOrToTerraform(struct?: CeCostCategoryRu
 export function ceCostCategoryRuleRuleNotOrToHclTerraform(struct?: CeCostCategoryRuleRuleNotOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -5282,15 +5282,15 @@ export class CeCostCategoryRuleRuleNotOrList extends cdktn.ComplexList {
 }
 export interface CeCostCategoryRuleRuleNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -5298,7 +5298,7 @@ export interface CeCostCategoryRuleRuleNotTags {
 export function ceCostCategoryRuleRuleNotTagsToTerraform(struct?: CeCostCategoryRuleRuleNotTagsOutputReference | CeCostCategoryRuleRuleNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -5311,7 +5311,7 @@ export function ceCostCategoryRuleRuleNotTagsToTerraform(struct?: CeCostCategory
 export function ceCostCategoryRuleRuleNotTagsToHclTerraform(struct?: CeCostCategoryRuleRuleNotTagsOutputReference | CeCostCategoryRuleRuleNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -5434,37 +5434,37 @@ export interface CeCostCategoryRuleRuleNot {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#and CeCostCategory#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#and CeCostCategory#and}
   */
   readonly and?: CeCostCategoryRuleRuleNotAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleNotCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleNotDimension;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#not CeCostCategory#not}
   */
   readonly not?: CeCostCategoryRuleRuleNotNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#or CeCostCategory#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#or CeCostCategory#or}
   */
   readonly or?: CeCostCategoryRuleRuleNotOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleNotTags;
 }
@@ -5472,7 +5472,7 @@ export interface CeCostCategoryRuleRuleNot {
 export function ceCostCategoryRuleRuleNotToTerraform(struct?: CeCostCategoryRuleRuleNotOutputReference | CeCostCategoryRuleRuleNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(ceCostCategoryRuleRuleNotAndToTerraform, true)(struct!.and),
@@ -5488,7 +5488,7 @@ export function ceCostCategoryRuleRuleNotToTerraform(struct?: CeCostCategoryRule
 export function ceCostCategoryRuleRuleNotToHclTerraform(struct?: CeCostCategoryRuleRuleNotOutputReference | CeCostCategoryRuleRuleNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -5693,15 +5693,15 @@ export class CeCostCategoryRuleRuleNotOutputReference extends cdktn.ComplexObjec
 }
 export interface CeCostCategoryRuleRuleOrAndCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -5709,7 +5709,7 @@ export interface CeCostCategoryRuleRuleOrAndCostCategory {
 export function ceCostCategoryRuleRuleOrAndCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleOrAndCostCategoryOutputReference | CeCostCategoryRuleRuleOrAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -5722,7 +5722,7 @@ export function ceCostCategoryRuleRuleOrAndCostCategoryToTerraform(struct?: CeCo
 export function ceCostCategoryRuleRuleOrAndCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleOrAndCostCategoryOutputReference | CeCostCategoryRuleRuleOrAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -5843,15 +5843,15 @@ export class CeCostCategoryRuleRuleOrAndCostCategoryOutputReference extends cdkt
 }
 export interface CeCostCategoryRuleRuleOrAndDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -5859,7 +5859,7 @@ export interface CeCostCategoryRuleRuleOrAndDimension {
 export function ceCostCategoryRuleRuleOrAndDimensionToTerraform(struct?: CeCostCategoryRuleRuleOrAndDimensionOutputReference | CeCostCategoryRuleRuleOrAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -5872,7 +5872,7 @@ export function ceCostCategoryRuleRuleOrAndDimensionToTerraform(struct?: CeCostC
 export function ceCostCategoryRuleRuleOrAndDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleOrAndDimensionOutputReference | CeCostCategoryRuleRuleOrAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -5993,15 +5993,15 @@ export class CeCostCategoryRuleRuleOrAndDimensionOutputReference extends cdktn.C
 }
 export interface CeCostCategoryRuleRuleOrAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -6009,7 +6009,7 @@ export interface CeCostCategoryRuleRuleOrAndTags {
 export function ceCostCategoryRuleRuleOrAndTagsToTerraform(struct?: CeCostCategoryRuleRuleOrAndTagsOutputReference | CeCostCategoryRuleRuleOrAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6022,7 +6022,7 @@ export function ceCostCategoryRuleRuleOrAndTagsToTerraform(struct?: CeCostCatego
 export function ceCostCategoryRuleRuleOrAndTagsToHclTerraform(struct?: CeCostCategoryRuleRuleOrAndTagsOutputReference | CeCostCategoryRuleRuleOrAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6145,19 +6145,19 @@ export interface CeCostCategoryRuleRuleOrAnd {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleOrAndCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleOrAndDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleOrAndTags;
 }
@@ -6165,7 +6165,7 @@ export interface CeCostCategoryRuleRuleOrAnd {
 export function ceCostCategoryRuleRuleOrAndToTerraform(struct?: CeCostCategoryRuleRuleOrAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: ceCostCategoryRuleRuleOrAndCostCategoryToTerraform(struct!.costCategory),
@@ -6178,7 +6178,7 @@ export function ceCostCategoryRuleRuleOrAndToTerraform(struct?: CeCostCategoryRu
 export function ceCostCategoryRuleRuleOrAndToHclTerraform(struct?: CeCostCategoryRuleRuleOrAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -6331,15 +6331,15 @@ export class CeCostCategoryRuleRuleOrAndList extends cdktn.ComplexList {
 }
 export interface CeCostCategoryRuleRuleOrCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -6347,7 +6347,7 @@ export interface CeCostCategoryRuleRuleOrCostCategory {
 export function ceCostCategoryRuleRuleOrCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleOrCostCategoryOutputReference | CeCostCategoryRuleRuleOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6360,7 +6360,7 @@ export function ceCostCategoryRuleRuleOrCostCategoryToTerraform(struct?: CeCostC
 export function ceCostCategoryRuleRuleOrCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleOrCostCategoryOutputReference | CeCostCategoryRuleRuleOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6481,15 +6481,15 @@ export class CeCostCategoryRuleRuleOrCostCategoryOutputReference extends cdktn.C
 }
 export interface CeCostCategoryRuleRuleOrDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -6497,7 +6497,7 @@ export interface CeCostCategoryRuleRuleOrDimension {
 export function ceCostCategoryRuleRuleOrDimensionToTerraform(struct?: CeCostCategoryRuleRuleOrDimensionOutputReference | CeCostCategoryRuleRuleOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6510,7 +6510,7 @@ export function ceCostCategoryRuleRuleOrDimensionToTerraform(struct?: CeCostCate
 export function ceCostCategoryRuleRuleOrDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleOrDimensionOutputReference | CeCostCategoryRuleRuleOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6631,15 +6631,15 @@ export class CeCostCategoryRuleRuleOrDimensionOutputReference extends cdktn.Comp
 }
 export interface CeCostCategoryRuleRuleOrNotCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -6647,7 +6647,7 @@ export interface CeCostCategoryRuleRuleOrNotCostCategory {
 export function ceCostCategoryRuleRuleOrNotCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleOrNotCostCategoryOutputReference | CeCostCategoryRuleRuleOrNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6660,7 +6660,7 @@ export function ceCostCategoryRuleRuleOrNotCostCategoryToTerraform(struct?: CeCo
 export function ceCostCategoryRuleRuleOrNotCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleOrNotCostCategoryOutputReference | CeCostCategoryRuleRuleOrNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6781,15 +6781,15 @@ export class CeCostCategoryRuleRuleOrNotCostCategoryOutputReference extends cdkt
 }
 export interface CeCostCategoryRuleRuleOrNotDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -6797,7 +6797,7 @@ export interface CeCostCategoryRuleRuleOrNotDimension {
 export function ceCostCategoryRuleRuleOrNotDimensionToTerraform(struct?: CeCostCategoryRuleRuleOrNotDimensionOutputReference | CeCostCategoryRuleRuleOrNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6810,7 +6810,7 @@ export function ceCostCategoryRuleRuleOrNotDimensionToTerraform(struct?: CeCostC
 export function ceCostCategoryRuleRuleOrNotDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleOrNotDimensionOutputReference | CeCostCategoryRuleRuleOrNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6931,15 +6931,15 @@ export class CeCostCategoryRuleRuleOrNotDimensionOutputReference extends cdktn.C
 }
 export interface CeCostCategoryRuleRuleOrNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -6947,7 +6947,7 @@ export interface CeCostCategoryRuleRuleOrNotTags {
 export function ceCostCategoryRuleRuleOrNotTagsToTerraform(struct?: CeCostCategoryRuleRuleOrNotTagsOutputReference | CeCostCategoryRuleRuleOrNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6960,7 +6960,7 @@ export function ceCostCategoryRuleRuleOrNotTagsToTerraform(struct?: CeCostCatego
 export function ceCostCategoryRuleRuleOrNotTagsToHclTerraform(struct?: CeCostCategoryRuleRuleOrNotTagsOutputReference | CeCostCategoryRuleRuleOrNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -7083,19 +7083,19 @@ export interface CeCostCategoryRuleRuleOrNot {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleOrNotCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleOrNotDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleOrNotTags;
 }
@@ -7103,7 +7103,7 @@ export interface CeCostCategoryRuleRuleOrNot {
 export function ceCostCategoryRuleRuleOrNotToTerraform(struct?: CeCostCategoryRuleRuleOrNotOutputReference | CeCostCategoryRuleRuleOrNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: ceCostCategoryRuleRuleOrNotCostCategoryToTerraform(struct!.costCategory),
@@ -7116,7 +7116,7 @@ export function ceCostCategoryRuleRuleOrNotToTerraform(struct?: CeCostCategoryRu
 export function ceCostCategoryRuleRuleOrNotToHclTerraform(struct?: CeCostCategoryRuleRuleOrNotOutputReference | CeCostCategoryRuleRuleOrNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -7237,15 +7237,15 @@ export class CeCostCategoryRuleRuleOrNotOutputReference extends cdktn.ComplexObj
 }
 export interface CeCostCategoryRuleRuleOrOrCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -7253,7 +7253,7 @@ export interface CeCostCategoryRuleRuleOrOrCostCategory {
 export function ceCostCategoryRuleRuleOrOrCostCategoryToTerraform(struct?: CeCostCategoryRuleRuleOrOrCostCategoryOutputReference | CeCostCategoryRuleRuleOrOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -7266,7 +7266,7 @@ export function ceCostCategoryRuleRuleOrOrCostCategoryToTerraform(struct?: CeCos
 export function ceCostCategoryRuleRuleOrOrCostCategoryToHclTerraform(struct?: CeCostCategoryRuleRuleOrOrCostCategoryOutputReference | CeCostCategoryRuleRuleOrOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -7387,15 +7387,15 @@ export class CeCostCategoryRuleRuleOrOrCostCategoryOutputReference extends cdktn
 }
 export interface CeCostCategoryRuleRuleOrOrDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -7403,7 +7403,7 @@ export interface CeCostCategoryRuleRuleOrOrDimension {
 export function ceCostCategoryRuleRuleOrOrDimensionToTerraform(struct?: CeCostCategoryRuleRuleOrOrDimensionOutputReference | CeCostCategoryRuleRuleOrOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -7416,7 +7416,7 @@ export function ceCostCategoryRuleRuleOrOrDimensionToTerraform(struct?: CeCostCa
 export function ceCostCategoryRuleRuleOrOrDimensionToHclTerraform(struct?: CeCostCategoryRuleRuleOrOrDimensionOutputReference | CeCostCategoryRuleRuleOrOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -7537,15 +7537,15 @@ export class CeCostCategoryRuleRuleOrOrDimensionOutputReference extends cdktn.Co
 }
 export interface CeCostCategoryRuleRuleOrOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -7553,7 +7553,7 @@ export interface CeCostCategoryRuleRuleOrOrTags {
 export function ceCostCategoryRuleRuleOrOrTagsToTerraform(struct?: CeCostCategoryRuleRuleOrOrTagsOutputReference | CeCostCategoryRuleRuleOrOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -7566,7 +7566,7 @@ export function ceCostCategoryRuleRuleOrOrTagsToTerraform(struct?: CeCostCategor
 export function ceCostCategoryRuleRuleOrOrTagsToHclTerraform(struct?: CeCostCategoryRuleRuleOrOrTagsOutputReference | CeCostCategoryRuleRuleOrOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -7689,19 +7689,19 @@ export interface CeCostCategoryRuleRuleOrOr {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleOrOrCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleOrOrDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleOrOrTags;
 }
@@ -7709,7 +7709,7 @@ export interface CeCostCategoryRuleRuleOrOr {
 export function ceCostCategoryRuleRuleOrOrToTerraform(struct?: CeCostCategoryRuleRuleOrOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cost_category: ceCostCategoryRuleRuleOrOrCostCategoryToTerraform(struct!.costCategory),
@@ -7722,7 +7722,7 @@ export function ceCostCategoryRuleRuleOrOrToTerraform(struct?: CeCostCategoryRul
 export function ceCostCategoryRuleRuleOrOrToHclTerraform(struct?: CeCostCategoryRuleRuleOrOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cost_category: {
@@ -7875,15 +7875,15 @@ export class CeCostCategoryRuleRuleOrOrList extends cdktn.ComplexList {
 }
 export interface CeCostCategoryRuleRuleOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -7891,7 +7891,7 @@ export interface CeCostCategoryRuleRuleOrTags {
 export function ceCostCategoryRuleRuleOrTagsToTerraform(struct?: CeCostCategoryRuleRuleOrTagsOutputReference | CeCostCategoryRuleRuleOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -7904,7 +7904,7 @@ export function ceCostCategoryRuleRuleOrTagsToTerraform(struct?: CeCostCategoryR
 export function ceCostCategoryRuleRuleOrTagsToHclTerraform(struct?: CeCostCategoryRuleRuleOrTagsOutputReference | CeCostCategoryRuleRuleOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -8027,37 +8027,37 @@ export interface CeCostCategoryRuleRuleOr {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#and CeCostCategory#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#and CeCostCategory#and}
   */
   readonly and?: CeCostCategoryRuleRuleOrAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleOrCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleOrDimension;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#not CeCostCategory#not}
   */
   readonly not?: CeCostCategoryRuleRuleOrNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#or CeCostCategory#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#or CeCostCategory#or}
   */
   readonly or?: CeCostCategoryRuleRuleOrOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleOrTags;
 }
@@ -8065,7 +8065,7 @@ export interface CeCostCategoryRuleRuleOr {
 export function ceCostCategoryRuleRuleOrToTerraform(struct?: CeCostCategoryRuleRuleOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(ceCostCategoryRuleRuleOrAndToTerraform, true)(struct!.and),
@@ -8081,7 +8081,7 @@ export function ceCostCategoryRuleRuleOrToTerraform(struct?: CeCostCategoryRuleR
 export function ceCostCategoryRuleRuleOrToHclTerraform(struct?: CeCostCategoryRuleRuleOr | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -8318,15 +8318,15 @@ export class CeCostCategoryRuleRuleOrList extends cdktn.ComplexList {
 }
 export interface CeCostCategoryRuleRuleTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -8334,7 +8334,7 @@ export interface CeCostCategoryRuleRuleTags {
 export function ceCostCategoryRuleRuleTagsToTerraform(struct?: CeCostCategoryRuleRuleTagsOutputReference | CeCostCategoryRuleRuleTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -8347,7 +8347,7 @@ export function ceCostCategoryRuleRuleTagsToTerraform(struct?: CeCostCategoryRul
 export function ceCostCategoryRuleRuleTagsToHclTerraform(struct?: CeCostCategoryRuleRuleTagsOutputReference | CeCostCategoryRuleRuleTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -8470,37 +8470,37 @@ export interface CeCostCategoryRuleRule {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#and CeCostCategory#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#and CeCostCategory#and}
   */
   readonly and?: CeCostCategoryRuleRuleAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleDimension;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#not CeCostCategory#not}
   */
   readonly not?: CeCostCategoryRuleRuleNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#or CeCostCategory#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#or CeCostCategory#or}
   */
   readonly or?: CeCostCategoryRuleRuleOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleTags;
 }
@@ -8508,7 +8508,7 @@ export interface CeCostCategoryRuleRule {
 export function ceCostCategoryRuleRuleToTerraform(struct?: CeCostCategoryRuleRuleOutputReference | CeCostCategoryRuleRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(ceCostCategoryRuleRuleAndToTerraform, true)(struct!.and),
@@ -8524,7 +8524,7 @@ export function ceCostCategoryRuleRuleToTerraform(struct?: CeCostCategoryRuleRul
 export function ceCostCategoryRuleRuleToHclTerraform(struct?: CeCostCategoryRuleRuleOutputReference | CeCostCategoryRuleRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -8729,23 +8729,23 @@ export class CeCostCategoryRuleRuleOutputReference extends cdktn.ComplexObject {
 }
 export interface CeCostCategoryRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#type CeCostCategory#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#type CeCostCategory#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#value CeCostCategory#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#value CeCostCategory#value}
   */
   readonly value?: string;
   /**
   * inherited_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#inherited_value CeCostCategory#inherited_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#inherited_value CeCostCategory#inherited_value}
   */
   readonly inheritedValue?: CeCostCategoryRuleInheritedValue;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
   */
   readonly rule?: CeCostCategoryRuleRule;
 }
@@ -8753,7 +8753,7 @@ export interface CeCostCategoryRule {
 export function ceCostCategoryRuleToTerraform(struct?: CeCostCategoryRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -8767,7 +8767,7 @@ export function ceCostCategoryRuleToTerraform(struct?: CeCostCategoryRule | cdkt
 export function ceCostCategoryRuleToHclTerraform(struct?: CeCostCategoryRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -8948,11 +8948,11 @@ export class CeCostCategoryRuleList extends cdktn.ComplexList {
 }
 export interface CeCostCategorySplitChargeRuleParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#type CeCostCategory#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#type CeCostCategory#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -8960,7 +8960,7 @@ export interface CeCostCategorySplitChargeRuleParameter {
 export function ceCostCategorySplitChargeRuleParameterToTerraform(struct?: CeCostCategorySplitChargeRuleParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -8972,7 +8972,7 @@ export function ceCostCategorySplitChargeRuleParameterToTerraform(struct?: CeCos
 export function ceCostCategorySplitChargeRuleParameterToHclTerraform(struct?: CeCostCategorySplitChargeRuleParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -9097,21 +9097,21 @@ export class CeCostCategorySplitChargeRuleParameterList extends cdktn.ComplexLis
 }
 export interface CeCostCategorySplitChargeRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#method CeCostCategory#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#method CeCostCategory#method}
   */
   readonly method: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#source CeCostCategory#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#source CeCostCategory#source}
   */
   readonly source: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#targets CeCostCategory#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#targets CeCostCategory#targets}
   */
   readonly targets: string[];
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#parameter CeCostCategory#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#parameter CeCostCategory#parameter}
   */
   readonly parameter?: CeCostCategorySplitChargeRuleParameter[] | cdktn.IResolvable;
 }
@@ -9119,7 +9119,7 @@ export interface CeCostCategorySplitChargeRule {
 export function ceCostCategorySplitChargeRuleToTerraform(struct?: CeCostCategorySplitChargeRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     method: cdktn.stringToTerraform(struct!.method),
@@ -9133,7 +9133,7 @@ export function ceCostCategorySplitChargeRuleToTerraform(struct?: CeCostCategory
 export function ceCostCategorySplitChargeRuleToHclTerraform(struct?: CeCostCategorySplitChargeRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     method: {
@@ -9305,7 +9305,7 @@ export class CeCostCategorySplitChargeRuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category aws_ce_cost_category}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category aws_ce_cost_category}
 */
 export class CeCostCategory extends cdktn.TerraformResource {
 
@@ -9321,7 +9321,7 @@ export class CeCostCategory extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CeCostCategory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CeCostCategory to import
-  * @param importFromId The id of the existing CeCostCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CeCostCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CeCostCategory to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -9333,7 +9333,7 @@ export class CeCostCategory extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ce_cost_category aws_ce_cost_category} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ce_cost_category aws_ce_cost_category} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -9344,7 +9344,7 @@ export class CeCostCategory extends cdktn.TerraformResource {
       terraformResourceType: 'aws_ce_cost_category',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

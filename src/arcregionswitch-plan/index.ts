@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,93 +13,93 @@ import * as cdktn from 'cdktn';
 
 export interface ArcregionswitchPlanConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}
   */
   readonly executionRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}
   */
   readonly primaryRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}
   */
   readonly recoveryApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}
   */
   readonly recoveryTimeObjectiveMinutes?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}
   */
   readonly regions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * associated_alarms block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
   */
   readonly associatedAlarms?: ArcregionswitchPlanAssociatedAlarms[] | cdktn.IResolvable;
   /**
   * report_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#report_configuration ArcregionswitchPlan#report_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#report_configuration ArcregionswitchPlan#report_configuration}
   */
   readonly reportConfiguration?: ArcregionswitchPlanReportConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeouts ArcregionswitchPlan#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeouts ArcregionswitchPlan#timeouts}
   */
   readonly timeouts?: ArcregionswitchPlanTimeouts;
   /**
   * triggers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
   */
   readonly triggers?: ArcregionswitchPlanTriggers[] | cdktn.IResolvable;
   /**
   * workflow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
   */
   readonly workflow?: ArcregionswitchPlanWorkflow[] | cdktn.IResolvable;
 }
 export interface ArcregionswitchPlanAssociatedAlarms {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}
   */
   readonly alarmType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}
   */
   readonly resourceIdentifier: string;
 }
@@ -107,7 +107,7 @@ export interface ArcregionswitchPlanAssociatedAlarms {
 export function arcregionswitchPlanAssociatedAlarmsToTerraform(struct?: ArcregionswitchPlanAssociatedAlarms | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alarm_type: cdktn.stringToTerraform(struct!.alarmType),
@@ -122,7 +122,7 @@ export function arcregionswitchPlanAssociatedAlarmsToTerraform(struct?: Arcregio
 export function arcregionswitchPlanAssociatedAlarmsToHclTerraform(struct?: ArcregionswitchPlanAssociatedAlarms | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alarm_type: {
@@ -322,11 +322,11 @@ export class ArcregionswitchPlanAssociatedAlarmsList extends cdktn.ComplexList {
 }
 export interface ArcregionswitchPlanReportConfigurationReportOutputS3Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#bucket_owner ArcregionswitchPlan#bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#bucket_owner ArcregionswitchPlan#bucket_owner}
   */
   readonly bucketOwner: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#bucket_path ArcregionswitchPlan#bucket_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#bucket_path ArcregionswitchPlan#bucket_path}
   */
   readonly bucketPath: string;
 }
@@ -334,7 +334,7 @@ export interface ArcregionswitchPlanReportConfigurationReportOutputS3Configurati
 export function arcregionswitchPlanReportConfigurationReportOutputS3ConfigurationToTerraform(struct?: ArcregionswitchPlanReportConfigurationReportOutputS3Configuration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket_owner: cdktn.stringToTerraform(struct!.bucketOwner),
@@ -346,7 +346,7 @@ export function arcregionswitchPlanReportConfigurationReportOutputS3Configuratio
 export function arcregionswitchPlanReportConfigurationReportOutputS3ConfigurationToHclTerraform(struct?: ArcregionswitchPlanReportConfigurationReportOutputS3Configuration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket_owner: {
@@ -467,7 +467,7 @@ export interface ArcregionswitchPlanReportConfigurationReportOutput {
   /**
   * s3_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#s3_configuration ArcregionswitchPlan#s3_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#s3_configuration ArcregionswitchPlan#s3_configuration}
   */
   readonly s3Configuration?: ArcregionswitchPlanReportConfigurationReportOutputS3Configuration[] | cdktn.IResolvable;
 }
@@ -475,7 +475,7 @@ export interface ArcregionswitchPlanReportConfigurationReportOutput {
 export function arcregionswitchPlanReportConfigurationReportOutputToTerraform(struct?: ArcregionswitchPlanReportConfigurationReportOutput | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     s3_configuration: cdktn.listMapper(arcregionswitchPlanReportConfigurationReportOutputS3ConfigurationToTerraform, true)(struct!.s3Configuration),
@@ -486,7 +486,7 @@ export function arcregionswitchPlanReportConfigurationReportOutputToTerraform(st
 export function arcregionswitchPlanReportConfigurationReportOutputToHclTerraform(struct?: ArcregionswitchPlanReportConfigurationReportOutput | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     s3_configuration: {
@@ -585,7 +585,7 @@ export interface ArcregionswitchPlanReportConfiguration {
   /**
   * report_output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#report_output ArcregionswitchPlan#report_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#report_output ArcregionswitchPlan#report_output}
   */
   readonly reportOutput?: ArcregionswitchPlanReportConfigurationReportOutput[] | cdktn.IResolvable;
 }
@@ -593,7 +593,7 @@ export interface ArcregionswitchPlanReportConfiguration {
 export function arcregionswitchPlanReportConfigurationToTerraform(struct?: ArcregionswitchPlanReportConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     report_output: cdktn.listMapper(arcregionswitchPlanReportConfigurationReportOutputToTerraform, true)(struct!.reportOutput),
@@ -604,7 +604,7 @@ export function arcregionswitchPlanReportConfigurationToTerraform(struct?: Arcre
 export function arcregionswitchPlanReportConfigurationToHclTerraform(struct?: ArcregionswitchPlanReportConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     report_output: {
@@ -703,19 +703,19 @@ export interface ArcregionswitchPlanTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#create ArcregionswitchPlan#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#create ArcregionswitchPlan#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#delete ArcregionswitchPlan#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#delete ArcregionswitchPlan#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#update ArcregionswitchPlan#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#update ArcregionswitchPlan#update}
   */
   readonly update?: string;
 }
@@ -723,7 +723,7 @@ export interface ArcregionswitchPlanTimeouts {
 export function arcregionswitchPlanTimeoutsToTerraform(struct?: ArcregionswitchPlanTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -736,7 +736,7 @@ export function arcregionswitchPlanTimeoutsToTerraform(struct?: ArcregionswitchP
 export function arcregionswitchPlanTimeoutsToHclTerraform(struct?: ArcregionswitchPlanTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -867,11 +867,11 @@ export class ArcregionswitchPlanTimeoutsOutputReference extends cdktn.ComplexObj
 }
 export interface ArcregionswitchPlanTriggersConditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}
   */
   readonly associatedAlarmName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}
   */
   readonly condition: string;
 }
@@ -879,7 +879,7 @@ export interface ArcregionswitchPlanTriggersConditions {
 export function arcregionswitchPlanTriggersConditionsToTerraform(struct?: ArcregionswitchPlanTriggersConditions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     associated_alarm_name: cdktn.stringToTerraform(struct!.associatedAlarmName),
@@ -891,7 +891,7 @@ export function arcregionswitchPlanTriggersConditionsToTerraform(struct?: Arcreg
 export function arcregionswitchPlanTriggersConditionsToHclTerraform(struct?: ArcregionswitchPlanTriggersConditions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     associated_alarm_name: {
@@ -1010,25 +1010,25 @@ export class ArcregionswitchPlanTriggersConditionsList extends cdktn.ComplexList
 }
 export interface ArcregionswitchPlanTriggers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}
   */
   readonly minDelayMinutesBetweenExecutions: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}
   */
   readonly targetRegion: string;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#conditions ArcregionswitchPlan#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#conditions ArcregionswitchPlan#conditions}
   */
   readonly conditions?: ArcregionswitchPlanTriggersConditions[] | cdktn.IResolvable;
 }
@@ -1036,7 +1036,7 @@ export interface ArcregionswitchPlanTriggers {
 export function arcregionswitchPlanTriggersToTerraform(struct?: ArcregionswitchPlanTriggers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -1051,7 +1051,7 @@ export function arcregionswitchPlanTriggersToTerraform(struct?: ArcregionswitchP
 export function arcregionswitchPlanTriggersToHclTerraform(struct?: ArcregionswitchPlanTriggers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -1251,11 +1251,11 @@ export class ArcregionswitchPlanTriggersList extends cdktn.ComplexList {
 }
 export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}
   */
   readonly routingControlArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}
   */
   readonly state: string;
 }
@@ -1263,7 +1263,7 @@ export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAnd
 export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     routing_control_arn: cdktn.stringToTerraform(struct!.routingControlArn),
@@ -1275,7 +1275,7 @@ export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndR
 export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     routing_control_arn: {
@@ -1394,13 +1394,13 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
 }
 export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
   */
   readonly region: string;
   /**
   * routing_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
   */
   readonly routingControl?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktn.IResolvable;
 }
@@ -1408,7 +1408,7 @@ export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAnd
 export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsToTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     region: cdktn.stringToTerraform(struct!.region),
@@ -1420,7 +1420,7 @@ export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndR
 export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     region: {
@@ -1542,21 +1542,21 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
 }
 export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * region_and_routing_controls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
   */
   readonly regionAndRoutingControls?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktn.IResolvable;
 }
@@ -1564,7 +1564,7 @@ export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfig {
 export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
@@ -1578,7 +1578,7 @@ export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigToTerrafor
 export function arcregionswitchPlanWorkflowStepArcRoutingControlConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_account_role: {
@@ -1759,15 +1759,15 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigList extends 
 }
 export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -1775,7 +1775,7 @@ export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda {
 export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
@@ -1788,7 +1788,7 @@ export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToT
 export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arn: {
@@ -1938,7 +1938,7 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaList e
 }
 export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
 }
@@ -1946,7 +1946,7 @@ export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracef
 export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     behavior: cdktn.stringToTerraform(struct!.behavior),
@@ -1957,7 +1957,7 @@ export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefu
 export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     behavior: {
@@ -2051,27 +2051,27 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulLi
 }
 export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}
   */
   readonly regionToRun: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}
   */
   readonly retryIntervalMinutes: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * lambda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
   */
   readonly lambda?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -2079,7 +2079,7 @@ export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig {
 export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     region_to_run: cdktn.stringToTerraform(struct!.regionToRun),
@@ -2094,7 +2094,7 @@ export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToTerrafo
 export function arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     region_to_run: {
@@ -2297,7 +2297,7 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigList extends
 }
 export interface ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful: string;
 }
@@ -2305,7 +2305,7 @@ export interface ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful {
 export function arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ungraceful: cdktn.stringToTerraform(struct!.ungraceful),
@@ -2316,7 +2316,7 @@ export function arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToTerra
 export function arcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ungraceful: {
@@ -2410,33 +2410,33 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulList exten
 }
 export interface ArcregionswitchPlanWorkflowStepDocumentDbConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
   */
   readonly databaseClusterArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
   */
   readonly globalClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -2444,7 +2444,7 @@ export interface ArcregionswitchPlanWorkflowStepDocumentDbConfig {
 export function arcregionswitchPlanWorkflowStepDocumentDbConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     behavior: cdktn.stringToTerraform(struct!.behavior),
@@ -2461,7 +2461,7 @@ export function arcregionswitchPlanWorkflowStepDocumentDbConfigToTerraform(struc
 export function arcregionswitchPlanWorkflowStepDocumentDbConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepDocumentDbConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     behavior: {
@@ -2717,15 +2717,15 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigList extends cdktn.C
 }
 export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -2733,7 +2733,7 @@ export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg 
 export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgToTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
@@ -2746,7 +2746,7 @@ export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgTo
 export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arn: {
@@ -2896,7 +2896,7 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgList 
 }
 export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -2904,7 +2904,7 @@ export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngr
 export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
@@ -2915,7 +2915,7 @@ export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngra
 export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     minimum_success_percentage: {
@@ -3009,27 +3009,27 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracef
 }
 export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * asg block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
   */
   readonly asg?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -3037,7 +3037,7 @@ export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig {
 export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
@@ -3052,7 +3052,7 @@ export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToTer
 export function arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     capacity_monitoring_approach: {
@@ -3258,19 +3258,19 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigList ext
 }
 export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}
   */
   readonly serviceArn: string;
 }
@@ -3278,7 +3278,7 @@ export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService
 export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceToTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cluster_arn: cdktn.stringToTerraform(struct!.clusterArn),
@@ -3292,7 +3292,7 @@ export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceT
 export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cluster_arn: {
@@ -3467,7 +3467,7 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceList
 }
 export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -3475,7 +3475,7 @@ export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngrace
 export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
@@ -3486,7 +3486,7 @@ export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracef
 export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     minimum_success_percentage: {
@@ -3580,27 +3580,27 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulL
 }
 export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
   */
   readonly service?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -3608,7 +3608,7 @@ export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig {
 export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
@@ -3623,7 +3623,7 @@ export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToTerraf
 export function arcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     capacity_monitoring_approach: {
@@ -3829,15 +3829,15 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigList extend
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -3845,7 +3845,7 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClust
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cluster_arn: cdktn.stringToTerraform(struct!.clusterArn),
@@ -3858,7 +3858,7 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksCluste
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cluster_arn: {
@@ -4008,11 +4008,11 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersL
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}
   */
   readonly apiVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}
   */
   readonly kind: string;
 }
@@ -4020,7 +4020,7 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernet
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_version: cdktn.stringToTerraform(struct!.apiVersion),
@@ -4032,7 +4032,7 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernete
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_version: {
@@ -4151,19 +4151,19 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesRe
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}
   */
   readonly hpaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}
   */
   readonly resourceName: string;
 }
@@ -4171,7 +4171,7 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingR
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hpa_name: cdktn.stringToTerraform(struct!.hpaName),
@@ -4185,7 +4185,7 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingRe
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hpa_name: {
@@ -4357,13 +4357,13 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
   */
   readonly namespace: string;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
   */
   readonly resources?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources[] | cdktn.IResolvable;
 }
@@ -4371,7 +4371,7 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingR
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     namespace: cdktn.stringToTerraform(struct!.namespace),
@@ -4383,7 +4383,7 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingRe
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     namespace: {
@@ -4505,7 +4505,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -4513,7 +4513,7 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracef
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
@@ -4524,7 +4524,7 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefu
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     minimum_success_percentage: {
@@ -4618,39 +4618,39 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulLi
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * eks_clusters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
   */
   readonly eksClusters?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters[] | cdktn.IResolvable;
   /**
   * kubernetes_resource_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
   */
   readonly kubernetesResourceType?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType[] | cdktn.IResolvable;
   /**
   * scaling_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
   */
   readonly scalingResources?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -4658,7 +4658,7 @@ export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfig {
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
@@ -4675,7 +4675,7 @@ export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigToTerrafo
 export function arcregionswitchPlanWorkflowStepEksResourceScalingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     capacity_monitoring_approach: {
@@ -4934,11 +4934,11 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigList extends
 }
 export interface ArcregionswitchPlanWorkflowStepExecutionApprovalConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}
   */
   readonly approvalRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -4946,7 +4946,7 @@ export interface ArcregionswitchPlanWorkflowStepExecutionApprovalConfig {
 export function arcregionswitchPlanWorkflowStepExecutionApprovalConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     approval_role: cdktn.stringToTerraform(struct!.approvalRole),
@@ -4958,7 +4958,7 @@ export function arcregionswitchPlanWorkflowStepExecutionApprovalConfigToTerrafor
 export function arcregionswitchPlanWorkflowStepExecutionApprovalConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     approval_role: {
@@ -5080,7 +5080,7 @@ export class ArcregionswitchPlanWorkflowStepExecutionApprovalConfigList extends 
 }
 export interface ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful: string;
 }
@@ -5088,7 +5088,7 @@ export interface ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful {
 export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ungraceful: cdktn.stringToTerraform(struct!.ungraceful),
@@ -5099,7 +5099,7 @@ export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToTer
 export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ungraceful: {
@@ -5193,33 +5193,33 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulList ext
 }
 export interface ArcregionswitchPlanWorkflowStepGlobalAuroraConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
   */
   readonly databaseClusterArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
   */
   readonly globalClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -5227,7 +5227,7 @@ export interface ArcregionswitchPlanWorkflowStepGlobalAuroraConfig {
 export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     behavior: cdktn.stringToTerraform(struct!.behavior),
@@ -5244,7 +5244,7 @@ export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigToTerraform(str
 export function arcregionswitchPlanWorkflowStepGlobalAuroraConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     behavior: {
@@ -5500,11 +5500,11 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigList extends cdktn
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}
   */
   readonly routingControlArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}
   */
   readonly state: string;
 }
@@ -5512,7 +5512,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingCont
 export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     routing_control_arn: cdktn.stringToTerraform(struct!.routingControlArn),
@@ -5524,7 +5524,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingContr
 export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControlToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     routing_control_arn: {
@@ -5643,13 +5643,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
   */
   readonly region: string;
   /**
   * routing_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
   */
   readonly routingControl?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktn.IResolvable;
 }
@@ -5657,7 +5657,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingCont
 export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     region: cdktn.stringToTerraform(struct!.region),
@@ -5669,7 +5669,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingContr
 export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     region: {
@@ -5791,21 +5791,21 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * region_and_routing_controls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
   */
   readonly regionAndRoutingControls?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktn.IResolvable;
 }
@@ -5813,7 +5813,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingCont
 export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
@@ -5827,7 +5827,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingContr
 export function arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_account_role: {
@@ -6008,15 +6008,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -6024,7 +6024,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLa
 export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
@@ -6037,7 +6037,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLam
 export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arn: {
@@ -6187,7 +6187,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
 }
@@ -6195,7 +6195,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLa
 export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     behavior: cdktn.stringToTerraform(struct!.behavior),
@@ -6206,7 +6206,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLam
 export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     behavior: {
@@ -6300,27 +6300,27 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}
   */
   readonly regionToRun: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}
   */
   readonly retryIntervalMinutes: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * lambda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
   */
   readonly lambda?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -6328,7 +6328,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLa
 export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     region_to_run: cdktn.stringToTerraform(struct!.regionToRun),
@@ -6343,7 +6343,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLam
 export function arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     region_to_run: {
@@ -6546,7 +6546,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful: string;
 }
@@ -6554,7 +6554,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConf
 export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ungraceful: cdktn.stringToTerraform(struct!.ungraceful),
@@ -6565,7 +6565,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfi
 export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ungraceful: {
@@ -6659,33 +6659,33 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUn
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
   */
   readonly databaseClusterArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
   */
   readonly globalClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -6693,7 +6693,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConf
 export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     behavior: cdktn.stringToTerraform(struct!.behavior),
@@ -6710,7 +6710,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfi
 export function arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     behavior: {
@@ -6966,15 +6966,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigLi
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -6982,7 +6982,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacity
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
@@ -6995,7 +6995,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityI
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arn: {
@@ -7145,7 +7145,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -7153,7 +7153,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacity
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
@@ -7164,7 +7164,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityI
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     minimum_success_percentage: {
@@ -7258,27 +7258,27 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * asg block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
   */
   readonly asg?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -7286,7 +7286,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacity
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
@@ -7301,7 +7301,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityI
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     capacity_monitoring_approach: {
@@ -7507,19 +7507,19 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}
   */
   readonly serviceArn: string;
 }
@@ -7527,7 +7527,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityInc
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cluster_arn: cdktn.stringToTerraform(struct!.clusterArn),
@@ -7541,7 +7541,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncr
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cluster_arn: {
@@ -7716,7 +7716,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -7724,7 +7724,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityInc
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
@@ -7735,7 +7735,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncr
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     minimum_success_percentage: {
@@ -7829,27 +7829,27 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
   */
   readonly service?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -7857,7 +7857,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityInc
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
@@ -7872,7 +7872,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncr
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     capacity_monitoring_approach: {
@@ -8078,15 +8078,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -8094,7 +8094,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cluster_arn: cdktn.stringToTerraform(struct!.clusterArn),
@@ -8107,7 +8107,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClustersToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cluster_arn: {
@@ -8257,11 +8257,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}
   */
   readonly apiVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}
   */
   readonly kind: string;
 }
@@ -8269,7 +8269,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_version: cdktn.stringToTerraform(struct!.apiVersion),
@@ -8281,7 +8281,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_version: {
@@ -8400,19 +8400,19 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}
   */
   readonly hpaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}
   */
   readonly resourceName: string;
 }
@@ -8420,7 +8420,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hpa_name: cdktn.stringToTerraform(struct!.hpaName),
@@ -8434,7 +8434,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hpa_name: {
@@ -8606,13 +8606,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
   */
   readonly namespace: string;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
   */
   readonly resources?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources[] | cdktn.IResolvable;
 }
@@ -8620,7 +8620,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     namespace: cdktn.stringToTerraform(struct!.namespace),
@@ -8632,7 +8632,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     namespace: {
@@ -8754,7 +8754,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -8762,7 +8762,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     minimum_success_percentage: cdktn.numberToTerraform(struct!.minimumSuccessPercentage),
@@ -8773,7 +8773,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     minimum_success_percentage: {
@@ -8867,39 +8867,39 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * eks_clusters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
   */
   readonly eksClusters?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters[] | cdktn.IResolvable;
   /**
   * kubernetes_resource_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
   */
   readonly kubernetesResourceType?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType[] | cdktn.IResolvable;
   /**
   * scaling_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
   */
   readonly scalingResources?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -8907,7 +8907,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceSca
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     capacity_monitoring_approach: cdktn.stringToTerraform(struct!.capacityMonitoringApproach),
@@ -8924,7 +8924,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScal
 export function arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     capacity_monitoring_approach: {
@@ -9183,11 +9183,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}
   */
   readonly approvalRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -9195,7 +9195,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionAppro
 export function arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     approval_role: cdktn.stringToTerraform(struct!.approvalRole),
@@ -9207,7 +9207,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprov
 export function arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     approval_role: {
@@ -9329,7 +9329,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalC
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful: string;
 }
@@ -9337,7 +9337,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraCo
 export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ungraceful: cdktn.stringToTerraform(struct!.ungraceful),
@@ -9348,7 +9348,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraCon
 export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ungraceful: {
@@ -9442,33 +9442,33 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
   */
   readonly databaseClusterArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
   */
   readonly globalClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -9476,7 +9476,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraCo
 export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     behavior: cdktn.stringToTerraform(struct!.behavior),
@@ -9493,7 +9493,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraCon
 export function arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     behavior: {
@@ -9749,19 +9749,19 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
   */
   readonly dbInstanceArnMap: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -9769,7 +9769,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCross
 export function arcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
@@ -9783,7 +9783,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossR
 export function arcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_account_role: {
@@ -9961,19 +9961,19 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegi
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
   */
   readonly dbInstanceArnMap: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -9981,7 +9981,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteRead
 export function arcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
@@ -9995,7 +9995,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadR
 export function arcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_account_role: {
@@ -10173,15 +10173,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadRepl
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -10189,7 +10189,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPl
 export function arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
@@ -10202,7 +10202,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPla
 export function arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arn: {
@@ -10352,11 +10352,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanCo
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}
   */
   readonly recordSetIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
   */
   readonly region: string;
 }
@@ -10364,7 +10364,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthC
 export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     record_set_identifier: cdktn.stringToTerraform(struct!.recordSetIdentifier),
@@ -10376,7 +10376,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCh
 export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     record_set_identifier: {
@@ -10495,29 +10495,29 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}
   */
   readonly hostedZoneId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}
   */
   readonly recordName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * record_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
   */
   readonly recordSet?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet[] | cdktn.IResolvable;
 }
@@ -10525,7 +10525,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthC
 export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
@@ -10541,7 +10541,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCh
 export function arcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_account_role: {
@@ -10772,87 +10772,87 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}
   */
   readonly executionBlockType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
   */
   readonly name: string;
   /**
   * arc_routing_control_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
   */
   readonly arcRoutingControlConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig[] | cdktn.IResolvable;
   /**
   * custom_action_lambda_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
   */
   readonly customActionLambdaConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig[] | cdktn.IResolvable;
   /**
   * document_db_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
   */
   readonly documentDbConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig[] | cdktn.IResolvable;
   /**
   * ec2_asg_capacity_increase_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
   */
   readonly ec2AsgCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * ecs_capacity_increase_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
   */
   readonly ecsCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * eks_resource_scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
   */
   readonly eksResourceScalingConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig[] | cdktn.IResolvable;
   /**
   * execution_approval_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
   */
   readonly executionApprovalConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig[] | cdktn.IResolvable;
   /**
   * global_aurora_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
   */
   readonly globalAuroraConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig[] | cdktn.IResolvable;
   /**
   * rds_create_cross_region_read_replica_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
   */
   readonly rdsCreateCrossRegionReadReplicaConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig[] | cdktn.IResolvable;
   /**
   * rds_promote_read_replica_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
   */
   readonly rdsPromoteReadReplicaConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig[] | cdktn.IResolvable;
   /**
   * region_switch_plan_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
   */
   readonly regionSwitchPlanConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig[] | cdktn.IResolvable;
   /**
   * route53_health_check_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
   */
   readonly route53HealthCheckConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig[] | cdktn.IResolvable;
 }
@@ -10860,7 +10860,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfigStep {
 export function arcregionswitchPlanWorkflowStepParallelConfigStepToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStep | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -10885,7 +10885,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepToTerraform(str
 export function arcregionswitchPlanWorkflowStepParallelConfigStepToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStep | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -11370,7 +11370,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfig {
   /**
   * step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
   */
   readonly step?: ArcregionswitchPlanWorkflowStepParallelConfigStep[] | cdktn.IResolvable;
 }
@@ -11378,7 +11378,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfig {
 export function arcregionswitchPlanWorkflowStepParallelConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     step: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepToTerraform, true)(struct!.step),
@@ -11389,7 +11389,7 @@ export function arcregionswitchPlanWorkflowStepParallelConfigToTerraform(struct?
 export function arcregionswitchPlanWorkflowStepParallelConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     step: {
@@ -11486,19 +11486,19 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigList extends cdktn.Com
 }
 export interface ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
   */
   readonly dbInstanceArnMap: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -11506,7 +11506,7 @@ export interface ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaC
 export function arcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
@@ -11520,7 +11520,7 @@ export function arcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaCo
 export function arcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_account_role: {
@@ -11698,19 +11698,19 @@ export class ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfi
 }
 export interface ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
   */
   readonly dbInstanceArnMap: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -11718,7 +11718,7 @@ export interface ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig {
 export function arcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
@@ -11732,7 +11732,7 @@ export function arcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigToTerr
 export function arcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_account_role: {
@@ -11910,15 +11910,15 @@ export class ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList exte
 }
 export interface ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -11926,7 +11926,7 @@ export interface ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig {
 export function arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
@@ -11939,7 +11939,7 @@ export function arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToTerraform
 export function arcregionswitchPlanWorkflowStepRegionSwitchPlanConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arn: {
@@ -12089,11 +12089,11 @@ export class ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigList extends c
 }
 export interface ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}
   */
   readonly recordSetIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
   */
   readonly region: string;
 }
@@ -12101,7 +12101,7 @@ export interface ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSe
 export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetToTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     record_set_identifier: cdktn.stringToTerraform(struct!.recordSetIdentifier),
@@ -12113,7 +12113,7 @@ export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet
 export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     record_set_identifier: {
@@ -12232,29 +12232,29 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetLis
 }
 export interface ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}
   */
   readonly hostedZoneId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}
   */
   readonly recordName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * record_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
   */
   readonly recordSet?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet[] | cdktn.IResolvable;
 }
@@ -12262,7 +12262,7 @@ export interface ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig {
 export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
@@ -12278,7 +12278,7 @@ export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToTerrafo
 export function arcregionswitchPlanWorkflowStepRoute53HealthCheckConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_account_role: {
@@ -12509,93 +12509,93 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigList extends
 }
 export interface ArcregionswitchPlanWorkflowStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}
   */
   readonly executionBlockType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
   */
   readonly name: string;
   /**
   * arc_routing_control_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
   */
   readonly arcRoutingControlConfig?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig[] | cdktn.IResolvable;
   /**
   * custom_action_lambda_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
   */
   readonly customActionLambdaConfig?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig[] | cdktn.IResolvable;
   /**
   * document_db_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
   */
   readonly documentDbConfig?: ArcregionswitchPlanWorkflowStepDocumentDbConfig[] | cdktn.IResolvable;
   /**
   * ec2_asg_capacity_increase_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
   */
   readonly ec2AsgCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * ecs_capacity_increase_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
   */
   readonly ecsCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * eks_resource_scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
   */
   readonly eksResourceScalingConfig?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig[] | cdktn.IResolvable;
   /**
   * execution_approval_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
   */
   readonly executionApprovalConfig?: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig[] | cdktn.IResolvable;
   /**
   * global_aurora_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
   */
   readonly globalAuroraConfig?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig[] | cdktn.IResolvable;
   /**
   * parallel_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#parallel_config ArcregionswitchPlan#parallel_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#parallel_config ArcregionswitchPlan#parallel_config}
   */
   readonly parallelConfig?: ArcregionswitchPlanWorkflowStepParallelConfig[] | cdktn.IResolvable;
   /**
   * rds_create_cross_region_read_replica_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
   */
   readonly rdsCreateCrossRegionReadReplicaConfig?: ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig[] | cdktn.IResolvable;
   /**
   * rds_promote_read_replica_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
   */
   readonly rdsPromoteReadReplicaConfig?: ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig[] | cdktn.IResolvable;
   /**
   * region_switch_plan_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
   */
   readonly regionSwitchPlanConfig?: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig[] | cdktn.IResolvable;
   /**
   * route53_health_check_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
   */
   readonly route53HealthCheckConfig?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig[] | cdktn.IResolvable;
 }
@@ -12603,7 +12603,7 @@ export interface ArcregionswitchPlanWorkflowStep {
 export function arcregionswitchPlanWorkflowStepToTerraform(struct?: ArcregionswitchPlanWorkflowStep | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -12629,7 +12629,7 @@ export function arcregionswitchPlanWorkflowStepToTerraform(struct?: Arcregionswi
 export function arcregionswitchPlanWorkflowStepToHclTerraform(struct?: ArcregionswitchPlanWorkflowStep | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -13140,21 +13140,21 @@ export class ArcregionswitchPlanWorkflowStepList extends cdktn.ComplexList {
 }
 export interface ArcregionswitchPlanWorkflow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}
   */
   readonly workflowDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}
   */
   readonly workflowTargetAction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}
   */
   readonly workflowTargetRegion?: string;
   /**
   * step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
   */
   readonly step?: ArcregionswitchPlanWorkflowStep[] | cdktn.IResolvable;
 }
@@ -13162,7 +13162,7 @@ export interface ArcregionswitchPlanWorkflow {
 export function arcregionswitchPlanWorkflowToTerraform(struct?: ArcregionswitchPlanWorkflow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workflow_description: cdktn.stringToTerraform(struct!.workflowDescription),
@@ -13176,7 +13176,7 @@ export function arcregionswitchPlanWorkflowToTerraform(struct?: ArcregionswitchP
 export function arcregionswitchPlanWorkflowToHclTerraform(struct?: ArcregionswitchPlanWorkflow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workflow_description: {
@@ -13354,7 +13354,7 @@ export class ArcregionswitchPlanWorkflowList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan}
 */
 export class ArcregionswitchPlan extends cdktn.TerraformResource {
 
@@ -13370,7 +13370,7 @@ export class ArcregionswitchPlan extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ArcregionswitchPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ArcregionswitchPlan to import
-  * @param importFromId The id of the existing ArcregionswitchPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ArcregionswitchPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ArcregionswitchPlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -13382,7 +13382,7 @@ export class ArcregionswitchPlan extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -13393,7 +13393,7 @@ export class ArcregionswitchPlan extends cdktn.TerraformResource {
       terraformResourceType: 'aws_arcregionswitch_plan',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,92 +13,92 @@ import * as cdktn from 'cdktn';
 
 export interface BatchJobDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#container_properties BatchJobDefinition#container_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#container_properties BatchJobDefinition#container_properties}
   */
   readonly containerProperties?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#deregister_on_new_revision BatchJobDefinition#deregister_on_new_revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#deregister_on_new_revision BatchJobDefinition#deregister_on_new_revision}
   */
   readonly deregisterOnNewRevision?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#ecs_properties BatchJobDefinition#ecs_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#ecs_properties BatchJobDefinition#ecs_properties}
   */
   readonly ecsProperties?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#id BatchJobDefinition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#id BatchJobDefinition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#node_properties BatchJobDefinition#node_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#node_properties BatchJobDefinition#node_properties}
   */
   readonly nodeProperties?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#parameters BatchJobDefinition#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#parameters BatchJobDefinition#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#platform_capabilities BatchJobDefinition#platform_capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#platform_capabilities BatchJobDefinition#platform_capabilities}
   */
   readonly platformCapabilities?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#propagate_tags BatchJobDefinition#propagate_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#propagate_tags BatchJobDefinition#propagate_tags}
   */
   readonly propagateTags?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#region BatchJobDefinition#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#region BatchJobDefinition#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#scheduling_priority BatchJobDefinition#scheduling_priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#scheduling_priority BatchJobDefinition#scheduling_priority}
   */
   readonly schedulingPriority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#tags BatchJobDefinition#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#tags BatchJobDefinition#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#tags_all BatchJobDefinition#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#tags_all BatchJobDefinition#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#type BatchJobDefinition#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#type BatchJobDefinition#type}
   */
   readonly type: string;
   /**
   * eks_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#eks_properties BatchJobDefinition#eks_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#eks_properties BatchJobDefinition#eks_properties}
   */
   readonly eksProperties?: BatchJobDefinitionEksProperties;
   /**
   * retry_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#retry_strategy BatchJobDefinition#retry_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#retry_strategy BatchJobDefinition#retry_strategy}
   */
   readonly retryStrategy?: BatchJobDefinitionRetryStrategy;
   /**
   * timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#timeout BatchJobDefinition#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#timeout BatchJobDefinition#timeout}
   */
   readonly timeout?: BatchJobDefinitionTimeout;
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesContainersEnv {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#value BatchJobDefinition#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#value BatchJobDefinition#value}
   */
   readonly value: string;
 }
@@ -106,7 +106,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesContainersEnv {
 export function batchJobDefinitionEksPropertiesPodPropertiesContainersEnvToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesContainersEnv | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -118,7 +118,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesContainersEnvToTerra
 export function batchJobDefinitionEksPropertiesPodPropertiesContainersEnvToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesContainersEnv | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -237,11 +237,11 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList exten
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesContainersResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#limits BatchJobDefinition#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#limits BatchJobDefinition#limits}
   */
   readonly limits?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#requests BatchJobDefinition#requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#requests BatchJobDefinition#requests}
   */
   readonly requests?: { [key: string]: string };
 }
@@ -249,7 +249,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesContainersResources
 export function batchJobDefinitionEksPropertiesPodPropertiesContainersResourcesToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesContainersResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     limits: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.limits),
@@ -261,7 +261,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesContainersResourcesT
 export function batchJobDefinitionEksPropertiesPodPropertiesContainersResourcesToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesContainersResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     limits: {
@@ -354,27 +354,27 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutp
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#allow_privilege_escalation BatchJobDefinition#allow_privilege_escalation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#allow_privilege_escalation BatchJobDefinition#allow_privilege_escalation}
   */
   readonly allowPrivilegeEscalation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#privileged BatchJobDefinition#privileged}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#privileged BatchJobDefinition#privileged}
   */
   readonly privileged?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#read_only_root_file_system BatchJobDefinition#read_only_root_file_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#read_only_root_file_system BatchJobDefinition#read_only_root_file_system}
   */
   readonly readOnlyRootFileSystem?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#run_as_group BatchJobDefinition#run_as_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#run_as_group BatchJobDefinition#run_as_group}
   */
   readonly runAsGroup?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#run_as_non_root BatchJobDefinition#run_as_non_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#run_as_non_root BatchJobDefinition#run_as_non_root}
   */
   readonly runAsNonRoot?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#run_as_user BatchJobDefinition#run_as_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#run_as_user BatchJobDefinition#run_as_user}
   */
   readonly runAsUser?: number;
 }
@@ -382,7 +382,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityC
 export function batchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_privilege_escalation: cdktn.booleanToTerraform(struct!.allowPrivilegeEscalation),
@@ -398,7 +398,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesContainersSecurityCo
 export function batchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_privilege_escalation: {
@@ -603,15 +603,15 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityConte
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMounts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#mount_path BatchJobDefinition#mount_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#mount_path BatchJobDefinition#mount_path}
   */
   readonly mountPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#read_only BatchJobDefinition#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#read_only BatchJobDefinition#read_only}
   */
   readonly readOnly?: boolean | cdktn.IResolvable;
 }
@@ -619,7 +619,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMou
 export function batchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMounts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mount_path: cdktn.stringToTerraform(struct!.mountPath),
@@ -632,7 +632,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMoun
 export function batchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMounts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mount_path: {
@@ -779,47 +779,47 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsL
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesContainers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#args BatchJobDefinition#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#args BatchJobDefinition#args}
   */
   readonly args?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#command BatchJobDefinition#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#command BatchJobDefinition#command}
   */
   readonly command?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#image BatchJobDefinition#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#image BatchJobDefinition#image}
   */
   readonly image: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#image_pull_policy BatchJobDefinition#image_pull_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#image_pull_policy BatchJobDefinition#image_pull_policy}
   */
   readonly imagePullPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
   */
   readonly name?: string;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#env BatchJobDefinition#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#env BatchJobDefinition#env}
   */
   readonly env?: BatchJobDefinitionEksPropertiesPodPropertiesContainersEnv[] | cdktn.IResolvable;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#resources BatchJobDefinition#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#resources BatchJobDefinition#resources}
   */
   readonly resources?: BatchJobDefinitionEksPropertiesPodPropertiesContainersResources;
   /**
   * security_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#security_context BatchJobDefinition#security_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#security_context BatchJobDefinition#security_context}
   */
   readonly securityContext?: BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext;
   /**
   * volume_mounts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#volume_mounts BatchJobDefinition#volume_mounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#volume_mounts BatchJobDefinition#volume_mounts}
   */
   readonly volumeMounts?: BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMounts[] | cdktn.IResolvable;
 }
@@ -827,7 +827,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesContainers {
 export function batchJobDefinitionEksPropertiesPodPropertiesContainersToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesContainers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
@@ -846,7 +846,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesContainersToTerrafor
 export function batchJobDefinitionEksPropertiesPodPropertiesContainersToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesContainers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     args: {
@@ -1164,7 +1164,7 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesContainersList extends 
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecret {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
   */
   readonly name: string;
 }
@@ -1172,7 +1172,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecret {
 export function batchJobDefinitionEksPropertiesPodPropertiesImagePullSecretToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecret | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1183,7 +1183,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesImagePullSecretToTer
 export function batchJobDefinitionEksPropertiesPodPropertiesImagePullSecretToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecret | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1277,11 +1277,11 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretList ext
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnv {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#value BatchJobDefinition#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#value BatchJobDefinition#value}
   */
   readonly value: string;
 }
@@ -1289,7 +1289,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnv {
 export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnv | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1301,7 +1301,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvToT
 export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnv | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1420,11 +1420,11 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvList e
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesInitContainersResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#limits BatchJobDefinition#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#limits BatchJobDefinition#limits}
   */
   readonly limits?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#requests BatchJobDefinition#requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#requests BatchJobDefinition#requests}
   */
   readonly requests?: { [key: string]: string };
 }
@@ -1432,7 +1432,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesInitContainersResou
 export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesInitContainersResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     limits: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.limits),
@@ -1444,7 +1444,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersResour
 export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesInitContainersResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     limits: {
@@ -1537,27 +1537,27 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesInitContainersResources
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#allow_privilege_escalation BatchJobDefinition#allow_privilege_escalation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#allow_privilege_escalation BatchJobDefinition#allow_privilege_escalation}
   */
   readonly allowPrivilegeEscalation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#privileged BatchJobDefinition#privileged}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#privileged BatchJobDefinition#privileged}
   */
   readonly privileged?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#read_only_root_file_system BatchJobDefinition#read_only_root_file_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#read_only_root_file_system BatchJobDefinition#read_only_root_file_system}
   */
   readonly readOnlyRootFileSystem?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#run_as_group BatchJobDefinition#run_as_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#run_as_group BatchJobDefinition#run_as_group}
   */
   readonly runAsGroup?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#run_as_non_root BatchJobDefinition#run_as_non_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#run_as_non_root BatchJobDefinition#run_as_non_root}
   */
   readonly runAsNonRoot?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#run_as_user BatchJobDefinition#run_as_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#run_as_user BatchJobDefinition#run_as_user}
   */
   readonly runAsUser?: number;
 }
@@ -1565,7 +1565,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecur
 export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_privilege_escalation: cdktn.booleanToTerraform(struct!.allowPrivilegeEscalation),
@@ -1581,7 +1581,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersSecuri
 export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_privilege_escalation: {
@@ -1786,15 +1786,15 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityC
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMounts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#mount_path BatchJobDefinition#mount_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#mount_path BatchJobDefinition#mount_path}
   */
   readonly mountPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#read_only BatchJobDefinition#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#read_only BatchJobDefinition#read_only}
   */
   readonly readOnly?: boolean | cdktn.IResolvable;
 }
@@ -1802,7 +1802,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolum
 export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMounts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mount_path: cdktn.stringToTerraform(struct!.mountPath),
@@ -1815,7 +1815,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersVolume
 export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMounts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mount_path: {
@@ -1962,47 +1962,47 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMou
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesInitContainers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#args BatchJobDefinition#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#args BatchJobDefinition#args}
   */
   readonly args?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#command BatchJobDefinition#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#command BatchJobDefinition#command}
   */
   readonly command?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#image BatchJobDefinition#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#image BatchJobDefinition#image}
   */
   readonly image: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#image_pull_policy BatchJobDefinition#image_pull_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#image_pull_policy BatchJobDefinition#image_pull_policy}
   */
   readonly imagePullPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
   */
   readonly name?: string;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#env BatchJobDefinition#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#env BatchJobDefinition#env}
   */
   readonly env?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnv[] | cdktn.IResolvable;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#resources BatchJobDefinition#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#resources BatchJobDefinition#resources}
   */
   readonly resources?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersResources;
   /**
   * security_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#security_context BatchJobDefinition#security_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#security_context BatchJobDefinition#security_context}
   */
   readonly securityContext?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContext;
   /**
   * volume_mounts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#volume_mounts BatchJobDefinition#volume_mounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#volume_mounts BatchJobDefinition#volume_mounts}
   */
   readonly volumeMounts?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMounts[] | cdktn.IResolvable;
 }
@@ -2010,7 +2010,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesInitContainers {
 export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
@@ -2029,7 +2029,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersToTerr
 export function batchJobDefinitionEksPropertiesPodPropertiesInitContainersToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     args: {
@@ -2347,7 +2347,7 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesInitContainersList exte
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesMetadata {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#labels BatchJobDefinition#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#labels BatchJobDefinition#labels}
   */
   readonly labels?: { [key: string]: string };
 }
@@ -2355,7 +2355,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesMetadata {
 export function batchJobDefinitionEksPropertiesPodPropertiesMetadataToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
@@ -2366,7 +2366,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesMetadataToTerraform(
 export function batchJobDefinitionEksPropertiesPodPropertiesMetadataToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     labels: {
@@ -2431,11 +2431,11 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#medium BatchJobDefinition#medium}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#medium BatchJobDefinition#medium}
   */
   readonly medium?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#size_limit BatchJobDefinition#size_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#size_limit BatchJobDefinition#size_limit}
   */
   readonly sizeLimit: string;
 }
@@ -2443,7 +2443,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir {
 export function batchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     medium: cdktn.stringToTerraform(struct!.medium),
@@ -2455,7 +2455,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirToTer
 export function batchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     medium: {
@@ -2545,7 +2545,7 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputRe
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#path BatchJobDefinition#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#path BatchJobDefinition#path}
   */
   readonly path: string;
 }
@@ -2553,7 +2553,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath {
 export function batchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -2564,7 +2564,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathToTer
 export function batchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -2626,11 +2626,11 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputRe
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#optional BatchJobDefinition#optional}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#optional BatchJobDefinition#optional}
   */
   readonly optional?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#secret_name BatchJobDefinition#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#secret_name BatchJobDefinition#secret_name}
   */
   readonly secretName: string;
 }
@@ -2638,7 +2638,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret {
 export function batchJobDefinitionEksPropertiesPodPropertiesVolumesSecretToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     optional: cdktn.booleanToTerraform(struct!.optional),
@@ -2650,7 +2650,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesVolumesSecretToTerra
 export function batchJobDefinitionEksPropertiesPodPropertiesVolumesSecretToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputReference | BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     optional: {
@@ -2740,25 +2740,25 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputRefe
 }
 export interface BatchJobDefinitionEksPropertiesPodPropertiesVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#name BatchJobDefinition#name}
   */
   readonly name?: string;
   /**
   * empty_dir block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#empty_dir BatchJobDefinition#empty_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#empty_dir BatchJobDefinition#empty_dir}
   */
   readonly emptyDir?: BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir;
   /**
   * host_path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#host_path BatchJobDefinition#host_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#host_path BatchJobDefinition#host_path}
   */
   readonly hostPath?: BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath;
   /**
   * secret block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#secret BatchJobDefinition#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#secret BatchJobDefinition#secret}
   */
   readonly secret?: BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret;
 }
@@ -2766,7 +2766,7 @@ export interface BatchJobDefinitionEksPropertiesPodPropertiesVolumes {
 export function batchJobDefinitionEksPropertiesPodPropertiesVolumesToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesVolumes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2780,7 +2780,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesVolumesToTerraform(s
 export function batchJobDefinitionEksPropertiesPodPropertiesVolumesToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesVolumes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2961,49 +2961,49 @@ export class BatchJobDefinitionEksPropertiesPodPropertiesVolumesList extends cdk
 }
 export interface BatchJobDefinitionEksPropertiesPodProperties {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#dns_policy BatchJobDefinition#dns_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#dns_policy BatchJobDefinition#dns_policy}
   */
   readonly dnsPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#host_network BatchJobDefinition#host_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#host_network BatchJobDefinition#host_network}
   */
   readonly hostNetwork?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#service_account_name BatchJobDefinition#service_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#service_account_name BatchJobDefinition#service_account_name}
   */
   readonly serviceAccountName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#share_process_namespace BatchJobDefinition#share_process_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#share_process_namespace BatchJobDefinition#share_process_namespace}
   */
   readonly shareProcessNamespace?: boolean | cdktn.IResolvable;
   /**
   * containers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#containers BatchJobDefinition#containers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#containers BatchJobDefinition#containers}
   */
   readonly containers: BatchJobDefinitionEksPropertiesPodPropertiesContainers[] | cdktn.IResolvable;
   /**
   * image_pull_secret block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#image_pull_secret BatchJobDefinition#image_pull_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#image_pull_secret BatchJobDefinition#image_pull_secret}
   */
   readonly imagePullSecret?: BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecret[] | cdktn.IResolvable;
   /**
   * init_containers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#init_containers BatchJobDefinition#init_containers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#init_containers BatchJobDefinition#init_containers}
   */
   readonly initContainers?: BatchJobDefinitionEksPropertiesPodPropertiesInitContainers[] | cdktn.IResolvable;
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#metadata BatchJobDefinition#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#metadata BatchJobDefinition#metadata}
   */
   readonly metadata?: BatchJobDefinitionEksPropertiesPodPropertiesMetadata;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#volumes BatchJobDefinition#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#volumes BatchJobDefinition#volumes}
   */
   readonly volumes?: BatchJobDefinitionEksPropertiesPodPropertiesVolumes[] | cdktn.IResolvable;
 }
@@ -3011,7 +3011,7 @@ export interface BatchJobDefinitionEksPropertiesPodProperties {
 export function batchJobDefinitionEksPropertiesPodPropertiesToTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesOutputReference | BatchJobDefinitionEksPropertiesPodProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dns_policy: cdktn.stringToTerraform(struct!.dnsPolicy),
@@ -3030,7 +3030,7 @@ export function batchJobDefinitionEksPropertiesPodPropertiesToTerraform(struct?:
 export function batchJobDefinitionEksPropertiesPodPropertiesToHclTerraform(struct?: BatchJobDefinitionEksPropertiesPodPropertiesOutputReference | BatchJobDefinitionEksPropertiesPodProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dns_policy: {
@@ -3318,7 +3318,7 @@ export interface BatchJobDefinitionEksProperties {
   /**
   * pod_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#pod_properties BatchJobDefinition#pod_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#pod_properties BatchJobDefinition#pod_properties}
   */
   readonly podProperties: BatchJobDefinitionEksPropertiesPodProperties;
 }
@@ -3326,7 +3326,7 @@ export interface BatchJobDefinitionEksProperties {
 export function batchJobDefinitionEksPropertiesToTerraform(struct?: BatchJobDefinitionEksPropertiesOutputReference | BatchJobDefinitionEksProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     pod_properties: batchJobDefinitionEksPropertiesPodPropertiesToTerraform(struct!.podProperties),
@@ -3337,7 +3337,7 @@ export function batchJobDefinitionEksPropertiesToTerraform(struct?: BatchJobDefi
 export function batchJobDefinitionEksPropertiesToHclTerraform(struct?: BatchJobDefinitionEksPropertiesOutputReference | BatchJobDefinitionEksProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     pod_properties: {
@@ -3399,19 +3399,19 @@ export class BatchJobDefinitionEksPropertiesOutputReference extends cdktn.Comple
 }
 export interface BatchJobDefinitionRetryStrategyEvaluateOnExit {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#action BatchJobDefinition#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#action BatchJobDefinition#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#on_exit_code BatchJobDefinition#on_exit_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#on_exit_code BatchJobDefinition#on_exit_code}
   */
   readonly onExitCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#on_reason BatchJobDefinition#on_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#on_reason BatchJobDefinition#on_reason}
   */
   readonly onReason?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#on_status_reason BatchJobDefinition#on_status_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#on_status_reason BatchJobDefinition#on_status_reason}
   */
   readonly onStatusReason?: string;
 }
@@ -3419,7 +3419,7 @@ export interface BatchJobDefinitionRetryStrategyEvaluateOnExit {
 export function batchJobDefinitionRetryStrategyEvaluateOnExitToTerraform(struct?: BatchJobDefinitionRetryStrategyEvaluateOnExit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -3433,7 +3433,7 @@ export function batchJobDefinitionRetryStrategyEvaluateOnExitToTerraform(struct?
 export function batchJobDefinitionRetryStrategyEvaluateOnExitToHclTerraform(struct?: BatchJobDefinitionRetryStrategyEvaluateOnExit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -3611,13 +3611,13 @@ export class BatchJobDefinitionRetryStrategyEvaluateOnExitList extends cdktn.Com
 }
 export interface BatchJobDefinitionRetryStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#attempts BatchJobDefinition#attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#attempts BatchJobDefinition#attempts}
   */
   readonly attempts?: number;
   /**
   * evaluate_on_exit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#evaluate_on_exit BatchJobDefinition#evaluate_on_exit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#evaluate_on_exit BatchJobDefinition#evaluate_on_exit}
   */
   readonly evaluateOnExit?: BatchJobDefinitionRetryStrategyEvaluateOnExit[] | cdktn.IResolvable;
 }
@@ -3625,7 +3625,7 @@ export interface BatchJobDefinitionRetryStrategy {
 export function batchJobDefinitionRetryStrategyToTerraform(struct?: BatchJobDefinitionRetryStrategyOutputReference | BatchJobDefinitionRetryStrategy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attempts: cdktn.numberToTerraform(struct!.attempts),
@@ -3637,7 +3637,7 @@ export function batchJobDefinitionRetryStrategyToTerraform(struct?: BatchJobDefi
 export function batchJobDefinitionRetryStrategyToHclTerraform(struct?: BatchJobDefinitionRetryStrategyOutputReference | BatchJobDefinitionRetryStrategy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attempts: {
@@ -3730,7 +3730,7 @@ export class BatchJobDefinitionRetryStrategyOutputReference extends cdktn.Comple
 }
 export interface BatchJobDefinitionTimeout {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#attempt_duration_seconds BatchJobDefinition#attempt_duration_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#attempt_duration_seconds BatchJobDefinition#attempt_duration_seconds}
   */
   readonly attemptDurationSeconds?: number;
 }
@@ -3738,7 +3738,7 @@ export interface BatchJobDefinitionTimeout {
 export function batchJobDefinitionTimeoutToTerraform(struct?: BatchJobDefinitionTimeoutOutputReference | BatchJobDefinitionTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attempt_duration_seconds: cdktn.numberToTerraform(struct!.attemptDurationSeconds),
@@ -3749,7 +3749,7 @@ export function batchJobDefinitionTimeoutToTerraform(struct?: BatchJobDefinition
 export function batchJobDefinitionTimeoutToHclTerraform(struct?: BatchJobDefinitionTimeoutOutputReference | BatchJobDefinitionTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attempt_duration_seconds: {
@@ -3814,7 +3814,7 @@ export class BatchJobDefinitionTimeoutOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition aws_batch_job_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition aws_batch_job_definition}
 */
 export class BatchJobDefinition extends cdktn.TerraformResource {
 
@@ -3830,7 +3830,7 @@ export class BatchJobDefinition extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BatchJobDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BatchJobDefinition to import
-  * @param importFromId The id of the existing BatchJobDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BatchJobDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BatchJobDefinition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3842,7 +3842,7 @@ export class BatchJobDefinition extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3853,7 +3853,7 @@ export class BatchJobDefinition extends cdktn.TerraformResource {
       terraformResourceType: 'aws_batch_job_definition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

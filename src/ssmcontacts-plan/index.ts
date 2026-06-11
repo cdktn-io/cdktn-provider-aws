@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface SsmcontactsPlanConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}
   */
   readonly contactId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#id SsmcontactsPlan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#id SsmcontactsPlan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,23 +26,23 @@ export interface SsmcontactsPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#region SsmcontactsPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#region SsmcontactsPlan#region}
   */
   readonly region?: string;
   /**
   * stage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#stage SsmcontactsPlan#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#stage SsmcontactsPlan#stage}
   */
   readonly stage: SsmcontactsPlanStage[] | cdktn.IResolvable;
 }
 export interface SsmcontactsPlanStageTargetChannelTargetInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#contact_channel_id SsmcontactsPlan#contact_channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#contact_channel_id SsmcontactsPlan#contact_channel_id}
   */
   readonly contactChannelId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#retry_interval_in_minutes SsmcontactsPlan#retry_interval_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#retry_interval_in_minutes SsmcontactsPlan#retry_interval_in_minutes}
   */
   readonly retryIntervalInMinutes?: number;
 }
@@ -50,7 +50,7 @@ export interface SsmcontactsPlanStageTargetChannelTargetInfo {
 export function ssmcontactsPlanStageTargetChannelTargetInfoToTerraform(struct?: SsmcontactsPlanStageTargetChannelTargetInfoOutputReference | SsmcontactsPlanStageTargetChannelTargetInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     contact_channel_id: cdktn.stringToTerraform(struct!.contactChannelId),
@@ -62,7 +62,7 @@ export function ssmcontactsPlanStageTargetChannelTargetInfoToTerraform(struct?: 
 export function ssmcontactsPlanStageTargetChannelTargetInfoToHclTerraform(struct?: SsmcontactsPlanStageTargetChannelTargetInfoOutputReference | SsmcontactsPlanStageTargetChannelTargetInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     contact_channel_id: {
@@ -152,11 +152,11 @@ export class SsmcontactsPlanStageTargetChannelTargetInfoOutputReference extends 
 }
 export interface SsmcontactsPlanStageTargetContactTargetInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}
   */
   readonly contactId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#is_essential SsmcontactsPlan#is_essential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#is_essential SsmcontactsPlan#is_essential}
   */
   readonly isEssential: boolean | cdktn.IResolvable;
 }
@@ -164,7 +164,7 @@ export interface SsmcontactsPlanStageTargetContactTargetInfo {
 export function ssmcontactsPlanStageTargetContactTargetInfoToTerraform(struct?: SsmcontactsPlanStageTargetContactTargetInfoOutputReference | SsmcontactsPlanStageTargetContactTargetInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     contact_id: cdktn.stringToTerraform(struct!.contactId),
@@ -176,7 +176,7 @@ export function ssmcontactsPlanStageTargetContactTargetInfoToTerraform(struct?: 
 export function ssmcontactsPlanStageTargetContactTargetInfoToHclTerraform(struct?: SsmcontactsPlanStageTargetContactTargetInfoOutputReference | SsmcontactsPlanStageTargetContactTargetInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     contact_id: {
@@ -268,13 +268,13 @@ export interface SsmcontactsPlanStageTarget {
   /**
   * channel_target_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#channel_target_info SsmcontactsPlan#channel_target_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#channel_target_info SsmcontactsPlan#channel_target_info}
   */
   readonly channelTargetInfo?: SsmcontactsPlanStageTargetChannelTargetInfo;
   /**
   * contact_target_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#contact_target_info SsmcontactsPlan#contact_target_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#contact_target_info SsmcontactsPlan#contact_target_info}
   */
   readonly contactTargetInfo?: SsmcontactsPlanStageTargetContactTargetInfo;
 }
@@ -282,7 +282,7 @@ export interface SsmcontactsPlanStageTarget {
 export function ssmcontactsPlanStageTargetToTerraform(struct?: SsmcontactsPlanStageTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     channel_target_info: ssmcontactsPlanStageTargetChannelTargetInfoToTerraform(struct!.channelTargetInfo),
@@ -294,7 +294,7 @@ export function ssmcontactsPlanStageTargetToTerraform(struct?: SsmcontactsPlanSt
 export function ssmcontactsPlanStageTargetToHclTerraform(struct?: SsmcontactsPlanStageTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     channel_target_info: {
@@ -419,13 +419,13 @@ export class SsmcontactsPlanStageTargetList extends cdktn.ComplexList {
 }
 export interface SsmcontactsPlanStage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#duration_in_minutes SsmcontactsPlan#duration_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#duration_in_minutes SsmcontactsPlan#duration_in_minutes}
   */
   readonly durationInMinutes: number;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#target SsmcontactsPlan#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#target SsmcontactsPlan#target}
   */
   readonly target?: SsmcontactsPlanStageTarget[] | cdktn.IResolvable;
 }
@@ -433,7 +433,7 @@ export interface SsmcontactsPlanStage {
 export function ssmcontactsPlanStageToTerraform(struct?: SsmcontactsPlanStage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     duration_in_minutes: cdktn.numberToTerraform(struct!.durationInMinutes),
@@ -445,7 +445,7 @@ export function ssmcontactsPlanStageToTerraform(struct?: SsmcontactsPlanStage | 
 export function ssmcontactsPlanStageToHclTerraform(struct?: SsmcontactsPlanStage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     duration_in_minutes: {
@@ -567,7 +567,7 @@ export class SsmcontactsPlanStageList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan aws_ssmcontacts_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan aws_ssmcontacts_plan}
 */
 export class SsmcontactsPlan extends cdktn.TerraformResource {
 
@@ -583,7 +583,7 @@ export class SsmcontactsPlan extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SsmcontactsPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmcontactsPlan to import
-  * @param importFromId The id of the existing SsmcontactsPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsmcontactsPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmcontactsPlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -595,7 +595,7 @@ export class SsmcontactsPlan extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ssmcontacts_plan aws_ssmcontacts_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssmcontacts_plan aws_ssmcontacts_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -606,7 +606,7 @@ export class SsmcontactsPlan extends cdktn.TerraformResource {
       terraformResourceType: 'aws_ssmcontacts_plan',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

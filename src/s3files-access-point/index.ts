@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface S3FilesAccessPointConfig extends cdktn.TerraformMetaArguments {
   /**
   * File system ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#file_system_id S3FilesAccessPoint#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#file_system_id S3FilesAccessPoint#file_system_id}
   */
   readonly fileSystemId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#region S3FilesAccessPoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#region S3FilesAccessPoint#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#tags S3FilesAccessPoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#tags S3FilesAccessPoint#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * posix_user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#posix_user S3FilesAccessPoint#posix_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#posix_user S3FilesAccessPoint#posix_user}
   */
   readonly posixUser?: S3FilesAccessPointPosixUser[] | cdktn.IResolvable;
   /**
   * root_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#root_directory S3FilesAccessPoint#root_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#root_directory S3FilesAccessPoint#root_directory}
   */
   readonly rootDirectory?: S3FilesAccessPointRootDirectory[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#timeouts S3FilesAccessPoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#timeouts S3FilesAccessPoint#timeouts}
   */
   readonly timeouts?: S3FilesAccessPointTimeouts;
 }
@@ -51,19 +51,19 @@ export interface S3FilesAccessPointPosixUser {
   /**
   * POSIX group ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#gid S3FilesAccessPoint#gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#gid S3FilesAccessPoint#gid}
   */
   readonly gid: number;
   /**
   * Secondary POSIX group IDs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#secondary_gids S3FilesAccessPoint#secondary_gids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#secondary_gids S3FilesAccessPoint#secondary_gids}
   */
   readonly secondaryGids?: number[];
   /**
   * POSIX user ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#uid S3FilesAccessPoint#uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#uid S3FilesAccessPoint#uid}
   */
   readonly uid: number;
 }
@@ -71,7 +71,7 @@ export interface S3FilesAccessPointPosixUser {
 export function s3FilesAccessPointPosixUserToTerraform(struct?: S3FilesAccessPointPosixUser | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     gid: cdktn.numberToTerraform(struct!.gid),
@@ -84,7 +84,7 @@ export function s3FilesAccessPointPosixUserToTerraform(struct?: S3FilesAccessPoi
 export function s3FilesAccessPointPosixUserToHclTerraform(struct?: S3FilesAccessPointPosixUser | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     gid: {
@@ -233,19 +233,19 @@ export interface S3FilesAccessPointRootDirectoryCreationPermissions {
   /**
   * Owner group ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#owner_gid S3FilesAccessPoint#owner_gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#owner_gid S3FilesAccessPoint#owner_gid}
   */
   readonly ownerGid: number;
   /**
   * Owner user ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#owner_uid S3FilesAccessPoint#owner_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#owner_uid S3FilesAccessPoint#owner_uid}
   */
   readonly ownerUid: number;
   /**
   * POSIX permissions
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#permissions S3FilesAccessPoint#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#permissions S3FilesAccessPoint#permissions}
   */
   readonly permissions: string;
 }
@@ -253,7 +253,7 @@ export interface S3FilesAccessPointRootDirectoryCreationPermissions {
 export function s3FilesAccessPointRootDirectoryCreationPermissionsToTerraform(struct?: S3FilesAccessPointRootDirectoryCreationPermissions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     owner_gid: cdktn.numberToTerraform(struct!.ownerGid),
@@ -266,7 +266,7 @@ export function s3FilesAccessPointRootDirectoryCreationPermissionsToTerraform(st
 export function s3FilesAccessPointRootDirectoryCreationPermissionsToHclTerraform(struct?: S3FilesAccessPointRootDirectoryCreationPermissions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     owner_gid: {
@@ -412,13 +412,13 @@ export interface S3FilesAccessPointRootDirectory {
   /**
   * Root directory path
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#path S3FilesAccessPoint#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#path S3FilesAccessPoint#path}
   */
   readonly path?: string;
   /**
   * creation_permissions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#creation_permissions S3FilesAccessPoint#creation_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#creation_permissions S3FilesAccessPoint#creation_permissions}
   */
   readonly creationPermissions?: S3FilesAccessPointRootDirectoryCreationPermissions[] | cdktn.IResolvable;
 }
@@ -426,7 +426,7 @@ export interface S3FilesAccessPointRootDirectory {
 export function s3FilesAccessPointRootDirectoryToTerraform(struct?: S3FilesAccessPointRootDirectory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -438,7 +438,7 @@ export function s3FilesAccessPointRootDirectoryToTerraform(struct?: S3FilesAcces
 export function s3FilesAccessPointRootDirectoryToHclTerraform(struct?: S3FilesAccessPointRootDirectory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -565,13 +565,13 @@ export interface S3FilesAccessPointTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#create S3FilesAccessPoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#create S3FilesAccessPoint#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#delete S3FilesAccessPoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#delete S3FilesAccessPoint#delete}
   */
   readonly delete?: string;
 }
@@ -579,7 +579,7 @@ export interface S3FilesAccessPointTimeouts {
 export function s3FilesAccessPointTimeoutsToTerraform(struct?: S3FilesAccessPointTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -591,7 +591,7 @@ export function s3FilesAccessPointTimeoutsToTerraform(struct?: S3FilesAccessPoin
 export function s3FilesAccessPointTimeoutsToHclTerraform(struct?: S3FilesAccessPointTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -694,7 +694,7 @@ export class S3FilesAccessPointTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point aws_s3files_access_point}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point aws_s3files_access_point}
 */
 export class S3FilesAccessPoint extends cdktn.TerraformResource {
 
@@ -710,7 +710,7 @@ export class S3FilesAccessPoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a S3FilesAccessPoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3FilesAccessPoint to import
-  * @param importFromId The id of the existing S3FilesAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3FilesAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3FilesAccessPoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -722,7 +722,7 @@ export class S3FilesAccessPoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3files_access_point aws_s3files_access_point} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/s3files_access_point aws_s3files_access_point} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -733,7 +733,7 @@ export class S3FilesAccessPoint extends cdktn.TerraformResource {
       terraformResourceType: 'aws_s3files_access_point',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

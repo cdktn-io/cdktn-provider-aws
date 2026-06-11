@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,86 +13,86 @@ import * as cdktn from 'cdktn';
 
 export interface QuicksightDashboardConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#aws_account_id QuicksightDashboard#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#aws_account_id QuicksightDashboard#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#dashboard_id QuicksightDashboard#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#dashboard_id QuicksightDashboard#dashboard_id}
   */
   readonly dashboardId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#id QuicksightDashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#id QuicksightDashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#region QuicksightDashboard#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#region QuicksightDashboard#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#tags QuicksightDashboard#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#tags QuicksightDashboard#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#tags_all QuicksightDashboard#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#tags_all QuicksightDashboard#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#theme_arn QuicksightDashboard#theme_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#theme_arn QuicksightDashboard#theme_arn}
   */
   readonly themeArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#version_description QuicksightDashboard#version_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#version_description QuicksightDashboard#version_description}
   */
   readonly versionDescription: string;
   /**
   * dashboard_publish_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#dashboard_publish_options QuicksightDashboard#dashboard_publish_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#dashboard_publish_options QuicksightDashboard#dashboard_publish_options}
   */
   readonly dashboardPublishOptions?: QuicksightDashboardDashboardPublishOptions;
   /**
   * definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#definition QuicksightDashboard#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#definition QuicksightDashboard#definition}
   */
   readonly definition?: any;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#parameters QuicksightDashboard#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#parameters QuicksightDashboard#parameters}
   */
   readonly parameters?: QuicksightDashboardParameters;
   /**
   * permissions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#permissions QuicksightDashboard#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#permissions QuicksightDashboard#permissions}
   */
   readonly permissions?: QuicksightDashboardPermissions[] | cdktn.IResolvable;
   /**
   * source_entity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#source_entity QuicksightDashboard#source_entity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#source_entity QuicksightDashboard#source_entity}
   */
   readonly sourceEntity?: QuicksightDashboardSourceEntity;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#timeouts QuicksightDashboard#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#timeouts QuicksightDashboard#timeouts}
   */
   readonly timeouts?: QuicksightDashboardTimeouts;
 }
 export interface QuicksightDashboardDashboardPublishOptionsAdHocFilteringOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
   */
   readonly availabilityStatus?: string;
 }
@@ -100,7 +100,7 @@ export interface QuicksightDashboardDashboardPublishOptionsAdHocFilteringOption 
 export function quicksightDashboardDashboardPublishOptionsAdHocFilteringOptionToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsAdHocFilteringOptionOutputReference | QuicksightDashboardDashboardPublishOptionsAdHocFilteringOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability_status: cdktn.stringToTerraform(struct!.availabilityStatus),
@@ -111,7 +111,7 @@ export function quicksightDashboardDashboardPublishOptionsAdHocFilteringOptionTo
 export function quicksightDashboardDashboardPublishOptionsAdHocFilteringOptionToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsAdHocFilteringOptionOutputReference | QuicksightDashboardDashboardPublishOptionsAdHocFilteringOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability_status: {
@@ -176,7 +176,7 @@ export class QuicksightDashboardDashboardPublishOptionsAdHocFilteringOptionOutpu
 }
 export interface QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
   */
   readonly availabilityStatus?: string;
 }
@@ -184,7 +184,7 @@ export interface QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownO
 export function quicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOptionToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOptionOutputReference | QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability_status: cdktn.stringToTerraform(struct!.availabilityStatus),
@@ -195,7 +195,7 @@ export function quicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOp
 export function quicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOptionToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOptionOutputReference | QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability_status: {
@@ -260,7 +260,7 @@ export class QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOptio
 }
 export interface QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
   */
   readonly availabilityStatus?: string;
 }
@@ -268,7 +268,7 @@ export interface QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOpt
 export function quicksightDashboardDashboardPublishOptionsDataPointMenuLabelOptionToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOptionOutputReference | QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability_status: cdktn.stringToTerraform(struct!.availabilityStatus),
@@ -279,7 +279,7 @@ export function quicksightDashboardDashboardPublishOptionsDataPointMenuLabelOpti
 export function quicksightDashboardDashboardPublishOptionsDataPointMenuLabelOptionToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOptionOutputReference | QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability_status: {
@@ -344,7 +344,7 @@ export class QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOptionO
 }
 export interface QuicksightDashboardDashboardPublishOptionsDataPointTooltipOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
   */
   readonly availabilityStatus?: string;
 }
@@ -352,7 +352,7 @@ export interface QuicksightDashboardDashboardPublishOptionsDataPointTooltipOptio
 export function quicksightDashboardDashboardPublishOptionsDataPointTooltipOptionToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsDataPointTooltipOptionOutputReference | QuicksightDashboardDashboardPublishOptionsDataPointTooltipOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability_status: cdktn.stringToTerraform(struct!.availabilityStatus),
@@ -363,7 +363,7 @@ export function quicksightDashboardDashboardPublishOptionsDataPointTooltipOption
 export function quicksightDashboardDashboardPublishOptionsDataPointTooltipOptionToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsDataPointTooltipOptionOutputReference | QuicksightDashboardDashboardPublishOptionsDataPointTooltipOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability_status: {
@@ -428,7 +428,7 @@ export class QuicksightDashboardDashboardPublishOptionsDataPointTooltipOptionOut
 }
 export interface QuicksightDashboardDashboardPublishOptionsExportToCsvOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
   */
   readonly availabilityStatus?: string;
 }
@@ -436,7 +436,7 @@ export interface QuicksightDashboardDashboardPublishOptionsExportToCsvOption {
 export function quicksightDashboardDashboardPublishOptionsExportToCsvOptionToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsExportToCsvOptionOutputReference | QuicksightDashboardDashboardPublishOptionsExportToCsvOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability_status: cdktn.stringToTerraform(struct!.availabilityStatus),
@@ -447,7 +447,7 @@ export function quicksightDashboardDashboardPublishOptionsExportToCsvOptionToTer
 export function quicksightDashboardDashboardPublishOptionsExportToCsvOptionToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsExportToCsvOptionOutputReference | QuicksightDashboardDashboardPublishOptionsExportToCsvOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability_status: {
@@ -512,7 +512,7 @@ export class QuicksightDashboardDashboardPublishOptionsExportToCsvOptionOutputRe
 }
 export interface QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
   */
   readonly availabilityStatus?: string;
 }
@@ -520,7 +520,7 @@ export interface QuicksightDashboardDashboardPublishOptionsExportWithHiddenField
 export function quicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionOutputReference | QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability_status: cdktn.stringToTerraform(struct!.availabilityStatus),
@@ -531,7 +531,7 @@ export function quicksightDashboardDashboardPublishOptionsExportWithHiddenFields
 export function quicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionOutputReference | QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability_status: {
@@ -596,7 +596,7 @@ export class QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOpt
 }
 export interface QuicksightDashboardDashboardPublishOptionsSheetControlsOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#visibility_state QuicksightDashboard#visibility_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#visibility_state QuicksightDashboard#visibility_state}
   */
   readonly visibilityState?: string;
 }
@@ -604,7 +604,7 @@ export interface QuicksightDashboardDashboardPublishOptionsSheetControlsOption {
 export function quicksightDashboardDashboardPublishOptionsSheetControlsOptionToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsSheetControlsOptionOutputReference | QuicksightDashboardDashboardPublishOptionsSheetControlsOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     visibility_state: cdktn.stringToTerraform(struct!.visibilityState),
@@ -615,7 +615,7 @@ export function quicksightDashboardDashboardPublishOptionsSheetControlsOptionToT
 export function quicksightDashboardDashboardPublishOptionsSheetControlsOptionToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsSheetControlsOptionOutputReference | QuicksightDashboardDashboardPublishOptionsSheetControlsOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     visibility_state: {
@@ -680,7 +680,7 @@ export class QuicksightDashboardDashboardPublishOptionsSheetControlsOptionOutput
 }
 export interface QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
   */
   readonly availabilityStatus?: string;
 }
@@ -688,7 +688,7 @@ export interface QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMax
 export function quicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOptionToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOptionOutputReference | QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability_status: cdktn.stringToTerraform(struct!.availabilityStatus),
@@ -699,7 +699,7 @@ export function quicksightDashboardDashboardPublishOptionsSheetLayoutElementMaxi
 export function quicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOptionToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOptionOutputReference | QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability_status: {
@@ -764,7 +764,7 @@ export class QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximiz
 }
 export interface QuicksightDashboardDashboardPublishOptionsVisualAxisSortOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
   */
   readonly availabilityStatus?: string;
 }
@@ -772,7 +772,7 @@ export interface QuicksightDashboardDashboardPublishOptionsVisualAxisSortOption 
 export function quicksightDashboardDashboardPublishOptionsVisualAxisSortOptionToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsVisualAxisSortOptionOutputReference | QuicksightDashboardDashboardPublishOptionsVisualAxisSortOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability_status: cdktn.stringToTerraform(struct!.availabilityStatus),
@@ -783,7 +783,7 @@ export function quicksightDashboardDashboardPublishOptionsVisualAxisSortOptionTo
 export function quicksightDashboardDashboardPublishOptionsVisualAxisSortOptionToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsVisualAxisSortOptionOutputReference | QuicksightDashboardDashboardPublishOptionsVisualAxisSortOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability_status: {
@@ -848,7 +848,7 @@ export class QuicksightDashboardDashboardPublishOptionsVisualAxisSortOptionOutpu
 }
 export interface QuicksightDashboardDashboardPublishOptionsVisualMenuOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}
   */
   readonly availabilityStatus?: string;
 }
@@ -856,7 +856,7 @@ export interface QuicksightDashboardDashboardPublishOptionsVisualMenuOption {
 export function quicksightDashboardDashboardPublishOptionsVisualMenuOptionToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsVisualMenuOptionOutputReference | QuicksightDashboardDashboardPublishOptionsVisualMenuOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability_status: cdktn.stringToTerraform(struct!.availabilityStatus),
@@ -867,7 +867,7 @@ export function quicksightDashboardDashboardPublishOptionsVisualMenuOptionToTerr
 export function quicksightDashboardDashboardPublishOptionsVisualMenuOptionToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsVisualMenuOptionOutputReference | QuicksightDashboardDashboardPublishOptionsVisualMenuOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability_status: {
@@ -934,61 +934,61 @@ export interface QuicksightDashboardDashboardPublishOptions {
   /**
   * ad_hoc_filtering_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#ad_hoc_filtering_option QuicksightDashboard#ad_hoc_filtering_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#ad_hoc_filtering_option QuicksightDashboard#ad_hoc_filtering_option}
   */
   readonly adHocFilteringOption?: QuicksightDashboardDashboardPublishOptionsAdHocFilteringOption;
   /**
   * data_point_drill_up_down_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#data_point_drill_up_down_option QuicksightDashboard#data_point_drill_up_down_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#data_point_drill_up_down_option QuicksightDashboard#data_point_drill_up_down_option}
   */
   readonly dataPointDrillUpDownOption?: QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOption;
   /**
   * data_point_menu_label_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#data_point_menu_label_option QuicksightDashboard#data_point_menu_label_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#data_point_menu_label_option QuicksightDashboard#data_point_menu_label_option}
   */
   readonly dataPointMenuLabelOption?: QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOption;
   /**
   * data_point_tooltip_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#data_point_tooltip_option QuicksightDashboard#data_point_tooltip_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#data_point_tooltip_option QuicksightDashboard#data_point_tooltip_option}
   */
   readonly dataPointTooltipOption?: QuicksightDashboardDashboardPublishOptionsDataPointTooltipOption;
   /**
   * export_to_csv_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#export_to_csv_option QuicksightDashboard#export_to_csv_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#export_to_csv_option QuicksightDashboard#export_to_csv_option}
   */
   readonly exportToCsvOption?: QuicksightDashboardDashboardPublishOptionsExportToCsvOption;
   /**
   * export_with_hidden_fields_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#export_with_hidden_fields_option QuicksightDashboard#export_with_hidden_fields_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#export_with_hidden_fields_option QuicksightDashboard#export_with_hidden_fields_option}
   */
   readonly exportWithHiddenFieldsOption?: QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOption;
   /**
   * sheet_controls_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#sheet_controls_option QuicksightDashboard#sheet_controls_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#sheet_controls_option QuicksightDashboard#sheet_controls_option}
   */
   readonly sheetControlsOption?: QuicksightDashboardDashboardPublishOptionsSheetControlsOption;
   /**
   * sheet_layout_element_maximization_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#sheet_layout_element_maximization_option QuicksightDashboard#sheet_layout_element_maximization_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#sheet_layout_element_maximization_option QuicksightDashboard#sheet_layout_element_maximization_option}
   */
   readonly sheetLayoutElementMaximizationOption?: QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOption;
   /**
   * visual_axis_sort_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#visual_axis_sort_option QuicksightDashboard#visual_axis_sort_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#visual_axis_sort_option QuicksightDashboard#visual_axis_sort_option}
   */
   readonly visualAxisSortOption?: QuicksightDashboardDashboardPublishOptionsVisualAxisSortOption;
   /**
   * visual_menu_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#visual_menu_option QuicksightDashboard#visual_menu_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#visual_menu_option QuicksightDashboard#visual_menu_option}
   */
   readonly visualMenuOption?: QuicksightDashboardDashboardPublishOptionsVisualMenuOption;
 }
@@ -996,7 +996,7 @@ export interface QuicksightDashboardDashboardPublishOptions {
 export function quicksightDashboardDashboardPublishOptionsToTerraform(struct?: QuicksightDashboardDashboardPublishOptionsOutputReference | QuicksightDashboardDashboardPublishOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ad_hoc_filtering_option: quicksightDashboardDashboardPublishOptionsAdHocFilteringOptionToTerraform(struct!.adHocFilteringOption),
@@ -1016,7 +1016,7 @@ export function quicksightDashboardDashboardPublishOptionsToTerraform(struct?: Q
 export function quicksightDashboardDashboardPublishOptionsToHclTerraform(struct?: QuicksightDashboardDashboardPublishOptionsOutputReference | QuicksightDashboardDashboardPublishOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ad_hoc_filtering_option: {
@@ -1333,11 +1333,11 @@ export class QuicksightDashboardDashboardPublishOptionsOutputReference extends c
 }
 export interface QuicksightDashboardParametersDateTimeParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}
   */
   readonly values: string[];
 }
@@ -1345,7 +1345,7 @@ export interface QuicksightDashboardParametersDateTimeParameters {
 export function quicksightDashboardParametersDateTimeParametersToTerraform(struct?: QuicksightDashboardParametersDateTimeParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1357,7 +1357,7 @@ export function quicksightDashboardParametersDateTimeParametersToTerraform(struc
 export function quicksightDashboardParametersDateTimeParametersToHclTerraform(struct?: QuicksightDashboardParametersDateTimeParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1476,11 +1476,11 @@ export class QuicksightDashboardParametersDateTimeParametersList extends cdktn.C
 }
 export interface QuicksightDashboardParametersDecimalParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}
   */
   readonly values: number[];
 }
@@ -1488,7 +1488,7 @@ export interface QuicksightDashboardParametersDecimalParameters {
 export function quicksightDashboardParametersDecimalParametersToTerraform(struct?: QuicksightDashboardParametersDecimalParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1500,7 +1500,7 @@ export function quicksightDashboardParametersDecimalParametersToTerraform(struct
 export function quicksightDashboardParametersDecimalParametersToHclTerraform(struct?: QuicksightDashboardParametersDecimalParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1619,11 +1619,11 @@ export class QuicksightDashboardParametersDecimalParametersList extends cdktn.Co
 }
 export interface QuicksightDashboardParametersIntegerParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}
   */
   readonly values: number[];
 }
@@ -1631,7 +1631,7 @@ export interface QuicksightDashboardParametersIntegerParameters {
 export function quicksightDashboardParametersIntegerParametersToTerraform(struct?: QuicksightDashboardParametersIntegerParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1643,7 +1643,7 @@ export function quicksightDashboardParametersIntegerParametersToTerraform(struct
 export function quicksightDashboardParametersIntegerParametersToHclTerraform(struct?: QuicksightDashboardParametersIntegerParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1762,11 +1762,11 @@ export class QuicksightDashboardParametersIntegerParametersList extends cdktn.Co
 }
 export interface QuicksightDashboardParametersStringParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}
   */
   readonly values: string[];
 }
@@ -1774,7 +1774,7 @@ export interface QuicksightDashboardParametersStringParameters {
 export function quicksightDashboardParametersStringParametersToTerraform(struct?: QuicksightDashboardParametersStringParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1786,7 +1786,7 @@ export function quicksightDashboardParametersStringParametersToTerraform(struct?
 export function quicksightDashboardParametersStringParametersToHclTerraform(struct?: QuicksightDashboardParametersStringParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1907,25 +1907,25 @@ export interface QuicksightDashboardParameters {
   /**
   * date_time_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#date_time_parameters QuicksightDashboard#date_time_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#date_time_parameters QuicksightDashboard#date_time_parameters}
   */
   readonly dateTimeParameters?: QuicksightDashboardParametersDateTimeParameters[] | cdktn.IResolvable;
   /**
   * decimal_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#decimal_parameters QuicksightDashboard#decimal_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#decimal_parameters QuicksightDashboard#decimal_parameters}
   */
   readonly decimalParameters?: QuicksightDashboardParametersDecimalParameters[] | cdktn.IResolvable;
   /**
   * integer_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#integer_parameters QuicksightDashboard#integer_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#integer_parameters QuicksightDashboard#integer_parameters}
   */
   readonly integerParameters?: QuicksightDashboardParametersIntegerParameters[] | cdktn.IResolvable;
   /**
   * string_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#string_parameters QuicksightDashboard#string_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#string_parameters QuicksightDashboard#string_parameters}
   */
   readonly stringParameters?: QuicksightDashboardParametersStringParameters[] | cdktn.IResolvable;
 }
@@ -1933,7 +1933,7 @@ export interface QuicksightDashboardParameters {
 export function quicksightDashboardParametersToTerraform(struct?: QuicksightDashboardParametersOutputReference | QuicksightDashboardParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     date_time_parameters: cdktn.listMapper(quicksightDashboardParametersDateTimeParametersToTerraform, true)(struct!.dateTimeParameters),
@@ -1947,7 +1947,7 @@ export function quicksightDashboardParametersToTerraform(struct?: QuicksightDash
 export function quicksightDashboardParametersToHclTerraform(struct?: QuicksightDashboardParametersOutputReference | QuicksightDashboardParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     date_time_parameters: {
@@ -2096,11 +2096,11 @@ export class QuicksightDashboardParametersOutputReference extends cdktn.ComplexO
 }
 export interface QuicksightDashboardPermissions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#actions QuicksightDashboard#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#actions QuicksightDashboard#actions}
   */
   readonly actions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#principal QuicksightDashboard#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#principal QuicksightDashboard#principal}
   */
   readonly principal: string;
 }
@@ -2108,7 +2108,7 @@ export interface QuicksightDashboardPermissions {
 export function quicksightDashboardPermissionsToTerraform(struct?: QuicksightDashboardPermissions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
@@ -2120,7 +2120,7 @@ export function quicksightDashboardPermissionsToTerraform(struct?: QuicksightDas
 export function quicksightDashboardPermissionsToHclTerraform(struct?: QuicksightDashboardPermissions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     actions: {
@@ -2239,11 +2239,11 @@ export class QuicksightDashboardPermissionsList extends cdktn.ComplexList {
 }
 export interface QuicksightDashboardSourceEntitySourceTemplateDataSetReferences {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#data_set_arn QuicksightDashboard#data_set_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#data_set_arn QuicksightDashboard#data_set_arn}
   */
   readonly dataSetArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#data_set_placeholder QuicksightDashboard#data_set_placeholder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#data_set_placeholder QuicksightDashboard#data_set_placeholder}
   */
   readonly dataSetPlaceholder: string;
 }
@@ -2251,7 +2251,7 @@ export interface QuicksightDashboardSourceEntitySourceTemplateDataSetReferences 
 export function quicksightDashboardSourceEntitySourceTemplateDataSetReferencesToTerraform(struct?: QuicksightDashboardSourceEntitySourceTemplateDataSetReferences | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_set_arn: cdktn.stringToTerraform(struct!.dataSetArn),
@@ -2263,7 +2263,7 @@ export function quicksightDashboardSourceEntitySourceTemplateDataSetReferencesTo
 export function quicksightDashboardSourceEntitySourceTemplateDataSetReferencesToHclTerraform(struct?: QuicksightDashboardSourceEntitySourceTemplateDataSetReferences | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_set_arn: {
@@ -2382,13 +2382,13 @@ export class QuicksightDashboardSourceEntitySourceTemplateDataSetReferencesList 
 }
 export interface QuicksightDashboardSourceEntitySourceTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#arn QuicksightDashboard#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#arn QuicksightDashboard#arn}
   */
   readonly arn: string;
   /**
   * data_set_references block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#data_set_references QuicksightDashboard#data_set_references}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#data_set_references QuicksightDashboard#data_set_references}
   */
   readonly dataSetReferences: QuicksightDashboardSourceEntitySourceTemplateDataSetReferences[] | cdktn.IResolvable;
 }
@@ -2396,7 +2396,7 @@ export interface QuicksightDashboardSourceEntitySourceTemplate {
 export function quicksightDashboardSourceEntitySourceTemplateToTerraform(struct?: QuicksightDashboardSourceEntitySourceTemplateOutputReference | QuicksightDashboardSourceEntitySourceTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
@@ -2408,7 +2408,7 @@ export function quicksightDashboardSourceEntitySourceTemplateToTerraform(struct?
 export function quicksightDashboardSourceEntitySourceTemplateToHclTerraform(struct?: QuicksightDashboardSourceEntitySourceTemplateOutputReference | QuicksightDashboardSourceEntitySourceTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arn: {
@@ -2497,7 +2497,7 @@ export interface QuicksightDashboardSourceEntity {
   /**
   * source_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#source_template QuicksightDashboard#source_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#source_template QuicksightDashboard#source_template}
   */
   readonly sourceTemplate?: QuicksightDashboardSourceEntitySourceTemplate;
 }
@@ -2505,7 +2505,7 @@ export interface QuicksightDashboardSourceEntity {
 export function quicksightDashboardSourceEntityToTerraform(struct?: QuicksightDashboardSourceEntityOutputReference | QuicksightDashboardSourceEntity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source_template: quicksightDashboardSourceEntitySourceTemplateToTerraform(struct!.sourceTemplate),
@@ -2516,7 +2516,7 @@ export function quicksightDashboardSourceEntityToTerraform(struct?: QuicksightDa
 export function quicksightDashboardSourceEntityToHclTerraform(struct?: QuicksightDashboardSourceEntityOutputReference | QuicksightDashboardSourceEntity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source_template: {
@@ -2581,15 +2581,15 @@ export class QuicksightDashboardSourceEntityOutputReference extends cdktn.Comple
 }
 export interface QuicksightDashboardTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#create QuicksightDashboard#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#create QuicksightDashboard#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#delete QuicksightDashboard#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#delete QuicksightDashboard#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#update QuicksightDashboard#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#update QuicksightDashboard#update}
   */
   readonly update?: string;
 }
@@ -2597,7 +2597,7 @@ export interface QuicksightDashboardTimeouts {
 export function quicksightDashboardTimeoutsToTerraform(struct?: QuicksightDashboardTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2610,7 +2610,7 @@ export function quicksightDashboardTimeoutsToTerraform(struct?: QuicksightDashbo
 export function quicksightDashboardTimeoutsToHclTerraform(struct?: QuicksightDashboardTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2741,7 +2741,7 @@ export class QuicksightDashboardTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard aws_quicksight_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard aws_quicksight_dashboard}
 */
 export class QuicksightDashboard extends cdktn.TerraformResource {
 
@@ -2757,7 +2757,7 @@ export class QuicksightDashboard extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a QuicksightDashboard resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightDashboard to import
-  * @param importFromId The id of the existing QuicksightDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QuicksightDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightDashboard to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2769,7 +2769,7 @@ export class QuicksightDashboard extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_dashboard aws_quicksight_dashboard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/quicksight_dashboard aws_quicksight_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2780,7 +2780,7 @@ export class QuicksightDashboard extends cdktn.TerraformResource {
       terraformResourceType: 'aws_quicksight_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

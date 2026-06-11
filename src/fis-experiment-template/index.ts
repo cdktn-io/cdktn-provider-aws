@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface FisExperimentTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#description FisExperimentTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#description FisExperimentTemplate#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#id FisExperimentTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#id FisExperimentTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,71 +26,71 @@ export interface FisExperimentTemplateConfig extends cdktn.TerraformMetaArgument
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#region FisExperimentTemplate#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#region FisExperimentTemplate#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#role_arn FisExperimentTemplate#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#role_arn FisExperimentTemplate#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#tags FisExperimentTemplate#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#tags FisExperimentTemplate#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#tags_all FisExperimentTemplate#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#tags_all FisExperimentTemplate#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#action FisExperimentTemplate#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#action FisExperimentTemplate#action}
   */
   readonly action: FisExperimentTemplateAction[] | cdktn.IResolvable;
   /**
   * experiment_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#experiment_options FisExperimentTemplate#experiment_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#experiment_options FisExperimentTemplate#experiment_options}
   */
   readonly experimentOptions?: FisExperimentTemplateExperimentOptions;
   /**
   * experiment_report_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#experiment_report_configuration FisExperimentTemplate#experiment_report_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#experiment_report_configuration FisExperimentTemplate#experiment_report_configuration}
   */
   readonly experimentReportConfiguration?: FisExperimentTemplateExperimentReportConfiguration;
   /**
   * log_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#log_configuration FisExperimentTemplate#log_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#log_configuration FisExperimentTemplate#log_configuration}
   */
   readonly logConfiguration?: FisExperimentTemplateLogConfiguration;
   /**
   * stop_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#stop_condition FisExperimentTemplate#stop_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#stop_condition FisExperimentTemplate#stop_condition}
   */
   readonly stopCondition: FisExperimentTemplateStopCondition[] | cdktn.IResolvable;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#target FisExperimentTemplate#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#target FisExperimentTemplate#target}
   */
   readonly target?: FisExperimentTemplateTarget[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#timeouts FisExperimentTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#timeouts FisExperimentTemplate#timeouts}
   */
   readonly timeouts?: FisExperimentTemplateTimeouts;
 }
 export interface FisExperimentTemplateActionParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
   */
   readonly value: string;
 }
@@ -98,7 +98,7 @@ export interface FisExperimentTemplateActionParameter {
 export function fisExperimentTemplateActionParameterToTerraform(struct?: FisExperimentTemplateActionParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -110,7 +110,7 @@ export function fisExperimentTemplateActionParameterToTerraform(struct?: FisExpe
 export function fisExperimentTemplateActionParameterToHclTerraform(struct?: FisExperimentTemplateActionParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -229,11 +229,11 @@ export class FisExperimentTemplateActionParameterList extends cdktn.ComplexList 
 }
 export interface FisExperimentTemplateActionTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
   */
   readonly value: string;
 }
@@ -241,7 +241,7 @@ export interface FisExperimentTemplateActionTarget {
 export function fisExperimentTemplateActionTargetToTerraform(struct?: FisExperimentTemplateActionTargetOutputReference | FisExperimentTemplateActionTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -253,7 +253,7 @@ export function fisExperimentTemplateActionTargetToTerraform(struct?: FisExperim
 export function fisExperimentTemplateActionTargetToHclTerraform(struct?: FisExperimentTemplateActionTargetOutputReference | FisExperimentTemplateActionTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -340,31 +340,31 @@ export class FisExperimentTemplateActionTargetOutputReference extends cdktn.Comp
 }
 export interface FisExperimentTemplateAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#action_id FisExperimentTemplate#action_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#action_id FisExperimentTemplate#action_id}
   */
   readonly actionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#description FisExperimentTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#description FisExperimentTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#name FisExperimentTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#name FisExperimentTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#start_after FisExperimentTemplate#start_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#start_after FisExperimentTemplate#start_after}
   */
   readonly startAfter?: string[];
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#parameter FisExperimentTemplate#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#parameter FisExperimentTemplate#parameter}
   */
   readonly parameter?: FisExperimentTemplateActionParameter[] | cdktn.IResolvable;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#target FisExperimentTemplate#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#target FisExperimentTemplate#target}
   */
   readonly target?: FisExperimentTemplateActionTarget;
 }
@@ -372,7 +372,7 @@ export interface FisExperimentTemplateAction {
 export function fisExperimentTemplateActionToTerraform(struct?: FisExperimentTemplateAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action_id: cdktn.stringToTerraform(struct!.actionId),
@@ -388,7 +388,7 @@ export function fisExperimentTemplateActionToTerraform(struct?: FisExperimentTem
 export function fisExperimentTemplateActionToHclTerraform(struct?: FisExperimentTemplateAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action_id: {
@@ -619,11 +619,11 @@ export class FisExperimentTemplateActionList extends cdktn.ComplexList {
 }
 export interface FisExperimentTemplateExperimentOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#account_targeting FisExperimentTemplate#account_targeting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#account_targeting FisExperimentTemplate#account_targeting}
   */
   readonly accountTargeting?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#empty_target_resolution_mode FisExperimentTemplate#empty_target_resolution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#empty_target_resolution_mode FisExperimentTemplate#empty_target_resolution_mode}
   */
   readonly emptyTargetResolutionMode?: string;
 }
@@ -631,7 +631,7 @@ export interface FisExperimentTemplateExperimentOptions {
 export function fisExperimentTemplateExperimentOptionsToTerraform(struct?: FisExperimentTemplateExperimentOptionsOutputReference | FisExperimentTemplateExperimentOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_targeting: cdktn.stringToTerraform(struct!.accountTargeting),
@@ -643,7 +643,7 @@ export function fisExperimentTemplateExperimentOptionsToTerraform(struct?: FisEx
 export function fisExperimentTemplateExperimentOptionsToHclTerraform(struct?: FisExperimentTemplateExperimentOptionsOutputReference | FisExperimentTemplateExperimentOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_targeting: {
@@ -736,7 +736,7 @@ export class FisExperimentTemplateExperimentOptionsOutputReference extends cdktn
 }
 export interface FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#dashboard_arn FisExperimentTemplate#dashboard_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#dashboard_arn FisExperimentTemplate#dashboard_arn}
   */
   readonly dashboardArn?: string;
 }
@@ -744,7 +744,7 @@ export interface FisExperimentTemplateExperimentReportConfigurationDataSourcesCl
 export function fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dashboard_arn: cdktn.stringToTerraform(struct!.dashboardArn),
@@ -755,7 +755,7 @@ export function fisExperimentTemplateExperimentReportConfigurationDataSourcesClo
 export function fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dashboard_arn: {
@@ -854,7 +854,7 @@ export interface FisExperimentTemplateExperimentReportConfigurationDataSources {
   /**
   * cloudwatch_dashboard block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#cloudwatch_dashboard FisExperimentTemplate#cloudwatch_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#cloudwatch_dashboard FisExperimentTemplate#cloudwatch_dashboard}
   */
   readonly cloudwatchDashboard?: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard[] | cdktn.IResolvable;
 }
@@ -862,7 +862,7 @@ export interface FisExperimentTemplateExperimentReportConfigurationDataSources {
 export function fisExperimentTemplateExperimentReportConfigurationDataSourcesToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationDataSourcesOutputReference | FisExperimentTemplateExperimentReportConfigurationDataSources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudwatch_dashboard: cdktn.listMapper(fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToTerraform, true)(struct!.cloudwatchDashboard),
@@ -873,7 +873,7 @@ export function fisExperimentTemplateExperimentReportConfigurationDataSourcesToT
 export function fisExperimentTemplateExperimentReportConfigurationDataSourcesToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationDataSourcesOutputReference | FisExperimentTemplateExperimentReportConfigurationDataSources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudwatch_dashboard: {
@@ -938,11 +938,11 @@ export class FisExperimentTemplateExperimentReportConfigurationDataSourcesOutput
 }
 export interface FisExperimentTemplateExperimentReportConfigurationOutputsS3Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#bucket_name FisExperimentTemplate#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#bucket_name FisExperimentTemplate#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#prefix FisExperimentTemplate#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#prefix FisExperimentTemplate#prefix}
   */
   readonly prefix?: string;
 }
@@ -950,7 +950,7 @@ export interface FisExperimentTemplateExperimentReportConfigurationOutputsS3Conf
 export function fisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationOutputReference | FisExperimentTemplateExperimentReportConfigurationOutputsS3Configuration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket_name: cdktn.stringToTerraform(struct!.bucketName),
@@ -962,7 +962,7 @@ export function fisExperimentTemplateExperimentReportConfigurationOutputsS3Confi
 export function fisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationOutputReference | FisExperimentTemplateExperimentReportConfigurationOutputsS3Configuration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket_name: {
@@ -1054,7 +1054,7 @@ export interface FisExperimentTemplateExperimentReportConfigurationOutputs {
   /**
   * s3_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#s3_configuration FisExperimentTemplate#s3_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#s3_configuration FisExperimentTemplate#s3_configuration}
   */
   readonly s3Configuration?: FisExperimentTemplateExperimentReportConfigurationOutputsS3Configuration;
 }
@@ -1062,7 +1062,7 @@ export interface FisExperimentTemplateExperimentReportConfigurationOutputs {
 export function fisExperimentTemplateExperimentReportConfigurationOutputsToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputsOutputReference | FisExperimentTemplateExperimentReportConfigurationOutputs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     s3_configuration: fisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationToTerraform(struct!.s3Configuration),
@@ -1073,7 +1073,7 @@ export function fisExperimentTemplateExperimentReportConfigurationOutputsToTerra
 export function fisExperimentTemplateExperimentReportConfigurationOutputsToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputsOutputReference | FisExperimentTemplateExperimentReportConfigurationOutputs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     s3_configuration: {
@@ -1138,23 +1138,23 @@ export class FisExperimentTemplateExperimentReportConfigurationOutputsOutputRefe
 }
 export interface FisExperimentTemplateExperimentReportConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#post_experiment_duration FisExperimentTemplate#post_experiment_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#post_experiment_duration FisExperimentTemplate#post_experiment_duration}
   */
   readonly postExperimentDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#pre_experiment_duration FisExperimentTemplate#pre_experiment_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#pre_experiment_duration FisExperimentTemplate#pre_experiment_duration}
   */
   readonly preExperimentDuration?: string;
   /**
   * data_sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#data_sources FisExperimentTemplate#data_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#data_sources FisExperimentTemplate#data_sources}
   */
   readonly dataSources?: FisExperimentTemplateExperimentReportConfigurationDataSources;
   /**
   * outputs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#outputs FisExperimentTemplate#outputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#outputs FisExperimentTemplate#outputs}
   */
   readonly outputs?: FisExperimentTemplateExperimentReportConfigurationOutputs;
 }
@@ -1162,7 +1162,7 @@ export interface FisExperimentTemplateExperimentReportConfiguration {
 export function fisExperimentTemplateExperimentReportConfigurationToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputReference | FisExperimentTemplateExperimentReportConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     post_experiment_duration: cdktn.stringToTerraform(struct!.postExperimentDuration),
@@ -1176,7 +1176,7 @@ export function fisExperimentTemplateExperimentReportConfigurationToTerraform(st
 export function fisExperimentTemplateExperimentReportConfigurationToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputReference | FisExperimentTemplateExperimentReportConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     post_experiment_duration: {
@@ -1325,7 +1325,7 @@ export class FisExperimentTemplateExperimentReportConfigurationOutputReference e
 }
 export interface FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#log_group_arn FisExperimentTemplate#log_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#log_group_arn FisExperimentTemplate#log_group_arn}
   */
   readonly logGroupArn: string;
 }
@@ -1333,7 +1333,7 @@ export interface FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguratio
 export function fisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationToTerraform(struct?: FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference | FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_group_arn: cdktn.stringToTerraform(struct!.logGroupArn),
@@ -1344,7 +1344,7 @@ export function fisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration
 export function fisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationToHclTerraform(struct?: FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference | FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_group_arn: {
@@ -1406,11 +1406,11 @@ export class FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOut
 }
 export interface FisExperimentTemplateLogConfigurationS3Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#bucket_name FisExperimentTemplate#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#bucket_name FisExperimentTemplate#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#prefix FisExperimentTemplate#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#prefix FisExperimentTemplate#prefix}
   */
   readonly prefix?: string;
 }
@@ -1418,7 +1418,7 @@ export interface FisExperimentTemplateLogConfigurationS3Configuration {
 export function fisExperimentTemplateLogConfigurationS3ConfigurationToTerraform(struct?: FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference | FisExperimentTemplateLogConfigurationS3Configuration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket_name: cdktn.stringToTerraform(struct!.bucketName),
@@ -1430,7 +1430,7 @@ export function fisExperimentTemplateLogConfigurationS3ConfigurationToTerraform(
 export function fisExperimentTemplateLogConfigurationS3ConfigurationToHclTerraform(struct?: FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference | FisExperimentTemplateLogConfigurationS3Configuration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket_name: {
@@ -1520,19 +1520,19 @@ export class FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference
 }
 export interface FisExperimentTemplateLogConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#log_schema_version FisExperimentTemplate#log_schema_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#log_schema_version FisExperimentTemplate#log_schema_version}
   */
   readonly logSchemaVersion: number;
   /**
   * cloudwatch_logs_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#cloudwatch_logs_configuration FisExperimentTemplate#cloudwatch_logs_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#cloudwatch_logs_configuration FisExperimentTemplate#cloudwatch_logs_configuration}
   */
   readonly cloudwatchLogsConfiguration?: FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration;
   /**
   * s3_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#s3_configuration FisExperimentTemplate#s3_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#s3_configuration FisExperimentTemplate#s3_configuration}
   */
   readonly s3Configuration?: FisExperimentTemplateLogConfigurationS3Configuration;
 }
@@ -1540,7 +1540,7 @@ export interface FisExperimentTemplateLogConfiguration {
 export function fisExperimentTemplateLogConfigurationToTerraform(struct?: FisExperimentTemplateLogConfigurationOutputReference | FisExperimentTemplateLogConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_schema_version: cdktn.numberToTerraform(struct!.logSchemaVersion),
@@ -1553,7 +1553,7 @@ export function fisExperimentTemplateLogConfigurationToTerraform(struct?: FisExp
 export function fisExperimentTemplateLogConfigurationToHclTerraform(struct?: FisExperimentTemplateLogConfigurationOutputReference | FisExperimentTemplateLogConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_schema_version: {
@@ -1671,11 +1671,11 @@ export class FisExperimentTemplateLogConfigurationOutputReference extends cdktn.
 }
 export interface FisExperimentTemplateStopCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#source FisExperimentTemplate#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#source FisExperimentTemplate#source}
   */
   readonly source: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
   */
   readonly value?: string;
 }
@@ -1683,7 +1683,7 @@ export interface FisExperimentTemplateStopCondition {
 export function fisExperimentTemplateStopConditionToTerraform(struct?: FisExperimentTemplateStopCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source: cdktn.stringToTerraform(struct!.source),
@@ -1695,7 +1695,7 @@ export function fisExperimentTemplateStopConditionToTerraform(struct?: FisExperi
 export function fisExperimentTemplateStopConditionToHclTerraform(struct?: FisExperimentTemplateStopCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source: {
@@ -1817,11 +1817,11 @@ export class FisExperimentTemplateStopConditionList extends cdktn.ComplexList {
 }
 export interface FisExperimentTemplateTargetFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#path FisExperimentTemplate#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#path FisExperimentTemplate#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#values FisExperimentTemplate#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#values FisExperimentTemplate#values}
   */
   readonly values: string[];
 }
@@ -1829,7 +1829,7 @@ export interface FisExperimentTemplateTargetFilter {
 export function fisExperimentTemplateTargetFilterToTerraform(struct?: FisExperimentTemplateTargetFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -1841,7 +1841,7 @@ export function fisExperimentTemplateTargetFilterToTerraform(struct?: FisExperim
 export function fisExperimentTemplateTargetFilterToHclTerraform(struct?: FisExperimentTemplateTargetFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -1960,11 +1960,11 @@ export class FisExperimentTemplateTargetFilterList extends cdktn.ComplexList {
 }
 export interface FisExperimentTemplateTargetResourceTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
   */
   readonly value: string;
 }
@@ -1972,7 +1972,7 @@ export interface FisExperimentTemplateTargetResourceTag {
 export function fisExperimentTemplateTargetResourceTagToTerraform(struct?: FisExperimentTemplateTargetResourceTag | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1984,7 +1984,7 @@ export function fisExperimentTemplateTargetResourceTagToTerraform(struct?: FisEx
 export function fisExperimentTemplateTargetResourceTagToHclTerraform(struct?: FisExperimentTemplateTargetResourceTag | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2103,35 +2103,35 @@ export class FisExperimentTemplateTargetResourceTagList extends cdktn.ComplexLis
 }
 export interface FisExperimentTemplateTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#name FisExperimentTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#name FisExperimentTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#parameters FisExperimentTemplate#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#parameters FisExperimentTemplate#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#resource_arns FisExperimentTemplate#resource_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#resource_arns FisExperimentTemplate#resource_arns}
   */
   readonly resourceArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#resource_type FisExperimentTemplate#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#resource_type FisExperimentTemplate#resource_type}
   */
   readonly resourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#selection_mode FisExperimentTemplate#selection_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#selection_mode FisExperimentTemplate#selection_mode}
   */
   readonly selectionMode: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#filter FisExperimentTemplate#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#filter FisExperimentTemplate#filter}
   */
   readonly filter?: FisExperimentTemplateTargetFilter[] | cdktn.IResolvable;
   /**
   * resource_tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#resource_tag FisExperimentTemplate#resource_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#resource_tag FisExperimentTemplate#resource_tag}
   */
   readonly resourceTag?: FisExperimentTemplateTargetResourceTag[] | cdktn.IResolvable;
 }
@@ -2139,7 +2139,7 @@ export interface FisExperimentTemplateTarget {
 export function fisExperimentTemplateTargetToTerraform(struct?: FisExperimentTemplateTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2156,7 +2156,7 @@ export function fisExperimentTemplateTargetToTerraform(struct?: FisExperimentTem
 export function fisExperimentTemplateTargetToHclTerraform(struct?: FisExperimentTemplateTarget | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2412,15 +2412,15 @@ export class FisExperimentTemplateTargetList extends cdktn.ComplexList {
 }
 export interface FisExperimentTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#create FisExperimentTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#create FisExperimentTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#delete FisExperimentTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#delete FisExperimentTemplate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#update FisExperimentTemplate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#update FisExperimentTemplate#update}
   */
   readonly update?: string;
 }
@@ -2428,7 +2428,7 @@ export interface FisExperimentTemplateTimeouts {
 export function fisExperimentTemplateTimeoutsToTerraform(struct?: FisExperimentTemplateTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2441,7 +2441,7 @@ export function fisExperimentTemplateTimeoutsToTerraform(struct?: FisExperimentT
 export function fisExperimentTemplateTimeoutsToHclTerraform(struct?: FisExperimentTemplateTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2572,7 +2572,7 @@ export class FisExperimentTemplateTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template aws_fis_experiment_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template aws_fis_experiment_template}
 */
 export class FisExperimentTemplate extends cdktn.TerraformResource {
 
@@ -2588,7 +2588,7 @@ export class FisExperimentTemplate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FisExperimentTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FisExperimentTemplate to import
-  * @param importFromId The id of the existing FisExperimentTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FisExperimentTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FisExperimentTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2600,7 +2600,7 @@ export class FisExperimentTemplate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2611,7 +2611,7 @@ export class FisExperimentTemplate extends cdktn.TerraformResource {
       terraformResourceType: 'aws_fis_experiment_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

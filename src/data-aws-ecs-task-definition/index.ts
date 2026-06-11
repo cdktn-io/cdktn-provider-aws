@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ecs_task_definition
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ecs_task_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsEcsTaskDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ecs_task_definition#id DataAwsEcsTaskDefinition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ecs_task_definition#id DataAwsEcsTaskDefinition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,11 +22,11 @@ export interface DataAwsEcsTaskDefinitionConfig extends cdktn.TerraformMetaArgum
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ecs_task_definition#region DataAwsEcsTaskDefinition#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ecs_task_definition#region DataAwsEcsTaskDefinition#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ecs_task_definition#task_definition DataAwsEcsTaskDefinition#task_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ecs_task_definition#task_definition DataAwsEcsTaskDefinition#task_definition}
   */
   readonly taskDefinition: string;
 }
@@ -36,7 +36,7 @@ export interface DataAwsEcsTaskDefinitionEphemeralStorage {
 export function dataAwsEcsTaskDefinitionEphemeralStorageToTerraform(struct?: DataAwsEcsTaskDefinitionEphemeralStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -46,7 +46,7 @@ export function dataAwsEcsTaskDefinitionEphemeralStorageToTerraform(struct?: Dat
 export function dataAwsEcsTaskDefinitionEphemeralStorageToHclTerraform(struct?: DataAwsEcsTaskDefinitionEphemeralStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -111,7 +111,7 @@ export interface DataAwsEcsTaskDefinitionPlacementConstraints {
 export function dataAwsEcsTaskDefinitionPlacementConstraintsToTerraform(struct?: DataAwsEcsTaskDefinitionPlacementConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -121,7 +121,7 @@ export function dataAwsEcsTaskDefinitionPlacementConstraintsToTerraform(struct?:
 export function dataAwsEcsTaskDefinitionPlacementConstraintsToHclTerraform(struct?: DataAwsEcsTaskDefinitionPlacementConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -191,7 +191,7 @@ export interface DataAwsEcsTaskDefinitionProxyConfiguration {
 export function dataAwsEcsTaskDefinitionProxyConfigurationToTerraform(struct?: DataAwsEcsTaskDefinitionProxyConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -201,7 +201,7 @@ export function dataAwsEcsTaskDefinitionProxyConfigurationToTerraform(struct?: D
 export function dataAwsEcsTaskDefinitionProxyConfigurationToHclTerraform(struct?: DataAwsEcsTaskDefinitionProxyConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -277,7 +277,7 @@ export interface DataAwsEcsTaskDefinitionRuntimePlatform {
 export function dataAwsEcsTaskDefinitionRuntimePlatformToTerraform(struct?: DataAwsEcsTaskDefinitionRuntimePlatform): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -287,7 +287,7 @@ export function dataAwsEcsTaskDefinitionRuntimePlatformToTerraform(struct?: Data
 export function dataAwsEcsTaskDefinitionRuntimePlatformToHclTerraform(struct?: DataAwsEcsTaskDefinitionRuntimePlatform): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -357,7 +357,7 @@ export interface DataAwsEcsTaskDefinitionVolumeDockerVolumeConfiguration {
 export function dataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationToTerraform(struct?: DataAwsEcsTaskDefinitionVolumeDockerVolumeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -367,7 +367,7 @@ export function dataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationToTerrafo
 export function dataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationToHclTerraform(struct?: DataAwsEcsTaskDefinitionVolumeDockerVolumeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -454,7 +454,7 @@ export interface DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizati
 export function dataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigToTerraform(struct?: DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -464,7 +464,7 @@ export function dataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizatio
 export function dataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigToHclTerraform(struct?: DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -534,7 +534,7 @@ export interface DataAwsEcsTaskDefinitionVolumeEfsVolumeConfiguration {
 export function dataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationToTerraform(struct?: DataAwsEcsTaskDefinitionVolumeEfsVolumeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -544,7 +544,7 @@ export function dataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationToTerraform(
 export function dataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationToHclTerraform(struct?: DataAwsEcsTaskDefinitionVolumeEfsVolumeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -630,7 +630,7 @@ export interface DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigu
 export function dataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigToTerraform(struct?: DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -640,7 +640,7 @@ export function dataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigur
 export function dataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigToHclTerraform(struct?: DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -710,7 +710,7 @@ export interface DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigu
 export function dataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationToTerraform(struct?: DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -720,7 +720,7 @@ export function dataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigur
 export function dataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationToHclTerraform(struct?: DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -796,7 +796,7 @@ export interface DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration {
 export function dataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationToTerraform(struct?: DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -806,7 +806,7 @@ export function dataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationToTerraf
 export function dataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationToHclTerraform(struct?: DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -886,7 +886,7 @@ export interface DataAwsEcsTaskDefinitionVolume {
 export function dataAwsEcsTaskDefinitionVolumeToTerraform(struct?: DataAwsEcsTaskDefinitionVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -896,7 +896,7 @@ export function dataAwsEcsTaskDefinitionVolumeToTerraform(struct?: DataAwsEcsTas
 export function dataAwsEcsTaskDefinitionVolumeToHclTerraform(struct?: DataAwsEcsTaskDefinitionVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -991,7 +991,7 @@ export class DataAwsEcsTaskDefinitionVolumeList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}
 */
 export class DataAwsEcsTaskDefinition extends cdktn.TerraformDataSource {
 
@@ -1007,7 +1007,7 @@ export class DataAwsEcsTaskDefinition extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsEcsTaskDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEcsTaskDefinition to import
-  * @param importFromId The id of the existing DataAwsEcsTaskDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ecs_task_definition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEcsTaskDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ecs_task_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEcsTaskDefinition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1019,7 +1019,7 @@ export class DataAwsEcsTaskDefinition extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1030,7 +1030,7 @@ export class DataAwsEcsTaskDefinition extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_ecs_task_definition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

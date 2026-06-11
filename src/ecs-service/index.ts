@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,202 +13,202 @@ import * as cdktn from 'cdktn';
 
 export interface EcsServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#availability_zone_rebalancing EcsService#availability_zone_rebalancing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#availability_zone_rebalancing EcsService#availability_zone_rebalancing}
   */
   readonly availabilityZoneRebalancing?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#cluster EcsService#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#cluster EcsService#cluster}
   */
   readonly cluster?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#deployment_maximum_percent EcsService#deployment_maximum_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#deployment_maximum_percent EcsService#deployment_maximum_percent}
   */
   readonly deploymentMaximumPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}
   */
   readonly deploymentMinimumHealthyPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#desired_count EcsService#desired_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#desired_count EcsService#desired_count}
   */
   readonly desiredCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}
   */
   readonly enableEcsManagedTags?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}
   */
   readonly enableExecuteCommand?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#force_delete EcsService#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#force_delete EcsService#force_delete}
   */
   readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}
   */
   readonly forceNewDeployment?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}
   */
   readonly healthCheckGracePeriodSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#iam_role EcsService#iam_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#iam_role EcsService#iam_role}
   */
   readonly iamRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#id EcsService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#id EcsService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#launch_type EcsService#launch_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#launch_type EcsService#launch_type}
   */
   readonly launchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#name EcsService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#name EcsService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#platform_version EcsService#platform_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#platform_version EcsService#platform_version}
   */
   readonly platformVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}
   */
   readonly propagateTags?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#region EcsService#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#region EcsService#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#scheduling_strategy EcsService#scheduling_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#scheduling_strategy EcsService#scheduling_strategy}
   */
   readonly schedulingStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}
   */
   readonly sigintRollback?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#tags EcsService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#tags EcsService#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#tags_all EcsService#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#tags_all EcsService#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#task_definition EcsService#task_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#task_definition EcsService#task_definition}
   */
   readonly taskDefinition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#triggers EcsService#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#triggers EcsService#triggers}
   */
   readonly triggers?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}
   */
   readonly waitForSteadyState?: boolean | cdktn.IResolvable;
   /**
   * alarms block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#alarms EcsService#alarms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#alarms EcsService#alarms}
   */
   readonly alarms?: EcsServiceAlarms;
   /**
   * capacity_provider_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#capacity_provider_strategy EcsService#capacity_provider_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#capacity_provider_strategy EcsService#capacity_provider_strategy}
   */
   readonly capacityProviderStrategy?: EcsServiceCapacityProviderStrategy[] | cdktn.IResolvable;
   /**
   * deployment_circuit_breaker block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#deployment_circuit_breaker EcsService#deployment_circuit_breaker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#deployment_circuit_breaker EcsService#deployment_circuit_breaker}
   */
   readonly deploymentCircuitBreaker?: EcsServiceDeploymentCircuitBreaker;
   /**
   * deployment_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#deployment_configuration EcsService#deployment_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#deployment_configuration EcsService#deployment_configuration}
   */
   readonly deploymentConfiguration?: EcsServiceDeploymentConfiguration;
   /**
   * deployment_controller block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#deployment_controller EcsService#deployment_controller}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#deployment_controller EcsService#deployment_controller}
   */
   readonly deploymentController?: EcsServiceDeploymentController;
   /**
   * load_balancer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#load_balancer EcsService#load_balancer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#load_balancer EcsService#load_balancer}
   */
   readonly loadBalancer?: EcsServiceLoadBalancer[] | cdktn.IResolvable;
   /**
   * network_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#network_configuration EcsService#network_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#network_configuration EcsService#network_configuration}
   */
   readonly networkConfiguration?: EcsServiceNetworkConfiguration;
   /**
   * ordered_placement_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#ordered_placement_strategy EcsService#ordered_placement_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#ordered_placement_strategy EcsService#ordered_placement_strategy}
   */
   readonly orderedPlacementStrategy?: EcsServiceOrderedPlacementStrategy[] | cdktn.IResolvable;
   /**
   * placement_constraints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#placement_constraints EcsService#placement_constraints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#placement_constraints EcsService#placement_constraints}
   */
   readonly placementConstraints?: EcsServicePlacementConstraints[] | cdktn.IResolvable;
   /**
   * service_connect_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#service_connect_configuration EcsService#service_connect_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#service_connect_configuration EcsService#service_connect_configuration}
   */
   readonly serviceConnectConfiguration?: EcsServiceServiceConnectConfiguration;
   /**
   * service_registries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#service_registries EcsService#service_registries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#service_registries EcsService#service_registries}
   */
   readonly serviceRegistries?: EcsServiceServiceRegistries;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#timeouts EcsService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#timeouts EcsService#timeouts}
   */
   readonly timeouts?: EcsServiceTimeouts;
   /**
   * volume_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#volume_configuration EcsService#volume_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#volume_configuration EcsService#volume_configuration}
   */
   readonly volumeConfiguration?: EcsServiceVolumeConfiguration;
   /**
   * vpc_lattice_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#vpc_lattice_configurations EcsService#vpc_lattice_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#vpc_lattice_configurations EcsService#vpc_lattice_configurations}
   */
   readonly vpcLatticeConfigurations?: EcsServiceVpcLatticeConfigurations[] | cdktn.IResolvable;
 }
 export interface EcsServiceAlarms {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#alarm_names EcsService#alarm_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#alarm_names EcsService#alarm_names}
   */
   readonly alarmNames: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#enable EcsService#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#enable EcsService#enable}
   */
   readonly enable: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#rollback EcsService#rollback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#rollback EcsService#rollback}
   */
   readonly rollback: boolean | cdktn.IResolvable;
 }
@@ -216,7 +216,7 @@ export interface EcsServiceAlarms {
 export function ecsServiceAlarmsToTerraform(struct?: EcsServiceAlarmsOutputReference | EcsServiceAlarms): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alarm_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alarmNames),
@@ -229,7 +229,7 @@ export function ecsServiceAlarmsToTerraform(struct?: EcsServiceAlarmsOutputRefer
 export function ecsServiceAlarmsToHclTerraform(struct?: EcsServiceAlarmsOutputReference | EcsServiceAlarms): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alarm_names: {
@@ -341,15 +341,15 @@ export class EcsServiceAlarmsOutputReference extends cdktn.ComplexObject {
 }
 export interface EcsServiceCapacityProviderStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#base EcsService#base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#base EcsService#base}
   */
   readonly base?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#capacity_provider EcsService#capacity_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#capacity_provider EcsService#capacity_provider}
   */
   readonly capacityProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#weight EcsService#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#weight EcsService#weight}
   */
   readonly weight?: number;
 }
@@ -357,7 +357,7 @@ export interface EcsServiceCapacityProviderStrategy {
 export function ecsServiceCapacityProviderStrategyToTerraform(struct?: EcsServiceCapacityProviderStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     base: cdktn.numberToTerraform(struct!.base),
@@ -370,7 +370,7 @@ export function ecsServiceCapacityProviderStrategyToTerraform(struct?: EcsServic
 export function ecsServiceCapacityProviderStrategyToHclTerraform(struct?: EcsServiceCapacityProviderStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     base: {
@@ -520,11 +520,11 @@ export class EcsServiceCapacityProviderStrategyList extends cdktn.ComplexList {
 }
 export interface EcsServiceDeploymentCircuitBreaker {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#enable EcsService#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#enable EcsService#enable}
   */
   readonly enable: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#rollback EcsService#rollback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#rollback EcsService#rollback}
   */
   readonly rollback: boolean | cdktn.IResolvable;
 }
@@ -532,7 +532,7 @@ export interface EcsServiceDeploymentCircuitBreaker {
 export function ecsServiceDeploymentCircuitBreakerToTerraform(struct?: EcsServiceDeploymentCircuitBreakerOutputReference | EcsServiceDeploymentCircuitBreaker): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable: cdktn.booleanToTerraform(struct!.enable),
@@ -544,7 +544,7 @@ export function ecsServiceDeploymentCircuitBreakerToTerraform(struct?: EcsServic
 export function ecsServiceDeploymentCircuitBreakerToHclTerraform(struct?: EcsServiceDeploymentCircuitBreakerOutputReference | EcsServiceDeploymentCircuitBreaker): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable: {
@@ -631,11 +631,11 @@ export class EcsServiceDeploymentCircuitBreakerOutputReference extends cdktn.Com
 }
 export interface EcsServiceDeploymentConfigurationCanaryConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#canary_bake_time_in_minutes EcsService#canary_bake_time_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#canary_bake_time_in_minutes EcsService#canary_bake_time_in_minutes}
   */
   readonly canaryBakeTimeInMinutes?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#canary_percent EcsService#canary_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#canary_percent EcsService#canary_percent}
   */
   readonly canaryPercent?: number;
 }
@@ -643,7 +643,7 @@ export interface EcsServiceDeploymentConfigurationCanaryConfiguration {
 export function ecsServiceDeploymentConfigurationCanaryConfigurationToTerraform(struct?: EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference | EcsServiceDeploymentConfigurationCanaryConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canary_bake_time_in_minutes: cdktn.stringToTerraform(struct!.canaryBakeTimeInMinutes),
@@ -655,7 +655,7 @@ export function ecsServiceDeploymentConfigurationCanaryConfigurationToTerraform(
 export function ecsServiceDeploymentConfigurationCanaryConfigurationToHclTerraform(struct?: EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference | EcsServiceDeploymentConfigurationCanaryConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canary_bake_time_in_minutes: {
@@ -748,19 +748,19 @@ export class EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference
 }
 export interface EcsServiceDeploymentConfigurationLifecycleHook {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#hook_details EcsService#hook_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#hook_details EcsService#hook_details}
   */
   readonly hookDetails?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#hook_target_arn EcsService#hook_target_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#hook_target_arn EcsService#hook_target_arn}
   */
   readonly hookTargetArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#lifecycle_stages EcsService#lifecycle_stages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#lifecycle_stages EcsService#lifecycle_stages}
   */
   readonly lifecycleStages: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
   */
   readonly roleArn: string;
 }
@@ -768,7 +768,7 @@ export interface EcsServiceDeploymentConfigurationLifecycleHook {
 export function ecsServiceDeploymentConfigurationLifecycleHookToTerraform(struct?: EcsServiceDeploymentConfigurationLifecycleHook | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hook_details: cdktn.stringToTerraform(struct!.hookDetails),
@@ -782,7 +782,7 @@ export function ecsServiceDeploymentConfigurationLifecycleHookToTerraform(struct
 export function ecsServiceDeploymentConfigurationLifecycleHookToHclTerraform(struct?: EcsServiceDeploymentConfigurationLifecycleHook | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hook_details: {
@@ -954,11 +954,11 @@ export class EcsServiceDeploymentConfigurationLifecycleHookList extends cdktn.Co
 }
 export interface EcsServiceDeploymentConfigurationLinearConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#step_bake_time_in_minutes EcsService#step_bake_time_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#step_bake_time_in_minutes EcsService#step_bake_time_in_minutes}
   */
   readonly stepBakeTimeInMinutes?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#step_percent EcsService#step_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#step_percent EcsService#step_percent}
   */
   readonly stepPercent?: number;
 }
@@ -966,7 +966,7 @@ export interface EcsServiceDeploymentConfigurationLinearConfiguration {
 export function ecsServiceDeploymentConfigurationLinearConfigurationToTerraform(struct?: EcsServiceDeploymentConfigurationLinearConfigurationOutputReference | EcsServiceDeploymentConfigurationLinearConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     step_bake_time_in_minutes: cdktn.stringToTerraform(struct!.stepBakeTimeInMinutes),
@@ -978,7 +978,7 @@ export function ecsServiceDeploymentConfigurationLinearConfigurationToTerraform(
 export function ecsServiceDeploymentConfigurationLinearConfigurationToHclTerraform(struct?: EcsServiceDeploymentConfigurationLinearConfigurationOutputReference | EcsServiceDeploymentConfigurationLinearConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     step_bake_time_in_minutes: {
@@ -1071,29 +1071,29 @@ export class EcsServiceDeploymentConfigurationLinearConfigurationOutputReference
 }
 export interface EcsServiceDeploymentConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#bake_time_in_minutes EcsService#bake_time_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#bake_time_in_minutes EcsService#bake_time_in_minutes}
   */
   readonly bakeTimeInMinutes?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#strategy EcsService#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#strategy EcsService#strategy}
   */
   readonly strategy?: string;
   /**
   * canary_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#canary_configuration EcsService#canary_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#canary_configuration EcsService#canary_configuration}
   */
   readonly canaryConfiguration?: EcsServiceDeploymentConfigurationCanaryConfiguration;
   /**
   * lifecycle_hook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#lifecycle_hook EcsService#lifecycle_hook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#lifecycle_hook EcsService#lifecycle_hook}
   */
   readonly lifecycleHook?: EcsServiceDeploymentConfigurationLifecycleHook[] | cdktn.IResolvable;
   /**
   * linear_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#linear_configuration EcsService#linear_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#linear_configuration EcsService#linear_configuration}
   */
   readonly linearConfiguration?: EcsServiceDeploymentConfigurationLinearConfiguration;
 }
@@ -1101,7 +1101,7 @@ export interface EcsServiceDeploymentConfiguration {
 export function ecsServiceDeploymentConfigurationToTerraform(struct?: EcsServiceDeploymentConfigurationOutputReference | EcsServiceDeploymentConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bake_time_in_minutes: cdktn.stringToTerraform(struct!.bakeTimeInMinutes),
@@ -1116,7 +1116,7 @@ export function ecsServiceDeploymentConfigurationToTerraform(struct?: EcsService
 export function ecsServiceDeploymentConfigurationToHclTerraform(struct?: EcsServiceDeploymentConfigurationOutputReference | EcsServiceDeploymentConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bake_time_in_minutes: {
@@ -1293,7 +1293,7 @@ export class EcsServiceDeploymentConfigurationOutputReference extends cdktn.Comp
 }
 export interface EcsServiceDeploymentController {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#type EcsService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#type EcsService#type}
   */
   readonly type?: string;
 }
@@ -1301,7 +1301,7 @@ export interface EcsServiceDeploymentController {
 export function ecsServiceDeploymentControllerToTerraform(struct?: EcsServiceDeploymentControllerOutputReference | EcsServiceDeploymentController): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -1312,7 +1312,7 @@ export function ecsServiceDeploymentControllerToTerraform(struct?: EcsServiceDep
 export function ecsServiceDeploymentControllerToHclTerraform(struct?: EcsServiceDeploymentControllerOutputReference | EcsServiceDeploymentController): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -1377,19 +1377,19 @@ export class EcsServiceDeploymentControllerOutputReference extends cdktn.Complex
 }
 export interface EcsServiceLoadBalancerAdvancedConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#alternate_target_group_arn EcsService#alternate_target_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#alternate_target_group_arn EcsService#alternate_target_group_arn}
   */
   readonly alternateTargetGroupArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#production_listener_rule EcsService#production_listener_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#production_listener_rule EcsService#production_listener_rule}
   */
   readonly productionListenerRule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#test_listener_rule EcsService#test_listener_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#test_listener_rule EcsService#test_listener_rule}
   */
   readonly testListenerRule?: string;
 }
@@ -1397,7 +1397,7 @@ export interface EcsServiceLoadBalancerAdvancedConfiguration {
 export function ecsServiceLoadBalancerAdvancedConfigurationToTerraform(struct?: EcsServiceLoadBalancerAdvancedConfigurationOutputReference | EcsServiceLoadBalancerAdvancedConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alternate_target_group_arn: cdktn.stringToTerraform(struct!.alternateTargetGroupArn),
@@ -1411,7 +1411,7 @@ export function ecsServiceLoadBalancerAdvancedConfigurationToTerraform(struct?: 
 export function ecsServiceLoadBalancerAdvancedConfigurationToHclTerraform(struct?: EcsServiceLoadBalancerAdvancedConfigurationOutputReference | EcsServiceLoadBalancerAdvancedConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alternate_target_group_arn: {
@@ -1551,25 +1551,25 @@ export class EcsServiceLoadBalancerAdvancedConfigurationOutputReference extends 
 }
 export interface EcsServiceLoadBalancer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#container_name EcsService#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#container_name EcsService#container_name}
   */
   readonly containerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#container_port EcsService#container_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#container_port EcsService#container_port}
   */
   readonly containerPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#elb_name EcsService#elb_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#elb_name EcsService#elb_name}
   */
   readonly elbName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}
   */
   readonly targetGroupArn?: string;
   /**
   * advanced_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#advanced_configuration EcsService#advanced_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#advanced_configuration EcsService#advanced_configuration}
   */
   readonly advancedConfiguration?: EcsServiceLoadBalancerAdvancedConfiguration;
 }
@@ -1577,7 +1577,7 @@ export interface EcsServiceLoadBalancer {
 export function ecsServiceLoadBalancerToTerraform(struct?: EcsServiceLoadBalancer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_name: cdktn.stringToTerraform(struct!.containerName),
@@ -1592,7 +1592,7 @@ export function ecsServiceLoadBalancerToTerraform(struct?: EcsServiceLoadBalance
 export function ecsServiceLoadBalancerToHclTerraform(struct?: EcsServiceLoadBalancer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_name: {
@@ -1795,15 +1795,15 @@ export class EcsServiceLoadBalancerList extends cdktn.ComplexList {
 }
 export interface EcsServiceNetworkConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}
   */
   readonly assignPublicIp?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#security_groups EcsService#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#security_groups EcsService#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#subnets EcsService#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#subnets EcsService#subnets}
   */
   readonly subnets: string[];
 }
@@ -1811,7 +1811,7 @@ export interface EcsServiceNetworkConfiguration {
 export function ecsServiceNetworkConfigurationToTerraform(struct?: EcsServiceNetworkConfigurationOutputReference | EcsServiceNetworkConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     assign_public_ip: cdktn.booleanToTerraform(struct!.assignPublicIp),
@@ -1824,7 +1824,7 @@ export function ecsServiceNetworkConfigurationToTerraform(struct?: EcsServiceNet
 export function ecsServiceNetworkConfigurationToHclTerraform(struct?: EcsServiceNetworkConfigurationOutputReference | EcsServiceNetworkConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     assign_public_ip: {
@@ -1942,11 +1942,11 @@ export class EcsServiceNetworkConfigurationOutputReference extends cdktn.Complex
 }
 export interface EcsServiceOrderedPlacementStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#field EcsService#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#field EcsService#field}
   */
   readonly field?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#type EcsService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#type EcsService#type}
   */
   readonly type: string;
 }
@@ -1954,7 +1954,7 @@ export interface EcsServiceOrderedPlacementStrategy {
 export function ecsServiceOrderedPlacementStrategyToTerraform(struct?: EcsServiceOrderedPlacementStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field: cdktn.stringToTerraform(struct!.field),
@@ -1966,7 +1966,7 @@ export function ecsServiceOrderedPlacementStrategyToTerraform(struct?: EcsServic
 export function ecsServiceOrderedPlacementStrategyToHclTerraform(struct?: EcsServiceOrderedPlacementStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field: {
@@ -2088,11 +2088,11 @@ export class EcsServiceOrderedPlacementStrategyList extends cdktn.ComplexList {
 }
 export interface EcsServicePlacementConstraints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#expression EcsService#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#expression EcsService#expression}
   */
   readonly expression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#type EcsService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#type EcsService#type}
   */
   readonly type: string;
 }
@@ -2100,7 +2100,7 @@ export interface EcsServicePlacementConstraints {
 export function ecsServicePlacementConstraintsToTerraform(struct?: EcsServicePlacementConstraints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -2112,7 +2112,7 @@ export function ecsServicePlacementConstraintsToTerraform(struct?: EcsServicePla
 export function ecsServicePlacementConstraintsToHclTerraform(struct?: EcsServicePlacementConstraints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -2234,11 +2234,11 @@ export class EcsServicePlacementConstraintsList extends cdktn.ComplexList {
 }
 export interface EcsServiceServiceConnectConfigurationAccessLogConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#format EcsService#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#format EcsService#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#include_query_parameters EcsService#include_query_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#include_query_parameters EcsService#include_query_parameters}
   */
   readonly includeQueryParameters?: string;
 }
@@ -2246,7 +2246,7 @@ export interface EcsServiceServiceConnectConfigurationAccessLogConfiguration {
 export function ecsServiceServiceConnectConfigurationAccessLogConfigurationToTerraform(struct?: EcsServiceServiceConnectConfigurationAccessLogConfigurationOutputReference | EcsServiceServiceConnectConfigurationAccessLogConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     format: cdktn.stringToTerraform(struct!.format),
@@ -2258,7 +2258,7 @@ export function ecsServiceServiceConnectConfigurationAccessLogConfigurationToTer
 export function ecsServiceServiceConnectConfigurationAccessLogConfigurationToHclTerraform(struct?: EcsServiceServiceConnectConfigurationAccessLogConfigurationOutputReference | EcsServiceServiceConnectConfigurationAccessLogConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     format: {
@@ -2348,11 +2348,11 @@ export class EcsServiceServiceConnectConfigurationAccessLogConfigurationOutputRe
 }
 export interface EcsServiceServiceConnectConfigurationLogConfigurationSecretOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#name EcsService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#name EcsService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#value_from EcsService#value_from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#value_from EcsService#value_from}
   */
   readonly valueFrom: string;
 }
@@ -2360,7 +2360,7 @@ export interface EcsServiceServiceConnectConfigurationLogConfigurationSecretOpti
 export function ecsServiceServiceConnectConfigurationLogConfigurationSecretOptionToTerraform(struct?: EcsServiceServiceConnectConfigurationLogConfigurationSecretOption | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2372,7 +2372,7 @@ export function ecsServiceServiceConnectConfigurationLogConfigurationSecretOptio
 export function ecsServiceServiceConnectConfigurationLogConfigurationSecretOptionToHclTerraform(struct?: EcsServiceServiceConnectConfigurationLogConfigurationSecretOption | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2491,17 +2491,17 @@ export class EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionLi
 }
 export interface EcsServiceServiceConnectConfigurationLogConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#log_driver EcsService#log_driver}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#log_driver EcsService#log_driver}
   */
   readonly logDriver: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#options EcsService#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#options EcsService#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * secret_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#secret_option EcsService#secret_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#secret_option EcsService#secret_option}
   */
   readonly secretOption?: EcsServiceServiceConnectConfigurationLogConfigurationSecretOption[] | cdktn.IResolvable;
 }
@@ -2509,7 +2509,7 @@ export interface EcsServiceServiceConnectConfigurationLogConfiguration {
 export function ecsServiceServiceConnectConfigurationLogConfigurationToTerraform(struct?: EcsServiceServiceConnectConfigurationLogConfigurationOutputReference | EcsServiceServiceConnectConfigurationLogConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_driver: cdktn.stringToTerraform(struct!.logDriver),
@@ -2522,7 +2522,7 @@ export function ecsServiceServiceConnectConfigurationLogConfigurationToTerraform
 export function ecsServiceServiceConnectConfigurationLogConfigurationToHclTerraform(struct?: EcsServiceServiceConnectConfigurationLogConfigurationOutputReference | EcsServiceServiceConnectConfigurationLogConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_driver: {
@@ -2640,7 +2640,7 @@ export class EcsServiceServiceConnectConfigurationLogConfigurationOutputReferenc
 }
 export interface EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#exact EcsService#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#exact EcsService#exact}
   */
   readonly exact: string;
 }
@@ -2648,7 +2648,7 @@ export interface EcsServiceServiceConnectConfigurationServiceClientAliasTestTraf
 export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueOutputReference | EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exact: cdktn.stringToTerraform(struct!.exact),
@@ -2659,7 +2659,7 @@ export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTraff
 export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueToHclTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueOutputReference | EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exact: {
@@ -2721,13 +2721,13 @@ export class EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficR
 }
 export interface EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#name EcsService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#name EcsService#name}
   */
   readonly name: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#value EcsService#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#value EcsService#value}
   */
   readonly value: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue;
 }
@@ -2735,7 +2735,7 @@ export interface EcsServiceServiceConnectConfigurationServiceClientAliasTestTraf
 export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference | EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2747,7 +2747,7 @@ export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTraff
 export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderToHclTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference | EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2836,7 +2836,7 @@ export interface EcsServiceServiceConnectConfigurationServiceClientAliasTestTraf
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#header EcsService#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#header EcsService#header}
   */
   readonly header?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader;
 }
@@ -2844,7 +2844,7 @@ export interface EcsServiceServiceConnectConfigurationServiceClientAliasTestTraf
 export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     header: ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderToTerraform(struct!.header),
@@ -2855,7 +2855,7 @@ export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTraff
 export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesToHclTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     header: {
@@ -2952,17 +2952,17 @@ export class EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficR
 }
 export interface EcsServiceServiceConnectConfigurationServiceClientAlias {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#dns_name EcsService#dns_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#dns_name EcsService#dns_name}
   */
   readonly dnsName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#port EcsService#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#port EcsService#port}
   */
   readonly port: number;
   /**
   * test_traffic_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#test_traffic_rules EcsService#test_traffic_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#test_traffic_rules EcsService#test_traffic_rules}
   */
   readonly testTrafficRules?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules[] | cdktn.IResolvable;
 }
@@ -2970,7 +2970,7 @@ export interface EcsServiceServiceConnectConfigurationServiceClientAlias {
 export function ecsServiceServiceConnectConfigurationServiceClientAliasToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference | EcsServiceServiceConnectConfigurationServiceClientAlias): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dns_name: cdktn.stringToTerraform(struct!.dnsName),
@@ -2983,7 +2983,7 @@ export function ecsServiceServiceConnectConfigurationServiceClientAliasToTerrafo
 export function ecsServiceServiceConnectConfigurationServiceClientAliasToHclTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference | EcsServiceServiceConnectConfigurationServiceClientAlias): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dns_name: {
@@ -3101,11 +3101,11 @@ export class EcsServiceServiceConnectConfigurationServiceClientAliasOutputRefere
 }
 export interface EcsServiceServiceConnectConfigurationServiceTimeout {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#idle_timeout_seconds EcsService#idle_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#idle_timeout_seconds EcsService#idle_timeout_seconds}
   */
   readonly idleTimeoutSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#per_request_timeout_seconds EcsService#per_request_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#per_request_timeout_seconds EcsService#per_request_timeout_seconds}
   */
   readonly perRequestTimeoutSeconds?: number;
 }
@@ -3113,7 +3113,7 @@ export interface EcsServiceServiceConnectConfigurationServiceTimeout {
 export function ecsServiceServiceConnectConfigurationServiceTimeoutToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference | EcsServiceServiceConnectConfigurationServiceTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     idle_timeout_seconds: cdktn.numberToTerraform(struct!.idleTimeoutSeconds),
@@ -3125,7 +3125,7 @@ export function ecsServiceServiceConnectConfigurationServiceTimeoutToTerraform(s
 export function ecsServiceServiceConnectConfigurationServiceTimeoutToHclTerraform(struct?: EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference | EcsServiceServiceConnectConfigurationServiceTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     idle_timeout_seconds: {
@@ -3218,7 +3218,7 @@ export class EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference 
 }
 export interface EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#aws_pca_authority_arn EcsService#aws_pca_authority_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#aws_pca_authority_arn EcsService#aws_pca_authority_arn}
   */
   readonly awsPcaAuthorityArn: string;
 }
@@ -3226,7 +3226,7 @@ export interface EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthor
 export function ecsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityOutputReference | EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aws_pca_authority_arn: cdktn.stringToTerraform(struct!.awsPcaAuthorityArn),
@@ -3237,7 +3237,7 @@ export function ecsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthori
 export function ecsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityToHclTerraform(struct?: EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityOutputReference | EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aws_pca_authority_arn: {
@@ -3299,17 +3299,17 @@ export class EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityO
 }
 export interface EcsServiceServiceConnectConfigurationServiceTls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#kms_key EcsService#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#kms_key EcsService#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
   */
   readonly roleArn?: string;
   /**
   * issuer_cert_authority block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#issuer_cert_authority EcsService#issuer_cert_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#issuer_cert_authority EcsService#issuer_cert_authority}
   */
   readonly issuerCertAuthority: EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority;
 }
@@ -3317,7 +3317,7 @@ export interface EcsServiceServiceConnectConfigurationServiceTls {
 export function ecsServiceServiceConnectConfigurationServiceTlsToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceTlsOutputReference | EcsServiceServiceConnectConfigurationServiceTls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     kms_key: cdktn.stringToTerraform(struct!.kmsKey),
@@ -3330,7 +3330,7 @@ export function ecsServiceServiceConnectConfigurationServiceTlsToTerraform(struc
 export function ecsServiceServiceConnectConfigurationServiceTlsToHclTerraform(struct?: EcsServiceServiceConnectConfigurationServiceTlsOutputReference | EcsServiceServiceConnectConfigurationServiceTls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     kms_key: {
@@ -3448,33 +3448,33 @@ export class EcsServiceServiceConnectConfigurationServiceTlsOutputReference exte
 }
 export interface EcsServiceServiceConnectConfigurationService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#discovery_name EcsService#discovery_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#discovery_name EcsService#discovery_name}
   */
   readonly discoveryName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#ingress_port_override EcsService#ingress_port_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#ingress_port_override EcsService#ingress_port_override}
   */
   readonly ingressPortOverride?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#port_name EcsService#port_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#port_name EcsService#port_name}
   */
   readonly portName: string;
   /**
   * client_alias block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#client_alias EcsService#client_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#client_alias EcsService#client_alias}
   */
   readonly clientAlias?: EcsServiceServiceConnectConfigurationServiceClientAlias;
   /**
   * timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#timeout EcsService#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#timeout EcsService#timeout}
   */
   readonly timeout?: EcsServiceServiceConnectConfigurationServiceTimeout;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#tls EcsService#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#tls EcsService#tls}
   */
   readonly tls?: EcsServiceServiceConnectConfigurationServiceTls;
 }
@@ -3482,7 +3482,7 @@ export interface EcsServiceServiceConnectConfigurationService {
 export function ecsServiceServiceConnectConfigurationServiceToTerraform(struct?: EcsServiceServiceConnectConfigurationService | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     discovery_name: cdktn.stringToTerraform(struct!.discoveryName),
@@ -3498,7 +3498,7 @@ export function ecsServiceServiceConnectConfigurationServiceToTerraform(struct?:
 export function ecsServiceServiceConnectConfigurationServiceToHclTerraform(struct?: EcsServiceServiceConnectConfigurationService | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     discovery_name: {
@@ -3732,29 +3732,29 @@ export class EcsServiceServiceConnectConfigurationServiceList extends cdktn.Comp
 }
 export interface EcsServiceServiceConnectConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#enabled EcsService#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#enabled EcsService#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#namespace EcsService#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#namespace EcsService#namespace}
   */
   readonly namespace?: string;
   /**
   * access_log_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#access_log_configuration EcsService#access_log_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#access_log_configuration EcsService#access_log_configuration}
   */
   readonly accessLogConfiguration?: EcsServiceServiceConnectConfigurationAccessLogConfiguration;
   /**
   * log_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#log_configuration EcsService#log_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#log_configuration EcsService#log_configuration}
   */
   readonly logConfiguration?: EcsServiceServiceConnectConfigurationLogConfiguration;
   /**
   * service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#service EcsService#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#service EcsService#service}
   */
   readonly service?: EcsServiceServiceConnectConfigurationService[] | cdktn.IResolvable;
 }
@@ -3762,7 +3762,7 @@ export interface EcsServiceServiceConnectConfiguration {
 export function ecsServiceServiceConnectConfigurationToTerraform(struct?: EcsServiceServiceConnectConfigurationOutputReference | EcsServiceServiceConnectConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -3777,7 +3777,7 @@ export function ecsServiceServiceConnectConfigurationToTerraform(struct?: EcsSer
 export function ecsServiceServiceConnectConfigurationToHclTerraform(struct?: EcsServiceServiceConnectConfigurationOutputReference | EcsServiceServiceConnectConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -3951,19 +3951,19 @@ export class EcsServiceServiceConnectConfigurationOutputReference extends cdktn.
 }
 export interface EcsServiceServiceRegistries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#container_name EcsService#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#container_name EcsService#container_name}
   */
   readonly containerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#container_port EcsService#container_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#container_port EcsService#container_port}
   */
   readonly containerPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#port EcsService#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#port EcsService#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#registry_arn EcsService#registry_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#registry_arn EcsService#registry_arn}
   */
   readonly registryArn: string;
 }
@@ -3971,7 +3971,7 @@ export interface EcsServiceServiceRegistries {
 export function ecsServiceServiceRegistriesToTerraform(struct?: EcsServiceServiceRegistriesOutputReference | EcsServiceServiceRegistries): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_name: cdktn.stringToTerraform(struct!.containerName),
@@ -3985,7 +3985,7 @@ export function ecsServiceServiceRegistriesToTerraform(struct?: EcsServiceServic
 export function ecsServiceServiceRegistriesToHclTerraform(struct?: EcsServiceServiceRegistriesOutputReference | EcsServiceServiceRegistries): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_name: {
@@ -4131,15 +4131,15 @@ export class EcsServiceServiceRegistriesOutputReference extends cdktn.ComplexObj
 }
 export interface EcsServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#create EcsService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#create EcsService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#delete EcsService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#delete EcsService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#update EcsService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#update EcsService#update}
   */
   readonly update?: string;
 }
@@ -4147,7 +4147,7 @@ export interface EcsServiceTimeouts {
 export function ecsServiceTimeoutsToTerraform(struct?: EcsServiceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -4160,7 +4160,7 @@ export function ecsServiceTimeoutsToTerraform(struct?: EcsServiceTimeouts | cdkt
 export function ecsServiceTimeoutsToHclTerraform(struct?: EcsServiceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -4291,15 +4291,15 @@ export class EcsServiceTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 export interface EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}
   */
   readonly propagateTags?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#resource_type EcsService#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#resource_type EcsService#resource_type}
   */
   readonly resourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#tags EcsService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#tags EcsService#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -4307,7 +4307,7 @@ export interface EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications 
 export function ecsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsToTerraform(struct?: EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     propagate_tags: cdktn.stringToTerraform(struct!.propagateTags),
@@ -4320,7 +4320,7 @@ export function ecsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsTo
 export function ecsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsToHclTerraform(struct?: EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     propagate_tags: {
@@ -4470,49 +4470,49 @@ export class EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList 
 }
 export interface EcsServiceVolumeConfigurationManagedEbsVolume {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#encrypted EcsService#encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#encrypted EcsService#encrypted}
   */
   readonly encrypted?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#file_system_type EcsService#file_system_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#file_system_type EcsService#file_system_type}
   */
   readonly fileSystemType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#iops EcsService#iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#iops EcsService#iops}
   */
   readonly iops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#kms_key_id EcsService#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#kms_key_id EcsService#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#size_in_gb EcsService#size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#size_in_gb EcsService#size_in_gb}
   */
   readonly sizeInGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#snapshot_id EcsService#snapshot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#snapshot_id EcsService#snapshot_id}
   */
   readonly snapshotId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#throughput EcsService#throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#throughput EcsService#throughput}
   */
   readonly throughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#volume_initialization_rate EcsService#volume_initialization_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#volume_initialization_rate EcsService#volume_initialization_rate}
   */
   readonly volumeInitializationRate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#volume_type EcsService#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#volume_type EcsService#volume_type}
   */
   readonly volumeType?: string;
   /**
   * tag_specifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#tag_specifications EcsService#tag_specifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#tag_specifications EcsService#tag_specifications}
   */
   readonly tagSpecifications?: EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications[] | cdktn.IResolvable;
 }
@@ -4520,7 +4520,7 @@ export interface EcsServiceVolumeConfigurationManagedEbsVolume {
 export function ecsServiceVolumeConfigurationManagedEbsVolumeToTerraform(struct?: EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference | EcsServiceVolumeConfigurationManagedEbsVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     encrypted: cdktn.booleanToTerraform(struct!.encrypted),
@@ -4541,7 +4541,7 @@ export function ecsServiceVolumeConfigurationManagedEbsVolumeToTerraform(struct?
 export function ecsServiceVolumeConfigurationManagedEbsVolumeToHclTerraform(struct?: EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference | EcsServiceVolumeConfigurationManagedEbsVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     encrypted: {
@@ -4883,13 +4883,13 @@ export class EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference extend
 }
 export interface EcsServiceVolumeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#name EcsService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#name EcsService#name}
   */
   readonly name: string;
   /**
   * managed_ebs_volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#managed_ebs_volume EcsService#managed_ebs_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#managed_ebs_volume EcsService#managed_ebs_volume}
   */
   readonly managedEbsVolume: EcsServiceVolumeConfigurationManagedEbsVolume;
 }
@@ -4897,7 +4897,7 @@ export interface EcsServiceVolumeConfiguration {
 export function ecsServiceVolumeConfigurationToTerraform(struct?: EcsServiceVolumeConfigurationOutputReference | EcsServiceVolumeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -4909,7 +4909,7 @@ export function ecsServiceVolumeConfigurationToTerraform(struct?: EcsServiceVolu
 export function ecsServiceVolumeConfigurationToHclTerraform(struct?: EcsServiceVolumeConfigurationOutputReference | EcsServiceVolumeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -4996,15 +4996,15 @@ export class EcsServiceVolumeConfigurationOutputReference extends cdktn.ComplexO
 }
 export interface EcsServiceVpcLatticeConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#port_name EcsService#port_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#port_name EcsService#port_name}
   */
   readonly portName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}
   */
   readonly targetGroupArn: string;
 }
@@ -5012,7 +5012,7 @@ export interface EcsServiceVpcLatticeConfigurations {
 export function ecsServiceVpcLatticeConfigurationsToTerraform(struct?: EcsServiceVpcLatticeConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port_name: cdktn.stringToTerraform(struct!.portName),
@@ -5025,7 +5025,7 @@ export function ecsServiceVpcLatticeConfigurationsToTerraform(struct?: EcsServic
 export function ecsServiceVpcLatticeConfigurationsToHclTerraform(struct?: EcsServiceVpcLatticeConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port_name: {
@@ -5169,7 +5169,7 @@ export class EcsServiceVpcLatticeConfigurationsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service aws_ecs_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service aws_ecs_service}
 */
 export class EcsService extends cdktn.TerraformResource {
 
@@ -5185,7 +5185,7 @@ export class EcsService extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EcsService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcsService to import
-  * @param importFromId The id of the existing EcsService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EcsService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcsService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5197,7 +5197,7 @@ export class EcsService extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/ecs_service aws_ecs_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ecs_service aws_ecs_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5208,7 +5208,7 @@ export class EcsService extends cdktn.TerraformResource {
       terraformResourceType: 'aws_ecs_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsEbsVolumesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes#id DataAwsEbsVolumes#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes#id DataAwsEbsVolumes#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,33 +22,33 @@ export interface DataAwsEbsVolumesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes#region DataAwsEbsVolumes#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes#region DataAwsEbsVolumes#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes#tags DataAwsEbsVolumes#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes#tags DataAwsEbsVolumes#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes#filter DataAwsEbsVolumes#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes#filter DataAwsEbsVolumes#filter}
   */
   readonly filter?: DataAwsEbsVolumesFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes#timeouts DataAwsEbsVolumes#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes#timeouts DataAwsEbsVolumes#timeouts}
   */
   readonly timeouts?: DataAwsEbsVolumesTimeouts;
 }
 export interface DataAwsEbsVolumesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes#name DataAwsEbsVolumes#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes#name DataAwsEbsVolumes#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes#values DataAwsEbsVolumes#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes#values DataAwsEbsVolumes#values}
   */
   readonly values: string[];
 }
@@ -56,7 +56,7 @@ export interface DataAwsEbsVolumesFilter {
 export function dataAwsEbsVolumesFilterToTerraform(struct?: DataAwsEbsVolumesFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -68,7 +68,7 @@ export function dataAwsEbsVolumesFilterToTerraform(struct?: DataAwsEbsVolumesFil
 export function dataAwsEbsVolumesFilterToHclTerraform(struct?: DataAwsEbsVolumesFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -187,7 +187,7 @@ export class DataAwsEbsVolumesFilterList extends cdktn.ComplexList {
 }
 export interface DataAwsEbsVolumesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes#read DataAwsEbsVolumes#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes#read DataAwsEbsVolumes#read}
   */
   readonly read?: string;
 }
@@ -195,7 +195,7 @@ export interface DataAwsEbsVolumesTimeouts {
 export function dataAwsEbsVolumesTimeoutsToTerraform(struct?: DataAwsEbsVolumesTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -206,7 +206,7 @@ export function dataAwsEbsVolumesTimeoutsToTerraform(struct?: DataAwsEbsVolumesT
 export function dataAwsEbsVolumesTimeoutsToHclTerraform(struct?: DataAwsEbsVolumesTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -281,7 +281,7 @@ export class DataAwsEbsVolumesTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes aws_ebs_volumes}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes aws_ebs_volumes}
 */
 export class DataAwsEbsVolumes extends cdktn.TerraformDataSource {
 
@@ -297,7 +297,7 @@ export class DataAwsEbsVolumes extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsEbsVolumes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEbsVolumes to import
-  * @param importFromId The id of the existing DataAwsEbsVolumes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEbsVolumes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEbsVolumes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -309,7 +309,7 @@ export class DataAwsEbsVolumes extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ebs_volumes aws_ebs_volumes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ebs_volumes aws_ebs_volumes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -320,7 +320,7 @@ export class DataAwsEbsVolumes extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_ebs_volumes',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

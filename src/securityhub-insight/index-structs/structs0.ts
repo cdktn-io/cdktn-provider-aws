@@ -6,11 +6,11 @@
 import * as cdktn from 'cdktn';
 export interface SecurityhubInsightFiltersAwsAccountId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -18,7 +18,7 @@ export interface SecurityhubInsightFiltersAwsAccountId {
 export function securityhubInsightFiltersAwsAccountIdToTerraform(struct?: SecurityhubInsightFiltersAwsAccountId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -30,7 +30,7 @@ export function securityhubInsightFiltersAwsAccountIdToTerraform(struct?: Securi
 export function securityhubInsightFiltersAwsAccountIdToHclTerraform(struct?: SecurityhubInsightFiltersAwsAccountId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -149,11 +149,11 @@ export class SecurityhubInsightFiltersAwsAccountIdList extends cdktn.ComplexList
 }
 export interface SecurityhubInsightFiltersAwsAccountName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -161,7 +161,7 @@ export interface SecurityhubInsightFiltersAwsAccountName {
 export function securityhubInsightFiltersAwsAccountNameToTerraform(struct?: SecurityhubInsightFiltersAwsAccountName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -173,7 +173,7 @@ export function securityhubInsightFiltersAwsAccountNameToTerraform(struct?: Secu
 export function securityhubInsightFiltersAwsAccountNameToHclTerraform(struct?: SecurityhubInsightFiltersAwsAccountName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -292,11 +292,11 @@ export class SecurityhubInsightFiltersAwsAccountNameList extends cdktn.ComplexLi
 }
 export interface SecurityhubInsightFiltersCompanyName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -304,7 +304,7 @@ export interface SecurityhubInsightFiltersCompanyName {
 export function securityhubInsightFiltersCompanyNameToTerraform(struct?: SecurityhubInsightFiltersCompanyName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -316,7 +316,7 @@ export function securityhubInsightFiltersCompanyNameToTerraform(struct?: Securit
 export function securityhubInsightFiltersCompanyNameToHclTerraform(struct?: SecurityhubInsightFiltersCompanyName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -435,11 +435,11 @@ export class SecurityhubInsightFiltersCompanyNameList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersComplianceAssociatedStandardsId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -447,7 +447,7 @@ export interface SecurityhubInsightFiltersComplianceAssociatedStandardsId {
 export function securityhubInsightFiltersComplianceAssociatedStandardsIdToTerraform(struct?: SecurityhubInsightFiltersComplianceAssociatedStandardsId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -459,7 +459,7 @@ export function securityhubInsightFiltersComplianceAssociatedStandardsIdToTerraf
 export function securityhubInsightFiltersComplianceAssociatedStandardsIdToHclTerraform(struct?: SecurityhubInsightFiltersComplianceAssociatedStandardsId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -578,11 +578,11 @@ export class SecurityhubInsightFiltersComplianceAssociatedStandardsIdList extend
 }
 export interface SecurityhubInsightFiltersComplianceSecurityControlId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -590,7 +590,7 @@ export interface SecurityhubInsightFiltersComplianceSecurityControlId {
 export function securityhubInsightFiltersComplianceSecurityControlIdToTerraform(struct?: SecurityhubInsightFiltersComplianceSecurityControlId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -602,7 +602,7 @@ export function securityhubInsightFiltersComplianceSecurityControlIdToTerraform(
 export function securityhubInsightFiltersComplianceSecurityControlIdToHclTerraform(struct?: SecurityhubInsightFiltersComplianceSecurityControlId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -721,11 +721,11 @@ export class SecurityhubInsightFiltersComplianceSecurityControlIdList extends cd
 }
 export interface SecurityhubInsightFiltersComplianceSecurityControlParametersName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -733,7 +733,7 @@ export interface SecurityhubInsightFiltersComplianceSecurityControlParametersNam
 export function securityhubInsightFiltersComplianceSecurityControlParametersNameToTerraform(struct?: SecurityhubInsightFiltersComplianceSecurityControlParametersName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -745,7 +745,7 @@ export function securityhubInsightFiltersComplianceSecurityControlParametersName
 export function securityhubInsightFiltersComplianceSecurityControlParametersNameToHclTerraform(struct?: SecurityhubInsightFiltersComplianceSecurityControlParametersName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -864,11 +864,11 @@ export class SecurityhubInsightFiltersComplianceSecurityControlParametersNameLis
 }
 export interface SecurityhubInsightFiltersComplianceSecurityControlParametersValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -876,7 +876,7 @@ export interface SecurityhubInsightFiltersComplianceSecurityControlParametersVal
 export function securityhubInsightFiltersComplianceSecurityControlParametersValueToTerraform(struct?: SecurityhubInsightFiltersComplianceSecurityControlParametersValue | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -888,7 +888,7 @@ export function securityhubInsightFiltersComplianceSecurityControlParametersValu
 export function securityhubInsightFiltersComplianceSecurityControlParametersValueToHclTerraform(struct?: SecurityhubInsightFiltersComplianceSecurityControlParametersValue | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -1007,11 +1007,11 @@ export class SecurityhubInsightFiltersComplianceSecurityControlParametersValueLi
 }
 export interface SecurityhubInsightFiltersComplianceStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -1019,7 +1019,7 @@ export interface SecurityhubInsightFiltersComplianceStatus {
 export function securityhubInsightFiltersComplianceStatusToTerraform(struct?: SecurityhubInsightFiltersComplianceStatus | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -1031,7 +1031,7 @@ export function securityhubInsightFiltersComplianceStatusToTerraform(struct?: Se
 export function securityhubInsightFiltersComplianceStatusToHclTerraform(struct?: SecurityhubInsightFiltersComplianceStatus | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -1150,15 +1150,15 @@ export class SecurityhubInsightFiltersComplianceStatusList extends cdktn.Complex
 }
 export interface SecurityhubInsightFiltersConfidence {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -1166,7 +1166,7 @@ export interface SecurityhubInsightFiltersConfidence {
 export function securityhubInsightFiltersConfidenceToTerraform(struct?: SecurityhubInsightFiltersConfidence | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     eq: cdktn.stringToTerraform(struct!.eq),
@@ -1179,7 +1179,7 @@ export function securityhubInsightFiltersConfidenceToTerraform(struct?: Security
 export function securityhubInsightFiltersConfidenceToHclTerraform(struct?: SecurityhubInsightFiltersConfidence | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     eq: {
@@ -1332,11 +1332,11 @@ export class SecurityhubInsightFiltersConfidenceList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersCreatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -1344,7 +1344,7 @@ export interface SecurityhubInsightFiltersCreatedAtDateRange {
 export function securityhubInsightFiltersCreatedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersCreatedAtDateRangeOutputReference | SecurityhubInsightFiltersCreatedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -1356,7 +1356,7 @@ export function securityhubInsightFiltersCreatedAtDateRangeToTerraform(struct?: 
 export function securityhubInsightFiltersCreatedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersCreatedAtDateRangeOutputReference | SecurityhubInsightFiltersCreatedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -1443,17 +1443,17 @@ export class SecurityhubInsightFiltersCreatedAtDateRangeOutputReference extends 
 }
 export interface SecurityhubInsightFiltersCreatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersCreatedAtDateRange;
 }
@@ -1461,7 +1461,7 @@ export interface SecurityhubInsightFiltersCreatedAt {
 export function securityhubInsightFiltersCreatedAtToTerraform(struct?: SecurityhubInsightFiltersCreatedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -1474,7 +1474,7 @@ export function securityhubInsightFiltersCreatedAtToTerraform(struct?: Securityh
 export function securityhubInsightFiltersCreatedAtToHclTerraform(struct?: SecurityhubInsightFiltersCreatedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -1627,15 +1627,15 @@ export class SecurityhubInsightFiltersCreatedAtList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersCriticality {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -1643,7 +1643,7 @@ export interface SecurityhubInsightFiltersCriticality {
 export function securityhubInsightFiltersCriticalityToTerraform(struct?: SecurityhubInsightFiltersCriticality | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     eq: cdktn.stringToTerraform(struct!.eq),
@@ -1656,7 +1656,7 @@ export function securityhubInsightFiltersCriticalityToTerraform(struct?: Securit
 export function securityhubInsightFiltersCriticalityToHclTerraform(struct?: SecurityhubInsightFiltersCriticality | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     eq: {
@@ -1809,11 +1809,11 @@ export class SecurityhubInsightFiltersCriticalityList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersDescription {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -1821,7 +1821,7 @@ export interface SecurityhubInsightFiltersDescription {
 export function securityhubInsightFiltersDescriptionToTerraform(struct?: SecurityhubInsightFiltersDescription | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -1833,7 +1833,7 @@ export function securityhubInsightFiltersDescriptionToTerraform(struct?: Securit
 export function securityhubInsightFiltersDescriptionToHclTerraform(struct?: SecurityhubInsightFiltersDescription | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -1952,15 +1952,15 @@ export class SecurityhubInsightFiltersDescriptionList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsConfidence {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -1968,7 +1968,7 @@ export interface SecurityhubInsightFiltersFindingProviderFieldsConfidence {
 export function securityhubInsightFiltersFindingProviderFieldsConfidenceToTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsConfidence | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     eq: cdktn.stringToTerraform(struct!.eq),
@@ -1981,7 +1981,7 @@ export function securityhubInsightFiltersFindingProviderFieldsConfidenceToTerraf
 export function securityhubInsightFiltersFindingProviderFieldsConfidenceToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsConfidence | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     eq: {
@@ -2134,15 +2134,15 @@ export class SecurityhubInsightFiltersFindingProviderFieldsConfidenceList extend
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsCriticality {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -2150,7 +2150,7 @@ export interface SecurityhubInsightFiltersFindingProviderFieldsCriticality {
 export function securityhubInsightFiltersFindingProviderFieldsCriticalityToTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsCriticality | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     eq: cdktn.stringToTerraform(struct!.eq),
@@ -2163,7 +2163,7 @@ export function securityhubInsightFiltersFindingProviderFieldsCriticalityToTerra
 export function securityhubInsightFiltersFindingProviderFieldsCriticalityToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsCriticality | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     eq: {
@@ -2316,11 +2316,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsCriticalityList exten
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2328,7 +2328,7 @@ export interface SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId
 export function securityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdToTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -2340,7 +2340,7 @@ export function securityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdT
 export function securityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -2459,11 +2459,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2471,7 +2471,7 @@ export interface SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsPr
 export function securityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnToTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -2483,7 +2483,7 @@ export function securityhubInsightFiltersFindingProviderFieldsRelatedFindingsPro
 export function securityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -2602,11 +2602,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProduc
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2614,7 +2614,7 @@ export interface SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel {
 export function securityhubInsightFiltersFindingProviderFieldsSeverityLabelToTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -2626,7 +2626,7 @@ export function securityhubInsightFiltersFindingProviderFieldsSeverityLabelToTer
 export function securityhubInsightFiltersFindingProviderFieldsSeverityLabelToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -2745,11 +2745,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList ext
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2757,7 +2757,7 @@ export interface SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal 
 export function securityhubInsightFiltersFindingProviderFieldsSeverityOriginalToTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -2769,7 +2769,7 @@ export function securityhubInsightFiltersFindingProviderFieldsSeverityOriginalTo
 export function securityhubInsightFiltersFindingProviderFieldsSeverityOriginalToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -2888,11 +2888,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList 
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2900,7 +2900,7 @@ export interface SecurityhubInsightFiltersFindingProviderFieldsTypes {
 export function securityhubInsightFiltersFindingProviderFieldsTypesToTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsTypes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -2912,7 +2912,7 @@ export function securityhubInsightFiltersFindingProviderFieldsTypesToTerraform(s
 export function securityhubInsightFiltersFindingProviderFieldsTypesToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsTypes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -3031,11 +3031,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsTypesList extends cdk
 }
 export interface SecurityhubInsightFiltersFirstObservedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -3043,7 +3043,7 @@ export interface SecurityhubInsightFiltersFirstObservedAtDateRange {
 export function securityhubInsightFiltersFirstObservedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference | SecurityhubInsightFiltersFirstObservedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -3055,7 +3055,7 @@ export function securityhubInsightFiltersFirstObservedAtDateRangeToTerraform(str
 export function securityhubInsightFiltersFirstObservedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference | SecurityhubInsightFiltersFirstObservedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -3142,17 +3142,17 @@ export class SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference ex
 }
 export interface SecurityhubInsightFiltersFirstObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersFirstObservedAtDateRange;
 }
@@ -3160,7 +3160,7 @@ export interface SecurityhubInsightFiltersFirstObservedAt {
 export function securityhubInsightFiltersFirstObservedAtToTerraform(struct?: SecurityhubInsightFiltersFirstObservedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -3173,7 +3173,7 @@ export function securityhubInsightFiltersFirstObservedAtToTerraform(struct?: Sec
 export function securityhubInsightFiltersFirstObservedAtToHclTerraform(struct?: SecurityhubInsightFiltersFirstObservedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -3326,11 +3326,11 @@ export class SecurityhubInsightFiltersFirstObservedAtList extends cdktn.ComplexL
 }
 export interface SecurityhubInsightFiltersGeneratorId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3338,7 +3338,7 @@ export interface SecurityhubInsightFiltersGeneratorId {
 export function securityhubInsightFiltersGeneratorIdToTerraform(struct?: SecurityhubInsightFiltersGeneratorId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -3350,7 +3350,7 @@ export function securityhubInsightFiltersGeneratorIdToTerraform(struct?: Securit
 export function securityhubInsightFiltersGeneratorIdToHclTerraform(struct?: SecurityhubInsightFiltersGeneratorId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -3469,11 +3469,11 @@ export class SecurityhubInsightFiltersGeneratorIdList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3481,7 +3481,7 @@ export interface SecurityhubInsightFiltersId {
 export function securityhubInsightFiltersIdToTerraform(struct?: SecurityhubInsightFiltersId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -3493,7 +3493,7 @@ export function securityhubInsightFiltersIdToTerraform(struct?: SecurityhubInsig
 export function securityhubInsightFiltersIdToHclTerraform(struct?: SecurityhubInsightFiltersId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -3612,7 +3612,7 @@ export class SecurityhubInsightFiltersIdList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersKeyword {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3620,7 +3620,7 @@ export interface SecurityhubInsightFiltersKeyword {
 export function securityhubInsightFiltersKeywordToTerraform(struct?: SecurityhubInsightFiltersKeyword | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -3631,7 +3631,7 @@ export function securityhubInsightFiltersKeywordToTerraform(struct?: Securityhub
 export function securityhubInsightFiltersKeywordToHclTerraform(struct?: SecurityhubInsightFiltersKeyword | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -3725,11 +3725,11 @@ export class SecurityhubInsightFiltersKeywordList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersLastObservedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -3737,7 +3737,7 @@ export interface SecurityhubInsightFiltersLastObservedAtDateRange {
 export function securityhubInsightFiltersLastObservedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference | SecurityhubInsightFiltersLastObservedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -3749,7 +3749,7 @@ export function securityhubInsightFiltersLastObservedAtDateRangeToTerraform(stru
 export function securityhubInsightFiltersLastObservedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference | SecurityhubInsightFiltersLastObservedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -3836,17 +3836,17 @@ export class SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference ext
 }
 export interface SecurityhubInsightFiltersLastObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersLastObservedAtDateRange;
 }
@@ -3854,7 +3854,7 @@ export interface SecurityhubInsightFiltersLastObservedAt {
 export function securityhubInsightFiltersLastObservedAtToTerraform(struct?: SecurityhubInsightFiltersLastObservedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -3867,7 +3867,7 @@ export function securityhubInsightFiltersLastObservedAtToTerraform(struct?: Secu
 export function securityhubInsightFiltersLastObservedAtToHclTerraform(struct?: SecurityhubInsightFiltersLastObservedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -4020,11 +4020,11 @@ export class SecurityhubInsightFiltersLastObservedAtList extends cdktn.ComplexLi
 }
 export interface SecurityhubInsightFiltersMalwareName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4032,7 +4032,7 @@ export interface SecurityhubInsightFiltersMalwareName {
 export function securityhubInsightFiltersMalwareNameToTerraform(struct?: SecurityhubInsightFiltersMalwareName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -4044,7 +4044,7 @@ export function securityhubInsightFiltersMalwareNameToTerraform(struct?: Securit
 export function securityhubInsightFiltersMalwareNameToHclTerraform(struct?: SecurityhubInsightFiltersMalwareName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -4163,11 +4163,11 @@ export class SecurityhubInsightFiltersMalwareNameList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersMalwarePath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4175,7 +4175,7 @@ export interface SecurityhubInsightFiltersMalwarePath {
 export function securityhubInsightFiltersMalwarePathToTerraform(struct?: SecurityhubInsightFiltersMalwarePath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -4187,7 +4187,7 @@ export function securityhubInsightFiltersMalwarePathToTerraform(struct?: Securit
 export function securityhubInsightFiltersMalwarePathToHclTerraform(struct?: SecurityhubInsightFiltersMalwarePath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -4306,11 +4306,11 @@ export class SecurityhubInsightFiltersMalwarePathList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersMalwareState {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4318,7 +4318,7 @@ export interface SecurityhubInsightFiltersMalwareState {
 export function securityhubInsightFiltersMalwareStateToTerraform(struct?: SecurityhubInsightFiltersMalwareState | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -4330,7 +4330,7 @@ export function securityhubInsightFiltersMalwareStateToTerraform(struct?: Securi
 export function securityhubInsightFiltersMalwareStateToHclTerraform(struct?: SecurityhubInsightFiltersMalwareState | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -4449,11 +4449,11 @@ export class SecurityhubInsightFiltersMalwareStateList extends cdktn.ComplexList
 }
 export interface SecurityhubInsightFiltersMalwareType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4461,7 +4461,7 @@ export interface SecurityhubInsightFiltersMalwareType {
 export function securityhubInsightFiltersMalwareTypeToTerraform(struct?: SecurityhubInsightFiltersMalwareType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -4473,7 +4473,7 @@ export function securityhubInsightFiltersMalwareTypeToTerraform(struct?: Securit
 export function securityhubInsightFiltersMalwareTypeToHclTerraform(struct?: SecurityhubInsightFiltersMalwareType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -4592,11 +4592,11 @@ export class SecurityhubInsightFiltersMalwareTypeList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersNetworkDestinationDomain {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4604,7 +4604,7 @@ export interface SecurityhubInsightFiltersNetworkDestinationDomain {
 export function securityhubInsightFiltersNetworkDestinationDomainToTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationDomain | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -4616,7 +4616,7 @@ export function securityhubInsightFiltersNetworkDestinationDomainToTerraform(str
 export function securityhubInsightFiltersNetworkDestinationDomainToHclTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationDomain | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -4735,7 +4735,7 @@ export class SecurityhubInsightFiltersNetworkDestinationDomainList extends cdktn
 }
 export interface SecurityhubInsightFiltersNetworkDestinationIpv4 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -4743,7 +4743,7 @@ export interface SecurityhubInsightFiltersNetworkDestinationIpv4 {
 export function securityhubInsightFiltersNetworkDestinationIpv4ToTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationIpv4 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cidr: cdktn.stringToTerraform(struct!.cidr),
@@ -4754,7 +4754,7 @@ export function securityhubInsightFiltersNetworkDestinationIpv4ToTerraform(struc
 export function securityhubInsightFiltersNetworkDestinationIpv4ToHclTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationIpv4 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cidr: {
@@ -4848,7 +4848,7 @@ export class SecurityhubInsightFiltersNetworkDestinationIpv4List extends cdktn.C
 }
 export interface SecurityhubInsightFiltersNetworkDestinationIpv6 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -4856,7 +4856,7 @@ export interface SecurityhubInsightFiltersNetworkDestinationIpv6 {
 export function securityhubInsightFiltersNetworkDestinationIpv6ToTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationIpv6 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cidr: cdktn.stringToTerraform(struct!.cidr),
@@ -4867,7 +4867,7 @@ export function securityhubInsightFiltersNetworkDestinationIpv6ToTerraform(struc
 export function securityhubInsightFiltersNetworkDestinationIpv6ToHclTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationIpv6 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cidr: {
@@ -4961,15 +4961,15 @@ export class SecurityhubInsightFiltersNetworkDestinationIpv6List extends cdktn.C
 }
 export interface SecurityhubInsightFiltersNetworkDestinationPort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -4977,7 +4977,7 @@ export interface SecurityhubInsightFiltersNetworkDestinationPort {
 export function securityhubInsightFiltersNetworkDestinationPortToTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationPort | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     eq: cdktn.stringToTerraform(struct!.eq),
@@ -4990,7 +4990,7 @@ export function securityhubInsightFiltersNetworkDestinationPortToTerraform(struc
 export function securityhubInsightFiltersNetworkDestinationPortToHclTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationPort | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     eq: {
@@ -5143,11 +5143,11 @@ export class SecurityhubInsightFiltersNetworkDestinationPortList extends cdktn.C
 }
 export interface SecurityhubInsightFiltersNetworkDirection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -5155,7 +5155,7 @@ export interface SecurityhubInsightFiltersNetworkDirection {
 export function securityhubInsightFiltersNetworkDirectionToTerraform(struct?: SecurityhubInsightFiltersNetworkDirection | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -5167,7 +5167,7 @@ export function securityhubInsightFiltersNetworkDirectionToTerraform(struct?: Se
 export function securityhubInsightFiltersNetworkDirectionToHclTerraform(struct?: SecurityhubInsightFiltersNetworkDirection | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -5286,11 +5286,11 @@ export class SecurityhubInsightFiltersNetworkDirectionList extends cdktn.Complex
 }
 export interface SecurityhubInsightFiltersNetworkProtocol {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -5298,7 +5298,7 @@ export interface SecurityhubInsightFiltersNetworkProtocol {
 export function securityhubInsightFiltersNetworkProtocolToTerraform(struct?: SecurityhubInsightFiltersNetworkProtocol | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -5310,7 +5310,7 @@ export function securityhubInsightFiltersNetworkProtocolToTerraform(struct?: Sec
 export function securityhubInsightFiltersNetworkProtocolToHclTerraform(struct?: SecurityhubInsightFiltersNetworkProtocol | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -5429,11 +5429,11 @@ export class SecurityhubInsightFiltersNetworkProtocolList extends cdktn.ComplexL
 }
 export interface SecurityhubInsightFiltersNetworkSourceDomain {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -5441,7 +5441,7 @@ export interface SecurityhubInsightFiltersNetworkSourceDomain {
 export function securityhubInsightFiltersNetworkSourceDomainToTerraform(struct?: SecurityhubInsightFiltersNetworkSourceDomain | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -5453,7 +5453,7 @@ export function securityhubInsightFiltersNetworkSourceDomainToTerraform(struct?:
 export function securityhubInsightFiltersNetworkSourceDomainToHclTerraform(struct?: SecurityhubInsightFiltersNetworkSourceDomain | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -5572,7 +5572,7 @@ export class SecurityhubInsightFiltersNetworkSourceDomainList extends cdktn.Comp
 }
 export interface SecurityhubInsightFiltersNetworkSourceIpv4 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -5580,7 +5580,7 @@ export interface SecurityhubInsightFiltersNetworkSourceIpv4 {
 export function securityhubInsightFiltersNetworkSourceIpv4ToTerraform(struct?: SecurityhubInsightFiltersNetworkSourceIpv4 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cidr: cdktn.stringToTerraform(struct!.cidr),
@@ -5591,7 +5591,7 @@ export function securityhubInsightFiltersNetworkSourceIpv4ToTerraform(struct?: S
 export function securityhubInsightFiltersNetworkSourceIpv4ToHclTerraform(struct?: SecurityhubInsightFiltersNetworkSourceIpv4 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cidr: {
@@ -5685,7 +5685,7 @@ export class SecurityhubInsightFiltersNetworkSourceIpv4List extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersNetworkSourceIpv6 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -5693,7 +5693,7 @@ export interface SecurityhubInsightFiltersNetworkSourceIpv6 {
 export function securityhubInsightFiltersNetworkSourceIpv6ToTerraform(struct?: SecurityhubInsightFiltersNetworkSourceIpv6 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cidr: cdktn.stringToTerraform(struct!.cidr),
@@ -5704,7 +5704,7 @@ export function securityhubInsightFiltersNetworkSourceIpv6ToTerraform(struct?: S
 export function securityhubInsightFiltersNetworkSourceIpv6ToHclTerraform(struct?: SecurityhubInsightFiltersNetworkSourceIpv6 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cidr: {
@@ -5798,11 +5798,11 @@ export class SecurityhubInsightFiltersNetworkSourceIpv6List extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersNetworkSourceMac {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -5810,7 +5810,7 @@ export interface SecurityhubInsightFiltersNetworkSourceMac {
 export function securityhubInsightFiltersNetworkSourceMacToTerraform(struct?: SecurityhubInsightFiltersNetworkSourceMac | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -5822,7 +5822,7 @@ export function securityhubInsightFiltersNetworkSourceMacToTerraform(struct?: Se
 export function securityhubInsightFiltersNetworkSourceMacToHclTerraform(struct?: SecurityhubInsightFiltersNetworkSourceMac | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -5941,15 +5941,15 @@ export class SecurityhubInsightFiltersNetworkSourceMacList extends cdktn.Complex
 }
 export interface SecurityhubInsightFiltersNetworkSourcePort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -5957,7 +5957,7 @@ export interface SecurityhubInsightFiltersNetworkSourcePort {
 export function securityhubInsightFiltersNetworkSourcePortToTerraform(struct?: SecurityhubInsightFiltersNetworkSourcePort | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     eq: cdktn.stringToTerraform(struct!.eq),
@@ -5970,7 +5970,7 @@ export function securityhubInsightFiltersNetworkSourcePortToTerraform(struct?: S
 export function securityhubInsightFiltersNetworkSourcePortToHclTerraform(struct?: SecurityhubInsightFiltersNetworkSourcePort | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     eq: {
@@ -6123,11 +6123,11 @@ export class SecurityhubInsightFiltersNetworkSourcePortList extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersNoteText {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6135,7 +6135,7 @@ export interface SecurityhubInsightFiltersNoteText {
 export function securityhubInsightFiltersNoteTextToTerraform(struct?: SecurityhubInsightFiltersNoteText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -6147,7 +6147,7 @@ export function securityhubInsightFiltersNoteTextToTerraform(struct?: Securityhu
 export function securityhubInsightFiltersNoteTextToHclTerraform(struct?: SecurityhubInsightFiltersNoteText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -6266,11 +6266,11 @@ export class SecurityhubInsightFiltersNoteTextList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersNoteUpdatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -6278,7 +6278,7 @@ export interface SecurityhubInsightFiltersNoteUpdatedAtDateRange {
 export function securityhubInsightFiltersNoteUpdatedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference | SecurityhubInsightFiltersNoteUpdatedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -6290,7 +6290,7 @@ export function securityhubInsightFiltersNoteUpdatedAtDateRangeToTerraform(struc
 export function securityhubInsightFiltersNoteUpdatedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference | SecurityhubInsightFiltersNoteUpdatedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -6377,17 +6377,17 @@ export class SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference exte
 }
 export interface SecurityhubInsightFiltersNoteUpdatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersNoteUpdatedAtDateRange;
 }
@@ -6395,7 +6395,7 @@ export interface SecurityhubInsightFiltersNoteUpdatedAt {
 export function securityhubInsightFiltersNoteUpdatedAtToTerraform(struct?: SecurityhubInsightFiltersNoteUpdatedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -6408,7 +6408,7 @@ export function securityhubInsightFiltersNoteUpdatedAtToTerraform(struct?: Secur
 export function securityhubInsightFiltersNoteUpdatedAtToHclTerraform(struct?: SecurityhubInsightFiltersNoteUpdatedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -6561,11 +6561,11 @@ export class SecurityhubInsightFiltersNoteUpdatedAtList extends cdktn.ComplexLis
 }
 export interface SecurityhubInsightFiltersNoteUpdatedBy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6573,7 +6573,7 @@ export interface SecurityhubInsightFiltersNoteUpdatedBy {
 export function securityhubInsightFiltersNoteUpdatedByToTerraform(struct?: SecurityhubInsightFiltersNoteUpdatedBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -6585,7 +6585,7 @@ export function securityhubInsightFiltersNoteUpdatedByToTerraform(struct?: Secur
 export function securityhubInsightFiltersNoteUpdatedByToHclTerraform(struct?: SecurityhubInsightFiltersNoteUpdatedBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -6704,11 +6704,11 @@ export class SecurityhubInsightFiltersNoteUpdatedByList extends cdktn.ComplexLis
 }
 export interface SecurityhubInsightFiltersProcessLaunchedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -6716,7 +6716,7 @@ export interface SecurityhubInsightFiltersProcessLaunchedAtDateRange {
 export function securityhubInsightFiltersProcessLaunchedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference | SecurityhubInsightFiltersProcessLaunchedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -6728,7 +6728,7 @@ export function securityhubInsightFiltersProcessLaunchedAtDateRangeToTerraform(s
 export function securityhubInsightFiltersProcessLaunchedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference | SecurityhubInsightFiltersProcessLaunchedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -6815,17 +6815,17 @@ export class SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference 
 }
 export interface SecurityhubInsightFiltersProcessLaunchedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersProcessLaunchedAtDateRange;
 }
@@ -6833,7 +6833,7 @@ export interface SecurityhubInsightFiltersProcessLaunchedAt {
 export function securityhubInsightFiltersProcessLaunchedAtToTerraform(struct?: SecurityhubInsightFiltersProcessLaunchedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -6846,7 +6846,7 @@ export function securityhubInsightFiltersProcessLaunchedAtToTerraform(struct?: S
 export function securityhubInsightFiltersProcessLaunchedAtToHclTerraform(struct?: SecurityhubInsightFiltersProcessLaunchedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -6999,11 +6999,11 @@ export class SecurityhubInsightFiltersProcessLaunchedAtList extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersProcessName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -7011,7 +7011,7 @@ export interface SecurityhubInsightFiltersProcessName {
 export function securityhubInsightFiltersProcessNameToTerraform(struct?: SecurityhubInsightFiltersProcessName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -7023,7 +7023,7 @@ export function securityhubInsightFiltersProcessNameToTerraform(struct?: Securit
 export function securityhubInsightFiltersProcessNameToHclTerraform(struct?: SecurityhubInsightFiltersProcessName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -7142,15 +7142,15 @@ export class SecurityhubInsightFiltersProcessNameList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersProcessParentPid {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -7158,7 +7158,7 @@ export interface SecurityhubInsightFiltersProcessParentPid {
 export function securityhubInsightFiltersProcessParentPidToTerraform(struct?: SecurityhubInsightFiltersProcessParentPid | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     eq: cdktn.stringToTerraform(struct!.eq),
@@ -7171,7 +7171,7 @@ export function securityhubInsightFiltersProcessParentPidToTerraform(struct?: Se
 export function securityhubInsightFiltersProcessParentPidToHclTerraform(struct?: SecurityhubInsightFiltersProcessParentPid | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     eq: {
@@ -7324,11 +7324,11 @@ export class SecurityhubInsightFiltersProcessParentPidList extends cdktn.Complex
 }
 export interface SecurityhubInsightFiltersProcessPath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -7336,7 +7336,7 @@ export interface SecurityhubInsightFiltersProcessPath {
 export function securityhubInsightFiltersProcessPathToTerraform(struct?: SecurityhubInsightFiltersProcessPath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -7348,7 +7348,7 @@ export function securityhubInsightFiltersProcessPathToTerraform(struct?: Securit
 export function securityhubInsightFiltersProcessPathToHclTerraform(struct?: SecurityhubInsightFiltersProcessPath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -7467,15 +7467,15 @@ export class SecurityhubInsightFiltersProcessPathList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersProcessPid {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -7483,7 +7483,7 @@ export interface SecurityhubInsightFiltersProcessPid {
 export function securityhubInsightFiltersProcessPidToTerraform(struct?: SecurityhubInsightFiltersProcessPid | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     eq: cdktn.stringToTerraform(struct!.eq),
@@ -7496,7 +7496,7 @@ export function securityhubInsightFiltersProcessPidToTerraform(struct?: Security
 export function securityhubInsightFiltersProcessPidToHclTerraform(struct?: SecurityhubInsightFiltersProcessPid | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     eq: {
@@ -7649,11 +7649,11 @@ export class SecurityhubInsightFiltersProcessPidList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersProcessTerminatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -7661,7 +7661,7 @@ export interface SecurityhubInsightFiltersProcessTerminatedAtDateRange {
 export function securityhubInsightFiltersProcessTerminatedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference | SecurityhubInsightFiltersProcessTerminatedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -7673,7 +7673,7 @@ export function securityhubInsightFiltersProcessTerminatedAtDateRangeToTerraform
 export function securityhubInsightFiltersProcessTerminatedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference | SecurityhubInsightFiltersProcessTerminatedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -7760,17 +7760,17 @@ export class SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReferenc
 }
 export interface SecurityhubInsightFiltersProcessTerminatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersProcessTerminatedAtDateRange;
 }
@@ -7778,7 +7778,7 @@ export interface SecurityhubInsightFiltersProcessTerminatedAt {
 export function securityhubInsightFiltersProcessTerminatedAtToTerraform(struct?: SecurityhubInsightFiltersProcessTerminatedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -7791,7 +7791,7 @@ export function securityhubInsightFiltersProcessTerminatedAtToTerraform(struct?:
 export function securityhubInsightFiltersProcessTerminatedAtToHclTerraform(struct?: SecurityhubInsightFiltersProcessTerminatedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -7944,11 +7944,11 @@ export class SecurityhubInsightFiltersProcessTerminatedAtList extends cdktn.Comp
 }
 export interface SecurityhubInsightFiltersProductArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -7956,7 +7956,7 @@ export interface SecurityhubInsightFiltersProductArn {
 export function securityhubInsightFiltersProductArnToTerraform(struct?: SecurityhubInsightFiltersProductArn | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -7968,7 +7968,7 @@ export function securityhubInsightFiltersProductArnToTerraform(struct?: Security
 export function securityhubInsightFiltersProductArnToHclTerraform(struct?: SecurityhubInsightFiltersProductArn | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -8087,15 +8087,15 @@ export class SecurityhubInsightFiltersProductArnList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersProductFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8103,7 +8103,7 @@ export interface SecurityhubInsightFiltersProductFields {
 export function securityhubInsightFiltersProductFieldsToTerraform(struct?: SecurityhubInsightFiltersProductFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -8116,7 +8116,7 @@ export function securityhubInsightFiltersProductFieldsToTerraform(struct?: Secur
 export function securityhubInsightFiltersProductFieldsToHclTerraform(struct?: SecurityhubInsightFiltersProductFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -8260,11 +8260,11 @@ export class SecurityhubInsightFiltersProductFieldsList extends cdktn.ComplexLis
 }
 export interface SecurityhubInsightFiltersProductName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8272,7 +8272,7 @@ export interface SecurityhubInsightFiltersProductName {
 export function securityhubInsightFiltersProductNameToTerraform(struct?: SecurityhubInsightFiltersProductName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -8284,7 +8284,7 @@ export function securityhubInsightFiltersProductNameToTerraform(struct?: Securit
 export function securityhubInsightFiltersProductNameToHclTerraform(struct?: SecurityhubInsightFiltersProductName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -8403,11 +8403,11 @@ export class SecurityhubInsightFiltersProductNameList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersRecommendationText {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8415,7 +8415,7 @@ export interface SecurityhubInsightFiltersRecommendationText {
 export function securityhubInsightFiltersRecommendationTextToTerraform(struct?: SecurityhubInsightFiltersRecommendationText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -8427,7 +8427,7 @@ export function securityhubInsightFiltersRecommendationTextToTerraform(struct?: 
 export function securityhubInsightFiltersRecommendationTextToHclTerraform(struct?: SecurityhubInsightFiltersRecommendationText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -8546,11 +8546,11 @@ export class SecurityhubInsightFiltersRecommendationTextList extends cdktn.Compl
 }
 export interface SecurityhubInsightFiltersRecordState {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8558,7 +8558,7 @@ export interface SecurityhubInsightFiltersRecordState {
 export function securityhubInsightFiltersRecordStateToTerraform(struct?: SecurityhubInsightFiltersRecordState | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -8570,7 +8570,7 @@ export function securityhubInsightFiltersRecordStateToTerraform(struct?: Securit
 export function securityhubInsightFiltersRecordStateToHclTerraform(struct?: SecurityhubInsightFiltersRecordState | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -8689,11 +8689,11 @@ export class SecurityhubInsightFiltersRecordStateList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersRelatedFindingsId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8701,7 +8701,7 @@ export interface SecurityhubInsightFiltersRelatedFindingsId {
 export function securityhubInsightFiltersRelatedFindingsIdToTerraform(struct?: SecurityhubInsightFiltersRelatedFindingsId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -8713,7 +8713,7 @@ export function securityhubInsightFiltersRelatedFindingsIdToTerraform(struct?: S
 export function securityhubInsightFiltersRelatedFindingsIdToHclTerraform(struct?: SecurityhubInsightFiltersRelatedFindingsId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -8832,11 +8832,11 @@ export class SecurityhubInsightFiltersRelatedFindingsIdList extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersRelatedFindingsProductArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8844,7 +8844,7 @@ export interface SecurityhubInsightFiltersRelatedFindingsProductArn {
 export function securityhubInsightFiltersRelatedFindingsProductArnToTerraform(struct?: SecurityhubInsightFiltersRelatedFindingsProductArn | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -8856,7 +8856,7 @@ export function securityhubInsightFiltersRelatedFindingsProductArnToTerraform(st
 export function securityhubInsightFiltersRelatedFindingsProductArnToHclTerraform(struct?: SecurityhubInsightFiltersRelatedFindingsProductArn | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -8975,11 +8975,11 @@ export class SecurityhubInsightFiltersRelatedFindingsProductArnList extends cdkt
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8987,7 +8987,7 @@ export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfi
 export function securityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnToTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -8999,7 +8999,7 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfil
 export function securityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -9118,11 +9118,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileAr
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceImageId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9130,7 +9130,7 @@ export interface SecurityhubInsightFiltersResourceAwsEc2InstanceImageId {
 export function securityhubInsightFiltersResourceAwsEc2InstanceImageIdToTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceImageId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -9142,7 +9142,7 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceImageIdToTerrafor
 export function securityhubInsightFiltersResourceAwsEc2InstanceImageIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceImageId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -9261,7 +9261,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList extends 
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -9269,7 +9269,7 @@ export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses {
 export function securityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesToTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cidr: cdktn.stringToTerraform(struct!.cidr),
@@ -9280,7 +9280,7 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesToTe
 export function securityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cidr: {
@@ -9374,7 +9374,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList ex
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -9382,7 +9382,7 @@ export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses {
 export function securityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesToTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cidr: cdktn.stringToTerraform(struct!.cidr),
@@ -9393,7 +9393,7 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesToTe
 export function securityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cidr: {
@@ -9487,11 +9487,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList ex
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9499,7 +9499,7 @@ export interface SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName {
 export function securityhubInsightFiltersResourceAwsEc2InstanceKeyNameToTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -9511,7 +9511,7 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceKeyNameToTerrafor
 export function securityhubInsightFiltersResourceAwsEc2InstanceKeyNameToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -9630,11 +9630,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList extends 
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -9642,7 +9642,7 @@ export interface SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRa
 export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference | SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -9654,7 +9654,7 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRan
 export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference | SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -9741,17 +9741,17 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeO
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange;
 }
@@ -9759,7 +9759,7 @@ export interface SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt {
 export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtToTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -9772,7 +9772,7 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtToTerra
 export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -9925,11 +9925,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList exten
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9937,7 +9937,7 @@ export interface SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId {
 export function securityhubInsightFiltersResourceAwsEc2InstanceSubnetIdToTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -9949,7 +9949,7 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceSubnetIdToTerrafo
 export function securityhubInsightFiltersResourceAwsEc2InstanceSubnetIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -10068,11 +10068,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList extends
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10080,7 +10080,7 @@ export interface SecurityhubInsightFiltersResourceAwsEc2InstanceType {
 export function securityhubInsightFiltersResourceAwsEc2InstanceTypeToTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -10092,7 +10092,7 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceTypeToTerraform(s
 export function securityhubInsightFiltersResourceAwsEc2InstanceTypeToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -10211,11 +10211,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList extends cdk
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10223,7 +10223,7 @@ export interface SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId {
 export function securityhubInsightFiltersResourceAwsEc2InstanceVpcIdToTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -10235,7 +10235,7 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceVpcIdToTerraform(
 export function securityhubInsightFiltersResourceAwsEc2InstanceVpcIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -10354,11 +10354,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList extends cd
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -10366,7 +10366,7 @@ export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRa
 export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference | SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -10378,7 +10378,7 @@ export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRan
 export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference | SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -10465,17 +10465,17 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeO
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange;
 }
@@ -10483,7 +10483,7 @@ export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt {
 export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtToTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -10496,7 +10496,7 @@ export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtToTerra
 export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -10649,11 +10649,11 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList exten
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10661,7 +10661,7 @@ export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus {
 export function securityhubInsightFiltersResourceAwsIamAccessKeyStatusToTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -10673,7 +10673,7 @@ export function securityhubInsightFiltersResourceAwsIamAccessKeyStatusToTerrafor
 export function securityhubInsightFiltersResourceAwsIamAccessKeyStatusToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -10792,11 +10792,11 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList extends 
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10804,7 +10804,7 @@ export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName {
 export function securityhubInsightFiltersResourceAwsIamAccessKeyUserNameToTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -10816,7 +10816,7 @@ export function securityhubInsightFiltersResourceAwsIamAccessKeyUserNameToTerraf
 export function securityhubInsightFiltersResourceAwsIamAccessKeyUserNameToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -10935,11 +10935,11 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList extend
 }
 export interface SecurityhubInsightFiltersResourceAwsS3BucketOwnerId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10947,7 +10947,7 @@ export interface SecurityhubInsightFiltersResourceAwsS3BucketOwnerId {
 export function securityhubInsightFiltersResourceAwsS3BucketOwnerIdToTerraform(struct?: SecurityhubInsightFiltersResourceAwsS3BucketOwnerId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -10959,7 +10959,7 @@ export function securityhubInsightFiltersResourceAwsS3BucketOwnerIdToTerraform(s
 export function securityhubInsightFiltersResourceAwsS3BucketOwnerIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsS3BucketOwnerId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -11078,11 +11078,11 @@ export class SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList extends cdk
 }
 export interface SecurityhubInsightFiltersResourceAwsS3BucketOwnerName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11090,7 +11090,7 @@ export interface SecurityhubInsightFiltersResourceAwsS3BucketOwnerName {
 export function securityhubInsightFiltersResourceAwsS3BucketOwnerNameToTerraform(struct?: SecurityhubInsightFiltersResourceAwsS3BucketOwnerName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -11102,7 +11102,7 @@ export function securityhubInsightFiltersResourceAwsS3BucketOwnerNameToTerraform
 export function securityhubInsightFiltersResourceAwsS3BucketOwnerNameToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsS3BucketOwnerName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -11221,11 +11221,11 @@ export class SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList extends c
 }
 export interface SecurityhubInsightFiltersResourceContainerImageId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11233,7 +11233,7 @@ export interface SecurityhubInsightFiltersResourceContainerImageId {
 export function securityhubInsightFiltersResourceContainerImageIdToTerraform(struct?: SecurityhubInsightFiltersResourceContainerImageId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -11245,7 +11245,7 @@ export function securityhubInsightFiltersResourceContainerImageIdToTerraform(str
 export function securityhubInsightFiltersResourceContainerImageIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceContainerImageId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -11364,11 +11364,11 @@ export class SecurityhubInsightFiltersResourceContainerImageIdList extends cdktn
 }
 export interface SecurityhubInsightFiltersResourceContainerImageName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11376,7 +11376,7 @@ export interface SecurityhubInsightFiltersResourceContainerImageName {
 export function securityhubInsightFiltersResourceContainerImageNameToTerraform(struct?: SecurityhubInsightFiltersResourceContainerImageName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -11388,7 +11388,7 @@ export function securityhubInsightFiltersResourceContainerImageNameToTerraform(s
 export function securityhubInsightFiltersResourceContainerImageNameToHclTerraform(struct?: SecurityhubInsightFiltersResourceContainerImageName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -11507,11 +11507,11 @@ export class SecurityhubInsightFiltersResourceContainerImageNameList extends cdk
 }
 export interface SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -11519,7 +11519,7 @@ export interface SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange {
 export function securityhubInsightFiltersResourceContainerLaunchedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference | SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -11531,7 +11531,7 @@ export function securityhubInsightFiltersResourceContainerLaunchedAtDateRangeToT
 export function securityhubInsightFiltersResourceContainerLaunchedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference | SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -11618,17 +11618,17 @@ export class SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutput
 }
 export interface SecurityhubInsightFiltersResourceContainerLaunchedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange;
 }
@@ -11636,7 +11636,7 @@ export interface SecurityhubInsightFiltersResourceContainerLaunchedAt {
 export function securityhubInsightFiltersResourceContainerLaunchedAtToTerraform(struct?: SecurityhubInsightFiltersResourceContainerLaunchedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -11649,7 +11649,7 @@ export function securityhubInsightFiltersResourceContainerLaunchedAtToTerraform(
 export function securityhubInsightFiltersResourceContainerLaunchedAtToHclTerraform(struct?: SecurityhubInsightFiltersResourceContainerLaunchedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -11802,11 +11802,11 @@ export class SecurityhubInsightFiltersResourceContainerLaunchedAtList extends cd
 }
 export interface SecurityhubInsightFiltersResourceContainerName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11814,7 +11814,7 @@ export interface SecurityhubInsightFiltersResourceContainerName {
 export function securityhubInsightFiltersResourceContainerNameToTerraform(struct?: SecurityhubInsightFiltersResourceContainerName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -11826,7 +11826,7 @@ export function securityhubInsightFiltersResourceContainerNameToTerraform(struct
 export function securityhubInsightFiltersResourceContainerNameToHclTerraform(struct?: SecurityhubInsightFiltersResourceContainerName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -11945,15 +11945,15 @@ export class SecurityhubInsightFiltersResourceContainerNameList extends cdktn.Co
 }
 export interface SecurityhubInsightFiltersResourceDetailsOther {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11961,7 +11961,7 @@ export interface SecurityhubInsightFiltersResourceDetailsOther {
 export function securityhubInsightFiltersResourceDetailsOtherToTerraform(struct?: SecurityhubInsightFiltersResourceDetailsOther | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -11974,7 +11974,7 @@ export function securityhubInsightFiltersResourceDetailsOtherToTerraform(struct?
 export function securityhubInsightFiltersResourceDetailsOtherToHclTerraform(struct?: SecurityhubInsightFiltersResourceDetailsOther | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -12118,11 +12118,11 @@ export class SecurityhubInsightFiltersResourceDetailsOtherList extends cdktn.Com
 }
 export interface SecurityhubInsightFiltersResourceId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12130,7 +12130,7 @@ export interface SecurityhubInsightFiltersResourceId {
 export function securityhubInsightFiltersResourceIdToTerraform(struct?: SecurityhubInsightFiltersResourceId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -12142,7 +12142,7 @@ export function securityhubInsightFiltersResourceIdToTerraform(struct?: Security
 export function securityhubInsightFiltersResourceIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceId | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -12261,11 +12261,11 @@ export class SecurityhubInsightFiltersResourceIdList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersResourcePartition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12273,7 +12273,7 @@ export interface SecurityhubInsightFiltersResourcePartition {
 export function securityhubInsightFiltersResourcePartitionToTerraform(struct?: SecurityhubInsightFiltersResourcePartition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -12285,7 +12285,7 @@ export function securityhubInsightFiltersResourcePartitionToTerraform(struct?: S
 export function securityhubInsightFiltersResourcePartitionToHclTerraform(struct?: SecurityhubInsightFiltersResourcePartition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -12404,11 +12404,11 @@ export class SecurityhubInsightFiltersResourcePartitionList extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersResourceRegion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12416,7 +12416,7 @@ export interface SecurityhubInsightFiltersResourceRegion {
 export function securityhubInsightFiltersResourceRegionToTerraform(struct?: SecurityhubInsightFiltersResourceRegion | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -12428,7 +12428,7 @@ export function securityhubInsightFiltersResourceRegionToTerraform(struct?: Secu
 export function securityhubInsightFiltersResourceRegionToHclTerraform(struct?: SecurityhubInsightFiltersResourceRegion | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -12547,15 +12547,15 @@ export class SecurityhubInsightFiltersResourceRegionList extends cdktn.ComplexLi
 }
 export interface SecurityhubInsightFiltersResourceTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12563,7 +12563,7 @@ export interface SecurityhubInsightFiltersResourceTags {
 export function securityhubInsightFiltersResourceTagsToTerraform(struct?: SecurityhubInsightFiltersResourceTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -12576,7 +12576,7 @@ export function securityhubInsightFiltersResourceTagsToTerraform(struct?: Securi
 export function securityhubInsightFiltersResourceTagsToHclTerraform(struct?: SecurityhubInsightFiltersResourceTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -12720,11 +12720,11 @@ export class SecurityhubInsightFiltersResourceTagsList extends cdktn.ComplexList
 }
 export interface SecurityhubInsightFiltersResourceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12732,7 +12732,7 @@ export interface SecurityhubInsightFiltersResourceType {
 export function securityhubInsightFiltersResourceTypeToTerraform(struct?: SecurityhubInsightFiltersResourceType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -12744,7 +12744,7 @@ export function securityhubInsightFiltersResourceTypeToTerraform(struct?: Securi
 export function securityhubInsightFiltersResourceTypeToHclTerraform(struct?: SecurityhubInsightFiltersResourceType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -12863,11 +12863,11 @@ export class SecurityhubInsightFiltersResourceTypeList extends cdktn.ComplexList
 }
 export interface SecurityhubInsightFiltersSeverityLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12875,7 +12875,7 @@ export interface SecurityhubInsightFiltersSeverityLabel {
 export function securityhubInsightFiltersSeverityLabelToTerraform(struct?: SecurityhubInsightFiltersSeverityLabel | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -12887,7 +12887,7 @@ export function securityhubInsightFiltersSeverityLabelToTerraform(struct?: Secur
 export function securityhubInsightFiltersSeverityLabelToHclTerraform(struct?: SecurityhubInsightFiltersSeverityLabel | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -13006,11 +13006,11 @@ export class SecurityhubInsightFiltersSeverityLabelList extends cdktn.ComplexLis
 }
 export interface SecurityhubInsightFiltersSourceUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -13018,7 +13018,7 @@ export interface SecurityhubInsightFiltersSourceUrl {
 export function securityhubInsightFiltersSourceUrlToTerraform(struct?: SecurityhubInsightFiltersSourceUrl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -13030,7 +13030,7 @@ export function securityhubInsightFiltersSourceUrlToTerraform(struct?: Securityh
 export function securityhubInsightFiltersSourceUrlToHclTerraform(struct?: SecurityhubInsightFiltersSourceUrl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -13149,11 +13149,11 @@ export class SecurityhubInsightFiltersSourceUrlList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -13161,7 +13161,7 @@ export interface SecurityhubInsightFiltersThreatIntelIndicatorCategory {
 export function securityhubInsightFiltersThreatIntelIndicatorCategoryToTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorCategory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -13173,7 +13173,7 @@ export function securityhubInsightFiltersThreatIntelIndicatorCategoryToTerraform
 export function securityhubInsightFiltersThreatIntelIndicatorCategoryToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorCategory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -13292,11 +13292,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorCategoryList extends c
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -13304,7 +13304,7 @@ export interface SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDate
 export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference | SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -13316,7 +13316,7 @@ export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateR
 export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference | SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -13403,17 +13403,17 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRang
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange;
 }
@@ -13421,7 +13421,7 @@ export interface SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt {
 export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtToTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -13434,7 +13434,7 @@ export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtToTer
 export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -13587,11 +13587,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList ext
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -13599,7 +13599,7 @@ export interface SecurityhubInsightFiltersThreatIntelIndicatorSource {
 export function securityhubInsightFiltersThreatIntelIndicatorSourceToTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -13611,7 +13611,7 @@ export function securityhubInsightFiltersThreatIntelIndicatorSourceToTerraform(s
 export function securityhubInsightFiltersThreatIntelIndicatorSourceToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -13730,11 +13730,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorSourceList extends cdk
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -13742,7 +13742,7 @@ export interface SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl {
 export function securityhubInsightFiltersThreatIntelIndicatorSourceUrlToTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -13754,7 +13754,7 @@ export function securityhubInsightFiltersThreatIntelIndicatorSourceUrlToTerrafor
 export function securityhubInsightFiltersThreatIntelIndicatorSourceUrlToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -13873,11 +13873,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList extends 
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -13885,7 +13885,7 @@ export interface SecurityhubInsightFiltersThreatIntelIndicatorType {
 export function securityhubInsightFiltersThreatIntelIndicatorTypeToTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -13897,7 +13897,7 @@ export function securityhubInsightFiltersThreatIntelIndicatorTypeToTerraform(str
 export function securityhubInsightFiltersThreatIntelIndicatorTypeToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -14016,11 +14016,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorTypeList extends cdktn
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -14028,7 +14028,7 @@ export interface SecurityhubInsightFiltersThreatIntelIndicatorValue {
 export function securityhubInsightFiltersThreatIntelIndicatorValueToTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorValue | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -14040,7 +14040,7 @@ export function securityhubInsightFiltersThreatIntelIndicatorValueToTerraform(st
 export function securityhubInsightFiltersThreatIntelIndicatorValueToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorValue | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -14159,11 +14159,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorValueList extends cdkt
 }
 export interface SecurityhubInsightFiltersTitle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -14171,7 +14171,7 @@ export interface SecurityhubInsightFiltersTitle {
 export function securityhubInsightFiltersTitleToTerraform(struct?: SecurityhubInsightFiltersTitle | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -14183,7 +14183,7 @@ export function securityhubInsightFiltersTitleToTerraform(struct?: SecurityhubIn
 export function securityhubInsightFiltersTitleToHclTerraform(struct?: SecurityhubInsightFiltersTitle | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -14302,11 +14302,11 @@ export class SecurityhubInsightFiltersTitleList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -14314,7 +14314,7 @@ export interface SecurityhubInsightFiltersType {
 export function securityhubInsightFiltersTypeToTerraform(struct?: SecurityhubInsightFiltersType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -14326,7 +14326,7 @@ export function securityhubInsightFiltersTypeToTerraform(struct?: SecurityhubIns
 export function securityhubInsightFiltersTypeToHclTerraform(struct?: SecurityhubInsightFiltersType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {
@@ -14445,11 +14445,11 @@ export class SecurityhubInsightFiltersTypeList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersUpdatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -14457,7 +14457,7 @@ export interface SecurityhubInsightFiltersUpdatedAtDateRange {
 export function securityhubInsightFiltersUpdatedAtDateRangeToTerraform(struct?: SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference | SecurityhubInsightFiltersUpdatedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -14469,7 +14469,7 @@ export function securityhubInsightFiltersUpdatedAtDateRangeToTerraform(struct?: 
 export function securityhubInsightFiltersUpdatedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference | SecurityhubInsightFiltersUpdatedAtDateRange): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -14556,17 +14556,17 @@ export class SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference extends 
 }
 export interface SecurityhubInsightFiltersUpdatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersUpdatedAtDateRange;
 }
@@ -14574,7 +14574,7 @@ export interface SecurityhubInsightFiltersUpdatedAt {
 export function securityhubInsightFiltersUpdatedAtToTerraform(struct?: SecurityhubInsightFiltersUpdatedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end: cdktn.stringToTerraform(struct!.end),
@@ -14587,7 +14587,7 @@ export function securityhubInsightFiltersUpdatedAtToTerraform(struct?: Securityh
 export function securityhubInsightFiltersUpdatedAtToHclTerraform(struct?: SecurityhubInsightFiltersUpdatedAt | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end: {
@@ -14740,15 +14740,15 @@ export class SecurityhubInsightFiltersUpdatedAtList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersUserDefinedValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -14756,7 +14756,7 @@ export interface SecurityhubInsightFiltersUserDefinedValues {
 export function securityhubInsightFiltersUserDefinedValuesToTerraform(struct?: SecurityhubInsightFiltersUserDefinedValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparison: cdktn.stringToTerraform(struct!.comparison),
@@ -14769,7 +14769,7 @@ export function securityhubInsightFiltersUserDefinedValuesToTerraform(struct?: S
 export function securityhubInsightFiltersUserDefinedValuesToHclTerraform(struct?: SecurityhubInsightFiltersUserDefinedValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparison: {

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,64 @@ import * as cdktn from 'cdktn';
 
 export interface VpclatticeListenerRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#id VpclatticeListenerRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#id VpclatticeListenerRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#listener_identifier VpclatticeListenerRule#listener_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#listener_identifier VpclatticeListenerRule#listener_identifier}
   */
   readonly listenerIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#priority VpclatticeListenerRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#priority VpclatticeListenerRule#priority}
   */
   readonly priority: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#region VpclatticeListenerRule#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#region VpclatticeListenerRule#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#service_identifier VpclatticeListenerRule#service_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#service_identifier VpclatticeListenerRule#service_identifier}
   */
   readonly serviceIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#tags VpclatticeListenerRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#tags VpclatticeListenerRule#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#tags_all VpclatticeListenerRule#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#tags_all VpclatticeListenerRule#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#action VpclatticeListenerRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#action VpclatticeListenerRule#action}
   */
   readonly action: VpclatticeListenerRuleAction;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
   */
   readonly match: VpclatticeListenerRuleMatch;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#timeouts VpclatticeListenerRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#timeouts VpclatticeListenerRule#timeouts}
   */
   readonly timeouts?: VpclatticeListenerRuleTimeouts;
 }
 export interface VpclatticeListenerRuleActionFixedResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#status_code VpclatticeListenerRule#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#status_code VpclatticeListenerRule#status_code}
   */
   readonly statusCode: number;
 }
@@ -78,7 +78,7 @@ export interface VpclatticeListenerRuleActionFixedResponse {
 export function vpclatticeListenerRuleActionFixedResponseToTerraform(struct?: VpclatticeListenerRuleActionFixedResponseOutputReference | VpclatticeListenerRuleActionFixedResponse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     status_code: cdktn.numberToTerraform(struct!.statusCode),
@@ -89,7 +89,7 @@ export function vpclatticeListenerRuleActionFixedResponseToTerraform(struct?: Vp
 export function vpclatticeListenerRuleActionFixedResponseToHclTerraform(struct?: VpclatticeListenerRuleActionFixedResponseOutputReference | VpclatticeListenerRuleActionFixedResponse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     status_code: {
@@ -151,11 +151,11 @@ export class VpclatticeListenerRuleActionFixedResponseOutputReference extends cd
 }
 export interface VpclatticeListenerRuleActionForwardTargetGroups {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#target_group_identifier VpclatticeListenerRule#target_group_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#target_group_identifier VpclatticeListenerRule#target_group_identifier}
   */
   readonly targetGroupIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#weight VpclatticeListenerRule#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#weight VpclatticeListenerRule#weight}
   */
   readonly weight?: number;
 }
@@ -163,7 +163,7 @@ export interface VpclatticeListenerRuleActionForwardTargetGroups {
 export function vpclatticeListenerRuleActionForwardTargetGroupsToTerraform(struct?: VpclatticeListenerRuleActionForwardTargetGroups | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     target_group_identifier: cdktn.stringToTerraform(struct!.targetGroupIdentifier),
@@ -175,7 +175,7 @@ export function vpclatticeListenerRuleActionForwardTargetGroupsToTerraform(struc
 export function vpclatticeListenerRuleActionForwardTargetGroupsToHclTerraform(struct?: VpclatticeListenerRuleActionForwardTargetGroups | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     target_group_identifier: {
@@ -299,7 +299,7 @@ export interface VpclatticeListenerRuleActionForward {
   /**
   * target_groups block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#target_groups VpclatticeListenerRule#target_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#target_groups VpclatticeListenerRule#target_groups}
   */
   readonly targetGroups: VpclatticeListenerRuleActionForwardTargetGroups[] | cdktn.IResolvable;
 }
@@ -307,7 +307,7 @@ export interface VpclatticeListenerRuleActionForward {
 export function vpclatticeListenerRuleActionForwardToTerraform(struct?: VpclatticeListenerRuleActionForwardOutputReference | VpclatticeListenerRuleActionForward): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     target_groups: cdktn.listMapper(vpclatticeListenerRuleActionForwardTargetGroupsToTerraform, true)(struct!.targetGroups),
@@ -318,7 +318,7 @@ export function vpclatticeListenerRuleActionForwardToTerraform(struct?: Vpclatti
 export function vpclatticeListenerRuleActionForwardToHclTerraform(struct?: VpclatticeListenerRuleActionForwardOutputReference | VpclatticeListenerRuleActionForward): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     target_groups: {
@@ -382,13 +382,13 @@ export interface VpclatticeListenerRuleAction {
   /**
   * fixed_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#fixed_response VpclatticeListenerRule#fixed_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#fixed_response VpclatticeListenerRule#fixed_response}
   */
   readonly fixedResponse?: VpclatticeListenerRuleActionFixedResponse;
   /**
   * forward block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#forward VpclatticeListenerRule#forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#forward VpclatticeListenerRule#forward}
   */
   readonly forward?: VpclatticeListenerRuleActionForward;
 }
@@ -396,7 +396,7 @@ export interface VpclatticeListenerRuleAction {
 export function vpclatticeListenerRuleActionToTerraform(struct?: VpclatticeListenerRuleActionOutputReference | VpclatticeListenerRuleAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fixed_response: vpclatticeListenerRuleActionFixedResponseToTerraform(struct!.fixedResponse),
@@ -408,7 +408,7 @@ export function vpclatticeListenerRuleActionToTerraform(struct?: VpclatticeListe
 export function vpclatticeListenerRuleActionToHclTerraform(struct?: VpclatticeListenerRuleActionOutputReference | VpclatticeListenerRuleAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fixed_response: {
@@ -501,15 +501,15 @@ export class VpclatticeListenerRuleActionOutputReference extends cdktn.ComplexOb
 }
 export interface VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#contains VpclatticeListenerRule#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#contains VpclatticeListenerRule#contains}
   */
   readonly contains?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}
   */
   readonly exact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}
   */
   readonly prefix?: string;
 }
@@ -517,7 +517,7 @@ export interface VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch {
 export function vpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchToTerraform(struct?: VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchOutputReference | VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     contains: cdktn.stringToTerraform(struct!.contains),
@@ -530,7 +530,7 @@ export function vpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchToTerrafor
 export function vpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchToHclTerraform(struct?: VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchOutputReference | VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     contains: {
@@ -651,17 +651,17 @@ export class VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchOutputReferen
 }
 export interface VpclatticeListenerRuleMatchHttpMatchHeaderMatches {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}
   */
   readonly caseSensitive?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}
   */
   readonly name: string;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
   */
   readonly match: VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch;
 }
@@ -669,7 +669,7 @@ export interface VpclatticeListenerRuleMatchHttpMatchHeaderMatches {
 export function vpclatticeListenerRuleMatchHttpMatchHeaderMatchesToTerraform(struct?: VpclatticeListenerRuleMatchHttpMatchHeaderMatches | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     case_sensitive: cdktn.booleanToTerraform(struct!.caseSensitive),
@@ -682,7 +682,7 @@ export function vpclatticeListenerRuleMatchHttpMatchHeaderMatchesToTerraform(str
 export function vpclatticeListenerRuleMatchHttpMatchHeaderMatchesToHclTerraform(struct?: VpclatticeListenerRuleMatchHttpMatchHeaderMatches | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     case_sensitive: {
@@ -829,11 +829,11 @@ export class VpclatticeListenerRuleMatchHttpMatchHeaderMatchesList extends cdktn
 }
 export interface VpclatticeListenerRuleMatchHttpMatchPathMatchMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}
   */
   readonly exact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}
   */
   readonly prefix?: string;
 }
@@ -841,7 +841,7 @@ export interface VpclatticeListenerRuleMatchHttpMatchPathMatchMatch {
 export function vpclatticeListenerRuleMatchHttpMatchPathMatchMatchToTerraform(struct?: VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference | VpclatticeListenerRuleMatchHttpMatchPathMatchMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exact: cdktn.stringToTerraform(struct!.exact),
@@ -853,7 +853,7 @@ export function vpclatticeListenerRuleMatchHttpMatchPathMatchMatchToTerraform(st
 export function vpclatticeListenerRuleMatchHttpMatchPathMatchMatchToHclTerraform(struct?: VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference | VpclatticeListenerRuleMatchHttpMatchPathMatchMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exact: {
@@ -946,13 +946,13 @@ export class VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference e
 }
 export interface VpclatticeListenerRuleMatchHttpMatchPathMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}
   */
   readonly caseSensitive?: boolean | cdktn.IResolvable;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
   */
   readonly match: VpclatticeListenerRuleMatchHttpMatchPathMatchMatch;
 }
@@ -960,7 +960,7 @@ export interface VpclatticeListenerRuleMatchHttpMatchPathMatch {
 export function vpclatticeListenerRuleMatchHttpMatchPathMatchToTerraform(struct?: VpclatticeListenerRuleMatchHttpMatchPathMatchOutputReference | VpclatticeListenerRuleMatchHttpMatchPathMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     case_sensitive: cdktn.booleanToTerraform(struct!.caseSensitive),
@@ -972,7 +972,7 @@ export function vpclatticeListenerRuleMatchHttpMatchPathMatchToTerraform(struct?
 export function vpclatticeListenerRuleMatchHttpMatchPathMatchToHclTerraform(struct?: VpclatticeListenerRuleMatchHttpMatchPathMatchOutputReference | VpclatticeListenerRuleMatchHttpMatchPathMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     case_sensitive: {
@@ -1062,19 +1062,19 @@ export class VpclatticeListenerRuleMatchHttpMatchPathMatchOutputReference extend
 }
 export interface VpclatticeListenerRuleMatchHttpMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#method VpclatticeListenerRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#method VpclatticeListenerRule#method}
   */
   readonly method?: string;
   /**
   * header_matches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#header_matches VpclatticeListenerRule#header_matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#header_matches VpclatticeListenerRule#header_matches}
   */
   readonly headerMatches?: VpclatticeListenerRuleMatchHttpMatchHeaderMatches[] | cdktn.IResolvable;
   /**
   * path_match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#path_match VpclatticeListenerRule#path_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#path_match VpclatticeListenerRule#path_match}
   */
   readonly pathMatch?: VpclatticeListenerRuleMatchHttpMatchPathMatch;
 }
@@ -1082,7 +1082,7 @@ export interface VpclatticeListenerRuleMatchHttpMatch {
 export function vpclatticeListenerRuleMatchHttpMatchToTerraform(struct?: VpclatticeListenerRuleMatchHttpMatchOutputReference | VpclatticeListenerRuleMatchHttpMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     method: cdktn.stringToTerraform(struct!.method),
@@ -1095,7 +1095,7 @@ export function vpclatticeListenerRuleMatchHttpMatchToTerraform(struct?: Vpclatt
 export function vpclatticeListenerRuleMatchHttpMatchToHclTerraform(struct?: VpclatticeListenerRuleMatchHttpMatchOutputReference | VpclatticeListenerRuleMatchHttpMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     method: {
@@ -1218,7 +1218,7 @@ export interface VpclatticeListenerRuleMatch {
   /**
   * http_match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#http_match VpclatticeListenerRule#http_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#http_match VpclatticeListenerRule#http_match}
   */
   readonly httpMatch: VpclatticeListenerRuleMatchHttpMatch;
 }
@@ -1226,7 +1226,7 @@ export interface VpclatticeListenerRuleMatch {
 export function vpclatticeListenerRuleMatchToTerraform(struct?: VpclatticeListenerRuleMatchOutputReference | VpclatticeListenerRuleMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     http_match: vpclatticeListenerRuleMatchHttpMatchToTerraform(struct!.httpMatch),
@@ -1237,7 +1237,7 @@ export function vpclatticeListenerRuleMatchToTerraform(struct?: VpclatticeListen
 export function vpclatticeListenerRuleMatchToHclTerraform(struct?: VpclatticeListenerRuleMatchOutputReference | VpclatticeListenerRuleMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     http_match: {
@@ -1299,15 +1299,15 @@ export class VpclatticeListenerRuleMatchOutputReference extends cdktn.ComplexObj
 }
 export interface VpclatticeListenerRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#create VpclatticeListenerRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#create VpclatticeListenerRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#delete VpclatticeListenerRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#delete VpclatticeListenerRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#update VpclatticeListenerRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#update VpclatticeListenerRule#update}
   */
   readonly update?: string;
 }
@@ -1315,7 +1315,7 @@ export interface VpclatticeListenerRuleTimeouts {
 export function vpclatticeListenerRuleTimeoutsToTerraform(struct?: VpclatticeListenerRuleTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1328,7 +1328,7 @@ export function vpclatticeListenerRuleTimeoutsToTerraform(struct?: VpclatticeLis
 export function vpclatticeListenerRuleTimeoutsToHclTerraform(struct?: VpclatticeListenerRuleTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1459,7 +1459,7 @@ export class VpclatticeListenerRuleTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule}
 */
 export class VpclatticeListenerRule extends cdktn.TerraformResource {
 
@@ -1475,7 +1475,7 @@ export class VpclatticeListenerRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VpclatticeListenerRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpclatticeListenerRule to import
-  * @param importFromId The id of the existing VpclatticeListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpclatticeListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpclatticeListenerRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1487,7 +1487,7 @@ export class VpclatticeListenerRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1498,7 +1498,7 @@ export class VpclatticeListenerRule extends cdktn.TerraformResource {
       terraformResourceType: 'aws_vpclattice_listener_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

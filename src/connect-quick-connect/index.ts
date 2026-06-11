@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktn from 'cdktn';
 
 export interface ConnectQuickConnectConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#description ConnectQuickConnect#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#description ConnectQuickConnect#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#id ConnectQuickConnect#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#id ConnectQuickConnect#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#instance_id ConnectQuickConnect#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#instance_id ConnectQuickConnect#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#name ConnectQuickConnect#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#name ConnectQuickConnect#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#region ConnectQuickConnect#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#region ConnectQuickConnect#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#tags ConnectQuickConnect#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#tags ConnectQuickConnect#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#tags_all ConnectQuickConnect#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#tags_all ConnectQuickConnect#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * quick_connect_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#quick_connect_config ConnectQuickConnect#quick_connect_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#quick_connect_config ConnectQuickConnect#quick_connect_config}
   */
   readonly quickConnectConfig: ConnectQuickConnectQuickConnectConfig;
 }
 export interface ConnectQuickConnectQuickConnectConfigPhoneConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#phone_number ConnectQuickConnect#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#phone_number ConnectQuickConnect#phone_number}
   */
   readonly phoneNumber: string;
 }
@@ -62,7 +62,7 @@ export interface ConnectQuickConnectQuickConnectConfigPhoneConfig {
 export function connectQuickConnectQuickConnectConfigPhoneConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
@@ -73,7 +73,7 @@ export function connectQuickConnectQuickConnectConfigPhoneConfigToTerraform(stru
 export function connectQuickConnectQuickConnectConfigPhoneConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     phone_number: {
@@ -167,11 +167,11 @@ export class ConnectQuickConnectQuickConnectConfigPhoneConfigList extends cdktn.
 }
 export interface ConnectQuickConnectQuickConnectConfigQueueConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}
   */
   readonly contactFlowId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#queue_id ConnectQuickConnect#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#queue_id ConnectQuickConnect#queue_id}
   */
   readonly queueId: string;
 }
@@ -179,7 +179,7 @@ export interface ConnectQuickConnectQuickConnectConfigQueueConfig {
 export function connectQuickConnectQuickConnectConfigQueueConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     contact_flow_id: cdktn.stringToTerraform(struct!.contactFlowId),
@@ -191,7 +191,7 @@ export function connectQuickConnectQuickConnectConfigQueueConfigToTerraform(stru
 export function connectQuickConnectQuickConnectConfigQueueConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     contact_flow_id: {
@@ -310,11 +310,11 @@ export class ConnectQuickConnectQuickConnectConfigQueueConfigList extends cdktn.
 }
 export interface ConnectQuickConnectQuickConnectConfigUserConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}
   */
   readonly contactFlowId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#user_id ConnectQuickConnect#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#user_id ConnectQuickConnect#user_id}
   */
   readonly userId: string;
 }
@@ -322,7 +322,7 @@ export interface ConnectQuickConnectQuickConnectConfigUserConfig {
 export function connectQuickConnectQuickConnectConfigUserConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigUserConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     contact_flow_id: cdktn.stringToTerraform(struct!.contactFlowId),
@@ -334,7 +334,7 @@ export function connectQuickConnectQuickConnectConfigUserConfigToTerraform(struc
 export function connectQuickConnectQuickConnectConfigUserConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigUserConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     contact_flow_id: {
@@ -453,25 +453,25 @@ export class ConnectQuickConnectQuickConnectConfigUserConfigList extends cdktn.C
 }
 export interface ConnectQuickConnectQuickConnectConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#quick_connect_type ConnectQuickConnect#quick_connect_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#quick_connect_type ConnectQuickConnect#quick_connect_type}
   */
   readonly quickConnectType: string;
   /**
   * phone_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#phone_config ConnectQuickConnect#phone_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#phone_config ConnectQuickConnect#phone_config}
   */
   readonly phoneConfig?: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktn.IResolvable;
   /**
   * queue_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#queue_config ConnectQuickConnect#queue_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#queue_config ConnectQuickConnect#queue_config}
   */
   readonly queueConfig?: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktn.IResolvable;
   /**
   * user_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#user_config ConnectQuickConnect#user_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#user_config ConnectQuickConnect#user_config}
   */
   readonly userConfig?: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktn.IResolvable;
 }
@@ -479,7 +479,7 @@ export interface ConnectQuickConnectQuickConnectConfig {
 export function connectQuickConnectQuickConnectConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigOutputReference | ConnectQuickConnectQuickConnectConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     quick_connect_type: cdktn.stringToTerraform(struct!.quickConnectType),
@@ -493,7 +493,7 @@ export function connectQuickConnectQuickConnectConfigToTerraform(struct?: Connec
 export function connectQuickConnectQuickConnectConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigOutputReference | ConnectQuickConnectQuickConnectConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     quick_connect_type: {
@@ -639,7 +639,7 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect aws_connect_quick_connect}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect aws_connect_quick_connect}
 */
 export class ConnectQuickConnect extends cdktn.TerraformResource {
 
@@ -655,7 +655,7 @@ export class ConnectQuickConnect extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ConnectQuickConnect resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectQuickConnect to import
-  * @param importFromId The id of the existing ConnectQuickConnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConnectQuickConnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectQuickConnect to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -667,7 +667,7 @@ export class ConnectQuickConnect extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/connect_quick_connect aws_connect_quick_connect} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/connect_quick_connect aws_connect_quick_connect} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -678,7 +678,7 @@ export class ConnectQuickConnect extends cdktn.TerraformResource {
       terraformResourceType: 'aws_connect_quick_connect',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

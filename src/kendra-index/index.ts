@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +13,80 @@ import * as cdktn from 'cdktn';
 
 export interface KendraIndexConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#description KendraIndex#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#description KendraIndex#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#edition KendraIndex#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#edition KendraIndex#edition}
   */
   readonly edition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#id KendraIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#id KendraIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#name KendraIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#name KendraIndex#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#region KendraIndex#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#region KendraIndex#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#role_arn KendraIndex#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#role_arn KendraIndex#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#tags KendraIndex#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#tags KendraIndex#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#tags_all KendraIndex#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#tags_all KendraIndex#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#user_context_policy KendraIndex#user_context_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#user_context_policy KendraIndex#user_context_policy}
   */
   readonly userContextPolicy?: string;
   /**
   * capacity_units block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#capacity_units KendraIndex#capacity_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#capacity_units KendraIndex#capacity_units}
   */
   readonly capacityUnits?: KendraIndexCapacityUnits;
   /**
   * document_metadata_configuration_updates block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#document_metadata_configuration_updates KendraIndex#document_metadata_configuration_updates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#document_metadata_configuration_updates KendraIndex#document_metadata_configuration_updates}
   */
   readonly documentMetadataConfigurationUpdates?: KendraIndexDocumentMetadataConfigurationUpdates[] | cdktn.IResolvable;
   /**
   * server_side_encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#server_side_encryption_configuration KendraIndex#server_side_encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#server_side_encryption_configuration KendraIndex#server_side_encryption_configuration}
   */
   readonly serverSideEncryptionConfiguration?: KendraIndexServerSideEncryptionConfiguration;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#timeouts KendraIndex#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#timeouts KendraIndex#timeouts}
   */
   readonly timeouts?: KendraIndexTimeouts;
   /**
   * user_group_resolution_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#user_group_resolution_configuration KendraIndex#user_group_resolution_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#user_group_resolution_configuration KendraIndex#user_group_resolution_configuration}
   */
   readonly userGroupResolutionConfiguration?: KendraIndexUserGroupResolutionConfiguration;
   /**
   * user_token_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#user_token_configurations KendraIndex#user_token_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#user_token_configurations KendraIndex#user_token_configurations}
   */
   readonly userTokenConfigurations?: KendraIndexUserTokenConfigurations;
 }
@@ -96,7 +96,7 @@ export interface KendraIndexIndexStatisticsFaqStatistics {
 export function kendraIndexIndexStatisticsFaqStatisticsToTerraform(struct?: KendraIndexIndexStatisticsFaqStatistics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -106,7 +106,7 @@ export function kendraIndexIndexStatisticsFaqStatisticsToTerraform(struct?: Kend
 export function kendraIndexIndexStatisticsFaqStatisticsToHclTerraform(struct?: KendraIndexIndexStatisticsFaqStatistics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -171,7 +171,7 @@ export interface KendraIndexIndexStatisticsTextDocumentStatistics {
 export function kendraIndexIndexStatisticsTextDocumentStatisticsToTerraform(struct?: KendraIndexIndexStatisticsTextDocumentStatistics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -181,7 +181,7 @@ export function kendraIndexIndexStatisticsTextDocumentStatisticsToTerraform(stru
 export function kendraIndexIndexStatisticsTextDocumentStatisticsToHclTerraform(struct?: KendraIndexIndexStatisticsTextDocumentStatistics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -251,7 +251,7 @@ export interface KendraIndexIndexStatistics {
 export function kendraIndexIndexStatisticsToTerraform(struct?: KendraIndexIndexStatistics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -261,7 +261,7 @@ export function kendraIndexIndexStatisticsToTerraform(struct?: KendraIndexIndexS
 export function kendraIndexIndexStatisticsToHclTerraform(struct?: KendraIndexIndexStatistics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -329,11 +329,11 @@ export class KendraIndexIndexStatisticsList extends cdktn.ComplexList {
 }
 export interface KendraIndexCapacityUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#query_capacity_units KendraIndex#query_capacity_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#query_capacity_units KendraIndex#query_capacity_units}
   */
   readonly queryCapacityUnits?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#storage_capacity_units KendraIndex#storage_capacity_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#storage_capacity_units KendraIndex#storage_capacity_units}
   */
   readonly storageCapacityUnits?: number;
 }
@@ -341,7 +341,7 @@ export interface KendraIndexCapacityUnits {
 export function kendraIndexCapacityUnitsToTerraform(struct?: KendraIndexCapacityUnitsOutputReference | KendraIndexCapacityUnits): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query_capacity_units: cdktn.numberToTerraform(struct!.queryCapacityUnits),
@@ -353,7 +353,7 @@ export function kendraIndexCapacityUnitsToTerraform(struct?: KendraIndexCapacity
 export function kendraIndexCapacityUnitsToHclTerraform(struct?: KendraIndexCapacityUnitsOutputReference | KendraIndexCapacityUnits): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query_capacity_units: {
@@ -446,23 +446,23 @@ export class KendraIndexCapacityUnitsOutputReference extends cdktn.ComplexObject
 }
 export interface KendraIndexDocumentMetadataConfigurationUpdatesRelevance {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#duration KendraIndex#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#duration KendraIndex#duration}
   */
   readonly duration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#freshness KendraIndex#freshness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#freshness KendraIndex#freshness}
   */
   readonly freshness?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#importance KendraIndex#importance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#importance KendraIndex#importance}
   */
   readonly importance?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#rank_order KendraIndex#rank_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#rank_order KendraIndex#rank_order}
   */
   readonly rankOrder?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#values_importance_map KendraIndex#values_importance_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#values_importance_map KendraIndex#values_importance_map}
   */
   readonly valuesImportanceMap?: { [key: string]: number };
 }
@@ -470,7 +470,7 @@ export interface KendraIndexDocumentMetadataConfigurationUpdatesRelevance {
 export function kendraIndexDocumentMetadataConfigurationUpdatesRelevanceToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference | KendraIndexDocumentMetadataConfigurationUpdatesRelevance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     duration: cdktn.stringToTerraform(struct!.duration),
@@ -485,7 +485,7 @@ export function kendraIndexDocumentMetadataConfigurationUpdatesRelevanceToTerraf
 export function kendraIndexDocumentMetadataConfigurationUpdatesRelevanceToHclTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference | KendraIndexDocumentMetadataConfigurationUpdatesRelevance): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     duration: {
@@ -662,19 +662,19 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputRefer
 }
 export interface KendraIndexDocumentMetadataConfigurationUpdatesSearch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#displayable KendraIndex#displayable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#displayable KendraIndex#displayable}
   */
   readonly displayable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#facetable KendraIndex#facetable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#facetable KendraIndex#facetable}
   */
   readonly facetable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#searchable KendraIndex#searchable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#searchable KendraIndex#searchable}
   */
   readonly searchable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#sortable KendraIndex#sortable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#sortable KendraIndex#sortable}
   */
   readonly sortable?: boolean | cdktn.IResolvable;
 }
@@ -682,7 +682,7 @@ export interface KendraIndexDocumentMetadataConfigurationUpdatesSearch {
 export function kendraIndexDocumentMetadataConfigurationUpdatesSearchToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference | KendraIndexDocumentMetadataConfigurationUpdatesSearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     displayable: cdktn.booleanToTerraform(struct!.displayable),
@@ -696,7 +696,7 @@ export function kendraIndexDocumentMetadataConfigurationUpdatesSearchToTerraform
 export function kendraIndexDocumentMetadataConfigurationUpdatesSearchToHclTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference | KendraIndexDocumentMetadataConfigurationUpdatesSearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     displayable: {
@@ -845,23 +845,23 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReferenc
 }
 export interface KendraIndexDocumentMetadataConfigurationUpdates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#name KendraIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#name KendraIndex#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#type KendraIndex#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#type KendraIndex#type}
   */
   readonly type: string;
   /**
   * relevance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#relevance KendraIndex#relevance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#relevance KendraIndex#relevance}
   */
   readonly relevance?: KendraIndexDocumentMetadataConfigurationUpdatesRelevance;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#search KendraIndex#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#search KendraIndex#search}
   */
   readonly search?: KendraIndexDocumentMetadataConfigurationUpdatesSearch;
 }
@@ -869,7 +869,7 @@ export interface KendraIndexDocumentMetadataConfigurationUpdates {
 export function kendraIndexDocumentMetadataConfigurationUpdatesToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdates | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -883,7 +883,7 @@ export function kendraIndexDocumentMetadataConfigurationUpdatesToTerraform(struc
 export function kendraIndexDocumentMetadataConfigurationUpdatesToHclTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdates | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1058,7 +1058,7 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesList extends cdktn.C
 }
 export interface KendraIndexServerSideEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#kms_key_id KendraIndex#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#kms_key_id KendraIndex#kms_key_id}
   */
   readonly kmsKeyId?: string;
 }
@@ -1066,7 +1066,7 @@ export interface KendraIndexServerSideEncryptionConfiguration {
 export function kendraIndexServerSideEncryptionConfigurationToTerraform(struct?: KendraIndexServerSideEncryptionConfigurationOutputReference | KendraIndexServerSideEncryptionConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
@@ -1077,7 +1077,7 @@ export function kendraIndexServerSideEncryptionConfigurationToTerraform(struct?:
 export function kendraIndexServerSideEncryptionConfigurationToHclTerraform(struct?: KendraIndexServerSideEncryptionConfigurationOutputReference | KendraIndexServerSideEncryptionConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     kms_key_id: {
@@ -1142,15 +1142,15 @@ export class KendraIndexServerSideEncryptionConfigurationOutputReference extends
 }
 export interface KendraIndexTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#create KendraIndex#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#create KendraIndex#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#delete KendraIndex#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#delete KendraIndex#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#update KendraIndex#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#update KendraIndex#update}
   */
   readonly update?: string;
 }
@@ -1158,7 +1158,7 @@ export interface KendraIndexTimeouts {
 export function kendraIndexTimeoutsToTerraform(struct?: KendraIndexTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1171,7 +1171,7 @@ export function kendraIndexTimeoutsToTerraform(struct?: KendraIndexTimeouts | cd
 export function kendraIndexTimeoutsToHclTerraform(struct?: KendraIndexTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1302,7 +1302,7 @@ export class KendraIndexTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 export interface KendraIndexUserGroupResolutionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#user_group_resolution_mode KendraIndex#user_group_resolution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#user_group_resolution_mode KendraIndex#user_group_resolution_mode}
   */
   readonly userGroupResolutionMode: string;
 }
@@ -1310,7 +1310,7 @@ export interface KendraIndexUserGroupResolutionConfiguration {
 export function kendraIndexUserGroupResolutionConfigurationToTerraform(struct?: KendraIndexUserGroupResolutionConfigurationOutputReference | KendraIndexUserGroupResolutionConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     user_group_resolution_mode: cdktn.stringToTerraform(struct!.userGroupResolutionMode),
@@ -1321,7 +1321,7 @@ export function kendraIndexUserGroupResolutionConfigurationToTerraform(struct?: 
 export function kendraIndexUserGroupResolutionConfigurationToHclTerraform(struct?: KendraIndexUserGroupResolutionConfigurationOutputReference | KendraIndexUserGroupResolutionConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     user_group_resolution_mode: {
@@ -1383,11 +1383,11 @@ export class KendraIndexUserGroupResolutionConfigurationOutputReference extends 
 }
 export interface KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#group_attribute_field KendraIndex#group_attribute_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#group_attribute_field KendraIndex#group_attribute_field}
   */
   readonly groupAttributeField: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#user_name_attribute_field KendraIndex#user_name_attribute_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#user_name_attribute_field KendraIndex#user_name_attribute_field}
   */
   readonly userNameAttributeField: string;
 }
@@ -1395,7 +1395,7 @@ export interface KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration {
 export function kendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationToTerraform(struct?: KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference | KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     group_attribute_field: cdktn.stringToTerraform(struct!.groupAttributeField),
@@ -1407,7 +1407,7 @@ export function kendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationToTe
 export function kendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationToHclTerraform(struct?: KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference | KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     group_attribute_field: {
@@ -1494,31 +1494,31 @@ export class KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputR
 }
 export interface KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#claim_regex KendraIndex#claim_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#claim_regex KendraIndex#claim_regex}
   */
   readonly claimRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#group_attribute_field KendraIndex#group_attribute_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#group_attribute_field KendraIndex#group_attribute_field}
   */
   readonly groupAttributeField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#issuer KendraIndex#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#issuer KendraIndex#issuer}
   */
   readonly issuer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#key_location KendraIndex#key_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#key_location KendraIndex#key_location}
   */
   readonly keyLocation: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#secrets_manager_arn KendraIndex#secrets_manager_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#secrets_manager_arn KendraIndex#secrets_manager_arn}
   */
   readonly secretsManagerArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#url KendraIndex#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#url KendraIndex#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#user_name_attribute_field KendraIndex#user_name_attribute_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#user_name_attribute_field KendraIndex#user_name_attribute_field}
   */
   readonly userNameAttributeField?: string;
 }
@@ -1526,7 +1526,7 @@ export interface KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration {
 export function kendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationToTerraform(struct?: KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference | KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     claim_regex: cdktn.stringToTerraform(struct!.claimRegex),
@@ -1543,7 +1543,7 @@ export function kendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationToTer
 export function kendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationToHclTerraform(struct?: KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference | KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     claim_regex: {
@@ -1775,13 +1775,13 @@ export interface KendraIndexUserTokenConfigurations {
   /**
   * json_token_type_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#json_token_type_configuration KendraIndex#json_token_type_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#json_token_type_configuration KendraIndex#json_token_type_configuration}
   */
   readonly jsonTokenTypeConfiguration?: KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration;
   /**
   * jwt_token_type_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#jwt_token_type_configuration KendraIndex#jwt_token_type_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#jwt_token_type_configuration KendraIndex#jwt_token_type_configuration}
   */
   readonly jwtTokenTypeConfiguration?: KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration;
 }
@@ -1789,7 +1789,7 @@ export interface KendraIndexUserTokenConfigurations {
 export function kendraIndexUserTokenConfigurationsToTerraform(struct?: KendraIndexUserTokenConfigurationsOutputReference | KendraIndexUserTokenConfigurations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     json_token_type_configuration: kendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationToTerraform(struct!.jsonTokenTypeConfiguration),
@@ -1801,7 +1801,7 @@ export function kendraIndexUserTokenConfigurationsToTerraform(struct?: KendraInd
 export function kendraIndexUserTokenConfigurationsToHclTerraform(struct?: KendraIndexUserTokenConfigurationsOutputReference | KendraIndexUserTokenConfigurations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     json_token_type_configuration: {
@@ -1894,7 +1894,7 @@ export class KendraIndexUserTokenConfigurationsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index aws_kendra_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index aws_kendra_index}
 */
 export class KendraIndex extends cdktn.TerraformResource {
 
@@ -1910,7 +1910,7 @@ export class KendraIndex extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KendraIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KendraIndex to import
-  * @param importFromId The id of the existing KendraIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KendraIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KendraIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1922,7 +1922,7 @@ export class KendraIndex extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/kendra_index aws_kendra_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/kendra_index aws_kendra_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1933,7 +1933,7 @@ export class KendraIndex extends cdktn.TerraformResource {
       terraformResourceType: 'aws_kendra_index',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

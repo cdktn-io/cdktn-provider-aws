@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_instance_storage_config
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_instance_storage_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsConnectInstanceStorageConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_instance_storage_config#association_id DataAwsConnectInstanceStorageConfig#association_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_instance_storage_config#association_id DataAwsConnectInstanceStorageConfig#association_id}
   */
   readonly associationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_instance_storage_config#id DataAwsConnectInstanceStorageConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_instance_storage_config#id DataAwsConnectInstanceStorageConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_instance_storage_config#instance_id DataAwsConnectInstanceStorageConfig#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_instance_storage_config#instance_id DataAwsConnectInstanceStorageConfig#instance_id}
   */
   readonly instanceId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_instance_storage_config#region DataAwsConnectInstanceStorageConfig#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_instance_storage_config#region DataAwsConnectInstanceStorageConfig#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_instance_storage_config#resource_type DataAwsConnectInstanceStorageConfig#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_instance_storage_config#resource_type DataAwsConnectInstanceStorageConfig#resource_type}
   */
   readonly resourceType: string;
 }
@@ -44,7 +44,7 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehose
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseC
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -119,7 +119,7 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamCo
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -129,7 +129,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamCon
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -194,7 +194,7 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStr
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -204,7 +204,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStre
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -274,7 +274,7 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStr
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -284,7 +284,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStre
 export function dataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -360,7 +360,7 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncrypt
 export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -370,7 +370,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncrypti
 export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -440,7 +440,7 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfigS3Config {
 export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigS3Config): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -450,7 +450,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigToTerraf
 export function dataAwsConnectInstanceStorageConfigStorageConfigS3ConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfigS3Config): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -526,7 +526,7 @@ export interface DataAwsConnectInstanceStorageConfigStorageConfig {
 export function dataAwsConnectInstanceStorageConfigStorageConfigToTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -536,7 +536,7 @@ export function dataAwsConnectInstanceStorageConfigStorageConfigToTerraform(stru
 export function dataAwsConnectInstanceStorageConfigStorageConfigToHclTerraform(struct?: DataAwsConnectInstanceStorageConfigStorageConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -621,7 +621,7 @@ export class DataAwsConnectInstanceStorageConfigStorageConfigList extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_instance_storage_config aws_connect_instance_storage_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_instance_storage_config aws_connect_instance_storage_config}
 */
 export class DataAwsConnectInstanceStorageConfig extends cdktn.TerraformDataSource {
 
@@ -637,7 +637,7 @@ export class DataAwsConnectInstanceStorageConfig extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataAwsConnectInstanceStorageConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsConnectInstanceStorageConfig to import
-  * @param importFromId The id of the existing DataAwsConnectInstanceStorageConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_instance_storage_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsConnectInstanceStorageConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_instance_storage_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsConnectInstanceStorageConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -649,7 +649,7 @@ export class DataAwsConnectInstanceStorageConfig extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_instance_storage_config aws_connect_instance_storage_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_instance_storage_config aws_connect_instance_storage_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -660,7 +660,7 @@ export class DataAwsConnectInstanceStorageConfig extends cdktn.TerraformDataSour
       terraformResourceType: 'aws_connect_instance_storage_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

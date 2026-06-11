@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/bedrock_custom_model
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/bedrock_custom_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsBedrockCustomModelConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/bedrock_custom_model#model_id DataAwsBedrockCustomModel#model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/bedrock_custom_model#model_id DataAwsBedrockCustomModel#model_id}
   */
   readonly modelId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/bedrock_custom_model#region DataAwsBedrockCustomModel#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/bedrock_custom_model#region DataAwsBedrockCustomModel#region}
   */
   readonly region?: string;
 }
@@ -29,7 +29,7 @@ export interface DataAwsBedrockCustomModelOutputDataConfig {
 export function dataAwsBedrockCustomModelOutputDataConfigToTerraform(struct?: DataAwsBedrockCustomModelOutputDataConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -39,7 +39,7 @@ export function dataAwsBedrockCustomModelOutputDataConfigToTerraform(struct?: Da
 export function dataAwsBedrockCustomModelOutputDataConfigToHclTerraform(struct?: DataAwsBedrockCustomModelOutputDataConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -104,7 +104,7 @@ export interface DataAwsBedrockCustomModelTrainingDataConfig {
 export function dataAwsBedrockCustomModelTrainingDataConfigToTerraform(struct?: DataAwsBedrockCustomModelTrainingDataConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -114,7 +114,7 @@ export function dataAwsBedrockCustomModelTrainingDataConfigToTerraform(struct?: 
 export function dataAwsBedrockCustomModelTrainingDataConfigToHclTerraform(struct?: DataAwsBedrockCustomModelTrainingDataConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -179,7 +179,7 @@ export interface DataAwsBedrockCustomModelTrainingMetrics {
 export function dataAwsBedrockCustomModelTrainingMetricsToTerraform(struct?: DataAwsBedrockCustomModelTrainingMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -189,7 +189,7 @@ export function dataAwsBedrockCustomModelTrainingMetricsToTerraform(struct?: Dat
 export function dataAwsBedrockCustomModelTrainingMetricsToHclTerraform(struct?: DataAwsBedrockCustomModelTrainingMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -254,7 +254,7 @@ export interface DataAwsBedrockCustomModelValidationDataConfigValidator {
 export function dataAwsBedrockCustomModelValidationDataConfigValidatorToTerraform(struct?: DataAwsBedrockCustomModelValidationDataConfigValidator): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -264,7 +264,7 @@ export function dataAwsBedrockCustomModelValidationDataConfigValidatorToTerrafor
 export function dataAwsBedrockCustomModelValidationDataConfigValidatorToHclTerraform(struct?: DataAwsBedrockCustomModelValidationDataConfigValidator): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -329,7 +329,7 @@ export interface DataAwsBedrockCustomModelValidationDataConfig {
 export function dataAwsBedrockCustomModelValidationDataConfigToTerraform(struct?: DataAwsBedrockCustomModelValidationDataConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -339,7 +339,7 @@ export function dataAwsBedrockCustomModelValidationDataConfigToTerraform(struct?
 export function dataAwsBedrockCustomModelValidationDataConfigToHclTerraform(struct?: DataAwsBedrockCustomModelValidationDataConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -405,7 +405,7 @@ export interface DataAwsBedrockCustomModelValidationMetrics {
 export function dataAwsBedrockCustomModelValidationMetricsToTerraform(struct?: DataAwsBedrockCustomModelValidationMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -415,7 +415,7 @@ export function dataAwsBedrockCustomModelValidationMetricsToTerraform(struct?: D
 export function dataAwsBedrockCustomModelValidationMetricsToHclTerraform(struct?: DataAwsBedrockCustomModelValidationMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -476,7 +476,7 @@ export class DataAwsBedrockCustomModelValidationMetricsList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/bedrock_custom_model aws_bedrock_custom_model}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/bedrock_custom_model aws_bedrock_custom_model}
 */
 export class DataAwsBedrockCustomModel extends cdktn.TerraformDataSource {
 
@@ -492,7 +492,7 @@ export class DataAwsBedrockCustomModel extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsBedrockCustomModel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockCustomModel to import
-  * @param importFromId The id of the existing DataAwsBedrockCustomModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/bedrock_custom_model#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsBedrockCustomModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/bedrock_custom_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockCustomModel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -504,7 +504,7 @@ export class DataAwsBedrockCustomModel extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/bedrock_custom_model aws_bedrock_custom_model} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/bedrock_custom_model aws_bedrock_custom_model} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -515,7 +515,7 @@ export class DataAwsBedrockCustomModel extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_bedrock_custom_model',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

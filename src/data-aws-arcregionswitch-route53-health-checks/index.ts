@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/arcregionswitch_route53_health_checks
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/arcregionswitch_route53_health_checks
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsArcregionswitchRoute53HealthChecksConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/arcregionswitch_route53_health_checks#plan_arn DataAwsArcregionswitchRoute53HealthChecks#plan_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/arcregionswitch_route53_health_checks#plan_arn DataAwsArcregionswitchRoute53HealthChecks#plan_arn}
   */
   readonly planArn: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/arcregionswitch_route53_health_checks#region DataAwsArcregionswitchRoute53HealthChecks#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/arcregionswitch_route53_health_checks#region DataAwsArcregionswitchRoute53HealthChecks#region}
   */
   readonly region?: string;
 }
@@ -29,7 +29,7 @@ export interface DataAwsArcregionswitchRoute53HealthChecksHealthChecks {
 export function dataAwsArcregionswitchRoute53HealthChecksHealthChecksToTerraform(struct?: DataAwsArcregionswitchRoute53HealthChecksHealthChecks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -39,7 +39,7 @@ export function dataAwsArcregionswitchRoute53HealthChecksHealthChecksToTerraform
 export function dataAwsArcregionswitchRoute53HealthChecksHealthChecksToHclTerraform(struct?: DataAwsArcregionswitchRoute53HealthChecksHealthChecks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -120,7 +120,7 @@ export class DataAwsArcregionswitchRoute53HealthChecksHealthChecksList extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/arcregionswitch_route53_health_checks aws_arcregionswitch_route53_health_checks}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/arcregionswitch_route53_health_checks aws_arcregionswitch_route53_health_checks}
 */
 export class DataAwsArcregionswitchRoute53HealthChecks extends cdktn.TerraformDataSource {
 
@@ -136,7 +136,7 @@ export class DataAwsArcregionswitchRoute53HealthChecks extends cdktn.TerraformDa
   * Generates CDKTN code for importing a DataAwsArcregionswitchRoute53HealthChecks resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsArcregionswitchRoute53HealthChecks to import
-  * @param importFromId The id of the existing DataAwsArcregionswitchRoute53HealthChecks that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/arcregionswitch_route53_health_checks#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsArcregionswitchRoute53HealthChecks that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/arcregionswitch_route53_health_checks#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsArcregionswitchRoute53HealthChecks to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -148,7 +148,7 @@ export class DataAwsArcregionswitchRoute53HealthChecks extends cdktn.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/arcregionswitch_route53_health_checks aws_arcregionswitch_route53_health_checks} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/arcregionswitch_route53_health_checks aws_arcregionswitch_route53_health_checks} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -159,7 +159,7 @@ export class DataAwsArcregionswitchRoute53HealthChecks extends cdktn.TerraformDa
       terraformResourceType: 'aws_arcregionswitch_route53_health_checks',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

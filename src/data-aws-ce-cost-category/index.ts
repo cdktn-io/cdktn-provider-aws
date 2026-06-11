@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_cost_category
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_cost_category
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsCeCostCategoryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_cost_category#cost_category_arn DataAwsCeCostCategory#cost_category_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_cost_category#cost_category_arn DataAwsCeCostCategory#cost_category_arn}
   */
   readonly costCategoryArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_cost_category#id DataAwsCeCostCategory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_cost_category#id DataAwsCeCostCategory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_cost_category#tags DataAwsCeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_cost_category#tags DataAwsCeCostCategory#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -34,7 +34,7 @@ export interface DataAwsCeCostCategoryRuleInheritedValue {
 export function dataAwsCeCostCategoryRuleInheritedValueToTerraform(struct?: DataAwsCeCostCategoryRuleInheritedValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -44,7 +44,7 @@ export function dataAwsCeCostCategoryRuleInheritedValueToTerraform(struct?: Data
 export function dataAwsCeCostCategoryRuleInheritedValueToHclTerraform(struct?: DataAwsCeCostCategoryRuleInheritedValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -114,7 +114,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndAndCostCategory {
 export function dataAwsCeCostCategoryRuleRuleAndAndCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -124,7 +124,7 @@ export function dataAwsCeCostCategoryRuleRuleAndAndCostCategoryToTerraform(struc
 export function dataAwsCeCostCategoryRuleRuleAndAndCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -199,7 +199,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndAndDimension {
 export function dataAwsCeCostCategoryRuleRuleAndAndDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -209,7 +209,7 @@ export function dataAwsCeCostCategoryRuleRuleAndAndDimensionToTerraform(struct?:
 export function dataAwsCeCostCategoryRuleRuleAndAndDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -284,7 +284,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndAndTags {
 export function dataAwsCeCostCategoryRuleRuleAndAndTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -294,7 +294,7 @@ export function dataAwsCeCostCategoryRuleRuleAndAndTagsToTerraform(struct?: Data
 export function dataAwsCeCostCategoryRuleRuleAndAndTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -369,7 +369,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndAnd {
 export function dataAwsCeCostCategoryRuleRuleAndAndToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAnd): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -379,7 +379,7 @@ export function dataAwsCeCostCategoryRuleRuleAndAndToTerraform(struct?: DataAwsC
 export function dataAwsCeCostCategoryRuleRuleAndAndToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAnd): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -457,7 +457,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndCostCategory {
 export function dataAwsCeCostCategoryRuleRuleAndCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -467,7 +467,7 @@ export function dataAwsCeCostCategoryRuleRuleAndCostCategoryToTerraform(struct?:
 export function dataAwsCeCostCategoryRuleRuleAndCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -542,7 +542,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndDimension {
 export function dataAwsCeCostCategoryRuleRuleAndDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -552,7 +552,7 @@ export function dataAwsCeCostCategoryRuleRuleAndDimensionToTerraform(struct?: Da
 export function dataAwsCeCostCategoryRuleRuleAndDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -627,7 +627,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndNotCostCategory {
 export function dataAwsCeCostCategoryRuleRuleAndNotCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -637,7 +637,7 @@ export function dataAwsCeCostCategoryRuleRuleAndNotCostCategoryToTerraform(struc
 export function dataAwsCeCostCategoryRuleRuleAndNotCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -712,7 +712,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndNotDimension {
 export function dataAwsCeCostCategoryRuleRuleAndNotDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -722,7 +722,7 @@ export function dataAwsCeCostCategoryRuleRuleAndNotDimensionToTerraform(struct?:
 export function dataAwsCeCostCategoryRuleRuleAndNotDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -797,7 +797,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndNotTags {
 export function dataAwsCeCostCategoryRuleRuleAndNotTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -807,7 +807,7 @@ export function dataAwsCeCostCategoryRuleRuleAndNotTagsToTerraform(struct?: Data
 export function dataAwsCeCostCategoryRuleRuleAndNotTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -882,7 +882,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndNot {
 export function dataAwsCeCostCategoryRuleRuleAndNotToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -892,7 +892,7 @@ export function dataAwsCeCostCategoryRuleRuleAndNotToTerraform(struct?: DataAwsC
 export function dataAwsCeCostCategoryRuleRuleAndNotToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -970,7 +970,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndOrCostCategory {
 export function dataAwsCeCostCategoryRuleRuleAndOrCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -980,7 +980,7 @@ export function dataAwsCeCostCategoryRuleRuleAndOrCostCategoryToTerraform(struct
 export function dataAwsCeCostCategoryRuleRuleAndOrCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1055,7 +1055,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndOrDimension {
 export function dataAwsCeCostCategoryRuleRuleAndOrDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1065,7 +1065,7 @@ export function dataAwsCeCostCategoryRuleRuleAndOrDimensionToTerraform(struct?: 
 export function dataAwsCeCostCategoryRuleRuleAndOrDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1140,7 +1140,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndOrTags {
 export function dataAwsCeCostCategoryRuleRuleAndOrTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1150,7 +1150,7 @@ export function dataAwsCeCostCategoryRuleRuleAndOrTagsToTerraform(struct?: DataA
 export function dataAwsCeCostCategoryRuleRuleAndOrTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1225,7 +1225,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndOr {
 export function dataAwsCeCostCategoryRuleRuleAndOrToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOr): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1235,7 +1235,7 @@ export function dataAwsCeCostCategoryRuleRuleAndOrToTerraform(struct?: DataAwsCe
 export function dataAwsCeCostCategoryRuleRuleAndOrToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOr): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1313,7 +1313,7 @@ export interface DataAwsCeCostCategoryRuleRuleAndTags {
 export function dataAwsCeCostCategoryRuleRuleAndTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1323,7 +1323,7 @@ export function dataAwsCeCostCategoryRuleRuleAndTagsToTerraform(struct?: DataAws
 export function dataAwsCeCostCategoryRuleRuleAndTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1398,7 +1398,7 @@ export interface DataAwsCeCostCategoryRuleRuleAnd {
 export function dataAwsCeCostCategoryRuleRuleAndToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAnd): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1408,7 +1408,7 @@ export function dataAwsCeCostCategoryRuleRuleAndToTerraform(struct?: DataAwsCeCo
 export function dataAwsCeCostCategoryRuleRuleAndToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAnd): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1504,7 +1504,7 @@ export interface DataAwsCeCostCategoryRuleRuleCostCategory {
 export function dataAwsCeCostCategoryRuleRuleCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1514,7 +1514,7 @@ export function dataAwsCeCostCategoryRuleRuleCostCategoryToTerraform(struct?: Da
 export function dataAwsCeCostCategoryRuleRuleCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1589,7 +1589,7 @@ export interface DataAwsCeCostCategoryRuleRuleDimension {
 export function dataAwsCeCostCategoryRuleRuleDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1599,7 +1599,7 @@ export function dataAwsCeCostCategoryRuleRuleDimensionToTerraform(struct?: DataA
 export function dataAwsCeCostCategoryRuleRuleDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1674,7 +1674,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotAndCostCategory {
 export function dataAwsCeCostCategoryRuleRuleNotAndCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1684,7 +1684,7 @@ export function dataAwsCeCostCategoryRuleRuleNotAndCostCategoryToTerraform(struc
 export function dataAwsCeCostCategoryRuleRuleNotAndCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1759,7 +1759,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotAndDimension {
 export function dataAwsCeCostCategoryRuleRuleNotAndDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1769,7 +1769,7 @@ export function dataAwsCeCostCategoryRuleRuleNotAndDimensionToTerraform(struct?:
 export function dataAwsCeCostCategoryRuleRuleNotAndDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1844,7 +1844,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotAndTags {
 export function dataAwsCeCostCategoryRuleRuleNotAndTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1854,7 +1854,7 @@ export function dataAwsCeCostCategoryRuleRuleNotAndTagsToTerraform(struct?: Data
 export function dataAwsCeCostCategoryRuleRuleNotAndTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1929,7 +1929,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotAnd {
 export function dataAwsCeCostCategoryRuleRuleNotAndToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAnd): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1939,7 +1939,7 @@ export function dataAwsCeCostCategoryRuleRuleNotAndToTerraform(struct?: DataAwsC
 export function dataAwsCeCostCategoryRuleRuleNotAndToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAnd): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2017,7 +2017,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotCostCategory {
 export function dataAwsCeCostCategoryRuleRuleNotCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2027,7 +2027,7 @@ export function dataAwsCeCostCategoryRuleRuleNotCostCategoryToTerraform(struct?:
 export function dataAwsCeCostCategoryRuleRuleNotCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2102,7 +2102,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotDimension {
 export function dataAwsCeCostCategoryRuleRuleNotDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2112,7 +2112,7 @@ export function dataAwsCeCostCategoryRuleRuleNotDimensionToTerraform(struct?: Da
 export function dataAwsCeCostCategoryRuleRuleNotDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2187,7 +2187,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotNotCostCategory {
 export function dataAwsCeCostCategoryRuleRuleNotNotCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2197,7 +2197,7 @@ export function dataAwsCeCostCategoryRuleRuleNotNotCostCategoryToTerraform(struc
 export function dataAwsCeCostCategoryRuleRuleNotNotCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2272,7 +2272,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotNotDimension {
 export function dataAwsCeCostCategoryRuleRuleNotNotDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2282,7 +2282,7 @@ export function dataAwsCeCostCategoryRuleRuleNotNotDimensionToTerraform(struct?:
 export function dataAwsCeCostCategoryRuleRuleNotNotDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2357,7 +2357,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotNotTags {
 export function dataAwsCeCostCategoryRuleRuleNotNotTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2367,7 +2367,7 @@ export function dataAwsCeCostCategoryRuleRuleNotNotTagsToTerraform(struct?: Data
 export function dataAwsCeCostCategoryRuleRuleNotNotTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2442,7 +2442,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotNot {
 export function dataAwsCeCostCategoryRuleRuleNotNotToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2452,7 +2452,7 @@ export function dataAwsCeCostCategoryRuleRuleNotNotToTerraform(struct?: DataAwsC
 export function dataAwsCeCostCategoryRuleRuleNotNotToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2530,7 +2530,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotOrCostCategory {
 export function dataAwsCeCostCategoryRuleRuleNotOrCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2540,7 +2540,7 @@ export function dataAwsCeCostCategoryRuleRuleNotOrCostCategoryToTerraform(struct
 export function dataAwsCeCostCategoryRuleRuleNotOrCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2615,7 +2615,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotOrDimension {
 export function dataAwsCeCostCategoryRuleRuleNotOrDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2625,7 +2625,7 @@ export function dataAwsCeCostCategoryRuleRuleNotOrDimensionToTerraform(struct?: 
 export function dataAwsCeCostCategoryRuleRuleNotOrDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2700,7 +2700,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotOrTags {
 export function dataAwsCeCostCategoryRuleRuleNotOrTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2710,7 +2710,7 @@ export function dataAwsCeCostCategoryRuleRuleNotOrTagsToTerraform(struct?: DataA
 export function dataAwsCeCostCategoryRuleRuleNotOrTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2785,7 +2785,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotOr {
 export function dataAwsCeCostCategoryRuleRuleNotOrToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOr): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2795,7 +2795,7 @@ export function dataAwsCeCostCategoryRuleRuleNotOrToTerraform(struct?: DataAwsCe
 export function dataAwsCeCostCategoryRuleRuleNotOrToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOr): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2873,7 +2873,7 @@ export interface DataAwsCeCostCategoryRuleRuleNotTags {
 export function dataAwsCeCostCategoryRuleRuleNotTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2883,7 +2883,7 @@ export function dataAwsCeCostCategoryRuleRuleNotTagsToTerraform(struct?: DataAws
 export function dataAwsCeCostCategoryRuleRuleNotTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2958,7 +2958,7 @@ export interface DataAwsCeCostCategoryRuleRuleNot {
 export function dataAwsCeCostCategoryRuleRuleNotToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2968,7 +2968,7 @@ export function dataAwsCeCostCategoryRuleRuleNotToTerraform(struct?: DataAwsCeCo
 export function dataAwsCeCostCategoryRuleRuleNotToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3064,7 +3064,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrAndCostCategory {
 export function dataAwsCeCostCategoryRuleRuleOrAndCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3074,7 +3074,7 @@ export function dataAwsCeCostCategoryRuleRuleOrAndCostCategoryToTerraform(struct
 export function dataAwsCeCostCategoryRuleRuleOrAndCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3149,7 +3149,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrAndDimension {
 export function dataAwsCeCostCategoryRuleRuleOrAndDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3159,7 +3159,7 @@ export function dataAwsCeCostCategoryRuleRuleOrAndDimensionToTerraform(struct?: 
 export function dataAwsCeCostCategoryRuleRuleOrAndDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3234,7 +3234,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrAndTags {
 export function dataAwsCeCostCategoryRuleRuleOrAndTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3244,7 +3244,7 @@ export function dataAwsCeCostCategoryRuleRuleOrAndTagsToTerraform(struct?: DataA
 export function dataAwsCeCostCategoryRuleRuleOrAndTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3319,7 +3319,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrAnd {
 export function dataAwsCeCostCategoryRuleRuleOrAndToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAnd): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3329,7 +3329,7 @@ export function dataAwsCeCostCategoryRuleRuleOrAndToTerraform(struct?: DataAwsCe
 export function dataAwsCeCostCategoryRuleRuleOrAndToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAnd): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3407,7 +3407,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrCostCategory {
 export function dataAwsCeCostCategoryRuleRuleOrCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3417,7 +3417,7 @@ export function dataAwsCeCostCategoryRuleRuleOrCostCategoryToTerraform(struct?: 
 export function dataAwsCeCostCategoryRuleRuleOrCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3492,7 +3492,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrDimension {
 export function dataAwsCeCostCategoryRuleRuleOrDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3502,7 +3502,7 @@ export function dataAwsCeCostCategoryRuleRuleOrDimensionToTerraform(struct?: Dat
 export function dataAwsCeCostCategoryRuleRuleOrDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3577,7 +3577,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrNotCostCategory {
 export function dataAwsCeCostCategoryRuleRuleOrNotCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3587,7 +3587,7 @@ export function dataAwsCeCostCategoryRuleRuleOrNotCostCategoryToTerraform(struct
 export function dataAwsCeCostCategoryRuleRuleOrNotCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3662,7 +3662,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrNotDimension {
 export function dataAwsCeCostCategoryRuleRuleOrNotDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3672,7 +3672,7 @@ export function dataAwsCeCostCategoryRuleRuleOrNotDimensionToTerraform(struct?: 
 export function dataAwsCeCostCategoryRuleRuleOrNotDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3747,7 +3747,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrNotTags {
 export function dataAwsCeCostCategoryRuleRuleOrNotTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3757,7 +3757,7 @@ export function dataAwsCeCostCategoryRuleRuleOrNotTagsToTerraform(struct?: DataA
 export function dataAwsCeCostCategoryRuleRuleOrNotTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3832,7 +3832,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrNot {
 export function dataAwsCeCostCategoryRuleRuleOrNotToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3842,7 +3842,7 @@ export function dataAwsCeCostCategoryRuleRuleOrNotToTerraform(struct?: DataAwsCe
 export function dataAwsCeCostCategoryRuleRuleOrNotToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3920,7 +3920,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrOrCostCategory {
 export function dataAwsCeCostCategoryRuleRuleOrOrCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3930,7 +3930,7 @@ export function dataAwsCeCostCategoryRuleRuleOrOrCostCategoryToTerraform(struct?
 export function dataAwsCeCostCategoryRuleRuleOrOrCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrCostCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4005,7 +4005,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrOrDimension {
 export function dataAwsCeCostCategoryRuleRuleOrOrDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4015,7 +4015,7 @@ export function dataAwsCeCostCategoryRuleRuleOrOrDimensionToTerraform(struct?: D
 export function dataAwsCeCostCategoryRuleRuleOrOrDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4090,7 +4090,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrOrTags {
 export function dataAwsCeCostCategoryRuleRuleOrOrTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4100,7 +4100,7 @@ export function dataAwsCeCostCategoryRuleRuleOrOrTagsToTerraform(struct?: DataAw
 export function dataAwsCeCostCategoryRuleRuleOrOrTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4175,7 +4175,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrOr {
 export function dataAwsCeCostCategoryRuleRuleOrOrToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOr): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4185,7 +4185,7 @@ export function dataAwsCeCostCategoryRuleRuleOrOrToTerraform(struct?: DataAwsCeC
 export function dataAwsCeCostCategoryRuleRuleOrOrToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOr): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4263,7 +4263,7 @@ export interface DataAwsCeCostCategoryRuleRuleOrTags {
 export function dataAwsCeCostCategoryRuleRuleOrTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4273,7 +4273,7 @@ export function dataAwsCeCostCategoryRuleRuleOrTagsToTerraform(struct?: DataAwsC
 export function dataAwsCeCostCategoryRuleRuleOrTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4348,7 +4348,7 @@ export interface DataAwsCeCostCategoryRuleRuleOr {
 export function dataAwsCeCostCategoryRuleRuleOrToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOr): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4358,7 +4358,7 @@ export function dataAwsCeCostCategoryRuleRuleOrToTerraform(struct?: DataAwsCeCos
 export function dataAwsCeCostCategoryRuleRuleOrToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOr): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4454,7 +4454,7 @@ export interface DataAwsCeCostCategoryRuleRuleTags {
 export function dataAwsCeCostCategoryRuleRuleTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4464,7 +4464,7 @@ export function dataAwsCeCostCategoryRuleRuleTagsToTerraform(struct?: DataAwsCeC
 export function dataAwsCeCostCategoryRuleRuleTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4539,7 +4539,7 @@ export interface DataAwsCeCostCategoryRuleRule {
 export function dataAwsCeCostCategoryRuleRuleToTerraform(struct?: DataAwsCeCostCategoryRuleRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4549,7 +4549,7 @@ export function dataAwsCeCostCategoryRuleRuleToTerraform(struct?: DataAwsCeCostC
 export function dataAwsCeCostCategoryRuleRuleToHclTerraform(struct?: DataAwsCeCostCategoryRuleRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4645,7 +4645,7 @@ export interface DataAwsCeCostCategoryRule {
 export function dataAwsCeCostCategoryRuleToTerraform(struct?: DataAwsCeCostCategoryRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4655,7 +4655,7 @@ export function dataAwsCeCostCategoryRuleToTerraform(struct?: DataAwsCeCostCateg
 export function dataAwsCeCostCategoryRuleToHclTerraform(struct?: DataAwsCeCostCategoryRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4737,7 +4737,7 @@ export interface DataAwsCeCostCategorySplitChargeRuleParameter {
 export function dataAwsCeCostCategorySplitChargeRuleParameterToTerraform(struct?: DataAwsCeCostCategorySplitChargeRuleParameter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4747,7 +4747,7 @@ export function dataAwsCeCostCategorySplitChargeRuleParameterToTerraform(struct?
 export function dataAwsCeCostCategorySplitChargeRuleParameterToHclTerraform(struct?: DataAwsCeCostCategorySplitChargeRuleParameter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4817,7 +4817,7 @@ export interface DataAwsCeCostCategorySplitChargeRule {
 export function dataAwsCeCostCategorySplitChargeRuleToTerraform(struct?: DataAwsCeCostCategorySplitChargeRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4827,7 +4827,7 @@ export function dataAwsCeCostCategorySplitChargeRuleToTerraform(struct?: DataAws
 export function dataAwsCeCostCategorySplitChargeRuleToHclTerraform(struct?: DataAwsCeCostCategorySplitChargeRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4904,7 +4904,7 @@ export class DataAwsCeCostCategorySplitChargeRuleList extends cdktn.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_cost_category aws_ce_cost_category}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_cost_category aws_ce_cost_category}
 */
 export class DataAwsCeCostCategory extends cdktn.TerraformDataSource {
 
@@ -4920,7 +4920,7 @@ export class DataAwsCeCostCategory extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsCeCostCategory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCeCostCategory to import
-  * @param importFromId The id of the existing DataAwsCeCostCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_cost_category#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCeCostCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_cost_category#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCeCostCategory to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4932,7 +4932,7 @@ export class DataAwsCeCostCategory extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ce_cost_category aws_ce_cost_category} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ce_cost_category aws_ce_cost_category} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4943,7 +4943,7 @@ export class DataAwsCeCostCategory extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_ce_cost_category',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

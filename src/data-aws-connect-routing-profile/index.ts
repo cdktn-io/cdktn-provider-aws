@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_routing_profile
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_routing_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsConnectRoutingProfileConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_routing_profile#id DataAwsConnectRoutingProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_routing_profile#id DataAwsConnectRoutingProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_routing_profile#instance_id DataAwsConnectRoutingProfile#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_routing_profile#instance_id DataAwsConnectRoutingProfile#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_routing_profile#name DataAwsConnectRoutingProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_routing_profile#name DataAwsConnectRoutingProfile#name}
   */
   readonly name?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_routing_profile#region DataAwsConnectRoutingProfile#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_routing_profile#region DataAwsConnectRoutingProfile#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_routing_profile#routing_profile_id DataAwsConnectRoutingProfile#routing_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_routing_profile#routing_profile_id DataAwsConnectRoutingProfile#routing_profile_id}
   */
   readonly routingProfileId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_routing_profile#tags DataAwsConnectRoutingProfile#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_routing_profile#tags DataAwsConnectRoutingProfile#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -48,7 +48,7 @@ export interface DataAwsConnectRoutingProfileMediaConcurrenciesCrossChannelBehav
 export function dataAwsConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorToTerraform(struct?: DataAwsConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -58,7 +58,7 @@ export function dataAwsConnectRoutingProfileMediaConcurrenciesCrossChannelBehavi
 export function dataAwsConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorToHclTerraform(struct?: DataAwsConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -123,7 +123,7 @@ export interface DataAwsConnectRoutingProfileMediaConcurrencies {
 export function dataAwsConnectRoutingProfileMediaConcurrenciesToTerraform(struct?: DataAwsConnectRoutingProfileMediaConcurrencies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -133,7 +133,7 @@ export function dataAwsConnectRoutingProfileMediaConcurrenciesToTerraform(struct
 export function dataAwsConnectRoutingProfileMediaConcurrenciesToHclTerraform(struct?: DataAwsConnectRoutingProfileMediaConcurrencies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -209,7 +209,7 @@ export interface DataAwsConnectRoutingProfileQueueConfigs {
 export function dataAwsConnectRoutingProfileQueueConfigsToTerraform(struct?: DataAwsConnectRoutingProfileQueueConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -219,7 +219,7 @@ export function dataAwsConnectRoutingProfileQueueConfigsToTerraform(struct?: Dat
 export function dataAwsConnectRoutingProfileQueueConfigsToHclTerraform(struct?: DataAwsConnectRoutingProfileQueueConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -305,7 +305,7 @@ export class DataAwsConnectRoutingProfileQueueConfigsList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile}
 */
 export class DataAwsConnectRoutingProfile extends cdktn.TerraformDataSource {
 
@@ -321,7 +321,7 @@ export class DataAwsConnectRoutingProfile extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsConnectRoutingProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsConnectRoutingProfile to import
-  * @param importFromId The id of the existing DataAwsConnectRoutingProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_routing_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsConnectRoutingProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_routing_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsConnectRoutingProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -333,7 +333,7 @@ export class DataAwsConnectRoutingProfile extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -344,7 +344,7 @@ export class DataAwsConnectRoutingProfile extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_connect_routing_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

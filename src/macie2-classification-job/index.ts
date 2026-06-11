@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +13,74 @@ import * as cdktn from 'cdktn';
 
 export interface Macie2ClassificationJobConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#custom_data_identifier_ids Macie2ClassificationJob#custom_data_identifier_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#custom_data_identifier_ids Macie2ClassificationJob#custom_data_identifier_ids}
   */
   readonly customDataIdentifierIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#description Macie2ClassificationJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#description Macie2ClassificationJob#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#id Macie2ClassificationJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#id Macie2ClassificationJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#initial_run Macie2ClassificationJob#initial_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#initial_run Macie2ClassificationJob#initial_run}
   */
   readonly initialRun?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#job_status Macie2ClassificationJob#job_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#job_status Macie2ClassificationJob#job_status}
   */
   readonly jobStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#job_type Macie2ClassificationJob#job_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#job_type Macie2ClassificationJob#job_type}
   */
   readonly jobType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#name Macie2ClassificationJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#name Macie2ClassificationJob#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#name_prefix Macie2ClassificationJob#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#name_prefix Macie2ClassificationJob#name_prefix}
   */
   readonly namePrefix?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#region Macie2ClassificationJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#region Macie2ClassificationJob#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#sampling_percentage Macie2ClassificationJob#sampling_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#sampling_percentage Macie2ClassificationJob#sampling_percentage}
   */
   readonly samplingPercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#tags Macie2ClassificationJob#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#tags Macie2ClassificationJob#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#tags_all Macie2ClassificationJob#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#tags_all Macie2ClassificationJob#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * s3_job_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#s3_job_definition Macie2ClassificationJob#s3_job_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#s3_job_definition Macie2ClassificationJob#s3_job_definition}
   */
   readonly s3JobDefinition: Macie2ClassificationJobS3JobDefinition;
   /**
   * schedule_frequency block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#schedule_frequency Macie2ClassificationJob#schedule_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#schedule_frequency Macie2ClassificationJob#schedule_frequency}
   */
   readonly scheduleFrequency?: Macie2ClassificationJobScheduleFrequency;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#timeouts Macie2ClassificationJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#timeouts Macie2ClassificationJob#timeouts}
   */
   readonly timeouts?: Macie2ClassificationJobTimeouts;
 }
@@ -90,7 +90,7 @@ export interface Macie2ClassificationJobUserPausedDetails {
 export function macie2ClassificationJobUserPausedDetailsToTerraform(struct?: Macie2ClassificationJobUserPausedDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -100,7 +100,7 @@ export function macie2ClassificationJobUserPausedDetailsToTerraform(struct?: Mac
 export function macie2ClassificationJobUserPausedDetailsToHclTerraform(struct?: Macie2ClassificationJobUserPausedDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -171,15 +171,15 @@ export class Macie2ClassificationJobUserPausedDetailsList extends cdktn.ComplexL
 }
 export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
   */
   readonly comparator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#values Macie2ClassificationJob#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#values Macie2ClassificationJob#values}
   */
   readonly values?: string[];
 }
@@ -187,7 +187,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -200,7 +200,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndS
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -321,11 +321,11 @@ export class Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimp
 }
 export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#value Macie2ClassificationJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#value Macie2ClassificationJob#value}
   */
   readonly value?: string;
 }
@@ -333,7 +333,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -345,7 +345,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndT
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -470,13 +470,13 @@ export class Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagC
 }
 export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
   */
   readonly comparator?: string;
   /**
   * tag_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#tag_values Macie2ClassificationJob#tag_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#tag_values Macie2ClassificationJob#tag_values}
   */
   readonly tagValues?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues[] | cdktn.IResolvable;
 }
@@ -484,7 +484,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -496,7 +496,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndT
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -591,13 +591,13 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd
   /**
   * simple_criterion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#simple_criterion Macie2ClassificationJob#simple_criterion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#simple_criterion Macie2ClassificationJob#simple_criterion}
   */
   readonly simpleCriterion?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion;
   /**
   * tag_criterion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#tag_criterion Macie2ClassificationJob#tag_criterion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#tag_criterion Macie2ClassificationJob#tag_criterion}
   */
   readonly tagCriterion?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion;
 }
@@ -605,7 +605,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     simple_criterion: macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionToTerraform(struct!.simpleCriterion),
@@ -617,7 +617,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndT
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     simple_criterion: {
@@ -744,7 +744,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#and Macie2ClassificationJob#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#and Macie2ClassificationJob#and}
   */
   readonly and?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd[] | cdktn.IResolvable;
 }
@@ -752,7 +752,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes {
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndToTerraform, true)(struct!.and),
@@ -763,7 +763,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesToTe
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -828,15 +828,15 @@ export class Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputR
 }
 export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
   */
   readonly comparator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#values Macie2ClassificationJob#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#values Macie2ClassificationJob#values}
   */
   readonly values?: string[];
 }
@@ -844,7 +844,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -857,7 +857,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndS
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -978,11 +978,11 @@ export class Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimp
 }
 export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#value Macie2ClassificationJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#value Macie2ClassificationJob#value}
   */
   readonly value?: string;
 }
@@ -990,7 +990,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1002,7 +1002,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndT
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1127,13 +1127,13 @@ export class Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagC
 }
 export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
   */
   readonly comparator?: string;
   /**
   * tag_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#tag_values Macie2ClassificationJob#tag_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#tag_values Macie2ClassificationJob#tag_values}
   */
   readonly tagValues?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues[] | cdktn.IResolvable;
 }
@@ -1141,7 +1141,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -1153,7 +1153,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndT
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -1248,13 +1248,13 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd
   /**
   * simple_criterion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#simple_criterion Macie2ClassificationJob#simple_criterion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#simple_criterion Macie2ClassificationJob#simple_criterion}
   */
   readonly simpleCriterion?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion;
   /**
   * tag_criterion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#tag_criterion Macie2ClassificationJob#tag_criterion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#tag_criterion Macie2ClassificationJob#tag_criterion}
   */
   readonly tagCriterion?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion;
 }
@@ -1262,7 +1262,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     simple_criterion: macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionToTerraform(struct!.simpleCriterion),
@@ -1274,7 +1274,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndT
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     simple_criterion: {
@@ -1401,7 +1401,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#and Macie2ClassificationJob#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#and Macie2ClassificationJob#and}
   */
   readonly and?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd[] | cdktn.IResolvable;
 }
@@ -1409,7 +1409,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes {
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndToTerraform, true)(struct!.and),
@@ -1420,7 +1420,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesToTe
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -1487,13 +1487,13 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteria {
   /**
   * excludes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#excludes Macie2ClassificationJob#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#excludes Macie2ClassificationJob#excludes}
   */
   readonly excludes?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes;
   /**
   * includes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#includes Macie2ClassificationJob#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#includes Macie2ClassificationJob#includes}
   */
   readonly includes?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes;
 }
@@ -1501,7 +1501,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketCriteria {
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteria): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excludes: macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesToTerraform(struct!.excludes),
@@ -1513,7 +1513,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketCriteriaToTerraform(
 export function macie2ClassificationJobS3JobDefinitionBucketCriteriaToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference | Macie2ClassificationJobS3JobDefinitionBucketCriteria): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excludes: {
@@ -1606,11 +1606,11 @@ export class Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference
 }
 export interface Macie2ClassificationJobS3JobDefinitionBucketDefinitions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#account_id Macie2ClassificationJob#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#account_id Macie2ClassificationJob#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#buckets Macie2ClassificationJob#buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#buckets Macie2ClassificationJob#buckets}
   */
   readonly buckets: string[];
 }
@@ -1618,7 +1618,7 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketDefinitions {
 export function macie2ClassificationJobS3JobDefinitionBucketDefinitionsToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketDefinitions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_id: cdktn.stringToTerraform(struct!.accountId),
@@ -1630,7 +1630,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketDefinitionsToTerrafo
 export function macie2ClassificationJobS3JobDefinitionBucketDefinitionsToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketDefinitions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_id: {
@@ -1749,15 +1749,15 @@ export class Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList extends
 }
 export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
   */
   readonly comparator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#values Macie2ClassificationJob#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#values Macie2ClassificationJob#values}
   */
   readonly values?: string[];
 }
@@ -1765,7 +1765,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleS
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -1778,7 +1778,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleSc
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -1899,11 +1899,11 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScope
 }
 export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#value Macie2ClassificationJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#value Macie2ClassificationJob#value}
   */
   readonly value?: string;
 }
@@ -1911,7 +1911,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScop
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1923,7 +1923,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScope
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2048,21 +2048,21 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTer
 }
 export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
   */
   readonly comparator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#target Macie2ClassificationJob#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#target Macie2ClassificationJob#target}
   */
   readonly target?: string;
   /**
   * tag_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#tag_values Macie2ClassificationJob#tag_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#tag_values Macie2ClassificationJob#tag_values}
   */
   readonly tagValues?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[] | cdktn.IResolvable;
 }
@@ -2070,7 +2070,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScop
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -2084,7 +2084,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScope
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -2235,13 +2235,13 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd {
   /**
   * simple_scope_term block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#simple_scope_term Macie2ClassificationJob#simple_scope_term}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#simple_scope_term Macie2ClassificationJob#simple_scope_term}
   */
   readonly simpleScopeTerm?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm;
   /**
   * tag_scope_term block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#tag_scope_term Macie2ClassificationJob#tag_scope_term}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#tag_scope_term Macie2ClassificationJob#tag_scope_term}
   */
   readonly tagScopeTerm?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm;
 }
@@ -2249,7 +2249,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd {
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     simple_scope_term: macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermToTerraform(struct!.simpleScopeTerm),
@@ -2261,7 +2261,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndToTerraf
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     simple_scope_term: {
@@ -2388,7 +2388,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludes {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#and Macie2ClassificationJob#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#and Macie2ClassificationJob#and}
   */
   readonly and?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[] | cdktn.IResolvable;
 }
@@ -2396,7 +2396,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludes {
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference | Macie2ClassificationJobS3JobDefinitionScopingExcludes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(macie2ClassificationJobS3JobDefinitionScopingExcludesAndToTerraform, true)(struct!.and),
@@ -2407,7 +2407,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesToTerraform
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference | Macie2ClassificationJobS3JobDefinitionScopingExcludes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -2472,15 +2472,15 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReferenc
 }
 export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
   */
   readonly comparator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#values Macie2ClassificationJob#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#values Macie2ClassificationJob#values}
   */
   readonly values?: string[];
 }
@@ -2488,7 +2488,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleS
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -2501,7 +2501,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleSc
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -2622,11 +2622,11 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScope
 }
 export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#value Macie2ClassificationJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#value Macie2ClassificationJob#value}
   */
   readonly value?: string;
 }
@@ -2634,7 +2634,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScop
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2646,7 +2646,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScope
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2771,21 +2771,21 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTer
 }
 export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
   */
   readonly comparator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#key Macie2ClassificationJob#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#target Macie2ClassificationJob#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#target Macie2ClassificationJob#target}
   */
   readonly target?: string;
   /**
   * tag_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#tag_values Macie2ClassificationJob#tag_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#tag_values Macie2ClassificationJob#tag_values}
   */
   readonly tagValues?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[] | cdktn.IResolvable;
 }
@@ -2793,7 +2793,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScop
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -2807,7 +2807,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScope
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -2958,13 +2958,13 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd {
   /**
   * simple_scope_term block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#simple_scope_term Macie2ClassificationJob#simple_scope_term}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#simple_scope_term Macie2ClassificationJob#simple_scope_term}
   */
   readonly simpleScopeTerm?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm;
   /**
   * tag_scope_term block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#tag_scope_term Macie2ClassificationJob#tag_scope_term}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#tag_scope_term Macie2ClassificationJob#tag_scope_term}
   */
   readonly tagScopeTerm?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm;
 }
@@ -2972,7 +2972,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd {
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     simple_scope_term: macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermToTerraform(struct!.simpleScopeTerm),
@@ -2984,7 +2984,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndToTerraf
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     simple_scope_term: {
@@ -3111,7 +3111,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludes {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#and Macie2ClassificationJob#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#and Macie2ClassificationJob#and}
   */
   readonly and?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[] | cdktn.IResolvable;
 }
@@ -3119,7 +3119,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludes {
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference | Macie2ClassificationJobS3JobDefinitionScopingIncludes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     and: cdktn.listMapper(macie2ClassificationJobS3JobDefinitionScopingIncludesAndToTerraform, true)(struct!.and),
@@ -3130,7 +3130,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesToTerraform
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference | Macie2ClassificationJobS3JobDefinitionScopingIncludes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     and: {
@@ -3197,13 +3197,13 @@ export interface Macie2ClassificationJobS3JobDefinitionScoping {
   /**
   * excludes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#excludes Macie2ClassificationJob#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#excludes Macie2ClassificationJob#excludes}
   */
   readonly excludes?: Macie2ClassificationJobS3JobDefinitionScopingExcludes;
   /**
   * includes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#includes Macie2ClassificationJob#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#includes Macie2ClassificationJob#includes}
   */
   readonly includes?: Macie2ClassificationJobS3JobDefinitionScopingIncludes;
 }
@@ -3211,7 +3211,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScoping {
 export function macie2ClassificationJobS3JobDefinitionScopingToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingOutputReference | Macie2ClassificationJobS3JobDefinitionScoping): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excludes: macie2ClassificationJobS3JobDefinitionScopingExcludesToTerraform(struct!.excludes),
@@ -3223,7 +3223,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingToTerraform(struct?
 export function macie2ClassificationJobS3JobDefinitionScopingToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingOutputReference | Macie2ClassificationJobS3JobDefinitionScoping): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excludes: {
@@ -3318,19 +3318,19 @@ export interface Macie2ClassificationJobS3JobDefinition {
   /**
   * bucket_criteria block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#bucket_criteria Macie2ClassificationJob#bucket_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#bucket_criteria Macie2ClassificationJob#bucket_criteria}
   */
   readonly bucketCriteria?: Macie2ClassificationJobS3JobDefinitionBucketCriteria;
   /**
   * bucket_definitions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#bucket_definitions Macie2ClassificationJob#bucket_definitions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#bucket_definitions Macie2ClassificationJob#bucket_definitions}
   */
   readonly bucketDefinitions?: Macie2ClassificationJobS3JobDefinitionBucketDefinitions[] | cdktn.IResolvable;
   /**
   * scoping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#scoping Macie2ClassificationJob#scoping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#scoping Macie2ClassificationJob#scoping}
   */
   readonly scoping?: Macie2ClassificationJobS3JobDefinitionScoping;
 }
@@ -3338,7 +3338,7 @@ export interface Macie2ClassificationJobS3JobDefinition {
 export function macie2ClassificationJobS3JobDefinitionToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionOutputReference | Macie2ClassificationJobS3JobDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket_criteria: macie2ClassificationJobS3JobDefinitionBucketCriteriaToTerraform(struct!.bucketCriteria),
@@ -3351,7 +3351,7 @@ export function macie2ClassificationJobS3JobDefinitionToTerraform(struct?: Macie
 export function macie2ClassificationJobS3JobDefinitionToHclTerraform(struct?: Macie2ClassificationJobS3JobDefinitionOutputReference | Macie2ClassificationJobS3JobDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket_criteria: {
@@ -3472,15 +3472,15 @@ export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktn
 }
 export interface Macie2ClassificationJobScheduleFrequency {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#daily_schedule Macie2ClassificationJob#daily_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#daily_schedule Macie2ClassificationJob#daily_schedule}
   */
   readonly dailySchedule?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#monthly_schedule Macie2ClassificationJob#monthly_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#monthly_schedule Macie2ClassificationJob#monthly_schedule}
   */
   readonly monthlySchedule?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#weekly_schedule Macie2ClassificationJob#weekly_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#weekly_schedule Macie2ClassificationJob#weekly_schedule}
   */
   readonly weeklySchedule?: string;
 }
@@ -3488,7 +3488,7 @@ export interface Macie2ClassificationJobScheduleFrequency {
 export function macie2ClassificationJobScheduleFrequencyToTerraform(struct?: Macie2ClassificationJobScheduleFrequencyOutputReference | Macie2ClassificationJobScheduleFrequency): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     daily_schedule: cdktn.booleanToTerraform(struct!.dailySchedule),
@@ -3501,7 +3501,7 @@ export function macie2ClassificationJobScheduleFrequencyToTerraform(struct?: Mac
 export function macie2ClassificationJobScheduleFrequencyToHclTerraform(struct?: Macie2ClassificationJobScheduleFrequencyOutputReference | Macie2ClassificationJobScheduleFrequency): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     daily_schedule: {
@@ -3622,11 +3622,11 @@ export class Macie2ClassificationJobScheduleFrequencyOutputReference extends cdk
 }
 export interface Macie2ClassificationJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#create Macie2ClassificationJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#create Macie2ClassificationJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#update Macie2ClassificationJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#update Macie2ClassificationJob#update}
   */
   readonly update?: string;
 }
@@ -3634,7 +3634,7 @@ export interface Macie2ClassificationJobTimeouts {
 export function macie2ClassificationJobTimeoutsToTerraform(struct?: Macie2ClassificationJobTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -3646,7 +3646,7 @@ export function macie2ClassificationJobTimeoutsToTerraform(struct?: Macie2Classi
 export function macie2ClassificationJobTimeoutsToHclTerraform(struct?: Macie2ClassificationJobTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -3749,7 +3749,7 @@ export class Macie2ClassificationJobTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job aws_macie2_classification_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job aws_macie2_classification_job}
 */
 export class Macie2ClassificationJob extends cdktn.TerraformResource {
 
@@ -3765,7 +3765,7 @@ export class Macie2ClassificationJob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Macie2ClassificationJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Macie2ClassificationJob to import
-  * @param importFromId The id of the existing Macie2ClassificationJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Macie2ClassificationJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Macie2ClassificationJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3777,7 +3777,7 @@ export class Macie2ClassificationJob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3788,7 +3788,7 @@ export class Macie2ClassificationJob extends cdktn.TerraformResource {
       terraformResourceType: 'aws_macie2_classification_job',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,27 @@ import * as cdktn from 'cdktn';
 
 export interface SecuritylakeCustomLogSourceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#event_classes SecuritylakeCustomLogSource#event_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#event_classes SecuritylakeCustomLogSource#event_classes}
   */
   readonly eventClasses?: string[];
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#region SecuritylakeCustomLogSource#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#region SecuritylakeCustomLogSource#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#source_name SecuritylakeCustomLogSource#source_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#source_name SecuritylakeCustomLogSource#source_name}
   */
   readonly sourceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#source_version SecuritylakeCustomLogSource#source_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#source_version SecuritylakeCustomLogSource#source_version}
   */
   readonly sourceVersion?: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#configuration SecuritylakeCustomLogSource#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#configuration SecuritylakeCustomLogSource#configuration}
   */
   readonly configuration?: SecuritylakeCustomLogSourceConfiguration[] | cdktn.IResolvable;
 }
@@ -43,7 +43,7 @@ export interface SecuritylakeCustomLogSourceAttributes {
 export function securitylakeCustomLogSourceAttributesToTerraform(struct?: SecuritylakeCustomLogSourceAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -53,7 +53,7 @@ export function securitylakeCustomLogSourceAttributesToTerraform(struct?: Securi
 export function securitylakeCustomLogSourceAttributesToHclTerraform(struct?: SecuritylakeCustomLogSourceAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -128,7 +128,7 @@ export interface SecuritylakeCustomLogSourceProviderDetails {
 export function securitylakeCustomLogSourceProviderDetailsToTerraform(struct?: SecuritylakeCustomLogSourceProviderDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -138,7 +138,7 @@ export function securitylakeCustomLogSourceProviderDetailsToTerraform(struct?: S
 export function securitylakeCustomLogSourceProviderDetailsToHclTerraform(struct?: SecuritylakeCustomLogSourceProviderDetails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -204,7 +204,7 @@ export class SecuritylakeCustomLogSourceProviderDetailsList extends cdktn.Comple
 }
 export interface SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#role_arn SecuritylakeCustomLogSource#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#role_arn SecuritylakeCustomLogSource#role_arn}
   */
   readonly roleArn: string;
 }
@@ -212,7 +212,7 @@ export interface SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration {
 export function securitylakeCustomLogSourceConfigurationCrawlerConfigurationToTerraform(struct?: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     role_arn: cdktn.stringToTerraform(struct!.roleArn),
@@ -223,7 +223,7 @@ export function securitylakeCustomLogSourceConfigurationCrawlerConfigurationToTe
 export function securitylakeCustomLogSourceConfigurationCrawlerConfigurationToHclTerraform(struct?: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     role_arn: {
@@ -317,11 +317,11 @@ export class SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationList ex
 }
 export interface SecuritylakeCustomLogSourceConfigurationProviderIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#external_id SecuritylakeCustomLogSource#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#external_id SecuritylakeCustomLogSource#external_id}
   */
   readonly externalId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#principal SecuritylakeCustomLogSource#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#principal SecuritylakeCustomLogSource#principal}
   */
   readonly principal: string;
 }
@@ -329,7 +329,7 @@ export interface SecuritylakeCustomLogSourceConfigurationProviderIdentity {
 export function securitylakeCustomLogSourceConfigurationProviderIdentityToTerraform(struct?: SecuritylakeCustomLogSourceConfigurationProviderIdentity | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     external_id: cdktn.stringToTerraform(struct!.externalId),
@@ -341,7 +341,7 @@ export function securitylakeCustomLogSourceConfigurationProviderIdentityToTerraf
 export function securitylakeCustomLogSourceConfigurationProviderIdentityToHclTerraform(struct?: SecuritylakeCustomLogSourceConfigurationProviderIdentity | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     external_id: {
@@ -462,13 +462,13 @@ export interface SecuritylakeCustomLogSourceConfiguration {
   /**
   * crawler_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#crawler_configuration SecuritylakeCustomLogSource#crawler_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#crawler_configuration SecuritylakeCustomLogSource#crawler_configuration}
   */
   readonly crawlerConfiguration?: SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration[] | cdktn.IResolvable;
   /**
   * provider_identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#provider_identity SecuritylakeCustomLogSource#provider_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#provider_identity SecuritylakeCustomLogSource#provider_identity}
   */
   readonly providerIdentity?: SecuritylakeCustomLogSourceConfigurationProviderIdentity[] | cdktn.IResolvable;
 }
@@ -476,7 +476,7 @@ export interface SecuritylakeCustomLogSourceConfiguration {
 export function securitylakeCustomLogSourceConfigurationToTerraform(struct?: SecuritylakeCustomLogSourceConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     crawler_configuration: cdktn.listMapper(securitylakeCustomLogSourceConfigurationCrawlerConfigurationToTerraform, true)(struct!.crawlerConfiguration),
@@ -488,7 +488,7 @@ export function securitylakeCustomLogSourceConfigurationToTerraform(struct?: Sec
 export function securitylakeCustomLogSourceConfigurationToHclTerraform(struct?: SecuritylakeCustomLogSourceConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     crawler_configuration: {
@@ -613,7 +613,7 @@ export class SecuritylakeCustomLogSourceConfigurationList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source aws_securitylake_custom_log_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source aws_securitylake_custom_log_source}
 */
 export class SecuritylakeCustomLogSource extends cdktn.TerraformResource {
 
@@ -629,7 +629,7 @@ export class SecuritylakeCustomLogSource extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecuritylakeCustomLogSource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecuritylakeCustomLogSource to import
-  * @param importFromId The id of the existing SecuritylakeCustomLogSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecuritylakeCustomLogSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecuritylakeCustomLogSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -641,7 +641,7 @@ export class SecuritylakeCustomLogSource extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/securitylake_custom_log_source aws_securitylake_custom_log_source} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/securitylake_custom_log_source aws_securitylake_custom_log_source} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -652,7 +652,7 @@ export class SecuritylakeCustomLogSource extends cdktn.TerraformResource {
       terraformResourceType: 'aws_securitylake_custom_log_source',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

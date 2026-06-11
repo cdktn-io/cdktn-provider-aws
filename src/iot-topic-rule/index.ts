@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,182 +13,182 @@ import * as cdktn from 'cdktn';
 
 export interface IotTopicRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#description IotTopicRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#description IotTopicRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#id IotTopicRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#id IotTopicRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#name IotTopicRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#name IotTopicRule#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#region IotTopicRule#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#region IotTopicRule#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#sql IotTopicRule#sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#sql IotTopicRule#sql}
   */
   readonly sql: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}
   */
   readonly sqlVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#tags IotTopicRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#tags IotTopicRule#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * cloudwatch_alarm block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
   */
   readonly cloudwatchAlarm?: IotTopicRuleCloudwatchAlarm[] | cdktn.IResolvable;
   /**
   * cloudwatch_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: IotTopicRuleCloudwatchLogs[] | cdktn.IResolvable;
   /**
   * cloudwatch_metric block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
   */
   readonly cloudwatchMetric?: IotTopicRuleCloudwatchMetric[] | cdktn.IResolvable;
   /**
   * dynamodb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
   */
   readonly dynamodb?: IotTopicRuleDynamodb[] | cdktn.IResolvable;
   /**
   * dynamodbv2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
   */
   readonly dynamodbv2?: IotTopicRuleDynamodbv2[] | cdktn.IResolvable;
   /**
   * elasticsearch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
   */
   readonly elasticsearch?: IotTopicRuleElasticsearch[] | cdktn.IResolvable;
   /**
   * error_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#error_action IotTopicRule#error_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#error_action IotTopicRule#error_action}
   */
   readonly errorAction?: IotTopicRuleErrorAction;
   /**
   * firehose block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
   */
   readonly firehose?: IotTopicRuleFirehose[] | cdktn.IResolvable;
   /**
   * http block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#http IotTopicRule#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#http IotTopicRule#http}
   */
   readonly http?: IotTopicRuleHttp[] | cdktn.IResolvable;
   /**
   * iot_analytics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
   */
   readonly iotAnalytics?: IotTopicRuleIotAnalytics[] | cdktn.IResolvable;
   /**
   * iot_events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
   */
   readonly iotEvents?: IotTopicRuleIotEvents[] | cdktn.IResolvable;
   /**
   * kafka block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
   */
   readonly kafka?: IotTopicRuleKafka[] | cdktn.IResolvable;
   /**
   * kinesis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
   */
   readonly kinesis?: IotTopicRuleKinesis[] | cdktn.IResolvable;
   /**
   * lambda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
   */
   readonly lambda?: IotTopicRuleLambda[] | cdktn.IResolvable;
   /**
   * republish block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
   */
   readonly republish?: IotTopicRuleRepublish[] | cdktn.IResolvable;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
   */
   readonly s3?: IotTopicRuleS3[] | cdktn.IResolvable;
   /**
   * sns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
   */
   readonly sns?: IotTopicRuleSns[] | cdktn.IResolvable;
   /**
   * sqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
   */
   readonly sqs?: IotTopicRuleSqs[] | cdktn.IResolvable;
   /**
   * step_functions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
   */
   readonly stepFunctions?: IotTopicRuleStepFunctions[] | cdktn.IResolvable;
   /**
   * timestream block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
   */
   readonly timestream?: IotTopicRuleTimestream[] | cdktn.IResolvable;
 }
 export interface IotTopicRuleCloudwatchAlarm {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}
   */
   readonly alarmName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}
   */
   readonly stateReason: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}
   */
   readonly stateValue: string;
 }
@@ -196,7 +196,7 @@ export interface IotTopicRuleCloudwatchAlarm {
 export function iotTopicRuleCloudwatchAlarmToTerraform(struct?: IotTopicRuleCloudwatchAlarm | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alarm_name: cdktn.stringToTerraform(struct!.alarmName),
@@ -210,7 +210,7 @@ export function iotTopicRuleCloudwatchAlarmToTerraform(struct?: IotTopicRuleClou
 export function iotTopicRuleCloudwatchAlarmToHclTerraform(struct?: IotTopicRuleCloudwatchAlarm | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alarm_name: {
@@ -379,15 +379,15 @@ export class IotTopicRuleCloudwatchAlarmList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleCloudwatchLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
   readonly batchMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}
   */
   readonly logGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -395,7 +395,7 @@ export interface IotTopicRuleCloudwatchLogs {
 export function iotTopicRuleCloudwatchLogsToTerraform(struct?: IotTopicRuleCloudwatchLogs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
@@ -408,7 +408,7 @@ export function iotTopicRuleCloudwatchLogsToTerraform(struct?: IotTopicRuleCloud
 export function iotTopicRuleCloudwatchLogsToHclTerraform(struct?: IotTopicRuleCloudwatchLogs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     batch_mode: {
@@ -555,27 +555,27 @@ export class IotTopicRuleCloudwatchLogsList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleCloudwatchMetric {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}
   */
   readonly metricNamespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}
   */
   readonly metricTimestamp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}
   */
   readonly metricUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}
   */
   readonly metricValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -583,7 +583,7 @@ export interface IotTopicRuleCloudwatchMetric {
 export function iotTopicRuleCloudwatchMetricToTerraform(struct?: IotTopicRuleCloudwatchMetric | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metric_name: cdktn.stringToTerraform(struct!.metricName),
@@ -599,7 +599,7 @@ export function iotTopicRuleCloudwatchMetricToTerraform(struct?: IotTopicRuleClo
 export function iotTopicRuleCloudwatchMetricToHclTerraform(struct?: IotTopicRuleCloudwatchMetric | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metric_name: {
@@ -821,43 +821,43 @@ export class IotTopicRuleCloudwatchMetricList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleDynamodb {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}
   */
   readonly hashKeyField: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}
   */
   readonly hashKeyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}
   */
   readonly hashKeyValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#operation IotTopicRule#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#operation IotTopicRule#operation}
   */
   readonly operation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}
   */
   readonly payloadField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}
   */
   readonly rangeKeyField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}
   */
   readonly rangeKeyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}
   */
   readonly rangeKeyValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
   */
   readonly tableName: string;
 }
@@ -865,7 +865,7 @@ export interface IotTopicRuleDynamodb {
 export function iotTopicRuleDynamodbToTerraform(struct?: IotTopicRuleDynamodb | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hash_key_field: cdktn.stringToTerraform(struct!.hashKeyField),
@@ -885,7 +885,7 @@ export function iotTopicRuleDynamodbToTerraform(struct?: IotTopicRuleDynamodb | 
 export function iotTopicRuleDynamodbToHclTerraform(struct?: IotTopicRuleDynamodb | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hash_key_field: {
@@ -1222,7 +1222,7 @@ export class IotTopicRuleDynamodbList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleDynamodbv2PutItem {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
   */
   readonly tableName: string;
 }
@@ -1230,7 +1230,7 @@ export interface IotTopicRuleDynamodbv2PutItem {
 export function iotTopicRuleDynamodbv2PutItemToTerraform(struct?: IotTopicRuleDynamodbv2PutItemOutputReference | IotTopicRuleDynamodbv2PutItem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     table_name: cdktn.stringToTerraform(struct!.tableName),
@@ -1241,7 +1241,7 @@ export function iotTopicRuleDynamodbv2PutItemToTerraform(struct?: IotTopicRuleDy
 export function iotTopicRuleDynamodbv2PutItemToHclTerraform(struct?: IotTopicRuleDynamodbv2PutItemOutputReference | IotTopicRuleDynamodbv2PutItem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     table_name: {
@@ -1303,13 +1303,13 @@ export class IotTopicRuleDynamodbv2PutItemOutputReference extends cdktn.ComplexO
 }
 export interface IotTopicRuleDynamodbv2 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
   * put_item block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
   */
   readonly putItem?: IotTopicRuleDynamodbv2PutItem;
 }
@@ -1317,7 +1317,7 @@ export interface IotTopicRuleDynamodbv2 {
 export function iotTopicRuleDynamodbv2ToTerraform(struct?: IotTopicRuleDynamodbv2 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     role_arn: cdktn.stringToTerraform(struct!.roleArn),
@@ -1329,7 +1329,7 @@ export function iotTopicRuleDynamodbv2ToTerraform(struct?: IotTopicRuleDynamodbv
 export function iotTopicRuleDynamodbv2ToHclTerraform(struct?: IotTopicRuleDynamodbv2 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     role_arn: {
@@ -1451,26 +1451,26 @@ export class IotTopicRuleDynamodbv2List extends cdktn.ComplexList {
 }
 export interface IotTopicRuleElasticsearch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}
   */
   readonly endpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#id IotTopicRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#id IotTopicRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#index IotTopicRule#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#index IotTopicRule#index}
   */
   readonly index: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#type IotTopicRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#type IotTopicRule#type}
   */
   readonly type: string;
 }
@@ -1478,7 +1478,7 @@ export interface IotTopicRuleElasticsearch {
 export function iotTopicRuleElasticsearchToTerraform(struct?: IotTopicRuleElasticsearch | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoint: cdktn.stringToTerraform(struct!.endpoint),
@@ -1493,7 +1493,7 @@ export function iotTopicRuleElasticsearchToTerraform(struct?: IotTopicRuleElasti
 export function iotTopicRuleElasticsearchToHclTerraform(struct?: IotTopicRuleElasticsearch | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoint: {
@@ -1687,19 +1687,19 @@ export class IotTopicRuleElasticsearchList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleErrorActionCloudwatchAlarm {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}
   */
   readonly alarmName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}
   */
   readonly stateReason: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}
   */
   readonly stateValue: string;
 }
@@ -1707,7 +1707,7 @@ export interface IotTopicRuleErrorActionCloudwatchAlarm {
 export function iotTopicRuleErrorActionCloudwatchAlarmToTerraform(struct?: IotTopicRuleErrorActionCloudwatchAlarmOutputReference | IotTopicRuleErrorActionCloudwatchAlarm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alarm_name: cdktn.stringToTerraform(struct!.alarmName),
@@ -1721,7 +1721,7 @@ export function iotTopicRuleErrorActionCloudwatchAlarmToTerraform(struct?: IotTo
 export function iotTopicRuleErrorActionCloudwatchAlarmToHclTerraform(struct?: IotTopicRuleErrorActionCloudwatchAlarmOutputReference | IotTopicRuleErrorActionCloudwatchAlarm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alarm_name: {
@@ -1858,15 +1858,15 @@ export class IotTopicRuleErrorActionCloudwatchAlarmOutputReference extends cdktn
 }
 export interface IotTopicRuleErrorActionCloudwatchLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
   readonly batchMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}
   */
   readonly logGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -1874,7 +1874,7 @@ export interface IotTopicRuleErrorActionCloudwatchLogs {
 export function iotTopicRuleErrorActionCloudwatchLogsToTerraform(struct?: IotTopicRuleErrorActionCloudwatchLogsOutputReference | IotTopicRuleErrorActionCloudwatchLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
@@ -1887,7 +1887,7 @@ export function iotTopicRuleErrorActionCloudwatchLogsToTerraform(struct?: IotTop
 export function iotTopicRuleErrorActionCloudwatchLogsToHclTerraform(struct?: IotTopicRuleErrorActionCloudwatchLogsOutputReference | IotTopicRuleErrorActionCloudwatchLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     batch_mode: {
@@ -2002,27 +2002,27 @@ export class IotTopicRuleErrorActionCloudwatchLogsOutputReference extends cdktn.
 }
 export interface IotTopicRuleErrorActionCloudwatchMetric {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}
   */
   readonly metricNamespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}
   */
   readonly metricTimestamp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}
   */
   readonly metricUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}
   */
   readonly metricValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -2030,7 +2030,7 @@ export interface IotTopicRuleErrorActionCloudwatchMetric {
 export function iotTopicRuleErrorActionCloudwatchMetricToTerraform(struct?: IotTopicRuleErrorActionCloudwatchMetricOutputReference | IotTopicRuleErrorActionCloudwatchMetric): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metric_name: cdktn.stringToTerraform(struct!.metricName),
@@ -2046,7 +2046,7 @@ export function iotTopicRuleErrorActionCloudwatchMetricToTerraform(struct?: IotT
 export function iotTopicRuleErrorActionCloudwatchMetricToHclTerraform(struct?: IotTopicRuleErrorActionCloudwatchMetricOutputReference | IotTopicRuleErrorActionCloudwatchMetric): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metric_name: {
@@ -2236,43 +2236,43 @@ export class IotTopicRuleErrorActionCloudwatchMetricOutputReference extends cdkt
 }
 export interface IotTopicRuleErrorActionDynamodb {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}
   */
   readonly hashKeyField: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}
   */
   readonly hashKeyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}
   */
   readonly hashKeyValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#operation IotTopicRule#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#operation IotTopicRule#operation}
   */
   readonly operation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}
   */
   readonly payloadField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}
   */
   readonly rangeKeyField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}
   */
   readonly rangeKeyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}
   */
   readonly rangeKeyValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
   */
   readonly tableName: string;
 }
@@ -2280,7 +2280,7 @@ export interface IotTopicRuleErrorActionDynamodb {
 export function iotTopicRuleErrorActionDynamodbToTerraform(struct?: IotTopicRuleErrorActionDynamodbOutputReference | IotTopicRuleErrorActionDynamodb): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hash_key_field: cdktn.stringToTerraform(struct!.hashKeyField),
@@ -2300,7 +2300,7 @@ export function iotTopicRuleErrorActionDynamodbToTerraform(struct?: IotTopicRule
 export function iotTopicRuleErrorActionDynamodbToHclTerraform(struct?: IotTopicRuleErrorActionDynamodbOutputReference | IotTopicRuleErrorActionDynamodb): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hash_key_field: {
@@ -2605,7 +2605,7 @@ export class IotTopicRuleErrorActionDynamodbOutputReference extends cdktn.Comple
 }
 export interface IotTopicRuleErrorActionDynamodbv2PutItem {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
   */
   readonly tableName: string;
 }
@@ -2613,7 +2613,7 @@ export interface IotTopicRuleErrorActionDynamodbv2PutItem {
 export function iotTopicRuleErrorActionDynamodbv2PutItemToTerraform(struct?: IotTopicRuleErrorActionDynamodbv2PutItemOutputReference | IotTopicRuleErrorActionDynamodbv2PutItem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     table_name: cdktn.stringToTerraform(struct!.tableName),
@@ -2624,7 +2624,7 @@ export function iotTopicRuleErrorActionDynamodbv2PutItemToTerraform(struct?: Iot
 export function iotTopicRuleErrorActionDynamodbv2PutItemToHclTerraform(struct?: IotTopicRuleErrorActionDynamodbv2PutItemOutputReference | IotTopicRuleErrorActionDynamodbv2PutItem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     table_name: {
@@ -2686,13 +2686,13 @@ export class IotTopicRuleErrorActionDynamodbv2PutItemOutputReference extends cdk
 }
 export interface IotTopicRuleErrorActionDynamodbv2 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
   * put_item block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
   */
   readonly putItem?: IotTopicRuleErrorActionDynamodbv2PutItem;
 }
@@ -2700,7 +2700,7 @@ export interface IotTopicRuleErrorActionDynamodbv2 {
 export function iotTopicRuleErrorActionDynamodbv2ToTerraform(struct?: IotTopicRuleErrorActionDynamodbv2OutputReference | IotTopicRuleErrorActionDynamodbv2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     role_arn: cdktn.stringToTerraform(struct!.roleArn),
@@ -2712,7 +2712,7 @@ export function iotTopicRuleErrorActionDynamodbv2ToTerraform(struct?: IotTopicRu
 export function iotTopicRuleErrorActionDynamodbv2ToHclTerraform(struct?: IotTopicRuleErrorActionDynamodbv2OutputReference | IotTopicRuleErrorActionDynamodbv2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     role_arn: {
@@ -2802,26 +2802,26 @@ export class IotTopicRuleErrorActionDynamodbv2OutputReference extends cdktn.Comp
 }
 export interface IotTopicRuleErrorActionElasticsearch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}
   */
   readonly endpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#id IotTopicRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#id IotTopicRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#index IotTopicRule#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#index IotTopicRule#index}
   */
   readonly index: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#type IotTopicRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#type IotTopicRule#type}
   */
   readonly type: string;
 }
@@ -2829,7 +2829,7 @@ export interface IotTopicRuleErrorActionElasticsearch {
 export function iotTopicRuleErrorActionElasticsearchToTerraform(struct?: IotTopicRuleErrorActionElasticsearchOutputReference | IotTopicRuleErrorActionElasticsearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoint: cdktn.stringToTerraform(struct!.endpoint),
@@ -2844,7 +2844,7 @@ export function iotTopicRuleErrorActionElasticsearchToTerraform(struct?: IotTopi
 export function iotTopicRuleErrorActionElasticsearchToHclTerraform(struct?: IotTopicRuleErrorActionElasticsearchOutputReference | IotTopicRuleErrorActionElasticsearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoint: {
@@ -3006,19 +3006,19 @@ export class IotTopicRuleErrorActionElasticsearchOutputReference extends cdktn.C
 }
 export interface IotTopicRuleErrorActionFirehose {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
   readonly batchMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}
   */
   readonly deliveryStreamName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}
   */
   readonly separator?: string;
 }
@@ -3026,7 +3026,7 @@ export interface IotTopicRuleErrorActionFirehose {
 export function iotTopicRuleErrorActionFirehoseToTerraform(struct?: IotTopicRuleErrorActionFirehoseOutputReference | IotTopicRuleErrorActionFirehose): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
@@ -3040,7 +3040,7 @@ export function iotTopicRuleErrorActionFirehoseToTerraform(struct?: IotTopicRule
 export function iotTopicRuleErrorActionFirehoseToHclTerraform(struct?: IotTopicRuleErrorActionFirehoseOutputReference | IotTopicRuleErrorActionFirehose): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     batch_mode: {
@@ -3183,11 +3183,11 @@ export class IotTopicRuleErrorActionFirehoseOutputReference extends cdktn.Comple
 }
 export interface IotTopicRuleErrorActionHttpHttpHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
   */
   readonly value: string;
 }
@@ -3195,7 +3195,7 @@ export interface IotTopicRuleErrorActionHttpHttpHeader {
 export function iotTopicRuleErrorActionHttpHttpHeaderToTerraform(struct?: IotTopicRuleErrorActionHttpHttpHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3207,7 +3207,7 @@ export function iotTopicRuleErrorActionHttpHttpHeaderToTerraform(struct?: IotTop
 export function iotTopicRuleErrorActionHttpHttpHeaderToHclTerraform(struct?: IotTopicRuleErrorActionHttpHttpHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3326,17 +3326,17 @@ export class IotTopicRuleErrorActionHttpHttpHeaderList extends cdktn.ComplexList
 }
 export interface IotTopicRuleErrorActionHttp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}
   */
   readonly confirmationUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#url IotTopicRule#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#url IotTopicRule#url}
   */
   readonly url: string;
   /**
   * http_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
   */
   readonly httpHeader?: IotTopicRuleErrorActionHttpHttpHeader[] | cdktn.IResolvable;
 }
@@ -3344,7 +3344,7 @@ export interface IotTopicRuleErrorActionHttp {
 export function iotTopicRuleErrorActionHttpToTerraform(struct?: IotTopicRuleErrorActionHttpOutputReference | IotTopicRuleErrorActionHttp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     confirmation_url: cdktn.stringToTerraform(struct!.confirmationUrl),
@@ -3357,7 +3357,7 @@ export function iotTopicRuleErrorActionHttpToTerraform(struct?: IotTopicRuleErro
 export function iotTopicRuleErrorActionHttpToHclTerraform(struct?: IotTopicRuleErrorActionHttpOutputReference | IotTopicRuleErrorActionHttp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     confirmation_url: {
@@ -3475,15 +3475,15 @@ export class IotTopicRuleErrorActionHttpOutputReference extends cdktn.ComplexObj
 }
 export interface IotTopicRuleErrorActionIotAnalytics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
   readonly batchMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}
   */
   readonly channelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -3491,7 +3491,7 @@ export interface IotTopicRuleErrorActionIotAnalytics {
 export function iotTopicRuleErrorActionIotAnalyticsToTerraform(struct?: IotTopicRuleErrorActionIotAnalyticsOutputReference | IotTopicRuleErrorActionIotAnalytics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
@@ -3504,7 +3504,7 @@ export function iotTopicRuleErrorActionIotAnalyticsToTerraform(struct?: IotTopic
 export function iotTopicRuleErrorActionIotAnalyticsToHclTerraform(struct?: IotTopicRuleErrorActionIotAnalyticsOutputReference | IotTopicRuleErrorActionIotAnalytics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     batch_mode: {
@@ -3619,19 +3619,19 @@ export class IotTopicRuleErrorActionIotAnalyticsOutputReference extends cdktn.Co
 }
 export interface IotTopicRuleErrorActionIotEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
   readonly batchMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}
   */
   readonly inputName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}
   */
   readonly messageId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -3639,7 +3639,7 @@ export interface IotTopicRuleErrorActionIotEvents {
 export function iotTopicRuleErrorActionIotEventsToTerraform(struct?: IotTopicRuleErrorActionIotEventsOutputReference | IotTopicRuleErrorActionIotEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
@@ -3653,7 +3653,7 @@ export function iotTopicRuleErrorActionIotEventsToTerraform(struct?: IotTopicRul
 export function iotTopicRuleErrorActionIotEventsToHclTerraform(struct?: IotTopicRuleErrorActionIotEventsOutputReference | IotTopicRuleErrorActionIotEvents): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     batch_mode: {
@@ -3796,11 +3796,11 @@ export class IotTopicRuleErrorActionIotEventsOutputReference extends cdktn.Compl
 }
 export interface IotTopicRuleErrorActionKafkaHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
   */
   readonly value: string;
 }
@@ -3808,7 +3808,7 @@ export interface IotTopicRuleErrorActionKafkaHeader {
 export function iotTopicRuleErrorActionKafkaHeaderToTerraform(struct?: IotTopicRuleErrorActionKafkaHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3820,7 +3820,7 @@ export function iotTopicRuleErrorActionKafkaHeaderToTerraform(struct?: IotTopicR
 export function iotTopicRuleErrorActionKafkaHeaderToHclTerraform(struct?: IotTopicRuleErrorActionKafkaHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3939,29 +3939,29 @@ export class IotTopicRuleErrorActionKafkaHeaderList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleErrorActionKafka {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}
   */
   readonly clientProperties: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}
   */
   readonly destinationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}
   */
   readonly topic: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#header IotTopicRule#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#header IotTopicRule#header}
   */
   readonly header?: IotTopicRuleErrorActionKafkaHeader[] | cdktn.IResolvable;
 }
@@ -3969,7 +3969,7 @@ export interface IotTopicRuleErrorActionKafka {
 export function iotTopicRuleErrorActionKafkaToTerraform(struct?: IotTopicRuleErrorActionKafkaOutputReference | IotTopicRuleErrorActionKafka): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.clientProperties),
@@ -3985,7 +3985,7 @@ export function iotTopicRuleErrorActionKafkaToTerraform(struct?: IotTopicRuleErr
 export function iotTopicRuleErrorActionKafkaToHclTerraform(struct?: IotTopicRuleErrorActionKafkaOutputReference | IotTopicRuleErrorActionKafka): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_properties: {
@@ -4181,15 +4181,15 @@ export class IotTopicRuleErrorActionKafkaOutputReference extends cdktn.ComplexOb
 }
 export interface IotTopicRuleErrorActionKinesis {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}
   */
   readonly partitionKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}
   */
   readonly streamName: string;
 }
@@ -4197,7 +4197,7 @@ export interface IotTopicRuleErrorActionKinesis {
 export function iotTopicRuleErrorActionKinesisToTerraform(struct?: IotTopicRuleErrorActionKinesisOutputReference | IotTopicRuleErrorActionKinesis): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     partition_key: cdktn.stringToTerraform(struct!.partitionKey),
@@ -4210,7 +4210,7 @@ export function iotTopicRuleErrorActionKinesisToTerraform(struct?: IotTopicRuleE
 export function iotTopicRuleErrorActionKinesisToHclTerraform(struct?: IotTopicRuleErrorActionKinesisOutputReference | IotTopicRuleErrorActionKinesis): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     partition_key: {
@@ -4325,7 +4325,7 @@ export class IotTopicRuleErrorActionKinesisOutputReference extends cdktn.Complex
 }
 export interface IotTopicRuleErrorActionLambda {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}
   */
   readonly functionArn: string;
 }
@@ -4333,7 +4333,7 @@ export interface IotTopicRuleErrorActionLambda {
 export function iotTopicRuleErrorActionLambdaToTerraform(struct?: IotTopicRuleErrorActionLambdaOutputReference | IotTopicRuleErrorActionLambda): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     function_arn: cdktn.stringToTerraform(struct!.functionArn),
@@ -4344,7 +4344,7 @@ export function iotTopicRuleErrorActionLambdaToTerraform(struct?: IotTopicRuleEr
 export function iotTopicRuleErrorActionLambdaToHclTerraform(struct?: IotTopicRuleErrorActionLambdaOutputReference | IotTopicRuleErrorActionLambda): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     function_arn: {
@@ -4406,15 +4406,15 @@ export class IotTopicRuleErrorActionLambdaOutputReference extends cdktn.ComplexO
 }
 export interface IotTopicRuleErrorActionRepublish {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#qos IotTopicRule#qos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#qos IotTopicRule#qos}
   */
   readonly qos?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}
   */
   readonly topic: string;
 }
@@ -4422,7 +4422,7 @@ export interface IotTopicRuleErrorActionRepublish {
 export function iotTopicRuleErrorActionRepublishToTerraform(struct?: IotTopicRuleErrorActionRepublishOutputReference | IotTopicRuleErrorActionRepublish): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     qos: cdktn.numberToTerraform(struct!.qos),
@@ -4435,7 +4435,7 @@ export function iotTopicRuleErrorActionRepublishToTerraform(struct?: IotTopicRul
 export function iotTopicRuleErrorActionRepublishToHclTerraform(struct?: IotTopicRuleErrorActionRepublishOutputReference | IotTopicRuleErrorActionRepublish): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     qos: {
@@ -4550,19 +4550,19 @@ export class IotTopicRuleErrorActionRepublishOutputReference extends cdktn.Compl
 }
 export interface IotTopicRuleErrorActionS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -4570,7 +4570,7 @@ export interface IotTopicRuleErrorActionS3 {
 export function iotTopicRuleErrorActionS3ToTerraform(struct?: IotTopicRuleErrorActionS3OutputReference | IotTopicRuleErrorActionS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket_name: cdktn.stringToTerraform(struct!.bucketName),
@@ -4584,7 +4584,7 @@ export function iotTopicRuleErrorActionS3ToTerraform(struct?: IotTopicRuleErrorA
 export function iotTopicRuleErrorActionS3ToHclTerraform(struct?: IotTopicRuleErrorActionS3OutputReference | IotTopicRuleErrorActionS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket_name: {
@@ -4724,15 +4724,15 @@ export class IotTopicRuleErrorActionS3OutputReference extends cdktn.ComplexObjec
 }
 export interface IotTopicRuleErrorActionSns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}
   */
   readonly messageFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}
   */
   readonly targetArn: string;
 }
@@ -4740,7 +4740,7 @@ export interface IotTopicRuleErrorActionSns {
 export function iotTopicRuleErrorActionSnsToTerraform(struct?: IotTopicRuleErrorActionSnsOutputReference | IotTopicRuleErrorActionSns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     message_format: cdktn.stringToTerraform(struct!.messageFormat),
@@ -4753,7 +4753,7 @@ export function iotTopicRuleErrorActionSnsToTerraform(struct?: IotTopicRuleError
 export function iotTopicRuleErrorActionSnsToHclTerraform(struct?: IotTopicRuleErrorActionSnsOutputReference | IotTopicRuleErrorActionSns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     message_format: {
@@ -4868,15 +4868,15 @@ export class IotTopicRuleErrorActionSnsOutputReference extends cdktn.ComplexObje
 }
 export interface IotTopicRuleErrorActionSqs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}
   */
   readonly queueUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}
   */
   readonly useBase64: boolean | cdktn.IResolvable;
 }
@@ -4884,7 +4884,7 @@ export interface IotTopicRuleErrorActionSqs {
 export function iotTopicRuleErrorActionSqsToTerraform(struct?: IotTopicRuleErrorActionSqsOutputReference | IotTopicRuleErrorActionSqs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     queue_url: cdktn.stringToTerraform(struct!.queueUrl),
@@ -4897,7 +4897,7 @@ export function iotTopicRuleErrorActionSqsToTerraform(struct?: IotTopicRuleError
 export function iotTopicRuleErrorActionSqsToHclTerraform(struct?: IotTopicRuleErrorActionSqsOutputReference | IotTopicRuleErrorActionSqs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     queue_url: {
@@ -5009,15 +5009,15 @@ export class IotTopicRuleErrorActionSqsOutputReference extends cdktn.ComplexObje
 }
 export interface IotTopicRuleErrorActionStepFunctions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}
   */
   readonly executionNamePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}
   */
   readonly stateMachineName: string;
 }
@@ -5025,7 +5025,7 @@ export interface IotTopicRuleErrorActionStepFunctions {
 export function iotTopicRuleErrorActionStepFunctionsToTerraform(struct?: IotTopicRuleErrorActionStepFunctionsOutputReference | IotTopicRuleErrorActionStepFunctions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     execution_name_prefix: cdktn.stringToTerraform(struct!.executionNamePrefix),
@@ -5038,7 +5038,7 @@ export function iotTopicRuleErrorActionStepFunctionsToTerraform(struct?: IotTopi
 export function iotTopicRuleErrorActionStepFunctionsToHclTerraform(struct?: IotTopicRuleErrorActionStepFunctionsOutputReference | IotTopicRuleErrorActionStepFunctions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     execution_name_prefix: {
@@ -5153,11 +5153,11 @@ export class IotTopicRuleErrorActionStepFunctionsOutputReference extends cdktn.C
 }
 export interface IotTopicRuleErrorActionTimestreamDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#name IotTopicRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#name IotTopicRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
   */
   readonly value: string;
 }
@@ -5165,7 +5165,7 @@ export interface IotTopicRuleErrorActionTimestreamDimension {
 export function iotTopicRuleErrorActionTimestreamDimensionToTerraform(struct?: IotTopicRuleErrorActionTimestreamDimension | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -5177,7 +5177,7 @@ export function iotTopicRuleErrorActionTimestreamDimensionToTerraform(struct?: I
 export function iotTopicRuleErrorActionTimestreamDimensionToHclTerraform(struct?: IotTopicRuleErrorActionTimestreamDimension | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -5296,11 +5296,11 @@ export class IotTopicRuleErrorActionTimestreamDimensionList extends cdktn.Comple
 }
 export interface IotTopicRuleErrorActionTimestreamTimestamp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#unit IotTopicRule#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#unit IotTopicRule#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
   */
   readonly value: string;
 }
@@ -5308,7 +5308,7 @@ export interface IotTopicRuleErrorActionTimestreamTimestamp {
 export function iotTopicRuleErrorActionTimestreamTimestampToTerraform(struct?: IotTopicRuleErrorActionTimestreamTimestampOutputReference | IotTopicRuleErrorActionTimestreamTimestamp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -5320,7 +5320,7 @@ export function iotTopicRuleErrorActionTimestreamTimestampToTerraform(struct?: I
 export function iotTopicRuleErrorActionTimestreamTimestampToHclTerraform(struct?: IotTopicRuleErrorActionTimestreamTimestampOutputReference | IotTopicRuleErrorActionTimestreamTimestamp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -5407,27 +5407,27 @@ export class IotTopicRuleErrorActionTimestreamTimestampOutputReference extends c
 }
 export interface IotTopicRuleErrorActionTimestream {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
   */
   readonly tableName: string;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
   */
   readonly dimension: IotTopicRuleErrorActionTimestreamDimension[] | cdktn.IResolvable;
   /**
   * timestamp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
   */
   readonly timestamp?: IotTopicRuleErrorActionTimestreamTimestamp;
 }
@@ -5435,7 +5435,7 @@ export interface IotTopicRuleErrorActionTimestream {
 export function iotTopicRuleErrorActionTimestreamToTerraform(struct?: IotTopicRuleErrorActionTimestreamOutputReference | IotTopicRuleErrorActionTimestream): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     database_name: cdktn.stringToTerraform(struct!.databaseName),
@@ -5450,7 +5450,7 @@ export function iotTopicRuleErrorActionTimestreamToTerraform(struct?: IotTopicRu
 export function iotTopicRuleErrorActionTimestreamToHclTerraform(struct?: IotTopicRuleErrorActionTimestreamOutputReference | IotTopicRuleErrorActionTimestream): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     database_name: {
@@ -5617,115 +5617,115 @@ export interface IotTopicRuleErrorAction {
   /**
   * cloudwatch_alarm block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
   */
   readonly cloudwatchAlarm?: IotTopicRuleErrorActionCloudwatchAlarm;
   /**
   * cloudwatch_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: IotTopicRuleErrorActionCloudwatchLogs;
   /**
   * cloudwatch_metric block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
   */
   readonly cloudwatchMetric?: IotTopicRuleErrorActionCloudwatchMetric;
   /**
   * dynamodb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
   */
   readonly dynamodb?: IotTopicRuleErrorActionDynamodb;
   /**
   * dynamodbv2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
   */
   readonly dynamodbv2?: IotTopicRuleErrorActionDynamodbv2;
   /**
   * elasticsearch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
   */
   readonly elasticsearch?: IotTopicRuleErrorActionElasticsearch;
   /**
   * firehose block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
   */
   readonly firehose?: IotTopicRuleErrorActionFirehose;
   /**
   * http block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#http IotTopicRule#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#http IotTopicRule#http}
   */
   readonly http?: IotTopicRuleErrorActionHttp;
   /**
   * iot_analytics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
   */
   readonly iotAnalytics?: IotTopicRuleErrorActionIotAnalytics;
   /**
   * iot_events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
   */
   readonly iotEvents?: IotTopicRuleErrorActionIotEvents;
   /**
   * kafka block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
   */
   readonly kafka?: IotTopicRuleErrorActionKafka;
   /**
   * kinesis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
   */
   readonly kinesis?: IotTopicRuleErrorActionKinesis;
   /**
   * lambda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
   */
   readonly lambda?: IotTopicRuleErrorActionLambda;
   /**
   * republish block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
   */
   readonly republish?: IotTopicRuleErrorActionRepublish;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
   */
   readonly s3?: IotTopicRuleErrorActionS3;
   /**
   * sns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
   */
   readonly sns?: IotTopicRuleErrorActionSns;
   /**
   * sqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
   */
   readonly sqs?: IotTopicRuleErrorActionSqs;
   /**
   * step_functions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
   */
   readonly stepFunctions?: IotTopicRuleErrorActionStepFunctions;
   /**
   * timestream block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
   */
   readonly timestream?: IotTopicRuleErrorActionTimestream;
 }
@@ -5733,7 +5733,7 @@ export interface IotTopicRuleErrorAction {
 export function iotTopicRuleErrorActionToTerraform(struct?: IotTopicRuleErrorActionOutputReference | IotTopicRuleErrorAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudwatch_alarm: iotTopicRuleErrorActionCloudwatchAlarmToTerraform(struct!.cloudwatchAlarm),
@@ -5762,7 +5762,7 @@ export function iotTopicRuleErrorActionToTerraform(struct?: IotTopicRuleErrorAct
 export function iotTopicRuleErrorActionToHclTerraform(struct?: IotTopicRuleErrorActionOutputReference | IotTopicRuleErrorAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudwatch_alarm: {
@@ -6331,19 +6331,19 @@ export class IotTopicRuleErrorActionOutputReference extends cdktn.ComplexObject 
 }
 export interface IotTopicRuleFirehose {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
   readonly batchMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}
   */
   readonly deliveryStreamName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}
   */
   readonly separator?: string;
 }
@@ -6351,7 +6351,7 @@ export interface IotTopicRuleFirehose {
 export function iotTopicRuleFirehoseToTerraform(struct?: IotTopicRuleFirehose | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
@@ -6365,7 +6365,7 @@ export function iotTopicRuleFirehoseToTerraform(struct?: IotTopicRuleFirehose | 
 export function iotTopicRuleFirehoseToHclTerraform(struct?: IotTopicRuleFirehose | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     batch_mode: {
@@ -6540,11 +6540,11 @@ export class IotTopicRuleFirehoseList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleHttpHttpHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
   */
   readonly value: string;
 }
@@ -6552,7 +6552,7 @@ export interface IotTopicRuleHttpHttpHeader {
 export function iotTopicRuleHttpHttpHeaderToTerraform(struct?: IotTopicRuleHttpHttpHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6564,7 +6564,7 @@ export function iotTopicRuleHttpHttpHeaderToTerraform(struct?: IotTopicRuleHttpH
 export function iotTopicRuleHttpHttpHeaderToHclTerraform(struct?: IotTopicRuleHttpHttpHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6683,17 +6683,17 @@ export class IotTopicRuleHttpHttpHeaderList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleHttp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}
   */
   readonly confirmationUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#url IotTopicRule#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#url IotTopicRule#url}
   */
   readonly url: string;
   /**
   * http_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
   */
   readonly httpHeader?: IotTopicRuleHttpHttpHeader[] | cdktn.IResolvable;
 }
@@ -6701,7 +6701,7 @@ export interface IotTopicRuleHttp {
 export function iotTopicRuleHttpToTerraform(struct?: IotTopicRuleHttp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     confirmation_url: cdktn.stringToTerraform(struct!.confirmationUrl),
@@ -6714,7 +6714,7 @@ export function iotTopicRuleHttpToTerraform(struct?: IotTopicRuleHttp | cdktn.IR
 export function iotTopicRuleHttpToHclTerraform(struct?: IotTopicRuleHttp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     confirmation_url: {
@@ -6864,15 +6864,15 @@ export class IotTopicRuleHttpList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleIotAnalytics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
   readonly batchMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}
   */
   readonly channelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -6880,7 +6880,7 @@ export interface IotTopicRuleIotAnalytics {
 export function iotTopicRuleIotAnalyticsToTerraform(struct?: IotTopicRuleIotAnalytics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
@@ -6893,7 +6893,7 @@ export function iotTopicRuleIotAnalyticsToTerraform(struct?: IotTopicRuleIotAnal
 export function iotTopicRuleIotAnalyticsToHclTerraform(struct?: IotTopicRuleIotAnalytics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     batch_mode: {
@@ -7040,19 +7040,19 @@ export class IotTopicRuleIotAnalyticsList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleIotEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}
   */
   readonly batchMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}
   */
   readonly inputName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}
   */
   readonly messageId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -7060,7 +7060,7 @@ export interface IotTopicRuleIotEvents {
 export function iotTopicRuleIotEventsToTerraform(struct?: IotTopicRuleIotEvents | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     batch_mode: cdktn.booleanToTerraform(struct!.batchMode),
@@ -7074,7 +7074,7 @@ export function iotTopicRuleIotEventsToTerraform(struct?: IotTopicRuleIotEvents 
 export function iotTopicRuleIotEventsToHclTerraform(struct?: IotTopicRuleIotEvents | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     batch_mode: {
@@ -7249,11 +7249,11 @@ export class IotTopicRuleIotEventsList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleKafkaHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
   */
   readonly value: string;
 }
@@ -7261,7 +7261,7 @@ export interface IotTopicRuleKafkaHeader {
 export function iotTopicRuleKafkaHeaderToTerraform(struct?: IotTopicRuleKafkaHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -7273,7 +7273,7 @@ export function iotTopicRuleKafkaHeaderToTerraform(struct?: IotTopicRuleKafkaHea
 export function iotTopicRuleKafkaHeaderToHclTerraform(struct?: IotTopicRuleKafkaHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -7392,29 +7392,29 @@ export class IotTopicRuleKafkaHeaderList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleKafka {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}
   */
   readonly clientProperties: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}
   */
   readonly destinationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}
   */
   readonly topic: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#header IotTopicRule#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#header IotTopicRule#header}
   */
   readonly header?: IotTopicRuleKafkaHeader[] | cdktn.IResolvable;
 }
@@ -7422,7 +7422,7 @@ export interface IotTopicRuleKafka {
 export function iotTopicRuleKafkaToTerraform(struct?: IotTopicRuleKafka | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.clientProperties),
@@ -7438,7 +7438,7 @@ export function iotTopicRuleKafkaToTerraform(struct?: IotTopicRuleKafka | cdktn.
 export function iotTopicRuleKafkaToHclTerraform(struct?: IotTopicRuleKafka | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_properties: {
@@ -7666,15 +7666,15 @@ export class IotTopicRuleKafkaList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleKinesis {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}
   */
   readonly partitionKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}
   */
   readonly streamName: string;
 }
@@ -7682,7 +7682,7 @@ export interface IotTopicRuleKinesis {
 export function iotTopicRuleKinesisToTerraform(struct?: IotTopicRuleKinesis | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     partition_key: cdktn.stringToTerraform(struct!.partitionKey),
@@ -7695,7 +7695,7 @@ export function iotTopicRuleKinesisToTerraform(struct?: IotTopicRuleKinesis | cd
 export function iotTopicRuleKinesisToHclTerraform(struct?: IotTopicRuleKinesis | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     partition_key: {
@@ -7842,7 +7842,7 @@ export class IotTopicRuleKinesisList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleLambda {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}
   */
   readonly functionArn: string;
 }
@@ -7850,7 +7850,7 @@ export interface IotTopicRuleLambda {
 export function iotTopicRuleLambdaToTerraform(struct?: IotTopicRuleLambda | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     function_arn: cdktn.stringToTerraform(struct!.functionArn),
@@ -7861,7 +7861,7 @@ export function iotTopicRuleLambdaToTerraform(struct?: IotTopicRuleLambda | cdkt
 export function iotTopicRuleLambdaToHclTerraform(struct?: IotTopicRuleLambda | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     function_arn: {
@@ -7955,15 +7955,15 @@ export class IotTopicRuleLambdaList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleRepublish {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#qos IotTopicRule#qos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#qos IotTopicRule#qos}
   */
   readonly qos?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}
   */
   readonly topic: string;
 }
@@ -7971,7 +7971,7 @@ export interface IotTopicRuleRepublish {
 export function iotTopicRuleRepublishToTerraform(struct?: IotTopicRuleRepublish | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     qos: cdktn.numberToTerraform(struct!.qos),
@@ -7984,7 +7984,7 @@ export function iotTopicRuleRepublishToTerraform(struct?: IotTopicRuleRepublish 
 export function iotTopicRuleRepublishToHclTerraform(struct?: IotTopicRuleRepublish | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     qos: {
@@ -8131,19 +8131,19 @@ export class IotTopicRuleRepublishList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#key IotTopicRule#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -8151,7 +8151,7 @@ export interface IotTopicRuleS3 {
 export function iotTopicRuleS3ToTerraform(struct?: IotTopicRuleS3 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket_name: cdktn.stringToTerraform(struct!.bucketName),
@@ -8165,7 +8165,7 @@ export function iotTopicRuleS3ToTerraform(struct?: IotTopicRuleS3 | cdktn.IResol
 export function iotTopicRuleS3ToHclTerraform(struct?: IotTopicRuleS3 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket_name: {
@@ -8337,15 +8337,15 @@ export class IotTopicRuleS3List extends cdktn.ComplexList {
 }
 export interface IotTopicRuleSns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}
   */
   readonly messageFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}
   */
   readonly targetArn: string;
 }
@@ -8353,7 +8353,7 @@ export interface IotTopicRuleSns {
 export function iotTopicRuleSnsToTerraform(struct?: IotTopicRuleSns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     message_format: cdktn.stringToTerraform(struct!.messageFormat),
@@ -8366,7 +8366,7 @@ export function iotTopicRuleSnsToTerraform(struct?: IotTopicRuleSns | cdktn.IRes
 export function iotTopicRuleSnsToHclTerraform(struct?: IotTopicRuleSns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     message_format: {
@@ -8513,15 +8513,15 @@ export class IotTopicRuleSnsList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleSqs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}
   */
   readonly queueUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}
   */
   readonly useBase64: boolean | cdktn.IResolvable;
 }
@@ -8529,7 +8529,7 @@ export interface IotTopicRuleSqs {
 export function iotTopicRuleSqsToTerraform(struct?: IotTopicRuleSqs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     queue_url: cdktn.stringToTerraform(struct!.queueUrl),
@@ -8542,7 +8542,7 @@ export function iotTopicRuleSqsToTerraform(struct?: IotTopicRuleSqs | cdktn.IRes
 export function iotTopicRuleSqsToHclTerraform(struct?: IotTopicRuleSqs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     queue_url: {
@@ -8686,15 +8686,15 @@ export class IotTopicRuleSqsList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleStepFunctions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}
   */
   readonly executionNamePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}
   */
   readonly stateMachineName: string;
 }
@@ -8702,7 +8702,7 @@ export interface IotTopicRuleStepFunctions {
 export function iotTopicRuleStepFunctionsToTerraform(struct?: IotTopicRuleStepFunctions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     execution_name_prefix: cdktn.stringToTerraform(struct!.executionNamePrefix),
@@ -8715,7 +8715,7 @@ export function iotTopicRuleStepFunctionsToTerraform(struct?: IotTopicRuleStepFu
 export function iotTopicRuleStepFunctionsToHclTerraform(struct?: IotTopicRuleStepFunctions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     execution_name_prefix: {
@@ -8862,11 +8862,11 @@ export class IotTopicRuleStepFunctionsList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleTimestreamDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#name IotTopicRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#name IotTopicRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
   */
   readonly value: string;
 }
@@ -8874,7 +8874,7 @@ export interface IotTopicRuleTimestreamDimension {
 export function iotTopicRuleTimestreamDimensionToTerraform(struct?: IotTopicRuleTimestreamDimension | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -8886,7 +8886,7 @@ export function iotTopicRuleTimestreamDimensionToTerraform(struct?: IotTopicRule
 export function iotTopicRuleTimestreamDimensionToHclTerraform(struct?: IotTopicRuleTimestreamDimension | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -9005,11 +9005,11 @@ export class IotTopicRuleTimestreamDimensionList extends cdktn.ComplexList {
 }
 export interface IotTopicRuleTimestreamTimestamp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#unit IotTopicRule#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#unit IotTopicRule#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#value IotTopicRule#value}
   */
   readonly value: string;
 }
@@ -9017,7 +9017,7 @@ export interface IotTopicRuleTimestreamTimestamp {
 export function iotTopicRuleTimestreamTimestampToTerraform(struct?: IotTopicRuleTimestreamTimestampOutputReference | IotTopicRuleTimestreamTimestamp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -9029,7 +9029,7 @@ export function iotTopicRuleTimestreamTimestampToTerraform(struct?: IotTopicRule
 export function iotTopicRuleTimestreamTimestampToHclTerraform(struct?: IotTopicRuleTimestreamTimestampOutputReference | IotTopicRuleTimestreamTimestamp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -9116,27 +9116,27 @@ export class IotTopicRuleTimestreamTimestampOutputReference extends cdktn.Comple
 }
 export interface IotTopicRuleTimestream {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}
   */
   readonly tableName: string;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
   */
   readonly dimension: IotTopicRuleTimestreamDimension[] | cdktn.IResolvable;
   /**
   * timestamp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
   */
   readonly timestamp?: IotTopicRuleTimestreamTimestamp;
 }
@@ -9144,7 +9144,7 @@ export interface IotTopicRuleTimestream {
 export function iotTopicRuleTimestreamToTerraform(struct?: IotTopicRuleTimestream | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     database_name: cdktn.stringToTerraform(struct!.databaseName),
@@ -9159,7 +9159,7 @@ export function iotTopicRuleTimestreamToTerraform(struct?: IotTopicRuleTimestrea
 export function iotTopicRuleTimestreamToHclTerraform(struct?: IotTopicRuleTimestream | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     database_name: {
@@ -9356,7 +9356,7 @@ export class IotTopicRuleTimestreamList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule aws_iot_topic_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule aws_iot_topic_rule}
 */
 export class IotTopicRule extends cdktn.TerraformResource {
 
@@ -9372,7 +9372,7 @@ export class IotTopicRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IotTopicRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotTopicRule to import
-  * @param importFromId The id of the existing IotTopicRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IotTopicRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotTopicRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -9384,7 +9384,7 @@ export class IotTopicRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/iot_topic_rule aws_iot_topic_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iot_topic_rule aws_iot_topic_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -9395,7 +9395,7 @@ export class IotTopicRule extends cdktn.TerraformResource {
       terraformResourceType: 'aws_iot_topic_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

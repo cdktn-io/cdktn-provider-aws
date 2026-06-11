@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ssmincidents_response_plan
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ssmincidents_response_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsSsmincidentsResponsePlanConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ssmincidents_response_plan#arn DataAwsSsmincidentsResponsePlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ssmincidents_response_plan#arn DataAwsSsmincidentsResponsePlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ssmincidents_response_plan#id DataAwsSsmincidentsResponsePlan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ssmincidents_response_plan#id DataAwsSsmincidentsResponsePlan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,11 +26,11 @@ export interface DataAwsSsmincidentsResponsePlanConfig extends cdktn.TerraformMe
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ssmincidents_response_plan#region DataAwsSsmincidentsResponsePlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ssmincidents_response_plan#region DataAwsSsmincidentsResponsePlan#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ssmincidents_response_plan#tags DataAwsSsmincidentsResponsePlan#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ssmincidents_response_plan#tags DataAwsSsmincidentsResponsePlan#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -40,7 +40,7 @@ export interface DataAwsSsmincidentsResponsePlanActionSsmAutomationParameter {
 export function dataAwsSsmincidentsResponsePlanActionSsmAutomationParameterToTerraform(struct?: DataAwsSsmincidentsResponsePlanActionSsmAutomationParameter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAwsSsmincidentsResponsePlanActionSsmAutomationParameterToTer
 export function dataAwsSsmincidentsResponsePlanActionSsmAutomationParameterToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanActionSsmAutomationParameter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -120,7 +120,7 @@ export interface DataAwsSsmincidentsResponsePlanActionSsmAutomation {
 export function dataAwsSsmincidentsResponsePlanActionSsmAutomationToTerraform(struct?: DataAwsSsmincidentsResponsePlanActionSsmAutomation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -130,7 +130,7 @@ export function dataAwsSsmincidentsResponsePlanActionSsmAutomationToTerraform(st
 export function dataAwsSsmincidentsResponsePlanActionSsmAutomationToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanActionSsmAutomation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -222,7 +222,7 @@ export interface DataAwsSsmincidentsResponsePlanAction {
 export function dataAwsSsmincidentsResponsePlanActionToTerraform(struct?: DataAwsSsmincidentsResponsePlanAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -232,7 +232,7 @@ export function dataAwsSsmincidentsResponsePlanActionToTerraform(struct?: DataAw
 export function dataAwsSsmincidentsResponsePlanActionToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -298,7 +298,7 @@ export interface DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTarg
 export function dataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTargetToTerraform(struct?: DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -308,7 +308,7 @@ export function dataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTarge
 export function dataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTargetToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -373,7 +373,7 @@ export interface DataAwsSsmincidentsResponsePlanIncidentTemplate {
 export function dataAwsSsmincidentsResponsePlanIncidentTemplateToTerraform(struct?: DataAwsSsmincidentsResponsePlanIncidentTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -383,7 +383,7 @@ export function dataAwsSsmincidentsResponsePlanIncidentTemplateToTerraform(struc
 export function dataAwsSsmincidentsResponsePlanIncidentTemplateToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanIncidentTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -475,7 +475,7 @@ export interface DataAwsSsmincidentsResponsePlanIntegrationPagerduty {
 export function dataAwsSsmincidentsResponsePlanIntegrationPagerdutyToTerraform(struct?: DataAwsSsmincidentsResponsePlanIntegrationPagerduty): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -485,7 +485,7 @@ export function dataAwsSsmincidentsResponsePlanIntegrationPagerdutyToTerraform(s
 export function dataAwsSsmincidentsResponsePlanIntegrationPagerdutyToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanIntegrationPagerduty): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -560,7 +560,7 @@ export interface DataAwsSsmincidentsResponsePlanIntegration {
 export function dataAwsSsmincidentsResponsePlanIntegrationToTerraform(struct?: DataAwsSsmincidentsResponsePlanIntegration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -570,7 +570,7 @@ export function dataAwsSsmincidentsResponsePlanIntegrationToTerraform(struct?: D
 export function dataAwsSsmincidentsResponsePlanIntegrationToHclTerraform(struct?: DataAwsSsmincidentsResponsePlanIntegration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -632,7 +632,7 @@ export class DataAwsSsmincidentsResponsePlanIntegrationList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ssmincidents_response_plan aws_ssmincidents_response_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ssmincidents_response_plan aws_ssmincidents_response_plan}
 */
 export class DataAwsSsmincidentsResponsePlan extends cdktn.TerraformDataSource {
 
@@ -648,7 +648,7 @@ export class DataAwsSsmincidentsResponsePlan extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsSsmincidentsResponsePlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsmincidentsResponsePlan to import
-  * @param importFromId The id of the existing DataAwsSsmincidentsResponsePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ssmincidents_response_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSsmincidentsResponsePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ssmincidents_response_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsmincidentsResponsePlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -660,7 +660,7 @@ export class DataAwsSsmincidentsResponsePlan extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/ssmincidents_response_plan aws_ssmincidents_response_plan} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/ssmincidents_response_plan aws_ssmincidents_response_plan} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -671,7 +671,7 @@ export class DataAwsSsmincidentsResponsePlan extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_ssmincidents_response_plan',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

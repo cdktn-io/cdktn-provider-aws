@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/sesv2_configuration_set
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/sesv2_configuration_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsSesv2ConfigurationSetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/sesv2_configuration_set#configuration_set_name DataAwsSesv2ConfigurationSet#configuration_set_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/sesv2_configuration_set#configuration_set_name DataAwsSesv2ConfigurationSet#configuration_set_name}
   */
   readonly configurationSetName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/sesv2_configuration_set#id DataAwsSesv2ConfigurationSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/sesv2_configuration_set#id DataAwsSesv2ConfigurationSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,11 +26,11 @@ export interface DataAwsSesv2ConfigurationSetConfig extends cdktn.TerraformMetaA
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/sesv2_configuration_set#region DataAwsSesv2ConfigurationSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/sesv2_configuration_set#region DataAwsSesv2ConfigurationSet#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/sesv2_configuration_set#tags DataAwsSesv2ConfigurationSet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/sesv2_configuration_set#tags DataAwsSesv2ConfigurationSet#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -40,7 +40,7 @@ export interface DataAwsSesv2ConfigurationSetDeliveryOptions {
 export function dataAwsSesv2ConfigurationSetDeliveryOptionsToTerraform(struct?: DataAwsSesv2ConfigurationSetDeliveryOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAwsSesv2ConfigurationSetDeliveryOptionsToTerraform(struct?: 
 export function dataAwsSesv2ConfigurationSetDeliveryOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetDeliveryOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -125,7 +125,7 @@ export interface DataAwsSesv2ConfigurationSetReputationOptions {
 export function dataAwsSesv2ConfigurationSetReputationOptionsToTerraform(struct?: DataAwsSesv2ConfigurationSetReputationOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -135,7 +135,7 @@ export function dataAwsSesv2ConfigurationSetReputationOptionsToTerraform(struct?
 export function dataAwsSesv2ConfigurationSetReputationOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetReputationOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -205,7 +205,7 @@ export interface DataAwsSesv2ConfigurationSetSendingOptions {
 export function dataAwsSesv2ConfigurationSetSendingOptionsToTerraform(struct?: DataAwsSesv2ConfigurationSetSendingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -215,7 +215,7 @@ export function dataAwsSesv2ConfigurationSetSendingOptionsToTerraform(struct?: D
 export function dataAwsSesv2ConfigurationSetSendingOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetSendingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -280,7 +280,7 @@ export interface DataAwsSesv2ConfigurationSetSuppressionOptions {
 export function dataAwsSesv2ConfigurationSetSuppressionOptionsToTerraform(struct?: DataAwsSesv2ConfigurationSetSuppressionOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -290,7 +290,7 @@ export function dataAwsSesv2ConfigurationSetSuppressionOptionsToTerraform(struct
 export function dataAwsSesv2ConfigurationSetSuppressionOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetSuppressionOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -355,7 +355,7 @@ export interface DataAwsSesv2ConfigurationSetTrackingOptions {
 export function dataAwsSesv2ConfigurationSetTrackingOptionsToTerraform(struct?: DataAwsSesv2ConfigurationSetTrackingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -365,7 +365,7 @@ export function dataAwsSesv2ConfigurationSetTrackingOptionsToTerraform(struct?: 
 export function dataAwsSesv2ConfigurationSetTrackingOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetTrackingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -435,7 +435,7 @@ export interface DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptions {
 export function dataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsToTerraform(struct?: DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -445,7 +445,7 @@ export function dataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsToTerrafor
 export function dataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -510,7 +510,7 @@ export interface DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptions {
 export function dataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsToTerraform(struct?: DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -520,7 +520,7 @@ export function dataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsToTerraform
 export function dataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -585,7 +585,7 @@ export interface DataAwsSesv2ConfigurationSetVdmOptions {
 export function dataAwsSesv2ConfigurationSetVdmOptionsToTerraform(struct?: DataAwsSesv2ConfigurationSetVdmOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -595,7 +595,7 @@ export function dataAwsSesv2ConfigurationSetVdmOptionsToTerraform(struct?: DataA
 export function dataAwsSesv2ConfigurationSetVdmOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetVdmOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -663,7 +663,7 @@ export class DataAwsSesv2ConfigurationSetVdmOptionsList extends cdktn.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set}
 */
 export class DataAwsSesv2ConfigurationSet extends cdktn.TerraformDataSource {
 
@@ -679,7 +679,7 @@ export class DataAwsSesv2ConfigurationSet extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsSesv2ConfigurationSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSesv2ConfigurationSet to import
-  * @param importFromId The id of the existing DataAwsSesv2ConfigurationSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/sesv2_configuration_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSesv2ConfigurationSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/sesv2_configuration_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSesv2ConfigurationSet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -691,7 +691,7 @@ export class DataAwsSesv2ConfigurationSet extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -702,7 +702,7 @@ export class DataAwsSesv2ConfigurationSet extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_sesv2_configuration_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

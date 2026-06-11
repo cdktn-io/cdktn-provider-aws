@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,187 +15,187 @@ export interface SagemakerTrainingJobConfig extends cdktn.TerraformMetaArguments
   /**
   * Whether to delete model packages in the configured model package group when destroying the training job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#delete_model_packages_on_destroy SagemakerTrainingJob#delete_model_packages_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#delete_model_packages_on_destroy SagemakerTrainingJob#delete_model_packages_on_destroy}
   */
   readonly deleteModelPackagesOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * Whether to delete detached VPC ENIs that SageMaker may leave behind when destroying the training job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#delete_vpc_enis_on_destroy SagemakerTrainingJob#delete_vpc_enis_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#delete_vpc_enis_on_destroy SagemakerTrainingJob#delete_vpc_enis_on_destroy}
   */
   readonly deleteVpcEnisOnDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#enable_inter_container_traffic_encryption SagemakerTrainingJob#enable_inter_container_traffic_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#enable_inter_container_traffic_encryption SagemakerTrainingJob#enable_inter_container_traffic_encryption}
   */
   readonly enableInterContainerTrafficEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#enable_managed_spot_training SagemakerTrainingJob#enable_managed_spot_training}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#enable_managed_spot_training SagemakerTrainingJob#enable_managed_spot_training}
   */
   readonly enableManagedSpotTraining?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#enable_network_isolation SagemakerTrainingJob#enable_network_isolation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#enable_network_isolation SagemakerTrainingJob#enable_network_isolation}
   */
   readonly enableNetworkIsolation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#environment SagemakerTrainingJob#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#environment SagemakerTrainingJob#environment}
   */
   readonly environment?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#hyper_parameters SagemakerTrainingJob#hyper_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#hyper_parameters SagemakerTrainingJob#hyper_parameters}
   */
   readonly hyperParameters?: { [key: string]: string };
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#region SagemakerTrainingJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#region SagemakerTrainingJob#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#role_arn SagemakerTrainingJob#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#role_arn SagemakerTrainingJob#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#tags SagemakerTrainingJob#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#tags SagemakerTrainingJob#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#training_job_name SagemakerTrainingJob#training_job_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#training_job_name SagemakerTrainingJob#training_job_name}
   */
   readonly trainingJobName: string;
   /**
   * algorithm_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#algorithm_specification SagemakerTrainingJob#algorithm_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#algorithm_specification SagemakerTrainingJob#algorithm_specification}
   */
   readonly algorithmSpecification?: SagemakerTrainingJobAlgorithmSpecification[] | cdktn.IResolvable;
   /**
   * checkpoint_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#checkpoint_config SagemakerTrainingJob#checkpoint_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#checkpoint_config SagemakerTrainingJob#checkpoint_config}
   */
   readonly checkpointConfig?: SagemakerTrainingJobCheckpointConfig[] | cdktn.IResolvable;
   /**
   * debug_hook_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#debug_hook_config SagemakerTrainingJob#debug_hook_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#debug_hook_config SagemakerTrainingJob#debug_hook_config}
   */
   readonly debugHookConfig?: SagemakerTrainingJobDebugHookConfig[] | cdktn.IResolvable;
   /**
   * debug_rule_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#debug_rule_configurations SagemakerTrainingJob#debug_rule_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#debug_rule_configurations SagemakerTrainingJob#debug_rule_configurations}
   */
   readonly debugRuleConfigurations?: SagemakerTrainingJobDebugRuleConfigurations[] | cdktn.IResolvable;
   /**
   * experiment_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#experiment_config SagemakerTrainingJob#experiment_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#experiment_config SagemakerTrainingJob#experiment_config}
   */
   readonly experimentConfig?: SagemakerTrainingJobExperimentConfig[] | cdktn.IResolvable;
   /**
   * infra_check_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#infra_check_config SagemakerTrainingJob#infra_check_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#infra_check_config SagemakerTrainingJob#infra_check_config}
   */
   readonly infraCheckConfig?: SagemakerTrainingJobInfraCheckConfig[] | cdktn.IResolvable;
   /**
   * input_data_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#input_data_config SagemakerTrainingJob#input_data_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#input_data_config SagemakerTrainingJob#input_data_config}
   */
   readonly inputDataConfig?: SagemakerTrainingJobInputDataConfig[] | cdktn.IResolvable;
   /**
   * mlflow_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#mlflow_config SagemakerTrainingJob#mlflow_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#mlflow_config SagemakerTrainingJob#mlflow_config}
   */
   readonly mlflowConfig?: SagemakerTrainingJobMlflowConfig[] | cdktn.IResolvable;
   /**
   * model_package_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#model_package_config SagemakerTrainingJob#model_package_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#model_package_config SagemakerTrainingJob#model_package_config}
   */
   readonly modelPackageConfig?: SagemakerTrainingJobModelPackageConfig[] | cdktn.IResolvable;
   /**
   * output_data_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#output_data_config SagemakerTrainingJob#output_data_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#output_data_config SagemakerTrainingJob#output_data_config}
   */
   readonly outputDataConfig?: SagemakerTrainingJobOutputDataConfig[] | cdktn.IResolvable;
   /**
   * profiler_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#profiler_config SagemakerTrainingJob#profiler_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#profiler_config SagemakerTrainingJob#profiler_config}
   */
   readonly profilerConfig?: SagemakerTrainingJobProfilerConfig[] | cdktn.IResolvable;
   /**
   * profiler_rule_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#profiler_rule_configurations SagemakerTrainingJob#profiler_rule_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#profiler_rule_configurations SagemakerTrainingJob#profiler_rule_configurations}
   */
   readonly profilerRuleConfigurations?: SagemakerTrainingJobProfilerRuleConfigurations[] | cdktn.IResolvable;
   /**
   * remote_debug_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#remote_debug_config SagemakerTrainingJob#remote_debug_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#remote_debug_config SagemakerTrainingJob#remote_debug_config}
   */
   readonly remoteDebugConfig?: SagemakerTrainingJobRemoteDebugConfig[] | cdktn.IResolvable;
   /**
   * resource_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#resource_config SagemakerTrainingJob#resource_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#resource_config SagemakerTrainingJob#resource_config}
   */
   readonly resourceConfig?: SagemakerTrainingJobResourceConfig[] | cdktn.IResolvable;
   /**
   * retry_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#retry_strategy SagemakerTrainingJob#retry_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#retry_strategy SagemakerTrainingJob#retry_strategy}
   */
   readonly retryStrategy?: SagemakerTrainingJobRetryStrategy[] | cdktn.IResolvable;
   /**
   * serverless_job_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#serverless_job_config SagemakerTrainingJob#serverless_job_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#serverless_job_config SagemakerTrainingJob#serverless_job_config}
   */
   readonly serverlessJobConfig?: SagemakerTrainingJobServerlessJobConfig[] | cdktn.IResolvable;
   /**
   * session_chaining_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#session_chaining_config SagemakerTrainingJob#session_chaining_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#session_chaining_config SagemakerTrainingJob#session_chaining_config}
   */
   readonly sessionChainingConfig?: SagemakerTrainingJobSessionChainingConfig[] | cdktn.IResolvable;
   /**
   * stopping_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#stopping_condition SagemakerTrainingJob#stopping_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#stopping_condition SagemakerTrainingJob#stopping_condition}
   */
   readonly stoppingCondition?: SagemakerTrainingJobStoppingCondition[] | cdktn.IResolvable;
   /**
   * tensor_board_output_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#tensor_board_output_config SagemakerTrainingJob#tensor_board_output_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#tensor_board_output_config SagemakerTrainingJob#tensor_board_output_config}
   */
   readonly tensorBoardOutputConfig?: SagemakerTrainingJobTensorBoardOutputConfig[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#timeouts SagemakerTrainingJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#timeouts SagemakerTrainingJob#timeouts}
   */
   readonly timeouts?: SagemakerTrainingJobTimeouts;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#vpc_config SagemakerTrainingJob#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#vpc_config SagemakerTrainingJob#vpc_config}
   */
   readonly vpcConfig?: SagemakerTrainingJobVpcConfig[] | cdktn.IResolvable;
 }
 export interface SagemakerTrainingJobAlgorithmSpecificationMetricDefinitions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#name SagemakerTrainingJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#name SagemakerTrainingJob#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#regex SagemakerTrainingJob#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#regex SagemakerTrainingJob#regex}
   */
   readonly regex: string;
 }
@@ -203,7 +203,7 @@ export interface SagemakerTrainingJobAlgorithmSpecificationMetricDefinitions {
 export function sagemakerTrainingJobAlgorithmSpecificationMetricDefinitionsToTerraform(struct?: SagemakerTrainingJobAlgorithmSpecificationMetricDefinitions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -215,7 +215,7 @@ export function sagemakerTrainingJobAlgorithmSpecificationMetricDefinitionsToTer
 export function sagemakerTrainingJobAlgorithmSpecificationMetricDefinitionsToHclTerraform(struct?: SagemakerTrainingJobAlgorithmSpecificationMetricDefinitions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -334,7 +334,7 @@ export class SagemakerTrainingJobAlgorithmSpecificationMetricDefinitionsList ext
 }
 export interface SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTrainingRepositoryAuthConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#training_repository_credentials_provider_arn SagemakerTrainingJob#training_repository_credentials_provider_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#training_repository_credentials_provider_arn SagemakerTrainingJob#training_repository_credentials_provider_arn}
   */
   readonly trainingRepositoryCredentialsProviderArn?: string;
 }
@@ -342,7 +342,7 @@ export interface SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTr
 export function sagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTrainingRepositoryAuthConfigToTerraform(struct?: SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTrainingRepositoryAuthConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     training_repository_credentials_provider_arn: cdktn.stringToTerraform(struct!.trainingRepositoryCredentialsProviderArn),
@@ -353,7 +353,7 @@ export function sagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTra
 export function sagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTrainingRepositoryAuthConfigToHclTerraform(struct?: SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTrainingRepositoryAuthConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     training_repository_credentials_provider_arn: {
@@ -450,13 +450,13 @@ export class SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTraini
 }
 export interface SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#training_repository_access_mode SagemakerTrainingJob#training_repository_access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#training_repository_access_mode SagemakerTrainingJob#training_repository_access_mode}
   */
   readonly trainingRepositoryAccessMode?: string;
   /**
   * training_repository_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#training_repository_auth_config SagemakerTrainingJob#training_repository_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#training_repository_auth_config SagemakerTrainingJob#training_repository_auth_config}
   */
   readonly trainingRepositoryAuthConfig?: SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTrainingRepositoryAuthConfig[] | cdktn.IResolvable;
 }
@@ -464,7 +464,7 @@ export interface SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfig {
 export function sagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigToTerraform(struct?: SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     training_repository_access_mode: cdktn.stringToTerraform(struct!.trainingRepositoryAccessMode),
@@ -476,7 +476,7 @@ export function sagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigToT
 export function sagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigToHclTerraform(struct?: SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     training_repository_access_mode: {
@@ -603,43 +603,43 @@ export interface SagemakerTrainingJobAlgorithmSpecification {
   /**
   * Name or ARN of a SageMaker algorithm resource. Exactly one of `algorithm_name` or `training_image` must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#algorithm_name SagemakerTrainingJob#algorithm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#algorithm_name SagemakerTrainingJob#algorithm_name}
   */
   readonly algorithmName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#container_arguments SagemakerTrainingJob#container_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#container_arguments SagemakerTrainingJob#container_arguments}
   */
   readonly containerArguments?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#container_entrypoint SagemakerTrainingJob#container_entrypoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#container_entrypoint SagemakerTrainingJob#container_entrypoint}
   */
   readonly containerEntrypoint?: string[];
   /**
   * Whether SageMaker AI should publish time-series metrics. SageMaker enables this automatically for built-in algorithms, supported prebuilt images, and jobs with explicit `metric_definitions`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#enable_sagemaker_metrics_time_series SagemakerTrainingJob#enable_sagemaker_metrics_time_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#enable_sagemaker_metrics_time_series SagemakerTrainingJob#enable_sagemaker_metrics_time_series}
   */
   readonly enableSagemakerMetricsTimeSeries?: boolean | cdktn.IResolvable;
   /**
   * Registry path of the training image. Exactly one of `algorithm_name` or `training_image` must be set. Use `metric_definitions` only when you need to extract custom metrics from your own training container logs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#training_image SagemakerTrainingJob#training_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#training_image SagemakerTrainingJob#training_image}
   */
   readonly trainingImage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#training_input_mode SagemakerTrainingJob#training_input_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#training_input_mode SagemakerTrainingJob#training_input_mode}
   */
   readonly trainingInputMode?: string;
   /**
   * metric_definitions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#metric_definitions SagemakerTrainingJob#metric_definitions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#metric_definitions SagemakerTrainingJob#metric_definitions}
   */
   readonly metricDefinitions?: SagemakerTrainingJobAlgorithmSpecificationMetricDefinitions[] | cdktn.IResolvable;
   /**
   * training_image_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#training_image_config SagemakerTrainingJob#training_image_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#training_image_config SagemakerTrainingJob#training_image_config}
   */
   readonly trainingImageConfig?: SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfig[] | cdktn.IResolvable;
 }
@@ -647,7 +647,7 @@ export interface SagemakerTrainingJobAlgorithmSpecification {
 export function sagemakerTrainingJobAlgorithmSpecificationToTerraform(struct?: SagemakerTrainingJobAlgorithmSpecification | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     algorithm_name: cdktn.stringToTerraform(struct!.algorithmName),
@@ -665,7 +665,7 @@ export function sagemakerTrainingJobAlgorithmSpecificationToTerraform(struct?: S
 export function sagemakerTrainingJobAlgorithmSpecificationToHclTerraform(struct?: SagemakerTrainingJobAlgorithmSpecification | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     algorithm_name: {
@@ -958,11 +958,11 @@ export class SagemakerTrainingJobAlgorithmSpecificationList extends cdktn.Comple
 }
 export interface SagemakerTrainingJobCheckpointConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}
   */
   readonly localPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -970,7 +970,7 @@ export interface SagemakerTrainingJobCheckpointConfig {
 export function sagemakerTrainingJobCheckpointConfigToTerraform(struct?: SagemakerTrainingJobCheckpointConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     local_path: cdktn.stringToTerraform(struct!.localPath),
@@ -982,7 +982,7 @@ export function sagemakerTrainingJobCheckpointConfigToTerraform(struct?: Sagemak
 export function sagemakerTrainingJobCheckpointConfigToHclTerraform(struct?: SagemakerTrainingJobCheckpointConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     local_path: {
@@ -1104,11 +1104,11 @@ export class SagemakerTrainingJobCheckpointConfigList extends cdktn.ComplexList 
 }
 export interface SagemakerTrainingJobDebugHookConfigCollectionConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#collection_name SagemakerTrainingJob#collection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#collection_name SagemakerTrainingJob#collection_name}
   */
   readonly collectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#collection_parameters SagemakerTrainingJob#collection_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#collection_parameters SagemakerTrainingJob#collection_parameters}
   */
   readonly collectionParameters?: { [key: string]: string };
 }
@@ -1116,7 +1116,7 @@ export interface SagemakerTrainingJobDebugHookConfigCollectionConfigurations {
 export function sagemakerTrainingJobDebugHookConfigCollectionConfigurationsToTerraform(struct?: SagemakerTrainingJobDebugHookConfigCollectionConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     collection_name: cdktn.stringToTerraform(struct!.collectionName),
@@ -1128,7 +1128,7 @@ export function sagemakerTrainingJobDebugHookConfigCollectionConfigurationsToTer
 export function sagemakerTrainingJobDebugHookConfigCollectionConfigurationsToHclTerraform(struct?: SagemakerTrainingJobDebugHookConfigCollectionConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     collection_name: {
@@ -1253,21 +1253,21 @@ export class SagemakerTrainingJobDebugHookConfigCollectionConfigurationsList ext
 }
 export interface SagemakerTrainingJobDebugHookConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#hook_parameters SagemakerTrainingJob#hook_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#hook_parameters SagemakerTrainingJob#hook_parameters}
   */
   readonly hookParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}
   */
   readonly localPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
   */
   readonly s3OutputPath: string;
   /**
   * collection_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#collection_configurations SagemakerTrainingJob#collection_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#collection_configurations SagemakerTrainingJob#collection_configurations}
   */
   readonly collectionConfigurations?: SagemakerTrainingJobDebugHookConfigCollectionConfigurations[] | cdktn.IResolvable;
 }
@@ -1275,7 +1275,7 @@ export interface SagemakerTrainingJobDebugHookConfig {
 export function sagemakerTrainingJobDebugHookConfigToTerraform(struct?: SagemakerTrainingJobDebugHookConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hook_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.hookParameters),
@@ -1289,7 +1289,7 @@ export function sagemakerTrainingJobDebugHookConfigToTerraform(struct?: Sagemake
 export function sagemakerTrainingJobDebugHookConfigToHclTerraform(struct?: SagemakerTrainingJobDebugHookConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hook_parameters: {
@@ -1467,31 +1467,31 @@ export class SagemakerTrainingJobDebugHookConfigList extends cdktn.ComplexList {
 }
 export interface SagemakerTrainingJobDebugRuleConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}
   */
   readonly localPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}
   */
   readonly ruleConfigurationName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}
   */
   readonly ruleEvaluatorImage: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}
   */
   readonly ruleParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
   */
   readonly s3OutputPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}
   */
   readonly volumeSizeInGb?: number;
 }
@@ -1499,7 +1499,7 @@ export interface SagemakerTrainingJobDebugRuleConfigurations {
 export function sagemakerTrainingJobDebugRuleConfigurationsToTerraform(struct?: SagemakerTrainingJobDebugRuleConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     instance_type: cdktn.stringToTerraform(struct!.instanceType),
@@ -1516,7 +1516,7 @@ export function sagemakerTrainingJobDebugRuleConfigurationsToTerraform(struct?: 
 export function sagemakerTrainingJobDebugRuleConfigurationsToHclTerraform(struct?: SagemakerTrainingJobDebugRuleConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     instance_type: {
@@ -1775,19 +1775,19 @@ export class SagemakerTrainingJobDebugRuleConfigurationsList extends cdktn.Compl
 }
 export interface SagemakerTrainingJobExperimentConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#experiment_name SagemakerTrainingJob#experiment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#experiment_name SagemakerTrainingJob#experiment_name}
   */
   readonly experimentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#run_name SagemakerTrainingJob#run_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#run_name SagemakerTrainingJob#run_name}
   */
   readonly runName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#trial_component_display_name SagemakerTrainingJob#trial_component_display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#trial_component_display_name SagemakerTrainingJob#trial_component_display_name}
   */
   readonly trialComponentDisplayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#trial_name SagemakerTrainingJob#trial_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#trial_name SagemakerTrainingJob#trial_name}
   */
   readonly trialName?: string;
 }
@@ -1795,7 +1795,7 @@ export interface SagemakerTrainingJobExperimentConfig {
 export function sagemakerTrainingJobExperimentConfigToTerraform(struct?: SagemakerTrainingJobExperimentConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     experiment_name: cdktn.stringToTerraform(struct!.experimentName),
@@ -1809,7 +1809,7 @@ export function sagemakerTrainingJobExperimentConfigToTerraform(struct?: Sagemak
 export function sagemakerTrainingJobExperimentConfigToHclTerraform(struct?: SagemakerTrainingJobExperimentConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     experiment_name: {
@@ -1990,7 +1990,7 @@ export class SagemakerTrainingJobExperimentConfigList extends cdktn.ComplexList 
 }
 export interface SagemakerTrainingJobInfraCheckConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#enable_infra_check SagemakerTrainingJob#enable_infra_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#enable_infra_check SagemakerTrainingJob#enable_infra_check}
   */
   readonly enableInfraCheck?: boolean | cdktn.IResolvable;
 }
@@ -1998,7 +1998,7 @@ export interface SagemakerTrainingJobInfraCheckConfig {
 export function sagemakerTrainingJobInfraCheckConfigToTerraform(struct?: SagemakerTrainingJobInfraCheckConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_infra_check: cdktn.booleanToTerraform(struct!.enableInfraCheck),
@@ -2009,7 +2009,7 @@ export function sagemakerTrainingJobInfraCheckConfigToTerraform(struct?: Sagemak
 export function sagemakerTrainingJobInfraCheckConfigToHclTerraform(struct?: SagemakerTrainingJobInfraCheckConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_infra_check: {
@@ -2106,19 +2106,19 @@ export class SagemakerTrainingJobInfraCheckConfigList extends cdktn.ComplexList 
 }
 export interface SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#directory_path SagemakerTrainingJob#directory_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#directory_path SagemakerTrainingJob#directory_path}
   */
   readonly directoryPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#file_system_access_mode SagemakerTrainingJob#file_system_access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#file_system_access_mode SagemakerTrainingJob#file_system_access_mode}
   */
   readonly fileSystemAccessMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#file_system_id SagemakerTrainingJob#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#file_system_id SagemakerTrainingJob#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#file_system_type SagemakerTrainingJob#file_system_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#file_system_type SagemakerTrainingJob#file_system_type}
   */
   readonly fileSystemType: string;
 }
@@ -2126,7 +2126,7 @@ export interface SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSour
 export function sagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSourceToTerraform(struct?: SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     directory_path: cdktn.stringToTerraform(struct!.directoryPath),
@@ -2140,7 +2140,7 @@ export function sagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSourc
 export function sagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSourceToHclTerraform(struct?: SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     directory_path: {
@@ -2309,7 +2309,7 @@ export class SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSourceLi
 }
 export interface SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#hub_content_arn SagemakerTrainingJob#hub_content_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#hub_content_arn SagemakerTrainingJob#hub_content_arn}
   */
   readonly hubContentArn: string;
 }
@@ -2317,7 +2317,7 @@ export interface SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAcc
 export function sagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAccessConfigToTerraform(struct?: SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAccessConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hub_content_arn: cdktn.stringToTerraform(struct!.hubContentArn),
@@ -2328,7 +2328,7 @@ export function sagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAcce
 export function sagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAccessConfigToHclTerraform(struct?: SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAccessConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hub_content_arn: {
@@ -2422,7 +2422,7 @@ export class SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAccessC
 }
 export interface SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}
   */
   readonly acceptEula: boolean | cdktn.IResolvable;
 }
@@ -2430,7 +2430,7 @@ export interface SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelA
 export function sagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelAccessConfigToTerraform(struct?: SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelAccessConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     accept_eula: cdktn.booleanToTerraform(struct!.acceptEula),
@@ -2441,7 +2441,7 @@ export function sagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelAc
 export function sagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelAccessConfigToHclTerraform(struct?: SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelAccessConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     accept_eula: {
@@ -2535,35 +2535,35 @@ export class SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelAcces
 }
 export interface SagemakerTrainingJobInputDataConfigDataSourceS3DataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#attribute_names SagemakerTrainingJob#attribute_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#attribute_names SagemakerTrainingJob#attribute_names}
   */
   readonly attributeNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_group_names SagemakerTrainingJob#instance_group_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_group_names SagemakerTrainingJob#instance_group_names}
   */
   readonly instanceGroupNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_data_distribution_type SagemakerTrainingJob#s3_data_distribution_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_data_distribution_type SagemakerTrainingJob#s3_data_distribution_type}
   */
   readonly s3DataDistributionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_data_type SagemakerTrainingJob#s3_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_data_type SagemakerTrainingJob#s3_data_type}
   */
   readonly s3DataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}
   */
   readonly s3Uri: string;
   /**
   * hub_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#hub_access_config SagemakerTrainingJob#hub_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#hub_access_config SagemakerTrainingJob#hub_access_config}
   */
   readonly hubAccessConfig?: SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAccessConfig[] | cdktn.IResolvable;
   /**
   * model_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#model_access_config SagemakerTrainingJob#model_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#model_access_config SagemakerTrainingJob#model_access_config}
   */
   readonly modelAccessConfig?: SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelAccessConfig[] | cdktn.IResolvable;
 }
@@ -2571,7 +2571,7 @@ export interface SagemakerTrainingJobInputDataConfigDataSourceS3DataSource {
 export function sagemakerTrainingJobInputDataConfigDataSourceS3DataSourceToTerraform(struct?: SagemakerTrainingJobInputDataConfigDataSourceS3DataSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attribute_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.attributeNames),
@@ -2588,7 +2588,7 @@ export function sagemakerTrainingJobInputDataConfigDataSourceS3DataSourceToTerra
 export function sagemakerTrainingJobInputDataConfigDataSourceS3DataSourceToHclTerraform(struct?: SagemakerTrainingJobInputDataConfigDataSourceS3DataSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attribute_names: {
@@ -2849,13 +2849,13 @@ export interface SagemakerTrainingJobInputDataConfigDataSource {
   /**
   * file_system_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#file_system_data_source SagemakerTrainingJob#file_system_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#file_system_data_source SagemakerTrainingJob#file_system_data_source}
   */
   readonly fileSystemDataSource?: SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource[] | cdktn.IResolvable;
   /**
   * s3_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_data_source SagemakerTrainingJob#s3_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_data_source SagemakerTrainingJob#s3_data_source}
   */
   readonly s3DataSource?: SagemakerTrainingJobInputDataConfigDataSourceS3DataSource[] | cdktn.IResolvable;
 }
@@ -2863,7 +2863,7 @@ export interface SagemakerTrainingJobInputDataConfigDataSource {
 export function sagemakerTrainingJobInputDataConfigDataSourceToTerraform(struct?: SagemakerTrainingJobInputDataConfigDataSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     file_system_data_source: cdktn.listMapper(sagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSourceToTerraform, true)(struct!.fileSystemDataSource),
@@ -2875,7 +2875,7 @@ export function sagemakerTrainingJobInputDataConfigDataSourceToTerraform(struct?
 export function sagemakerTrainingJobInputDataConfigDataSourceToHclTerraform(struct?: SagemakerTrainingJobInputDataConfigDataSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     file_system_data_source: {
@@ -3000,7 +3000,7 @@ export class SagemakerTrainingJobInputDataConfigDataSourceList extends cdktn.Com
 }
 export interface SagemakerTrainingJobInputDataConfigShuffleConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#seed SagemakerTrainingJob#seed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#seed SagemakerTrainingJob#seed}
   */
   readonly seed?: number;
 }
@@ -3008,7 +3008,7 @@ export interface SagemakerTrainingJobInputDataConfigShuffleConfig {
 export function sagemakerTrainingJobInputDataConfigShuffleConfigToTerraform(struct?: SagemakerTrainingJobInputDataConfigShuffleConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     seed: cdktn.numberToTerraform(struct!.seed),
@@ -3019,7 +3019,7 @@ export function sagemakerTrainingJobInputDataConfigShuffleConfigToTerraform(stru
 export function sagemakerTrainingJobInputDataConfigShuffleConfigToHclTerraform(struct?: SagemakerTrainingJobInputDataConfigShuffleConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     seed: {
@@ -3116,35 +3116,35 @@ export class SagemakerTrainingJobInputDataConfigShuffleConfigList extends cdktn.
 }
 export interface SagemakerTrainingJobInputDataConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#channel_name SagemakerTrainingJob#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#channel_name SagemakerTrainingJob#channel_name}
   */
   readonly channelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}
   */
   readonly compressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#content_type SagemakerTrainingJob#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#content_type SagemakerTrainingJob#content_type}
   */
   readonly contentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#input_mode SagemakerTrainingJob#input_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#input_mode SagemakerTrainingJob#input_mode}
   */
   readonly inputMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#record_wrapper_type SagemakerTrainingJob#record_wrapper_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#record_wrapper_type SagemakerTrainingJob#record_wrapper_type}
   */
   readonly recordWrapperType?: string;
   /**
   * data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#data_source SagemakerTrainingJob#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#data_source SagemakerTrainingJob#data_source}
   */
   readonly dataSource?: SagemakerTrainingJobInputDataConfigDataSource[] | cdktn.IResolvable;
   /**
   * shuffle_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#shuffle_config SagemakerTrainingJob#shuffle_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#shuffle_config SagemakerTrainingJob#shuffle_config}
   */
   readonly shuffleConfig?: SagemakerTrainingJobInputDataConfigShuffleConfig[] | cdktn.IResolvable;
 }
@@ -3152,7 +3152,7 @@ export interface SagemakerTrainingJobInputDataConfig {
 export function sagemakerTrainingJobInputDataConfigToTerraform(struct?: SagemakerTrainingJobInputDataConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     channel_name: cdktn.stringToTerraform(struct!.channelName),
@@ -3169,7 +3169,7 @@ export function sagemakerTrainingJobInputDataConfigToTerraform(struct?: Sagemake
 export function sagemakerTrainingJobInputDataConfigToHclTerraform(struct?: SagemakerTrainingJobInputDataConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     channel_name: {
@@ -3431,15 +3431,15 @@ export class SagemakerTrainingJobInputDataConfigList extends cdktn.ComplexList {
 }
 export interface SagemakerTrainingJobMlflowConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#mlflow_experiment_name SagemakerTrainingJob#mlflow_experiment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#mlflow_experiment_name SagemakerTrainingJob#mlflow_experiment_name}
   */
   readonly mlflowExperimentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#mlflow_resource_arn SagemakerTrainingJob#mlflow_resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#mlflow_resource_arn SagemakerTrainingJob#mlflow_resource_arn}
   */
   readonly mlflowResourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#mlflow_run_name SagemakerTrainingJob#mlflow_run_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#mlflow_run_name SagemakerTrainingJob#mlflow_run_name}
   */
   readonly mlflowRunName?: string;
 }
@@ -3447,7 +3447,7 @@ export interface SagemakerTrainingJobMlflowConfig {
 export function sagemakerTrainingJobMlflowConfigToTerraform(struct?: SagemakerTrainingJobMlflowConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mlflow_experiment_name: cdktn.stringToTerraform(struct!.mlflowExperimentName),
@@ -3460,7 +3460,7 @@ export function sagemakerTrainingJobMlflowConfigToTerraform(struct?: SagemakerTr
 export function sagemakerTrainingJobMlflowConfigToHclTerraform(struct?: SagemakerTrainingJobMlflowConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mlflow_experiment_name: {
@@ -3610,11 +3610,11 @@ export class SagemakerTrainingJobMlflowConfigList extends cdktn.ComplexList {
 }
 export interface SagemakerTrainingJobModelPackageConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#model_package_group_arn SagemakerTrainingJob#model_package_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#model_package_group_arn SagemakerTrainingJob#model_package_group_arn}
   */
   readonly modelPackageGroupArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#source_model_package_arn SagemakerTrainingJob#source_model_package_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#source_model_package_arn SagemakerTrainingJob#source_model_package_arn}
   */
   readonly sourceModelPackageArn?: string;
 }
@@ -3622,7 +3622,7 @@ export interface SagemakerTrainingJobModelPackageConfig {
 export function sagemakerTrainingJobModelPackageConfigToTerraform(struct?: SagemakerTrainingJobModelPackageConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     model_package_group_arn: cdktn.stringToTerraform(struct!.modelPackageGroupArn),
@@ -3634,7 +3634,7 @@ export function sagemakerTrainingJobModelPackageConfigToTerraform(struct?: Sagem
 export function sagemakerTrainingJobModelPackageConfigToHclTerraform(struct?: SagemakerTrainingJobModelPackageConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     model_package_group_arn: {
@@ -3756,15 +3756,15 @@ export class SagemakerTrainingJobModelPackageConfigList extends cdktn.ComplexLis
 }
 export interface SagemakerTrainingJobOutputDataConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}
   */
   readonly compressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#kms_key_id SagemakerTrainingJob#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#kms_key_id SagemakerTrainingJob#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
   */
   readonly s3OutputPath: string;
 }
@@ -3772,7 +3772,7 @@ export interface SagemakerTrainingJobOutputDataConfig {
 export function sagemakerTrainingJobOutputDataConfigToTerraform(struct?: SagemakerTrainingJobOutputDataConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     compression_type: cdktn.stringToTerraform(struct!.compressionType),
@@ -3785,7 +3785,7 @@ export function sagemakerTrainingJobOutputDataConfigToTerraform(struct?: Sagemak
 export function sagemakerTrainingJobOutputDataConfigToHclTerraform(struct?: SagemakerTrainingJobOutputDataConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     compression_type: {
@@ -3935,19 +3935,19 @@ export class SagemakerTrainingJobOutputDataConfigList extends cdktn.ComplexList 
 }
 export interface SagemakerTrainingJobProfilerConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#disable_profiler SagemakerTrainingJob#disable_profiler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#disable_profiler SagemakerTrainingJob#disable_profiler}
   */
   readonly disableProfiler?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#profiling_interval_in_milliseconds SagemakerTrainingJob#profiling_interval_in_milliseconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#profiling_interval_in_milliseconds SagemakerTrainingJob#profiling_interval_in_milliseconds}
   */
   readonly profilingIntervalInMilliseconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#profiling_parameters SagemakerTrainingJob#profiling_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#profiling_parameters SagemakerTrainingJob#profiling_parameters}
   */
   readonly profilingParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
   */
   readonly s3OutputPath?: string;
 }
@@ -3955,7 +3955,7 @@ export interface SagemakerTrainingJobProfilerConfig {
 export function sagemakerTrainingJobProfilerConfigToTerraform(struct?: SagemakerTrainingJobProfilerConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disable_profiler: cdktn.booleanToTerraform(struct!.disableProfiler),
@@ -3969,7 +3969,7 @@ export function sagemakerTrainingJobProfilerConfigToTerraform(struct?: Sagemaker
 export function sagemakerTrainingJobProfilerConfigToHclTerraform(struct?: SagemakerTrainingJobProfilerConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disable_profiler: {
@@ -4150,31 +4150,31 @@ export class SagemakerTrainingJobProfilerConfigList extends cdktn.ComplexList {
 }
 export interface SagemakerTrainingJobProfilerRuleConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}
   */
   readonly localPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}
   */
   readonly ruleConfigurationName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}
   */
   readonly ruleEvaluatorImage: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}
   */
   readonly ruleParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
   */
   readonly s3OutputPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}
   */
   readonly volumeSizeInGb?: number;
 }
@@ -4182,7 +4182,7 @@ export interface SagemakerTrainingJobProfilerRuleConfigurations {
 export function sagemakerTrainingJobProfilerRuleConfigurationsToTerraform(struct?: SagemakerTrainingJobProfilerRuleConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     instance_type: cdktn.stringToTerraform(struct!.instanceType),
@@ -4199,7 +4199,7 @@ export function sagemakerTrainingJobProfilerRuleConfigurationsToTerraform(struct
 export function sagemakerTrainingJobProfilerRuleConfigurationsToHclTerraform(struct?: SagemakerTrainingJobProfilerRuleConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     instance_type: {
@@ -4458,7 +4458,7 @@ export class SagemakerTrainingJobProfilerRuleConfigurationsList extends cdktn.Co
 }
 export interface SagemakerTrainingJobRemoteDebugConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#enable_remote_debug SagemakerTrainingJob#enable_remote_debug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#enable_remote_debug SagemakerTrainingJob#enable_remote_debug}
   */
   readonly enableRemoteDebug?: boolean | cdktn.IResolvable;
 }
@@ -4466,7 +4466,7 @@ export interface SagemakerTrainingJobRemoteDebugConfig {
 export function sagemakerTrainingJobRemoteDebugConfigToTerraform(struct?: SagemakerTrainingJobRemoteDebugConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_remote_debug: cdktn.booleanToTerraform(struct!.enableRemoteDebug),
@@ -4477,7 +4477,7 @@ export function sagemakerTrainingJobRemoteDebugConfigToTerraform(struct?: Sagema
 export function sagemakerTrainingJobRemoteDebugConfigToHclTerraform(struct?: SagemakerTrainingJobRemoteDebugConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_remote_debug: {
@@ -4574,15 +4574,15 @@ export class SagemakerTrainingJobRemoteDebugConfigList extends cdktn.ComplexList
 }
 export interface SagemakerTrainingJobResourceConfigInstanceGroups {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}
   */
   readonly instanceCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_group_name SagemakerTrainingJob#instance_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_group_name SagemakerTrainingJob#instance_group_name}
   */
   readonly instanceGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}
   */
   readonly instanceType?: string;
 }
@@ -4590,7 +4590,7 @@ export interface SagemakerTrainingJobResourceConfigInstanceGroups {
 export function sagemakerTrainingJobResourceConfigInstanceGroupsToTerraform(struct?: SagemakerTrainingJobResourceConfigInstanceGroups | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     instance_count: cdktn.numberToTerraform(struct!.instanceCount),
@@ -4603,7 +4603,7 @@ export function sagemakerTrainingJobResourceConfigInstanceGroupsToTerraform(stru
 export function sagemakerTrainingJobResourceConfigInstanceGroupsToHclTerraform(struct?: SagemakerTrainingJobResourceConfigInstanceGroups | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     instance_count: {
@@ -4756,11 +4756,11 @@ export class SagemakerTrainingJobResourceConfigInstanceGroupsList extends cdktn.
 }
 export interface SagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementSpecifications {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}
   */
   readonly instanceCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#ultra_server_id SagemakerTrainingJob#ultra_server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#ultra_server_id SagemakerTrainingJob#ultra_server_id}
   */
   readonly ultraServerId?: string;
 }
@@ -4768,7 +4768,7 @@ export interface SagemakerTrainingJobResourceConfigInstancePlacementConfigPlacem
 export function sagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementSpecificationsToTerraform(struct?: SagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementSpecifications | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     instance_count: cdktn.numberToTerraform(struct!.instanceCount),
@@ -4780,7 +4780,7 @@ export function sagemakerTrainingJobResourceConfigInstancePlacementConfigPlaceme
 export function sagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementSpecificationsToHclTerraform(struct?: SagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementSpecifications | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     instance_count: {
@@ -4905,13 +4905,13 @@ export class SagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementS
 }
 export interface SagemakerTrainingJobResourceConfigInstancePlacementConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#enable_multiple_jobs SagemakerTrainingJob#enable_multiple_jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#enable_multiple_jobs SagemakerTrainingJob#enable_multiple_jobs}
   */
   readonly enableMultipleJobs?: boolean | cdktn.IResolvable;
   /**
   * placement_specifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#placement_specifications SagemakerTrainingJob#placement_specifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#placement_specifications SagemakerTrainingJob#placement_specifications}
   */
   readonly placementSpecifications?: SagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementSpecifications[] | cdktn.IResolvable;
 }
@@ -4919,7 +4919,7 @@ export interface SagemakerTrainingJobResourceConfigInstancePlacementConfig {
 export function sagemakerTrainingJobResourceConfigInstancePlacementConfigToTerraform(struct?: SagemakerTrainingJobResourceConfigInstancePlacementConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_multiple_jobs: cdktn.booleanToTerraform(struct!.enableMultipleJobs),
@@ -4931,7 +4931,7 @@ export function sagemakerTrainingJobResourceConfigInstancePlacementConfigToTerra
 export function sagemakerTrainingJobResourceConfigInstancePlacementConfigToHclTerraform(struct?: SagemakerTrainingJobResourceConfigInstancePlacementConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_multiple_jobs: {
@@ -5056,39 +5056,39 @@ export class SagemakerTrainingJobResourceConfigInstancePlacementConfigList exten
 }
 export interface SagemakerTrainingJobResourceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}
   */
   readonly instanceCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#keep_alive_period_in_seconds SagemakerTrainingJob#keep_alive_period_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#keep_alive_period_in_seconds SagemakerTrainingJob#keep_alive_period_in_seconds}
   */
   readonly keepAlivePeriodInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#training_plan_arn SagemakerTrainingJob#training_plan_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#training_plan_arn SagemakerTrainingJob#training_plan_arn}
   */
   readonly trainingPlanArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#volume_kms_key_id SagemakerTrainingJob#volume_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#volume_kms_key_id SagemakerTrainingJob#volume_kms_key_id}
   */
   readonly volumeKmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}
   */
   readonly volumeSizeInGb?: number;
   /**
   * instance_groups block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_groups SagemakerTrainingJob#instance_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_groups SagemakerTrainingJob#instance_groups}
   */
   readonly instanceGroups?: SagemakerTrainingJobResourceConfigInstanceGroups[] | cdktn.IResolvable;
   /**
   * instance_placement_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#instance_placement_config SagemakerTrainingJob#instance_placement_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#instance_placement_config SagemakerTrainingJob#instance_placement_config}
   */
   readonly instancePlacementConfig?: SagemakerTrainingJobResourceConfigInstancePlacementConfig[] | cdktn.IResolvable;
 }
@@ -5096,7 +5096,7 @@ export interface SagemakerTrainingJobResourceConfig {
 export function sagemakerTrainingJobResourceConfigToTerraform(struct?: SagemakerTrainingJobResourceConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     instance_count: cdktn.numberToTerraform(struct!.instanceCount),
@@ -5114,7 +5114,7 @@ export function sagemakerTrainingJobResourceConfigToTerraform(struct?: Sagemaker
 export function sagemakerTrainingJobResourceConfigToHclTerraform(struct?: SagemakerTrainingJobResourceConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     instance_count: {
@@ -5407,7 +5407,7 @@ export class SagemakerTrainingJobResourceConfigList extends cdktn.ComplexList {
 }
 export interface SagemakerTrainingJobRetryStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#maximum_retry_attempts SagemakerTrainingJob#maximum_retry_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#maximum_retry_attempts SagemakerTrainingJob#maximum_retry_attempts}
   */
   readonly maximumRetryAttempts: number;
 }
@@ -5415,7 +5415,7 @@ export interface SagemakerTrainingJobRetryStrategy {
 export function sagemakerTrainingJobRetryStrategyToTerraform(struct?: SagemakerTrainingJobRetryStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     maximum_retry_attempts: cdktn.numberToTerraform(struct!.maximumRetryAttempts),
@@ -5426,7 +5426,7 @@ export function sagemakerTrainingJobRetryStrategyToTerraform(struct?: SagemakerT
 export function sagemakerTrainingJobRetryStrategyToHclTerraform(struct?: SagemakerTrainingJobRetryStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     maximum_retry_attempts: {
@@ -5520,33 +5520,33 @@ export class SagemakerTrainingJobRetryStrategyList extends cdktn.ComplexList {
 }
 export interface SagemakerTrainingJobServerlessJobConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}
   */
   readonly acceptEula?: boolean | cdktn.IResolvable;
   /**
   * Base model ARN in SageMaker Public Hub. SageMaker always selects the latest version of the provided model.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#base_model_arn SagemakerTrainingJob#base_model_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#base_model_arn SagemakerTrainingJob#base_model_arn}
   */
   readonly baseModelArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#customization_technique SagemakerTrainingJob#customization_technique}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#customization_technique SagemakerTrainingJob#customization_technique}
   */
   readonly customizationTechnique?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#evaluation_type SagemakerTrainingJob#evaluation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#evaluation_type SagemakerTrainingJob#evaluation_type}
   */
   readonly evaluationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#evaluator_arn SagemakerTrainingJob#evaluator_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#evaluator_arn SagemakerTrainingJob#evaluator_arn}
   */
   readonly evaluatorArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#job_type SagemakerTrainingJob#job_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#job_type SagemakerTrainingJob#job_type}
   */
   readonly jobType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#peft SagemakerTrainingJob#peft}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#peft SagemakerTrainingJob#peft}
   */
   readonly peft?: string;
 }
@@ -5554,7 +5554,7 @@ export interface SagemakerTrainingJobServerlessJobConfig {
 export function sagemakerTrainingJobServerlessJobConfigToTerraform(struct?: SagemakerTrainingJobServerlessJobConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     accept_eula: cdktn.booleanToTerraform(struct!.acceptEula),
@@ -5571,7 +5571,7 @@ export function sagemakerTrainingJobServerlessJobConfigToTerraform(struct?: Sage
 export function sagemakerTrainingJobServerlessJobConfigToHclTerraform(struct?: SagemakerTrainingJobServerlessJobConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     accept_eula: {
@@ -5830,7 +5830,7 @@ export class SagemakerTrainingJobServerlessJobConfigList extends cdktn.ComplexLi
 }
 export interface SagemakerTrainingJobSessionChainingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#enable_session_tag_chaining SagemakerTrainingJob#enable_session_tag_chaining}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#enable_session_tag_chaining SagemakerTrainingJob#enable_session_tag_chaining}
   */
   readonly enableSessionTagChaining?: boolean | cdktn.IResolvable;
 }
@@ -5838,7 +5838,7 @@ export interface SagemakerTrainingJobSessionChainingConfig {
 export function sagemakerTrainingJobSessionChainingConfigToTerraform(struct?: SagemakerTrainingJobSessionChainingConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_session_tag_chaining: cdktn.booleanToTerraform(struct!.enableSessionTagChaining),
@@ -5849,7 +5849,7 @@ export function sagemakerTrainingJobSessionChainingConfigToTerraform(struct?: Sa
 export function sagemakerTrainingJobSessionChainingConfigToHclTerraform(struct?: SagemakerTrainingJobSessionChainingConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_session_tag_chaining: {
@@ -5946,15 +5946,15 @@ export class SagemakerTrainingJobSessionChainingConfigList extends cdktn.Complex
 }
 export interface SagemakerTrainingJobStoppingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#max_pending_time_in_seconds SagemakerTrainingJob#max_pending_time_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#max_pending_time_in_seconds SagemakerTrainingJob#max_pending_time_in_seconds}
   */
   readonly maxPendingTimeInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#max_runtime_in_seconds SagemakerTrainingJob#max_runtime_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#max_runtime_in_seconds SagemakerTrainingJob#max_runtime_in_seconds}
   */
   readonly maxRuntimeInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#max_wait_time_in_seconds SagemakerTrainingJob#max_wait_time_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#max_wait_time_in_seconds SagemakerTrainingJob#max_wait_time_in_seconds}
   */
   readonly maxWaitTimeInSeconds?: number;
 }
@@ -5962,7 +5962,7 @@ export interface SagemakerTrainingJobStoppingCondition {
 export function sagemakerTrainingJobStoppingConditionToTerraform(struct?: SagemakerTrainingJobStoppingCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_pending_time_in_seconds: cdktn.numberToTerraform(struct!.maxPendingTimeInSeconds),
@@ -5975,7 +5975,7 @@ export function sagemakerTrainingJobStoppingConditionToTerraform(struct?: Sagema
 export function sagemakerTrainingJobStoppingConditionToHclTerraform(struct?: SagemakerTrainingJobStoppingCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_pending_time_in_seconds: {
@@ -6128,11 +6128,11 @@ export class SagemakerTrainingJobStoppingConditionList extends cdktn.ComplexList
 }
 export interface SagemakerTrainingJobTensorBoardOutputConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}
   */
   readonly localPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}
   */
   readonly s3OutputPath: string;
 }
@@ -6140,7 +6140,7 @@ export interface SagemakerTrainingJobTensorBoardOutputConfig {
 export function sagemakerTrainingJobTensorBoardOutputConfigToTerraform(struct?: SagemakerTrainingJobTensorBoardOutputConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     local_path: cdktn.stringToTerraform(struct!.localPath),
@@ -6152,7 +6152,7 @@ export function sagemakerTrainingJobTensorBoardOutputConfigToTerraform(struct?: 
 export function sagemakerTrainingJobTensorBoardOutputConfigToHclTerraform(struct?: SagemakerTrainingJobTensorBoardOutputConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     local_path: {
@@ -6276,19 +6276,19 @@ export interface SagemakerTrainingJobTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#create SagemakerTrainingJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#create SagemakerTrainingJob#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#delete SagemakerTrainingJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#delete SagemakerTrainingJob#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#update SagemakerTrainingJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#update SagemakerTrainingJob#update}
   */
   readonly update?: string;
 }
@@ -6296,7 +6296,7 @@ export interface SagemakerTrainingJobTimeouts {
 export function sagemakerTrainingJobTimeoutsToTerraform(struct?: SagemakerTrainingJobTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -6309,7 +6309,7 @@ export function sagemakerTrainingJobTimeoutsToTerraform(struct?: SagemakerTraini
 export function sagemakerTrainingJobTimeoutsToHclTerraform(struct?: SagemakerTrainingJobTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -6440,11 +6440,11 @@ export class SagemakerTrainingJobTimeoutsOutputReference extends cdktn.ComplexOb
 }
 export interface SagemakerTrainingJobVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#security_group_ids SagemakerTrainingJob#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#security_group_ids SagemakerTrainingJob#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#subnets SagemakerTrainingJob#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#subnets SagemakerTrainingJob#subnets}
   */
   readonly subnets: string[];
 }
@@ -6452,7 +6452,7 @@ export interface SagemakerTrainingJobVpcConfig {
 export function sagemakerTrainingJobVpcConfigToTerraform(struct?: SagemakerTrainingJobVpcConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
@@ -6464,7 +6464,7 @@ export function sagemakerTrainingJobVpcConfigToTerraform(struct?: SagemakerTrain
 export function sagemakerTrainingJobVpcConfigToHclTerraform(struct?: SagemakerTrainingJobVpcConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     security_group_ids: {
@@ -6583,7 +6583,7 @@ export class SagemakerTrainingJobVpcConfigList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job aws_sagemaker_training_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job aws_sagemaker_training_job}
 */
 export class SagemakerTrainingJob extends cdktn.TerraformResource {
 
@@ -6599,7 +6599,7 @@ export class SagemakerTrainingJob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SagemakerTrainingJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerTrainingJob to import
-  * @param importFromId The id of the existing SagemakerTrainingJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SagemakerTrainingJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerTrainingJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -6611,7 +6611,7 @@ export class SagemakerTrainingJob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sagemaker_training_job aws_sagemaker_training_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/sagemaker_training_job aws_sagemaker_training_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6622,7 +6622,7 @@ export class SagemakerTrainingJob extends cdktn.TerraformResource {
       terraformResourceType: 'aws_sagemaker_training_job',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

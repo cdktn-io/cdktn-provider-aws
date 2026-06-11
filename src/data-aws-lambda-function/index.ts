@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lambda_function
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lambda_function
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsLambdaFunctionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lambda_function#function_name DataAwsLambdaFunction#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lambda_function#function_name DataAwsLambdaFunction#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lambda_function#id DataAwsLambdaFunction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lambda_function#id DataAwsLambdaFunction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lambda_function#qualifier DataAwsLambdaFunction#qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lambda_function#qualifier DataAwsLambdaFunction#qualifier}
   */
   readonly qualifier?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lambda_function#region DataAwsLambdaFunction#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lambda_function#region DataAwsLambdaFunction#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lambda_function#tags DataAwsLambdaFunction#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lambda_function#tags DataAwsLambdaFunction#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -44,7 +44,7 @@ export interface DataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstanc
 export function dataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigToTerraform(struct?: DataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function dataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstance
 export function dataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigToHclTerraform(struct?: DataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -129,7 +129,7 @@ export interface DataAwsLambdaFunctionCapacityProviderConfig {
 export function dataAwsLambdaFunctionCapacityProviderConfigToTerraform(struct?: DataAwsLambdaFunctionCapacityProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -139,7 +139,7 @@ export function dataAwsLambdaFunctionCapacityProviderConfigToTerraform(struct?: 
 export function dataAwsLambdaFunctionCapacityProviderConfigToHclTerraform(struct?: DataAwsLambdaFunctionCapacityProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -205,7 +205,7 @@ export interface DataAwsLambdaFunctionDeadLetterConfig {
 export function dataAwsLambdaFunctionDeadLetterConfigToTerraform(struct?: DataAwsLambdaFunctionDeadLetterConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -215,7 +215,7 @@ export function dataAwsLambdaFunctionDeadLetterConfigToTerraform(struct?: DataAw
 export function dataAwsLambdaFunctionDeadLetterConfigToHclTerraform(struct?: DataAwsLambdaFunctionDeadLetterConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -280,7 +280,7 @@ export interface DataAwsLambdaFunctionDurableConfig {
 export function dataAwsLambdaFunctionDurableConfigToTerraform(struct?: DataAwsLambdaFunctionDurableConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -290,7 +290,7 @@ export function dataAwsLambdaFunctionDurableConfigToTerraform(struct?: DataAwsLa
 export function dataAwsLambdaFunctionDurableConfigToHclTerraform(struct?: DataAwsLambdaFunctionDurableConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -360,7 +360,7 @@ export interface DataAwsLambdaFunctionEnvironment {
 export function dataAwsLambdaFunctionEnvironmentToTerraform(struct?: DataAwsLambdaFunctionEnvironment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -370,7 +370,7 @@ export function dataAwsLambdaFunctionEnvironmentToTerraform(struct?: DataAwsLamb
 export function dataAwsLambdaFunctionEnvironmentToHclTerraform(struct?: DataAwsLambdaFunctionEnvironment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -436,7 +436,7 @@ export interface DataAwsLambdaFunctionEphemeralStorage {
 export function dataAwsLambdaFunctionEphemeralStorageToTerraform(struct?: DataAwsLambdaFunctionEphemeralStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -446,7 +446,7 @@ export function dataAwsLambdaFunctionEphemeralStorageToTerraform(struct?: DataAw
 export function dataAwsLambdaFunctionEphemeralStorageToHclTerraform(struct?: DataAwsLambdaFunctionEphemeralStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -511,7 +511,7 @@ export interface DataAwsLambdaFunctionFileSystemConfig {
 export function dataAwsLambdaFunctionFileSystemConfigToTerraform(struct?: DataAwsLambdaFunctionFileSystemConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -521,7 +521,7 @@ export function dataAwsLambdaFunctionFileSystemConfigToTerraform(struct?: DataAw
 export function dataAwsLambdaFunctionFileSystemConfigToHclTerraform(struct?: DataAwsLambdaFunctionFileSystemConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -591,7 +591,7 @@ export interface DataAwsLambdaFunctionLoggingConfig {
 export function dataAwsLambdaFunctionLoggingConfigToTerraform(struct?: DataAwsLambdaFunctionLoggingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -601,7 +601,7 @@ export function dataAwsLambdaFunctionLoggingConfigToTerraform(struct?: DataAwsLa
 export function dataAwsLambdaFunctionLoggingConfigToHclTerraform(struct?: DataAwsLambdaFunctionLoggingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -681,7 +681,7 @@ export interface DataAwsLambdaFunctionTenancyConfig {
 export function dataAwsLambdaFunctionTenancyConfigToTerraform(struct?: DataAwsLambdaFunctionTenancyConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -691,7 +691,7 @@ export function dataAwsLambdaFunctionTenancyConfigToTerraform(struct?: DataAwsLa
 export function dataAwsLambdaFunctionTenancyConfigToHclTerraform(struct?: DataAwsLambdaFunctionTenancyConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -756,7 +756,7 @@ export interface DataAwsLambdaFunctionTracingConfig {
 export function dataAwsLambdaFunctionTracingConfigToTerraform(struct?: DataAwsLambdaFunctionTracingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -766,7 +766,7 @@ export function dataAwsLambdaFunctionTracingConfigToTerraform(struct?: DataAwsLa
 export function dataAwsLambdaFunctionTracingConfigToHclTerraform(struct?: DataAwsLambdaFunctionTracingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -831,7 +831,7 @@ export interface DataAwsLambdaFunctionVpcConfig {
 export function dataAwsLambdaFunctionVpcConfigToTerraform(struct?: DataAwsLambdaFunctionVpcConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -841,7 +841,7 @@ export function dataAwsLambdaFunctionVpcConfigToTerraform(struct?: DataAwsLambda
 export function dataAwsLambdaFunctionVpcConfigToHclTerraform(struct?: DataAwsLambdaFunctionVpcConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -917,7 +917,7 @@ export class DataAwsLambdaFunctionVpcConfigList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lambda_function aws_lambda_function}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lambda_function aws_lambda_function}
 */
 export class DataAwsLambdaFunction extends cdktn.TerraformDataSource {
 
@@ -933,7 +933,7 @@ export class DataAwsLambdaFunction extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsLambdaFunction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLambdaFunction to import
-  * @param importFromId The id of the existing DataAwsLambdaFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lambda_function#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLambdaFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lambda_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLambdaFunction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -945,7 +945,7 @@ export class DataAwsLambdaFunction extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/lambda_function aws_lambda_function} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/lambda_function aws_lambda_function} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -956,7 +956,7 @@ export class DataAwsLambdaFunction extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_lambda_function',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -198,6 +198,7 @@ Object.defineProperty(exports, 'bedrockagentcoreMemory', { get: function () { re
 Object.defineProperty(exports, 'bedrockagentcoreMemoryStrategy', { get: function () { return require('./bedrockagentcore-memory-strategy'); } });
 Object.defineProperty(exports, 'bedrockagentcoreOauth2CredentialProvider', { get: function () { return require('./bedrockagentcore-oauth2-credential-provider'); } });
 Object.defineProperty(exports, 'bedrockagentcoreOnlineEvaluationConfig', { get: function () { return require('./bedrockagentcore-online-evaluation-config'); } });
+Object.defineProperty(exports, 'bedrockagentcorePolicy', { get: function () { return require('./bedrockagentcore-policy'); } });
 Object.defineProperty(exports, 'bedrockagentcorePolicyEngine', { get: function () { return require('./bedrockagentcore-policy-engine'); } });
 Object.defineProperty(exports, 'bedrockagentcoreResourcePolicy', { get: function () { return require('./bedrockagentcore-resource-policy'); } });
 Object.defineProperty(exports, 'bedrockagentcoreTokenVaultCmk', { get: function () { return require('./bedrockagentcore-token-vault-cmk'); } });
@@ -292,6 +293,7 @@ Object.defineProperty(exports, 'cloudwatchLogGroup', { get: function () { return
 Object.defineProperty(exports, 'cloudwatchLogIndexPolicy', { get: function () { return require('./cloudwatch-log-index-policy'); } });
 Object.defineProperty(exports, 'cloudwatchLogMetricFilter', { get: function () { return require('./cloudwatch-log-metric-filter'); } });
 Object.defineProperty(exports, 'cloudwatchLogResourcePolicy', { get: function () { return require('./cloudwatch-log-resource-policy'); } });
+Object.defineProperty(exports, 'cloudwatchLogS3TableIntegrationSource', { get: function () { return require('./cloudwatch-log-s3-table-integration-source'); } });
 Object.defineProperty(exports, 'cloudwatchLogStream', { get: function () { return require('./cloudwatch-log-stream'); } });
 Object.defineProperty(exports, 'cloudwatchLogSubscriptionFilter', { get: function () { return require('./cloudwatch-log-subscription-filter'); } });
 Object.defineProperty(exports, 'cloudwatchLogTransformer', { get: function () { return require('./cloudwatch-log-transformer'); } });
@@ -593,6 +595,8 @@ Object.defineProperty(exports, 'ecsAccountSettingDefault', { get: function () { 
 Object.defineProperty(exports, 'ecsCapacityProvider', { get: function () { return require('./ecs-capacity-provider'); } });
 Object.defineProperty(exports, 'ecsCluster', { get: function () { return require('./ecs-cluster'); } });
 Object.defineProperty(exports, 'ecsClusterCapacityProviders', { get: function () { return require('./ecs-cluster-capacity-providers'); } });
+Object.defineProperty(exports, 'ecsDaemon', { get: function () { return require('./ecs-daemon'); } });
+Object.defineProperty(exports, 'ecsDaemonTaskDefinition', { get: function () { return require('./ecs-daemon-task-definition'); } });
 Object.defineProperty(exports, 'ecsExpressGatewayService', { get: function () { return require('./ecs-express-gateway-service'); } });
 Object.defineProperty(exports, 'ecsService', { get: function () { return require('./ecs-service'); } });
 Object.defineProperty(exports, 'ecsTag', { get: function () { return require('./ecs-tag'); } });
@@ -1038,6 +1042,7 @@ Object.defineProperty(exports, 'oamLink', { get: function () { return require('.
 Object.defineProperty(exports, 'oamSink', { get: function () { return require('./oam-sink'); } });
 Object.defineProperty(exports, 'oamSinkPolicy', { get: function () { return require('./oam-sink-policy'); } });
 Object.defineProperty(exports, 'observabilityadminCentralizationRuleForOrganization', { get: function () { return require('./observabilityadmin-centralization-rule-for-organization'); } });
+Object.defineProperty(exports, 'observabilityadminS3TableIntegration', { get: function () { return require('./observabilityadmin-s3-table-integration'); } });
 Object.defineProperty(exports, 'observabilityadminTelemetryEnrichment', { get: function () { return require('./observabilityadmin-telemetry-enrichment'); } });
 Object.defineProperty(exports, 'observabilityadminTelemetryEvaluation', { get: function () { return require('./observabilityadmin-telemetry-evaluation'); } });
 Object.defineProperty(exports, 'observabilityadminTelemetryEvaluationForOrganization', { get: function () { return require('./observabilityadmin-telemetry-evaluation-for-organization'); } });

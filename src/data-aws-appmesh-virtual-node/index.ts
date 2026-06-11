@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/appmesh_virtual_node
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/appmesh_virtual_node
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsAppmeshVirtualNodeConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/appmesh_virtual_node#id DataAwsAppmeshVirtualNode#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/appmesh_virtual_node#id DataAwsAppmeshVirtualNode#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/appmesh_virtual_node#mesh_name DataAwsAppmeshVirtualNode#mesh_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/appmesh_virtual_node#mesh_name DataAwsAppmeshVirtualNode#mesh_name}
   */
   readonly meshName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/appmesh_virtual_node#mesh_owner DataAwsAppmeshVirtualNode#mesh_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/appmesh_virtual_node#mesh_owner DataAwsAppmeshVirtualNode#mesh_owner}
   */
   readonly meshOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/appmesh_virtual_node#name DataAwsAppmeshVirtualNode#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/appmesh_virtual_node#name DataAwsAppmeshVirtualNode#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/appmesh_virtual_node#region DataAwsAppmeshVirtualNode#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/appmesh_virtual_node#region DataAwsAppmeshVirtualNode#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/appmesh_virtual_node#tags DataAwsAppmeshVirtualNode#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/appmesh_virtual_node#tags DataAwsAppmeshVirtualNode#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -48,7 +48,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -58,7 +58,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -128,7 +128,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -138,7 +138,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -203,7 +203,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -213,7 +213,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -285,7 +285,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -295,7 +295,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -360,7 +360,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -370,7 +370,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -436,7 +436,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -446,7 +446,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -511,7 +511,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -521,7 +521,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -586,7 +586,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -596,7 +596,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -661,7 +661,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -671,7 +671,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -749,7 +749,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -759,7 +759,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -831,7 +831,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -841,7 +841,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -923,7 +923,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy 
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -933,7 +933,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTo
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -999,7 +999,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendVirtualService {
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1009,7 +1009,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceToTerraform(st
 export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1080,7 +1080,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackend {
 export function dataAwsAppmeshVirtualNodeSpecBackendToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackend): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1090,7 +1090,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendToTerraform(struct?: DataAws
 export function dataAwsAppmeshVirtualNodeSpecBackendToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackend): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1156,7 +1156,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCert
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1166,7 +1166,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCerti
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1236,7 +1236,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCert
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1246,7 +1246,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCerti
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1311,7 +1311,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCert
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1321,7 +1321,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCerti
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1393,7 +1393,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsVali
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1403,7 +1403,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1468,7 +1468,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsVali
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1478,7 +1478,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1544,7 +1544,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsVali
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1554,7 +1554,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1619,7 +1619,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsVali
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1629,7 +1629,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1694,7 +1694,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsVali
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1704,7 +1704,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1769,7 +1769,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsVali
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1779,7 +1779,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1857,7 +1857,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsVali
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1867,7 +1867,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1939,7 +1939,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls {
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1949,7 +1949,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsToTer
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2031,7 +2031,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicy {
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2041,7 +2041,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyToTerraf
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2107,7 +2107,7 @@ export interface DataAwsAppmeshVirtualNodeSpecBackendDefaults {
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaults): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2117,7 +2117,7 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsToTerraform(struct?:
 export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaults): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2183,7 +2183,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolGrpc {
 export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolGrpcToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolGrpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2193,7 +2193,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolGrpcToTerrafo
 export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolGrpcToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolGrpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2258,7 +2258,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp {
 export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttpToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2268,7 +2268,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttpToTerrafo
 export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttpToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2338,7 +2338,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp2 {
 export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp2ToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2348,7 +2348,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp2ToTerraf
 export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp2ToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2413,7 +2413,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolTcp {
 export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolTcpToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolTcp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2423,7 +2423,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolTcpToTerrafor
 export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolTcpToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolTcp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2488,7 +2488,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerConnectionPool {
 export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPool): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2498,7 +2498,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolToTerraform(s
 export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPool): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2582,7 +2582,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerHealthCheck {
 export function dataAwsAppmeshVirtualNodeSpecListenerHealthCheckToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2592,7 +2592,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerHealthCheckToTerraform(stru
 export function dataAwsAppmeshVirtualNodeSpecListenerHealthCheckToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerHealthCheck): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2687,7 +2687,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjecti
 export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2697,7 +2697,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectio
 export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2767,7 +2767,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionInterval {
 export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionIntervalToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionInterval): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2777,7 +2777,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionIntervalToT
 export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionIntervalToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionInterval): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2847,7 +2847,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerOutlierDetection {
 export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerOutlierDetection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2857,7 +2857,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionToTerraform
 export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerOutlierDetection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2939,7 +2939,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerPortMapping {
 export function dataAwsAppmeshVirtualNodeSpecListenerPortMappingToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerPortMapping): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2949,7 +2949,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerPortMappingToTerraform(stru
 export function dataAwsAppmeshVirtualNodeSpecListenerPortMappingToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerPortMapping): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3019,7 +3019,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdle {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3029,7 +3029,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleToTerraform(
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3099,7 +3099,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3109,7 +3109,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestToTerr
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3179,7 +3179,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpc {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3189,7 +3189,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcToTerraform(stru
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3261,7 +3261,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpIdle {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpIdleToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3271,7 +3271,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpIdleToTerraform(
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpIdleToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3341,7 +3341,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3351,7 +3351,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestToTerr
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3421,7 +3421,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3431,7 +3431,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpToTerraform(stru
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3503,7 +3503,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2Idle {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2IdleToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2Idle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3513,7 +3513,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2IdleToTerraform
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2IdleToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2Idle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3583,7 +3583,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3593,7 +3593,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestToTer
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3663,7 +3663,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2 {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2ToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3673,7 +3673,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2ToTerraform(str
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2ToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3745,7 +3745,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpIdle {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpIdleToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3755,7 +3755,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpIdleToTerraform(s
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpIdleToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpIdle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3825,7 +3825,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeoutTcp {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutTcp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3835,7 +3835,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpToTerraform(struc
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutTcp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3901,7 +3901,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTimeout {
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3911,7 +3911,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutToTerraform(struct?:
 export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeout): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3995,7 +3995,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateAcm {
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateAcmToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateAcm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4005,7 +4005,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateAcmToTerrafor
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateAcmToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateAcm): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4070,7 +4070,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateFile {
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateFileToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4080,7 +4080,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateFileToTerrafo
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4150,7 +4150,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateSds {
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateSdsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4160,7 +4160,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateSdsToTerrafor
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4225,7 +4225,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTlsCertificate {
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4235,7 +4235,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateToTerraform(s
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4313,7 +4313,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAltern
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4323,7 +4323,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlterna
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4388,7 +4388,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAltern
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4398,7 +4398,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlterna
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4464,7 +4464,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustFile {
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustFileToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4474,7 +4474,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustFileToTer
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4539,7 +4539,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustSds {
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustSdsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4549,7 +4549,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustSdsToTerr
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustSds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4614,7 +4614,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrust {
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrust): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4624,7 +4624,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustToTerrafo
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrust): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4696,7 +4696,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTlsValidation {
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4706,7 +4706,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationToTerraform(st
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4778,7 +4778,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListenerTls {
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4788,7 +4788,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsToTerraform(struct?: Dat
 export function dataAwsAppmeshVirtualNodeSpecListenerTlsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4865,7 +4865,7 @@ export interface DataAwsAppmeshVirtualNodeSpecListener {
 export function dataAwsAppmeshVirtualNodeSpecListenerToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListener): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4875,7 +4875,7 @@ export function dataAwsAppmeshVirtualNodeSpecListenerToTerraform(struct?: DataAw
 export function dataAwsAppmeshVirtualNodeSpecListenerToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListener): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4971,7 +4971,7 @@ export interface DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson {
 export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4981,7 +4981,7 @@ export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonToTer
 export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5051,7 +5051,7 @@ export interface DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormat {
 export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5061,7 +5061,7 @@ export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatToTerrafo
 export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5132,7 +5132,7 @@ export interface DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFile {
 export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5142,7 +5142,7 @@ export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileToTerraform(str
 export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5213,7 +5213,7 @@ export interface DataAwsAppmeshVirtualNodeSpecLoggingAccessLog {
 export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5223,7 +5223,7 @@ export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogToTerraform(struct?
 export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5289,7 +5289,7 @@ export interface DataAwsAppmeshVirtualNodeSpecLogging {
 export function dataAwsAppmeshVirtualNodeSpecLoggingToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLogging): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5299,7 +5299,7 @@ export function dataAwsAppmeshVirtualNodeSpecLoggingToTerraform(struct?: DataAws
 export function dataAwsAppmeshVirtualNodeSpecLoggingToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLogging): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5365,7 +5365,7 @@ export interface DataAwsAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap {
 export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5375,7 +5375,7 @@ export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToTerraf
 export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5451,7 +5451,7 @@ export interface DataAwsAppmeshVirtualNodeSpecServiceDiscoveryDns {
 export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecServiceDiscoveryDns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5461,7 +5461,7 @@ export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform(stru
 export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryDnsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecServiceDiscoveryDns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5536,7 +5536,7 @@ export interface DataAwsAppmeshVirtualNodeSpecServiceDiscovery {
 export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryToTerraform(struct?: DataAwsAppmeshVirtualNodeSpecServiceDiscovery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5546,7 +5546,7 @@ export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryToTerraform(struct?
 export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecServiceDiscovery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5618,7 +5618,7 @@ export interface DataAwsAppmeshVirtualNodeSpec {
 export function dataAwsAppmeshVirtualNodeSpecToTerraform(struct?: DataAwsAppmeshVirtualNodeSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -5628,7 +5628,7 @@ export function dataAwsAppmeshVirtualNodeSpecToTerraform(struct?: DataAwsAppmesh
 export function dataAwsAppmeshVirtualNodeSpecToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -5714,7 +5714,7 @@ export class DataAwsAppmeshVirtualNodeSpecList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node}
 */
 export class DataAwsAppmeshVirtualNode extends cdktn.TerraformDataSource {
 
@@ -5730,7 +5730,7 @@ export class DataAwsAppmeshVirtualNode extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsAppmeshVirtualNode resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAppmeshVirtualNode to import
-  * @param importFromId The id of the existing DataAwsAppmeshVirtualNode that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/appmesh_virtual_node#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAppmeshVirtualNode that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/appmesh_virtual_node#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAppmeshVirtualNode to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5742,7 +5742,7 @@ export class DataAwsAppmeshVirtualNode extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5753,7 +5753,7 @@ export class DataAwsAppmeshVirtualNode extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_appmesh_virtual_node',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

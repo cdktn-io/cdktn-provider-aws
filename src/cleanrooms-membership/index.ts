@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,47 +13,47 @@ import * as cdktn from 'cdktn';
 
 export interface CleanroomsMembershipConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#collaboration_id CleanroomsMembership#collaboration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#collaboration_id CleanroomsMembership#collaboration_id}
   */
   readonly collaborationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#query_log_status CleanroomsMembership#query_log_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#query_log_status CleanroomsMembership#query_log_status}
   */
   readonly queryLogStatus: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#region CleanroomsMembership#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#region CleanroomsMembership#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#tags CleanroomsMembership#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#tags CleanroomsMembership#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * default_result_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#default_result_configuration CleanroomsMembership#default_result_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#default_result_configuration CleanroomsMembership#default_result_configuration}
   */
   readonly defaultResultConfiguration?: CleanroomsMembershipDefaultResultConfiguration[] | cdktn.IResolvable;
   /**
   * payment_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#payment_configuration CleanroomsMembership#payment_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#payment_configuration CleanroomsMembership#payment_configuration}
   */
   readonly paymentConfiguration?: CleanroomsMembershipPaymentConfiguration[] | cdktn.IResolvable;
 }
 export interface CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#bucket CleanroomsMembership#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#bucket CleanroomsMembership#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#key_prefix CleanroomsMembership#key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#key_prefix CleanroomsMembership#key_prefix}
   */
   readonly keyPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#result_format CleanroomsMembership#result_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#result_format CleanroomsMembership#result_format}
   */
   readonly resultFormat: string;
 }
@@ -61,7 +61,7 @@ export interface CleanroomsMembershipDefaultResultConfigurationOutputConfigurati
 export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bucket: cdktn.stringToTerraform(struct!.bucket),
@@ -74,7 +74,7 @@ export function cleanroomsMembershipDefaultResultConfigurationOutputConfiguratio
 export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToHclTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bucket: {
@@ -223,7 +223,7 @@ export interface CleanroomsMembershipDefaultResultConfigurationOutputConfigurati
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#s3 CleanroomsMembership#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#s3 CleanroomsMembership#s3}
   */
   readonly s3?: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3[] | cdktn.IResolvable;
 }
@@ -231,7 +231,7 @@ export interface CleanroomsMembershipDefaultResultConfigurationOutputConfigurati
 export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationToTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     s3: cdktn.listMapper(cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToTerraform, true)(struct!.s3),
@@ -242,7 +242,7 @@ export function cleanroomsMembershipDefaultResultConfigurationOutputConfiguratio
 export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationToHclTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     s3: {
@@ -339,13 +339,13 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationLi
 }
 export interface CleanroomsMembershipDefaultResultConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#role_arn CleanroomsMembership#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#role_arn CleanroomsMembership#role_arn}
   */
   readonly roleArn?: string;
   /**
   * output_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#output_configuration CleanroomsMembership#output_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#output_configuration CleanroomsMembership#output_configuration}
   */
   readonly outputConfiguration?: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration[] | cdktn.IResolvable;
 }
@@ -353,7 +353,7 @@ export interface CleanroomsMembershipDefaultResultConfiguration {
 export function cleanroomsMembershipDefaultResultConfigurationToTerraform(struct?: CleanroomsMembershipDefaultResultConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     role_arn: cdktn.stringToTerraform(struct!.roleArn),
@@ -365,7 +365,7 @@ export function cleanroomsMembershipDefaultResultConfigurationToTerraform(struct
 export function cleanroomsMembershipDefaultResultConfigurationToHclTerraform(struct?: CleanroomsMembershipDefaultResultConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     role_arn: {
@@ -490,7 +490,7 @@ export class CleanroomsMembershipDefaultResultConfigurationList extends cdktn.Co
 }
 export interface CleanroomsMembershipPaymentConfigurationQueryCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#is_responsible CleanroomsMembership#is_responsible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#is_responsible CleanroomsMembership#is_responsible}
   */
   readonly isResponsible: boolean | cdktn.IResolvable;
 }
@@ -498,7 +498,7 @@ export interface CleanroomsMembershipPaymentConfigurationQueryCompute {
 export function cleanroomsMembershipPaymentConfigurationQueryComputeToTerraform(struct?: CleanroomsMembershipPaymentConfigurationQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_responsible: cdktn.booleanToTerraform(struct!.isResponsible),
@@ -509,7 +509,7 @@ export function cleanroomsMembershipPaymentConfigurationQueryComputeToTerraform(
 export function cleanroomsMembershipPaymentConfigurationQueryComputeToHclTerraform(struct?: CleanroomsMembershipPaymentConfigurationQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_responsible: {
@@ -605,7 +605,7 @@ export interface CleanroomsMembershipPaymentConfiguration {
   /**
   * query_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#query_compute CleanroomsMembership#query_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#query_compute CleanroomsMembership#query_compute}
   */
   readonly queryCompute?: CleanroomsMembershipPaymentConfigurationQueryCompute[] | cdktn.IResolvable;
 }
@@ -613,7 +613,7 @@ export interface CleanroomsMembershipPaymentConfiguration {
 export function cleanroomsMembershipPaymentConfigurationToTerraform(struct?: CleanroomsMembershipPaymentConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query_compute: cdktn.listMapper(cleanroomsMembershipPaymentConfigurationQueryComputeToTerraform, true)(struct!.queryCompute),
@@ -624,7 +624,7 @@ export function cleanroomsMembershipPaymentConfigurationToTerraform(struct?: Cle
 export function cleanroomsMembershipPaymentConfigurationToHclTerraform(struct?: CleanroomsMembershipPaymentConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query_compute: {
@@ -721,7 +721,7 @@ export class CleanroomsMembershipPaymentConfigurationList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership aws_cleanrooms_membership}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership aws_cleanrooms_membership}
 */
 export class CleanroomsMembership extends cdktn.TerraformResource {
 
@@ -737,7 +737,7 @@ export class CleanroomsMembership extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CleanroomsMembership resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CleanroomsMembership to import
-  * @param importFromId The id of the existing CleanroomsMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CleanroomsMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CleanroomsMembership to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -749,7 +749,7 @@ export class CleanroomsMembership extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cleanrooms_membership aws_cleanrooms_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cleanrooms_membership aws_cleanrooms_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -760,7 +760,7 @@ export class CleanroomsMembership extends cdktn.TerraformResource {
       terraformResourceType: 'aws_cleanrooms_membership',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

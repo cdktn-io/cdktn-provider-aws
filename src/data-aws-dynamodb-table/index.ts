@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_table
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/dynamodb_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,30 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsDynamodbTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_table#id DataAwsDynamodbTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/dynamodb_table#id DataAwsDynamodbTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_table#name DataAwsDynamodbTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/dynamodb_table#name DataAwsDynamodbTable#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_table#region DataAwsDynamodbTable#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/dynamodb_table#region DataAwsDynamodbTable#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_table#tags DataAwsDynamodbTable#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/dynamodb_table#tags DataAwsDynamodbTable#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * server_side_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_table#server_side_encryption DataAwsDynamodbTable#server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/dynamodb_table#server_side_encryption DataAwsDynamodbTable#server_side_encryption}
   */
   readonly serverSideEncryption?: DataAwsDynamodbTableServerSideEncryption;
 }
@@ -46,7 +46,7 @@ export interface DataAwsDynamodbTableAttribute {
 export function dataAwsDynamodbTableAttributeToTerraform(struct?: DataAwsDynamodbTableAttribute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -56,7 +56,7 @@ export function dataAwsDynamodbTableAttributeToTerraform(struct?: DataAwsDynamod
 export function dataAwsDynamodbTableAttributeToHclTerraform(struct?: DataAwsDynamodbTableAttribute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -126,7 +126,7 @@ export interface DataAwsDynamodbTableGlobalSecondaryIndexKeySchema {
 export function dataAwsDynamodbTableGlobalSecondaryIndexKeySchemaToTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexKeySchema): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -136,7 +136,7 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexKeySchemaToTerraform(str
 export function dataAwsDynamodbTableGlobalSecondaryIndexKeySchemaToHclTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexKeySchema): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -206,7 +206,7 @@ export interface DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput {
 export function dataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputToTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -216,7 +216,7 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputToTerr
 export function dataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputToHclTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -286,7 +286,7 @@ export interface DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughput {
 export function dataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputToTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -296,7 +296,7 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputToTerrafor
 export function dataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputToHclTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -366,7 +366,7 @@ export interface DataAwsDynamodbTableGlobalSecondaryIndex {
 export function dataAwsDynamodbTableGlobalSecondaryIndexToTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndex): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -376,7 +376,7 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexToTerraform(struct?: Dat
 export function dataAwsDynamodbTableGlobalSecondaryIndexToHclTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndex): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -489,7 +489,7 @@ export interface DataAwsDynamodbTableLocalSecondaryIndex {
 export function dataAwsDynamodbTableLocalSecondaryIndexToTerraform(struct?: DataAwsDynamodbTableLocalSecondaryIndex): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -499,7 +499,7 @@ export function dataAwsDynamodbTableLocalSecondaryIndexToTerraform(struct?: Data
 export function dataAwsDynamodbTableLocalSecondaryIndexToHclTerraform(struct?: DataAwsDynamodbTableLocalSecondaryIndex): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -579,7 +579,7 @@ export interface DataAwsDynamodbTableOnDemandThroughput {
 export function dataAwsDynamodbTableOnDemandThroughputToTerraform(struct?: DataAwsDynamodbTableOnDemandThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -589,7 +589,7 @@ export function dataAwsDynamodbTableOnDemandThroughputToTerraform(struct?: DataA
 export function dataAwsDynamodbTableOnDemandThroughputToHclTerraform(struct?: DataAwsDynamodbTableOnDemandThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -659,7 +659,7 @@ export interface DataAwsDynamodbTablePointInTimeRecovery {
 export function dataAwsDynamodbTablePointInTimeRecoveryToTerraform(struct?: DataAwsDynamodbTablePointInTimeRecovery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -669,7 +669,7 @@ export function dataAwsDynamodbTablePointInTimeRecoveryToTerraform(struct?: Data
 export function dataAwsDynamodbTablePointInTimeRecoveryToHclTerraform(struct?: DataAwsDynamodbTablePointInTimeRecovery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -739,7 +739,7 @@ export interface DataAwsDynamodbTableReplica {
 export function dataAwsDynamodbTableReplicaToTerraform(struct?: DataAwsDynamodbTableReplica): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -749,7 +749,7 @@ export function dataAwsDynamodbTableReplicaToTerraform(struct?: DataAwsDynamodbT
 export function dataAwsDynamodbTableReplicaToHclTerraform(struct?: DataAwsDynamodbTableReplica): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -819,7 +819,7 @@ export interface DataAwsDynamodbTableTtl {
 export function dataAwsDynamodbTableTtlToTerraform(struct?: DataAwsDynamodbTableTtl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -829,7 +829,7 @@ export function dataAwsDynamodbTableTtlToTerraform(struct?: DataAwsDynamodbTable
 export function dataAwsDynamodbTableTtlToHclTerraform(struct?: DataAwsDynamodbTableTtl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -899,7 +899,7 @@ export interface DataAwsDynamodbTableWarmThroughput {
 export function dataAwsDynamodbTableWarmThroughputToTerraform(struct?: DataAwsDynamodbTableWarmThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -909,7 +909,7 @@ export function dataAwsDynamodbTableWarmThroughputToTerraform(struct?: DataAwsDy
 export function dataAwsDynamodbTableWarmThroughputToHclTerraform(struct?: DataAwsDynamodbTableWarmThroughput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -979,7 +979,7 @@ export interface DataAwsDynamodbTableServerSideEncryption {
 export function dataAwsDynamodbTableServerSideEncryptionToTerraform(struct?: DataAwsDynamodbTableServerSideEncryptionOutputReference | DataAwsDynamodbTableServerSideEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -989,7 +989,7 @@ export function dataAwsDynamodbTableServerSideEncryptionToTerraform(struct?: Dat
 export function dataAwsDynamodbTableServerSideEncryptionToHclTerraform(struct?: DataAwsDynamodbTableServerSideEncryptionOutputReference | DataAwsDynamodbTableServerSideEncryption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1034,7 +1034,7 @@ export class DataAwsDynamodbTableServerSideEncryptionOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_table aws_dynamodb_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/dynamodb_table aws_dynamodb_table}
 */
 export class DataAwsDynamodbTable extends cdktn.TerraformDataSource {
 
@@ -1050,7 +1050,7 @@ export class DataAwsDynamodbTable extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsDynamodbTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDynamodbTable to import
-  * @param importFromId The id of the existing DataAwsDynamodbTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsDynamodbTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/dynamodb_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDynamodbTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1062,7 +1062,7 @@ export class DataAwsDynamodbTable extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_table aws_dynamodb_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/dynamodb_table aws_dynamodb_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1073,7 +1073,7 @@ export class DataAwsDynamodbTable extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_dynamodb_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

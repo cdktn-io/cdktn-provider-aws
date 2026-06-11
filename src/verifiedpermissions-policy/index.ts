@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface VerifiedpermissionsPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#policy_store_id VerifiedpermissionsPolicy#policy_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#policy_store_id VerifiedpermissionsPolicy#policy_store_id}
   */
   readonly policyStoreId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#region VerifiedpermissionsPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#region VerifiedpermissionsPolicy#region}
   */
   readonly region?: string;
   /**
   * definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#definition VerifiedpermissionsPolicy#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#definition VerifiedpermissionsPolicy#definition}
   */
   readonly definition?: VerifiedpermissionsPolicyDefinition[] | cdktn.IResolvable;
 }
 export interface VerifiedpermissionsPolicyDefinitionStatic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#description VerifiedpermissionsPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#description VerifiedpermissionsPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#statement VerifiedpermissionsPolicy#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#statement VerifiedpermissionsPolicy#statement}
   */
   readonly statement: string;
 }
@@ -43,7 +43,7 @@ export interface VerifiedpermissionsPolicyDefinitionStatic {
 export function verifiedpermissionsPolicyDefinitionStaticToTerraform(struct?: VerifiedpermissionsPolicyDefinitionStatic | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -55,7 +55,7 @@ export function verifiedpermissionsPolicyDefinitionStaticToTerraform(struct?: Ve
 export function verifiedpermissionsPolicyDefinitionStaticToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionStatic | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -177,11 +177,11 @@ export class VerifiedpermissionsPolicyDefinitionStaticList extends cdktn.Complex
 }
 export interface VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#entity_id VerifiedpermissionsPolicy#entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#entity_id VerifiedpermissionsPolicy#entity_id}
   */
   readonly entityId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#entity_type VerifiedpermissionsPolicy#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#entity_type VerifiedpermissionsPolicy#entity_type}
   */
   readonly entityType: string;
 }
@@ -189,7 +189,7 @@ export interface VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal {
 export function verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entity_id: cdktn.stringToTerraform(struct!.entityId),
@@ -201,7 +201,7 @@ export function verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToTerr
 export function verifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entity_id: {
@@ -320,11 +320,11 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalList exte
 }
 export interface VerifiedpermissionsPolicyDefinitionTemplateLinkedResource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#entity_id VerifiedpermissionsPolicy#entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#entity_id VerifiedpermissionsPolicy#entity_id}
   */
   readonly entityId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#entity_type VerifiedpermissionsPolicy#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#entity_type VerifiedpermissionsPolicy#entity_type}
   */
   readonly entityType: string;
 }
@@ -332,7 +332,7 @@ export interface VerifiedpermissionsPolicyDefinitionTemplateLinkedResource {
 export function verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entity_id: cdktn.stringToTerraform(struct!.entityId),
@@ -344,7 +344,7 @@ export function verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToTerra
 export function verifiedpermissionsPolicyDefinitionTemplateLinkedResourceToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entity_id: {
@@ -463,19 +463,19 @@ export class VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceList exten
 }
 export interface VerifiedpermissionsPolicyDefinitionTemplateLinked {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#policy_template_id VerifiedpermissionsPolicy#policy_template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#policy_template_id VerifiedpermissionsPolicy#policy_template_id}
   */
   readonly policyTemplateId: string;
   /**
   * principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#principal VerifiedpermissionsPolicy#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#principal VerifiedpermissionsPolicy#principal}
   */
   readonly principal?: VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal[] | cdktn.IResolvable;
   /**
   * resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#resource VerifiedpermissionsPolicy#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#resource VerifiedpermissionsPolicy#resource}
   */
   readonly resource?: VerifiedpermissionsPolicyDefinitionTemplateLinkedResource[] | cdktn.IResolvable;
 }
@@ -483,7 +483,7 @@ export interface VerifiedpermissionsPolicyDefinitionTemplateLinked {
 export function verifiedpermissionsPolicyDefinitionTemplateLinkedToTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinked | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     policy_template_id: cdktn.stringToTerraform(struct!.policyTemplateId),
@@ -496,7 +496,7 @@ export function verifiedpermissionsPolicyDefinitionTemplateLinkedToTerraform(str
 export function verifiedpermissionsPolicyDefinitionTemplateLinkedToHclTerraform(struct?: VerifiedpermissionsPolicyDefinitionTemplateLinked | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     policy_template_id: {
@@ -648,13 +648,13 @@ export interface VerifiedpermissionsPolicyDefinition {
   /**
   * static block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#static VerifiedpermissionsPolicy#static}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#static VerifiedpermissionsPolicy#static}
   */
   readonly static?: VerifiedpermissionsPolicyDefinitionStatic[] | cdktn.IResolvable;
   /**
   * template_linked block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#template_linked VerifiedpermissionsPolicy#template_linked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#template_linked VerifiedpermissionsPolicy#template_linked}
   */
   readonly templateLinked?: VerifiedpermissionsPolicyDefinitionTemplateLinked[] | cdktn.IResolvable;
 }
@@ -662,7 +662,7 @@ export interface VerifiedpermissionsPolicyDefinition {
 export function verifiedpermissionsPolicyDefinitionToTerraform(struct?: VerifiedpermissionsPolicyDefinition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     static: cdktn.listMapper(verifiedpermissionsPolicyDefinitionStaticToTerraform, true)(struct!.static),
@@ -674,7 +674,7 @@ export function verifiedpermissionsPolicyDefinitionToTerraform(struct?: Verified
 export function verifiedpermissionsPolicyDefinitionToHclTerraform(struct?: VerifiedpermissionsPolicyDefinition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     static: {
@@ -799,7 +799,7 @@ export class VerifiedpermissionsPolicyDefinitionList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy aws_verifiedpermissions_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy aws_verifiedpermissions_policy}
 */
 export class VerifiedpermissionsPolicy extends cdktn.TerraformResource {
 
@@ -815,7 +815,7 @@ export class VerifiedpermissionsPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VerifiedpermissionsPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedpermissionsPolicy to import
-  * @param importFromId The id of the existing VerifiedpermissionsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VerifiedpermissionsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedpermissionsPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -827,7 +827,7 @@ export class VerifiedpermissionsPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/verifiedpermissions_policy aws_verifiedpermissions_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/verifiedpermissions_policy aws_verifiedpermissions_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -838,7 +838,7 @@ export class VerifiedpermissionsPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'aws_verifiedpermissions_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

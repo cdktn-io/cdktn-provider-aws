@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/route53profiles_profiles
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/route53profiles_profiles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataAwsRoute53ProfilesProfilesConfig extends cdktn.TerraformMet
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/route53profiles_profiles#region DataAwsRoute53ProfilesProfiles#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/route53profiles_profiles#region DataAwsRoute53ProfilesProfiles#region}
   */
   readonly region?: string;
 }
@@ -25,7 +25,7 @@ export interface DataAwsRoute53ProfilesProfilesProfiles {
 export function dataAwsRoute53ProfilesProfilesProfilesToTerraform(struct?: DataAwsRoute53ProfilesProfilesProfiles): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -35,7 +35,7 @@ export function dataAwsRoute53ProfilesProfilesProfilesToTerraform(struct?: DataA
 export function dataAwsRoute53ProfilesProfilesProfilesToHclTerraform(struct?: DataAwsRoute53ProfilesProfilesProfiles): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -111,7 +111,7 @@ export class DataAwsRoute53ProfilesProfilesProfilesList extends cdktn.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles}
 */
 export class DataAwsRoute53ProfilesProfiles extends cdktn.TerraformDataSource {
 
@@ -127,7 +127,7 @@ export class DataAwsRoute53ProfilesProfiles extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsRoute53ProfilesProfiles resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRoute53ProfilesProfiles to import
-  * @param importFromId The id of the existing DataAwsRoute53ProfilesProfiles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/route53profiles_profiles#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsRoute53ProfilesProfiles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/route53profiles_profiles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRoute53ProfilesProfiles to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -139,7 +139,7 @@ export class DataAwsRoute53ProfilesProfiles extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -150,7 +150,7 @@ export class DataAwsRoute53ProfilesProfiles extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_route53profiles_profiles',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

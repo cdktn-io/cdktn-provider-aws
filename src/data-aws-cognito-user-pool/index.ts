@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cognito_user_pool
+// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cognito_user_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataAwsCognitoUserPoolConfig extends cdktn.TerraformMetaArgumen
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cognito_user_pool#region DataAwsCognitoUserPool#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cognito_user_pool#region DataAwsCognitoUserPool#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cognito_user_pool#user_pool_id DataAwsCognitoUserPool#user_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cognito_user_pool#user_pool_id DataAwsCognitoUserPool#user_pool_id}
   */
   readonly userPoolId: string;
 }
@@ -29,7 +29,7 @@ export interface DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanism {
 export function dataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismToTerraform(struct?: DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanism): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -39,7 +39,7 @@ export function dataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismToT
 export function dataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismToHclTerraform(struct?: DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanism): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -109,7 +109,7 @@ export interface DataAwsCognitoUserPoolAccountRecoverySetting {
 export function dataAwsCognitoUserPoolAccountRecoverySettingToTerraform(struct?: DataAwsCognitoUserPoolAccountRecoverySetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -119,7 +119,7 @@ export function dataAwsCognitoUserPoolAccountRecoverySettingToTerraform(struct?:
 export function dataAwsCognitoUserPoolAccountRecoverySettingToHclTerraform(struct?: DataAwsCognitoUserPoolAccountRecoverySetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -185,7 +185,7 @@ export interface DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplat
 export function dataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateToTerraform(struct?: DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -195,7 +195,7 @@ export function dataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplate
 export function dataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateToHclTerraform(struct?: DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -270,7 +270,7 @@ export interface DataAwsCognitoUserPoolAdminCreateUserConfig {
 export function dataAwsCognitoUserPoolAdminCreateUserConfigToTerraform(struct?: DataAwsCognitoUserPoolAdminCreateUserConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -280,7 +280,7 @@ export function dataAwsCognitoUserPoolAdminCreateUserConfigToTerraform(struct?: 
 export function dataAwsCognitoUserPoolAdminCreateUserConfigToHclTerraform(struct?: DataAwsCognitoUserPoolAdminCreateUserConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -356,7 +356,7 @@ export interface DataAwsCognitoUserPoolDeviceConfiguration {
 export function dataAwsCognitoUserPoolDeviceConfigurationToTerraform(struct?: DataAwsCognitoUserPoolDeviceConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -366,7 +366,7 @@ export function dataAwsCognitoUserPoolDeviceConfigurationToTerraform(struct?: Da
 export function dataAwsCognitoUserPoolDeviceConfigurationToHclTerraform(struct?: DataAwsCognitoUserPoolDeviceConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -436,7 +436,7 @@ export interface DataAwsCognitoUserPoolEmailConfiguration {
 export function dataAwsCognitoUserPoolEmailConfigurationToTerraform(struct?: DataAwsCognitoUserPoolEmailConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -446,7 +446,7 @@ export function dataAwsCognitoUserPoolEmailConfigurationToTerraform(struct?: Dat
 export function dataAwsCognitoUserPoolEmailConfigurationToHclTerraform(struct?: DataAwsCognitoUserPoolEmailConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -531,7 +531,7 @@ export interface DataAwsCognitoUserPoolLambdaConfigCustomEmailSender {
 export function dataAwsCognitoUserPoolLambdaConfigCustomEmailSenderToTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigCustomEmailSender): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -541,7 +541,7 @@ export function dataAwsCognitoUserPoolLambdaConfigCustomEmailSenderToTerraform(s
 export function dataAwsCognitoUserPoolLambdaConfigCustomEmailSenderToHclTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigCustomEmailSender): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -611,7 +611,7 @@ export interface DataAwsCognitoUserPoolLambdaConfigCustomSmsSender {
 export function dataAwsCognitoUserPoolLambdaConfigCustomSmsSenderToTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigCustomSmsSender): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -621,7 +621,7 @@ export function dataAwsCognitoUserPoolLambdaConfigCustomSmsSenderToTerraform(str
 export function dataAwsCognitoUserPoolLambdaConfigCustomSmsSenderToHclTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigCustomSmsSender): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -691,7 +691,7 @@ export interface DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfig {
 export function dataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigToTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -701,7 +701,7 @@ export function dataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigToTerr
 export function dataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigToHclTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -771,7 +771,7 @@ export interface DataAwsCognitoUserPoolLambdaConfig {
 export function dataAwsCognitoUserPoolLambdaConfigToTerraform(struct?: DataAwsCognitoUserPoolLambdaConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -781,7 +781,7 @@ export function dataAwsCognitoUserPoolLambdaConfigToTerraform(struct?: DataAwsCo
 export function dataAwsCognitoUserPoolLambdaConfigToHclTerraform(struct?: DataAwsCognitoUserPoolLambdaConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -914,7 +914,7 @@ export interface DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraint
 export function dataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsToTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -924,7 +924,7 @@ export function dataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraints
 export function dataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsToHclTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -994,7 +994,7 @@ export interface DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraint
 export function dataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraintsToTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1004,7 +1004,7 @@ export function dataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraints
 export function dataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraintsToHclTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1074,7 +1074,7 @@ export interface DataAwsCognitoUserPoolSchemaAttributes {
 export function dataAwsCognitoUserPoolSchemaAttributesToTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1084,7 +1084,7 @@ export function dataAwsCognitoUserPoolSchemaAttributesToTerraform(struct?: DataA
 export function dataAwsCognitoUserPoolSchemaAttributesToHclTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1181,7 +1181,7 @@ export interface DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalF
 export function dataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsToTerraform(struct?: DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1191,7 +1191,7 @@ export function dataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFl
 export function dataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsToHclTerraform(struct?: DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1256,7 +1256,7 @@ export interface DataAwsCognitoUserPoolUserPoolAddOns {
 export function dataAwsCognitoUserPoolUserPoolAddOnsToTerraform(struct?: DataAwsCognitoUserPoolUserPoolAddOns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1266,7 +1266,7 @@ export function dataAwsCognitoUserPoolUserPoolAddOnsToTerraform(struct?: DataAws
 export function dataAwsCognitoUserPoolUserPoolAddOnsToHclTerraform(struct?: DataAwsCognitoUserPoolUserPoolAddOns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1333,7 +1333,7 @@ export class DataAwsCognitoUserPoolUserPoolAddOnsList extends cdktn.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool}
 */
 export class DataAwsCognitoUserPool extends cdktn.TerraformDataSource {
 
@@ -1349,7 +1349,7 @@ export class DataAwsCognitoUserPool extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsCognitoUserPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCognitoUserPool to import
-  * @param importFromId The id of the existing DataAwsCognitoUserPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cognito_user_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCognitoUserPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cognito_user_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCognitoUserPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1361,7 +1361,7 @@ export class DataAwsCognitoUserPool extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1372,7 +1372,7 @@ export class DataAwsCognitoUserPool extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_cognito_user_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.49.0',
+        providerVersion: '6.50.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
