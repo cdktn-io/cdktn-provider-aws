@@ -4,7 +4,7 @@
 
 ### CloudsearchDomain <a name="CloudsearchDomain" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomain.Initializer"></a>
 
@@ -590,7 +590,7 @@ The construct id used in the generated config for the CloudsearchDomain to impor
 
 The id of the existing CloudsearchDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1042,11 +1042,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}. |
 | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.endpointOptions">EndpointOptions</a></code> | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptions">CloudsearchDomainEndpointOptions</a></code> | endpoint_options block. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#id CloudsearchDomain#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#id CloudsearchDomain#id}. |
 | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.indexField">IndexField</a></code> | <code>interface{}</code> | index_field block. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.multiAz">MultiAz</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#multi_az CloudsearchDomain#multi_az}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.multiAz">MultiAz</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#multi_az CloudsearchDomain#multi_az}. |
 | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.scalingParameters">ScalingParameters</a></code> | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParameters">CloudsearchDomainScalingParameters</a></code> | scaling_parameters block. |
 | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainTimeouts">CloudsearchDomainTimeouts</a></code> | timeouts block. |
@@ -1131,7 +1131,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}.
 
 ---
 
@@ -1145,7 +1145,7 @@ EndpointOptions CloudsearchDomainEndpointOptions
 
 endpoint_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#endpoint_options CloudsearchDomain#endpoint_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#endpoint_options CloudsearchDomain#endpoint_options}
 
 ---
 
@@ -1157,7 +1157,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#id CloudsearchDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#id CloudsearchDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1174,7 +1174,7 @@ IndexField interface{}
 
 index_field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#index_field CloudsearchDomain#index_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#index_field CloudsearchDomain#index_field}
 
 ---
 
@@ -1186,7 +1186,7 @@ MultiAz interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#multi_az CloudsearchDomain#multi_az}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#multi_az CloudsearchDomain#multi_az}.
 
 ---
 
@@ -1200,7 +1200,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#region CloudsearchDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#region CloudsearchDomain#region}
 
 ---
 
@@ -1214,7 +1214,7 @@ ScalingParameters CloudsearchDomainScalingParameters
 
 scaling_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#scaling_parameters CloudsearchDomain#scaling_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#scaling_parameters CloudsearchDomain#scaling_parameters}
 
 ---
 
@@ -1228,7 +1228,7 @@ Timeouts CloudsearchDomainTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#timeouts CloudsearchDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#timeouts CloudsearchDomain#timeouts}
 
 ---
 
@@ -1249,8 +1249,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptions.property.enforceHttps">EnforceHttps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#enforce_https CloudsearchDomain#enforce_https}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptions.property.tlsSecurityPolicy">TlsSecurityPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#tls_security_policy CloudsearchDomain#tls_security_policy}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptions.property.enforceHttps">EnforceHttps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#enforce_https CloudsearchDomain#enforce_https}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptions.property.tlsSecurityPolicy">TlsSecurityPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#tls_security_policy CloudsearchDomain#tls_security_policy}. |
 
 ---
 
@@ -1262,7 +1262,7 @@ EnforceHttps interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#enforce_https CloudsearchDomain#enforce_https}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#enforce_https CloudsearchDomain#enforce_https}.
 
 ---
 
@@ -1274,7 +1274,7 @@ TlsSecurityPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#tls_security_policy CloudsearchDomain#tls_security_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#tls_security_policy CloudsearchDomain#tls_security_policy}.
 
 ---
 
@@ -1303,16 +1303,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#type CloudsearchDomain#type}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.analysisScheme">AnalysisScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#analysis_scheme CloudsearchDomain#analysis_scheme}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.defaultValue">DefaultValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#default_value CloudsearchDomain#default_value}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.facet">Facet</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#facet CloudsearchDomain#facet}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.highlight">Highlight</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#highlight CloudsearchDomain#highlight}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.return">Return</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#return CloudsearchDomain#return}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.search">Search</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#search CloudsearchDomain#search}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.sort">Sort</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#sort CloudsearchDomain#sort}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.sourceFields">SourceFields</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#source_fields CloudsearchDomain#source_fields}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#type CloudsearchDomain#type}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.analysisScheme">AnalysisScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#analysis_scheme CloudsearchDomain#analysis_scheme}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.defaultValue">DefaultValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#default_value CloudsearchDomain#default_value}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.facet">Facet</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#facet CloudsearchDomain#facet}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.highlight">Highlight</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#highlight CloudsearchDomain#highlight}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.return">Return</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#return CloudsearchDomain#return}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.search">Search</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#search CloudsearchDomain#search}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.sort">Sort</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#sort CloudsearchDomain#sort}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.property.sourceFields">SourceFields</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#source_fields CloudsearchDomain#source_fields}. |
 
 ---
 
@@ -1324,7 +1324,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}.
 
 ---
 
@@ -1336,7 +1336,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#type CloudsearchDomain#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#type CloudsearchDomain#type}.
 
 ---
 
@@ -1348,7 +1348,7 @@ AnalysisScheme *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#analysis_scheme CloudsearchDomain#analysis_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#analysis_scheme CloudsearchDomain#analysis_scheme}.
 
 ---
 
@@ -1360,7 +1360,7 @@ DefaultValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#default_value CloudsearchDomain#default_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#default_value CloudsearchDomain#default_value}.
 
 ---
 
@@ -1372,7 +1372,7 @@ Facet interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#facet CloudsearchDomain#facet}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#facet CloudsearchDomain#facet}.
 
 ---
 
@@ -1384,7 +1384,7 @@ Highlight interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#highlight CloudsearchDomain#highlight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#highlight CloudsearchDomain#highlight}.
 
 ---
 
@@ -1396,7 +1396,7 @@ Return interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#return CloudsearchDomain#return}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#return CloudsearchDomain#return}.
 
 ---
 
@@ -1408,7 +1408,7 @@ Search interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#search CloudsearchDomain#search}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#search CloudsearchDomain#search}.
 
 ---
 
@@ -1420,7 +1420,7 @@ Sort interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#sort CloudsearchDomain#sort}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#sort CloudsearchDomain#sort}.
 
 ---
 
@@ -1432,7 +1432,7 @@ SourceFields *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#source_fields CloudsearchDomain#source_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#source_fields CloudsearchDomain#source_fields}.
 
 ---
 
@@ -1454,9 +1454,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParameters.property.desiredInstanceType">DesiredInstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#desired_instance_type CloudsearchDomain#desired_instance_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParameters.property.desiredPartitionCount">DesiredPartitionCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#desired_partition_count CloudsearchDomain#desired_partition_count}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParameters.property.desiredReplicationCount">DesiredReplicationCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#desired_replication_count CloudsearchDomain#desired_replication_count}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParameters.property.desiredInstanceType">DesiredInstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#desired_instance_type CloudsearchDomain#desired_instance_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParameters.property.desiredPartitionCount">DesiredPartitionCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#desired_partition_count CloudsearchDomain#desired_partition_count}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParameters.property.desiredReplicationCount">DesiredReplicationCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#desired_replication_count CloudsearchDomain#desired_replication_count}. |
 
 ---
 
@@ -1468,7 +1468,7 @@ DesiredInstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#desired_instance_type CloudsearchDomain#desired_instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#desired_instance_type CloudsearchDomain#desired_instance_type}.
 
 ---
 
@@ -1480,7 +1480,7 @@ DesiredPartitionCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#desired_partition_count CloudsearchDomain#desired_partition_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#desired_partition_count CloudsearchDomain#desired_partition_count}.
 
 ---
 
@@ -1492,7 +1492,7 @@ DesiredReplicationCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#desired_replication_count CloudsearchDomain#desired_replication_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#desired_replication_count CloudsearchDomain#desired_replication_count}.
 
 ---
 
@@ -1514,9 +1514,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#create CloudsearchDomain#create}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#delete CloudsearchDomain#delete}. |
-| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#update CloudsearchDomain#update}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#create CloudsearchDomain#create}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#delete CloudsearchDomain#delete}. |
+| <code><a href="#@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#update CloudsearchDomain#update}. |
 
 ---
 
@@ -1528,7 +1528,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#create CloudsearchDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#create CloudsearchDomain#create}.
 
 ---
 
@@ -1540,7 +1540,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#delete CloudsearchDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#delete CloudsearchDomain#delete}.
 
 ---
 
@@ -1552,7 +1552,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudsearch_domain#update CloudsearchDomain#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/cloudsearch_domain#update CloudsearchDomain#update}.
 
 ---
 

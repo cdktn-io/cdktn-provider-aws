@@ -4,7 +4,7 @@
 
 ### BudgetsBudget <a name="BudgetsBudget" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget aws_budgets_budget}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget aws_budgets_budget}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer"></a>
 
@@ -55,26 +55,26 @@ budgetsBudget.BudgetsBudget(
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.budgetType">budget_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.timeUnit">time_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.budgetType">budget_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.timeUnit">time_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.autoAdjustData">auto_adjust_data</a></code> | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustData">BudgetsBudgetAutoAdjustData</a></code> | auto_adjust_data block. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.billingViewArn">billing_view_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.billingViewArn">billing_view_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.costFilter">cost_filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostFilter">BudgetsBudgetCostFilter</a>]</code> | cost_filter block. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.costTypes">cost_types</a></code> | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes">BudgetsBudgetCostTypes</a></code> | cost_types block. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.filterExpression">filter_expression</a></code> | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpression">BudgetsBudgetFilterExpression</a></code> | filter_expression block. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#id BudgetsBudget#id}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.limitAmount">limit_amount</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.limitUnit">limit_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.metrics">metrics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#metrics BudgetsBudget#metrics}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name BudgetsBudget#name}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#id BudgetsBudget#id}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.limitAmount">limit_amount</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.limitUnit">limit_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.metrics">metrics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#metrics BudgetsBudget#metrics}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name BudgetsBudget#name}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.notification">notification</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification">BudgetsBudgetNotification</a>]</code> | notification block. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.plannedLimit">planned_limit</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit">BudgetsBudgetPlannedLimit</a>]</code> | planned_limit block. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.timePeriodEnd">time_period_end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.timePeriodStart">time_period_start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.timePeriodEnd">time_period_end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer.parameter.timePeriodStart">time_period_start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}. |
 
 ---
 
@@ -142,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 auto_adjust_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#auto_adjust_data BudgetsBudget#auto_adjust_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#auto_adjust_data BudgetsBudget#auto_adjust_data}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cost_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cost_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_types BudgetsBudget#cost_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_types BudgetsBudget#cost_types}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 filter_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#filter_expression BudgetsBudget#filter_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#filter_expression BudgetsBudget#filter_expression}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#id BudgetsBudget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#id BudgetsBudget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -225,7 +225,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}.
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}.
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#metrics BudgetsBudget#metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#metrics BudgetsBudget#metrics}.
 
 ---
 
@@ -249,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name BudgetsBudget#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name BudgetsBudget#name}.
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}.
 
 ---
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#notification BudgetsBudget#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#notification BudgetsBudget#notification}
 
 ---
 
@@ -277,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 planned_limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
 
 ---
 
@@ -285,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}.
 
 ---
 
@@ -293,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}.
 
 ---
 
@@ -301,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}.
 
 ---
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}.
 
 ---
 
@@ -729,7 +729,7 @@ def put_auto_adjust_data(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}.
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 historical_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#historical_options BudgetsBudget#historical_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#historical_options BudgetsBudget#historical_options}
 
 ---
 
@@ -779,7 +779,7 @@ def put_cost_types(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}.
 
 ---
 
@@ -787,7 +787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}.
 
 ---
 
@@ -795,7 +795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}.
 
 ---
 
@@ -803,7 +803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}.
 
 ---
 
@@ -811,7 +811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}.
 
 ---
 
@@ -819,7 +819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}.
 
 ---
 
@@ -827,7 +827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}.
 
 ---
 
@@ -835,7 +835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}.
 
 ---
 
@@ -843,7 +843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}.
 
 ---
 
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}.
 
 ---
 
@@ -859,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}.
 
 ---
 
@@ -882,7 +882,7 @@ def put_filter_expression(
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#and BudgetsBudget#and}
 
 ---
 
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -902,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#not BudgetsBudget#not}
 
 ---
 
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#or BudgetsBudget#or}
 
 ---
 
@@ -932,7 +932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -1186,7 +1186,7 @@ The construct id used in the generated config for the BudgetsBudget to import.
 
 The id of the existing BudgetsBudget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1849,7 +1849,7 @@ budgetsBudget.BudgetsBudgetAutoAdjustData(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustData.property.autoAdjustType">auto_adjust_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustData.property.autoAdjustType">auto_adjust_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustData.property.historicalOptions">historical_options</a></code> | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions">BudgetsBudgetAutoAdjustDataHistoricalOptions</a></code> | historical_options block. |
 
 ---
@@ -1862,7 +1862,7 @@ auto_adjust_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}.
 
 ---
 
@@ -1876,7 +1876,7 @@ historical_options: BudgetsBudgetAutoAdjustDataHistoricalOptions
 
 historical_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#historical_options BudgetsBudget#historical_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#historical_options BudgetsBudget#historical_options}
 
 ---
 
@@ -1896,7 +1896,7 @@ budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions.property.budgetAdjustmentPeriod">budget_adjustment_period</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions.property.budgetAdjustmentPeriod">budget_adjustment_period</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}. |
 
 ---
 
@@ -1908,7 +1908,7 @@ budget_adjustment_period: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}.
 
 ---
 
@@ -1961,26 +1961,26 @@ budgetsBudget.BudgetsBudgetConfig(
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.budgetType">budget_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.timeUnit">time_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.budgetType">budget_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.timeUnit">time_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.autoAdjustData">auto_adjust_data</a></code> | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustData">BudgetsBudgetAutoAdjustData</a></code> | auto_adjust_data block. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.billingViewArn">billing_view_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.billingViewArn">billing_view_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.costFilter">cost_filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostFilter">BudgetsBudgetCostFilter</a>]</code> | cost_filter block. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.costTypes">cost_types</a></code> | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes">BudgetsBudgetCostTypes</a></code> | cost_types block. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.filterExpression">filter_expression</a></code> | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpression">BudgetsBudgetFilterExpression</a></code> | filter_expression block. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#id BudgetsBudget#id}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.limitAmount">limit_amount</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.limitUnit">limit_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.metrics">metrics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#metrics BudgetsBudget#metrics}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name BudgetsBudget#name}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#id BudgetsBudget#id}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.limitAmount">limit_amount</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.limitUnit">limit_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.metrics">metrics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#metrics BudgetsBudget#metrics}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name BudgetsBudget#name}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.notification">notification</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification">BudgetsBudgetNotification</a>]</code> | notification block. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.plannedLimit">planned_limit</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit">BudgetsBudgetPlannedLimit</a>]</code> | planned_limit block. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.timePeriodEnd">time_period_end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.timePeriodStart">time_period_start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.timePeriodEnd">time_period_end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.property.timePeriodStart">time_period_start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}. |
 
 ---
 
@@ -2062,7 +2062,7 @@ budget_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}.
 
 ---
 
@@ -2074,7 +2074,7 @@ time_unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}.
 
 ---
 
@@ -2086,7 +2086,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}.
 
 ---
 
@@ -2100,7 +2100,7 @@ auto_adjust_data: BudgetsBudgetAutoAdjustData
 
 auto_adjust_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#auto_adjust_data BudgetsBudget#auto_adjust_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#auto_adjust_data BudgetsBudget#auto_adjust_data}
 
 ---
 
@@ -2112,7 +2112,7 @@ billing_view_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}.
 
 ---
 
@@ -2126,7 +2126,7 @@ cost_filter: IResolvable | typing.List[BudgetsBudgetCostFilter]
 
 cost_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
 
 ---
 
@@ -2140,7 +2140,7 @@ cost_types: BudgetsBudgetCostTypes
 
 cost_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_types BudgetsBudget#cost_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_types BudgetsBudget#cost_types}
 
 ---
 
@@ -2154,7 +2154,7 @@ filter_expression: BudgetsBudgetFilterExpression
 
 filter_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#filter_expression BudgetsBudget#filter_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#filter_expression BudgetsBudget#filter_expression}
 
 ---
 
@@ -2166,7 +2166,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#id BudgetsBudget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#id BudgetsBudget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2181,7 +2181,7 @@ limit_amount: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}.
 
 ---
 
@@ -2193,7 +2193,7 @@ limit_unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}.
 
 ---
 
@@ -2205,7 +2205,7 @@ metrics: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#metrics BudgetsBudget#metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#metrics BudgetsBudget#metrics}.
 
 ---
 
@@ -2217,7 +2217,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name BudgetsBudget#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name BudgetsBudget#name}.
 
 ---
 
@@ -2229,7 +2229,7 @@ name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}.
 
 ---
 
@@ -2243,7 +2243,7 @@ notification: IResolvable | typing.List[BudgetsBudgetNotification]
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#notification BudgetsBudget#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#notification BudgetsBudget#notification}
 
 ---
 
@@ -2257,7 +2257,7 @@ planned_limit: IResolvable | typing.List[BudgetsBudgetPlannedLimit]
 
 planned_limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
 
 ---
 
@@ -2269,7 +2269,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}.
 
 ---
 
@@ -2281,7 +2281,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}.
 
 ---
 
@@ -2293,7 +2293,7 @@ time_period_end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}.
 
 ---
 
@@ -2305,7 +2305,7 @@ time_period_start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}.
 
 ---
 
@@ -2326,8 +2326,8 @@ budgetsBudget.BudgetsBudgetCostFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostFilter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name BudgetsBudget#name}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostFilter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name BudgetsBudget#name}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -2339,7 +2339,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#name BudgetsBudget#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#name BudgetsBudget#name}.
 
 ---
 
@@ -2351,7 +2351,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -2381,17 +2381,17 @@ budgetsBudget.BudgetsBudgetCostTypes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeCredit">include_credit</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeDiscount">include_discount</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeOtherSubscription">include_other_subscription</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeRecurring">include_recurring</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeRefund">include_refund</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeSubscription">include_subscription</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeSupport">include_support</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeTax">include_tax</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeUpfront">include_upfront</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.useAmortized">use_amortized</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.useBlended">use_blended</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeCredit">include_credit</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeDiscount">include_discount</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeOtherSubscription">include_other_subscription</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeRecurring">include_recurring</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeRefund">include_refund</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeSubscription">include_subscription</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeSupport">include_support</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeTax">include_tax</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.includeUpfront">include_upfront</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.useAmortized">use_amortized</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.property.useBlended">use_blended</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}. |
 
 ---
 
@@ -2403,7 +2403,7 @@ include_credit: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}.
 
 ---
 
@@ -2415,7 +2415,7 @@ include_discount: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}.
 
 ---
 
@@ -2427,7 +2427,7 @@ include_other_subscription: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}.
 
 ---
 
@@ -2439,7 +2439,7 @@ include_recurring: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}.
 
 ---
 
@@ -2451,7 +2451,7 @@ include_refund: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}.
 
 ---
 
@@ -2463,7 +2463,7 @@ include_subscription: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}.
 
 ---
 
@@ -2475,7 +2475,7 @@ include_support: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}.
 
 ---
 
@@ -2487,7 +2487,7 @@ include_tax: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}.
 
 ---
 
@@ -2499,7 +2499,7 @@ include_upfront: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}.
 
 ---
 
@@ -2511,7 +2511,7 @@ use_amortized: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}.
 
 ---
 
@@ -2523,7 +2523,7 @@ use_blended: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}.
 
 ---
 
@@ -2567,7 +2567,7 @@ and: IResolvable | typing.List[BudgetsBudgetFilterExpressionAnd]
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#and BudgetsBudget#and}
 
 ---
 
@@ -2581,7 +2581,7 @@ cost_categories: BudgetsBudgetFilterExpressionCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -2595,7 +2595,7 @@ dimensions: BudgetsBudgetFilterExpressionDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -2609,7 +2609,7 @@ not: BudgetsBudgetFilterExpressionNot
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#not BudgetsBudget#not}
 
 ---
 
@@ -2623,7 +2623,7 @@ or: IResolvable | typing.List[BudgetsBudgetFilterExpressionOr]
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#or BudgetsBudget#or}
 
 ---
 
@@ -2637,7 +2637,7 @@ tags: BudgetsBudgetFilterExpressionTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -2681,7 +2681,7 @@ and: IResolvable | typing.List[BudgetsBudgetFilterExpressionAndAnd]
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#and BudgetsBudget#and}
 
 ---
 
@@ -2695,7 +2695,7 @@ cost_categories: BudgetsBudgetFilterExpressionAndCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -2709,7 +2709,7 @@ dimensions: BudgetsBudgetFilterExpressionAndDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -2723,7 +2723,7 @@ not: BudgetsBudgetFilterExpressionAndNot
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#not BudgetsBudget#not}
 
 ---
 
@@ -2737,7 +2737,7 @@ or: IResolvable | typing.List[BudgetsBudgetFilterExpressionAndOr]
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#or BudgetsBudget#or}
 
 ---
 
@@ -2751,7 +2751,7 @@ tags: BudgetsBudgetFilterExpressionAndTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -2789,7 +2789,7 @@ cost_categories: BudgetsBudgetFilterExpressionAndAndCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -2803,7 +2803,7 @@ dimensions: BudgetsBudgetFilterExpressionAndAndDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -2817,7 +2817,7 @@ tags: BudgetsBudgetFilterExpressionAndAndTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -2839,9 +2839,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -2853,7 +2853,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -2865,7 +2865,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -2877,7 +2877,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -2899,9 +2899,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -2913,7 +2913,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -2925,7 +2925,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -2937,7 +2937,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -2959,9 +2959,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndAndTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -2973,7 +2973,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -2985,7 +2985,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -2997,7 +2997,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3019,9 +3019,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -3033,7 +3033,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3045,7 +3045,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3057,7 +3057,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3079,9 +3079,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -3093,7 +3093,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3105,7 +3105,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3117,7 +3117,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3155,7 +3155,7 @@ cost_categories: BudgetsBudgetFilterExpressionAndNotCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -3169,7 +3169,7 @@ dimensions: BudgetsBudgetFilterExpressionAndNotDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -3183,7 +3183,7 @@ tags: BudgetsBudgetFilterExpressionAndNotTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -3205,9 +3205,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -3219,7 +3219,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3231,7 +3231,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3243,7 +3243,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3265,9 +3265,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -3279,7 +3279,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3291,7 +3291,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3303,7 +3303,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3325,9 +3325,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndNotTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -3339,7 +3339,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3351,7 +3351,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3363,7 +3363,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3401,7 +3401,7 @@ cost_categories: BudgetsBudgetFilterExpressionAndOrCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -3415,7 +3415,7 @@ dimensions: BudgetsBudgetFilterExpressionAndOrDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -3429,7 +3429,7 @@ tags: BudgetsBudgetFilterExpressionAndOrTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -3451,9 +3451,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -3465,7 +3465,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3477,7 +3477,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3489,7 +3489,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3511,9 +3511,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -3525,7 +3525,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3537,7 +3537,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3549,7 +3549,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3571,9 +3571,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndOrTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -3585,7 +3585,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3597,7 +3597,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3609,7 +3609,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3631,9 +3631,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionAndTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -3645,7 +3645,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3657,7 +3657,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3669,7 +3669,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3691,9 +3691,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -3705,7 +3705,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3717,7 +3717,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3729,7 +3729,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3751,9 +3751,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -3765,7 +3765,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -3777,7 +3777,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -3789,7 +3789,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -3833,7 +3833,7 @@ and: IResolvable | typing.List[BudgetsBudgetFilterExpressionNotAnd]
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#and BudgetsBudget#and}
 
 ---
 
@@ -3847,7 +3847,7 @@ cost_categories: BudgetsBudgetFilterExpressionNotCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -3861,7 +3861,7 @@ dimensions: BudgetsBudgetFilterExpressionNotDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -3875,7 +3875,7 @@ not: BudgetsBudgetFilterExpressionNotNot
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#not BudgetsBudget#not}
 
 ---
 
@@ -3889,7 +3889,7 @@ or: IResolvable | typing.List[BudgetsBudgetFilterExpressionNotOr]
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#or BudgetsBudget#or}
 
 ---
 
@@ -3903,7 +3903,7 @@ tags: BudgetsBudgetFilterExpressionNotTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -3941,7 +3941,7 @@ cost_categories: BudgetsBudgetFilterExpressionNotAndCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -3955,7 +3955,7 @@ dimensions: BudgetsBudgetFilterExpressionNotAndDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -3969,7 +3969,7 @@ tags: BudgetsBudgetFilterExpressionNotAndTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -3991,9 +3991,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -4005,7 +4005,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4017,7 +4017,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4029,7 +4029,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4051,9 +4051,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -4065,7 +4065,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4077,7 +4077,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4089,7 +4089,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4111,9 +4111,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotAndTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -4125,7 +4125,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4137,7 +4137,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4149,7 +4149,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4171,9 +4171,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -4185,7 +4185,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4197,7 +4197,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4209,7 +4209,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4231,9 +4231,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -4245,7 +4245,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4257,7 +4257,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4269,7 +4269,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4307,7 +4307,7 @@ cost_categories: BudgetsBudgetFilterExpressionNotNotCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -4321,7 +4321,7 @@ dimensions: BudgetsBudgetFilterExpressionNotNotDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -4335,7 +4335,7 @@ tags: BudgetsBudgetFilterExpressionNotNotTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -4357,9 +4357,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -4371,7 +4371,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4383,7 +4383,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4395,7 +4395,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4417,9 +4417,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -4431,7 +4431,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4443,7 +4443,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4455,7 +4455,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4477,9 +4477,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotNotTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -4491,7 +4491,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4503,7 +4503,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4515,7 +4515,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4553,7 +4553,7 @@ cost_categories: BudgetsBudgetFilterExpressionNotOrCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -4567,7 +4567,7 @@ dimensions: BudgetsBudgetFilterExpressionNotOrDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -4581,7 +4581,7 @@ tags: BudgetsBudgetFilterExpressionNotOrTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -4603,9 +4603,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -4617,7 +4617,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4629,7 +4629,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4641,7 +4641,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4663,9 +4663,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -4677,7 +4677,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4689,7 +4689,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4701,7 +4701,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4723,9 +4723,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotOrTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -4737,7 +4737,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4749,7 +4749,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4761,7 +4761,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4783,9 +4783,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionNotTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -4797,7 +4797,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -4809,7 +4809,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -4821,7 +4821,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -4865,7 +4865,7 @@ and: IResolvable | typing.List[BudgetsBudgetFilterExpressionOrAnd]
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#and BudgetsBudget#and}
 
 ---
 
@@ -4879,7 +4879,7 @@ cost_categories: BudgetsBudgetFilterExpressionOrCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -4893,7 +4893,7 @@ dimensions: BudgetsBudgetFilterExpressionOrDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -4907,7 +4907,7 @@ not: BudgetsBudgetFilterExpressionOrNot
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#not BudgetsBudget#not}
 
 ---
 
@@ -4921,7 +4921,7 @@ or: IResolvable | typing.List[BudgetsBudgetFilterExpressionOrOr]
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#or BudgetsBudget#or}
 
 ---
 
@@ -4935,7 +4935,7 @@ tags: BudgetsBudgetFilterExpressionOrTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -4973,7 +4973,7 @@ cost_categories: BudgetsBudgetFilterExpressionOrAndCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -4987,7 +4987,7 @@ dimensions: BudgetsBudgetFilterExpressionOrAndDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -5001,7 +5001,7 @@ tags: BudgetsBudgetFilterExpressionOrAndTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -5023,9 +5023,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -5037,7 +5037,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5049,7 +5049,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5061,7 +5061,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5083,9 +5083,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -5097,7 +5097,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5109,7 +5109,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5121,7 +5121,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5143,9 +5143,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrAndTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -5157,7 +5157,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5169,7 +5169,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5181,7 +5181,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5203,9 +5203,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -5217,7 +5217,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5229,7 +5229,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5241,7 +5241,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5263,9 +5263,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -5277,7 +5277,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5289,7 +5289,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5301,7 +5301,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5339,7 +5339,7 @@ cost_categories: BudgetsBudgetFilterExpressionOrNotCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -5353,7 +5353,7 @@ dimensions: BudgetsBudgetFilterExpressionOrNotDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -5367,7 +5367,7 @@ tags: BudgetsBudgetFilterExpressionOrNotTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -5389,9 +5389,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -5403,7 +5403,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5415,7 +5415,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5427,7 +5427,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5449,9 +5449,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -5463,7 +5463,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5475,7 +5475,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5487,7 +5487,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5509,9 +5509,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrNotTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -5523,7 +5523,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5535,7 +5535,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5547,7 +5547,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5585,7 +5585,7 @@ cost_categories: BudgetsBudgetFilterExpressionOrOrCostCategories
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -5599,7 +5599,7 @@ dimensions: BudgetsBudgetFilterExpressionOrOrDimensions
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -5613,7 +5613,7 @@ tags: BudgetsBudgetFilterExpressionOrOrTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -5635,9 +5635,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategories(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategories.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategories.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategories.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -5649,7 +5649,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5661,7 +5661,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5673,7 +5673,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5695,9 +5695,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensions.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensions.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensions.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
 
 ---
 
@@ -5709,7 +5709,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5721,7 +5721,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5733,7 +5733,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5755,9 +5755,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrOrTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -5769,7 +5769,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5781,7 +5781,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5793,7 +5793,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5815,9 +5815,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionOrTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -5829,7 +5829,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5841,7 +5841,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5853,7 +5853,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5875,9 +5875,9 @@ budgetsBudget.BudgetsBudgetFilterExpressionTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}. |
 
 ---
 
@@ -5889,7 +5889,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -5901,7 +5901,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -5913,7 +5913,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -5938,12 +5938,12 @@ budgetsBudget.BudgetsBudgetNotification(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.comparisonOperator">comparison_operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#comparison_operator BudgetsBudget#comparison_operator}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.notificationType">notification_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#notification_type BudgetsBudget#notification_type}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#threshold BudgetsBudget#threshold}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.thresholdType">threshold_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#threshold_type BudgetsBudget#threshold_type}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.subscriberEmailAddresses">subscriber_email_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#subscriber_email_addresses BudgetsBudget#subscriber_email_addresses}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.subscriberSnsTopicArns">subscriber_sns_topic_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#subscriber_sns_topic_arns BudgetsBudget#subscriber_sns_topic_arns}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.comparisonOperator">comparison_operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#comparison_operator BudgetsBudget#comparison_operator}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.notificationType">notification_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#notification_type BudgetsBudget#notification_type}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#threshold BudgetsBudget#threshold}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.thresholdType">threshold_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#threshold_type BudgetsBudget#threshold_type}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.subscriberEmailAddresses">subscriber_email_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#subscriber_email_addresses BudgetsBudget#subscriber_email_addresses}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.property.subscriberSnsTopicArns">subscriber_sns_topic_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#subscriber_sns_topic_arns BudgetsBudget#subscriber_sns_topic_arns}. |
 
 ---
 
@@ -5955,7 +5955,7 @@ comparison_operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#comparison_operator BudgetsBudget#comparison_operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#comparison_operator BudgetsBudget#comparison_operator}.
 
 ---
 
@@ -5967,7 +5967,7 @@ notification_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#notification_type BudgetsBudget#notification_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#notification_type BudgetsBudget#notification_type}.
 
 ---
 
@@ -5979,7 +5979,7 @@ threshold: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#threshold BudgetsBudget#threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#threshold BudgetsBudget#threshold}.
 
 ---
 
@@ -5991,7 +5991,7 @@ threshold_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#threshold_type BudgetsBudget#threshold_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#threshold_type BudgetsBudget#threshold_type}.
 
 ---
 
@@ -6003,7 +6003,7 @@ subscriber_email_addresses: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#subscriber_email_addresses BudgetsBudget#subscriber_email_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#subscriber_email_addresses BudgetsBudget#subscriber_email_addresses}.
 
 ---
 
@@ -6015,7 +6015,7 @@ subscriber_sns_topic_arns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#subscriber_sns_topic_arns BudgetsBudget#subscriber_sns_topic_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#subscriber_sns_topic_arns BudgetsBudget#subscriber_sns_topic_arns}.
 
 ---
 
@@ -6037,9 +6037,9 @@ budgetsBudget.BudgetsBudgetPlannedLimit(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit.property.amount">amount</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#amount BudgetsBudget#amount}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit.property.startTime">start_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#start_time BudgetsBudget#start_time}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#unit BudgetsBudget#unit}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit.property.amount">amount</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#amount BudgetsBudget#amount}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit.property.startTime">start_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#start_time BudgetsBudget#start_time}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#unit BudgetsBudget#unit}. |
 
 ---
 
@@ -6051,7 +6051,7 @@ amount: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#amount BudgetsBudget#amount}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#amount BudgetsBudget#amount}.
 
 ---
 
@@ -6063,7 +6063,7 @@ start_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#start_time BudgetsBudget#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#start_time BudgetsBudget#start_time}.
 
 ---
 
@@ -6075,7 +6075,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#unit BudgetsBudget#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#unit BudgetsBudget#unit}.
 
 ---
 
@@ -6630,7 +6630,7 @@ def put_historical_options(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}.
 
 ---
 
@@ -8988,7 +8988,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -8996,7 +8996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -9004,7 +9004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -9022,7 +9022,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -9030,7 +9030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -9038,7 +9038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -9056,7 +9056,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -9064,7 +9064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -9072,7 +9072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -11401,7 +11401,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -11409,7 +11409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -11417,7 +11417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -11435,7 +11435,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -11443,7 +11443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -11451,7 +11451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -11469,7 +11469,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -11477,7 +11477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -11485,7 +11485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -13126,7 +13126,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -13134,7 +13134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -13142,7 +13142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -13160,7 +13160,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -13168,7 +13168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -13176,7 +13176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -13194,7 +13194,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -13202,7 +13202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -13210,7 +13210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -13993,7 +13993,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -14001,7 +14001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -14009,7 +14009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -14027,7 +14027,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -14035,7 +14035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -14043,7 +14043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -14063,7 +14063,7 @@ def put_not(
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -14073,7 +14073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -14083,7 +14083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -14115,7 +14115,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -14123,7 +14123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -14131,7 +14131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -16564,7 +16564,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -16572,7 +16572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -16580,7 +16580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -16598,7 +16598,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -16606,7 +16606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -16614,7 +16614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -16632,7 +16632,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -16640,7 +16640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -16648,7 +16648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -18807,7 +18807,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -18815,7 +18815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -18823,7 +18823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -18841,7 +18841,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -18849,7 +18849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -18857,7 +18857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -18875,7 +18875,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -18883,7 +18883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -18891,7 +18891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -20532,7 +20532,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -20540,7 +20540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -20548,7 +20548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -20566,7 +20566,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -20574,7 +20574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -20582,7 +20582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -20600,7 +20600,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -20608,7 +20608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -20616,7 +20616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -21379,7 +21379,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -21387,7 +21387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -21395,7 +21395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -21413,7 +21413,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -21421,7 +21421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -21429,7 +21429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -21449,7 +21449,7 @@ def put_not(
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -21459,7 +21459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -21469,7 +21469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -21501,7 +21501,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -21509,7 +21509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -21517,7 +21517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -23242,7 +23242,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -23250,7 +23250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -23258,7 +23258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -23276,7 +23276,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -23284,7 +23284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -23292,7 +23292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -23310,7 +23310,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -23318,7 +23318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -23326,7 +23326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -25655,7 +25655,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -25663,7 +25663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -25671,7 +25671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -25689,7 +25689,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -25697,7 +25697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -25705,7 +25705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -25723,7 +25723,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -25731,7 +25731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -25739,7 +25739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -27380,7 +27380,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -27388,7 +27388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -27396,7 +27396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -27414,7 +27414,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -27422,7 +27422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -27430,7 +27430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -27448,7 +27448,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -27456,7 +27456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -27464,7 +27464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -28247,7 +28247,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -28255,7 +28255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -28263,7 +28263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -28281,7 +28281,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -28289,7 +28289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -28297,7 +28297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -28317,7 +28317,7 @@ def put_not(
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -28327,7 +28327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -28337,7 +28337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -28369,7 +28369,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -28377,7 +28377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -28385,7 +28385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -29232,7 +29232,7 @@ def put_cost_categories(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -29240,7 +29240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -29248,7 +29248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -29266,7 +29266,7 @@ def put_dimensions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -29274,7 +29274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 
@@ -29282,7 +29282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -29305,7 +29305,7 @@ def put_not(
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#and BudgetsBudget#and}
 
 ---
 
@@ -29315,7 +29315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cost_categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
 
 ---
 
@@ -29325,7 +29325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
 
 ---
 
@@ -29335,7 +29335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#not BudgetsBudget#not}
 
 ---
 
@@ -29345,7 +29345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#or BudgetsBudget#or}
 
 ---
 
@@ -29355,7 +29355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
 
 ---
 
@@ -29387,7 +29387,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#key BudgetsBudget#key}.
 
 ---
 
@@ -29395,7 +29395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}.
 
 ---
 
@@ -29403,7 +29403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/budgets_budget#values BudgetsBudget#values}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### FinspaceKxVolume <a name="FinspaceKxVolume" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolume.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the FinspaceKxVolume to import
 
 The id of the existing FinspaceKxVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1143,17 +1143,17 @@ new FinspaceKxVolumeConfig {
 | <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.availabilityZones">AvailabilityZones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#availability_zones FinspaceKxVolume#availability_zones}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.azMode">AzMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#az_mode FinspaceKxVolume#az_mode}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.environmentId">EnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#environment_id FinspaceKxVolume#environment_id}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#name FinspaceKxVolume#name}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#type FinspaceKxVolume#type}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#description FinspaceKxVolume#description}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#id FinspaceKxVolume#id}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.availabilityZones">AvailabilityZones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#availability_zones FinspaceKxVolume#availability_zones}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.azMode">AzMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#az_mode FinspaceKxVolume#az_mode}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.environmentId">EnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#environment_id FinspaceKxVolume#environment_id}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#name FinspaceKxVolume#name}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#type FinspaceKxVolume#type}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#description FinspaceKxVolume#description}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#id FinspaceKxVolume#id}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.nas1Configuration">Nas1Configuration</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeNas1Configuration">FinspaceKxVolumeNas1Configuration</a>[]</code> | nas1_configuration block. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#tags FinspaceKxVolume#tags}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#tags_all FinspaceKxVolume#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#tags FinspaceKxVolume#tags}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#tags_all FinspaceKxVolume#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeTimeouts">FinspaceKxVolumeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1236,7 +1236,7 @@ public string[] AvailabilityZones { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#availability_zones FinspaceKxVolume#availability_zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#availability_zones FinspaceKxVolume#availability_zones}.
 
 ---
 
@@ -1248,7 +1248,7 @@ public string AzMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#az_mode FinspaceKxVolume#az_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#az_mode FinspaceKxVolume#az_mode}.
 
 ---
 
@@ -1260,7 +1260,7 @@ public string EnvironmentId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#environment_id FinspaceKxVolume#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#environment_id FinspaceKxVolume#environment_id}.
 
 ---
 
@@ -1272,7 +1272,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#name FinspaceKxVolume#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#name FinspaceKxVolume#name}.
 
 ---
 
@@ -1284,7 +1284,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#type FinspaceKxVolume#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#type FinspaceKxVolume#type}.
 
 ---
 
@@ -1296,7 +1296,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#description FinspaceKxVolume#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#description FinspaceKxVolume#description}.
 
 ---
 
@@ -1308,7 +1308,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#id FinspaceKxVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#id FinspaceKxVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1325,7 +1325,7 @@ public IResolvable|FinspaceKxVolumeNas1Configuration[] Nas1Configuration { get; 
 
 nas1_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#nas1_configuration FinspaceKxVolume#nas1_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#nas1_configuration FinspaceKxVolume#nas1_configuration}
 
 ---
 
@@ -1339,7 +1339,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#region FinspaceKxVolume#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#region FinspaceKxVolume#region}
 
 ---
 
@@ -1351,7 +1351,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#tags FinspaceKxVolume#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#tags FinspaceKxVolume#tags}.
 
 ---
 
@@ -1363,7 +1363,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#tags_all FinspaceKxVolume#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#tags_all FinspaceKxVolume#tags_all}.
 
 ---
 
@@ -1377,7 +1377,7 @@ public FinspaceKxVolumeTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#timeouts FinspaceKxVolume#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#timeouts FinspaceKxVolume#timeouts}
 
 ---
 
@@ -1398,8 +1398,8 @@ new FinspaceKxVolumeNas1Configuration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeNas1Configuration.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#size FinspaceKxVolume#size}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeNas1Configuration.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#type FinspaceKxVolume#type}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeNas1Configuration.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#size FinspaceKxVolume#size}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeNas1Configuration.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#type FinspaceKxVolume#type}. |
 
 ---
 
@@ -1411,7 +1411,7 @@ public double Size { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#size FinspaceKxVolume#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#size FinspaceKxVolume#size}.
 
 ---
 
@@ -1423,7 +1423,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#type FinspaceKxVolume#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#type FinspaceKxVolume#type}.
 
 ---
 
@@ -1445,9 +1445,9 @@ new FinspaceKxVolumeTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#create FinspaceKxVolume#create}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#delete FinspaceKxVolume#delete}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#update FinspaceKxVolume#update}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#create FinspaceKxVolume#create}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#delete FinspaceKxVolume#delete}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#update FinspaceKxVolume#update}. |
 
 ---
 
@@ -1459,7 +1459,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#create FinspaceKxVolume#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#create FinspaceKxVolume#create}.
 
 ---
 
@@ -1471,7 +1471,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#delete FinspaceKxVolume#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#delete FinspaceKxVolume#delete}.
 
 ---
 
@@ -1483,7 +1483,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/finspace_kx_volume#update FinspaceKxVolume#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/finspace_kx_volume#update FinspaceKxVolume#update}.
 
 ---
 

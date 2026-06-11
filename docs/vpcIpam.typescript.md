@@ -4,7 +4,7 @@
 
 ### VpcIpam <a name="VpcIpam" id="@cdktn/provider-aws.vpcIpam.VpcIpam"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam aws_vpc_ipam}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam aws_vpc_ipam}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpam.VpcIpam.Initializer"></a>
 
@@ -585,7 +585,7 @@ The construct id used in the generated config for the VpcIpam to import.
 
 The id of the existing VpcIpam that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1110,15 +1110,15 @@ const vpcIpamConfig: vpcIpam.VpcIpamConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.operatingRegions">operatingRegions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.vpcIpam.VpcIpamOperatingRegions">VpcIpamOperatingRegions</a>[]</code> | operating_regions block. |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.cascade">cascade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#cascade VpcIpam#cascade}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#description VpcIpam#description}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.enablePrivateGua">enablePrivateGua</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#enable_private_gua VpcIpam#enable_private_gua}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#id VpcIpam#id}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.meteredAccount">meteredAccount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#metered_account VpcIpam#metered_account}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.cascade">cascade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#cascade VpcIpam#cascade}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#description VpcIpam#description}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.enablePrivateGua">enablePrivateGua</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#enable_private_gua VpcIpam#enable_private_gua}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#id VpcIpam#id}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.meteredAccount">meteredAccount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#metered_account VpcIpam#metered_account}. |
 | <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#tags VpcIpam#tags}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#tags_all VpcIpam#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.tier">tier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#tier VpcIpam#tier}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#tags VpcIpam#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#tags_all VpcIpam#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.tier">tier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#tier VpcIpam#tier}. |
 | <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamTimeouts">VpcIpamTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1203,7 +1203,7 @@ public readonly operatingRegions: IResolvable | VpcIpamOperatingRegions[];
 
 operating_regions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#operating_regions VpcIpam#operating_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#operating_regions VpcIpam#operating_regions}
 
 ---
 
@@ -1215,7 +1215,7 @@ public readonly cascade: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#cascade VpcIpam#cascade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#cascade VpcIpam#cascade}.
 
 ---
 
@@ -1227,7 +1227,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#description VpcIpam#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#description VpcIpam#description}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly enablePrivateGua: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#enable_private_gua VpcIpam#enable_private_gua}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#enable_private_gua VpcIpam#enable_private_gua}.
 
 ---
 
@@ -1251,7 +1251,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#id VpcIpam#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#id VpcIpam#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1266,7 @@ public readonly meteredAccount: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#metered_account VpcIpam#metered_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#metered_account VpcIpam#metered_account}.
 
 ---
 
@@ -1280,7 +1280,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#region VpcIpam#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#region VpcIpam#region}
 
 ---
 
@@ -1292,7 +1292,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#tags VpcIpam#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#tags VpcIpam#tags}.
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#tags_all VpcIpam#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#tags_all VpcIpam#tags_all}.
 
 ---
 
@@ -1316,7 +1316,7 @@ public readonly tier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#tier VpcIpam#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#tier VpcIpam#tier}.
 
 ---
 
@@ -1330,7 +1330,7 @@ public readonly timeouts: VpcIpamTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#timeouts VpcIpam#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#timeouts VpcIpam#timeouts}
 
 ---
 
@@ -1348,7 +1348,7 @@ const vpcIpamOperatingRegions: vpcIpam.VpcIpamOperatingRegions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamOperatingRegions.property.regionName">regionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#region_name VpcIpam#region_name}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamOperatingRegions.property.regionName">regionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#region_name VpcIpam#region_name}. |
 
 ---
 
@@ -1360,7 +1360,7 @@ public readonly regionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#region_name VpcIpam#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#region_name VpcIpam#region_name}.
 
 ---
 
@@ -1378,9 +1378,9 @@ const vpcIpamTimeouts: vpcIpam.VpcIpamTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#create VpcIpam#create}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#delete VpcIpam#delete}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#update VpcIpam#update}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#create VpcIpam#create}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#delete VpcIpam#delete}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpam.VpcIpamTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#update VpcIpam#update}. |
 
 ---
 
@@ -1392,7 +1392,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#create VpcIpam#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#create VpcIpam#create}.
 
 ---
 
@@ -1404,7 +1404,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#delete VpcIpam#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#delete VpcIpam#delete}.
 
 ---
 
@@ -1416,7 +1416,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/vpc_ipam#update VpcIpam#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/vpc_ipam#update VpcIpam#update}.
 
 ---
 
