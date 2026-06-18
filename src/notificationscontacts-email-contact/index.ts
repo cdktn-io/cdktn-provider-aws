@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/notificationscontacts_email_contact
+// https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/notificationscontacts_email_contact
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface NotificationscontactsEmailContactConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/notificationscontacts_email_contact#email_address NotificationscontactsEmailContact#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/notificationscontacts_email_contact#email_address NotificationscontactsEmailContact#email_address}
   */
   readonly emailAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/notificationscontacts_email_contact#name NotificationscontactsEmailContact#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/notificationscontacts_email_contact#name NotificationscontactsEmailContact#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/notificationscontacts_email_contact#tags NotificationscontactsEmailContact#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/notificationscontacts_email_contact#tags NotificationscontactsEmailContact#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/notificationscontacts_email_contact aws_notificationscontacts_email_contact}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/notificationscontacts_email_contact aws_notificationscontacts_email_contact}
 */
 export class NotificationscontactsEmailContact extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class NotificationscontactsEmailContact extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NotificationscontactsEmailContact resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationscontactsEmailContact to import
-  * @param importFromId The id of the existing NotificationscontactsEmailContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/notificationscontacts_email_contact#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationscontactsEmailContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/notificationscontacts_email_contact#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationscontactsEmailContact to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class NotificationscontactsEmailContact extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/notificationscontacts_email_contact aws_notificationscontacts_email_contact} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/notificationscontacts_email_contact aws_notificationscontacts_email_contact} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class NotificationscontactsEmailContact extends cdktn.TerraformResource {
       terraformResourceType: 'aws_notificationscontacts_email_contact',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.50.0',
+        providerVersion: '6.51.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

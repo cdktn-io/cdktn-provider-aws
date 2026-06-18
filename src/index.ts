@@ -191,6 +191,7 @@ export * as bedrockagentcoreAgentRuntimeEndpoint from './bedrockagentcore-agent-
 export * as bedrockagentcoreApiKeyCredentialProvider from './bedrockagentcore-api-key-credential-provider/index';
 export * as bedrockagentcoreBrowser from './bedrockagentcore-browser/index';
 export * as bedrockagentcoreCodeInterpreter from './bedrockagentcore-code-interpreter/index';
+export * as bedrockagentcoreEvaluator from './bedrockagentcore-evaluator/index';
 export * as bedrockagentcoreGateway from './bedrockagentcore-gateway/index';
 export * as bedrockagentcoreGatewayTarget from './bedrockagentcore-gateway-target/index';
 export * as bedrockagentcoreHarness from './bedrockagentcore-harness/index';
@@ -1321,6 +1322,7 @@ export * as sagemakerEndpointConfiguration from './sagemaker-endpoint-configurat
 export * as sagemakerFeatureGroup from './sagemaker-feature-group/index';
 export * as sagemakerFlowDefinition from './sagemaker-flow-definition/index';
 export * as sagemakerHub from './sagemaker-hub/index';
+export * as sagemakerHubContentReference from './sagemaker-hub-content-reference/index';
 export * as sagemakerHumanTaskUi from './sagemaker-human-task-ui/index';
 export * as sagemakerHyperParameterTuningJob from './sagemaker-hyper-parameter-tuning-job/index';
 export * as sagemakerImage from './sagemaker-image/index';

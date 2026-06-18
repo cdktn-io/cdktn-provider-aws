@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool
+// https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsVpcIpamPoolConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#allocation_resource_tags DataAwsVpcIpamPool#allocation_resource_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#allocation_resource_tags DataAwsVpcIpamPool#allocation_resource_tags}
   */
   readonly allocationResourceTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#id DataAwsVpcIpamPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#id DataAwsVpcIpamPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#ipam_pool_id DataAwsVpcIpamPool#ipam_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#ipam_pool_id DataAwsVpcIpamPool#ipam_pool_id}
   */
   readonly ipamPoolId?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#region DataAwsVpcIpamPool#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#region DataAwsVpcIpamPool#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#tags DataAwsVpcIpamPool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#tags DataAwsVpcIpamPool#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#filter DataAwsVpcIpamPool#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#filter DataAwsVpcIpamPool#filter}
   */
   readonly filter?: DataAwsVpcIpamPoolFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#timeouts DataAwsVpcIpamPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#timeouts DataAwsVpcIpamPool#timeouts}
   */
   readonly timeouts?: DataAwsVpcIpamPoolTimeouts;
 }
@@ -142,11 +142,11 @@ export class DataAwsVpcIpamPoolSourceResourceList extends cdktn.ComplexList {
 }
 export interface DataAwsVpcIpamPoolFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#name DataAwsVpcIpamPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#name DataAwsVpcIpamPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#values DataAwsVpcIpamPool#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#values DataAwsVpcIpamPool#values}
   */
   readonly values: string[];
 }
@@ -285,7 +285,7 @@ export class DataAwsVpcIpamPoolFilterList extends cdktn.ComplexList {
 }
 export interface DataAwsVpcIpamPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#read DataAwsVpcIpamPool#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#read DataAwsVpcIpamPool#read}
   */
   readonly read?: string;
 }
@@ -379,7 +379,7 @@ export class DataAwsVpcIpamPoolTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool aws_vpc_ipam_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool aws_vpc_ipam_pool}
 */
 export class DataAwsVpcIpamPool extends cdktn.TerraformDataSource {
 
@@ -395,7 +395,7 @@ export class DataAwsVpcIpamPool extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsVpcIpamPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsVpcIpamPool to import
-  * @param importFromId The id of the existing DataAwsVpcIpamPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsVpcIpamPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsVpcIpamPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -407,7 +407,7 @@ export class DataAwsVpcIpamPool extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/vpc_ipam_pool aws_vpc_ipam_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/vpc_ipam_pool aws_vpc_ipam_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -418,7 +418,7 @@ export class DataAwsVpcIpamPool extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_vpc_ipam_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.50.0',
+        providerVersion: '6.51.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
