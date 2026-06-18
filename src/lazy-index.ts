@@ -191,6 +191,7 @@ Object.defineProperty(exports, 'bedrockagentcoreAgentRuntimeEndpoint', { get: fu
 Object.defineProperty(exports, 'bedrockagentcoreApiKeyCredentialProvider', { get: function () { return require('./bedrockagentcore-api-key-credential-provider'); } });
 Object.defineProperty(exports, 'bedrockagentcoreBrowser', { get: function () { return require('./bedrockagentcore-browser'); } });
 Object.defineProperty(exports, 'bedrockagentcoreCodeInterpreter', { get: function () { return require('./bedrockagentcore-code-interpreter'); } });
+Object.defineProperty(exports, 'bedrockagentcoreEvaluator', { get: function () { return require('./bedrockagentcore-evaluator'); } });
 Object.defineProperty(exports, 'bedrockagentcoreGateway', { get: function () { return require('./bedrockagentcore-gateway'); } });
 Object.defineProperty(exports, 'bedrockagentcoreGatewayTarget', { get: function () { return require('./bedrockagentcore-gateway-target'); } });
 Object.defineProperty(exports, 'bedrockagentcoreHarness', { get: function () { return require('./bedrockagentcore-harness'); } });
@@ -1321,6 +1322,7 @@ Object.defineProperty(exports, 'sagemakerEndpointConfiguration', { get: function
 Object.defineProperty(exports, 'sagemakerFeatureGroup', { get: function () { return require('./sagemaker-feature-group'); } });
 Object.defineProperty(exports, 'sagemakerFlowDefinition', { get: function () { return require('./sagemaker-flow-definition'); } });
 Object.defineProperty(exports, 'sagemakerHub', { get: function () { return require('./sagemaker-hub'); } });
+Object.defineProperty(exports, 'sagemakerHubContentReference', { get: function () { return require('./sagemaker-hub-content-reference'); } });
 Object.defineProperty(exports, 'sagemakerHumanTaskUi', { get: function () { return require('./sagemaker-human-task-ui'); } });
 Object.defineProperty(exports, 'sagemakerHyperParameterTuningJob', { get: function () { return require('./sagemaker-hyper-parameter-tuning-job'); } });
 Object.defineProperty(exports, 'sagemakerImage', { get: function () { return require('./sagemaker-image'); } });

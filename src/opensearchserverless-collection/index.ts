@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection
+// https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,61 +15,65 @@ export interface OpensearchserverlessCollectionConfig extends cdktn.TerraformMet
   /**
   * Name of the collection group to associate with this collection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#collection_group_name OpensearchserverlessCollection#collection_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#collection_group_name OpensearchserverlessCollection#collection_group_name}
   */
   readonly collectionGroupName?: string;
   /**
   * Description of the collection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#description OpensearchserverlessCollection#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#description OpensearchserverlessCollection#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#encryption_config OpensearchserverlessCollection#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#encryption_config OpensearchserverlessCollection#encryption_config}
   */
   readonly encryptionConfig?: OpensearchserverlessCollectionEncryptionConfig[] | cdktn.IResolvable;
   /**
   * Name of the collection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#name OpensearchserverlessCollection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#name OpensearchserverlessCollection#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#region OpensearchserverlessCollection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#region OpensearchserverlessCollection#region}
   */
   readonly region?: string;
   /**
   * Indicates whether standby replicas should be used for a collection. One of `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#standby_replicas OpensearchserverlessCollection#standby_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#standby_replicas OpensearchserverlessCollection#standby_replicas}
   */
   readonly standbyReplicas?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * Type of collection. One of `SEARCH`, `TIMESERIES`, or `VECTORSEARCH`. Defaults to `TIMESERIES`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#type OpensearchserverlessCollection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#type OpensearchserverlessCollection#type}
   */
   readonly type?: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#vector_options OpensearchserverlessCollection#vector_options}
+  */
+  readonly vectorOptions?: OpensearchserverlessCollectionVectorOptions[] | cdktn.IResolvable;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#timeouts OpensearchserverlessCollection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#timeouts OpensearchserverlessCollection#timeouts}
   */
   readonly timeouts?: OpensearchserverlessCollectionTimeouts;
 }
 export interface OpensearchserverlessCollectionEncryptionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#aws_owned_key OpensearchserverlessCollection#aws_owned_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#aws_owned_key OpensearchserverlessCollection#aws_owned_key}
   */
   readonly awsOwnedKey?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#kms_key_arn OpensearchserverlessCollection#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#kms_key_arn OpensearchserverlessCollection#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
 }
@@ -212,17 +216,133 @@ export class OpensearchserverlessCollectionEncryptionConfigList extends cdktn.Co
     return new OpensearchserverlessCollectionEncryptionConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface OpensearchserverlessCollectionVectorOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#serverless_vector_acceleration OpensearchserverlessCollection#serverless_vector_acceleration}
+  */
+  readonly serverlessVectorAcceleration?: string;
+}
+
+export function opensearchserverlessCollectionVectorOptionsToTerraform(struct?: OpensearchserverlessCollectionVectorOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    serverless_vector_acceleration: cdktn.stringToTerraform(struct!.serverlessVectorAcceleration),
+  }
+}
+
+
+export function opensearchserverlessCollectionVectorOptionsToHclTerraform(struct?: OpensearchserverlessCollectionVectorOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    serverless_vector_acceleration: {
+      value: cdktn.stringToHclTerraform(struct!.serverlessVectorAcceleration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class OpensearchserverlessCollectionVectorOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OpensearchserverlessCollectionVectorOptions | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._serverlessVectorAcceleration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverlessVectorAcceleration = this._serverlessVectorAcceleration;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OpensearchserverlessCollectionVectorOptions | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._serverlessVectorAcceleration = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._serverlessVectorAcceleration = value.serverlessVectorAcceleration;
+    }
+  }
+
+  // serverless_vector_acceleration - computed: true, optional: true, required: false
+  private _serverlessVectorAcceleration?: string; 
+  public get serverlessVectorAcceleration() {
+    return this.getStringAttribute('serverless_vector_acceleration');
+  }
+  public set serverlessVectorAcceleration(value: string) {
+    this._serverlessVectorAcceleration = value;
+  }
+  public resetServerlessVectorAcceleration() {
+    this._serverlessVectorAcceleration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverlessVectorAccelerationInput() {
+    return this._serverlessVectorAcceleration;
+  }
+}
+
+export class OpensearchserverlessCollectionVectorOptionsList extends cdktn.ComplexList {
+  public internalValue? : OpensearchserverlessCollectionVectorOptions[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OpensearchserverlessCollectionVectorOptionsOutputReference {
+    return new OpensearchserverlessCollectionVectorOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface OpensearchserverlessCollectionTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#create OpensearchserverlessCollection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#create OpensearchserverlessCollection#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#delete OpensearchserverlessCollection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#delete OpensearchserverlessCollection#delete}
   */
   readonly delete?: string;
 }
@@ -345,7 +465,7 @@ export class OpensearchserverlessCollectionTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection}
 */
 export class OpensearchserverlessCollection extends cdktn.TerraformResource {
 
@@ -361,7 +481,7 @@ export class OpensearchserverlessCollection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OpensearchserverlessCollection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchserverlessCollection to import
-  * @param importFromId The id of the existing OpensearchserverlessCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpensearchserverlessCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchserverlessCollection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -373,7 +493,7 @@ export class OpensearchserverlessCollection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -384,7 +504,7 @@ export class OpensearchserverlessCollection extends cdktn.TerraformResource {
       terraformResourceType: 'aws_opensearchserverless_collection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.50.0',
+        providerVersion: '6.51.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -403,6 +523,7 @@ export class OpensearchserverlessCollection extends cdktn.TerraformResource {
     this._standbyReplicas = config.standbyReplicas;
     this._tags = config.tags;
     this._type = config.type;
+    this._vectorOptions.internalValue = config.vectorOptions;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -566,6 +687,22 @@ export class OpensearchserverlessCollection extends cdktn.TerraformResource {
     return this._type;
   }
 
+  // vector_options - computed: true, optional: true, required: false
+  private _vectorOptions = new OpensearchserverlessCollectionVectorOptionsList(this, "vector_options", false);
+  public get vectorOptions() {
+    return this._vectorOptions;
+  }
+  public putVectorOptions(value: OpensearchserverlessCollectionVectorOptions[] | cdktn.IResolvable) {
+    this._vectorOptions.internalValue = value;
+  }
+  public resetVectorOptions() {
+    this._vectorOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vectorOptionsInput() {
+    return this._vectorOptions.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new OpensearchserverlessCollectionTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -596,6 +733,7 @@ export class OpensearchserverlessCollection extends cdktn.TerraformResource {
       standby_replicas: cdktn.stringToTerraform(this._standbyReplicas),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       type: cdktn.stringToTerraform(this._type),
+      vector_options: cdktn.listMapper(opensearchserverlessCollectionVectorOptionsToTerraform, false)(this._vectorOptions.internalValue),
       timeouts: opensearchserverlessCollectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -649,6 +787,12 @@ export class OpensearchserverlessCollection extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      vector_options: {
+        value: cdktn.listMapperHcl(opensearchserverlessCollectionVectorOptionsToHclTerraform, false)(this._vectorOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchserverlessCollectionVectorOptionsList",
       },
       timeouts: {
         value: opensearchserverlessCollectionTimeoutsToHclTerraform(this._timeouts.internalValue),

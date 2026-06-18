@@ -1,3 +1,3 @@
 # `aws_workspaces_workspace`
 
-Refer to the Terraform Registry for docs: [`aws_workspaces_workspace`](https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/workspaces_workspace).
+Refer to the Terraform Registry for docs: [`aws_workspaces_workspace`](https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/workspaces_workspace).

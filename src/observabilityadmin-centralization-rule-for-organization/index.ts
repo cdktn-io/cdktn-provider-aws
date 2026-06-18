@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization
+// https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface ObservabilityadminCentralizationRuleForOrganizationConfig exten
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#region ObservabilityadminCentralizationRuleForOrganization#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#region ObservabilityadminCentralizationRuleForOrganization#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#rule_name ObservabilityadminCentralizationRuleForOrganization#rule_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#rule_name ObservabilityadminCentralizationRuleForOrganization#rule_name}
   */
   readonly ruleName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#tags ObservabilityadminCentralizationRuleForOrganization#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#tags ObservabilityadminCentralizationRuleForOrganization#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#rule ObservabilityadminCentralizationRuleForOrganization#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#rule ObservabilityadminCentralizationRuleForOrganization#rule}
   */
   readonly rule?: ObservabilityadminCentralizationRuleForOrganizationRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#timeouts ObservabilityadminCentralizationRuleForOrganization#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#timeouts ObservabilityadminCentralizationRuleForOrganization#timeouts}
   */
   readonly timeouts?: ObservabilityadminCentralizationRuleForOrganizationTimeouts;
 }
 export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#kms_key_arn ObservabilityadminCentralizationRuleForOrganization#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#kms_key_arn ObservabilityadminCentralizationRuleForOrganization#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#region ObservabilityadminCentralizationRuleForOrganization#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#region ObservabilityadminCentralizationRuleForOrganization#region}
   */
   readonly region?: string;
 }
@@ -190,7 +190,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
 }
 export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogGroupNameConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#log_group_name_pattern ObservabilityadminCentralizationRuleForOrganization#log_group_name_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#log_group_name_pattern ObservabilityadminCentralizationRuleForOrganization#log_group_name_pattern}
   */
   readonly logGroupNamePattern: string;
 }
@@ -303,15 +303,15 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
 }
 export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#encryption_conflict_resolution_strategy ObservabilityadminCentralizationRuleForOrganization#encryption_conflict_resolution_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#encryption_conflict_resolution_strategy ObservabilityadminCentralizationRuleForOrganization#encryption_conflict_resolution_strategy}
   */
   readonly encryptionConflictResolutionStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#encryption_strategy ObservabilityadminCentralizationRuleForOrganization#encryption_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#encryption_strategy ObservabilityadminCentralizationRuleForOrganization#encryption_strategy}
   */
   readonly encryptionStrategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#kms_key_arn ObservabilityadminCentralizationRuleForOrganization#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#kms_key_arn ObservabilityadminCentralizationRuleForOrganization#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
 }
@@ -484,19 +484,19 @@ export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestinat
   /**
   * backup_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#backup_configuration ObservabilityadminCentralizationRuleForOrganization#backup_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#backup_configuration ObservabilityadminCentralizationRuleForOrganization#backup_configuration}
   */
   readonly backupConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration[] | cdktn.IResolvable;
   /**
   * log_group_name_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#log_group_name_configuration ObservabilityadminCentralizationRuleForOrganization#log_group_name_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#log_group_name_configuration ObservabilityadminCentralizationRuleForOrganization#log_group_name_configuration}
   */
   readonly logGroupNameConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogGroupNameConfiguration[] | cdktn.IResolvable;
   /**
   * logs_encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#logs_encryption_configuration ObservabilityadminCentralizationRuleForOrganization#logs_encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#logs_encryption_configuration ObservabilityadminCentralizationRuleForOrganization#logs_encryption_configuration}
   */
   readonly logsEncryptionConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration[] | cdktn.IResolvable;
 }
@@ -668,21 +668,258 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationD
     return new ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#region ObservabilityadminCentralizationRuleForOrganization#region}
+  */
+  readonly region: string;
+}
+
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    region: cdktn.stringToTerraform(struct!.region),
+  }
+}
+
+
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    region: {
+      value: cdktn.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._region = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._region = value.region;
+    }
+  }
+
+  // region - computed: false, optional: false, required: true
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+}
+
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfigurationOutputReference {
+    return new ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfiguration {
+  /**
+  * backup_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#backup_configuration ObservabilityadminCentralizationRuleForOrganization#backup_configuration}
+  */
+  readonly backupConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfiguration[] | cdktn.IResolvable;
+}
+
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    backup_configuration: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfigurationToTerraform, true)(struct!.backupConfiguration),
+  }
+}
+
+
+export function observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    backup_configuration: {
+      value: cdktn.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfigurationToHclTerraform, true)(struct!.backupConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backupConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupConfiguration = this._backupConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._backupConfiguration.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._backupConfiguration.internalValue = value.backupConfiguration;
+    }
+  }
+
+  // backup_configuration - computed: false, optional: true, required: false
+  private _backupConfiguration = new ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfigurationList(this, "backup_configuration", false);
+  public get backupConfiguration() {
+    return this._backupConfiguration;
+  }
+  public putBackupConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationBackupConfiguration[] | cdktn.IResolvable) {
+    this._backupConfiguration.internalValue = value;
+  }
+  public resetBackupConfiguration() {
+    this._backupConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupConfigurationInput() {
+    return this._backupConfiguration.internalValue;
+  }
+}
+
+export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationOutputReference {
+    return new ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObservabilityadminCentralizationRuleForOrganizationRuleDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#account ObservabilityadminCentralizationRuleForOrganization#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#account ObservabilityadminCentralizationRuleForOrganization#account}
   */
   readonly account: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#region ObservabilityadminCentralizationRuleForOrganization#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#region ObservabilityadminCentralizationRuleForOrganization#region}
   */
   readonly region: string;
   /**
   * destination_logs_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#destination_logs_configuration ObservabilityadminCentralizationRuleForOrganization#destination_logs_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#destination_logs_configuration ObservabilityadminCentralizationRuleForOrganization#destination_logs_configuration}
   */
   readonly destinationLogsConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration[] | cdktn.IResolvable;
+  /**
+  * destination_metrics_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#destination_metrics_configuration ObservabilityadminCentralizationRuleForOrganization#destination_metrics_configuration}
+  */
+  readonly destinationMetricsConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfiguration[] | cdktn.IResolvable;
 }
 
 export function observabilityadminCentralizationRuleForOrganizationRuleDestinationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleDestination | cdktn.IResolvable): any {
@@ -694,6 +931,7 @@ export function observabilityadminCentralizationRuleForOrganizationRuleDestinati
     account: cdktn.stringToTerraform(struct!.account),
     region: cdktn.stringToTerraform(struct!.region),
     destination_logs_configuration: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationToTerraform, true)(struct!.destinationLogsConfiguration),
+    destination_metrics_configuration: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationToTerraform, true)(struct!.destinationMetricsConfiguration),
   }
 }
 
@@ -721,6 +959,12 @@ export function observabilityadminCentralizationRuleForOrganizationRuleDestinati
       isBlock: true,
       type: "list",
       storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationList",
+    },
+    destination_metrics_configuration: {
+      value: cdktn.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationToHclTerraform, true)(struct!.destinationMetricsConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationList",
     },
   };
 
@@ -760,6 +1004,10 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationO
       hasAnyValues = true;
       internalValueResult.destinationLogsConfiguration = this._destinationLogsConfiguration?.internalValue;
     }
+    if (this._destinationMetricsConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationMetricsConfiguration = this._destinationMetricsConfiguration?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -770,6 +1018,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationO
       this._account = undefined;
       this._region = undefined;
       this._destinationLogsConfiguration.internalValue = undefined;
+      this._destinationMetricsConfiguration.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -781,6 +1030,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationO
       this._account = value.account;
       this._region = value.region;
       this._destinationLogsConfiguration.internalValue = value.destinationLogsConfiguration;
+      this._destinationMetricsConfiguration.internalValue = value.destinationMetricsConfiguration;
     }
   }
 
@@ -825,6 +1075,22 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationO
   public get destinationLogsConfigurationInput() {
     return this._destinationLogsConfiguration.internalValue;
   }
+
+  // destination_metrics_configuration - computed: false, optional: true, required: false
+  private _destinationMetricsConfiguration = new ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfigurationList(this, "destination_metrics_configuration", false);
+  public get destinationMetricsConfiguration() {
+    return this._destinationMetricsConfiguration;
+  }
+  public putDestinationMetricsConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationMetricsConfiguration[] | cdktn.IResolvable) {
+    this._destinationMetricsConfiguration.internalValue = value;
+  }
+  public resetDestinationMetricsConfiguration() {
+    this._destinationMetricsConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationMetricsConfigurationInput() {
+    return this._destinationMetricsConfiguration.internalValue;
+  }
 }
 
 export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationList extends cdktn.ComplexList {
@@ -848,15 +1114,15 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleDestinationL
 }
 export interface ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#data_source_selection_criteria ObservabilityadminCentralizationRuleForOrganization#data_source_selection_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#data_source_selection_criteria ObservabilityadminCentralizationRuleForOrganization#data_source_selection_criteria}
   */
   readonly dataSourceSelectionCriteria?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#encrypted_log_group_strategy ObservabilityadminCentralizationRuleForOrganization#encrypted_log_group_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#encrypted_log_group_strategy ObservabilityadminCentralizationRuleForOrganization#encrypted_log_group_strategy}
   */
   readonly encryptedLogGroupStrategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#log_group_selection_criteria ObservabilityadminCentralizationRuleForOrganization#log_group_selection_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#log_group_selection_criteria ObservabilityadminCentralizationRuleForOrganization#log_group_selection_criteria}
   */
   readonly logGroupSelectionCriteria?: string;
 }
@@ -1025,21 +1291,140 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceSource
     return new ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#metrics_selection_criteria ObservabilityadminCentralizationRuleForOrganization#metrics_selection_criteria}
+  */
+  readonly metricsSelectionCriteria: string;
+}
+
+export function observabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfigurationToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    metrics_selection_criteria: cdktn.stringToTerraform(struct!.metricsSelectionCriteria),
+  }
+}
+
+
+export function observabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfigurationToHclTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    metrics_selection_criteria: {
+      value: cdktn.stringToHclTerraform(struct!.metricsSelectionCriteria),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metricsSelectionCriteria !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricsSelectionCriteria = this._metricsSelectionCriteria;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._metricsSelectionCriteria = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._metricsSelectionCriteria = value.metricsSelectionCriteria;
+    }
+  }
+
+  // metrics_selection_criteria - computed: false, optional: false, required: true
+  private _metricsSelectionCriteria?: string; 
+  public get metricsSelectionCriteria() {
+    return this.getStringAttribute('metrics_selection_criteria');
+  }
+  public set metricsSelectionCriteria(value: string) {
+    this._metricsSelectionCriteria = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsSelectionCriteriaInput() {
+    return this._metricsSelectionCriteria;
+  }
+}
+
+export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfigurationOutputReference {
+    return new ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObservabilityadminCentralizationRuleForOrganizationRuleSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#regions ObservabilityadminCentralizationRuleForOrganization#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#regions ObservabilityadminCentralizationRuleForOrganization#regions}
   */
   readonly regions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#scope ObservabilityadminCentralizationRuleForOrganization#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#scope ObservabilityadminCentralizationRuleForOrganization#scope}
   */
   readonly scope: string;
   /**
   * source_logs_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#source_logs_configuration ObservabilityadminCentralizationRuleForOrganization#source_logs_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#source_logs_configuration ObservabilityadminCentralizationRuleForOrganization#source_logs_configuration}
   */
   readonly sourceLogsConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration[] | cdktn.IResolvable;
+  /**
+  * source_metrics_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#source_metrics_configuration ObservabilityadminCentralizationRuleForOrganization#source_metrics_configuration}
+  */
+  readonly sourceMetricsConfiguration?: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfiguration[] | cdktn.IResolvable;
 }
 
 export function observabilityadminCentralizationRuleForOrganizationRuleSourceToTerraform(struct?: ObservabilityadminCentralizationRuleForOrganizationRuleSource | cdktn.IResolvable): any {
@@ -1051,6 +1436,7 @@ export function observabilityadminCentralizationRuleForOrganizationRuleSourceToT
     regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.regions),
     scope: cdktn.stringToTerraform(struct!.scope),
     source_logs_configuration: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationToTerraform, true)(struct!.sourceLogsConfiguration),
+    source_metrics_configuration: cdktn.listMapper(observabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfigurationToTerraform, true)(struct!.sourceMetricsConfiguration),
   }
 }
 
@@ -1078,6 +1464,12 @@ export function observabilityadminCentralizationRuleForOrganizationRuleSourceToH
       isBlock: true,
       type: "list",
       storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationList",
+    },
+    source_metrics_configuration: {
+      value: cdktn.listMapperHcl(observabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfigurationToHclTerraform, true)(struct!.sourceMetricsConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfigurationList",
     },
   };
 
@@ -1117,6 +1509,10 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutput
       hasAnyValues = true;
       internalValueResult.sourceLogsConfiguration = this._sourceLogsConfiguration?.internalValue;
     }
+    if (this._sourceMetricsConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceMetricsConfiguration = this._sourceMetricsConfiguration?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1127,6 +1523,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutput
       this._regions = undefined;
       this._scope = undefined;
       this._sourceLogsConfiguration.internalValue = undefined;
+      this._sourceMetricsConfiguration.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1138,6 +1535,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutput
       this._regions = value.regions;
       this._scope = value.scope;
       this._sourceLogsConfiguration.internalValue = value.sourceLogsConfiguration;
+      this._sourceMetricsConfiguration.internalValue = value.sourceMetricsConfiguration;
     }
   }
 
@@ -1182,6 +1580,22 @@ export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutput
   public get sourceLogsConfigurationInput() {
     return this._sourceLogsConfiguration.internalValue;
   }
+
+  // source_metrics_configuration - computed: false, optional: true, required: false
+  private _sourceMetricsConfiguration = new ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfigurationList(this, "source_metrics_configuration", false);
+  public get sourceMetricsConfiguration() {
+    return this._sourceMetricsConfiguration;
+  }
+  public putSourceMetricsConfiguration(value: ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceMetricsConfiguration[] | cdktn.IResolvable) {
+    this._sourceMetricsConfiguration.internalValue = value;
+  }
+  public resetSourceMetricsConfiguration() {
+    this._sourceMetricsConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceMetricsConfigurationInput() {
+    return this._sourceMetricsConfiguration.internalValue;
+  }
 }
 
 export class ObservabilityadminCentralizationRuleForOrganizationRuleSourceList extends cdktn.ComplexList {
@@ -1207,13 +1621,13 @@ export interface ObservabilityadminCentralizationRuleForOrganizationRule {
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#destination ObservabilityadminCentralizationRuleForOrganization#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#destination ObservabilityadminCentralizationRuleForOrganization#destination}
   */
   readonly destination?: ObservabilityadminCentralizationRuleForOrganizationRuleDestination[] | cdktn.IResolvable;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#source ObservabilityadminCentralizationRuleForOrganization#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#source ObservabilityadminCentralizationRuleForOrganization#source}
   */
   readonly source?: ObservabilityadminCentralizationRuleForOrganizationRuleSource[] | cdktn.IResolvable;
 }
@@ -1360,13 +1774,13 @@ export interface ObservabilityadminCentralizationRuleForOrganizationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#create ObservabilityadminCentralizationRuleForOrganization#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#create ObservabilityadminCentralizationRuleForOrganization#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#update ObservabilityadminCentralizationRuleForOrganization#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#update ObservabilityadminCentralizationRuleForOrganization#update}
   */
   readonly update?: string;
 }
@@ -1489,7 +1903,7 @@ export class ObservabilityadminCentralizationRuleForOrganizationTimeoutsOutputRe
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization aws_observabilityadmin_centralization_rule_for_organization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization aws_observabilityadmin_centralization_rule_for_organization}
 */
 export class ObservabilityadminCentralizationRuleForOrganization extends cdktn.TerraformResource {
 
@@ -1505,7 +1919,7 @@ export class ObservabilityadminCentralizationRuleForOrganization extends cdktn.T
   * Generates CDKTN code for importing a ObservabilityadminCentralizationRuleForOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservabilityadminCentralizationRuleForOrganization to import
-  * @param importFromId The id of the existing ObservabilityadminCentralizationRuleForOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservabilityadminCentralizationRuleForOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservabilityadminCentralizationRuleForOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1517,7 +1931,7 @@ export class ObservabilityadminCentralizationRuleForOrganization extends cdktn.T
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/observabilityadmin_centralization_rule_for_organization aws_observabilityadmin_centralization_rule_for_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/observabilityadmin_centralization_rule_for_organization aws_observabilityadmin_centralization_rule_for_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1528,7 +1942,7 @@ export class ObservabilityadminCentralizationRuleForOrganization extends cdktn.T
       terraformResourceType: 'aws_observabilityadmin_centralization_rule_for_organization',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.50.0',
+        providerVersion: '6.51.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

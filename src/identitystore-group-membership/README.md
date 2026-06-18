@@ -1,3 +1,3 @@
 # `aws_identitystore_group_membership`
 
-Refer to the Terraform Registry for docs: [`aws_identitystore_group_membership`](https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/identitystore_group_membership).
+Refer to the Terraform Registry for docs: [`aws_identitystore_group_membership`](https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/identitystore_group_membership).

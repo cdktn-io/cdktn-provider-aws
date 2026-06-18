@@ -4,7 +4,7 @@
 
 ### IamPolicyAttachment <a name="IamPolicyAttachment" id="@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment aws_iam_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment aws_iam_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer"></a>
 
@@ -39,12 +39,12 @@ IamPolicyAttachment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#name IamPolicyAttachment#name}. |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.policyArn">policyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#policy_arn IamPolicyAttachment#policy_arn}. |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#groups IamPolicyAttachment#groups}. |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#id IamPolicyAttachment#id}. |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#roles IamPolicyAttachment#roles}. |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.users">users</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#users IamPolicyAttachment#users}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#name IamPolicyAttachment#name}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.policyArn">policyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#policy_arn IamPolicyAttachment#policy_arn}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#groups IamPolicyAttachment#groups}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#id IamPolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#roles IamPolicyAttachment#roles}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer.parameter.users">users</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#users IamPolicyAttachment#users}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#name IamPolicyAttachment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#name IamPolicyAttachment#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#policy_arn IamPolicyAttachment#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#policy_arn IamPolicyAttachment#policy_arn}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#groups IamPolicyAttachment#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#groups IamPolicyAttachment#groups}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#id IamPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#id IamPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#roles IamPolicyAttachment#roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#roles IamPolicyAttachment#roles}.
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#users IamPolicyAttachment#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#users IamPolicyAttachment#users}.
 
 ---
 
@@ -632,7 +632,7 @@ The construct id used in the generated config for the IamPolicyAttachment to imp
 
 The id of the existing IamPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,12 +994,12 @@ IamPolicyAttachmentConfig.builder()
 | <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#name IamPolicyAttachment#name}. |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.policyArn">policyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#policy_arn IamPolicyAttachment#policy_arn}. |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#groups IamPolicyAttachment#groups}. |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#id IamPolicyAttachment#id}. |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#roles IamPolicyAttachment#roles}. |
-| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.users">users</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#users IamPolicyAttachment#users}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#name IamPolicyAttachment#name}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.policyArn">policyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#policy_arn IamPolicyAttachment#policy_arn}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#groups IamPolicyAttachment#groups}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#id IamPolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#roles IamPolicyAttachment#roles}. |
+| <code><a href="#@cdktn/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.property.users">users</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#users IamPolicyAttachment#users}. |
 
 ---
 
@@ -1081,7 +1081,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#name IamPolicyAttachment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#name IamPolicyAttachment#name}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public java.lang.String getPolicyArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#policy_arn IamPolicyAttachment#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#policy_arn IamPolicyAttachment#policy_arn}.
 
 ---
 
@@ -1105,7 +1105,7 @@ public java.util.List<java.lang.String> getGroups();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#groups IamPolicyAttachment#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#groups IamPolicyAttachment#groups}.
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#id IamPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#id IamPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,7 +1132,7 @@ public java.util.List<java.lang.String> getRoles();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#roles IamPolicyAttachment#roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#roles IamPolicyAttachment#roles}.
 
 ---
 
@@ -1144,7 +1144,7 @@ public java.util.List<java.lang.String> getUsers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/iam_policy_attachment#users IamPolicyAttachment#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_policy_attachment#users IamPolicyAttachment#users}.
 
 ---
 
