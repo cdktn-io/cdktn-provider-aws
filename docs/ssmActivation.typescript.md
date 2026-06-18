@@ -4,7 +4,7 @@
 
 ### SsmActivation <a name="SsmActivation" id="@cdktn/provider-aws.ssmActivation.SsmActivation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation aws_ssm_activation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation aws_ssm_activation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmActivation.SsmActivation.Initializer"></a>
 
@@ -545,7 +545,7 @@ The construct id used in the generated config for the SsmActivation to import.
 
 The id of the existing SsmActivation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -992,15 +992,15 @@ const ssmActivationConfig: ssmActivation.SsmActivationConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.iamRole">iamRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#iam_role SsmActivation#iam_role}. |
-| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#description SsmActivation#description}. |
-| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.expirationDate">expirationDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#expiration_date SsmActivation#expiration_date}. |
-| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#id SsmActivation#id}. |
-| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#name SsmActivation#name}. |
+| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.iamRole">iamRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#iam_role SsmActivation#iam_role}. |
+| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#description SsmActivation#description}. |
+| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.expirationDate">expirationDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#expiration_date SsmActivation#expiration_date}. |
+| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#id SsmActivation#id}. |
+| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#name SsmActivation#name}. |
 | <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.registrationLimit">registrationLimit</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#registration_limit SsmActivation#registration_limit}. |
-| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#tags SsmActivation#tags}. |
-| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#tags_all SsmActivation#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.registrationLimit">registrationLimit</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#registration_limit SsmActivation#registration_limit}. |
+| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#tags SsmActivation#tags}. |
+| <code><a href="#@cdktn/provider-aws.ssmActivation.SsmActivationConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#tags_all SsmActivation#tags_all}. |
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly iamRole: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#iam_role SsmActivation#iam_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#iam_role SsmActivation#iam_role}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#description SsmActivation#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#description SsmActivation#description}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public readonly expirationDate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#expiration_date SsmActivation#expiration_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#expiration_date SsmActivation#expiration_date}.
 
 ---
 
@@ -1118,7 +1118,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#id SsmActivation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#id SsmActivation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1133,7 +1133,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#name SsmActivation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#name SsmActivation#name}.
 
 ---
 
@@ -1147,7 +1147,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#region SsmActivation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#region SsmActivation#region}
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly registrationLimit: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#registration_limit SsmActivation#registration_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#registration_limit SsmActivation#registration_limit}.
 
 ---
 
@@ -1171,7 +1171,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#tags SsmActivation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#tags SsmActivation#tags}.
 
 ---
 
@@ -1183,7 +1183,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ssm_activation#tags_all SsmActivation#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ssm_activation#tags_all SsmActivation#tags_all}.
 
 ---
 

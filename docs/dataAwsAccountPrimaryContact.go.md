@@ -4,7 +4,7 @@
 
 ### DataAwsAccountPrimaryContact <a name="DataAwsAccountPrimaryContact" id="@cdktn/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContact"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/account_primary_contact aws_account_primary_contact}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/account_primary_contact aws_account_primary_contact}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContact.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsAccountPrimaryConta
 
 The id of the existing DataAwsAccountPrimaryContact that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/account_primary_contact#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/account_primary_contact#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsaccountprimaryc
 | <code><a href="#@cdktn/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContactConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContactConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContactConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContactConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/account_primary_contact#account_id DataAwsAccountPrimaryContact#account_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContactConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/account_primary_contact#account_id DataAwsAccountPrimaryContact#account_id}. |
 
 ---
 
@@ -833,7 +833,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/account_primary_contact#account_id DataAwsAccountPrimaryContact#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/account_primary_contact#account_id DataAwsAccountPrimaryContact#account_id}.
 
 ---
 

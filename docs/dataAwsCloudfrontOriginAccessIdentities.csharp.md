@@ -4,7 +4,7 @@
 
 ### DataAwsCloudfrontOriginAccessIdentities <a name="DataAwsCloudfrontOriginAccessIdentities" id="@cdktn/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentities"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_access_identities aws_cloudfront_origin_access_identities}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/cloudfront_origin_access_identities aws_cloudfront_origin_access_identities}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentities.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsCloudfrontOriginAcc
 
 The id of the existing DataAwsCloudfrontOriginAccessIdentities that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_access_identities#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/cloudfront_origin_access_identities#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,8 +682,8 @@ new DataAwsCloudfrontOriginAccessIdentitiesConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentitiesConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentitiesConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentitiesConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentitiesConfig.property.comments">Comments</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_access_identities#comments DataAwsCloudfrontOriginAccessIdentities#comments}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentitiesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_access_identities#id DataAwsCloudfrontOriginAccessIdentities#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentitiesConfig.property.comments">Comments</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/cloudfront_origin_access_identities#comments DataAwsCloudfrontOriginAccessIdentities#comments}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentitiesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/cloudfront_origin_access_identities#id DataAwsCloudfrontOriginAccessIdentities#id}. |
 
 ---
 
@@ -765,7 +765,7 @@ public string[] Comments { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_access_identities#comments DataAwsCloudfrontOriginAccessIdentities#comments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/cloudfront_origin_access_identities#comments DataAwsCloudfrontOriginAccessIdentities#comments}.
 
 ---
 
@@ -777,7 +777,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/data-sources/cloudfront_origin_access_identities#id DataAwsCloudfrontOriginAccessIdentities#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/cloudfront_origin_access_identities#id DataAwsCloudfrontOriginAccessIdentities#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

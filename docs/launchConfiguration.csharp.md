@@ -4,7 +4,7 @@
 
 ### LaunchConfiguration <a name="LaunchConfiguration" id="@cdktn/provider-aws.launchConfiguration.LaunchConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration aws_launch_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration aws_launch_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.launchConfiguration.LaunchConfiguration.Initializer"></a>
 
@@ -667,7 +667,7 @@ The construct id used in the generated config for the LaunchConfiguration to imp
 
 The id of the existing LaunchConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1362,26 +1362,26 @@ new LaunchConfigurationConfig {
 | <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.imageId">ImageId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#image_id LaunchConfiguration#image_id}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#instance_type LaunchConfiguration#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.associatePublicIpAddress">AssociatePublicIpAddress</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#associate_public_ip_address LaunchConfiguration#associate_public_ip_address}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.imageId">ImageId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#image_id LaunchConfiguration#image_id}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#instance_type LaunchConfiguration#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.associatePublicIpAddress">AssociatePublicIpAddress</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#associate_public_ip_address LaunchConfiguration#associate_public_ip_address}. |
 | <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.ebsBlockDevice">EbsBlockDevice</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice">LaunchConfigurationEbsBlockDevice</a>[]</code> | ebs_block_device block. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.ebsOptimized">EbsOptimized</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#ebs_optimized LaunchConfiguration#ebs_optimized}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.enableMonitoring">EnableMonitoring</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#enable_monitoring LaunchConfiguration#enable_monitoring}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.ebsOptimized">EbsOptimized</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#ebs_optimized LaunchConfiguration#ebs_optimized}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.enableMonitoring">EnableMonitoring</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#enable_monitoring LaunchConfiguration#enable_monitoring}. |
 | <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.ephemeralBlockDevice">EphemeralBlockDevice</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice">LaunchConfigurationEphemeralBlockDevice</a>[]</code> | ephemeral_block_device block. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.iamInstanceProfile">IamInstanceProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#iam_instance_profile LaunchConfiguration#iam_instance_profile}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#id LaunchConfiguration#id}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.keyName">KeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#key_name LaunchConfiguration#key_name}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.iamInstanceProfile">IamInstanceProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#iam_instance_profile LaunchConfiguration#iam_instance_profile}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#id LaunchConfiguration#id}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.keyName">KeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#key_name LaunchConfiguration#key_name}. |
 | <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.metadataOptions">MetadataOptions</a></code> | <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions">LaunchConfigurationMetadataOptions</a></code> | metadata_options block. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#name LaunchConfiguration#name}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#name_prefix LaunchConfiguration#name_prefix}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.placementTenancy">PlacementTenancy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#placement_tenancy LaunchConfiguration#placement_tenancy}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#name LaunchConfiguration#name}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#name_prefix LaunchConfiguration#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.placementTenancy">PlacementTenancy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#placement_tenancy LaunchConfiguration#placement_tenancy}. |
 | <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.rootBlockDevice">RootBlockDevice</a></code> | <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice">LaunchConfigurationRootBlockDevice</a></code> | root_block_device block. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.securityGroups">SecurityGroups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#security_groups LaunchConfiguration#security_groups}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.spotPrice">SpotPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#spot_price LaunchConfiguration#spot_price}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.userData">UserData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#user_data LaunchConfiguration#user_data}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.userDataBase64">UserDataBase64</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#user_data_base64 LaunchConfiguration#user_data_base64}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.securityGroups">SecurityGroups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#security_groups LaunchConfiguration#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.spotPrice">SpotPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#spot_price LaunchConfiguration#spot_price}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.userData">UserData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#user_data LaunchConfiguration#user_data}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.property.userDataBase64">UserDataBase64</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#user_data_base64 LaunchConfiguration#user_data_base64}. |
 
 ---
 
@@ -1463,7 +1463,7 @@ public string ImageId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#image_id LaunchConfiguration#image_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#image_id LaunchConfiguration#image_id}.
 
 ---
 
@@ -1475,7 +1475,7 @@ public string InstanceType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#instance_type LaunchConfiguration#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#instance_type LaunchConfiguration#instance_type}.
 
 ---
 
@@ -1487,7 +1487,7 @@ public bool|IResolvable AssociatePublicIpAddress { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#associate_public_ip_address LaunchConfiguration#associate_public_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#associate_public_ip_address LaunchConfiguration#associate_public_ip_address}.
 
 ---
 
@@ -1501,7 +1501,7 @@ public IResolvable|LaunchConfigurationEbsBlockDevice[] EbsBlockDevice { get; set
 
 ebs_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#ebs_block_device LaunchConfiguration#ebs_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#ebs_block_device LaunchConfiguration#ebs_block_device}
 
 ---
 
@@ -1513,7 +1513,7 @@ public bool|IResolvable EbsOptimized { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#ebs_optimized LaunchConfiguration#ebs_optimized}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#ebs_optimized LaunchConfiguration#ebs_optimized}.
 
 ---
 
@@ -1525,7 +1525,7 @@ public bool|IResolvable EnableMonitoring { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#enable_monitoring LaunchConfiguration#enable_monitoring}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#enable_monitoring LaunchConfiguration#enable_monitoring}.
 
 ---
 
@@ -1539,7 +1539,7 @@ public IResolvable|LaunchConfigurationEphemeralBlockDevice[] EphemeralBlockDevic
 
 ephemeral_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#ephemeral_block_device LaunchConfiguration#ephemeral_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#ephemeral_block_device LaunchConfiguration#ephemeral_block_device}
 
 ---
 
@@ -1551,7 +1551,7 @@ public string IamInstanceProfile { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#iam_instance_profile LaunchConfiguration#iam_instance_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#iam_instance_profile LaunchConfiguration#iam_instance_profile}.
 
 ---
 
@@ -1563,7 +1563,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#id LaunchConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#id LaunchConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1578,7 +1578,7 @@ public string KeyName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#key_name LaunchConfiguration#key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#key_name LaunchConfiguration#key_name}.
 
 ---
 
@@ -1592,7 +1592,7 @@ public LaunchConfigurationMetadataOptions MetadataOptions { get; set; }
 
 metadata_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#metadata_options LaunchConfiguration#metadata_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#metadata_options LaunchConfiguration#metadata_options}
 
 ---
 
@@ -1604,7 +1604,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#name LaunchConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#name LaunchConfiguration#name}.
 
 ---
 
@@ -1616,7 +1616,7 @@ public string NamePrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#name_prefix LaunchConfiguration#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#name_prefix LaunchConfiguration#name_prefix}.
 
 ---
 
@@ -1628,7 +1628,7 @@ public string PlacementTenancy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#placement_tenancy LaunchConfiguration#placement_tenancy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#placement_tenancy LaunchConfiguration#placement_tenancy}.
 
 ---
 
@@ -1642,7 +1642,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#region LaunchConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#region LaunchConfiguration#region}
 
 ---
 
@@ -1656,7 +1656,7 @@ public LaunchConfigurationRootBlockDevice RootBlockDevice { get; set; }
 
 root_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#root_block_device LaunchConfiguration#root_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#root_block_device LaunchConfiguration#root_block_device}
 
 ---
 
@@ -1668,7 +1668,7 @@ public string[] SecurityGroups { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#security_groups LaunchConfiguration#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#security_groups LaunchConfiguration#security_groups}.
 
 ---
 
@@ -1680,7 +1680,7 @@ public string SpotPrice { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#spot_price LaunchConfiguration#spot_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#spot_price LaunchConfiguration#spot_price}.
 
 ---
 
@@ -1692,7 +1692,7 @@ public string UserData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#user_data LaunchConfiguration#user_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#user_data LaunchConfiguration#user_data}.
 
 ---
 
@@ -1704,7 +1704,7 @@ public string UserDataBase64 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#user_data_base64 LaunchConfiguration#user_data_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#user_data_base64 LaunchConfiguration#user_data_base64}.
 
 ---
 
@@ -1732,15 +1732,15 @@ new LaunchConfigurationEbsBlockDevice {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#device_name LaunchConfiguration#device_name}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#delete_on_termination LaunchConfiguration#delete_on_termination}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.encrypted">Encrypted</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#encrypted LaunchConfiguration#encrypted}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#iops LaunchConfiguration#iops}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.noDevice">NoDevice</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#no_device LaunchConfiguration#no_device}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.snapshotId">SnapshotId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#snapshot_id LaunchConfiguration#snapshot_id}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#throughput LaunchConfiguration#throughput}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.volumeSize">VolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#volume_size LaunchConfiguration#volume_size}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#volume_type LaunchConfiguration#volume_type}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#device_name LaunchConfiguration#device_name}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#delete_on_termination LaunchConfiguration#delete_on_termination}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.encrypted">Encrypted</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#encrypted LaunchConfiguration#encrypted}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#iops LaunchConfiguration#iops}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.noDevice">NoDevice</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#no_device LaunchConfiguration#no_device}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.snapshotId">SnapshotId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#snapshot_id LaunchConfiguration#snapshot_id}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#throughput LaunchConfiguration#throughput}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.volumeSize">VolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#volume_size LaunchConfiguration#volume_size}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#volume_type LaunchConfiguration#volume_type}. |
 
 ---
 
@@ -1752,7 +1752,7 @@ public string DeviceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#device_name LaunchConfiguration#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#device_name LaunchConfiguration#device_name}.
 
 ---
 
@@ -1764,7 +1764,7 @@ public bool|IResolvable DeleteOnTermination { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#delete_on_termination LaunchConfiguration#delete_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#delete_on_termination LaunchConfiguration#delete_on_termination}.
 
 ---
 
@@ -1776,7 +1776,7 @@ public bool|IResolvable Encrypted { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#encrypted LaunchConfiguration#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#encrypted LaunchConfiguration#encrypted}.
 
 ---
 
@@ -1788,7 +1788,7 @@ public double Iops { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#iops LaunchConfiguration#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#iops LaunchConfiguration#iops}.
 
 ---
 
@@ -1800,7 +1800,7 @@ public bool|IResolvable NoDevice { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#no_device LaunchConfiguration#no_device}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#no_device LaunchConfiguration#no_device}.
 
 ---
 
@@ -1812,7 +1812,7 @@ public string SnapshotId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#snapshot_id LaunchConfiguration#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#snapshot_id LaunchConfiguration#snapshot_id}.
 
 ---
 
@@ -1824,7 +1824,7 @@ public double Throughput { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#throughput LaunchConfiguration#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#throughput LaunchConfiguration#throughput}.
 
 ---
 
@@ -1836,7 +1836,7 @@ public double VolumeSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#volume_size LaunchConfiguration#volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#volume_size LaunchConfiguration#volume_size}.
 
 ---
 
@@ -1848,7 +1848,7 @@ public string VolumeType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#volume_type LaunchConfiguration#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#volume_type LaunchConfiguration#volume_type}.
 
 ---
 
@@ -1870,9 +1870,9 @@ new LaunchConfigurationEphemeralBlockDevice {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#device_name LaunchConfiguration#device_name}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice.property.noDevice">NoDevice</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#no_device LaunchConfiguration#no_device}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice.property.virtualName">VirtualName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#virtual_name LaunchConfiguration#virtual_name}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#device_name LaunchConfiguration#device_name}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice.property.noDevice">NoDevice</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#no_device LaunchConfiguration#no_device}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice.property.virtualName">VirtualName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#virtual_name LaunchConfiguration#virtual_name}. |
 
 ---
 
@@ -1884,7 +1884,7 @@ public string DeviceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#device_name LaunchConfiguration#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#device_name LaunchConfiguration#device_name}.
 
 ---
 
@@ -1896,7 +1896,7 @@ public bool|IResolvable NoDevice { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#no_device LaunchConfiguration#no_device}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#no_device LaunchConfiguration#no_device}.
 
 ---
 
@@ -1908,7 +1908,7 @@ public string VirtualName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#virtual_name LaunchConfiguration#virtual_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#virtual_name LaunchConfiguration#virtual_name}.
 
 ---
 
@@ -1930,9 +1930,9 @@ new LaunchConfigurationMetadataOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions.property.httpEndpoint">HttpEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#http_endpoint LaunchConfiguration#http_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions.property.httpPutResponseHopLimit">HttpPutResponseHopLimit</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#http_put_response_hop_limit LaunchConfiguration#http_put_response_hop_limit}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions.property.httpTokens">HttpTokens</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#http_tokens LaunchConfiguration#http_tokens}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions.property.httpEndpoint">HttpEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#http_endpoint LaunchConfiguration#http_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions.property.httpPutResponseHopLimit">HttpPutResponseHopLimit</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#http_put_response_hop_limit LaunchConfiguration#http_put_response_hop_limit}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions.property.httpTokens">HttpTokens</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#http_tokens LaunchConfiguration#http_tokens}. |
 
 ---
 
@@ -1944,7 +1944,7 @@ public string HttpEndpoint { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#http_endpoint LaunchConfiguration#http_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#http_endpoint LaunchConfiguration#http_endpoint}.
 
 ---
 
@@ -1956,7 +1956,7 @@ public double HttpPutResponseHopLimit { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#http_put_response_hop_limit LaunchConfiguration#http_put_response_hop_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#http_put_response_hop_limit LaunchConfiguration#http_put_response_hop_limit}.
 
 ---
 
@@ -1968,7 +1968,7 @@ public string HttpTokens { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#http_tokens LaunchConfiguration#http_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#http_tokens LaunchConfiguration#http_tokens}.
 
 ---
 
@@ -1993,12 +1993,12 @@ new LaunchConfigurationRootBlockDevice {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#delete_on_termination LaunchConfiguration#delete_on_termination}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.encrypted">Encrypted</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#encrypted LaunchConfiguration#encrypted}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#iops LaunchConfiguration#iops}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#throughput LaunchConfiguration#throughput}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.volumeSize">VolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#volume_size LaunchConfiguration#volume_size}. |
-| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#volume_type LaunchConfiguration#volume_type}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#delete_on_termination LaunchConfiguration#delete_on_termination}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.encrypted">Encrypted</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#encrypted LaunchConfiguration#encrypted}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#iops LaunchConfiguration#iops}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#throughput LaunchConfiguration#throughput}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.volumeSize">VolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#volume_size LaunchConfiguration#volume_size}. |
+| <code><a href="#@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#volume_type LaunchConfiguration#volume_type}. |
 
 ---
 
@@ -2010,7 +2010,7 @@ public bool|IResolvable DeleteOnTermination { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#delete_on_termination LaunchConfiguration#delete_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#delete_on_termination LaunchConfiguration#delete_on_termination}.
 
 ---
 
@@ -2022,7 +2022,7 @@ public bool|IResolvable Encrypted { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#encrypted LaunchConfiguration#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#encrypted LaunchConfiguration#encrypted}.
 
 ---
 
@@ -2034,7 +2034,7 @@ public double Iops { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#iops LaunchConfiguration#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#iops LaunchConfiguration#iops}.
 
 ---
 
@@ -2046,7 +2046,7 @@ public double Throughput { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#throughput LaunchConfiguration#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#throughput LaunchConfiguration#throughput}.
 
 ---
 
@@ -2058,7 +2058,7 @@ public double VolumeSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#volume_size LaunchConfiguration#volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#volume_size LaunchConfiguration#volume_size}.
 
 ---
 
@@ -2070,7 +2070,7 @@ public string VolumeType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/launch_configuration#volume_type LaunchConfiguration#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/launch_configuration#volume_type LaunchConfiguration#volume_type}.
 
 ---
 

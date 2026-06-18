@@ -4,7 +4,7 @@
 
 ### SesConfigurationSet <a name="SesConfigurationSet" id="@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set aws_ses_configuration_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set aws_ses_configuration_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSet.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the SesConfigurationSet to imp
 
 The id of the existing SesConfigurationSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -964,12 +964,12 @@ new SesConfigurationSetConfig {
 | <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#name SesConfigurationSet#name}. |
+| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#name SesConfigurationSet#name}. |
 | <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.deliveryOptions">DeliveryOptions</a></code> | <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptions">SesConfigurationSetDeliveryOptions</a></code> | delivery_options block. |
-| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#id SesConfigurationSet#id}. |
+| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#id SesConfigurationSet#id}. |
 | <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.reputationMetricsEnabled">ReputationMetricsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#reputation_metrics_enabled SesConfigurationSet#reputation_metrics_enabled}. |
-| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.sendingEnabled">SendingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#sending_enabled SesConfigurationSet#sending_enabled}. |
+| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.reputationMetricsEnabled">ReputationMetricsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#reputation_metrics_enabled SesConfigurationSet#reputation_metrics_enabled}. |
+| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.sendingEnabled">SendingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#sending_enabled SesConfigurationSet#sending_enabled}. |
 | <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.property.trackingOptions">TrackingOptions</a></code> | <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptions">SesConfigurationSetTrackingOptions</a></code> | tracking_options block. |
 
 ---
@@ -1052,7 +1052,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#name SesConfigurationSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#name SesConfigurationSet#name}.
 
 ---
 
@@ -1066,7 +1066,7 @@ public SesConfigurationSetDeliveryOptions DeliveryOptions { get; set; }
 
 delivery_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#delivery_options SesConfigurationSet#delivery_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#delivery_options SesConfigurationSet#delivery_options}
 
 ---
 
@@ -1078,7 +1078,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#id SesConfigurationSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#id SesConfigurationSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1095,7 +1095,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#region SesConfigurationSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#region SesConfigurationSet#region}
 
 ---
 
@@ -1107,7 +1107,7 @@ public bool|IResolvable ReputationMetricsEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#reputation_metrics_enabled SesConfigurationSet#reputation_metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#reputation_metrics_enabled SesConfigurationSet#reputation_metrics_enabled}.
 
 ---
 
@@ -1119,7 +1119,7 @@ public bool|IResolvable SendingEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#sending_enabled SesConfigurationSet#sending_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#sending_enabled SesConfigurationSet#sending_enabled}.
 
 ---
 
@@ -1133,7 +1133,7 @@ public SesConfigurationSetTrackingOptions TrackingOptions { get; set; }
 
 tracking_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#tracking_options SesConfigurationSet#tracking_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#tracking_options SesConfigurationSet#tracking_options}
 
 ---
 
@@ -1153,7 +1153,7 @@ new SesConfigurationSetDeliveryOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptions.property.tlsPolicy">TlsPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#tls_policy SesConfigurationSet#tls_policy}. |
+| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptions.property.tlsPolicy">TlsPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#tls_policy SesConfigurationSet#tls_policy}. |
 
 ---
 
@@ -1165,7 +1165,7 @@ public string TlsPolicy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#tls_policy SesConfigurationSet#tls_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#tls_policy SesConfigurationSet#tls_policy}.
 
 ---
 
@@ -1185,7 +1185,7 @@ new SesConfigurationSetTrackingOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptions.property.customRedirectDomain">CustomRedirectDomain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#custom_redirect_domain SesConfigurationSet#custom_redirect_domain}. |
+| <code><a href="#@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptions.property.customRedirectDomain">CustomRedirectDomain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#custom_redirect_domain SesConfigurationSet#custom_redirect_domain}. |
 
 ---
 
@@ -1197,7 +1197,7 @@ public string CustomRedirectDomain { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/ses_configuration_set#custom_redirect_domain SesConfigurationSet#custom_redirect_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ses_configuration_set#custom_redirect_domain SesConfigurationSet#custom_redirect_domain}.
 
 ---
 

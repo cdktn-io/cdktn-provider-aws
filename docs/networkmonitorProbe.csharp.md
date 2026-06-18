@@ -4,7 +4,7 @@
 
 ### NetworkmonitorProbe <a name="NetworkmonitorProbe" id="@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbe"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbe.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the NetworkmonitorProbe to imp
 
 The id of the existing NetworkmonitorProbe that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,14 +991,14 @@ new NetworkmonitorProbeConfig {
 | <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}. |
-| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.monitorName">MonitorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}. |
-| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}. |
-| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.sourceArn">SourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}. |
-| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.destinationPort">DestinationPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}. |
-| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.packetSize">PacketSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}. |
+| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}. |
+| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.monitorName">MonitorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}. |
+| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}. |
+| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.sourceArn">SourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}. |
+| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.destinationPort">DestinationPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}. |
+| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.packetSize">PacketSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}. |
 | <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}. |
+| <code><a href="#@cdktn/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}. |
 
 ---
 
@@ -1080,7 +1080,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}.
 
 ---
 
@@ -1092,7 +1092,7 @@ public string MonitorName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}.
 
 ---
 
@@ -1104,7 +1104,7 @@ public string Protocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}.
 
 ---
 
@@ -1116,7 +1116,7 @@ public string SourceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}.
 
 ---
 
@@ -1128,7 +1128,7 @@ public double DestinationPort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}.
 
 ---
 
@@ -1140,7 +1140,7 @@ public double PacketSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}.
 
 ---
 
@@ -1154,7 +1154,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#region NetworkmonitorProbe#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#region NetworkmonitorProbe#region}
 
 ---
 
@@ -1166,7 +1166,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.50.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}.
 
 ---
 
