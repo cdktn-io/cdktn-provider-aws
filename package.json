@@ -22,7 +22,6 @@
     "package:go": "projen package:go",
     "package:java": "projen package:java",
     "package:js": "projen package:js",
-    "package:python": "projen package:python",
     "post-compile": "projen post-compile",
     "post-upgrade": "projen post-upgrade",
     "pre-compile": "projen pre-compile",
@@ -57,11 +56,11 @@
     "constructs": "^10.6.0",
     "dot-prop": "^5.2.0",
     "jsii": "~5.9.0",
-    "jsii-diff": "^1.135.0",
+    "jsii-diff": "^1.136.0",
     "jsii-docgen": "^10.2.3",
-    "jsii-pacmak": "^1.135.0",
+    "jsii-pacmak": "^1.136.0",
     "jsii-rosetta": "~5.9.0",
-    "projen": "^0.99.74",
+    "projen": "^0.100.2",
     "semver": "^7.5.3",
     "typescript": "~5.9.0"
   },
@@ -87,12 +86,12 @@
   },
   "main": "lib/index.js",
   "license": "MPL-2.0",
+  "stability": "stable",
   "publishConfig": {
     "access": "public"
   },
   "version": "0.0.0",
   "types": "lib/index.d.ts",
-  "stability": "stable",
   "jsii": {
     "outdir": "dist",
     "targets": {
@@ -103,10 +102,6 @@
           "artifactId": "cdktn-provider-aws"
         }
       },
-      "python": {
-        "distName": "cdktn-provider-aws",
-        "module": "cdktn_provider_aws"
-      },
       "dotnet": {
         "namespace": "Io.Cdktn.Providers.Aws",
         "packageId": "Io.Cdktn.Providers.Aws"
@@ -116,10 +111,8 @@
         "packageName": "aws"
       }
     },
-    "tsc": {
-      "outDir": "lib",
-      "rootDir": "src"
-    }
+    "tsconfig": "tsconfig.json",
+    "validateTsconfig": "strict"
   },
   "standard-version": {
     "types": [
