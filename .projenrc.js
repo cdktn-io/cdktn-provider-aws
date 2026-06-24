@@ -15,7 +15,8 @@ const project = new CdktnProviderProject({
   jsiiVersion: "~5.9.0", // JSII and TS should always use the same major/minor version range
   devDeps: ["@cdktn/provider-project@^0.7.0"],
   isDeprecated: false,
-  npmTrustedPublishing: true
+  npmTrustedPublishing: true,
+  pypiTrustedPublishing: false,
 });
 
 project.synth();
