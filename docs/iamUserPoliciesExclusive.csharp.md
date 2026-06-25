@@ -4,7 +4,7 @@
 
 ### IamUserPoliciesExclusive <a name="IamUserPoliciesExclusive" id="@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusive.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the IamUserPoliciesExclusive t
 
 The id of the existing IamUserPoliciesExclusive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_user_policies_exclusive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_user_policies_exclusive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -759,8 +759,8 @@ new IamUserPoliciesExclusiveConfig {
 | <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.policyNames">PolicyNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_user_policies_exclusive#policy_names IamUserPoliciesExclusive#policy_names}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.userName">UserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_user_policies_exclusive#user_name IamUserPoliciesExclusive#user_name}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.policyNames">PolicyNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_user_policies_exclusive#policy_names IamUserPoliciesExclusive#policy_names}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.userName">UserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_user_policies_exclusive#user_name IamUserPoliciesExclusive#user_name}. |
 
 ---
 
@@ -842,7 +842,7 @@ public string[] PolicyNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_user_policies_exclusive#policy_names IamUserPoliciesExclusive#policy_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_user_policies_exclusive#policy_names IamUserPoliciesExclusive#policy_names}.
 
 ---
 
@@ -854,7 +854,7 @@ public string UserName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/iam_user_policies_exclusive#user_name IamUserPoliciesExclusive#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_user_policies_exclusive#user_name IamUserPoliciesExclusive#user_name}.
 
 ---
 

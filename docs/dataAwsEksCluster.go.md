@@ -4,7 +4,7 @@
 
 ### DataAwsEksCluster <a name="DataAwsEksCluster" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/eks_cluster aws_eks_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/eks_cluster aws_eks_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksCluster.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsEksCluster to impor
 
 The id of the existing DataAwsEksCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/eks_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/eks_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -983,10 +983,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 | <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/eks_cluster#name DataAwsEksCluster#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/eks_cluster#id DataAwsEksCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/eks_cluster#name DataAwsEksCluster#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/eks_cluster#id DataAwsEksCluster#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/eks_cluster#tags DataAwsEksCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/eks_cluster#tags DataAwsEksCluster#tags}. |
 
 ---
 
@@ -1068,7 +1068,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/eks_cluster#name DataAwsEksCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/eks_cluster#name DataAwsEksCluster#name}.
 
 ---
 
@@ -1080,7 +1080,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/eks_cluster#id DataAwsEksCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/eks_cluster#id DataAwsEksCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1097,7 +1097,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/eks_cluster#region DataAwsEksCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/eks_cluster#region DataAwsEksCluster#region}
 
 ---
 
@@ -1109,7 +1109,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/eks_cluster#tags DataAwsEksCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/eks_cluster#tags DataAwsEksCluster#tags}.
 
 ---
 
@@ -9092,6 +9092,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference.property.clusterSecurityGroupId">ClusterSecurityGroupId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference.property.controlPlaneEgressMode">ControlPlaneEgressMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference.property.endpointPrivateAccess">EndpointPrivateAccess</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference.property.endpointPublicAccess">EndpointPublicAccess</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference.property.publicAccessCidrs">PublicAccessCidrs</a></code> | <code>*[]*string</code> | *No description.* |
@@ -9130,6 +9131,16 @@ func Fqn() *string
 
 ```go
 func ClusterSecurityGroupId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ControlPlaneEgressMode`<sup>Required</sup> <a name="ControlPlaneEgressMode" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference.property.controlPlaneEgressMode"></a>
+
+```go
+func ControlPlaneEgressMode() *string
 ```
 
 - *Type:* *string

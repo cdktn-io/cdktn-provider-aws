@@ -4,7 +4,7 @@
 
 ### S3Bucket <a name="S3Bucket" id="@cdktn/provider-aws.s3Bucket.S3Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket aws_s3_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket aws_s3_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3Bucket.S3Bucket.Initializer"></a>
 
@@ -780,7 +780,7 @@ The construct id used in the generated config for the S3Bucket to import.
 
 The id of the existing S3Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1610,26 +1610,26 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.accelerationStatus">AccelerationStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#acceleration_status S3Bucket#acceleration_status}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.acl">Acl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#acl S3Bucket#acl}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#bucket S3Bucket#bucket}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.bucketNamespace">BucketNamespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#bucket_namespace S3Bucket#bucket_namespace}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#bucket_prefix S3Bucket#bucket_prefix}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.accelerationStatus">AccelerationStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#acceleration_status S3Bucket#acceleration_status}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.acl">Acl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#acl S3Bucket#acl}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#bucket S3Bucket#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.bucketNamespace">BucketNamespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#bucket_namespace S3Bucket#bucket_namespace}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#bucket_prefix S3Bucket#bucket_prefix}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.corsRule">CorsRule</a></code> | <code>interface{}</code> | cors_rule block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.grant">Grant</a></code> | <code>interface{}</code> | grant block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#id S3Bucket#id}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#id S3Bucket#id}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.lifecycleRule">LifecycleRule</a></code> | <code>interface{}</code> | lifecycle_rule block. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.logging">Logging</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLogging">S3BucketLogging</a></code> | logging block. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.objectLockConfiguration">ObjectLockConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfiguration">S3BucketObjectLockConfiguration</a></code> | object_lock_configuration block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.objectLockEnabled">ObjectLockEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#policy S3Bucket#policy}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.objectLockEnabled">ObjectLockEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#policy S3Bucket#policy}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.replicationConfiguration">ReplicationConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfiguration">S3BucketReplicationConfiguration</a></code> | replication_configuration block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.requestPayer">RequestPayer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#request_payer S3Bucket#request_payer}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.requestPayer">RequestPayer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#request_payer S3Bucket#request_payer}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.serverSideEncryptionConfiguration">ServerSideEncryptionConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfiguration">S3BucketServerSideEncryptionConfiguration</a></code> | server_side_encryption_configuration block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#tags S3Bucket#tags}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#tags_all S3Bucket#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#tags S3Bucket#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#tags_all S3Bucket#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.versioning">Versioning</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketVersioning">S3BucketVersioning</a></code> | versioning block. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketConfig.property.website">Website</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketWebsite">S3BucketWebsite</a></code> | website block. |
@@ -1714,7 +1714,7 @@ AccelerationStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#acceleration_status S3Bucket#acceleration_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#acceleration_status S3Bucket#acceleration_status}.
 
 ---
 
@@ -1726,7 +1726,7 @@ Acl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#acl S3Bucket#acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#acl S3Bucket#acl}.
 
 ---
 
@@ -1738,7 +1738,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#bucket S3Bucket#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#bucket S3Bucket#bucket}.
 
 ---
 
@@ -1750,7 +1750,7 @@ BucketNamespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#bucket_namespace S3Bucket#bucket_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#bucket_namespace S3Bucket#bucket_namespace}.
 
 ---
 
@@ -1762,7 +1762,7 @@ BucketPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#bucket_prefix S3Bucket#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#bucket_prefix S3Bucket#bucket_prefix}.
 
 ---
 
@@ -1776,7 +1776,7 @@ CorsRule interface{}
 
 cors_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#cors_rule S3Bucket#cors_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#cors_rule S3Bucket#cors_rule}
 
 ---
 
@@ -1788,7 +1788,7 @@ ForceDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}.
 
 ---
 
@@ -1802,7 +1802,7 @@ Grant interface{}
 
 grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#grant S3Bucket#grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#grant S3Bucket#grant}
 
 ---
 
@@ -1814,7 +1814,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#id S3Bucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#id S3Bucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1831,7 +1831,7 @@ LifecycleRule interface{}
 
 lifecycle_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#lifecycle_rule S3Bucket#lifecycle_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#lifecycle_rule S3Bucket#lifecycle_rule}
 
 ---
 
@@ -1845,7 +1845,7 @@ Logging S3BucketLogging
 
 logging block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#logging S3Bucket#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#logging S3Bucket#logging}
 
 ---
 
@@ -1859,7 +1859,7 @@ ObjectLockConfiguration S3BucketObjectLockConfiguration
 
 object_lock_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#object_lock_configuration S3Bucket#object_lock_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#object_lock_configuration S3Bucket#object_lock_configuration}
 
 ---
 
@@ -1871,7 +1871,7 @@ ObjectLockEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}.
 
 ---
 
@@ -1883,7 +1883,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#policy S3Bucket#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#policy S3Bucket#policy}.
 
 ---
 
@@ -1897,7 +1897,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#region S3Bucket#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#region S3Bucket#region}
 
 ---
 
@@ -1911,7 +1911,7 @@ ReplicationConfiguration S3BucketReplicationConfiguration
 
 replication_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#replication_configuration S3Bucket#replication_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#replication_configuration S3Bucket#replication_configuration}
 
 ---
 
@@ -1923,7 +1923,7 @@ RequestPayer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#request_payer S3Bucket#request_payer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#request_payer S3Bucket#request_payer}.
 
 ---
 
@@ -1937,7 +1937,7 @@ ServerSideEncryptionConfiguration S3BucketServerSideEncryptionConfiguration
 
 server_side_encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#server_side_encryption_configuration S3Bucket#server_side_encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#server_side_encryption_configuration S3Bucket#server_side_encryption_configuration}
 
 ---
 
@@ -1949,7 +1949,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#tags S3Bucket#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#tags S3Bucket#tags}.
 
 ---
 
@@ -1961,7 +1961,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#tags_all S3Bucket#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#tags_all S3Bucket#tags_all}.
 
 ---
 
@@ -1975,7 +1975,7 @@ Timeouts S3BucketTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
 
 ---
 
@@ -1989,7 +1989,7 @@ Versioning S3BucketVersioning
 
 versioning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#versioning S3Bucket#versioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#versioning S3Bucket#versioning}
 
 ---
 
@@ -2003,7 +2003,7 @@ Website S3BucketWebsite
 
 website block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#website S3Bucket#website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#website S3Bucket#website}
 
 ---
 
@@ -2027,11 +2027,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#allowed_methods S3Bucket#allowed_methods}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#allowed_origins S3Bucket#allowed_origins}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#allowed_headers S3Bucket#allowed_headers}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketCorsRule.property.exposeHeaders">ExposeHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#expose_headers S3Bucket#expose_headers}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketCorsRule.property.maxAgeSeconds">MaxAgeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#max_age_seconds S3Bucket#max_age_seconds}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#allowed_methods S3Bucket#allowed_methods}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#allowed_origins S3Bucket#allowed_origins}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#allowed_headers S3Bucket#allowed_headers}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketCorsRule.property.exposeHeaders">ExposeHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#expose_headers S3Bucket#expose_headers}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketCorsRule.property.maxAgeSeconds">MaxAgeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#max_age_seconds S3Bucket#max_age_seconds}. |
 
 ---
 
@@ -2043,7 +2043,7 @@ AllowedMethods *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#allowed_methods S3Bucket#allowed_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#allowed_methods S3Bucket#allowed_methods}.
 
 ---
 
@@ -2055,7 +2055,7 @@ AllowedOrigins *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#allowed_origins S3Bucket#allowed_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#allowed_origins S3Bucket#allowed_origins}.
 
 ---
 
@@ -2067,7 +2067,7 @@ AllowedHeaders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#allowed_headers S3Bucket#allowed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#allowed_headers S3Bucket#allowed_headers}.
 
 ---
 
@@ -2079,7 +2079,7 @@ ExposeHeaders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#expose_headers S3Bucket#expose_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#expose_headers S3Bucket#expose_headers}.
 
 ---
 
@@ -2091,7 +2091,7 @@ MaxAgeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#max_age_seconds S3Bucket#max_age_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#max_age_seconds S3Bucket#max_age_seconds}.
 
 ---
 
@@ -2114,10 +2114,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketGrant.property.permissions">Permissions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#permissions S3Bucket#permissions}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketGrant.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#type S3Bucket#type}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketGrant.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#id S3Bucket#id}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketGrant.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#uri S3Bucket#uri}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketGrant.property.permissions">Permissions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#permissions S3Bucket#permissions}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketGrant.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#type S3Bucket#type}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketGrant.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#id S3Bucket#id}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketGrant.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#uri S3Bucket#uri}. |
 
 ---
 
@@ -2129,7 +2129,7 @@ Permissions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#permissions S3Bucket#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#permissions S3Bucket#permissions}.
 
 ---
 
@@ -2141,7 +2141,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#type S3Bucket#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#type S3Bucket#type}.
 
 ---
 
@@ -2153,7 +2153,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#id S3Bucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#id S3Bucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2168,7 +2168,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#uri S3Bucket#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#uri S3Bucket#uri}.
 
 ---
 
@@ -2196,14 +2196,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.abortIncompleteMultipartUploadDays">AbortIncompleteMultipartUploadDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#abort_incomplete_multipart_upload_days S3Bucket#abort_incomplete_multipart_upload_days}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.abortIncompleteMultipartUploadDays">AbortIncompleteMultipartUploadDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#abort_incomplete_multipart_upload_days S3Bucket#abort_incomplete_multipart_upload_days}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.expiration">Expiration</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleExpiration">S3BucketLifecycleRuleExpiration</a></code> | expiration block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#id S3Bucket#id}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#id S3Bucket#id}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.noncurrentVersionExpiration">NoncurrentVersionExpiration</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionExpiration">S3BucketLifecycleRuleNoncurrentVersionExpiration</a></code> | noncurrent_version_expiration block. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.noncurrentVersionTransition">NoncurrentVersionTransition</a></code> | <code>interface{}</code> | noncurrent_version_transition block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#tags S3Bucket#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#tags S3Bucket#tags}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule.property.transition">Transition</a></code> | <code>interface{}</code> | transition block. |
 
 ---
@@ -2216,7 +2216,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}.
 
 ---
 
@@ -2228,7 +2228,7 @@ AbortIncompleteMultipartUploadDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#abort_incomplete_multipart_upload_days S3Bucket#abort_incomplete_multipart_upload_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#abort_incomplete_multipart_upload_days S3Bucket#abort_incomplete_multipart_upload_days}.
 
 ---
 
@@ -2242,7 +2242,7 @@ Expiration S3BucketLifecycleRuleExpiration
 
 expiration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#expiration S3Bucket#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#expiration S3Bucket#expiration}
 
 ---
 
@@ -2254,7 +2254,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#id S3Bucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#id S3Bucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2271,7 +2271,7 @@ NoncurrentVersionExpiration S3BucketLifecycleRuleNoncurrentVersionExpiration
 
 noncurrent_version_expiration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#noncurrent_version_expiration S3Bucket#noncurrent_version_expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#noncurrent_version_expiration S3Bucket#noncurrent_version_expiration}
 
 ---
 
@@ -2285,7 +2285,7 @@ NoncurrentVersionTransition interface{}
 
 noncurrent_version_transition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#noncurrent_version_transition S3Bucket#noncurrent_version_transition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#noncurrent_version_transition S3Bucket#noncurrent_version_transition}
 
 ---
 
@@ -2297,7 +2297,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}.
 
 ---
 
@@ -2309,7 +2309,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#tags S3Bucket#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#tags S3Bucket#tags}.
 
 ---
 
@@ -2323,7 +2323,7 @@ Transition interface{}
 
 transition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#transition S3Bucket#transition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#transition S3Bucket#transition}
 
 ---
 
@@ -2345,9 +2345,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleExpiration.property.date">Date</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#date S3Bucket#date}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#days S3Bucket#days}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleExpiration.property.expiredObjectDeleteMarker">ExpiredObjectDeleteMarker</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#expired_object_delete_marker S3Bucket#expired_object_delete_marker}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleExpiration.property.date">Date</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#date S3Bucket#date}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#days S3Bucket#days}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleExpiration.property.expiredObjectDeleteMarker">ExpiredObjectDeleteMarker</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#expired_object_delete_marker S3Bucket#expired_object_delete_marker}. |
 
 ---
 
@@ -2359,7 +2359,7 @@ Date *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#date S3Bucket#date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#date S3Bucket#date}.
 
 ---
 
@@ -2371,7 +2371,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#days S3Bucket#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#days S3Bucket#days}.
 
 ---
 
@@ -2383,7 +2383,7 @@ ExpiredObjectDeleteMarker interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#expired_object_delete_marker S3Bucket#expired_object_delete_marker}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#expired_object_delete_marker S3Bucket#expired_object_delete_marker}.
 
 ---
 
@@ -2403,7 +2403,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#days S3Bucket#days}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#days S3Bucket#days}. |
 
 ---
 
@@ -2415,7 +2415,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#days S3Bucket#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#days S3Bucket#days}.
 
 ---
 
@@ -2436,8 +2436,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransition.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransition.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#days S3Bucket#days}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransition.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransition.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#days S3Bucket#days}. |
 
 ---
 
@@ -2449,7 +2449,7 @@ StorageClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}.
 
 ---
 
@@ -2461,7 +2461,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#days S3Bucket#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#days S3Bucket#days}.
 
 ---
 
@@ -2483,9 +2483,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition.property.date">Date</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#date S3Bucket#date}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#days S3Bucket#days}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition.property.date">Date</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#date S3Bucket#date}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#days S3Bucket#days}. |
 
 ---
 
@@ -2497,7 +2497,7 @@ StorageClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}.
 
 ---
 
@@ -2509,7 +2509,7 @@ Date *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#date S3Bucket#date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#date S3Bucket#date}.
 
 ---
 
@@ -2521,7 +2521,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#days S3Bucket#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#days S3Bucket#days}.
 
 ---
 
@@ -2542,8 +2542,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLogging.property.targetBucket">TargetBucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#target_bucket S3Bucket#target_bucket}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLogging.property.targetPrefix">TargetPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#target_prefix S3Bucket#target_prefix}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLogging.property.targetBucket">TargetBucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#target_bucket S3Bucket#target_bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketLogging.property.targetPrefix">TargetPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#target_prefix S3Bucket#target_prefix}. |
 
 ---
 
@@ -2555,7 +2555,7 @@ TargetBucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#target_bucket S3Bucket#target_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#target_bucket S3Bucket#target_bucket}.
 
 ---
 
@@ -2567,7 +2567,7 @@ TargetPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#target_prefix S3Bucket#target_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#target_prefix S3Bucket#target_prefix}.
 
 ---
 
@@ -2588,7 +2588,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfiguration.property.objectLockEnabled">ObjectLockEnabled</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfiguration.property.objectLockEnabled">ObjectLockEnabled</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfiguration.property.rule">Rule</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRule">S3BucketObjectLockConfigurationRule</a></code> | rule block. |
 
 ---
@@ -2601,7 +2601,7 @@ ObjectLockEnabled *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}.
 
 ---
 
@@ -2615,7 +2615,7 @@ Rule S3BucketObjectLockConfigurationRule
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#rule S3Bucket#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#rule S3Bucket#rule}
 
 ---
 
@@ -2649,7 +2649,7 @@ DefaultRetention S3BucketObjectLockConfigurationRuleDefaultRetention
 
 default_retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#default_retention S3Bucket#default_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#default_retention S3Bucket#default_retention}
 
 ---
 
@@ -2671,9 +2671,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetention.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#mode S3Bucket#mode}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetention.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#days S3Bucket#days}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetention.property.years">Years</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#years S3Bucket#years}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetention.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#mode S3Bucket#mode}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetention.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#days S3Bucket#days}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetention.property.years">Years</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#years S3Bucket#years}. |
 
 ---
 
@@ -2685,7 +2685,7 @@ Mode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#mode S3Bucket#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#mode S3Bucket#mode}.
 
 ---
 
@@ -2697,7 +2697,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#days S3Bucket#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#days S3Bucket#days}.
 
 ---
 
@@ -2709,7 +2709,7 @@ Years *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#years S3Bucket#years}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#years S3Bucket#years}.
 
 ---
 
@@ -2730,7 +2730,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfiguration.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#role S3Bucket#role}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfiguration.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#role S3Bucket#role}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfiguration.property.rules">Rules</a></code> | <code>interface{}</code> | rules block. |
 
 ---
@@ -2743,7 +2743,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#role S3Bucket#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#role S3Bucket#role}.
 
 ---
 
@@ -2757,7 +2757,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#rules S3Bucket#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#rules S3Bucket#rules}
 
 ---
 
@@ -2785,12 +2785,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination">S3BucketReplicationConfigurationRulesDestination</a></code> | destination block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#status S3Bucket#status}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.deleteMarkerReplicationStatus">DeleteMarkerReplicationStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#delete_marker_replication_status S3Bucket#delete_marker_replication_status}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#status S3Bucket#status}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.deleteMarkerReplicationStatus">DeleteMarkerReplicationStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#delete_marker_replication_status S3Bucket#delete_marker_replication_status}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesFilter">S3BucketReplicationConfigurationRulesFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#id S3Bucket#id}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#priority S3Bucket#priority}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#id S3Bucket#id}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#priority S3Bucket#priority}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules.property.sourceSelectionCriteria">SourceSelectionCriteria</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteria">S3BucketReplicationConfigurationRulesSourceSelectionCriteria</a></code> | source_selection_criteria block. |
 
 ---
@@ -2805,7 +2805,7 @@ Destination S3BucketReplicationConfigurationRulesDestination
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#destination S3Bucket#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#destination S3Bucket#destination}
 
 ---
 
@@ -2817,7 +2817,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#status S3Bucket#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#status S3Bucket#status}.
 
 ---
 
@@ -2829,7 +2829,7 @@ DeleteMarkerReplicationStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#delete_marker_replication_status S3Bucket#delete_marker_replication_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#delete_marker_replication_status S3Bucket#delete_marker_replication_status}.
 
 ---
 
@@ -2843,7 +2843,7 @@ Filter S3BucketReplicationConfigurationRulesFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#filter S3Bucket#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#filter S3Bucket#filter}
 
 ---
 
@@ -2855,7 +2855,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#id S3Bucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#id S3Bucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2870,7 +2870,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}.
 
 ---
 
@@ -2882,7 +2882,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#priority S3Bucket#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#priority S3Bucket#priority}.
 
 ---
 
@@ -2896,7 +2896,7 @@ SourceSelectionCriteria S3BucketReplicationConfigurationRulesSourceSelectionCrit
 
 source_selection_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#source_selection_criteria S3Bucket#source_selection_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#source_selection_criteria S3Bucket#source_selection_criteria}
 
 ---
 
@@ -2922,13 +2922,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#bucket S3Bucket#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#bucket S3Bucket#bucket}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.accessControlTranslation">AccessControlTranslation</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation">S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation</a></code> | access_control_translation block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#account_id S3Bucket#account_id}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#account_id S3Bucket#account_id}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.metrics">Metrics</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationMetrics">S3BucketReplicationConfigurationRulesDestinationMetrics</a></code> | metrics block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.replicaKmsKeyId">ReplicaKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#replica_kms_key_id S3Bucket#replica_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.replicaKmsKeyId">ReplicaKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#replica_kms_key_id S3Bucket#replica_kms_key_id}. |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.replicationTime">ReplicationTime</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTime">S3BucketReplicationConfigurationRulesDestinationReplicationTime</a></code> | replication_time block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}. |
 
 ---
 
@@ -2940,7 +2940,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#bucket S3Bucket#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#bucket S3Bucket#bucket}.
 
 ---
 
@@ -2954,7 +2954,7 @@ AccessControlTranslation S3BucketReplicationConfigurationRulesDestinationAccessC
 
 access_control_translation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#access_control_translation S3Bucket#access_control_translation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#access_control_translation S3Bucket#access_control_translation}
 
 ---
 
@@ -2966,7 +2966,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#account_id S3Bucket#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#account_id S3Bucket#account_id}.
 
 ---
 
@@ -2980,7 +2980,7 @@ Metrics S3BucketReplicationConfigurationRulesDestinationMetrics
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#metrics S3Bucket#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#metrics S3Bucket#metrics}
 
 ---
 
@@ -2992,7 +2992,7 @@ ReplicaKmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#replica_kms_key_id S3Bucket#replica_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#replica_kms_key_id S3Bucket#replica_kms_key_id}.
 
 ---
 
@@ -3006,7 +3006,7 @@ ReplicationTime S3BucketReplicationConfigurationRulesDestinationReplicationTime
 
 replication_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#replication_time S3Bucket#replication_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#replication_time S3Bucket#replication_time}
 
 ---
 
@@ -3018,7 +3018,7 @@ StorageClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}.
 
 ---
 
@@ -3038,7 +3038,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#owner S3Bucket#owner}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#owner S3Bucket#owner}. |
 
 ---
 
@@ -3050,7 +3050,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#owner S3Bucket#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#owner S3Bucket#owner}.
 
 ---
 
@@ -3071,8 +3071,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationMetrics.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#minutes S3Bucket#minutes}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationMetrics.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#status S3Bucket#status}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationMetrics.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#minutes S3Bucket#minutes}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationMetrics.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#status S3Bucket#status}. |
 
 ---
 
@@ -3084,7 +3084,7 @@ Minutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#minutes S3Bucket#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#minutes S3Bucket#minutes}.
 
 ---
 
@@ -3096,7 +3096,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#status S3Bucket#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#status S3Bucket#status}.
 
 ---
 
@@ -3117,8 +3117,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#minutes S3Bucket#minutes}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTime.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#status S3Bucket#status}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#minutes S3Bucket#minutes}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTime.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#status S3Bucket#status}. |
 
 ---
 
@@ -3130,7 +3130,7 @@ Minutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#minutes S3Bucket#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#minutes S3Bucket#minutes}.
 
 ---
 
@@ -3142,7 +3142,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#status S3Bucket#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#status S3Bucket#status}.
 
 ---
 
@@ -3163,8 +3163,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesFilter.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesFilter.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#tags S3Bucket#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesFilter.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesFilter.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#tags S3Bucket#tags}. |
 
 ---
 
@@ -3176,7 +3176,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}.
 
 ---
 
@@ -3188,7 +3188,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#tags S3Bucket#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#tags S3Bucket#tags}.
 
 ---
 
@@ -3222,7 +3222,7 @@ SseKmsEncryptedObjects S3BucketReplicationConfigurationRulesSourceSelectionCrite
 
 sse_kms_encrypted_objects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#sse_kms_encrypted_objects S3Bucket#sse_kms_encrypted_objects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#sse_kms_encrypted_objects S3Bucket#sse_kms_encrypted_objects}
 
 ---
 
@@ -3242,7 +3242,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}. |
 
 ---
 
@@ -3254,7 +3254,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}.
 
 ---
 
@@ -3288,7 +3288,7 @@ Rule S3BucketServerSideEncryptionConfigurationRule
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#rule S3Bucket#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#rule S3Bucket#rule}
 
 ---
 
@@ -3310,7 +3310,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRule.property.applyServerSideEncryptionByDefault">ApplyServerSideEncryptionByDefault</a></code> | <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault">S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault</a></code> | apply_server_side_encryption_by_default block. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRule.property.bucketKeyEnabled">BucketKeyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#bucket_key_enabled S3Bucket#bucket_key_enabled}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRule.property.bucketKeyEnabled">BucketKeyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#bucket_key_enabled S3Bucket#bucket_key_enabled}. |
 
 ---
 
@@ -3324,7 +3324,7 @@ ApplyServerSideEncryptionByDefault S3BucketServerSideEncryptionConfigurationRule
 
 apply_server_side_encryption_by_default block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#apply_server_side_encryption_by_default S3Bucket#apply_server_side_encryption_by_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#apply_server_side_encryption_by_default S3Bucket#apply_server_side_encryption_by_default}
 
 ---
 
@@ -3336,7 +3336,7 @@ BucketKeyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#bucket_key_enabled S3Bucket#bucket_key_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#bucket_key_enabled S3Bucket#bucket_key_enabled}.
 
 ---
 
@@ -3357,8 +3357,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault.property.sseAlgorithm">SseAlgorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#sse_algorithm S3Bucket#sse_algorithm}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault.property.kmsMasterKeyId">KmsMasterKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#kms_master_key_id S3Bucket#kms_master_key_id}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault.property.sseAlgorithm">SseAlgorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#sse_algorithm S3Bucket#sse_algorithm}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault.property.kmsMasterKeyId">KmsMasterKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#kms_master_key_id S3Bucket#kms_master_key_id}. |
 
 ---
 
@@ -3370,7 +3370,7 @@ SseAlgorithm *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#sse_algorithm S3Bucket#sse_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#sse_algorithm S3Bucket#sse_algorithm}.
 
 ---
 
@@ -3382,7 +3382,7 @@ KmsMasterKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#kms_master_key_id S3Bucket#kms_master_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#kms_master_key_id S3Bucket#kms_master_key_id}.
 
 ---
 
@@ -3405,10 +3405,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#create S3Bucket#create}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#delete S3Bucket#delete}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#read S3Bucket#read}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#update S3Bucket#update}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#create S3Bucket#create}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#delete S3Bucket#delete}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#read S3Bucket#read}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#update S3Bucket#update}. |
 
 ---
 
@@ -3420,7 +3420,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#create S3Bucket#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#create S3Bucket#create}.
 
 ---
 
@@ -3432,7 +3432,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#delete S3Bucket#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#delete S3Bucket#delete}.
 
 ---
 
@@ -3444,7 +3444,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#read S3Bucket#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#read S3Bucket#read}.
 
 ---
 
@@ -3456,7 +3456,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#update S3Bucket#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#update S3Bucket#update}.
 
 ---
 
@@ -3477,8 +3477,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketVersioning.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketVersioning.property.mfaDelete">MfaDelete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#mfa_delete S3Bucket#mfa_delete}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketVersioning.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketVersioning.property.mfaDelete">MfaDelete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#mfa_delete S3Bucket#mfa_delete}. |
 
 ---
 
@@ -3490,7 +3490,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}.
 
 ---
 
@@ -3502,7 +3502,7 @@ MfaDelete interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#mfa_delete S3Bucket#mfa_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#mfa_delete S3Bucket#mfa_delete}.
 
 ---
 
@@ -3525,10 +3525,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketWebsite.property.errorDocument">ErrorDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#error_document S3Bucket#error_document}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketWebsite.property.indexDocument">IndexDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#index_document S3Bucket#index_document}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketWebsite.property.redirectAllRequestsTo">RedirectAllRequestsTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#redirect_all_requests_to S3Bucket#redirect_all_requests_to}. |
-| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketWebsite.property.routingRules">RoutingRules</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#routing_rules S3Bucket#routing_rules}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketWebsite.property.errorDocument">ErrorDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#error_document S3Bucket#error_document}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketWebsite.property.indexDocument">IndexDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#index_document S3Bucket#index_document}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketWebsite.property.redirectAllRequestsTo">RedirectAllRequestsTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#redirect_all_requests_to S3Bucket#redirect_all_requests_to}. |
+| <code><a href="#@cdktn/provider-aws.s3Bucket.S3BucketWebsite.property.routingRules">RoutingRules</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#routing_rules S3Bucket#routing_rules}. |
 
 ---
 
@@ -3540,7 +3540,7 @@ ErrorDocument *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#error_document S3Bucket#error_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#error_document S3Bucket#error_document}.
 
 ---
 
@@ -3552,7 +3552,7 @@ IndexDocument *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#index_document S3Bucket#index_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#index_document S3Bucket#index_document}.
 
 ---
 
@@ -3564,7 +3564,7 @@ RedirectAllRequestsTo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#redirect_all_requests_to S3Bucket#redirect_all_requests_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#redirect_all_requests_to S3Bucket#redirect_all_requests_to}.
 
 ---
 
@@ -3576,7 +3576,7 @@ RoutingRules *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/s3_bucket#routing_rules S3Bucket#routing_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/s3_bucket#routing_rules S3Bucket#routing_rules}.
 
 ---
 

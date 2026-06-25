@@ -4,7 +4,7 @@
 
 ### DataAwsRoute53Records <a name="DataAwsRoute53Records" id="@cdktn/provider-aws.dataAwsRoute53Records.DataAwsRoute53Records"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/route53_records aws_route53_records}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/route53_records aws_route53_records}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRoute53Records.DataAwsRoute53Records.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsRoute53Records to i
 
 The id of the existing DataAwsRoute53Records that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/route53_records#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/route53_records#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,8 +653,8 @@ new DataAwsRoute53RecordsConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/route53_records#zone_id DataAwsRoute53Records#zone_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.nameRegex">NameRegex</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/route53_records#name_regex DataAwsRoute53Records#name_regex}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/route53_records#zone_id DataAwsRoute53Records#zone_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.nameRegex">NameRegex</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/route53_records#name_regex DataAwsRoute53Records#name_regex}. |
 
 ---
 
@@ -736,7 +736,7 @@ public string ZoneId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/route53_records#zone_id DataAwsRoute53Records#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/route53_records#zone_id DataAwsRoute53Records#zone_id}.
 
 ---
 
@@ -748,7 +748,7 @@ public string NameRegex { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/route53_records#name_regex DataAwsRoute53Records#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/route53_records#name_regex DataAwsRoute53Records#name_regex}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsApiGatewayExport <a name="DataAwsApiGatewayExport" id="@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export aws_api_gateway_export}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export aws_api_gateway_export}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport.Initializer"></a>
 
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataAwsApiGatewayExport to
 
 The id of the existing DataAwsApiGatewayExport that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,12 +796,12 @@ const dataAwsApiGatewayExportConfig: dataAwsApiGatewayExport.DataAwsApiGatewayEx
 | <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.exportType">exportType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#export_type DataAwsApiGatewayExport#export_type}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.restApiId">restApiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#rest_api_id DataAwsApiGatewayExport#rest_api_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.stageName">stageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#stage_name DataAwsApiGatewayExport#stage_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.accepts">accepts</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#accepts DataAwsApiGatewayExport#accepts}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#id DataAwsApiGatewayExport#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#parameters DataAwsApiGatewayExport#parameters}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.exportType">exportType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#export_type DataAwsApiGatewayExport#export_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.restApiId">restApiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#rest_api_id DataAwsApiGatewayExport#rest_api_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.stageName">stageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#stage_name DataAwsApiGatewayExport#stage_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.accepts">accepts</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#accepts DataAwsApiGatewayExport#accepts}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#id DataAwsApiGatewayExport#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#parameters DataAwsApiGatewayExport#parameters}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -884,7 +884,7 @@ public readonly exportType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#export_type DataAwsApiGatewayExport#export_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#export_type DataAwsApiGatewayExport#export_type}.
 
 ---
 
@@ -896,7 +896,7 @@ public readonly restApiId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#rest_api_id DataAwsApiGatewayExport#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#rest_api_id DataAwsApiGatewayExport#rest_api_id}.
 
 ---
 
@@ -908,7 +908,7 @@ public readonly stageName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#stage_name DataAwsApiGatewayExport#stage_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#stage_name DataAwsApiGatewayExport#stage_name}.
 
 ---
 
@@ -920,7 +920,7 @@ public readonly accepts: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#accepts DataAwsApiGatewayExport#accepts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#accepts DataAwsApiGatewayExport#accepts}.
 
 ---
 
@@ -932,7 +932,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#id DataAwsApiGatewayExport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#id DataAwsApiGatewayExport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -947,7 +947,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#parameters DataAwsApiGatewayExport#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#parameters DataAwsApiGatewayExport#parameters}.
 
 ---
 
@@ -961,7 +961,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/api_gateway_export#region DataAwsApiGatewayExport#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/api_gateway_export#region DataAwsApiGatewayExport#region}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsFisExperimentTemplates <a name="DataAwsFisExperimentTemplates" id="@cdktn/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsFisExperimentTempla
 
 The id of the existing DataAwsFisExperimentTemplates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/fis_experiment_templates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/fis_experiment_templates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -661,7 +661,7 @@ new DataAwsFisExperimentTemplatesConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}. |
 
 ---
 
@@ -745,7 +745,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/fis_experiment_templates#region DataAwsFisExperimentTemplates#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/fis_experiment_templates#region DataAwsFisExperimentTemplates#region}
 
 ---
 
@@ -757,7 +757,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}.
 
 ---
 

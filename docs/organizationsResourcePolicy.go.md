@@ -4,7 +4,7 @@
 
 ### OrganizationsResourcePolicy <a name="OrganizationsResourcePolicy" id="@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicy.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the OrganizationsResourcePolic
 
 The id of the existing OrganizationsResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,10 +837,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsresourcep
 | <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_resource_policy#content OrganizationsResourcePolicy#content}. |
-| <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_resource_policy#id OrganizationsResourcePolicy#id}. |
-| <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_resource_policy#tags OrganizationsResourcePolicy#tags}. |
-| <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_resource_policy#tags_all OrganizationsResourcePolicy#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_resource_policy#content OrganizationsResourcePolicy#content}. |
+| <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_resource_policy#id OrganizationsResourcePolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_resource_policy#tags OrganizationsResourcePolicy#tags}. |
+| <code><a href="#@cdktn/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_resource_policy#tags_all OrganizationsResourcePolicy#tags_all}. |
 
 ---
 
@@ -922,7 +922,7 @@ Content *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_resource_policy#content OrganizationsResourcePolicy#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_resource_policy#content OrganizationsResourcePolicy#content}.
 
 ---
 
@@ -934,7 +934,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_resource_policy#id OrganizationsResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_resource_policy#id OrganizationsResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -949,7 +949,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_resource_policy#tags OrganizationsResourcePolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_resource_policy#tags OrganizationsResourcePolicy#tags}.
 
 ---
 
@@ -961,7 +961,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_resource_policy#tags_all OrganizationsResourcePolicy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_resource_policy#tags_all OrganizationsResourcePolicy#tags_all}.
 
 ---
 
