@@ -201,6 +201,7 @@ Object.defineProperty(exports, 'bedrockagentcoreOauth2CredentialProvider', { get
 Object.defineProperty(exports, 'bedrockagentcoreOnlineEvaluationConfig', { get: function () { return require('./bedrockagentcore-online-evaluation-config'); } });
 Object.defineProperty(exports, 'bedrockagentcorePolicy', { get: function () { return require('./bedrockagentcore-policy'); } });
 Object.defineProperty(exports, 'bedrockagentcorePolicyEngine', { get: function () { return require('./bedrockagentcore-policy-engine'); } });
+Object.defineProperty(exports, 'bedrockagentcoreRegistry', { get: function () { return require('./bedrockagentcore-registry'); } });
 Object.defineProperty(exports, 'bedrockagentcoreResourcePolicy', { get: function () { return require('./bedrockagentcore-resource-policy'); } });
 Object.defineProperty(exports, 'bedrockagentcoreTokenVaultCmk', { get: function () { return require('./bedrockagentcore-token-vault-cmk'); } });
 Object.defineProperty(exports, 'bedrockagentcoreWorkloadIdentity', { get: function () { return require('./bedrockagentcore-workload-identity'); } });
@@ -2204,6 +2205,7 @@ Object.defineProperty(exports, 'dataAwsRouteTables', { get: function () { return
 Object.defineProperty(exports, 'dataAwsS3AccessPoint', { get: function () { return require('./data-aws-s3-access-point'); } });
 Object.defineProperty(exports, 'dataAwsS3AccountPublicAccessBlock', { get: function () { return require('./data-aws-s3-account-public-access-block'); } });
 Object.defineProperty(exports, 'dataAwsS3Bucket', { get: function () { return require('./data-aws-s3-bucket'); } });
+Object.defineProperty(exports, 'dataAwsS3BucketNotification', { get: function () { return require('./data-aws-s3-bucket-notification'); } });
 Object.defineProperty(exports, 'dataAwsS3BucketObject', { get: function () { return require('./data-aws-s3-bucket-object'); } });
 Object.defineProperty(exports, 'dataAwsS3BucketObjectLockConfiguration', { get: function () { return require('./data-aws-s3-bucket-object-lock-configuration'); } });
 Object.defineProperty(exports, 'dataAwsS3BucketObjects', { get: function () { return require('./data-aws-s3-bucket-objects'); } });

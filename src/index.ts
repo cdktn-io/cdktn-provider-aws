@@ -201,6 +201,7 @@ export * as bedrockagentcoreOauth2CredentialProvider from './bedrockagentcore-oa
 export * as bedrockagentcoreOnlineEvaluationConfig from './bedrockagentcore-online-evaluation-config/index';
 export * as bedrockagentcorePolicy from './bedrockagentcore-policy/index';
 export * as bedrockagentcorePolicyEngine from './bedrockagentcore-policy-engine/index';
+export * as bedrockagentcoreRegistry from './bedrockagentcore-registry/index';
 export * as bedrockagentcoreResourcePolicy from './bedrockagentcore-resource-policy/index';
 export * as bedrockagentcoreTokenVaultCmk from './bedrockagentcore-token-vault-cmk/index';
 export * as bedrockagentcoreWorkloadIdentity from './bedrockagentcore-workload-identity/index';
@@ -2204,6 +2205,7 @@ export * as dataAwsRouteTables from './data-aws-route-tables/index';
 export * as dataAwsS3AccessPoint from './data-aws-s3-access-point/index';
 export * as dataAwsS3AccountPublicAccessBlock from './data-aws-s3-account-public-access-block/index';
 export * as dataAwsS3Bucket from './data-aws-s3-bucket/index';
+export * as dataAwsS3BucketNotification from './data-aws-s3-bucket-notification/index';
 export * as dataAwsS3BucketObject from './data-aws-s3-bucket-object/index';
 export * as dataAwsS3BucketObjectLockConfiguration from './data-aws-s3-bucket-object-lock-configuration/index';
 export * as dataAwsS3BucketObjects from './data-aws-s3-bucket-objects/index';

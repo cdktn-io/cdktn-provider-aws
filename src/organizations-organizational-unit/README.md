@@ -1,3 +1,3 @@
 # `aws_organizations_organizational_unit`
 
-Refer to the Terraform Registry for docs: [`aws_organizations_organizational_unit`](https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/organizations_organizational_unit).
+Refer to the Terraform Registry for docs: [`aws_organizations_organizational_unit`](https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/organizations_organizational_unit).
