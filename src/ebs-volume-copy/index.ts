@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy
+// https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +13,39 @@ import * as cdktn from 'cdktn';
 
 export interface EbsVolumeCopyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#iops EbsVolumeCopy#iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#iops EbsVolumeCopy#iops}
   */
   readonly iops?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#region EbsVolumeCopy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#region EbsVolumeCopy#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#size EbsVolumeCopy#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#size EbsVolumeCopy#size}
   */
   readonly size?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#source_volume_id EbsVolumeCopy#source_volume_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#source_volume_id EbsVolumeCopy#source_volume_id}
   */
   readonly sourceVolumeId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#tags EbsVolumeCopy#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#tags EbsVolumeCopy#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#throughput EbsVolumeCopy#throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#throughput EbsVolumeCopy#throughput}
   */
   readonly throughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#volume_type EbsVolumeCopy#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#volume_type EbsVolumeCopy#volume_type}
   */
   readonly volumeType?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#timeouts EbsVolumeCopy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#timeouts EbsVolumeCopy#timeouts}
   */
   readonly timeouts?: EbsVolumeCopyTimeouts;
 }
@@ -53,19 +53,19 @@ export interface EbsVolumeCopyTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#create EbsVolumeCopy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#create EbsVolumeCopy#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#delete EbsVolumeCopy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#delete EbsVolumeCopy#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#update EbsVolumeCopy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#update EbsVolumeCopy#update}
   */
   readonly update?: string;
 }
@@ -217,7 +217,7 @@ export class EbsVolumeCopyTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy aws_ebs_volume_copy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy aws_ebs_volume_copy}
 */
 export class EbsVolumeCopy extends cdktn.TerraformResource {
 
@@ -233,7 +233,7 @@ export class EbsVolumeCopy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EbsVolumeCopy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EbsVolumeCopy to import
-  * @param importFromId The id of the existing EbsVolumeCopy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EbsVolumeCopy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EbsVolumeCopy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -245,7 +245,7 @@ export class EbsVolumeCopy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/ebs_volume_copy aws_ebs_volume_copy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ebs_volume_copy aws_ebs_volume_copy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -256,7 +256,7 @@ export class EbsVolumeCopy extends cdktn.TerraformResource {
       terraformResourceType: 'aws_ebs_volume_copy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.51.0',
+        providerVersion: '6.52.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

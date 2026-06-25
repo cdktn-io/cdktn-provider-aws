@@ -4,7 +4,7 @@
 
 ### DefaultRouteTable <a name="DefaultRouteTable" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table aws_default_route_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table aws_default_route_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer"></a>
 
@@ -41,13 +41,13 @@ DefaultRouteTable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.defaultRouteTableId">defaultRouteTableId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#default_route_table_id DefaultRouteTable#default_route_table_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#id DefaultRouteTable#id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.propagatingVgws">propagatingVgws</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#propagating_vgws DefaultRouteTable#propagating_vgws}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.defaultRouteTableId">defaultRouteTableId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#default_route_table_id DefaultRouteTable#default_route_table_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#id DefaultRouteTable#id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.propagatingVgws">propagatingVgws</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#propagating_vgws DefaultRouteTable#propagating_vgws}. |
 | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.route">route</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute">DefaultRouteTableRoute</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#route DefaultRouteTable#route}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#tags DefaultRouteTable#tags}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#tags_all DefaultRouteTable#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.route">route</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute">DefaultRouteTableRoute</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#route DefaultRouteTable#route}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#tags DefaultRouteTable#tags}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#tags_all DefaultRouteTable#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableTimeouts">DefaultRouteTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#default_route_table_id DefaultRouteTable#default_route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#default_route_table_id DefaultRouteTable#default_route_table_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#id DefaultRouteTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#id DefaultRouteTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#propagating_vgws DefaultRouteTable#propagating_vgws}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#propagating_vgws DefaultRouteTable#propagating_vgws}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#region DefaultRouteTable#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#region DefaultRouteTable#region}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute">DefaultRouteTableRoute</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#route DefaultRouteTable#route}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#route DefaultRouteTable#route}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#tags DefaultRouteTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#tags DefaultRouteTable#tags}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#tags_all DefaultRouteTable#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#tags_all DefaultRouteTable#tags_all}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#timeouts DefaultRouteTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#timeouts DefaultRouteTable#timeouts}
 
 ---
 
@@ -703,7 +703,7 @@ The construct id used in the generated config for the DefaultRouteTable to impor
 
 The id of the existing DefaultRouteTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1144,13 +1144,13 @@ DefaultRouteTableConfig.builder()
 | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.defaultRouteTableId">defaultRouteTableId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#default_route_table_id DefaultRouteTable#default_route_table_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#id DefaultRouteTable#id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.propagatingVgws">propagatingVgws</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#propagating_vgws DefaultRouteTable#propagating_vgws}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.defaultRouteTableId">defaultRouteTableId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#default_route_table_id DefaultRouteTable#default_route_table_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#id DefaultRouteTable#id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.propagatingVgws">propagatingVgws</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#propagating_vgws DefaultRouteTable#propagating_vgws}. |
 | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.route">route</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute">DefaultRouteTableRoute</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#route DefaultRouteTable#route}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#tags DefaultRouteTable#tags}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#tags_all DefaultRouteTable#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.route">route</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute">DefaultRouteTableRoute</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#route DefaultRouteTable#route}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#tags DefaultRouteTable#tags}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#tags_all DefaultRouteTable#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableTimeouts">DefaultRouteTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1233,7 +1233,7 @@ public java.lang.String getDefaultRouteTableId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#default_route_table_id DefaultRouteTable#default_route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#default_route_table_id DefaultRouteTable#default_route_table_id}.
 
 ---
 
@@ -1245,7 +1245,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#id DefaultRouteTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#id DefaultRouteTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1260,7 +1260,7 @@ public java.util.List<java.lang.String> getPropagatingVgws();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#propagating_vgws DefaultRouteTable#propagating_vgws}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#propagating_vgws DefaultRouteTable#propagating_vgws}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#region DefaultRouteTable#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#region DefaultRouteTable#region}
 
 ---
 
@@ -1286,7 +1286,7 @@ public IResolvable|java.util.List<DefaultRouteTableRoute> getRoute();
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute">DefaultRouteTableRoute</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#route DefaultRouteTable#route}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#route DefaultRouteTable#route}.
 
 ---
 
@@ -1298,7 +1298,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#tags DefaultRouteTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#tags DefaultRouteTable#tags}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#tags_all DefaultRouteTable#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#tags_all DefaultRouteTable#tags_all}.
 
 ---
 
@@ -1324,7 +1324,7 @@ public DefaultRouteTableTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#timeouts DefaultRouteTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#timeouts DefaultRouteTable#timeouts}
 
 ---
 
@@ -1355,18 +1355,18 @@ DefaultRouteTableRoute.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.cidrBlock">cidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#cidr_block DefaultRouteTable#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.coreNetworkArn">coreNetworkArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#core_network_arn DefaultRouteTable#core_network_arn}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.destinationPrefixListId">destinationPrefixListId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#destination_prefix_list_id DefaultRouteTable#destination_prefix_list_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.egressOnlyGatewayId">egressOnlyGatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#egress_only_gateway_id DefaultRouteTable#egress_only_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.gatewayId">gatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#gateway_id DefaultRouteTable#gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#instance_id DefaultRouteTable#instance_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.ipv6CidrBlock">ipv6CidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#ipv6_cidr_block DefaultRouteTable#ipv6_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.natGatewayId">natGatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#nat_gateway_id DefaultRouteTable#nat_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.networkInterfaceId">networkInterfaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#network_interface_id DefaultRouteTable#network_interface_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.transitGatewayId">transitGatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#transit_gateway_id DefaultRouteTable#transit_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.vpcEndpointId">vpcEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#vpc_endpoint_id DefaultRouteTable#vpc_endpoint_id}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.vpcPeeringConnectionId">vpcPeeringConnectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#vpc_peering_connection_id DefaultRouteTable#vpc_peering_connection_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.cidrBlock">cidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#cidr_block DefaultRouteTable#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.coreNetworkArn">coreNetworkArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#core_network_arn DefaultRouteTable#core_network_arn}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.destinationPrefixListId">destinationPrefixListId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#destination_prefix_list_id DefaultRouteTable#destination_prefix_list_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.egressOnlyGatewayId">egressOnlyGatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#egress_only_gateway_id DefaultRouteTable#egress_only_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.gatewayId">gatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#gateway_id DefaultRouteTable#gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#instance_id DefaultRouteTable#instance_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.ipv6CidrBlock">ipv6CidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#ipv6_cidr_block DefaultRouteTable#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.natGatewayId">natGatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#nat_gateway_id DefaultRouteTable#nat_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.networkInterfaceId">networkInterfaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#network_interface_id DefaultRouteTable#network_interface_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.transitGatewayId">transitGatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#transit_gateway_id DefaultRouteTable#transit_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.vpcEndpointId">vpcEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#vpc_endpoint_id DefaultRouteTable#vpc_endpoint_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.property.vpcPeeringConnectionId">vpcPeeringConnectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#vpc_peering_connection_id DefaultRouteTable#vpc_peering_connection_id}. |
 
 ---
 
@@ -1378,7 +1378,7 @@ public java.lang.String getCidrBlock();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#cidr_block DefaultRouteTable#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#cidr_block DefaultRouteTable#cidr_block}.
 
 ---
 
@@ -1390,7 +1390,7 @@ public java.lang.String getCoreNetworkArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#core_network_arn DefaultRouteTable#core_network_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#core_network_arn DefaultRouteTable#core_network_arn}.
 
 ---
 
@@ -1402,7 +1402,7 @@ public java.lang.String getDestinationPrefixListId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#destination_prefix_list_id DefaultRouteTable#destination_prefix_list_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#destination_prefix_list_id DefaultRouteTable#destination_prefix_list_id}.
 
 ---
 
@@ -1414,7 +1414,7 @@ public java.lang.String getEgressOnlyGatewayId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#egress_only_gateway_id DefaultRouteTable#egress_only_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#egress_only_gateway_id DefaultRouteTable#egress_only_gateway_id}.
 
 ---
 
@@ -1426,7 +1426,7 @@ public java.lang.String getGatewayId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#gateway_id DefaultRouteTable#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#gateway_id DefaultRouteTable#gateway_id}.
 
 ---
 
@@ -1438,7 +1438,7 @@ public java.lang.String getInstanceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#instance_id DefaultRouteTable#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#instance_id DefaultRouteTable#instance_id}.
 
 ---
 
@@ -1450,7 +1450,7 @@ public java.lang.String getIpv6CidrBlock();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#ipv6_cidr_block DefaultRouteTable#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#ipv6_cidr_block DefaultRouteTable#ipv6_cidr_block}.
 
 ---
 
@@ -1462,7 +1462,7 @@ public java.lang.String getNatGatewayId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#nat_gateway_id DefaultRouteTable#nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#nat_gateway_id DefaultRouteTable#nat_gateway_id}.
 
 ---
 
@@ -1474,7 +1474,7 @@ public java.lang.String getNetworkInterfaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#network_interface_id DefaultRouteTable#network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#network_interface_id DefaultRouteTable#network_interface_id}.
 
 ---
 
@@ -1486,7 +1486,7 @@ public java.lang.String getTransitGatewayId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#transit_gateway_id DefaultRouteTable#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#transit_gateway_id DefaultRouteTable#transit_gateway_id}.
 
 ---
 
@@ -1498,7 +1498,7 @@ public java.lang.String getVpcEndpointId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#vpc_endpoint_id DefaultRouteTable#vpc_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#vpc_endpoint_id DefaultRouteTable#vpc_endpoint_id}.
 
 ---
 
@@ -1510,7 +1510,7 @@ public java.lang.String getVpcPeeringConnectionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#vpc_peering_connection_id DefaultRouteTable#vpc_peering_connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#vpc_peering_connection_id DefaultRouteTable#vpc_peering_connection_id}.
 
 ---
 
@@ -1531,8 +1531,8 @@ DefaultRouteTableTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#create DefaultRouteTable#create}. |
-| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#update DefaultRouteTable#update}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#create DefaultRouteTable#create}. |
+| <code><a href="#@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#update DefaultRouteTable#update}. |
 
 ---
 
@@ -1544,7 +1544,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#create DefaultRouteTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#create DefaultRouteTable#create}.
 
 ---
 
@@ -1556,7 +1556,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/default_route_table#update DefaultRouteTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/default_route_table#update DefaultRouteTable#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ApiGatewayMethod <a name="ApiGatewayMethod" id="@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethod"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method aws_api_gateway_method}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method aws_api_gateway_method}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethod.Initializer"></a>
 
@@ -552,7 +552,7 @@ The construct id used in the generated config for the ApiGatewayMethod to import
 
 The id of the existing ApiGatewayMethod that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1075,19 +1075,19 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaymethod"
 | <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.authorization">Authorization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#authorization ApiGatewayMethod#authorization}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.httpMethod">HttpMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#http_method ApiGatewayMethod#http_method}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#resource_id ApiGatewayMethod#resource_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#rest_api_id ApiGatewayMethod#rest_api_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.apiKeyRequired">ApiKeyRequired</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#api_key_required ApiGatewayMethod#api_key_required}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.authorizationScopes">AuthorizationScopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#authorization_scopes ApiGatewayMethod#authorization_scopes}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.authorizerId">AuthorizerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#authorizer_id ApiGatewayMethod#authorizer_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#id ApiGatewayMethod#id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.operationName">OperationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#operation_name ApiGatewayMethod#operation_name}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.authorization">Authorization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#authorization ApiGatewayMethod#authorization}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.httpMethod">HttpMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#http_method ApiGatewayMethod#http_method}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#resource_id ApiGatewayMethod#resource_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#rest_api_id ApiGatewayMethod#rest_api_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.apiKeyRequired">ApiKeyRequired</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#api_key_required ApiGatewayMethod#api_key_required}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.authorizationScopes">AuthorizationScopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#authorization_scopes ApiGatewayMethod#authorization_scopes}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.authorizerId">AuthorizerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#authorizer_id ApiGatewayMethod#authorizer_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#id ApiGatewayMethod#id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.operationName">OperationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#operation_name ApiGatewayMethod#operation_name}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.requestModels">RequestModels</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#request_models ApiGatewayMethod#request_models}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.requestParameters">RequestParameters</a></code> | <code>*map[string]interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#request_parameters ApiGatewayMethod#request_parameters}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.requestValidatorId">RequestValidatorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#request_validator_id ApiGatewayMethod#request_validator_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.requestModels">RequestModels</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#request_models ApiGatewayMethod#request_models}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.requestParameters">RequestParameters</a></code> | <code>*map[string]interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#request_parameters ApiGatewayMethod#request_parameters}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayMethod.ApiGatewayMethodConfig.property.requestValidatorId">RequestValidatorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#request_validator_id ApiGatewayMethod#request_validator_id}. |
 
 ---
 
@@ -1169,7 +1169,7 @@ Authorization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#authorization ApiGatewayMethod#authorization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#authorization ApiGatewayMethod#authorization}.
 
 ---
 
@@ -1181,7 +1181,7 @@ HttpMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#http_method ApiGatewayMethod#http_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#http_method ApiGatewayMethod#http_method}.
 
 ---
 
@@ -1193,7 +1193,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#resource_id ApiGatewayMethod#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#resource_id ApiGatewayMethod#resource_id}.
 
 ---
 
@@ -1205,7 +1205,7 @@ RestApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#rest_api_id ApiGatewayMethod#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#rest_api_id ApiGatewayMethod#rest_api_id}.
 
 ---
 
@@ -1217,7 +1217,7 @@ ApiKeyRequired interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#api_key_required ApiGatewayMethod#api_key_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#api_key_required ApiGatewayMethod#api_key_required}.
 
 ---
 
@@ -1229,7 +1229,7 @@ AuthorizationScopes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#authorization_scopes ApiGatewayMethod#authorization_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#authorization_scopes ApiGatewayMethod#authorization_scopes}.
 
 ---
 
@@ -1241,7 +1241,7 @@ AuthorizerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#authorizer_id ApiGatewayMethod#authorizer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#authorizer_id ApiGatewayMethod#authorizer_id}.
 
 ---
 
@@ -1253,7 +1253,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#id ApiGatewayMethod#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#id ApiGatewayMethod#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1268,7 +1268,7 @@ OperationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#operation_name ApiGatewayMethod#operation_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#operation_name ApiGatewayMethod#operation_name}.
 
 ---
 
@@ -1282,7 +1282,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#region ApiGatewayMethod#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#region ApiGatewayMethod#region}
 
 ---
 
@@ -1294,7 +1294,7 @@ RequestModels *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#request_models ApiGatewayMethod#request_models}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#request_models ApiGatewayMethod#request_models}.
 
 ---
 
@@ -1306,7 +1306,7 @@ RequestParameters *map[string]interface{}
 
 - *Type:* *map[string]interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#request_parameters ApiGatewayMethod#request_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#request_parameters ApiGatewayMethod#request_parameters}.
 
 ---
 
@@ -1318,7 +1318,7 @@ RequestValidatorId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/api_gateway_method#request_validator_id ApiGatewayMethod#request_validator_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/api_gateway_method#request_validator_id ApiGatewayMethod#request_validator_id}.
 
 ---
 

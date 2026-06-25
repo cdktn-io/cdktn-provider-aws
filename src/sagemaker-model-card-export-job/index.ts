@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job
+// https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktn from 'cdktn';
 
 export interface SagemakerModelCardExportJobConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job#model_card_export_job_name SagemakerModelCardExportJob#model_card_export_job_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job#model_card_export_job_name SagemakerModelCardExportJob#model_card_export_job_name}
   */
   readonly modelCardExportJobName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job#model_card_name SagemakerModelCardExportJob#model_card_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job#model_card_name SagemakerModelCardExportJob#model_card_name}
   */
   readonly modelCardName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job#model_card_version SagemakerModelCardExportJob#model_card_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job#model_card_version SagemakerModelCardExportJob#model_card_version}
   */
   readonly modelCardVersion?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job#region SagemakerModelCardExportJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job#region SagemakerModelCardExportJob#region}
   */
   readonly region?: string;
   /**
   * output_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job#output_config SagemakerModelCardExportJob#output_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job#output_config SagemakerModelCardExportJob#output_config}
   */
   readonly outputConfig?: SagemakerModelCardExportJobOutputConfig[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job#timeouts SagemakerModelCardExportJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job#timeouts SagemakerModelCardExportJob#timeouts}
   */
   readonly timeouts?: SagemakerModelCardExportJobTimeouts;
 }
@@ -120,7 +120,7 @@ export class SagemakerModelCardExportJobExportArtifactsList extends cdktn.Comple
 }
 export interface SagemakerModelCardExportJobOutputConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job#s3_output_path SagemakerModelCardExportJob#s3_output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job#s3_output_path SagemakerModelCardExportJob#s3_output_path}
   */
   readonly s3OutputPath: string;
 }
@@ -235,7 +235,7 @@ export interface SagemakerModelCardExportJobTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job#create SagemakerModelCardExportJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job#create SagemakerModelCardExportJob#create}
   */
   readonly create?: string;
 }
@@ -329,7 +329,7 @@ export class SagemakerModelCardExportJobTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job aws_sagemaker_model_card_export_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job aws_sagemaker_model_card_export_job}
 */
 export class SagemakerModelCardExportJob extends cdktn.TerraformResource {
 
@@ -345,7 +345,7 @@ export class SagemakerModelCardExportJob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SagemakerModelCardExportJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerModelCardExportJob to import
-  * @param importFromId The id of the existing SagemakerModelCardExportJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SagemakerModelCardExportJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerModelCardExportJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -357,7 +357,7 @@ export class SagemakerModelCardExportJob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/resources/sagemaker_model_card_export_job aws_sagemaker_model_card_export_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/sagemaker_model_card_export_job aws_sagemaker_model_card_export_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -368,7 +368,7 @@ export class SagemakerModelCardExportJob extends cdktn.TerraformResource {
       terraformResourceType: 'aws_sagemaker_model_card_export_job',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.51.0',
+        providerVersion: '6.52.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

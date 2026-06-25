@@ -4,7 +4,7 @@
 
 ### DataAwsDxLocation <a name="DataAwsDxLocation" id="@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/dx_location aws_dx_location}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/dx_location aws_dx_location}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocation.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsDxLocation to impor
 
 The id of the existing DataAwsDxLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/dx_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/dx_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -716,8 +716,8 @@ new DataAwsDxLocationConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.locationCode">LocationCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/dx_location#id DataAwsDxLocation#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.locationCode">LocationCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/dx_location#id DataAwsDxLocation#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -800,7 +800,7 @@ public string LocationCode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}.
 
 ---
 
@@ -812,7 +812,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/dx_location#id DataAwsDxLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/dx_location#id DataAwsDxLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -829,7 +829,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.51.0/docs/data-sources/dx_location#region DataAwsDxLocation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/dx_location#region DataAwsDxLocation#region}
 
 ---
 
