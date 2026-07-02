@@ -4,7 +4,7 @@
 
 ### XrayResourcePolicy <a name="XrayResourcePolicy" id="@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy aws_xray_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy aws_xray_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicy.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the XrayResourcePolicy to impo
 
 The id of the existing XrayResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,10 +847,10 @@ const xrayResourcePolicyConfig: xrayResourcePolicy.XrayResourcePolicyConfig = { 
 | <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyDocument">policyDocument</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}. |
-| <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyName">policyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy#policy_name XrayResourcePolicy#policy_name}. |
-| <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.bypassPolicyLockoutCheck">bypassPolicyLockoutCheck</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}. |
-| <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyRevisionId">policyRevisionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy#policy_revision_id XrayResourcePolicy#policy_revision_id}. |
+| <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyDocument">policyDocument</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}. |
+| <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyName">policyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy#policy_name XrayResourcePolicy#policy_name}. |
+| <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.bypassPolicyLockoutCheck">bypassPolicyLockoutCheck</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}. |
+| <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyRevisionId">policyRevisionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy#policy_revision_id XrayResourcePolicy#policy_revision_id}. |
 | <code><a href="#@cdktn/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -933,7 +933,7 @@ public readonly policyDocument: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}.
 
 ---
 
@@ -945,7 +945,7 @@ public readonly policyName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy#policy_name XrayResourcePolicy#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy#policy_name XrayResourcePolicy#policy_name}.
 
 ---
 
@@ -957,7 +957,7 @@ public readonly bypassPolicyLockoutCheck: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}.
 
 ---
 
@@ -969,7 +969,7 @@ public readonly policyRevisionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy#policy_revision_id XrayResourcePolicy#policy_revision_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy#policy_revision_id XrayResourcePolicy#policy_revision_id}.
 
 ---
 
@@ -983,7 +983,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_resource_policy#region XrayResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_resource_policy#region XrayResourcePolicy#region}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsMskCluster <a name="DataAwsMskCluster" id="@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/msk_cluster aws_msk_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/msk_cluster aws_msk_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskCluster.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsMskCluster to impor
 
 The id of the existing DataAwsMskCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/msk_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/msk_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -446,6 +446,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0
 | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskCluster.property.bootstrapBrokersTls">BootstrapBrokersTls</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskCluster.property.brokerNodeGroupInfo">BrokerNodeGroupInfo</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterBrokerNodeGroupInfoList">DataAwsMskClusterBrokerNodeGroupInfoList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskCluster.property.clusterUuid">ClusterUuid</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskCluster.property.customerActionStatus">CustomerActionStatus</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskCluster.property.kafkaVersion">KafkaVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskCluster.property.numberOfBrokerNodes">NumberOfBrokerNodes</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskCluster.property.zookeeperConnectString">ZookeeperConnectString</a></code> | <code>*string</code> | *No description.* |
@@ -677,6 +678,16 @@ func BrokerNodeGroupInfo() DataAwsMskClusterBrokerNodeGroupInfoList
 
 ```go
 func ClusterUuid() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CustomerActionStatus`<sup>Required</sup> <a name="CustomerActionStatus" id="@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskCluster.property.customerActionStatus"></a>
+
+```go
+func CustomerActionStatus() *string
 ```
 
 - *Type:* *string
@@ -973,10 +984,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmskcluster"
 | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/msk_cluster#cluster_name DataAwsMskCluster#cluster_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/msk_cluster#id DataAwsMskCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/msk_cluster#cluster_name DataAwsMskCluster#cluster_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/msk_cluster#id DataAwsMskCluster#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/msk_cluster#tags DataAwsMskCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/msk_cluster#tags DataAwsMskCluster#tags}. |
 
 ---
 
@@ -1058,7 +1069,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/msk_cluster#cluster_name DataAwsMskCluster#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/msk_cluster#cluster_name DataAwsMskCluster#cluster_name}.
 
 ---
 
@@ -1070,7 +1081,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/msk_cluster#id DataAwsMskCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/msk_cluster#id DataAwsMskCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1087,7 +1098,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/msk_cluster#region DataAwsMskCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/msk_cluster#region DataAwsMskCluster#region}
 
 ---
 
@@ -1099,7 +1110,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/data-sources/msk_cluster#tags DataAwsMskCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/msk_cluster#tags DataAwsMskCluster#tags}.
 
 ---
 

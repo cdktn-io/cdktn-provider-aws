@@ -4,7 +4,7 @@
 
 ### IdentitystoreGroupMembership <a name="IdentitystoreGroupMembership" id="@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the IdentitystoreGroupMembersh
 
 The id of the existing IdentitystoreGroupMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,10 +853,10 @@ new IdentitystoreGroupMembershipConfig {
 | <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership#group_id IdentitystoreGroupMembership#group_id}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.identityStoreId">IdentityStoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership#identity_store_id IdentitystoreGroupMembership#identity_store_id}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.memberId">MemberId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership#member_id IdentitystoreGroupMembership#member_id}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership#id IdentitystoreGroupMembership#id}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership#group_id IdentitystoreGroupMembership#group_id}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.identityStoreId">IdentityStoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership#identity_store_id IdentitystoreGroupMembership#identity_store_id}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.memberId">MemberId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership#member_id IdentitystoreGroupMembership#member_id}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership#id IdentitystoreGroupMembership#id}. |
 | <code><a href="#@cdktn/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -939,7 +939,7 @@ public string GroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership#group_id IdentitystoreGroupMembership#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership#group_id IdentitystoreGroupMembership#group_id}.
 
 ---
 
@@ -951,7 +951,7 @@ public string IdentityStoreId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership#identity_store_id IdentitystoreGroupMembership#identity_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership#identity_store_id IdentitystoreGroupMembership#identity_store_id}.
 
 ---
 
@@ -963,7 +963,7 @@ public string MemberId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership#member_id IdentitystoreGroupMembership#member_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership#member_id IdentitystoreGroupMembership#member_id}.
 
 ---
 
@@ -975,7 +975,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership#id IdentitystoreGroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership#id IdentitystoreGroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -992,7 +992,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/identitystore_group_membership#region IdentitystoreGroupMembership#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/identitystore_group_membership#region IdentitystoreGroupMembership#region}
 
 ---
 

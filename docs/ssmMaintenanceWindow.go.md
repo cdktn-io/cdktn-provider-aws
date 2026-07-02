@@ -4,7 +4,7 @@
 
 ### SsmMaintenanceWindow <a name="SsmMaintenanceWindow" id="@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow.Initializer"></a>
 
@@ -566,7 +566,7 @@ The construct id used in the generated config for the SsmMaintenanceWindow to im
 
 The id of the existing SsmMaintenanceWindow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1135,21 +1135,21 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmmaintenancewindow"
 | <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.cutoff">Cutoff</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#cutoff SsmMaintenanceWindow#cutoff}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#duration SsmMaintenanceWindow#duration}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#name SsmMaintenanceWindow#name}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.schedule">Schedule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#schedule SsmMaintenanceWindow#schedule}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.allowUnassociatedTargets">AllowUnassociatedTargets</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#allow_unassociated_targets SsmMaintenanceWindow#allow_unassociated_targets}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#description SsmMaintenanceWindow#description}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#enabled SsmMaintenanceWindow#enabled}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.endDate">EndDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#end_date SsmMaintenanceWindow#end_date}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#id SsmMaintenanceWindow#id}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.cutoff">Cutoff</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#cutoff SsmMaintenanceWindow#cutoff}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#duration SsmMaintenanceWindow#duration}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#name SsmMaintenanceWindow#name}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.schedule">Schedule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#schedule SsmMaintenanceWindow#schedule}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.allowUnassociatedTargets">AllowUnassociatedTargets</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#allow_unassociated_targets SsmMaintenanceWindow#allow_unassociated_targets}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#description SsmMaintenanceWindow#description}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#enabled SsmMaintenanceWindow#enabled}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.endDate">EndDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#end_date SsmMaintenanceWindow#end_date}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#id SsmMaintenanceWindow#id}. |
 | <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.scheduleOffset">ScheduleOffset</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#schedule_offset SsmMaintenanceWindow#schedule_offset}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.scheduleTimezone">ScheduleTimezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#schedule_timezone SsmMaintenanceWindow#schedule_timezone}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.startDate">StartDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#start_date SsmMaintenanceWindow#start_date}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#tags SsmMaintenanceWindow#tags}. |
-| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#tags_all SsmMaintenanceWindow#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.scheduleOffset">ScheduleOffset</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#schedule_offset SsmMaintenanceWindow#schedule_offset}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.scheduleTimezone">ScheduleTimezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#schedule_timezone SsmMaintenanceWindow#schedule_timezone}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.startDate">StartDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#start_date SsmMaintenanceWindow#start_date}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#tags SsmMaintenanceWindow#tags}. |
+| <code><a href="#@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#tags_all SsmMaintenanceWindow#tags_all}. |
 
 ---
 
@@ -1231,7 +1231,7 @@ Cutoff *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#cutoff SsmMaintenanceWindow#cutoff}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#cutoff SsmMaintenanceWindow#cutoff}.
 
 ---
 
@@ -1243,7 +1243,7 @@ Duration *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#duration SsmMaintenanceWindow#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#duration SsmMaintenanceWindow#duration}.
 
 ---
 
@@ -1255,7 +1255,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#name SsmMaintenanceWindow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#name SsmMaintenanceWindow#name}.
 
 ---
 
@@ -1267,7 +1267,7 @@ Schedule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#schedule SsmMaintenanceWindow#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#schedule SsmMaintenanceWindow#schedule}.
 
 ---
 
@@ -1279,7 +1279,7 @@ AllowUnassociatedTargets interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#allow_unassociated_targets SsmMaintenanceWindow#allow_unassociated_targets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#allow_unassociated_targets SsmMaintenanceWindow#allow_unassociated_targets}.
 
 ---
 
@@ -1291,7 +1291,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#description SsmMaintenanceWindow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#description SsmMaintenanceWindow#description}.
 
 ---
 
@@ -1303,7 +1303,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#enabled SsmMaintenanceWindow#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#enabled SsmMaintenanceWindow#enabled}.
 
 ---
 
@@ -1315,7 +1315,7 @@ EndDate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#end_date SsmMaintenanceWindow#end_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#end_date SsmMaintenanceWindow#end_date}.
 
 ---
 
@@ -1327,7 +1327,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#id SsmMaintenanceWindow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#id SsmMaintenanceWindow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1344,7 +1344,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#region SsmMaintenanceWindow#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#region SsmMaintenanceWindow#region}
 
 ---
 
@@ -1356,7 +1356,7 @@ ScheduleOffset *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#schedule_offset SsmMaintenanceWindow#schedule_offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#schedule_offset SsmMaintenanceWindow#schedule_offset}.
 
 ---
 
@@ -1368,7 +1368,7 @@ ScheduleTimezone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#schedule_timezone SsmMaintenanceWindow#schedule_timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#schedule_timezone SsmMaintenanceWindow#schedule_timezone}.
 
 ---
 
@@ -1380,7 +1380,7 @@ StartDate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#start_date SsmMaintenanceWindow#start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#start_date SsmMaintenanceWindow#start_date}.
 
 ---
 
@@ -1392,7 +1392,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#tags SsmMaintenanceWindow#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#tags SsmMaintenanceWindow#tags}.
 
 ---
 
@@ -1404,7 +1404,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ssm_maintenance_window#tags_all SsmMaintenanceWindow#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ssm_maintenance_window#tags_all SsmMaintenanceWindow#tags_all}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### IamRolePolicy <a name="IamRolePolicy" id="@cdktn/provider-aws.iamRolePolicy.IamRolePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy aws_iam_role_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy aws_iam_role_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamRolePolicy.IamRolePolicy.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the IamRolePolicy to import.
 
 The id of the existing IamRolePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -849,11 +849,11 @@ new IamRolePolicyConfig {
 | <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#policy IamRolePolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#role IamRolePolicy#role}. |
-| <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#id IamRolePolicy#id}. |
-| <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#name IamRolePolicy#name}. |
-| <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#name_prefix IamRolePolicy#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#policy IamRolePolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#role IamRolePolicy#role}. |
+| <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#id IamRolePolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#name IamRolePolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.iamRolePolicy.IamRolePolicyConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#name_prefix IamRolePolicy#name_prefix}. |
 
 ---
 
@@ -935,7 +935,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#policy IamRolePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#policy IamRolePolicy#policy}.
 
 ---
 
@@ -947,7 +947,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#role IamRolePolicy#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#role IamRolePolicy#role}.
 
 ---
 
@@ -959,7 +959,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#id IamRolePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#id IamRolePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -974,7 +974,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#name IamRolePolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#name IamRolePolicy#name}.
 
 ---
 
@@ -986,7 +986,7 @@ public string NamePrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/iam_role_policy#name_prefix IamRolePolicy#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/iam_role_policy#name_prefix IamRolePolicy#name_prefix}.
 
 ---
 

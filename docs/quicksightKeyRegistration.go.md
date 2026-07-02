@@ -4,7 +4,7 @@
 
 ### QuicksightKeyRegistration <a name="QuicksightKeyRegistration" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the QuicksightKeyRegistration 
 
 The id of the existing QuicksightKeyRegistration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_key_registration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_key_registration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -816,7 +816,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightkeyregistrat
 | <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.keyRegistration">KeyRegistration</a></code> | <code>interface{}</code> | key_registration block. |
 | <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -900,7 +900,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}.
 
 ---
 
@@ -914,7 +914,7 @@ KeyRegistration interface{}
 
 key_registration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_key_registration#key_registration QuicksightKeyRegistration#key_registration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_key_registration#key_registration QuicksightKeyRegistration#key_registration}
 
 ---
 
@@ -928,7 +928,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_key_registration#region QuicksightKeyRegistration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_key_registration#region QuicksightKeyRegistration#region}
 
 ---
 
@@ -949,8 +949,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightkeyregistrat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.keyArn">KeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}. |
-| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.defaultKey">DefaultKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}. |
+| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.keyArn">KeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.defaultKey">DefaultKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}. |
 
 ---
 
@@ -962,7 +962,7 @@ KeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}.
 
 ---
 
@@ -974,7 +974,7 @@ DefaultKey interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}.
 
 ---
 

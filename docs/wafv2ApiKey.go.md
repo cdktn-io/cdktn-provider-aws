@@ -4,7 +4,7 @@
 
 ### Wafv2ApiKey <a name="Wafv2ApiKey" id="@cdktn/provider-aws.wafv2ApiKey.Wafv2ApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/wafv2_api_key aws_wafv2_api_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/wafv2_api_key aws_wafv2_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2ApiKey.Wafv2ApiKey.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the Wafv2ApiKey to import.
 
 The id of the existing Wafv2ApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/wafv2_api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/wafv2_api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ Specifies whether this is for an AWS CloudFront distribution or for a regional a
 
 Valid values are CLOUDFRONT or REGIONAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/wafv2_api_key#scope Wafv2ApiKey#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/wafv2_api_key#scope Wafv2ApiKey#scope}
 
 ---
 
@@ -902,7 +902,7 @@ TokenDomains *[]*string
 
 The domains that you want to be able to use the API key with, for example example.com. Maximum of 5 domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/wafv2_api_key#token_domains Wafv2ApiKey#token_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/wafv2_api_key#token_domains Wafv2ApiKey#token_domains}
 
 ---
 
@@ -916,7 +916,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/wafv2_api_key#region Wafv2ApiKey#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/wafv2_api_key#region Wafv2ApiKey#region}
 
 ---
 

@@ -172,11 +172,13 @@ Object.defineProperty(exports, 'batchJobQueue', { get: function () { return requ
 Object.defineProperty(exports, 'batchSchedulingPolicy', { get: function () { return require('./batch-scheduling-policy'); } });
 Object.defineProperty(exports, 'bcmdataexportsExport', { get: function () { return require('./bcmdataexports-export'); } });
 Object.defineProperty(exports, 'bedrockCustomModel', { get: function () { return require('./bedrock-custom-model'); } });
+Object.defineProperty(exports, 'bedrockFoundationModelAgreement', { get: function () { return require('./bedrock-foundation-model-agreement'); } });
 Object.defineProperty(exports, 'bedrockGuardrail', { get: function () { return require('./bedrock-guardrail'); } });
 Object.defineProperty(exports, 'bedrockGuardrailVersion', { get: function () { return require('./bedrock-guardrail-version'); } });
 Object.defineProperty(exports, 'bedrockInferenceProfile', { get: function () { return require('./bedrock-inference-profile'); } });
 Object.defineProperty(exports, 'bedrockModelInvocationLoggingConfiguration', { get: function () { return require('./bedrock-model-invocation-logging-configuration'); } });
 Object.defineProperty(exports, 'bedrockProvisionedModelThroughput', { get: function () { return require('./bedrock-provisioned-model-throughput'); } });
+Object.defineProperty(exports, 'bedrockUseCaseForModelAccess', { get: function () { return require('./bedrock-use-case-for-model-access'); } });
 Object.defineProperty(exports, 'bedrockagentAgent', { get: function () { return require('./bedrockagent-agent'); } });
 Object.defineProperty(exports, 'bedrockagentAgentActionGroup', { get: function () { return require('./bedrockagent-agent-action-group'); } });
 Object.defineProperty(exports, 'bedrockagentAgentAlias', { get: function () { return require('./bedrockagent-agent-alias'); } });
@@ -1102,6 +1104,7 @@ Object.defineProperty(exports, 'pinpointsmsvoicev2ConfigurationSet', { get: func
 Object.defineProperty(exports, 'pinpointsmsvoicev2EventDestination', { get: function () { return require('./pinpointsmsvoicev2-event-destination'); } });
 Object.defineProperty(exports, 'pinpointsmsvoicev2OptOutList', { get: function () { return require('./pinpointsmsvoicev2-opt-out-list'); } });
 Object.defineProperty(exports, 'pinpointsmsvoicev2PhoneNumber', { get: function () { return require('./pinpointsmsvoicev2-phone-number'); } });
+Object.defineProperty(exports, 'pinpointsmsvoicev2Pool', { get: function () { return require('./pinpointsmsvoicev2-pool'); } });
 Object.defineProperty(exports, 'pipesPipe', { get: function () { return require('./pipes-pipe'); } });
 Object.defineProperty(exports, 'placementGroup', { get: function () { return require('./placement-group'); } });
 Object.defineProperty(exports, 'prometheusAlertManagerDefinition', { get: function () { return require('./prometheus-alert-manager-definition'); } });
@@ -1740,9 +1743,11 @@ Object.defineProperty(exports, 'dataAwsBatchSchedulingPolicy', { get: function (
 Object.defineProperty(exports, 'dataAwsBedrockCustomModel', { get: function () { return require('./data-aws-bedrock-custom-model'); } });
 Object.defineProperty(exports, 'dataAwsBedrockCustomModels', { get: function () { return require('./data-aws-bedrock-custom-models'); } });
 Object.defineProperty(exports, 'dataAwsBedrockFoundationModel', { get: function () { return require('./data-aws-bedrock-foundation-model'); } });
+Object.defineProperty(exports, 'dataAwsBedrockFoundationModelAgreementOffers', { get: function () { return require('./data-aws-bedrock-foundation-model-agreement-offers'); } });
 Object.defineProperty(exports, 'dataAwsBedrockFoundationModels', { get: function () { return require('./data-aws-bedrock-foundation-models'); } });
 Object.defineProperty(exports, 'dataAwsBedrockInferenceProfile', { get: function () { return require('./data-aws-bedrock-inference-profile'); } });
 Object.defineProperty(exports, 'dataAwsBedrockInferenceProfiles', { get: function () { return require('./data-aws-bedrock-inference-profiles'); } });
+Object.defineProperty(exports, 'dataAwsBedrockUseCaseForModelAccess', { get: function () { return require('./data-aws-bedrock-use-case-for-model-access'); } });
 Object.defineProperty(exports, 'dataAwsBedrockagentAgentVersions', { get: function () { return require('./data-aws-bedrockagent-agent-versions'); } });
 Object.defineProperty(exports, 'dataAwsBillingServiceAccount', { get: function () { return require('./data-aws-billing-service-account'); } });
 Object.defineProperty(exports, 'dataAwsBillingViews', { get: function () { return require('./data-aws-billing-views'); } });
@@ -1852,6 +1857,7 @@ Object.defineProperty(exports, 'dataAwsEbsSnapshotIds', { get: function () { ret
 Object.defineProperty(exports, 'dataAwsEbsVolume', { get: function () { return require('./data-aws-ebs-volume'); } });
 Object.defineProperty(exports, 'dataAwsEbsVolumes', { get: function () { return require('./data-aws-ebs-volumes'); } });
 Object.defineProperty(exports, 'dataAwsEc2CapacityBlockOffering', { get: function () { return require('./data-aws-ec2-capacity-block-offering'); } });
+Object.defineProperty(exports, 'dataAwsEc2CapacityBlockReservation', { get: function () { return require('./data-aws-ec2-capacity-block-reservation'); } });
 Object.defineProperty(exports, 'dataAwsEc2ClientVpnEndpoint', { get: function () { return require('./data-aws-ec2-client-vpn-endpoint'); } });
 Object.defineProperty(exports, 'dataAwsEc2CoipPool', { get: function () { return require('./data-aws-ec2-coip-pool'); } });
 Object.defineProperty(exports, 'dataAwsEc2CoipPools', { get: function () { return require('./data-aws-ec2-coip-pools'); } });

@@ -4,7 +4,7 @@
 
 ### QuicksightUser <a name="QuicksightUser" id="@cdktn/provider-aws.quicksightUser.QuicksightUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user aws_quicksight_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user aws_quicksight_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer"></a>
 
@@ -45,16 +45,16 @@ quicksightUser.QuicksightUser(
 | <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#email QuicksightUser#email}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.identityType">identity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#identity_type QuicksightUser#identity_type}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.userRole">user_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#user_role QuicksightUser#user_role}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.iamArn">iam_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#iam_arn QuicksightUser#iam_arn}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#id QuicksightUser#id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#namespace QuicksightUser#namespace}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#email QuicksightUser#email}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.identityType">identity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#identity_type QuicksightUser#identity_type}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.userRole">user_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#user_role QuicksightUser#user_role}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.iamArn">iam_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#iam_arn QuicksightUser#iam_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#id QuicksightUser#id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#namespace QuicksightUser#namespace}. |
 | <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.sessionName">session_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#session_name QuicksightUser#session_name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#user_name QuicksightUser#user_name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.sessionName">session_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#session_name QuicksightUser#session_name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUser.Initializer.parameter.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#user_name QuicksightUser#user_name}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#email QuicksightUser#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#email QuicksightUser#email}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#identity_type QuicksightUser#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#identity_type QuicksightUser#identity_type}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#user_role QuicksightUser#user_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#user_role QuicksightUser#user_role}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#iam_arn QuicksightUser#iam_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#iam_arn QuicksightUser#iam_arn}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#id QuicksightUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#id QuicksightUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#namespace QuicksightUser#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#namespace QuicksightUser#namespace}.
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#region QuicksightUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#region QuicksightUser#region}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#session_name QuicksightUser#session_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#session_name QuicksightUser#session_name}.
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#user_name QuicksightUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#user_name QuicksightUser#user_name}.
 
 ---
 
@@ -745,7 +745,7 @@ The construct id used in the generated config for the QuicksightUser to import.
 
 The id of the existing QuicksightUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1221,16 +1221,16 @@ quicksightUser.QuicksightUserConfig(
 | <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#email QuicksightUser#email}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.identityType">identity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#identity_type QuicksightUser#identity_type}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.userRole">user_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#user_role QuicksightUser#user_role}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.iamArn">iam_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#iam_arn QuicksightUser#iam_arn}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#id QuicksightUser#id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#namespace QuicksightUser#namespace}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#email QuicksightUser#email}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.identityType">identity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#identity_type QuicksightUser#identity_type}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.userRole">user_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#user_role QuicksightUser#user_role}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.iamArn">iam_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#iam_arn QuicksightUser#iam_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#id QuicksightUser#id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#namespace QuicksightUser#namespace}. |
 | <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.sessionName">session_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#session_name QuicksightUser#session_name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#user_name QuicksightUser#user_name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.sessionName">session_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#session_name QuicksightUser#session_name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightUser.QuicksightUserConfig.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#user_name QuicksightUser#user_name}. |
 
 ---
 
@@ -1312,7 +1312,7 @@ email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#email QuicksightUser#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#email QuicksightUser#email}.
 
 ---
 
@@ -1324,7 +1324,7 @@ identity_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#identity_type QuicksightUser#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#identity_type QuicksightUser#identity_type}.
 
 ---
 
@@ -1336,7 +1336,7 @@ user_role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#user_role QuicksightUser#user_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#user_role QuicksightUser#user_role}.
 
 ---
 
@@ -1348,7 +1348,7 @@ aws_account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}.
 
 ---
 
@@ -1360,7 +1360,7 @@ iam_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#iam_arn QuicksightUser#iam_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#iam_arn QuicksightUser#iam_arn}.
 
 ---
 
@@ -1372,7 +1372,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#id QuicksightUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#id QuicksightUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1387,7 +1387,7 @@ namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#namespace QuicksightUser#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#namespace QuicksightUser#namespace}.
 
 ---
 
@@ -1401,7 +1401,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#region QuicksightUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#region QuicksightUser#region}
 
 ---
 
@@ -1413,7 +1413,7 @@ session_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#session_name QuicksightUser#session_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#session_name QuicksightUser#session_name}.
 
 ---
 
@@ -1425,7 +1425,7 @@ user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/quicksight_user#user_name QuicksightUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/quicksight_user#user_name QuicksightUser#user_name}.
 
 ---
 

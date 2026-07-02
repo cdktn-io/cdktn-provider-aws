@@ -4,7 +4,7 @@
 
 ### SesDomainIdentityVerification <a name="SesDomainIdentityVerification" id="@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ses_domain_identity_verification aws_ses_domain_identity_verification}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ses_domain_identity_verification aws_ses_domain_identity_verification}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the SesDomainIdentityVerificat
 
 The id of the existing SesDomainIdentityVerification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ses_domain_identity_verification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ses_domain_identity_verification#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,8 +838,8 @@ const sesDomainIdentityVerificationConfig: sesDomainIdentityVerification.SesDoma
 | <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig.property.domain">domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ses_domain_identity_verification#domain SesDomainIdentityVerification#domain}. |
-| <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ses_domain_identity_verification#id SesDomainIdentityVerification#id}. |
+| <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig.property.domain">domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ses_domain_identity_verification#domain SesDomainIdentityVerification#domain}. |
+| <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ses_domain_identity_verification#id SesDomainIdentityVerification#id}. |
 | <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeouts">SesDomainIdentityVerificationTimeouts</a></code> | timeouts block. |
 
@@ -923,7 +923,7 @@ public readonly domain: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ses_domain_identity_verification#domain SesDomainIdentityVerification#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ses_domain_identity_verification#domain SesDomainIdentityVerification#domain}.
 
 ---
 
@@ -935,7 +935,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ses_domain_identity_verification#id SesDomainIdentityVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ses_domain_identity_verification#id SesDomainIdentityVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -952,7 +952,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ses_domain_identity_verification#region SesDomainIdentityVerification#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ses_domain_identity_verification#region SesDomainIdentityVerification#region}
 
 ---
 
@@ -966,7 +966,7 @@ public readonly timeouts: SesDomainIdentityVerificationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ses_domain_identity_verification#timeouts SesDomainIdentityVerification#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ses_domain_identity_verification#timeouts SesDomainIdentityVerification#timeouts}
 
 ---
 
@@ -984,7 +984,7 @@ const sesDomainIdentityVerificationTimeouts: sesDomainIdentityVerification.SesDo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ses_domain_identity_verification#create SesDomainIdentityVerification#create}. |
+| <code><a href="#@cdktn/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ses_domain_identity_verification#create SesDomainIdentityVerification#create}. |
 
 ---
 
@@ -996,7 +996,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/ses_domain_identity_verification#create SesDomainIdentityVerification#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/ses_domain_identity_verification#create SesDomainIdentityVerification#create}.
 
 ---
 

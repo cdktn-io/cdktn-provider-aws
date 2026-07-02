@@ -4,7 +4,7 @@
 
 ### RdsExportTask <a name="RdsExportTask" id="@cdktn/provider-aws.rdsExportTask.RdsExportTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task aws_rds_export_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task aws_rds_export_task}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsExportTask.RdsExportTask.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the RdsExportTask to import.
 
 The id of the existing RdsExportTask that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1060,14 +1060,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rdsexporttask"
 | <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.exportTaskIdentifier">ExportTaskIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#export_task_identifier RdsExportTask#export_task_identifier}. |
-| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.iamRoleArn">IamRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#iam_role_arn RdsExportTask#iam_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#kms_key_id RdsExportTask#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.s3BucketName">S3BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#s3_bucket_name RdsExportTask#s3_bucket_name}. |
-| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.sourceArn">SourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#source_arn RdsExportTask#source_arn}. |
-| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.exportOnly">ExportOnly</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#export_only RdsExportTask#export_only}. |
+| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.exportTaskIdentifier">ExportTaskIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#export_task_identifier RdsExportTask#export_task_identifier}. |
+| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.iamRoleArn">IamRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#iam_role_arn RdsExportTask#iam_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#kms_key_id RdsExportTask#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.s3BucketName">S3BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#s3_bucket_name RdsExportTask#s3_bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.sourceArn">SourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#source_arn RdsExportTask#source_arn}. |
+| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.exportOnly">ExportOnly</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#export_only RdsExportTask#export_only}. |
 | <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.s3Prefix">S3Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#s3_prefix RdsExportTask#s3_prefix}. |
+| <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.s3Prefix">S3Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#s3_prefix RdsExportTask#s3_prefix}. |
 | <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.rdsExportTask.RdsExportTaskTimeouts">RdsExportTaskTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1150,7 +1150,7 @@ ExportTaskIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#export_task_identifier RdsExportTask#export_task_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#export_task_identifier RdsExportTask#export_task_identifier}.
 
 ---
 
@@ -1162,7 +1162,7 @@ IamRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#iam_role_arn RdsExportTask#iam_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#iam_role_arn RdsExportTask#iam_role_arn}.
 
 ---
 
@@ -1174,7 +1174,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#kms_key_id RdsExportTask#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#kms_key_id RdsExportTask#kms_key_id}.
 
 ---
 
@@ -1186,7 +1186,7 @@ S3BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#s3_bucket_name RdsExportTask#s3_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#s3_bucket_name RdsExportTask#s3_bucket_name}.
 
 ---
 
@@ -1198,7 +1198,7 @@ SourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#source_arn RdsExportTask#source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#source_arn RdsExportTask#source_arn}.
 
 ---
 
@@ -1210,7 +1210,7 @@ ExportOnly *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#export_only RdsExportTask#export_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#export_only RdsExportTask#export_only}.
 
 ---
 
@@ -1224,7 +1224,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#region RdsExportTask#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#region RdsExportTask#region}
 
 ---
 
@@ -1236,7 +1236,7 @@ S3Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#s3_prefix RdsExportTask#s3_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#s3_prefix RdsExportTask#s3_prefix}.
 
 ---
 
@@ -1250,7 +1250,7 @@ Timeouts RdsExportTaskTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#timeouts RdsExportTask#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#timeouts RdsExportTask#timeouts}
 
 ---
 
@@ -1286,7 +1286,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#create RdsExportTask#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#create RdsExportTask#create}
 
 ---
 
@@ -1300,7 +1300,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/rds_export_task#delete RdsExportTask#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/rds_export_task#delete RdsExportTask#delete}
 
 ---
 
