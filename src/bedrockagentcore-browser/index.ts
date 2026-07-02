@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser
+// https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,978 @@ import * as cdktn from 'cdktn';
 
 export interface BedrockagentcoreBrowserConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#description BedrockagentcoreBrowser#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#description BedrockagentcoreBrowser#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#execution_role_arn BedrockagentcoreBrowser#execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#execution_role_arn BedrockagentcoreBrowser#execution_role_arn}
   */
   readonly executionRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#name BedrockagentcoreBrowser#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#name BedrockagentcoreBrowser#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#region BedrockagentcoreBrowser#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#region BedrockagentcoreBrowser#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#tags BedrockagentcoreBrowser#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#tags BedrockagentcoreBrowser#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
+  * browser_signing block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#browser_signing BedrockagentcoreBrowser#browser_signing}
+  */
+  readonly browserSigning?: BedrockagentcoreBrowserBrowserSigning[] | cdktn.IResolvable;
+  /**
+  * certificate block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#certificate BedrockagentcoreBrowser#certificate}
+  */
+  readonly certificate?: BedrockagentcoreBrowserCertificate[] | cdktn.IResolvable;
+  /**
+  * enterprise_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#enterprise_policy BedrockagentcoreBrowser#enterprise_policy}
+  */
+  readonly enterprisePolicy?: BedrockagentcoreBrowserEnterprisePolicy[] | cdktn.IResolvable;
+  /**
   * network_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#network_configuration BedrockagentcoreBrowser#network_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#network_configuration BedrockagentcoreBrowser#network_configuration}
   */
   readonly networkConfiguration?: BedrockagentcoreBrowserNetworkConfiguration[] | cdktn.IResolvable;
   /**
   * recording block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#recording BedrockagentcoreBrowser#recording}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#recording BedrockagentcoreBrowser#recording}
   */
   readonly recording?: BedrockagentcoreBrowserRecording[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#timeouts BedrockagentcoreBrowser#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#timeouts BedrockagentcoreBrowser#timeouts}
   */
   readonly timeouts?: BedrockagentcoreBrowserTimeouts;
 }
+export interface BedrockagentcoreBrowserBrowserSigning {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}
+  */
+  readonly enabled: boolean | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreBrowserBrowserSigningToTerraform(struct?: BedrockagentcoreBrowserBrowserSigning | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+  }
+}
+
+
+export function bedrockagentcoreBrowserBrowserSigningToHclTerraform(struct?: BedrockagentcoreBrowserBrowserSigning | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreBrowserBrowserSigningOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreBrowserBrowserSigning | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreBrowserBrowserSigning | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktn.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktn.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
+
+export class BedrockagentcoreBrowserBrowserSigningList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreBrowserBrowserSigning[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreBrowserBrowserSigningOutputReference {
+    return new BedrockagentcoreBrowserBrowserSigningOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreBrowserCertificateLocationSecretsManager {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#secret_arn BedrockagentcoreBrowser#secret_arn}
+  */
+  readonly secretArn: string;
+}
+
+export function bedrockagentcoreBrowserCertificateLocationSecretsManagerToTerraform(struct?: BedrockagentcoreBrowserCertificateLocationSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    secret_arn: cdktn.stringToTerraform(struct!.secretArn),
+  }
+}
+
+
+export function bedrockagentcoreBrowserCertificateLocationSecretsManagerToHclTerraform(struct?: BedrockagentcoreBrowserCertificateLocationSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    secret_arn: {
+      value: cdktn.stringToHclTerraform(struct!.secretArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreBrowserCertificateLocationSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreBrowserCertificateLocationSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._secretArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretArn = this._secretArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreBrowserCertificateLocationSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._secretArn = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._secretArn = value.secretArn;
+    }
+  }
+
+  // secret_arn - computed: false, optional: false, required: true
+  private _secretArn?: string; 
+  public get secretArn() {
+    return this.getStringAttribute('secret_arn');
+  }
+  public set secretArn(value: string) {
+    this._secretArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretArnInput() {
+    return this._secretArn;
+  }
+}
+
+export class BedrockagentcoreBrowserCertificateLocationSecretsManagerList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreBrowserCertificateLocationSecretsManager[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreBrowserCertificateLocationSecretsManagerOutputReference {
+    return new BedrockagentcoreBrowserCertificateLocationSecretsManagerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreBrowserCertificateLocation {
+  /**
+  * secrets_manager block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#secrets_manager BedrockagentcoreBrowser#secrets_manager}
+  */
+  readonly secretsManager?: BedrockagentcoreBrowserCertificateLocationSecretsManager[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreBrowserCertificateLocationToTerraform(struct?: BedrockagentcoreBrowserCertificateLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    secrets_manager: cdktn.listMapper(bedrockagentcoreBrowserCertificateLocationSecretsManagerToTerraform, true)(struct!.secretsManager),
+  }
+}
+
+
+export function bedrockagentcoreBrowserCertificateLocationToHclTerraform(struct?: BedrockagentcoreBrowserCertificateLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    secrets_manager: {
+      value: cdktn.listMapperHcl(bedrockagentcoreBrowserCertificateLocationSecretsManagerToHclTerraform, true)(struct!.secretsManager),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreBrowserCertificateLocationSecretsManagerList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreBrowserCertificateLocationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreBrowserCertificateLocation | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._secretsManager?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretsManager = this._secretsManager?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreBrowserCertificateLocation | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._secretsManager.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._secretsManager.internalValue = value.secretsManager;
+    }
+  }
+
+  // secrets_manager - computed: false, optional: true, required: false
+  private _secretsManager = new BedrockagentcoreBrowserCertificateLocationSecretsManagerList(this, "secrets_manager", false);
+  public get secretsManager() {
+    return this._secretsManager;
+  }
+  public putSecretsManager(value: BedrockagentcoreBrowserCertificateLocationSecretsManager[] | cdktn.IResolvable) {
+    this._secretsManager.internalValue = value;
+  }
+  public resetSecretsManager() {
+    this._secretsManager.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretsManagerInput() {
+    return this._secretsManager.internalValue;
+  }
+}
+
+export class BedrockagentcoreBrowserCertificateLocationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreBrowserCertificateLocation[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreBrowserCertificateLocationOutputReference {
+    return new BedrockagentcoreBrowserCertificateLocationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreBrowserCertificate {
+  /**
+  * location block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#location BedrockagentcoreBrowser#location}
+  */
+  readonly location?: BedrockagentcoreBrowserCertificateLocation[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreBrowserCertificateToTerraform(struct?: BedrockagentcoreBrowserCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    location: cdktn.listMapper(bedrockagentcoreBrowserCertificateLocationToTerraform, true)(struct!.location),
+  }
+}
+
+
+export function bedrockagentcoreBrowserCertificateToHclTerraform(struct?: BedrockagentcoreBrowserCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    location: {
+      value: cdktn.listMapperHcl(bedrockagentcoreBrowserCertificateLocationToHclTerraform, true)(struct!.location),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreBrowserCertificateLocationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreBrowserCertificateOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreBrowserCertificate | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._location?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreBrowserCertificate | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._location.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._location.internalValue = value.location;
+    }
+  }
+
+  // location - computed: false, optional: true, required: false
+  private _location = new BedrockagentcoreBrowserCertificateLocationList(this, "location", false);
+  public get location() {
+    return this._location;
+  }
+  public putLocation(value: BedrockagentcoreBrowserCertificateLocation[] | cdktn.IResolvable) {
+    this._location.internalValue = value;
+  }
+  public resetLocation() {
+    this._location.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location.internalValue;
+  }
+}
+
+export class BedrockagentcoreBrowserCertificateList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreBrowserCertificate[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreBrowserCertificateOutputReference {
+    return new BedrockagentcoreBrowserCertificateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreBrowserEnterprisePolicyLocationS3 {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}
+  */
+  readonly bucket: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}
+  */
+  readonly prefix: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#version_id BedrockagentcoreBrowser#version_id}
+  */
+  readonly versionId?: string;
+}
+
+export function bedrockagentcoreBrowserEnterprisePolicyLocationS3ToTerraform(struct?: BedrockagentcoreBrowserEnterprisePolicyLocationS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    version_id: cdktn.stringToTerraform(struct!.versionId),
+  }
+}
+
+
+export function bedrockagentcoreBrowserEnterprisePolicyLocationS3ToHclTerraform(struct?: BedrockagentcoreBrowserEnterprisePolicyLocationS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktn.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktn.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version_id: {
+      value: cdktn.stringToHclTerraform(struct!.versionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreBrowserEnterprisePolicyLocationS3OutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreBrowserEnterprisePolicyLocationS3 | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucket !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucket = this._bucket;
+    }
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    if (this._versionId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.versionId = this._versionId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreBrowserEnterprisePolicyLocationS3 | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bucket = undefined;
+      this._prefix = undefined;
+      this._versionId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bucket = value.bucket;
+      this._prefix = value.prefix;
+      this._versionId = value.versionId;
+    }
+  }
+
+  // bucket - computed: false, optional: false, required: true
+  private _bucket?: string; 
+  public get bucket() {
+    return this.getStringAttribute('bucket');
+  }
+  public set bucket(value: string) {
+    this._bucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket;
+  }
+
+  // prefix - computed: false, optional: false, required: true
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // version_id - computed: false, optional: true, required: false
+  private _versionId?: string; 
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+  public set versionId(value: string) {
+    this._versionId = value;
+  }
+  public resetVersionId() {
+    this._versionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionIdInput() {
+    return this._versionId;
+  }
+}
+
+export class BedrockagentcoreBrowserEnterprisePolicyLocationS3List extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreBrowserEnterprisePolicyLocationS3[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreBrowserEnterprisePolicyLocationS3OutputReference {
+    return new BedrockagentcoreBrowserEnterprisePolicyLocationS3OutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreBrowserEnterprisePolicyLocation {
+  /**
+  * s3 block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#s3 BedrockagentcoreBrowser#s3}
+  */
+  readonly s3?: BedrockagentcoreBrowserEnterprisePolicyLocationS3[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreBrowserEnterprisePolicyLocationToTerraform(struct?: BedrockagentcoreBrowserEnterprisePolicyLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    s3: cdktn.listMapper(bedrockagentcoreBrowserEnterprisePolicyLocationS3ToTerraform, true)(struct!.s3),
+  }
+}
+
+
+export function bedrockagentcoreBrowserEnterprisePolicyLocationToHclTerraform(struct?: BedrockagentcoreBrowserEnterprisePolicyLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    s3: {
+      value: cdktn.listMapperHcl(bedrockagentcoreBrowserEnterprisePolicyLocationS3ToHclTerraform, true)(struct!.s3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreBrowserEnterprisePolicyLocationS3List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreBrowserEnterprisePolicyLocationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreBrowserEnterprisePolicyLocation | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._s3?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3 = this._s3?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreBrowserEnterprisePolicyLocation | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._s3.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._s3.internalValue = value.s3;
+    }
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3 = new BedrockagentcoreBrowserEnterprisePolicyLocationS3List(this, "s3", false);
+  public get s3() {
+    return this._s3;
+  }
+  public putS3(value: BedrockagentcoreBrowserEnterprisePolicyLocationS3[] | cdktn.IResolvable) {
+    this._s3.internalValue = value;
+  }
+  public resetS3() {
+    this._s3.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3.internalValue;
+  }
+}
+
+export class BedrockagentcoreBrowserEnterprisePolicyLocationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreBrowserEnterprisePolicyLocation[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreBrowserEnterprisePolicyLocationOutputReference {
+    return new BedrockagentcoreBrowserEnterprisePolicyLocationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreBrowserEnterprisePolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#type BedrockagentcoreBrowser#type}
+  */
+  readonly type?: string;
+  /**
+  * location block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#location BedrockagentcoreBrowser#location}
+  */
+  readonly location?: BedrockagentcoreBrowserEnterprisePolicyLocation[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreBrowserEnterprisePolicyToTerraform(struct?: BedrockagentcoreBrowserEnterprisePolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    type: cdktn.stringToTerraform(struct!.type),
+    location: cdktn.listMapper(bedrockagentcoreBrowserEnterprisePolicyLocationToTerraform, true)(struct!.location),
+  }
+}
+
+
+export function bedrockagentcoreBrowserEnterprisePolicyToHclTerraform(struct?: BedrockagentcoreBrowserEnterprisePolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location: {
+      value: cdktn.listMapperHcl(bedrockagentcoreBrowserEnterprisePolicyLocationToHclTerraform, true)(struct!.location),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreBrowserEnterprisePolicyLocationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreBrowserEnterprisePolicyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreBrowserEnterprisePolicy | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._location?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreBrowserEnterprisePolicy | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._location.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._location.internalValue = value.location;
+    }
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // location - computed: false, optional: true, required: false
+  private _location = new BedrockagentcoreBrowserEnterprisePolicyLocationList(this, "location", false);
+  public get location() {
+    return this._location;
+  }
+  public putLocation(value: BedrockagentcoreBrowserEnterprisePolicyLocation[] | cdktn.IResolvable) {
+    this._location.internalValue = value;
+  }
+  public resetLocation() {
+    this._location.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location.internalValue;
+  }
+}
+
+export class BedrockagentcoreBrowserEnterprisePolicyList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreBrowserEnterprisePolicy[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreBrowserEnterprisePolicyOutputReference {
+    return new BedrockagentcoreBrowserEnterprisePolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BedrockagentcoreBrowserNetworkConfigurationVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}
   */
   readonly securityGroups: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}
   */
   readonly subnets: string[];
 }
@@ -198,13 +1123,13 @@ export class BedrockagentcoreBrowserNetworkConfigurationVpcConfigList extends cd
 }
 export interface BedrockagentcoreBrowserNetworkConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#network_mode BedrockagentcoreBrowser#network_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#network_mode BedrockagentcoreBrowser#network_mode}
   */
   readonly networkMode: string;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#vpc_config BedrockagentcoreBrowser#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#vpc_config BedrockagentcoreBrowser#vpc_config}
   */
   readonly vpcConfig?: BedrockagentcoreBrowserNetworkConfigurationVpcConfig[] | cdktn.IResolvable;
 }
@@ -346,11 +1271,11 @@ export class BedrockagentcoreBrowserNetworkConfigurationList extends cdktn.Compl
 }
 export interface BedrockagentcoreBrowserRecordingS3Location {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}
   */
   readonly prefix: string;
 }
@@ -489,13 +1414,13 @@ export class BedrockagentcoreBrowserRecordingS3LocationList extends cdktn.Comple
 }
 export interface BedrockagentcoreBrowserRecording {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * s3_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#s3_location BedrockagentcoreBrowser#s3_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#s3_location BedrockagentcoreBrowser#s3_location}
   */
   readonly s3Location?: BedrockagentcoreBrowserRecordingS3Location[] | cdktn.IResolvable;
 }
@@ -642,13 +1567,13 @@ export interface BedrockagentcoreBrowserTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#create BedrockagentcoreBrowser#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#create BedrockagentcoreBrowser#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#delete BedrockagentcoreBrowser#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#delete BedrockagentcoreBrowser#delete}
   */
   readonly delete?: string;
 }
@@ -771,7 +1696,7 @@ export class BedrockagentcoreBrowserTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser}
 */
 export class BedrockagentcoreBrowser extends cdktn.TerraformResource {
 
@@ -787,7 +1712,7 @@ export class BedrockagentcoreBrowser extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BedrockagentcoreBrowser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreBrowser to import
-  * @param importFromId The id of the existing BedrockagentcoreBrowser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockagentcoreBrowser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreBrowser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -799,7 +1724,7 @@ export class BedrockagentcoreBrowser extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -810,7 +1735,7 @@ export class BedrockagentcoreBrowser extends cdktn.TerraformResource {
       terraformResourceType: 'aws_bedrockagentcore_browser',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.52.0',
+        providerVersion: '6.53.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -826,6 +1751,9 @@ export class BedrockagentcoreBrowser extends cdktn.TerraformResource {
     this._name = config.name;
     this._region = config.region;
     this._tags = config.tags;
+    this._browserSigning.internalValue = config.browserSigning;
+    this._certificate.internalValue = config.certificate;
+    this._enterprisePolicy.internalValue = config.enterprisePolicy;
     this._networkConfiguration.internalValue = config.networkConfiguration;
     this._recording.internalValue = config.recording;
     this._timeouts.internalValue = config.timeouts;
@@ -928,6 +1856,54 @@ export class BedrockagentcoreBrowser extends cdktn.TerraformResource {
     return this._tagsAll;
   }
 
+  // browser_signing - computed: false, optional: true, required: false
+  private _browserSigning = new BedrockagentcoreBrowserBrowserSigningList(this, "browser_signing", false);
+  public get browserSigning() {
+    return this._browserSigning;
+  }
+  public putBrowserSigning(value: BedrockagentcoreBrowserBrowserSigning[] | cdktn.IResolvable) {
+    this._browserSigning.internalValue = value;
+  }
+  public resetBrowserSigning() {
+    this._browserSigning.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get browserSigningInput() {
+    return this._browserSigning.internalValue;
+  }
+
+  // certificate - computed: false, optional: true, required: false
+  private _certificate = new BedrockagentcoreBrowserCertificateList(this, "certificate", false);
+  public get certificate() {
+    return this._certificate;
+  }
+  public putCertificate(value: BedrockagentcoreBrowserCertificate[] | cdktn.IResolvable) {
+    this._certificate.internalValue = value;
+  }
+  public resetCertificate() {
+    this._certificate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateInput() {
+    return this._certificate.internalValue;
+  }
+
+  // enterprise_policy - computed: false, optional: true, required: false
+  private _enterprisePolicy = new BedrockagentcoreBrowserEnterprisePolicyList(this, "enterprise_policy", false);
+  public get enterprisePolicy() {
+    return this._enterprisePolicy;
+  }
+  public putEnterprisePolicy(value: BedrockagentcoreBrowserEnterprisePolicy[] | cdktn.IResolvable) {
+    this._enterprisePolicy.internalValue = value;
+  }
+  public resetEnterprisePolicy() {
+    this._enterprisePolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enterprisePolicyInput() {
+    return this._enterprisePolicy.internalValue;
+  }
+
   // network_configuration - computed: false, optional: true, required: false
   private _networkConfiguration = new BedrockagentcoreBrowserNetworkConfigurationList(this, "network_configuration", false);
   public get networkConfiguration() {
@@ -987,6 +1963,9 @@ export class BedrockagentcoreBrowser extends cdktn.TerraformResource {
       name: cdktn.stringToTerraform(this._name),
       region: cdktn.stringToTerraform(this._region),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      browser_signing: cdktn.listMapper(bedrockagentcoreBrowserBrowserSigningToTerraform, true)(this._browserSigning.internalValue),
+      certificate: cdktn.listMapper(bedrockagentcoreBrowserCertificateToTerraform, true)(this._certificate.internalValue),
+      enterprise_policy: cdktn.listMapper(bedrockagentcoreBrowserEnterprisePolicyToTerraform, true)(this._enterprisePolicy.internalValue),
       network_configuration: cdktn.listMapper(bedrockagentcoreBrowserNetworkConfigurationToTerraform, true)(this._networkConfiguration.internalValue),
       recording: cdktn.listMapper(bedrockagentcoreBrowserRecordingToTerraform, true)(this._recording.internalValue),
       timeouts: bedrockagentcoreBrowserTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1024,6 +2003,24 @@ export class BedrockagentcoreBrowser extends cdktn.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      browser_signing: {
+        value: cdktn.listMapperHcl(bedrockagentcoreBrowserBrowserSigningToHclTerraform, true)(this._browserSigning.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BedrockagentcoreBrowserBrowserSigningList",
+      },
+      certificate: {
+        value: cdktn.listMapperHcl(bedrockagentcoreBrowserCertificateToHclTerraform, true)(this._certificate.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BedrockagentcoreBrowserCertificateList",
+      },
+      enterprise_policy: {
+        value: cdktn.listMapperHcl(bedrockagentcoreBrowserEnterprisePolicyToHclTerraform, true)(this._enterprisePolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BedrockagentcoreBrowserEnterprisePolicyList",
       },
       network_configuration: {
         value: cdktn.listMapperHcl(bedrockagentcoreBrowserNetworkConfigurationToHclTerraform, true)(this._networkConfiguration.internalValue),

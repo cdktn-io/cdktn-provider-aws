@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_trace_segment_destination
+// https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_trace_segment_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface XrayTraceSegmentDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_trace_segment_destination#destination XrayTraceSegmentDestination#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_trace_segment_destination#destination XrayTraceSegmentDestination#destination}
   */
   readonly destination: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_trace_segment_destination#region XrayTraceSegmentDestination#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_trace_segment_destination#region XrayTraceSegmentDestination#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_trace_segment_destination#timeouts XrayTraceSegmentDestination#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_trace_segment_destination#timeouts XrayTraceSegmentDestination#timeouts}
   */
   readonly timeouts?: XrayTraceSegmentDestinationTimeouts;
 }
@@ -33,13 +33,13 @@ export interface XrayTraceSegmentDestinationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_trace_segment_destination#create XrayTraceSegmentDestination#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_trace_segment_destination#create XrayTraceSegmentDestination#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_trace_segment_destination#update XrayTraceSegmentDestination#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_trace_segment_destination#update XrayTraceSegmentDestination#update}
   */
   readonly update?: string;
 }
@@ -162,7 +162,7 @@ export class XrayTraceSegmentDestinationTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_trace_segment_destination aws_xray_trace_segment_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_trace_segment_destination aws_xray_trace_segment_destination}
 */
 export class XrayTraceSegmentDestination extends cdktn.TerraformResource {
 
@@ -178,7 +178,7 @@ export class XrayTraceSegmentDestination extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a XrayTraceSegmentDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the XrayTraceSegmentDestination to import
-  * @param importFromId The id of the existing XrayTraceSegmentDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_trace_segment_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing XrayTraceSegmentDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_trace_segment_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the XrayTraceSegmentDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -190,7 +190,7 @@ export class XrayTraceSegmentDestination extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/xray_trace_segment_destination aws_xray_trace_segment_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/xray_trace_segment_destination aws_xray_trace_segment_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -201,7 +201,7 @@ export class XrayTraceSegmentDestination extends cdktn.TerraformResource {
       terraformResourceType: 'aws_xray_trace_segment_destination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.52.0',
+        providerVersion: '6.53.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

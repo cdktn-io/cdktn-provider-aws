@@ -1,3 +1,3 @@
 # `aws_billing_view`
 
-Refer to the Terraform Registry for docs: [`aws_billing_view`](https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/billing_view).
+Refer to the Terraform Registry for docs: [`aws_billing_view`](https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/billing_view).

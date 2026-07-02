@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/kinesis_account_settings
+// https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/kinesis_account_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface KinesisAccountSettingsConfig extends cdktn.TerraformMetaArgumen
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/kinesis_account_settings#region KinesisAccountSettings#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/kinesis_account_settings#region KinesisAccountSettings#region}
   */
   readonly region?: string;
   /**
   * minimum_throughput_billing_commitment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/kinesis_account_settings#minimum_throughput_billing_commitment KinesisAccountSettings#minimum_throughput_billing_commitment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/kinesis_account_settings#minimum_throughput_billing_commitment KinesisAccountSettings#minimum_throughput_billing_commitment}
   */
   readonly minimumThroughputBillingCommitment?: KinesisAccountSettingsMinimumThroughputBillingCommitment[] | cdktn.IResolvable;
 }
 export interface KinesisAccountSettingsMinimumThroughputBillingCommitment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/kinesis_account_settings#status KinesisAccountSettings#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/kinesis_account_settings#status KinesisAccountSettings#status}
   */
   readonly status: string;
 }
@@ -160,7 +160,7 @@ export class KinesisAccountSettingsMinimumThroughputBillingCommitmentList extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/kinesis_account_settings aws_kinesis_account_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/kinesis_account_settings aws_kinesis_account_settings}
 */
 export class KinesisAccountSettings extends cdktn.TerraformResource {
 
@@ -176,7 +176,7 @@ export class KinesisAccountSettings extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KinesisAccountSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KinesisAccountSettings to import
-  * @param importFromId The id of the existing KinesisAccountSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/kinesis_account_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KinesisAccountSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/kinesis_account_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KinesisAccountSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -188,7 +188,7 @@ export class KinesisAccountSettings extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.52.0/docs/resources/kinesis_account_settings aws_kinesis_account_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/kinesis_account_settings aws_kinesis_account_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -199,7 +199,7 @@ export class KinesisAccountSettings extends cdktn.TerraformResource {
       terraformResourceType: 'aws_kinesis_account_settings',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.52.0',
+        providerVersion: '6.53.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
