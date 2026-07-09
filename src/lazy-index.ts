@@ -192,6 +192,7 @@ Object.defineProperty(exports, 'bedrockagentcoreAgentRuntime', { get: function (
 Object.defineProperty(exports, 'bedrockagentcoreAgentRuntimeEndpoint', { get: function () { return require('./bedrockagentcore-agent-runtime-endpoint'); } });
 Object.defineProperty(exports, 'bedrockagentcoreApiKeyCredentialProvider', { get: function () { return require('./bedrockagentcore-api-key-credential-provider'); } });
 Object.defineProperty(exports, 'bedrockagentcoreBrowser', { get: function () { return require('./bedrockagentcore-browser'); } });
+Object.defineProperty(exports, 'bedrockagentcoreBrowserProfile', { get: function () { return require('./bedrockagentcore-browser-profile'); } });
 Object.defineProperty(exports, 'bedrockagentcoreCodeInterpreter', { get: function () { return require('./bedrockagentcore-code-interpreter'); } });
 Object.defineProperty(exports, 'bedrockagentcoreEvaluator', { get: function () { return require('./bedrockagentcore-evaluator'); } });
 Object.defineProperty(exports, 'bedrockagentcoreGateway', { get: function () { return require('./bedrockagentcore-gateway'); } });
@@ -871,6 +872,7 @@ Object.defineProperty(exports, 'lambdaEventSourceMapping', { get: function () { 
 Object.defineProperty(exports, 'lambdaFunction', { get: function () { return require('./lambda-function'); } });
 Object.defineProperty(exports, 'lambdaFunctionEventInvokeConfig', { get: function () { return require('./lambda-function-event-invoke-config'); } });
 Object.defineProperty(exports, 'lambdaFunctionRecursionConfig', { get: function () { return require('./lambda-function-recursion-config'); } });
+Object.defineProperty(exports, 'lambdaFunctionScalingConfig', { get: function () { return require('./lambda-function-scaling-config'); } });
 Object.defineProperty(exports, 'lambdaFunctionUrl', { get: function () { return require('./lambda-function-url'); } });
 Object.defineProperty(exports, 'lambdaInvocation', { get: function () { return require('./lambda-invocation'); } });
 Object.defineProperty(exports, 'lambdaLayerVersion', { get: function () { return require('./lambda-layer-version'); } });
@@ -1502,6 +1504,7 @@ Object.defineProperty(exports, 'ssoadminManagedPolicyAttachmentsExclusive', { ge
 Object.defineProperty(exports, 'ssoadminPermissionSet', { get: function () { return require('./ssoadmin-permission-set'); } });
 Object.defineProperty(exports, 'ssoadminPermissionSetInlinePolicy', { get: function () { return require('./ssoadmin-permission-set-inline-policy'); } });
 Object.defineProperty(exports, 'ssoadminPermissionsBoundaryAttachment', { get: function () { return require('./ssoadmin-permissions-boundary-attachment'); } });
+Object.defineProperty(exports, 'ssoadminRegion', { get: function () { return require('./ssoadmin-region'); } });
 Object.defineProperty(exports, 'ssoadminTrustedTokenIssuer', { get: function () { return require('./ssoadmin-trusted-token-issuer'); } });
 Object.defineProperty(exports, 'storagegatewayCache', { get: function () { return require('./storagegateway-cache'); } });
 Object.defineProperty(exports, 'storagegatewayCachedIscsiVolume', { get: function () { return require('./storagegateway-cached-iscsi-volume'); } });
@@ -1657,6 +1660,7 @@ Object.defineProperty(exports, 'workmailUser', { get: function () { return requi
 Object.defineProperty(exports, 'workspacesConnectionAlias', { get: function () { return require('./workspaces-connection-alias'); } });
 Object.defineProperty(exports, 'workspacesDirectory', { get: function () { return require('./workspaces-directory'); } });
 Object.defineProperty(exports, 'workspacesIpGroup', { get: function () { return require('./workspaces-ip-group'); } });
+Object.defineProperty(exports, 'workspacesPool', { get: function () { return require('./workspaces-pool'); } });
 Object.defineProperty(exports, 'workspacesWorkspace', { get: function () { return require('./workspaces-workspace'); } });
 Object.defineProperty(exports, 'workspaceswebBrowserSettings', { get: function () { return require('./workspacesweb-browser-settings'); } });
 Object.defineProperty(exports, 'workspaceswebBrowserSettingsAssociation', { get: function () { return require('./workspacesweb-browser-settings-association'); } });
@@ -2205,6 +2209,7 @@ Object.defineProperty(exports, 'dataAwsRoute53ResolverRules', { get: function ()
 Object.defineProperty(exports, 'dataAwsRoute53TrafficPolicyDocument', { get: function () { return require('./data-aws-route53-traffic-policy-document'); } });
 Object.defineProperty(exports, 'dataAwsRoute53Zone', { get: function () { return require('./data-aws-route53-zone'); } });
 Object.defineProperty(exports, 'dataAwsRoute53Zones', { get: function () { return require('./data-aws-route53-zones'); } });
+Object.defineProperty(exports, 'dataAwsRoute53ProfilesProfile', { get: function () { return require('./data-aws-route53profiles-profile'); } });
 Object.defineProperty(exports, 'dataAwsRoute53ProfilesProfiles', { get: function () { return require('./data-aws-route53profiles-profiles'); } });
 Object.defineProperty(exports, 'dataAwsRouteTable', { get: function () { return require('./data-aws-route-table'); } });
 Object.defineProperty(exports, 'dataAwsRouteTables', { get: function () { return require('./data-aws-route-tables'); } });

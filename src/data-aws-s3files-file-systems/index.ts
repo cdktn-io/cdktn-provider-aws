@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/s3files_file_systems
+// https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/s3files_file_systems
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataAwsS3FilesFileSystemsConfig extends cdktn.TerraformMetaArgu
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/s3files_file_systems#region DataAwsS3FilesFileSystems#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/s3files_file_systems#region DataAwsS3FilesFileSystems#region}
   */
   readonly region?: string;
   /**
   * file_systems block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/s3files_file_systems#file_systems DataAwsS3FilesFileSystems#file_systems}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/s3files_file_systems#file_systems DataAwsS3FilesFileSystems#file_systems}
   */
   readonly fileSystems?: DataAwsS3FilesFileSystemsFileSystems[] | cdktn.IResolvable;
 }
@@ -158,7 +158,7 @@ export class DataAwsS3FilesFileSystemsFileSystemsList extends cdktn.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/s3files_file_systems aws_s3files_file_systems}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/s3files_file_systems aws_s3files_file_systems}
 */
 export class DataAwsS3FilesFileSystems extends cdktn.TerraformDataSource {
 
@@ -174,7 +174,7 @@ export class DataAwsS3FilesFileSystems extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsS3FilesFileSystems resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsS3FilesFileSystems to import
-  * @param importFromId The id of the existing DataAwsS3FilesFileSystems that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/s3files_file_systems#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsS3FilesFileSystems that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/s3files_file_systems#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsS3FilesFileSystems to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -186,7 +186,7 @@ export class DataAwsS3FilesFileSystems extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/s3files_file_systems aws_s3files_file_systems} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/s3files_file_systems aws_s3files_file_systems} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -197,7 +197,7 @@ export class DataAwsS3FilesFileSystems extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_s3files_file_systems',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.53.0',
+        providerVersion: '6.54.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
