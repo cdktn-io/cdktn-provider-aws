@@ -1,3 +1,3 @@
 # `aws_s3tables_table_bucket_replication`
 
-Refer to the Terraform Registry for docs: [`aws_s3tables_table_bucket_replication`](https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/s3tables_table_bucket_replication).
+Refer to the Terraform Registry for docs: [`aws_s3tables_table_bucket_replication`](https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/s3tables_table_bucket_replication).

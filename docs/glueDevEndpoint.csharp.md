@@ -4,7 +4,7 @@
 
 ### GlueDevEndpoint <a name="GlueDevEndpoint" id="@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpoint.Initializer"></a>
 
@@ -601,7 +601,7 @@ The construct id used in the generated config for the GlueDevEndpoint to import.
 
 The id of the existing GlueDevEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1338,24 +1338,24 @@ new GlueDevEndpointConfig {
 | <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#name GlueDevEndpoint#name}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#role_arn GlueDevEndpoint#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.arguments">Arguments</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#arguments GlueDevEndpoint#arguments}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.extraJarsS3Path">ExtraJarsS3Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#extra_jars_s3_path GlueDevEndpoint#extra_jars_s3_path}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.extraPythonLibsS3Path">ExtraPythonLibsS3Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#extra_python_libs_s3_path GlueDevEndpoint#extra_python_libs_s3_path}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.glueVersion">GlueVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#glue_version GlueDevEndpoint#glue_version}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#id GlueDevEndpoint#id}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.numberOfNodes">NumberOfNodes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#number_of_nodes GlueDevEndpoint#number_of_nodes}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.numberOfWorkers">NumberOfWorkers</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#number_of_workers GlueDevEndpoint#number_of_workers}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.publicKey">PublicKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#public_key GlueDevEndpoint#public_key}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.publicKeys">PublicKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#public_keys GlueDevEndpoint#public_keys}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#name GlueDevEndpoint#name}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#role_arn GlueDevEndpoint#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.arguments">Arguments</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#arguments GlueDevEndpoint#arguments}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.extraJarsS3Path">ExtraJarsS3Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#extra_jars_s3_path GlueDevEndpoint#extra_jars_s3_path}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.extraPythonLibsS3Path">ExtraPythonLibsS3Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#extra_python_libs_s3_path GlueDevEndpoint#extra_python_libs_s3_path}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.glueVersion">GlueVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#glue_version GlueDevEndpoint#glue_version}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#id GlueDevEndpoint#id}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.numberOfNodes">NumberOfNodes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#number_of_nodes GlueDevEndpoint#number_of_nodes}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.numberOfWorkers">NumberOfWorkers</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#number_of_workers GlueDevEndpoint#number_of_workers}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.publicKey">PublicKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#public_key GlueDevEndpoint#public_key}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.publicKeys">PublicKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#public_keys GlueDevEndpoint#public_keys}. |
 | <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.securityConfiguration">SecurityConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#security_configuration GlueDevEndpoint#security_configuration}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#security_group_ids GlueDevEndpoint#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#subnet_id GlueDevEndpoint#subnet_id}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#tags GlueDevEndpoint#tags}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#tags_all GlueDevEndpoint#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.workerType">WorkerType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#worker_type GlueDevEndpoint#worker_type}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.securityConfiguration">SecurityConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#security_configuration GlueDevEndpoint#security_configuration}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#security_group_ids GlueDevEndpoint#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#subnet_id GlueDevEndpoint#subnet_id}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#tags GlueDevEndpoint#tags}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#tags_all GlueDevEndpoint#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.property.workerType">WorkerType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#worker_type GlueDevEndpoint#worker_type}. |
 
 ---
 
@@ -1437,7 +1437,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#name GlueDevEndpoint#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#name GlueDevEndpoint#name}.
 
 ---
 
@@ -1449,7 +1449,7 @@ public string RoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#role_arn GlueDevEndpoint#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#role_arn GlueDevEndpoint#role_arn}.
 
 ---
 
@@ -1461,7 +1461,7 @@ public System.Collections.Generic.IDictionary<string, string> Arguments { get; s
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#arguments GlueDevEndpoint#arguments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#arguments GlueDevEndpoint#arguments}.
 
 ---
 
@@ -1473,7 +1473,7 @@ public string ExtraJarsS3Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#extra_jars_s3_path GlueDevEndpoint#extra_jars_s3_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#extra_jars_s3_path GlueDevEndpoint#extra_jars_s3_path}.
 
 ---
 
@@ -1485,7 +1485,7 @@ public string ExtraPythonLibsS3Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#extra_python_libs_s3_path GlueDevEndpoint#extra_python_libs_s3_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#extra_python_libs_s3_path GlueDevEndpoint#extra_python_libs_s3_path}.
 
 ---
 
@@ -1497,7 +1497,7 @@ public string GlueVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#glue_version GlueDevEndpoint#glue_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#glue_version GlueDevEndpoint#glue_version}.
 
 ---
 
@@ -1509,7 +1509,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#id GlueDevEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#id GlueDevEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1524,7 +1524,7 @@ public double NumberOfNodes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#number_of_nodes GlueDevEndpoint#number_of_nodes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#number_of_nodes GlueDevEndpoint#number_of_nodes}.
 
 ---
 
@@ -1536,7 +1536,7 @@ public double NumberOfWorkers { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#number_of_workers GlueDevEndpoint#number_of_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#number_of_workers GlueDevEndpoint#number_of_workers}.
 
 ---
 
@@ -1548,7 +1548,7 @@ public string PublicKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#public_key GlueDevEndpoint#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#public_key GlueDevEndpoint#public_key}.
 
 ---
 
@@ -1560,7 +1560,7 @@ public string[] PublicKeys { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#public_keys GlueDevEndpoint#public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#public_keys GlueDevEndpoint#public_keys}.
 
 ---
 
@@ -1574,7 +1574,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#region GlueDevEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#region GlueDevEndpoint#region}
 
 ---
 
@@ -1586,7 +1586,7 @@ public string SecurityConfiguration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#security_configuration GlueDevEndpoint#security_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#security_configuration GlueDevEndpoint#security_configuration}.
 
 ---
 
@@ -1598,7 +1598,7 @@ public string[] SecurityGroupIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#security_group_ids GlueDevEndpoint#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#security_group_ids GlueDevEndpoint#security_group_ids}.
 
 ---
 
@@ -1610,7 +1610,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#subnet_id GlueDevEndpoint#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#subnet_id GlueDevEndpoint#subnet_id}.
 
 ---
 
@@ -1622,7 +1622,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#tags GlueDevEndpoint#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#tags GlueDevEndpoint#tags}.
 
 ---
 
@@ -1634,7 +1634,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#tags_all GlueDevEndpoint#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#tags_all GlueDevEndpoint#tags_all}.
 
 ---
 
@@ -1646,7 +1646,7 @@ public string WorkerType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/glue_dev_endpoint#worker_type GlueDevEndpoint#worker_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/glue_dev_endpoint#worker_type GlueDevEndpoint#worker_type}.
 
 ---
 

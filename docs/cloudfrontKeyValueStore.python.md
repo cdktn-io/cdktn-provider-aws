@@ -4,7 +4,7 @@
 
 ### CloudfrontKeyValueStore <a name="CloudfrontKeyValueStore" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer"></a>
 
@@ -23,6 +23,7 @@ cloudfrontKeyValueStore.CloudfrontKeyValueStore(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   comment: str = None,
+  tags: typing.Mapping[str] = None,
   timeouts: CloudfrontKeyValueStoreTimeouts = None
 )
 ```
@@ -38,8 +39,9 @@ cloudfrontKeyValueStore.CloudfrontKeyValueStore(
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#tags CloudfrontKeyValueStore#tags}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeouts">CloudfrontKeyValueStoreTimeouts</a></code> | timeouts block. |
 
 ---
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}.
 
 ---
 
@@ -116,7 +118,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer.parameter.tags"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#tags CloudfrontKeyValueStore#tags}.
 
 ---
 
@@ -126,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#timeouts CloudfrontKeyValueStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#timeouts CloudfrontKeyValueStore#timeouts}
 
 ---
 
@@ -160,6 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.resetComment">reset_comment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -526,7 +537,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#create CloudfrontKeyValueStore#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#create CloudfrontKeyValueStore#create}
 
 ---
 
@@ -534,6 +545,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_comment() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.resetTags"></a>
+
+```python
+def reset_tags() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.resetTimeouts"></a>
@@ -656,7 +673,7 @@ The construct id used in the generated config for the CloudfrontKeyValueStore to
 
 The id of the existing CloudfrontKeyValueStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,12 +707,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.etag">etag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.lastModifiedTime">last_modified_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tagsAll">tags_all</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeoutsOutputReference">CloudfrontKeyValueStoreTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeouts">CloudfrontKeyValueStoreTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
@@ -881,6 +901,16 @@ last_modified_time: str
 
 ---
 
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tagsAll"></a>
+
+```python
+tags_all: StringMap
+```
+
+- *Type:* cdktn.StringMap
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.timeouts"></a>
 
 ```python
@@ -911,6 +941,16 @@ name_input: str
 
 ---
 
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tagsInput"></a>
+
+```python
+tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.timeoutsInput"></a>
 
 ```python
@@ -938,6 +978,16 @@ name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -978,6 +1028,7 @@ cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   comment: str = None,
+  tags: typing.Mapping[str] = None,
   timeouts: CloudfrontKeyValueStoreTimeouts = None
 )
 ```
@@ -993,8 +1044,9 @@ cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig(
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#tags CloudfrontKeyValueStore#tags}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeouts">CloudfrontKeyValueStoreTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1077,7 +1129,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}.
 
 ---
 
@@ -1089,7 +1141,19 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#tags CloudfrontKeyValueStore#tags}.
 
 ---
 
@@ -1103,7 +1167,7 @@ timeouts: CloudfrontKeyValueStoreTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#timeouts CloudfrontKeyValueStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#timeouts CloudfrontKeyValueStore#timeouts}
 
 ---
 
@@ -1137,7 +1201,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#create CloudfrontKeyValueStore#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#create CloudfrontKeyValueStore#create}
 
 ---
 

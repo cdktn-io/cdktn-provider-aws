@@ -4,7 +4,7 @@
 
 ### CloudfrontKeyValueStore <a name="CloudfrontKeyValueStore" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.resetComment">ResetComment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -407,6 +408,12 @@ private void PutTimeouts(CloudfrontKeyValueStoreTimeouts Value)
 private void ResetComment()
 ```
 
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.resetTags"></a>
+
+```csharp
+private void ResetTags()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.resetTimeouts"></a>
 
 ```csharp
@@ -516,7 +523,7 @@ The construct id used in the generated config for the CloudfrontKeyValueStore to
 
 The id of the existing CloudfrontKeyValueStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -550,12 +557,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.lastModifiedTime">LastModifiedTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tagsAll">TagsAll</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeoutsOutputReference">CloudfrontKeyValueStoreTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeouts">CloudfrontKeyValueStoreTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 
 ---
 
@@ -741,6 +751,16 @@ public string LastModifiedTime { get; }
 
 ---
 
+##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tagsAll"></a>
+
+```csharp
+public StringMap TagsAll { get; }
+```
+
+- *Type:* Io.Cdktn.StringMap
+
+---
+
 ##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.timeouts"></a>
 
 ```csharp
@@ -771,6 +791,16 @@ public string NameInput { get; }
 
 ---
 
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tagsInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> TagsInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.timeoutsInput"></a>
 
 ```csharp
@@ -798,6 +828,16 @@ public string Name { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.property.tags"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Tags { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 ---
 
@@ -838,6 +878,7 @@ new CloudfrontKeyValueStoreConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     string Comment = null,
+    System.Collections.Generic.IDictionary<string, string> Tags = null,
     CloudfrontKeyValueStoreTimeouts Timeouts = null
 };
 ```
@@ -853,8 +894,9 @@ new CloudfrontKeyValueStoreConfig {
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#tags CloudfrontKeyValueStore#tags}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeouts">CloudfrontKeyValueStoreTimeouts</a></code> | timeouts block. |
 
 ---
@@ -937,7 +979,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}.
 
 ---
 
@@ -949,7 +991,19 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}.
+
+---
+
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.tags"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#tags CloudfrontKeyValueStore#tags}.
 
 ---
 
@@ -963,7 +1017,7 @@ public CloudfrontKeyValueStoreTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#timeouts CloudfrontKeyValueStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#timeouts CloudfrontKeyValueStore#timeouts}
 
 ---
 
@@ -997,7 +1051,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_key_value_store#create CloudfrontKeyValueStore#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_key_value_store#create CloudfrontKeyValueStore#create}
 
 ---
 

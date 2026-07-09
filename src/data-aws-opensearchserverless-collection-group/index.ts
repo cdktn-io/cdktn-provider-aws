@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/opensearchserverless_collection_group
+// https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/opensearchserverless_collection_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataAwsOpensearchserverlessCollectionGroupConfig extends cdktn.
   /**
   * ID of the collection group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/opensearchserverless_collection_group#id DataAwsOpensearchserverlessCollectionGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/opensearchserverless_collection_group#id DataAwsOpensearchserverlessCollectionGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataAwsOpensearchserverlessCollectionGroupConfig extends cdktn.
   /**
   * Name of the collection group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/opensearchserverless_collection_group#name DataAwsOpensearchserverlessCollectionGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/opensearchserverless_collection_group#name DataAwsOpensearchserverlessCollectionGroup#name}
   */
   readonly name?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/opensearchserverless_collection_group#region DataAwsOpensearchserverlessCollectionGroup#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/opensearchserverless_collection_group#region DataAwsOpensearchserverlessCollectionGroup#region}
   */
   readonly region?: string;
 }
@@ -126,7 +126,7 @@ export class DataAwsOpensearchserverlessCollectionGroupCapacityLimitsList extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/opensearchserverless_collection_group aws_opensearchserverless_collection_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/opensearchserverless_collection_group aws_opensearchserverless_collection_group}
 */
 export class DataAwsOpensearchserverlessCollectionGroup extends cdktn.TerraformDataSource {
 
@@ -142,7 +142,7 @@ export class DataAwsOpensearchserverlessCollectionGroup extends cdktn.TerraformD
   * Generates CDKTN code for importing a DataAwsOpensearchserverlessCollectionGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOpensearchserverlessCollectionGroup to import
-  * @param importFromId The id of the existing DataAwsOpensearchserverlessCollectionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/opensearchserverless_collection_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOpensearchserverlessCollectionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/opensearchserverless_collection_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOpensearchserverlessCollectionGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -154,7 +154,7 @@ export class DataAwsOpensearchserverlessCollectionGroup extends cdktn.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/opensearchserverless_collection_group aws_opensearchserverless_collection_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/opensearchserverless_collection_group aws_opensearchserverless_collection_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +165,7 @@ export class DataAwsOpensearchserverlessCollectionGroup extends cdktn.TerraformD
       terraformResourceType: 'aws_opensearchserverless_collection_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.53.0',
+        providerVersion: '6.54.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

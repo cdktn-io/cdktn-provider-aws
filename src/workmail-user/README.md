@@ -1,3 +1,3 @@
 # `aws_workmail_user`
 
-Refer to the Terraform Registry for docs: [`aws_workmail_user`](https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/workmail_user).
+Refer to the Terraform Registry for docs: [`aws_workmail_user`](https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_user).

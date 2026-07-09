@@ -4,7 +4,7 @@
 
 ### DataAwsWafregionalWebAcl <a name="DataAwsWafregionalWebAcl" id="@cdktn/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/wafregional_web_acl aws_wafregional_web_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/wafregional_web_acl aws_wafregional_web_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsWafregionalWebAcl t
 
 The id of the existing DataAwsWafregionalWebAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/wafregional_web_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/wafregional_web_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -672,8 +672,8 @@ new DataAwsWafregionalWebAclConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -756,7 +756,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}.
 
 ---
 
@@ -768,7 +768,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -785,7 +785,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/wafregional_web_acl#region DataAwsWafregionalWebAcl#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/wafregional_web_acl#region DataAwsWafregionalWebAcl#region}
 
 ---
 

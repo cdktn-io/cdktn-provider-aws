@@ -4,7 +4,7 @@
 
 ### DataAwsIamOutboundWebIdentityFederation <a name="DataAwsIamOutboundWebIdentityFederation" id="@cdktn/provider-aws.dataAwsIamOutboundWebIdentityFederation.DataAwsIamOutboundWebIdentityFederation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/iam_outbound_web_identity_federation aws_iam_outbound_web_identity_federation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/iam_outbound_web_identity_federation aws_iam_outbound_web_identity_federation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamOutboundWebIdentityFederation.DataAwsIamOutboundWebIdentityFederation.Initializer"></a>
 
@@ -437,7 +437,7 @@ The construct id used in the generated config for the DataAwsIamOutboundWebIdent
 
 The id of the existing DataAwsIamOutboundWebIdentityFederation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/iam_outbound_web_identity_federation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/iam_outbound_web_identity_federation#import import section} in the documentation of this resource for the id to use
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/uxc_services
+// https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/uxc_services
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataAwsUxcServicesConfig extends cdktn.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/uxc_services aws_uxc_services}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/uxc_services aws_uxc_services}
 */
 export class DataAwsUxcServices extends cdktn.TerraformDataSource {
 
@@ -31,7 +31,7 @@ export class DataAwsUxcServices extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsUxcServices resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsUxcServices to import
-  * @param importFromId The id of the existing DataAwsUxcServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/uxc_services#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsUxcServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/uxc_services#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsUxcServices to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class DataAwsUxcServices extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/uxc_services aws_uxc_services} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/uxc_services aws_uxc_services} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataAwsUxcServices extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_uxc_services',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.53.0',
+        providerVersion: '6.54.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### DataAwsShieldProtection <a name="DataAwsShieldProtection" id="@cdktn/provider-aws.dataAwsShieldProtection.DataAwsShieldProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/shield_protection aws_shield_protection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/shield_protection aws_shield_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsShieldProtection.DataAwsShieldProtection.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsShieldProtection to
 
 The id of the existing DataAwsShieldProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/shield_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/shield_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -672,8 +672,8 @@ const dataAwsShieldProtectionConfig: dataAwsShieldProtection.DataAwsShieldProtec
 | <code><a href="#@cdktn/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.protectionId">protectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/shield_protection#resource_arn DataAwsShieldProtection#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.protectionId">protectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/shield_protection#resource_arn DataAwsShieldProtection#resource_arn}. |
 
 ---
 
@@ -755,7 +755,7 @@ public readonly protectionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}.
 
 ---
 
@@ -767,7 +767,7 @@ public readonly resourceArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/data-sources/shield_protection#resource_arn DataAwsShieldProtection#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/shield_protection#resource_arn DataAwsShieldProtection#resource_arn}.
 
 ---
 

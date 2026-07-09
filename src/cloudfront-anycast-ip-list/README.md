@@ -1,3 +1,3 @@
 # `aws_cloudfront_anycast_ip_list`
 
-Refer to the Terraform Registry for docs: [`aws_cloudfront_anycast_ip_list`](https://registry.terraform.io/providers/hashicorp/aws/6.53.0/docs/resources/cloudfront_anycast_ip_list).
+Refer to the Terraform Registry for docs: [`aws_cloudfront_anycast_ip_list`](https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/cloudfront_anycast_ip_list).
