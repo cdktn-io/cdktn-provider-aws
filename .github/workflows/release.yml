@@ -12,6 +12,30 @@ on:
         description: Dry run (skip actual publishing)
         required: false
         type: boolean
+      sha:
+        type: string
+        required: true
+        description: The sha of the commit to release
+      publish_to_npm:
+        type: boolean
+        default: false
+        description: Whether or not to publish to NPM
+      publish_to_maven:
+        type: boolean
+        default: false
+        description: Whether or not to publish to Maven
+      publish_to_pypi:
+        type: boolean
+        default: false
+        description: Whether or not to publish to PyPi
+      publish_to_nuget:
+        type: boolean
+        default: false
+        description: Whether or not to publish to NuGet
+      publish_to_go:
+        type: boolean
+        default: false
+        description: Whether or not to publish to Go
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false
@@ -31,6 +55,7 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           fetch-depth: 0
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.sha || '' }}
       - name: Set git config safe.directory
         run: git config --global --add safe.directory $(pwd)
       - name: Set git identity
@@ -45,7 +70,12 @@ jobs:
       - name: Install dependencies
         run: yarn install --check-files --frozen-lockfile
       - name: release
-        run: npx projen release
+        run: |-
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            npx projen unconditional-release
+          else
+            npx projen release
+          fi
       - name: Check if version has already been tagged
         id: check_tag_exists
         run: |-
@@ -55,15 +85,16 @@ jobs:
           cat $GITHUB_OUTPUT
       - name: Check for new commits or cancel via faking a SHA if release was cancelled
         id: git_remote
+        if: github.event_name != 'workflow_dispatch'
         run: node ./scripts/should-release.js && (echo "latest_commit=$(git ls-remote origin -h ${{ github.ref }} | cut -f1)" >> $GITHUB_OUTPUT && cat $GITHUB_OUTPUT) || echo "latest_commit=release_cancelled" >> $GITHUB_OUTPUT
         shell: bash
       - name: Backup artifact permissions
-        if: ${{ steps.git_remote.outputs.latest_commit == github.sha }}
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.git_remote.outputs.latest_commit == github.sha }}
         run: cd dist && getfacl -R . > permissions-backup.acl
         continue-on-error: true
       - name: Upload artifact
         id: upload_artifact
-        if: ${{ steps.git_remote.outputs.latest_commit == github.sha }}
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.git_remote.outputs.latest_commit == github.sha }}
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: build-artifact
@@ -77,6 +108,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    if: github.event_name != 'workflow_dispatch'
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
@@ -107,7 +139,7 @@ jobs:
     permissions:
       contents: write
       issues: write
-    if: needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha
+    if: needs.release.outputs.tag_exists != 'true' && (github.event_name == 'workflow_dispatch' || needs.release.outputs.latest_commit == github.sha)
     steps:
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
@@ -125,6 +157,8 @@ jobs:
         if: ${{ !inputs.dry_run }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REF: ${{ github.event_name == 'workflow_dispatch' && inputs.sha || github.ref }}
+          GITHUB_SHA: ${{ github.event_name == 'workflow_dispatch' && inputs.sha || github.sha }}
         run: errout=$(mktemp); gh release create $(cat dist/releasetag.txt) -R $GITHUB_REPOSITORY -F dist/changelog.md -t $(cat dist/releasetag.txt) --target $GITHUB_SHA 2> $errout && true; exitcode=$?; if [ $exitcode -ne 0 ] && ! grep -q "Release.tag_name already exists" $errout; then cat $errout; exit $exitcode; fi
       - name: Extract Version
         id: extract-version
@@ -132,7 +166,7 @@ jobs:
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Create Issue
-        if: ${{ failure() }}
+        if: ${{ failure() && github.event_name != 'workflow_dispatch' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ steps.extract-version.outputs.VERSION }}
@@ -146,7 +180,7 @@ jobs:
       id-token: write
       contents: read
       issues: write
-    if: needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha
+    if: (github.event_name != 'workflow_dispatch' && needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha) || (github.event_name == 'workflow_dispatch' && inputs.publish_to_npm)
     steps:
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
@@ -187,7 +221,7 @@ jobs:
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Create Issue
-        if: ${{ failure() }}
+        if: ${{ failure() && github.event_name != 'workflow_dispatch' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ steps.extract-version.outputs.VERSION }}
@@ -200,7 +234,7 @@ jobs:
     permissions:
       contents: read
       issues: write
-    if: needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha
+    if: (github.event_name != 'workflow_dispatch' && needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha) || (github.event_name == 'workflow_dispatch' && inputs.publish_to_maven)
     steps:
       - uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654
         with:
@@ -248,68 +282,12 @@ jobs:
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Create Issue
-        if: ${{ failure() }}
+        if: ${{ failure() && github.event_name != 'workflow_dispatch' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ steps.extract-version.outputs.VERSION }}
           RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: gh issue create --title "Publishing v$VERSION to Maven Central failed" --body "See $RUN_URL" --label "failed-release"
-  release_pypi:
-    name: Publish to PyPI
-    needs: release
-    runs-on: depot-ubuntu-24.04-8
-    permissions:
-      contents: read
-      issues: write
-    if: needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha
-    steps:
-      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
-        with:
-          node-version: 20.16.0
-          package-manager-cache: false
-      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
-        with:
-          python-version: 3.x
-      - name: Download build artifacts
-        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
-        with:
-          artifact-ids: ${{ needs.release.outputs.artifact_id }}
-          path: dist
-      - name: Restore build artifact permissions
-        run: cd dist && setfacl --restore=permissions-backup.acl
-        continue-on-error: true
-      - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
-        with:
-          path: .repo
-      - name: Install Dependencies
-        run: cd .repo && yarn install --check-files --frozen-lockfile
-      - name: Extract build artifact
-        run: tar --strip-components=1 -xzvf dist/js/*.tgz -C .repo
-      - name: Move build artifact out of the way
-        run: mv dist dist.old
-      - name: Create python artifact
-        run: cd .repo && npx projen package:python
-      - name: Collect python artifact
-        run: mv .repo/dist dist
-      - name: Release
-        env:
-          TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
-          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
-          PUBLIB_DRYRUN: ${{ inputs.dry_run }}
-        run: npx -p publib@latest publib-pypi
-      - name: Extract Version
-        id: extract-version
-        if: ${{ failure() }}
-        run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
-        shell: bash
-      - name: Create Issue
-        if: ${{ failure() }}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VERSION: ${{ steps.extract-version.outputs.VERSION }}
-          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: gh issue create --title "Publishing v$VERSION to PyPI failed" --body "See $RUN_URL" --label "failed-release"
   release_nuget:
     name: Publish to NuGet Gallery
     needs: release
@@ -317,7 +295,7 @@ jobs:
     permissions:
       contents: read
       issues: write
-    if: needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha
+    if: (github.event_name != 'workflow_dispatch' && needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha) || (github.event_name == 'workflow_dispatch' && inputs.publish_to_nuget)
     steps:
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
@@ -360,7 +338,7 @@ jobs:
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Create Issue
-        if: ${{ failure() }}
+        if: ${{ failure() && github.event_name != 'workflow_dispatch' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ steps.extract-version.outputs.VERSION }}
@@ -373,7 +351,7 @@ jobs:
     permissions:
       contents: read
       issues: write
-    if: needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha
+    if: (github.event_name != 'workflow_dispatch' && needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha) || (github.event_name == 'workflow_dispatch' && inputs.publish_to_go)
     steps:
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
@@ -445,7 +423,7 @@ jobs:
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Create Issue
-        if: ${{ failure() }}
+        if: ${{ failure() && github.event_name != 'workflow_dispatch' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ steps.extract-version.outputs.VERSION }}
