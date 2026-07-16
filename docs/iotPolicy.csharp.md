@@ -4,7 +4,7 @@
 
 ### IotPolicy <a name="IotPolicy" id="@cdktn/provider-aws.iotPolicy.IotPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy aws_iot_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy aws_iot_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotPolicy.IotPolicy.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the IotPolicy to import.
 
 The id of the existing IotPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -944,12 +944,12 @@ new IotPolicyConfig {
 | <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#name IotPolicy#name}. |
-| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#policy IotPolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#id IotPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#name IotPolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#policy IotPolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#id IotPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#tags IotPolicy#tags}. |
-| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#tags_all IotPolicy#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#tags IotPolicy#tags}. |
+| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#tags_all IotPolicy#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyTimeouts">IotPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1032,7 +1032,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#name IotPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#name IotPolicy#name}.
 
 ---
 
@@ -1044,7 +1044,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#policy IotPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#policy IotPolicy#policy}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#id IotPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#id IotPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1073,7 +1073,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#region IotPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#region IotPolicy#region}
 
 ---
 
@@ -1085,7 +1085,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#tags IotPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#tags IotPolicy#tags}.
 
 ---
 
@@ -1097,7 +1097,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#tags_all IotPolicy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#tags_all IotPolicy#tags_all}.
 
 ---
 
@@ -1111,7 +1111,7 @@ public IotPolicyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#timeouts IotPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#timeouts IotPolicy#timeouts}
 
 ---
 
@@ -1132,8 +1132,8 @@ new IotPolicyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#delete IotPolicy#delete}. |
-| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#update IotPolicy#update}. |
+| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#delete IotPolicy#delete}. |
+| <code><a href="#@cdktn/provider-aws.iotPolicy.IotPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#update IotPolicy#update}. |
 
 ---
 
@@ -1145,7 +1145,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#delete IotPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#delete IotPolicy#delete}.
 
 ---
 
@@ -1157,7 +1157,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/iot_policy#update IotPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iot_policy#update IotPolicy#update}.
 
 ---
 

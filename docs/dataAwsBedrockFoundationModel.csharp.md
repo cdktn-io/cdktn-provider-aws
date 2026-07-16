@@ -4,7 +4,7 @@
 
 ### DataAwsBedrockFoundationModel <a name="DataAwsBedrockFoundationModel" id="@cdktn/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModel.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsBedrockFoundationMo
 
 The id of the existing DataAwsBedrockFoundationModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/bedrock_foundation_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/bedrock_foundation_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -741,7 +741,7 @@ new DataAwsBedrockFoundationModelConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.modelId">ModelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.modelId">ModelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -824,7 +824,7 @@ public string ModelId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}.
 
 ---
 
@@ -838,7 +838,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/bedrock_foundation_model#region DataAwsBedrockFoundationModel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/bedrock_foundation_model#region DataAwsBedrockFoundationModel#region}
 
 ---
 

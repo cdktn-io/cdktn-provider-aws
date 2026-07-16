@@ -4,7 +4,7 @@
 
 ### MskconnectConnector <a name="MskconnectConnector" id="@cdktn/provider-aws.mskconnectConnector.MskconnectConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector aws_mskconnect_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector aws_mskconnect_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskconnectConnector.MskconnectConnector.Initializer"></a>
 
@@ -649,7 +649,7 @@ The construct id used in the generated config for the MskconnectConnector to imp
 
 The id of the existing MskconnectConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1272,7 +1272,7 @@ Autoscaling MskconnectConnectorCapacityAutoscaling
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#autoscaling MskconnectConnector#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#autoscaling MskconnectConnector#autoscaling}
 
 ---
 
@@ -1286,7 +1286,7 @@ ProvisionedCapacity MskconnectConnectorCapacityProvisionedCapacity
 
 provisioned_capacity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#provisioned_capacity MskconnectConnector#provisioned_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#provisioned_capacity MskconnectConnector#provisioned_capacity}
 
 ---
 
@@ -1310,9 +1310,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling.property.maxWorkerCount">MaxWorkerCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#max_worker_count MskconnectConnector#max_worker_count}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling.property.minWorkerCount">MinWorkerCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#min_worker_count MskconnectConnector#min_worker_count}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling.property.mcuCount">McuCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling.property.maxWorkerCount">MaxWorkerCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#max_worker_count MskconnectConnector#max_worker_count}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling.property.minWorkerCount">MinWorkerCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#min_worker_count MskconnectConnector#min_worker_count}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling.property.mcuCount">McuCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling.property.scaleInPolicy">ScaleInPolicy</a></code> | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicy">MskconnectConnectorCapacityAutoscalingScaleInPolicy</a></code> | scale_in_policy block. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling.property.scaleOutPolicy">ScaleOutPolicy</a></code> | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleOutPolicy">MskconnectConnectorCapacityAutoscalingScaleOutPolicy</a></code> | scale_out_policy block. |
 
@@ -1326,7 +1326,7 @@ MaxWorkerCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#max_worker_count MskconnectConnector#max_worker_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#max_worker_count MskconnectConnector#max_worker_count}.
 
 ---
 
@@ -1338,7 +1338,7 @@ MinWorkerCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#min_worker_count MskconnectConnector#min_worker_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#min_worker_count MskconnectConnector#min_worker_count}.
 
 ---
 
@@ -1350,7 +1350,7 @@ McuCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}.
 
 ---
 
@@ -1364,7 +1364,7 @@ ScaleInPolicy MskconnectConnectorCapacityAutoscalingScaleInPolicy
 
 scale_in_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#scale_in_policy MskconnectConnector#scale_in_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#scale_in_policy MskconnectConnector#scale_in_policy}
 
 ---
 
@@ -1378,7 +1378,7 @@ ScaleOutPolicy MskconnectConnectorCapacityAutoscalingScaleOutPolicy
 
 scale_out_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#scale_out_policy MskconnectConnector#scale_out_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#scale_out_policy MskconnectConnector#scale_out_policy}
 
 ---
 
@@ -1398,7 +1398,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicy.property.cpuUtilizationPercentage">CpuUtilizationPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicy.property.cpuUtilizationPercentage">CpuUtilizationPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}. |
 
 ---
 
@@ -1410,7 +1410,7 @@ CpuUtilizationPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}.
 
 ---
 
@@ -1430,7 +1430,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleOutPolicy.property.cpuUtilizationPercentage">CpuUtilizationPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleOutPolicy.property.cpuUtilizationPercentage">CpuUtilizationPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}. |
 
 ---
 
@@ -1442,7 +1442,7 @@ CpuUtilizationPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#cpu_utilization_percentage MskconnectConnector#cpu_utilization_percentage}.
 
 ---
 
@@ -1463,8 +1463,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacity.property.workerCount">WorkerCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#worker_count MskconnectConnector#worker_count}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacity.property.mcuCount">McuCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacity.property.workerCount">WorkerCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#worker_count MskconnectConnector#worker_count}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacity.property.mcuCount">McuCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}. |
 
 ---
 
@@ -1476,7 +1476,7 @@ WorkerCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#worker_count MskconnectConnector#worker_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#worker_count MskconnectConnector#worker_count}.
 
 ---
 
@@ -1488,7 +1488,7 @@ McuCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#mcu_count MskconnectConnector#mcu_count}.
 
 ---
 
@@ -1539,20 +1539,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.capacity">Capacity</a></code> | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacity">MskconnectConnectorCapacity</a></code> | capacity block. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.connectorConfiguration">ConnectorConfiguration</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#connector_configuration MskconnectConnector#connector_configuration}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.connectorConfiguration">ConnectorConfiguration</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#connector_configuration MskconnectConnector#connector_configuration}. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.kafkaCluster">KafkaCluster</a></code> | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaCluster">MskconnectConnectorKafkaCluster</a></code> | kafka_cluster block. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.kafkaClusterClientAuthentication">KafkaClusterClientAuthentication</a></code> | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthentication">MskconnectConnectorKafkaClusterClientAuthentication</a></code> | kafka_cluster_client_authentication block. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.kafkaClusterEncryptionInTransit">KafkaClusterEncryptionInTransit</a></code> | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransit">MskconnectConnectorKafkaClusterEncryptionInTransit</a></code> | kafka_cluster_encryption_in_transit block. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.kafkaconnectVersion">KafkaconnectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#kafkaconnect_version MskconnectConnector#kafkaconnect_version}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#name MskconnectConnector#name}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.kafkaconnectVersion">KafkaconnectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#kafkaconnect_version MskconnectConnector#kafkaconnect_version}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#name MskconnectConnector#name}. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.plugin">Plugin</a></code> | <code>interface{}</code> | plugin block. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.serviceExecutionRoleArn">ServiceExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#service_execution_role_arn MskconnectConnector#service_execution_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#description MskconnectConnector#description}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#id MskconnectConnector#id}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.serviceExecutionRoleArn">ServiceExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#service_execution_role_arn MskconnectConnector#service_execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#description MskconnectConnector#description}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#id MskconnectConnector#id}. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.logDelivery">LogDelivery</a></code> | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDelivery">MskconnectConnectorLogDelivery</a></code> | log_delivery block. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#tags MskconnectConnector#tags}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#tags_all MskconnectConnector#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#tags MskconnectConnector#tags}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#tags_all MskconnectConnector#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorTimeouts">MskconnectConnectorTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorConfig.property.workerConfiguration">WorkerConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfiguration">MskconnectConnectorWorkerConfiguration</a></code> | worker_configuration block. |
 
@@ -1638,7 +1638,7 @@ Capacity MskconnectConnectorCapacity
 
 capacity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#capacity MskconnectConnector#capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#capacity MskconnectConnector#capacity}
 
 ---
 
@@ -1650,7 +1650,7 @@ ConnectorConfiguration *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#connector_configuration MskconnectConnector#connector_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#connector_configuration MskconnectConnector#connector_configuration}.
 
 ---
 
@@ -1664,7 +1664,7 @@ KafkaCluster MskconnectConnectorKafkaCluster
 
 kafka_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#kafka_cluster MskconnectConnector#kafka_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#kafka_cluster MskconnectConnector#kafka_cluster}
 
 ---
 
@@ -1678,7 +1678,7 @@ KafkaClusterClientAuthentication MskconnectConnectorKafkaClusterClientAuthentica
 
 kafka_cluster_client_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#kafka_cluster_client_authentication MskconnectConnector#kafka_cluster_client_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#kafka_cluster_client_authentication MskconnectConnector#kafka_cluster_client_authentication}
 
 ---
 
@@ -1692,7 +1692,7 @@ KafkaClusterEncryptionInTransit MskconnectConnectorKafkaClusterEncryptionInTrans
 
 kafka_cluster_encryption_in_transit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#kafka_cluster_encryption_in_transit MskconnectConnector#kafka_cluster_encryption_in_transit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#kafka_cluster_encryption_in_transit MskconnectConnector#kafka_cluster_encryption_in_transit}
 
 ---
 
@@ -1704,7 +1704,7 @@ KafkaconnectVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#kafkaconnect_version MskconnectConnector#kafkaconnect_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#kafkaconnect_version MskconnectConnector#kafkaconnect_version}.
 
 ---
 
@@ -1716,7 +1716,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#name MskconnectConnector#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#name MskconnectConnector#name}.
 
 ---
 
@@ -1730,7 +1730,7 @@ Plugin interface{}
 
 plugin block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#plugin MskconnectConnector#plugin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#plugin MskconnectConnector#plugin}
 
 ---
 
@@ -1742,7 +1742,7 @@ ServiceExecutionRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#service_execution_role_arn MskconnectConnector#service_execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#service_execution_role_arn MskconnectConnector#service_execution_role_arn}.
 
 ---
 
@@ -1754,7 +1754,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#description MskconnectConnector#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#description MskconnectConnector#description}.
 
 ---
 
@@ -1766,7 +1766,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#id MskconnectConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#id MskconnectConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1783,7 +1783,7 @@ LogDelivery MskconnectConnectorLogDelivery
 
 log_delivery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#log_delivery MskconnectConnector#log_delivery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#log_delivery MskconnectConnector#log_delivery}
 
 ---
 
@@ -1797,7 +1797,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#region MskconnectConnector#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#region MskconnectConnector#region}
 
 ---
 
@@ -1809,7 +1809,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#tags MskconnectConnector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#tags MskconnectConnector#tags}.
 
 ---
 
@@ -1821,7 +1821,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#tags_all MskconnectConnector#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#tags_all MskconnectConnector#tags_all}.
 
 ---
 
@@ -1835,7 +1835,7 @@ Timeouts MskconnectConnectorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#timeouts MskconnectConnector#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#timeouts MskconnectConnector#timeouts}
 
 ---
 
@@ -1849,7 +1849,7 @@ WorkerConfiguration MskconnectConnectorWorkerConfiguration
 
 worker_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#worker_configuration MskconnectConnector#worker_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#worker_configuration MskconnectConnector#worker_configuration}
 
 ---
 
@@ -1883,7 +1883,7 @@ ApacheKafkaCluster MskconnectConnectorKafkaClusterApacheKafkaCluster
 
 apache_kafka_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#apache_kafka_cluster MskconnectConnector#apache_kafka_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#apache_kafka_cluster MskconnectConnector#apache_kafka_cluster}
 
 ---
 
@@ -1904,7 +1904,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaCluster.property.bootstrapServers">BootstrapServers</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#bootstrap_servers MskconnectConnector#bootstrap_servers}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaCluster.property.bootstrapServers">BootstrapServers</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#bootstrap_servers MskconnectConnector#bootstrap_servers}. |
 | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaCluster.property.vpc">Vpc</a></code> | <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpc">MskconnectConnectorKafkaClusterApacheKafkaClusterVpc</a></code> | vpc block. |
 
 ---
@@ -1917,7 +1917,7 @@ BootstrapServers *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#bootstrap_servers MskconnectConnector#bootstrap_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#bootstrap_servers MskconnectConnector#bootstrap_servers}.
 
 ---
 
@@ -1931,7 +1931,7 @@ Vpc MskconnectConnectorKafkaClusterApacheKafkaClusterVpc
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#vpc MskconnectConnector#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#vpc MskconnectConnector#vpc}
 
 ---
 
@@ -1952,8 +1952,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpc.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#security_groups MskconnectConnector#security_groups}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpc.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#subnets MskconnectConnector#subnets}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpc.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#security_groups MskconnectConnector#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpc.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#subnets MskconnectConnector#subnets}. |
 
 ---
 
@@ -1965,7 +1965,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#security_groups MskconnectConnector#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#security_groups MskconnectConnector#security_groups}.
 
 ---
 
@@ -1977,7 +1977,7 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#subnets MskconnectConnector#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#subnets MskconnectConnector#subnets}.
 
 ---
 
@@ -1997,7 +1997,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthentication.property.authenticationType">AuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#authentication_type MskconnectConnector#authentication_type}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthentication.property.authenticationType">AuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#authentication_type MskconnectConnector#authentication_type}. |
 
 ---
 
@@ -2009,7 +2009,7 @@ AuthenticationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#authentication_type MskconnectConnector#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#authentication_type MskconnectConnector#authentication_type}.
 
 ---
 
@@ -2029,7 +2029,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransit.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#encryption_type MskconnectConnector#encryption_type}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransit.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#encryption_type MskconnectConnector#encryption_type}. |
 
 ---
 
@@ -2041,7 +2041,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#encryption_type MskconnectConnector#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#encryption_type MskconnectConnector#encryption_type}.
 
 ---
 
@@ -2075,7 +2075,7 @@ WorkerLogDelivery MskconnectConnectorLogDeliveryWorkerLogDelivery
 
 worker_log_delivery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#worker_log_delivery MskconnectConnector#worker_log_delivery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#worker_log_delivery MskconnectConnector#worker_log_delivery}
 
 ---
 
@@ -2113,7 +2113,7 @@ CloudwatchLogs MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs
 
 cloudwatch_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#cloudwatch_logs MskconnectConnector#cloudwatch_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#cloudwatch_logs MskconnectConnector#cloudwatch_logs}
 
 ---
 
@@ -2127,7 +2127,7 @@ Firehose MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose
 
 firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#firehose MskconnectConnector#firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#firehose MskconnectConnector#firehose}
 
 ---
 
@@ -2141,7 +2141,7 @@ S3 MskconnectConnectorLogDeliveryWorkerLogDeliveryS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#s3 MskconnectConnector#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#s3 MskconnectConnector#s3}
 
 ---
 
@@ -2162,8 +2162,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs.property.logGroup">LogGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#log_group MskconnectConnector#log_group}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs.property.logGroup">LogGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#log_group MskconnectConnector#log_group}. |
 
 ---
 
@@ -2175,7 +2175,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}.
 
 ---
 
@@ -2187,7 +2187,7 @@ LogGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#log_group MskconnectConnector#log_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#log_group MskconnectConnector#log_group}.
 
 ---
 
@@ -2208,8 +2208,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose.property.deliveryStream">DeliveryStream</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#delivery_stream MskconnectConnector#delivery_stream}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose.property.deliveryStream">DeliveryStream</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#delivery_stream MskconnectConnector#delivery_stream}. |
 
 ---
 
@@ -2221,7 +2221,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}.
 
 ---
 
@@ -2233,7 +2233,7 @@ DeliveryStream *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#delivery_stream MskconnectConnector#delivery_stream}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#delivery_stream MskconnectConnector#delivery_stream}.
 
 ---
 
@@ -2255,9 +2255,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#bucket MskconnectConnector#bucket}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#prefix MskconnectConnector#prefix}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#bucket MskconnectConnector#bucket}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#prefix MskconnectConnector#prefix}. |
 
 ---
 
@@ -2269,7 +2269,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}.
 
 ---
 
@@ -2281,7 +2281,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#bucket MskconnectConnector#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#bucket MskconnectConnector#bucket}.
 
 ---
 
@@ -2293,7 +2293,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#prefix MskconnectConnector#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#prefix MskconnectConnector#prefix}.
 
 ---
 
@@ -2327,7 +2327,7 @@ CustomPlugin MskconnectConnectorPluginCustomPlugin
 
 custom_plugin block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#custom_plugin MskconnectConnector#custom_plugin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#custom_plugin MskconnectConnector#custom_plugin}
 
 ---
 
@@ -2348,8 +2348,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorPluginCustomPlugin.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorPluginCustomPlugin.property.revision">Revision</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorPluginCustomPlugin.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorPluginCustomPlugin.property.revision">Revision</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}. |
 
 ---
 
@@ -2361,7 +2361,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}.
 
 ---
 
@@ -2373,7 +2373,7 @@ Revision *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}.
 
 ---
 
@@ -2395,9 +2395,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#create MskconnectConnector#create}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#delete MskconnectConnector#delete}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#update MskconnectConnector#update}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#create MskconnectConnector#create}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#delete MskconnectConnector#delete}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#update MskconnectConnector#update}. |
 
 ---
 
@@ -2409,7 +2409,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#create MskconnectConnector#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#create MskconnectConnector#create}.
 
 ---
 
@@ -2421,7 +2421,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#delete MskconnectConnector#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#delete MskconnectConnector#delete}.
 
 ---
 
@@ -2433,7 +2433,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#update MskconnectConnector#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#update MskconnectConnector#update}.
 
 ---
 
@@ -2454,8 +2454,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconnectconnector"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfiguration.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}. |
-| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfiguration.property.revision">Revision</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfiguration.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}. |
+| <code><a href="#@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfiguration.property.revision">Revision</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}. |
 
 ---
 
@@ -2467,7 +2467,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#arn MskconnectConnector#arn}.
 
 ---
 
@@ -2479,7 +2479,7 @@ Revision *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/mskconnect_connector#revision MskconnectConnector#revision}.
 
 ---
 

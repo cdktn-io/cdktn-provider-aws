@@ -4,7 +4,7 @@
 
 ### LightsailStaticIpAttachment <a name="LightsailStaticIpAttachment" id="@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lightsail_static_ip_attachment aws_lightsail_static_ip_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lightsail_static_ip_attachment aws_lightsail_static_ip_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the LightsailStaticIpAttachmen
 
 The id of the existing LightsailStaticIpAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lightsail_static_ip_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lightsail_static_ip_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -818,9 +818,9 @@ const lightsailStaticIpAttachmentConfig: lightsailStaticIpAttachment.LightsailSt
 | <code><a href="#@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.instanceName">instanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lightsail_static_ip_attachment#instance_name LightsailStaticIpAttachment#instance_name}. |
-| <code><a href="#@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.staticIpName">staticIpName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lightsail_static_ip_attachment#static_ip_name LightsailStaticIpAttachment#static_ip_name}. |
-| <code><a href="#@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lightsail_static_ip_attachment#id LightsailStaticIpAttachment#id}. |
+| <code><a href="#@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.instanceName">instanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lightsail_static_ip_attachment#instance_name LightsailStaticIpAttachment#instance_name}. |
+| <code><a href="#@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.staticIpName">staticIpName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lightsail_static_ip_attachment#static_ip_name LightsailStaticIpAttachment#static_ip_name}. |
+| <code><a href="#@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lightsail_static_ip_attachment#id LightsailStaticIpAttachment#id}. |
 | <code><a href="#@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -903,7 +903,7 @@ public readonly instanceName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lightsail_static_ip_attachment#instance_name LightsailStaticIpAttachment#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lightsail_static_ip_attachment#instance_name LightsailStaticIpAttachment#instance_name}.
 
 ---
 
@@ -915,7 +915,7 @@ public readonly staticIpName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lightsail_static_ip_attachment#static_ip_name LightsailStaticIpAttachment#static_ip_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lightsail_static_ip_attachment#static_ip_name LightsailStaticIpAttachment#static_ip_name}.
 
 ---
 
@@ -927,7 +927,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lightsail_static_ip_attachment#id LightsailStaticIpAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lightsail_static_ip_attachment#id LightsailStaticIpAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -944,7 +944,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lightsail_static_ip_attachment#region LightsailStaticIpAttachment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lightsail_static_ip_attachment#region LightsailStaticIpAttachment#region}
 
 ---
 

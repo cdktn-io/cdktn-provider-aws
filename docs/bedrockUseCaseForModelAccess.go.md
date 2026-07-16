@@ -4,7 +4,7 @@
 
 ### BedrockUseCaseForModelAccess <a name="BedrockUseCaseForModelAccess" id="@cdktn/provider-aws.bedrockUseCaseForModelAccess.BedrockUseCaseForModelAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrock_use_case_for_model_access aws_bedrock_use_case_for_model_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrock_use_case_for_model_access aws_bedrock_use_case_for_model_access}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockUseCaseForModelAccess.BedrockUseCaseForModelAccess.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the BedrockUseCaseForModelAcce
 
 The id of the existing BedrockUseCaseForModelAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrock_use_case_for_model_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrock_use_case_for_model_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -736,7 +736,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockusecaseformodel
 | <code><a href="#@cdktn/provider-aws.bedrockUseCaseForModelAccess.BedrockUseCaseForModelAccessConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockUseCaseForModelAccess.BedrockUseCaseForModelAccessConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockUseCaseForModelAccess.BedrockUseCaseForModelAccessConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.bedrockUseCaseForModelAccess.BedrockUseCaseForModelAccessConfig.property.formData">FormData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrock_use_case_for_model_access#form_data BedrockUseCaseForModelAccess#form_data}. |
+| <code><a href="#@cdktn/provider-aws.bedrockUseCaseForModelAccess.BedrockUseCaseForModelAccessConfig.property.formData">FormData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrock_use_case_for_model_access#form_data BedrockUseCaseForModelAccess#form_data}. |
 
 ---
 
@@ -818,7 +818,7 @@ FormData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrock_use_case_for_model_access#form_data BedrockUseCaseForModelAccess#form_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrock_use_case_for_model_access#form_data BedrockUseCaseForModelAccess#form_data}.
 
 ---
 

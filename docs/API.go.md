@@ -652,6 +652,7 @@ The following submodules are available:
 - [dataAwsElasticacheReplicationGroup](./dataAwsElasticacheReplicationGroup.go.md)
 - [dataAwsElasticacheReservedCacheNodeOffering](./dataAwsElasticacheReservedCacheNodeOffering.go.md)
 - [dataAwsElasticacheServerlessCache](./dataAwsElasticacheServerlessCache.go.md)
+- [dataAwsElasticacheServiceUpdates](./dataAwsElasticacheServiceUpdates.go.md)
 - [dataAwsElasticacheSubnetGroup](./dataAwsElasticacheSubnetGroup.go.md)
 - [dataAwsElasticacheUser](./dataAwsElasticacheUser.go.md)
 - [dataAwsElasticsearchDomain](./dataAwsElasticsearchDomain.go.md)

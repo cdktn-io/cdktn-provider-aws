@@ -4,7 +4,7 @@
 
 ### ObservabilityadminTelemetryEvaluation <a name="ObservabilityadminTelemetryEvaluation" id="@cdktn/provider-aws.observabilityadminTelemetryEvaluation.ObservabilityadminTelemetryEvaluation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/observabilityadmin_telemetry_evaluation aws_observabilityadmin_telemetry_evaluation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/observabilityadmin_telemetry_evaluation aws_observabilityadmin_telemetry_evaluation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.observabilityadminTelemetryEvaluation.ObservabilityadminTelemetryEvaluation.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ObservabilityadminTelemetr
 
 The id of the existing ObservabilityadminTelemetryEvaluation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/observabilityadmin_telemetry_evaluation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/observabilityadmin_telemetry_evaluation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,7 +904,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/observabilityadmin_telemetry_evaluation#region ObservabilityadminTelemetryEvaluation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/observabilityadmin_telemetry_evaluation#region ObservabilityadminTelemetryEvaluation#region}
 
 ---
 
@@ -918,7 +918,7 @@ public ObservabilityadminTelemetryEvaluationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/observabilityadmin_telemetry_evaluation#timeouts ObservabilityadminTelemetryEvaluation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/observabilityadmin_telemetry_evaluation#timeouts ObservabilityadminTelemetryEvaluation#timeouts}
 
 ---
 
@@ -954,7 +954,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/observabilityadmin_telemetry_evaluation#create ObservabilityadminTelemetryEvaluation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/observabilityadmin_telemetry_evaluation#create ObservabilityadminTelemetryEvaluation#create}
 
 ---
 
@@ -968,7 +968,7 @@ public string Delete { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/observabilityadmin_telemetry_evaluation#delete ObservabilityadminTelemetryEvaluation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/observabilityadmin_telemetry_evaluation#delete ObservabilityadminTelemetryEvaluation#delete}
 
 ---
 

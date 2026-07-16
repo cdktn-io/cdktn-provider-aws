@@ -4,7 +4,7 @@
 
 ### BedrockagentcoreResourcePolicy <a name="BedrockagentcoreResourcePolicy" id="@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrockagentcore_resource_policy aws_bedrockagentcore_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrockagentcore_resource_policy aws_bedrockagentcore_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicy.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the BedrockagentcoreResourcePo
 
 The id of the existing BedrockagentcoreResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrockagentcore_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrockagentcore_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,8 +789,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreresour
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrockagentcore_resource_policy#policy BedrockagentcoreResourcePolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrockagentcore_resource_policy#resource_arn BedrockagentcoreResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrockagentcore_resource_policy#policy BedrockagentcoreResourcePolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrockagentcore_resource_policy#resource_arn BedrockagentcoreResourcePolicy#resource_arn}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -873,7 +873,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrockagentcore_resource_policy#policy BedrockagentcoreResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrockagentcore_resource_policy#policy BedrockagentcoreResourcePolicy#policy}.
 
 ---
 
@@ -885,7 +885,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrockagentcore_resource_policy#resource_arn BedrockagentcoreResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrockagentcore_resource_policy#resource_arn BedrockagentcoreResourcePolicy#resource_arn}.
 
 ---
 
@@ -899,7 +899,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/bedrockagentcore_resource_policy#region BedrockagentcoreResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/bedrockagentcore_resource_policy#region BedrockagentcoreResourcePolicy#region}
 
 ---
 

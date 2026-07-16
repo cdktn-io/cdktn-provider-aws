@@ -4,7 +4,7 @@
 
 ### SecurityGroupRule <a name="SecurityGroupRule" id="@cdktn/provider-aws.securityGroupRule.SecurityGroupRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule aws_security_group_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule aws_security_group_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer"></a>
 
@@ -47,19 +47,19 @@ SecurityGroupRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.fromPort">fromPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#from_port SecurityGroupRule#from_port}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.securityGroupId">securityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#security_group_id SecurityGroupRule#security_group_id}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.toPort">toPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#to_port SecurityGroupRule#to_port}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#type SecurityGroupRule#type}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.cidrBlocks">cidrBlocks</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#cidr_blocks SecurityGroupRule#cidr_blocks}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#description SecurityGroupRule#description}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#id SecurityGroupRule#id}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.ipv6CidrBlocks">ipv6CidrBlocks</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#ipv6_cidr_blocks SecurityGroupRule#ipv6_cidr_blocks}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.prefixListIds">prefixListIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#prefix_list_ids SecurityGroupRule#prefix_list_ids}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.fromPort">fromPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#from_port SecurityGroupRule#from_port}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.securityGroupId">securityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#security_group_id SecurityGroupRule#security_group_id}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.toPort">toPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#to_port SecurityGroupRule#to_port}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#type SecurityGroupRule#type}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.cidrBlocks">cidrBlocks</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#cidr_blocks SecurityGroupRule#cidr_blocks}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#description SecurityGroupRule#description}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#id SecurityGroupRule#id}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.ipv6CidrBlocks">ipv6CidrBlocks</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#ipv6_cidr_blocks SecurityGroupRule#ipv6_cidr_blocks}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.prefixListIds">prefixListIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#prefix_list_ids SecurityGroupRule#prefix_list_ids}. |
 | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.selfAttribute">selfAttribute</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#self SecurityGroupRule#self}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.sourceSecurityGroupId">sourceSecurityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#source_security_group_id SecurityGroupRule#source_security_group_id}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.selfAttribute">selfAttribute</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#self SecurityGroupRule#self}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.sourceSecurityGroupId">sourceSecurityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#source_security_group_id SecurityGroupRule#source_security_group_id}. |
 | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleTimeouts">SecurityGroupRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#from_port SecurityGroupRule#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#from_port SecurityGroupRule#from_port}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#security_group_id SecurityGroupRule#security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#security_group_id SecurityGroupRule#security_group_id}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#to_port SecurityGroupRule#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#to_port SecurityGroupRule#to_port}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#type SecurityGroupRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#type SecurityGroupRule#type}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#cidr_blocks SecurityGroupRule#cidr_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#cidr_blocks SecurityGroupRule#cidr_blocks}.
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#description SecurityGroupRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#description SecurityGroupRule#description}.
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#id SecurityGroupRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#id SecurityGroupRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -195,7 +195,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#ipv6_cidr_blocks SecurityGroupRule#ipv6_cidr_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#ipv6_cidr_blocks SecurityGroupRule#ipv6_cidr_blocks}.
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#prefix_list_ids SecurityGroupRule#prefix_list_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#prefix_list_ids SecurityGroupRule#prefix_list_ids}.
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#region SecurityGroupRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#region SecurityGroupRule#region}
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#self SecurityGroupRule#self}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#self SecurityGroupRule#self}.
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#source_security_group_id SecurityGroupRule#source_security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#source_security_group_id SecurityGroupRule#source_security_group_id}.
 
 ---
 
@@ -239,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#timeouts SecurityGroupRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#timeouts SecurityGroupRule#timeouts}
 
 ---
 
@@ -764,7 +764,7 @@ The construct id used in the generated config for the SecurityGroupRule to impor
 
 The id of the existing SecurityGroupRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1321,19 +1321,19 @@ SecurityGroupRuleConfig.builder()
 | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.fromPort">fromPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#from_port SecurityGroupRule#from_port}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.securityGroupId">securityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#security_group_id SecurityGroupRule#security_group_id}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.toPort">toPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#to_port SecurityGroupRule#to_port}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#type SecurityGroupRule#type}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.cidrBlocks">cidrBlocks</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#cidr_blocks SecurityGroupRule#cidr_blocks}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#description SecurityGroupRule#description}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#id SecurityGroupRule#id}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.ipv6CidrBlocks">ipv6CidrBlocks</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#ipv6_cidr_blocks SecurityGroupRule#ipv6_cidr_blocks}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.prefixListIds">prefixListIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#prefix_list_ids SecurityGroupRule#prefix_list_ids}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.fromPort">fromPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#from_port SecurityGroupRule#from_port}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.securityGroupId">securityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#security_group_id SecurityGroupRule#security_group_id}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.toPort">toPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#to_port SecurityGroupRule#to_port}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#type SecurityGroupRule#type}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.cidrBlocks">cidrBlocks</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#cidr_blocks SecurityGroupRule#cidr_blocks}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#description SecurityGroupRule#description}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#id SecurityGroupRule#id}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.ipv6CidrBlocks">ipv6CidrBlocks</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#ipv6_cidr_blocks SecurityGroupRule#ipv6_cidr_blocks}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.prefixListIds">prefixListIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#prefix_list_ids SecurityGroupRule#prefix_list_ids}. |
 | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.selfAttribute">selfAttribute</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#self SecurityGroupRule#self}. |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.sourceSecurityGroupId">sourceSecurityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#source_security_group_id SecurityGroupRule#source_security_group_id}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.selfAttribute">selfAttribute</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#self SecurityGroupRule#self}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.sourceSecurityGroupId">sourceSecurityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#source_security_group_id SecurityGroupRule#source_security_group_id}. |
 | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleTimeouts">SecurityGroupRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1416,7 +1416,7 @@ public java.lang.Number getFromPort();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#from_port SecurityGroupRule#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#from_port SecurityGroupRule#from_port}.
 
 ---
 
@@ -1428,7 +1428,7 @@ public java.lang.String getProtocol();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}.
 
 ---
 
@@ -1440,7 +1440,7 @@ public java.lang.String getSecurityGroupId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#security_group_id SecurityGroupRule#security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#security_group_id SecurityGroupRule#security_group_id}.
 
 ---
 
@@ -1452,7 +1452,7 @@ public java.lang.Number getToPort();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#to_port SecurityGroupRule#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#to_port SecurityGroupRule#to_port}.
 
 ---
 
@@ -1464,7 +1464,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#type SecurityGroupRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#type SecurityGroupRule#type}.
 
 ---
 
@@ -1476,7 +1476,7 @@ public java.util.List<java.lang.String> getCidrBlocks();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#cidr_blocks SecurityGroupRule#cidr_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#cidr_blocks SecurityGroupRule#cidr_blocks}.
 
 ---
 
@@ -1488,7 +1488,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#description SecurityGroupRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#description SecurityGroupRule#description}.
 
 ---
 
@@ -1500,7 +1500,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#id SecurityGroupRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#id SecurityGroupRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1515,7 +1515,7 @@ public java.util.List<java.lang.String> getIpv6CidrBlocks();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#ipv6_cidr_blocks SecurityGroupRule#ipv6_cidr_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#ipv6_cidr_blocks SecurityGroupRule#ipv6_cidr_blocks}.
 
 ---
 
@@ -1527,7 +1527,7 @@ public java.util.List<java.lang.String> getPrefixListIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#prefix_list_ids SecurityGroupRule#prefix_list_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#prefix_list_ids SecurityGroupRule#prefix_list_ids}.
 
 ---
 
@@ -1541,7 +1541,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#region SecurityGroupRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#region SecurityGroupRule#region}
 
 ---
 
@@ -1553,7 +1553,7 @@ public java.lang.Boolean|IResolvable getSelfAttribute();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#self SecurityGroupRule#self}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#self SecurityGroupRule#self}.
 
 ---
 
@@ -1565,7 +1565,7 @@ public java.lang.String getSourceSecurityGroupId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#source_security_group_id SecurityGroupRule#source_security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#source_security_group_id SecurityGroupRule#source_security_group_id}.
 
 ---
 
@@ -1579,7 +1579,7 @@ public SecurityGroupRuleTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#timeouts SecurityGroupRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#timeouts SecurityGroupRule#timeouts}
 
 ---
 
@@ -1599,7 +1599,7 @@ SecurityGroupRuleTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#create SecurityGroupRule#create}. |
+| <code><a href="#@cdktn/provider-aws.securityGroupRule.SecurityGroupRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#create SecurityGroupRule#create}. |
 
 ---
 
@@ -1611,7 +1611,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/security_group_rule#create SecurityGroupRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/security_group_rule#create SecurityGroupRule#create}.
 
 ---
 

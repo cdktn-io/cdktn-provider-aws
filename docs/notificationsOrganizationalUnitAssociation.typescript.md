@@ -4,7 +4,7 @@
 
 ### NotificationsOrganizationalUnitAssociation <a name="NotificationsOrganizationalUnitAssociation" id="@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/notifications_organizational_unit_association aws_notifications_organizational_unit_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/notifications_organizational_unit_association aws_notifications_organizational_unit_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociation.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the NotificationsOrganizationa
 
 The id of the existing NotificationsOrganizationalUnitAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/notifications_organizational_unit_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/notifications_organizational_unit_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,8 +749,8 @@ const notificationsOrganizationalUnitAssociationConfig: notificationsOrganizatio
 | <code><a href="#@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociationConfig.property.notificationConfigurationArn">notificationConfigurationArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/notifications_organizational_unit_association#notification_configuration_arn NotificationsOrganizationalUnitAssociation#notification_configuration_arn}. |
-| <code><a href="#@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociationConfig.property.organizationalUnitId">organizationalUnitId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/notifications_organizational_unit_association#organizational_unit_id NotificationsOrganizationalUnitAssociation#organizational_unit_id}. |
+| <code><a href="#@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociationConfig.property.notificationConfigurationArn">notificationConfigurationArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/notifications_organizational_unit_association#notification_configuration_arn NotificationsOrganizationalUnitAssociation#notification_configuration_arn}. |
+| <code><a href="#@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociationConfig.property.organizationalUnitId">organizationalUnitId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/notifications_organizational_unit_association#organizational_unit_id NotificationsOrganizationalUnitAssociation#organizational_unit_id}. |
 
 ---
 
@@ -832,7 +832,7 @@ public readonly notificationConfigurationArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/notifications_organizational_unit_association#notification_configuration_arn NotificationsOrganizationalUnitAssociation#notification_configuration_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/notifications_organizational_unit_association#notification_configuration_arn NotificationsOrganizationalUnitAssociation#notification_configuration_arn}.
 
 ---
 
@@ -844,7 +844,7 @@ public readonly organizationalUnitId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/notifications_organizational_unit_association#organizational_unit_id NotificationsOrganizationalUnitAssociation#organizational_unit_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/notifications_organizational_unit_association#organizational_unit_id NotificationsOrganizationalUnitAssociation#organizational_unit_id}.
 
 ---
 

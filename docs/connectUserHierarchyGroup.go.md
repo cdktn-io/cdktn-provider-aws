@@ -4,7 +4,7 @@
 
 ### ConnectUserHierarchyGroup <a name="ConnectUserHierarchyGroup" id="@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the ConnectUserHierarchyGroup 
 
 The id of the existing ConnectUserHierarchyGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -953,13 +953,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectuserhierarchygr
 | <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#instance_id ConnectUserHierarchyGroup#instance_id}. |
-| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#name ConnectUserHierarchyGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#id ConnectUserHierarchyGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.parentGroupId">ParentGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#parent_group_id ConnectUserHierarchyGroup#parent_group_id}. |
+| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#instance_id ConnectUserHierarchyGroup#instance_id}. |
+| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#name ConnectUserHierarchyGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#id ConnectUserHierarchyGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.parentGroupId">ParentGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#parent_group_id ConnectUserHierarchyGroup#parent_group_id}. |
 | <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#tags ConnectUserHierarchyGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#tags_all ConnectUserHierarchyGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#tags ConnectUserHierarchyGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#tags_all ConnectUserHierarchyGroup#tags_all}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#instance_id ConnectUserHierarchyGroup#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#instance_id ConnectUserHierarchyGroup#instance_id}.
 
 ---
 
@@ -1053,7 +1053,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#name ConnectUserHierarchyGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#name ConnectUserHierarchyGroup#name}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#id ConnectUserHierarchyGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#id ConnectUserHierarchyGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1080,7 +1080,7 @@ ParentGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#parent_group_id ConnectUserHierarchyGroup#parent_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#parent_group_id ConnectUserHierarchyGroup#parent_group_id}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#region ConnectUserHierarchyGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#region ConnectUserHierarchyGroup#region}
 
 ---
 
@@ -1106,7 +1106,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#tags ConnectUserHierarchyGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#tags ConnectUserHierarchyGroup#tags}.
 
 ---
 
@@ -1118,7 +1118,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/connect_user_hierarchy_group#tags_all ConnectUserHierarchyGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/connect_user_hierarchy_group#tags_all ConnectUserHierarchyGroup#tags_all}.
 
 ---
 

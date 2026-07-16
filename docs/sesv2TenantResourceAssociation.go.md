@@ -4,7 +4,7 @@
 
 ### Sesv2TenantResourceAssociation <a name="Sesv2TenantResourceAssociation" id="@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/sesv2_tenant_resource_association aws_sesv2_tenant_resource_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sesv2_tenant_resource_association aws_sesv2_tenant_resource_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociation.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the Sesv2TenantResourceAssocia
 
 The id of the existing Sesv2TenantResourceAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/sesv2_tenant_resource_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sesv2_tenant_resource_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,8 +789,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesv2tenantresourceass
 | <code><a href="#@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociationConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/sesv2_tenant_resource_association#resource_arn Sesv2TenantResourceAssociation#resource_arn}. |
-| <code><a href="#@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociationConfig.property.tenantName">TenantName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/sesv2_tenant_resource_association#tenant_name Sesv2TenantResourceAssociation#tenant_name}. |
+| <code><a href="#@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociationConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sesv2_tenant_resource_association#resource_arn Sesv2TenantResourceAssociation#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociationConfig.property.tenantName">TenantName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sesv2_tenant_resource_association#tenant_name Sesv2TenantResourceAssociation#tenant_name}. |
 | <code><a href="#@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -873,7 +873,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/sesv2_tenant_resource_association#resource_arn Sesv2TenantResourceAssociation#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sesv2_tenant_resource_association#resource_arn Sesv2TenantResourceAssociation#resource_arn}.
 
 ---
 
@@ -885,7 +885,7 @@ TenantName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/sesv2_tenant_resource_association#tenant_name Sesv2TenantResourceAssociation#tenant_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sesv2_tenant_resource_association#tenant_name Sesv2TenantResourceAssociation#tenant_name}.
 
 ---
 
@@ -899,7 +899,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/sesv2_tenant_resource_association#region Sesv2TenantResourceAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sesv2_tenant_resource_association#region Sesv2TenantResourceAssociation#region}
 
 ---
 

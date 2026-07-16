@@ -4,7 +4,7 @@
 
 ### WorkmailOrganization <a name="WorkmailOrganization" id="@cdktn/provider-aws.workmailOrganization.WorkmailOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization aws_workmail_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization aws_workmail_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workmailOrganization.WorkmailOrganization.Initializer"></a>
 
@@ -558,7 +558,7 @@ The construct id used in the generated config for the WorkmailOrganization to im
 
 The id of the existing WorkmailOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1077,14 +1077,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workmailorganization"
 | <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.organizationAlias">OrganizationAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#organization_alias WorkmailOrganization#organization_alias}. |
-| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.deleteDirectory">DeleteDirectory</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#delete_directory WorkmailOrganization#delete_directory}. |
-| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.deleteIdentityCenterApplication">DeleteIdentityCenterApplication</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#delete_identity_center_application WorkmailOrganization#delete_identity_center_application}. |
-| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#directory_id WorkmailOrganization#directory_id}. |
-| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.interoperabilityEnabled">InteroperabilityEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#interoperability_enabled WorkmailOrganization#interoperability_enabled}. |
-| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#kms_key_arn WorkmailOrganization#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.organizationAlias">OrganizationAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#organization_alias WorkmailOrganization#organization_alias}. |
+| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.deleteDirectory">DeleteDirectory</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#delete_directory WorkmailOrganization#delete_directory}. |
+| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.deleteIdentityCenterApplication">DeleteIdentityCenterApplication</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#delete_identity_center_application WorkmailOrganization#delete_identity_center_application}. |
+| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#directory_id WorkmailOrganization#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.interoperabilityEnabled">InteroperabilityEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#interoperability_enabled WorkmailOrganization#interoperability_enabled}. |
+| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#kms_key_arn WorkmailOrganization#kms_key_arn}. |
 | <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#tags WorkmailOrganization#tags}. |
+| <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#tags WorkmailOrganization#tags}. |
 | <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.workmailOrganization.WorkmailOrganizationTimeouts">WorkmailOrganizationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1167,7 +1167,7 @@ OrganizationAlias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#organization_alias WorkmailOrganization#organization_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#organization_alias WorkmailOrganization#organization_alias}.
 
 ---
 
@@ -1179,7 +1179,7 @@ DeleteDirectory interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#delete_directory WorkmailOrganization#delete_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#delete_directory WorkmailOrganization#delete_directory}.
 
 ---
 
@@ -1191,7 +1191,7 @@ DeleteIdentityCenterApplication interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#delete_identity_center_application WorkmailOrganization#delete_identity_center_application}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#delete_identity_center_application WorkmailOrganization#delete_identity_center_application}.
 
 ---
 
@@ -1203,7 +1203,7 @@ DirectoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#directory_id WorkmailOrganization#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#directory_id WorkmailOrganization#directory_id}.
 
 ---
 
@@ -1215,7 +1215,7 @@ InteroperabilityEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#interoperability_enabled WorkmailOrganization#interoperability_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#interoperability_enabled WorkmailOrganization#interoperability_enabled}.
 
 ---
 
@@ -1227,7 +1227,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#kms_key_arn WorkmailOrganization#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#kms_key_arn WorkmailOrganization#kms_key_arn}.
 
 ---
 
@@ -1241,7 +1241,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#region WorkmailOrganization#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#region WorkmailOrganization#region}
 
 ---
 
@@ -1253,7 +1253,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#tags WorkmailOrganization#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#tags WorkmailOrganization#tags}.
 
 ---
 
@@ -1267,7 +1267,7 @@ Timeouts WorkmailOrganizationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#timeouts WorkmailOrganization#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#timeouts WorkmailOrganization#timeouts}
 
 ---
 
@@ -1303,7 +1303,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#create WorkmailOrganization#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#create WorkmailOrganization#create}
 
 ---
 
@@ -1317,7 +1317,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/workmail_organization#delete WorkmailOrganization#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_organization#delete WorkmailOrganization#delete}
 
 ---
 

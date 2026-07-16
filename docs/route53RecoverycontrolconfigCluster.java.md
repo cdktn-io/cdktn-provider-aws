@@ -4,7 +4,7 @@
 
 ### Route53RecoverycontrolconfigCluster <a name="Route53RecoverycontrolconfigCluster" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer"></a>
 
@@ -38,11 +38,11 @@ Route53RecoverycontrolconfigCluster.Builder.create(Construct scope, java.lang.St
 | <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.networkType">networkType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.networkType">networkType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}.
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}.
 
 ---
 
@@ -622,7 +622,7 @@ The construct id used in the generated config for the Route53Recoverycontrolconf
 
 The id of the existing Route53RecoverycontrolconfigCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1006,11 +1006,11 @@ Route53RecoverycontrolconfigClusterConfig.builder()
 | <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.networkType">networkType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.networkType">networkType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}. |
 
 ---
 
@@ -1092,7 +1092,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}.
 
 ---
 
@@ -1104,7 +1104,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1119,7 +1119,7 @@ public java.lang.String getNetworkType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}.
 
 ---
 
@@ -1131,7 +1131,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}.
 
 ---
 
@@ -1143,7 +1143,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}.
 
 ---
 
