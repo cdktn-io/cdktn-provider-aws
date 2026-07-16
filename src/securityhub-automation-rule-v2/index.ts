@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2
+// https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,47 +15,47 @@ export interface SecurityhubAutomationRuleV2Config extends cdktn.TerraformMetaAr
   /**
   * A description of the automation rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#description SecurityhubAutomationRuleV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#description SecurityhubAutomationRuleV2#description}
   */
   readonly description: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#region SecurityhubAutomationRuleV2#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#region SecurityhubAutomationRuleV2#region}
   */
   readonly region?: string;
   /**
   * The name of the automation rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#rule_name SecurityhubAutomationRuleV2#rule_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#rule_name SecurityhubAutomationRuleV2#rule_name}
   */
   readonly ruleName: string;
   /**
   * The priority of the rule (lower values = higher priority).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#rule_order SecurityhubAutomationRuleV2#rule_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#rule_order SecurityhubAutomationRuleV2#rule_order}
   */
   readonly ruleOrder: number;
   /**
   * The status of the rule: ENABLED or DISABLED.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#rule_status SecurityhubAutomationRuleV2#rule_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#rule_status SecurityhubAutomationRuleV2#rule_status}
   */
   readonly ruleStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#tags SecurityhubAutomationRuleV2#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#tags SecurityhubAutomationRuleV2#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#action SecurityhubAutomationRuleV2#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#action SecurityhubAutomationRuleV2#action}
   */
   readonly action?: SecurityhubAutomationRuleV2Action[] | cdktn.IResolvable;
   /**
   * criteria block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#criteria SecurityhubAutomationRuleV2#criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#criteria SecurityhubAutomationRuleV2#criteria}
   */
   readonly criteria?: SecurityhubAutomationRuleV2Criteria[] | cdktn.IResolvable;
 }
@@ -63,7 +63,7 @@ export interface SecurityhubAutomationRuleV2ActionExternalIntegrationConfigurati
   /**
   * The ARN of the connector.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#connector_arn SecurityhubAutomationRuleV2#connector_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#connector_arn SecurityhubAutomationRuleV2#connector_arn}
   */
   readonly connectorArn: string;
 }
@@ -178,19 +178,19 @@ export interface SecurityhubAutomationRuleV2ActionFindingFieldsUpdate {
   /**
   * A comment for the finding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#comment SecurityhubAutomationRuleV2#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#comment SecurityhubAutomationRuleV2#comment}
   */
   readonly comment?: string;
   /**
   * The severity ID to assign.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#severity_id SecurityhubAutomationRuleV2#severity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#severity_id SecurityhubAutomationRuleV2#severity_id}
   */
   readonly severityId?: number;
   /**
   * The status ID to assign.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#status_id SecurityhubAutomationRuleV2#status_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#status_id SecurityhubAutomationRuleV2#status_id}
   */
   readonly statusId?: number;
 }
@@ -366,19 +366,19 @@ export interface SecurityhubAutomationRuleV2Action {
   /**
   * The action type: FINDING_FIELDS_UPDATE or EXTERNAL_INTEGRATION.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#type SecurityhubAutomationRuleV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#type SecurityhubAutomationRuleV2#type}
   */
   readonly type: string;
   /**
   * external_integration_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#external_integration_configuration SecurityhubAutomationRuleV2#external_integration_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#external_integration_configuration SecurityhubAutomationRuleV2#external_integration_configuration}
   */
   readonly externalIntegrationConfiguration?: SecurityhubAutomationRuleV2ActionExternalIntegrationConfiguration[] | cdktn.IResolvable;
   /**
   * finding_fields_update block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#finding_fields_update SecurityhubAutomationRuleV2#finding_fields_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#finding_fields_update SecurityhubAutomationRuleV2#finding_fields_update}
   */
   readonly findingFieldsUpdate?: SecurityhubAutomationRuleV2ActionFindingFieldsUpdate[] | cdktn.IResolvable;
 }
@@ -551,7 +551,7 @@ export interface SecurityhubAutomationRuleV2Criteria {
   /**
   * JSON-encoded OCSF finding criteria for the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#ocsf_finding_criteria_json SecurityhubAutomationRuleV2#ocsf_finding_criteria_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#ocsf_finding_criteria_json SecurityhubAutomationRuleV2#ocsf_finding_criteria_json}
   */
   readonly ocsfFindingCriteriaJson: string;
 }
@@ -664,7 +664,7 @@ export class SecurityhubAutomationRuleV2CriteriaList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2 aws_securityhub_automation_rule_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2 aws_securityhub_automation_rule_v2}
 */
 export class SecurityhubAutomationRuleV2 extends cdktn.TerraformResource {
 
@@ -680,7 +680,7 @@ export class SecurityhubAutomationRuleV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecurityhubAutomationRuleV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityhubAutomationRuleV2 to import
-  * @param importFromId The id of the existing SecurityhubAutomationRuleV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityhubAutomationRuleV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityhubAutomationRuleV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -692,7 +692,7 @@ export class SecurityhubAutomationRuleV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/securityhub_automation_rule_v2 aws_securityhub_automation_rule_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_automation_rule_v2 aws_securityhub_automation_rule_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -703,7 +703,7 @@ export class SecurityhubAutomationRuleV2 extends cdktn.TerraformResource {
       terraformResourceType: 'aws_securityhub_automation_rule_v2',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.54.0',
+        providerVersion: '6.55.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

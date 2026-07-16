@@ -4,7 +4,7 @@
 
 ### SsoadminApplication <a name="SsoadminApplication" id="@cdktn/provider-aws.ssoadminApplication.SsoadminApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application aws_ssoadmin_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application aws_ssoadmin_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminApplication.SsoadminApplication.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the SsoadminApplication to imp
 
 The id of the existing SsoadminApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1030,15 +1030,15 @@ new SsoadminApplicationConfig {
 | <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.applicationProviderArn">ApplicationProviderArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#application_provider_arn SsoadminApplication#application_provider_arn}. |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.instanceArn">InstanceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#instance_arn SsoadminApplication#instance_arn}. |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#name SsoadminApplication#name}. |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.clientToken">ClientToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#client_token SsoadminApplication#client_token}. |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#description SsoadminApplication#description}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.applicationProviderArn">ApplicationProviderArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#application_provider_arn SsoadminApplication#application_provider_arn}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.instanceArn">InstanceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#instance_arn SsoadminApplication#instance_arn}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#name SsoadminApplication#name}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.clientToken">ClientToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#client_token SsoadminApplication#client_token}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#description SsoadminApplication#description}. |
 | <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.portalOptions">PortalOptions</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationPortalOptions">SsoadminApplicationPortalOptions</a>[]</code> | portal_options block. |
 | <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#status SsoadminApplication#status}. |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#tags SsoadminApplication#tags}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#status SsoadminApplication#status}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#tags SsoadminApplication#tags}. |
 
 ---
 
@@ -1120,7 +1120,7 @@ public string ApplicationProviderArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#application_provider_arn SsoadminApplication#application_provider_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#application_provider_arn SsoadminApplication#application_provider_arn}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public string InstanceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#instance_arn SsoadminApplication#instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#instance_arn SsoadminApplication#instance_arn}.
 
 ---
 
@@ -1144,7 +1144,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#name SsoadminApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#name SsoadminApplication#name}.
 
 ---
 
@@ -1156,7 +1156,7 @@ public string ClientToken { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#client_token SsoadminApplication#client_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#client_token SsoadminApplication#client_token}.
 
 ---
 
@@ -1168,7 +1168,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#description SsoadminApplication#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#description SsoadminApplication#description}.
 
 ---
 
@@ -1182,7 +1182,7 @@ public IResolvable|SsoadminApplicationPortalOptions[] PortalOptions { get; set; 
 
 portal_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#portal_options SsoadminApplication#portal_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#portal_options SsoadminApplication#portal_options}
 
 ---
 
@@ -1196,7 +1196,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#region SsoadminApplication#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#region SsoadminApplication#region}
 
 ---
 
@@ -1208,7 +1208,7 @@ public string Status { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#status SsoadminApplication#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#status SsoadminApplication#status}.
 
 ---
 
@@ -1220,7 +1220,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#tags SsoadminApplication#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#tags SsoadminApplication#tags}.
 
 ---
 
@@ -1242,7 +1242,7 @@ new SsoadminApplicationPortalOptions {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationPortalOptions.property.signInOptions">SignInOptions</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationPortalOptionsSignInOptions">SsoadminApplicationPortalOptionsSignInOptions</a>[]</code> | sign_in_options block. |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationPortalOptions.property.visibility">Visibility</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#visibility SsoadminApplication#visibility}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationPortalOptions.property.visibility">Visibility</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#visibility SsoadminApplication#visibility}. |
 
 ---
 
@@ -1256,7 +1256,7 @@ public IResolvable|SsoadminApplicationPortalOptionsSignInOptions[] SignInOptions
 
 sign_in_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#sign_in_options SsoadminApplication#sign_in_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#sign_in_options SsoadminApplication#sign_in_options}
 
 ---
 
@@ -1268,7 +1268,7 @@ public string Visibility { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#visibility SsoadminApplication#visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#visibility SsoadminApplication#visibility}.
 
 ---
 
@@ -1289,8 +1289,8 @@ new SsoadminApplicationPortalOptionsSignInOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationPortalOptionsSignInOptions.property.origin">Origin</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#origin SsoadminApplication#origin}. |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationPortalOptionsSignInOptions.property.applicationUrl">ApplicationUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#application_url SsoadminApplication#application_url}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationPortalOptionsSignInOptions.property.origin">Origin</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#origin SsoadminApplication#origin}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplication.SsoadminApplicationPortalOptionsSignInOptions.property.applicationUrl">ApplicationUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#application_url SsoadminApplication#application_url}. |
 
 ---
 
@@ -1302,7 +1302,7 @@ public string Origin { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#origin SsoadminApplication#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#origin SsoadminApplication#origin}.
 
 ---
 
@@ -1314,7 +1314,7 @@ public string ApplicationUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/ssoadmin_application#application_url SsoadminApplication#application_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/ssoadmin_application#application_url SsoadminApplication#application_url}.
 
 ---
 

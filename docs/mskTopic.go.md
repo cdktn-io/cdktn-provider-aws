@@ -4,7 +4,7 @@
 
 ### MskTopic <a name="MskTopic" id="@cdktn/provider-aws.mskTopic.MskTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic aws_msk_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic aws_msk_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskTopic.MskTopic.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the MskTopic to import.
 
 The id of the existing MskTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -930,11 +930,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/msktopic"
 | <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#cluster_arn MskTopic#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#name MskTopic#name}. |
-| <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.partitionCount">PartitionCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#partition_count MskTopic#partition_count}. |
-| <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.replicationFactor">ReplicationFactor</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#replication_factor MskTopic#replication_factor}. |
-| <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.configs">Configs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#configs MskTopic#configs}. |
+| <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#cluster_arn MskTopic#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#name MskTopic#name}. |
+| <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.partitionCount">PartitionCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#partition_count MskTopic#partition_count}. |
+| <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.replicationFactor">ReplicationFactor</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#replication_factor MskTopic#replication_factor}. |
+| <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.configs">Configs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#configs MskTopic#configs}. |
 | <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.mskTopic.MskTopicTimeouts">MskTopicTimeouts</a></code> | timeouts block. |
 
@@ -1018,7 +1018,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#cluster_arn MskTopic#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#cluster_arn MskTopic#cluster_arn}.
 
 ---
 
@@ -1030,7 +1030,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#name MskTopic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#name MskTopic#name}.
 
 ---
 
@@ -1042,7 +1042,7 @@ PartitionCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#partition_count MskTopic#partition_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#partition_count MskTopic#partition_count}.
 
 ---
 
@@ -1054,7 +1054,7 @@ ReplicationFactor *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#replication_factor MskTopic#replication_factor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#replication_factor MskTopic#replication_factor}.
 
 ---
 
@@ -1066,7 +1066,7 @@ Configs *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#configs MskTopic#configs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#configs MskTopic#configs}.
 
 ---
 
@@ -1080,7 +1080,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#region MskTopic#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#region MskTopic#region}
 
 ---
 
@@ -1094,7 +1094,7 @@ Timeouts MskTopicTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#timeouts MskTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#timeouts MskTopic#timeouts}
 
 ---
 
@@ -1132,7 +1132,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#create MskTopic#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#create MskTopic#create}
 
 ---
 
@@ -1146,7 +1146,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#delete MskTopic#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#delete MskTopic#delete}
 
 ---
 
@@ -1160,7 +1160,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/msk_topic#update MskTopic#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/msk_topic#update MskTopic#update}
 
 ---
 

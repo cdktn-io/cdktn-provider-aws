@@ -4,7 +4,7 @@
 
 ### LambdaFunctionUrl <a name="LambdaFunctionUrl" id="@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url aws_lambda_function_url}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url aws_lambda_function_url}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the LambdaFunctionUrl to impor
 
 The id of the existing LambdaFunctionUrl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -998,12 +998,12 @@ new LambdaFunctionUrlConfig {
 | <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.authorizationType">AuthorizationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#authorization_type LambdaFunctionUrl#authorization_type}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.functionName">FunctionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#function_name LambdaFunctionUrl#function_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.authorizationType">AuthorizationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#authorization_type LambdaFunctionUrl#authorization_type}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.functionName">FunctionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#function_name LambdaFunctionUrl#function_name}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.cors">Cors</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors">LambdaFunctionUrlCors</a></code> | cors block. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#id LambdaFunctionUrl#id}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.invokeMode">InvokeMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.qualifier">Qualifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#qualifier LambdaFunctionUrl#qualifier}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#id LambdaFunctionUrl#id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.invokeMode">InvokeMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.qualifier">Qualifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#qualifier LambdaFunctionUrl#qualifier}. |
 | <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeouts">LambdaFunctionUrlTimeouts</a></code> | timeouts block. |
 
@@ -1087,7 +1087,7 @@ public string AuthorizationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#authorization_type LambdaFunctionUrl#authorization_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#authorization_type LambdaFunctionUrl#authorization_type}.
 
 ---
 
@@ -1099,7 +1099,7 @@ public string FunctionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#function_name LambdaFunctionUrl#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#function_name LambdaFunctionUrl#function_name}.
 
 ---
 
@@ -1113,7 +1113,7 @@ public LambdaFunctionUrlCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#cors LambdaFunctionUrl#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#cors LambdaFunctionUrl#cors}
 
 ---
 
@@ -1125,7 +1125,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#id LambdaFunctionUrl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#id LambdaFunctionUrl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1140,7 +1140,7 @@ public string InvokeMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}.
 
 ---
 
@@ -1152,7 +1152,7 @@ public string Qualifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#qualifier LambdaFunctionUrl#qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#qualifier LambdaFunctionUrl#qualifier}.
 
 ---
 
@@ -1166,7 +1166,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#region LambdaFunctionUrl#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#region LambdaFunctionUrl#region}
 
 ---
 
@@ -1180,7 +1180,7 @@ public LambdaFunctionUrlTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#timeouts LambdaFunctionUrl#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#timeouts LambdaFunctionUrl#timeouts}
 
 ---
 
@@ -1205,12 +1205,12 @@ new LambdaFunctionUrlCors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#allow_credentials LambdaFunctionUrl#allow_credentials}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#allow_headers LambdaFunctionUrl#allow_headers}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#allow_methods LambdaFunctionUrl#allow_methods}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.allowOrigins">AllowOrigins</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#allow_origins LambdaFunctionUrl#allow_origins}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#expose_headers LambdaFunctionUrl#expose_headers}. |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.maxAge">MaxAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#max_age LambdaFunctionUrl#max_age}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.allowCredentials">AllowCredentials</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#allow_credentials LambdaFunctionUrl#allow_credentials}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.allowHeaders">AllowHeaders</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#allow_headers LambdaFunctionUrl#allow_headers}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.allowMethods">AllowMethods</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#allow_methods LambdaFunctionUrl#allow_methods}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.allowOrigins">AllowOrigins</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#allow_origins LambdaFunctionUrl#allow_origins}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.exposeHeaders">ExposeHeaders</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#expose_headers LambdaFunctionUrl#expose_headers}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.property.maxAge">MaxAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#max_age LambdaFunctionUrl#max_age}. |
 
 ---
 
@@ -1222,7 +1222,7 @@ public bool|IResolvable AllowCredentials { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#allow_credentials LambdaFunctionUrl#allow_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#allow_credentials LambdaFunctionUrl#allow_credentials}.
 
 ---
 
@@ -1234,7 +1234,7 @@ public string[] AllowHeaders { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#allow_headers LambdaFunctionUrl#allow_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#allow_headers LambdaFunctionUrl#allow_headers}.
 
 ---
 
@@ -1246,7 +1246,7 @@ public string[] AllowMethods { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#allow_methods LambdaFunctionUrl#allow_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#allow_methods LambdaFunctionUrl#allow_methods}.
 
 ---
 
@@ -1258,7 +1258,7 @@ public string[] AllowOrigins { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#allow_origins LambdaFunctionUrl#allow_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#allow_origins LambdaFunctionUrl#allow_origins}.
 
 ---
 
@@ -1270,7 +1270,7 @@ public string[] ExposeHeaders { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#expose_headers LambdaFunctionUrl#expose_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#expose_headers LambdaFunctionUrl#expose_headers}.
 
 ---
 
@@ -1282,7 +1282,7 @@ public double MaxAge { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#max_age LambdaFunctionUrl#max_age}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#max_age LambdaFunctionUrl#max_age}.
 
 ---
 
@@ -1302,7 +1302,7 @@ new LambdaFunctionUrlTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#create LambdaFunctionUrl#create}. |
+| <code><a href="#@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#create LambdaFunctionUrl#create}. |
 
 ---
 
@@ -1314,7 +1314,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/lambda_function_url#create LambdaFunctionUrl#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/lambda_function_url#create LambdaFunctionUrl#create}.
 
 ---
 

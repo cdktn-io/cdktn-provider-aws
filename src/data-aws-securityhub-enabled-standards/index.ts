@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/securityhub_enabled_standards
+// https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/securityhub_enabled_standards
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataAwsSecurityhubEnabledStandardsConfig extends cdktn.Terrafor
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/securityhub_enabled_standards#region DataAwsSecurityhubEnabledStandards#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/securityhub_enabled_standards#region DataAwsSecurityhubEnabledStandards#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/securityhub_enabled_standards#standards_subscription_arns DataAwsSecurityhubEnabledStandards#standards_subscription_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/securityhub_enabled_standards#standards_subscription_arns DataAwsSecurityhubEnabledStandards#standards_subscription_arns}
   */
   readonly standardsSubscriptionArns?: string[];
 }
@@ -202,7 +202,7 @@ export class DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsList extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/securityhub_enabled_standards aws_securityhub_enabled_standards}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/securityhub_enabled_standards aws_securityhub_enabled_standards}
 */
 export class DataAwsSecurityhubEnabledStandards extends cdktn.TerraformDataSource {
 
@@ -218,7 +218,7 @@ export class DataAwsSecurityhubEnabledStandards extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataAwsSecurityhubEnabledStandards resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSecurityhubEnabledStandards to import
-  * @param importFromId The id of the existing DataAwsSecurityhubEnabledStandards that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/securityhub_enabled_standards#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSecurityhubEnabledStandards that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/securityhub_enabled_standards#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSecurityhubEnabledStandards to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -230,7 +230,7 @@ export class DataAwsSecurityhubEnabledStandards extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/securityhub_enabled_standards aws_securityhub_enabled_standards} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/securityhub_enabled_standards aws_securityhub_enabled_standards} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -241,7 +241,7 @@ export class DataAwsSecurityhubEnabledStandards extends cdktn.TerraformDataSourc
       terraformResourceType: 'aws_securityhub_enabled_standards',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.54.0',
+        providerVersion: '6.55.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

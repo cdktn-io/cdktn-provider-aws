@@ -4,7 +4,7 @@
 
 ### NetworkmanagerDevice <a name="NetworkmanagerDevice" id="@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device aws_networkmanager_device}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device aws_networkmanager_device}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer"></a>
 
@@ -46,19 +46,19 @@ NetworkmanagerDevice.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.globalNetworkId">globalNetworkId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.globalNetworkId">globalNetworkId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}. |
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.awsLocation">awsLocation</a></code> | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation">NetworkmanagerDeviceAwsLocation</a></code> | aws_location block. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}. |
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.location">location</a></code> | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation">NetworkmanagerDeviceLocation</a></code> | location block. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.model">model</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.serialNumber">serialNumber</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.siteId">siteId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.model">model</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.serialNumber">serialNumber</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.siteId">siteId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts">NetworkmanagerDeviceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.vendor">vendor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice.Initializer.parameter.vendor">vendor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}. |
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 aws_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#aws_location NetworkmanagerDevice#aws_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#aws_location NetworkmanagerDevice#aws_location}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#location NetworkmanagerDevice#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#location NetworkmanagerDevice#location}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}.
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}.
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}.
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#timeouts NetworkmanagerDevice#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#timeouts NetworkmanagerDevice#timeouts}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}.
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}.
 
 ---
 
@@ -803,7 +803,7 @@ The construct id used in the generated config for the NetworkmanagerDevice to im
 
 The id of the existing NetworkmanagerDevice that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1312,8 +1312,8 @@ NetworkmanagerDeviceAwsLocation.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation.property.subnetArn">subnetArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#subnet_arn NetworkmanagerDevice#subnet_arn}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation.property.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#zone NetworkmanagerDevice#zone}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation.property.subnetArn">subnetArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#subnet_arn NetworkmanagerDevice#subnet_arn}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation.property.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#zone NetworkmanagerDevice#zone}. |
 
 ---
 
@@ -1325,7 +1325,7 @@ public java.lang.String getSubnetArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#subnet_arn NetworkmanagerDevice#subnet_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#subnet_arn NetworkmanagerDevice#subnet_arn}.
 
 ---
 
@@ -1337,7 +1337,7 @@ public java.lang.String getZone();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#zone NetworkmanagerDevice#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#zone NetworkmanagerDevice#zone}.
 
 ---
 
@@ -1383,19 +1383,19 @@ NetworkmanagerDeviceConfig.builder()
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.globalNetworkId">globalNetworkId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.globalNetworkId">globalNetworkId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}. |
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.awsLocation">awsLocation</a></code> | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation">NetworkmanagerDeviceAwsLocation</a></code> | aws_location block. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}. |
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.location">location</a></code> | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation">NetworkmanagerDeviceLocation</a></code> | location block. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.model">model</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.serialNumber">serialNumber</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.siteId">siteId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.model">model</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.serialNumber">serialNumber</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.siteId">siteId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts">NetworkmanagerDeviceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.vendor">vendor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig.property.vendor">vendor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}. |
 
 ---
 
@@ -1477,7 +1477,7 @@ public java.lang.String getGlobalNetworkId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}.
 
 ---
 
@@ -1491,7 +1491,7 @@ public NetworkmanagerDeviceAwsLocation getAwsLocation();
 
 aws_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#aws_location NetworkmanagerDevice#aws_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#aws_location NetworkmanagerDevice#aws_location}
 
 ---
 
@@ -1503,7 +1503,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}.
 
 ---
 
@@ -1515,7 +1515,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1532,7 +1532,7 @@ public NetworkmanagerDeviceLocation getLocation();
 
 location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#location NetworkmanagerDevice#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#location NetworkmanagerDevice#location}
 
 ---
 
@@ -1544,7 +1544,7 @@ public java.lang.String getModel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}.
 
 ---
 
@@ -1556,7 +1556,7 @@ public java.lang.String getSerialNumber();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}.
 
 ---
 
@@ -1568,7 +1568,7 @@ public java.lang.String getSiteId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}.
 
 ---
 
@@ -1580,7 +1580,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}.
 
 ---
 
@@ -1592,7 +1592,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}.
 
 ---
 
@@ -1606,7 +1606,7 @@ public NetworkmanagerDeviceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#timeouts NetworkmanagerDevice#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#timeouts NetworkmanagerDevice#timeouts}
 
 ---
 
@@ -1618,7 +1618,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}.
 
 ---
 
@@ -1630,7 +1630,7 @@ public java.lang.String getVendor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}.
 
 ---
 
@@ -1652,9 +1652,9 @@ NetworkmanagerDeviceLocation.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.address">address</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#address NetworkmanagerDevice#address}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.latitude">latitude</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#latitude NetworkmanagerDevice#latitude}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.longitude">longitude</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#longitude NetworkmanagerDevice#longitude}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.address">address</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#address NetworkmanagerDevice#address}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.latitude">latitude</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#latitude NetworkmanagerDevice#latitude}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation.property.longitude">longitude</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#longitude NetworkmanagerDevice#longitude}. |
 
 ---
 
@@ -1666,7 +1666,7 @@ public java.lang.String getAddress();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#address NetworkmanagerDevice#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#address NetworkmanagerDevice#address}.
 
 ---
 
@@ -1678,7 +1678,7 @@ public java.lang.String getLatitude();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#latitude NetworkmanagerDevice#latitude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#latitude NetworkmanagerDevice#latitude}.
 
 ---
 
@@ -1690,7 +1690,7 @@ public java.lang.String getLongitude();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#longitude NetworkmanagerDevice#longitude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#longitude NetworkmanagerDevice#longitude}.
 
 ---
 
@@ -1712,9 +1712,9 @@ NetworkmanagerDeviceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#create NetworkmanagerDevice#create}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#delete NetworkmanagerDevice#delete}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#update NetworkmanagerDevice#update}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#create NetworkmanagerDevice#create}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#delete NetworkmanagerDevice#delete}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#update NetworkmanagerDevice#update}. |
 
 ---
 
@@ -1726,7 +1726,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#create NetworkmanagerDevice#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#create NetworkmanagerDevice#create}.
 
 ---
 
@@ -1738,7 +1738,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#delete NetworkmanagerDevice#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#delete NetworkmanagerDevice#delete}.
 
 ---
 
@@ -1750,7 +1750,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/networkmanager_device#update NetworkmanagerDevice#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/networkmanager_device#update NetworkmanagerDevice#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsUxcServices <a name="DataAwsUxcServices" id="@cdktn/provider-aws.dataAwsUxcServices.DataAwsUxcServices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/uxc_services aws_uxc_services}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/uxc_services aws_uxc_services}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsUxcServices.DataAwsUxcServices.Initializer"></a>
 
@@ -437,7 +437,7 @@ The construct id used in the generated config for the DataAwsUxcServices to impo
 
 The id of the existing DataAwsUxcServices that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/uxc_services#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/uxc_services#import import section} in the documentation of this resource for the id to use
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Route53CidrLocation <a name="Route53CidrLocation" id="@cdktn/provider-aws.route53CidrLocation.Route53CidrLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53_cidr_location aws_route53_cidr_location}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53_cidr_location aws_route53_cidr_location}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53CidrLocation.Route53CidrLocation.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the Route53CidrLocation to imp
 
 The id of the existing Route53CidrLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53_cidr_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53_cidr_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,9 +793,9 @@ new Route53CidrLocationConfig {
 | <code><a href="#@cdktn/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.cidrBlocks">CidrBlocks</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}. |
-| <code><a href="#@cdktn/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.cidrCollectionId">CidrCollectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53_cidr_location#cidr_collection_id Route53CidrLocation#cidr_collection_id}. |
-| <code><a href="#@cdktn/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53_cidr_location#name Route53CidrLocation#name}. |
+| <code><a href="#@cdktn/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.cidrBlocks">CidrBlocks</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}. |
+| <code><a href="#@cdktn/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.cidrCollectionId">CidrCollectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53_cidr_location#cidr_collection_id Route53CidrLocation#cidr_collection_id}. |
+| <code><a href="#@cdktn/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53_cidr_location#name Route53CidrLocation#name}. |
 
 ---
 
@@ -877,7 +877,7 @@ public string[] CidrBlocks { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}.
 
 ---
 
@@ -889,7 +889,7 @@ public string CidrCollectionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53_cidr_location#cidr_collection_id Route53CidrLocation#cidr_collection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53_cidr_location#cidr_collection_id Route53CidrLocation#cidr_collection_id}.
 
 ---
 
@@ -901,7 +901,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/resources/route53_cidr_location#name Route53CidrLocation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/route53_cidr_location#name Route53CidrLocation#name}.
 
 ---
 
