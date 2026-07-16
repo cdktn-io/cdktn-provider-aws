@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/iam_role_policy_attachments
+// https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/iam_role_policy_attachments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsIamRolePolicyAttachmentsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/iam_role_policy_attachments#path_prefix DataAwsIamRolePolicyAttachments#path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/iam_role_policy_attachments#path_prefix DataAwsIamRolePolicyAttachments#path_prefix}
   */
   readonly pathPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/iam_role_policy_attachments#role_name DataAwsIamRolePolicyAttachments#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/iam_role_policy_attachments#role_name DataAwsIamRolePolicyAttachments#role_name}
   */
   readonly roleName: string;
 }
@@ -103,7 +103,7 @@ export class DataAwsIamRolePolicyAttachmentsAttachedPoliciesList extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/iam_role_policy_attachments aws_iam_role_policy_attachments}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/iam_role_policy_attachments aws_iam_role_policy_attachments}
 */
 export class DataAwsIamRolePolicyAttachments extends cdktn.TerraformDataSource {
 
@@ -119,7 +119,7 @@ export class DataAwsIamRolePolicyAttachments extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsIamRolePolicyAttachments resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIamRolePolicyAttachments to import
-  * @param importFromId The id of the existing DataAwsIamRolePolicyAttachments that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/iam_role_policy_attachments#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsIamRolePolicyAttachments that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/iam_role_policy_attachments#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIamRolePolicyAttachments to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -131,7 +131,7 @@ export class DataAwsIamRolePolicyAttachments extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.54.0/docs/data-sources/iam_role_policy_attachments aws_iam_role_policy_attachments} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/iam_role_policy_attachments aws_iam_role_policy_attachments} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -142,7 +142,7 @@ export class DataAwsIamRolePolicyAttachments extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_iam_role_policy_attachments',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.54.0',
+        providerVersion: '6.55.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

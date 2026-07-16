@@ -1943,6 +1943,7 @@ export * as dataAwsElasticacheCluster from './data-aws-elasticache-cluster/index
 export * as dataAwsElasticacheReplicationGroup from './data-aws-elasticache-replication-group/index';
 export * as dataAwsElasticacheReservedCacheNodeOffering from './data-aws-elasticache-reserved-cache-node-offering/index';
 export * as dataAwsElasticacheServerlessCache from './data-aws-elasticache-serverless-cache/index';
+export * as dataAwsElasticacheServiceUpdates from './data-aws-elasticache-service-updates/index';
 export * as dataAwsElasticacheSubnetGroup from './data-aws-elasticache-subnet-group/index';
 export * as dataAwsElasticacheUser from './data-aws-elasticache-user/index';
 export * as dataAwsElasticsearchDomain from './data-aws-elasticsearch-domain/index';

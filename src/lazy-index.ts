@@ -1943,6 +1943,7 @@ Object.defineProperty(exports, 'dataAwsElasticacheCluster', { get: function () {
 Object.defineProperty(exports, 'dataAwsElasticacheReplicationGroup', { get: function () { return require('./data-aws-elasticache-replication-group'); } });
 Object.defineProperty(exports, 'dataAwsElasticacheReservedCacheNodeOffering', { get: function () { return require('./data-aws-elasticache-reserved-cache-node-offering'); } });
 Object.defineProperty(exports, 'dataAwsElasticacheServerlessCache', { get: function () { return require('./data-aws-elasticache-serverless-cache'); } });
+Object.defineProperty(exports, 'dataAwsElasticacheServiceUpdates', { get: function () { return require('./data-aws-elasticache-service-updates'); } });
 Object.defineProperty(exports, 'dataAwsElasticacheSubnetGroup', { get: function () { return require('./data-aws-elasticache-subnet-group'); } });
 Object.defineProperty(exports, 'dataAwsElasticacheUser', { get: function () { return require('./data-aws-elasticache-user'); } });
 Object.defineProperty(exports, 'dataAwsElasticsearchDomain', { get: function () { return require('./data-aws-elasticsearch-domain'); } });
