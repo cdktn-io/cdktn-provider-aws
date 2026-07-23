@@ -4,7 +4,7 @@
 
 ### VpclatticeListener <a name="VpclatticeListener" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListener"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener aws_vpclattice_listener}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener aws_vpclattice_listener}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListener.Initializer"></a>
 
@@ -571,7 +571,7 @@ The construct id used in the generated config for the VpclatticeListener to impo
 
 The id of the existing VpclatticeListener that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1093,15 +1093,15 @@ new VpclatticeListenerConfig {
 | <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.defaultAction">DefaultAction</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultAction">VpclatticeListenerDefaultAction</a></code> | default_action block. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#name VpclatticeListener#name}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#protocol VpclatticeListener#protocol}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#id VpclatticeListener#id}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#port VpclatticeListener#port}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#name VpclatticeListener#name}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#protocol VpclatticeListener#protocol}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#id VpclatticeListener#id}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#port VpclatticeListener#port}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.serviceArn">ServiceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#service_arn VpclatticeListener#service_arn}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.serviceIdentifier">ServiceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#service_identifier VpclatticeListener#service_identifier}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#tags VpclatticeListener#tags}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#tags_all VpclatticeListener#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.serviceArn">ServiceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#service_arn VpclatticeListener#service_arn}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.serviceIdentifier">ServiceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#service_identifier VpclatticeListener#service_identifier}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#tags VpclatticeListener#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#tags_all VpclatticeListener#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerTimeouts">VpclatticeListenerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1186,7 +1186,7 @@ public VpclatticeListenerDefaultAction DefaultAction { get; set; }
 
 default_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#default_action VpclatticeListener#default_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#default_action VpclatticeListener#default_action}
 
 ---
 
@@ -1198,7 +1198,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#name VpclatticeListener#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#name VpclatticeListener#name}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public string Protocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#protocol VpclatticeListener#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#protocol VpclatticeListener#protocol}.
 
 ---
 
@@ -1222,7 +1222,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#id VpclatticeListener#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#id VpclatticeListener#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1237,7 +1237,7 @@ public double Port { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#port VpclatticeListener#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#port VpclatticeListener#port}.
 
 ---
 
@@ -1251,7 +1251,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#region VpclatticeListener#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#region VpclatticeListener#region}
 
 ---
 
@@ -1263,7 +1263,7 @@ public string ServiceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#service_arn VpclatticeListener#service_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#service_arn VpclatticeListener#service_arn}.
 
 ---
 
@@ -1275,7 +1275,7 @@ public string ServiceIdentifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#service_identifier VpclatticeListener#service_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#service_identifier VpclatticeListener#service_identifier}.
 
 ---
 
@@ -1287,7 +1287,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#tags VpclatticeListener#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#tags VpclatticeListener#tags}.
 
 ---
 
@@ -1299,7 +1299,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#tags_all VpclatticeListener#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#tags_all VpclatticeListener#tags_all}.
 
 ---
 
@@ -1313,7 +1313,7 @@ public VpclatticeListenerTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#timeouts VpclatticeListener#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#timeouts VpclatticeListener#timeouts}
 
 ---
 
@@ -1349,7 +1349,7 @@ public VpclatticeListenerDefaultActionFixedResponse FixedResponse { get; set; }
 
 fixed_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#fixed_response VpclatticeListener#fixed_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#fixed_response VpclatticeListener#fixed_response}
 
 ---
 
@@ -1363,7 +1363,7 @@ public IResolvable|VpclatticeListenerDefaultActionForward[] Forward { get; set; 
 
 forward block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#forward VpclatticeListener#forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#forward VpclatticeListener#forward}
 
 ---
 
@@ -1383,7 +1383,7 @@ new VpclatticeListenerDefaultActionFixedResponse {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionFixedResponse.property.statusCode">StatusCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#status_code VpclatticeListener#status_code}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionFixedResponse.property.statusCode">StatusCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#status_code VpclatticeListener#status_code}. |
 
 ---
 
@@ -1395,7 +1395,7 @@ public double StatusCode { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#status_code VpclatticeListener#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#status_code VpclatticeListener#status_code}.
 
 ---
 
@@ -1429,7 +1429,7 @@ public IResolvable|VpclatticeListenerDefaultActionForwardTargetGroups[] TargetGr
 
 target_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#target_groups VpclatticeListener#target_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#target_groups VpclatticeListener#target_groups}
 
 ---
 
@@ -1450,8 +1450,8 @@ new VpclatticeListenerDefaultActionForwardTargetGroups {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionForwardTargetGroups.property.targetGroupIdentifier">TargetGroupIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#target_group_identifier VpclatticeListener#target_group_identifier}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionForwardTargetGroups.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#weight VpclatticeListener#weight}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionForwardTargetGroups.property.targetGroupIdentifier">TargetGroupIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#target_group_identifier VpclatticeListener#target_group_identifier}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionForwardTargetGroups.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#weight VpclatticeListener#weight}. |
 
 ---
 
@@ -1463,7 +1463,7 @@ public string TargetGroupIdentifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#target_group_identifier VpclatticeListener#target_group_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#target_group_identifier VpclatticeListener#target_group_identifier}.
 
 ---
 
@@ -1475,7 +1475,7 @@ public double Weight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#weight VpclatticeListener#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#weight VpclatticeListener#weight}.
 
 ---
 
@@ -1497,9 +1497,9 @@ new VpclatticeListenerTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#create VpclatticeListener#create}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#delete VpclatticeListener#delete}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#update VpclatticeListener#update}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#create VpclatticeListener#create}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#delete VpclatticeListener#delete}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#update VpclatticeListener#update}. |
 
 ---
 
@@ -1511,7 +1511,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#create VpclatticeListener#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#create VpclatticeListener#create}.
 
 ---
 
@@ -1523,7 +1523,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#delete VpclatticeListener#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#delete VpclatticeListener#delete}.
 
 ---
 
@@ -1535,7 +1535,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/vpclattice_listener#update VpclatticeListener#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/vpclattice_listener#update VpclatticeListener#update}.
 
 ---
 

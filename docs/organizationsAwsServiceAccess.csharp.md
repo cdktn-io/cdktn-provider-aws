@@ -4,7 +4,7 @@
 
 ### OrganizationsAwsServiceAccess <a name="OrganizationsAwsServiceAccess" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/organizations_aws_service_access aws_organizations_aws_service_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/organizations_aws_service_access aws_organizations_aws_service_access}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the OrganizationsAwsServiceAcc
 
 The id of the existing OrganizationsAwsServiceAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/organizations_aws_service_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/organizations_aws_service_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -747,7 +747,7 @@ new OrganizationsAwsServiceAccessConfig {
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.servicePrincipal">ServicePrincipal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.servicePrincipal">ServicePrincipal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}. |
 
 ---
 
@@ -829,7 +829,7 @@ public string ServicePrincipal { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}.
 
 ---
 
