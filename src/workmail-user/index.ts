@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user
+// https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,133 +15,133 @@ export interface WorkmailUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * City where the user is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#city WorkmailUser#city}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#city WorkmailUser#city}
   */
   readonly city?: string;
   /**
   * Company associated with the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#company WorkmailUser#company}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#company WorkmailUser#company}
   */
   readonly company?: string;
   /**
   * Country where the user is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#country WorkmailUser#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#country WorkmailUser#country}
   */
   readonly country?: string;
   /**
   * Department associated with the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#department WorkmailUser#department}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#department WorkmailUser#department}
   */
   readonly department?: string;
   /**
   * Display name of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#display_name WorkmailUser#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#display_name WorkmailUser#display_name}
   */
   readonly displayName: string;
   /**
   * Primary email address used to register the user with WorkMail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#email WorkmailUser#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#email WorkmailUser#email}
   */
   readonly email: string;
   /**
   * First name of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#first_name WorkmailUser#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#first_name WorkmailUser#first_name}
   */
   readonly firstName?: string;
   /**
   * Whether to hide the user from the global address list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#hidden_from_global_address_list WorkmailUser#hidden_from_global_address_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#hidden_from_global_address_list WorkmailUser#hidden_from_global_address_list}
   */
   readonly hiddenFromGlobalAddressList?: boolean | cdktn.IResolvable;
   /**
   * User ID from IAM Identity Center associated with the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#identity_provider_user_id WorkmailUser#identity_provider_user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#identity_provider_user_id WorkmailUser#identity_provider_user_id}
   */
   readonly identityProviderUserId?: string;
   /**
   * Initials of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#initials WorkmailUser#initials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#initials WorkmailUser#initials}
   */
   readonly initials?: string;
   /**
   * Job title of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#job_title WorkmailUser#job_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#job_title WorkmailUser#job_title}
   */
   readonly jobTitle?: string;
   /**
   * Last name of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#last_name WorkmailUser#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#last_name WorkmailUser#last_name}
   */
   readonly lastName?: string;
   /**
   * Username of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#name WorkmailUser#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#name WorkmailUser#name}
   */
   readonly name: string;
   /**
   * Office where the user is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#office WorkmailUser#office}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#office WorkmailUser#office}
   */
   readonly office?: string;
   /**
   * Identifier of the WorkMail organization where the user is managed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#organization_id WorkmailUser#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#organization_id WorkmailUser#organization_id}
   */
   readonly organizationId: string;
   /**
   * Password to set for the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#password WorkmailUser#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#password WorkmailUser#password}
   */
   readonly password?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#region WorkmailUser#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#region WorkmailUser#region}
   */
   readonly region?: string;
   /**
   * Street address of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#street WorkmailUser#street}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#street WorkmailUser#street}
   */
   readonly street?: string;
   /**
   * Telephone number of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#telephone WorkmailUser#telephone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#telephone WorkmailUser#telephone}
   */
   readonly telephone?: string;
   /**
   * Role assigned to the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#user_role WorkmailUser#user_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#user_role WorkmailUser#user_role}
   */
   readonly userRole?: string;
   /**
   * ZIP or postal code of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#zip_code WorkmailUser#zip_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#zip_code WorkmailUser#zip_code}
   */
   readonly zipCode?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user aws_workmail_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user aws_workmail_user}
 */
 export class WorkmailUser extends cdktn.TerraformResource {
 
@@ -157,7 +157,7 @@ export class WorkmailUser extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WorkmailUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkmailUser to import
-  * @param importFromId The id of the existing WorkmailUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkmailUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkmailUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -169,7 +169,7 @@ export class WorkmailUser extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/workmail_user aws_workmail_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workmail_user aws_workmail_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +180,7 @@ export class WorkmailUser extends cdktn.TerraformResource {
       terraformResourceType: 'aws_workmail_user',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.55.0',
+        providerVersion: '6.56.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
