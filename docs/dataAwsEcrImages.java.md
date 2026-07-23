@@ -4,7 +4,7 @@
 
 ### DataAwsEcrImages <a name="DataAwsEcrImages" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/ecr_images aws_ecr_images}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/ecr_images aws_ecr_images}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImages.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/ecr_images#repository_name DataAwsEcrImages#repository_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/ecr_images#repository_name DataAwsEcrImages#repository_name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/ecr_images#region DataAwsEcrImages#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/ecr_images#region DataAwsEcrImages#region}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the registry (AWS account ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/ecr_images#registry_id DataAwsEcrImages#registry_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/ecr_images#registry_id DataAwsEcrImages#registry_id}
 
 ---
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the DataAwsEcrImages to import
 
 The id of the existing DataAwsEcrImages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/ecr_images#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/ecr_images#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,7 +855,7 @@ public java.lang.String getRepositoryName();
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/ecr_images#repository_name DataAwsEcrImages#repository_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/ecr_images#repository_name DataAwsEcrImages#repository_name}
 
 ---
 
@@ -869,7 +869,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/ecr_images#region DataAwsEcrImages#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/ecr_images#region DataAwsEcrImages#region}
 
 ---
 
@@ -883,7 +883,7 @@ public java.lang.String getRegistryId();
 
 ID of the registry (AWS account ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/ecr_images#registry_id DataAwsEcrImages#registry_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/ecr_images#registry_id DataAwsEcrImages#registry_id}
 
 ---
 

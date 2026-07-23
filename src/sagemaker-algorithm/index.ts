@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm
+// https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,67 +13,67 @@ import * as cdktn from 'cdktn';
 
 export interface SagemakerAlgorithmConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#algorithm_description SagemakerAlgorithm#algorithm_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#algorithm_description SagemakerAlgorithm#algorithm_description}
   */
   readonly algorithmDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#algorithm_name SagemakerAlgorithm#algorithm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#algorithm_name SagemakerAlgorithm#algorithm_name}
   */
   readonly algorithmName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#certify_for_marketplace SagemakerAlgorithm#certify_for_marketplace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#certify_for_marketplace SagemakerAlgorithm#certify_for_marketplace}
   */
   readonly certifyForMarketplace?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#region SagemakerAlgorithm#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#region SagemakerAlgorithm#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#tags SagemakerAlgorithm#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#tags SagemakerAlgorithm#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * inference_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#inference_specification SagemakerAlgorithm#inference_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#inference_specification SagemakerAlgorithm#inference_specification}
   */
   readonly inferenceSpecification?: SagemakerAlgorithmInferenceSpecification[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#timeouts SagemakerAlgorithm#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#timeouts SagemakerAlgorithm#timeouts}
   */
   readonly timeouts?: SagemakerAlgorithmTimeouts;
   /**
   * training_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#training_specification SagemakerAlgorithm#training_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#training_specification SagemakerAlgorithm#training_specification}
   */
   readonly trainingSpecification?: SagemakerAlgorithmTrainingSpecification[] | cdktn.IResolvable;
   /**
   * validation_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#validation_specification SagemakerAlgorithm#validation_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#validation_specification SagemakerAlgorithm#validation_specification}
   */
   readonly validationSpecification?: SagemakerAlgorithmValidationSpecification[] | cdktn.IResolvable;
 }
 export interface SagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
   */
   readonly compressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#etag SagemakerAlgorithm#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#etag SagemakerAlgorithm#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_data_type SagemakerAlgorithm#s3_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_data_type SagemakerAlgorithm#s3_data_type}
   */
   readonly s3DataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_uri SagemakerAlgorithm#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_uri SagemakerAlgorithm#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -270,15 +270,15 @@ export class SagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataS
 }
 export interface SagemakerAlgorithmInferenceSpecificationContainersBaseModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#hub_content_name SagemakerAlgorithm#hub_content_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#hub_content_name SagemakerAlgorithm#hub_content_name}
   */
   readonly hubContentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#hub_content_version SagemakerAlgorithm#hub_content_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#hub_content_version SagemakerAlgorithm#hub_content_version}
   */
   readonly hubContentVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#recipe_name SagemakerAlgorithm#recipe_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#recipe_name SagemakerAlgorithm#recipe_name}
   */
   readonly recipeName?: string;
 }
@@ -452,7 +452,7 @@ export class SagemakerAlgorithmInferenceSpecificationContainersBaseModelList ext
 }
 export interface SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceHubAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#hub_content_arn SagemakerAlgorithm#hub_content_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#hub_content_arn SagemakerAlgorithm#hub_content_arn}
   */
   readonly hubContentArn?: string;
 }
@@ -568,7 +568,7 @@ export class SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3
 }
 export interface SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#accept_eula SagemakerAlgorithm#accept_eula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#accept_eula SagemakerAlgorithm#accept_eula}
   */
   readonly acceptEula?: boolean | cdktn.IResolvable;
 }
@@ -684,39 +684,39 @@ export class SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3
 }
 export interface SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
   */
   readonly compressionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#etag SagemakerAlgorithm#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#etag SagemakerAlgorithm#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#manifest_etag SagemakerAlgorithm#manifest_etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#manifest_etag SagemakerAlgorithm#manifest_etag}
   */
   readonly manifestEtag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#manifest_s3_uri SagemakerAlgorithm#manifest_s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#manifest_s3_uri SagemakerAlgorithm#manifest_s3_uri}
   */
   readonly manifestS3Uri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_data_type SagemakerAlgorithm#s3_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_data_type SagemakerAlgorithm#s3_data_type}
   */
   readonly s3DataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_uri SagemakerAlgorithm#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_uri SagemakerAlgorithm#s3_uri}
   */
   readonly s3Uri: string;
   /**
   * hub_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#hub_access_config SagemakerAlgorithm#hub_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#hub_access_config SagemakerAlgorithm#hub_access_config}
   */
   readonly hubAccessConfig?: SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceHubAccessConfig[] | cdktn.IResolvable;
   /**
   * model_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#model_access_config SagemakerAlgorithm#model_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#model_access_config SagemakerAlgorithm#model_access_config}
   */
   readonly modelAccessConfig?: SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfig[] | cdktn.IResolvable;
 }
@@ -1028,7 +1028,7 @@ export interface SagemakerAlgorithmInferenceSpecificationContainersModelDataSour
   /**
   * s3_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_data_source SagemakerAlgorithm#s3_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_data_source SagemakerAlgorithm#s3_data_source}
   */
   readonly s3DataSource?: SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSource[] | cdktn.IResolvable;
 }
@@ -1144,7 +1144,7 @@ export class SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceLi
 }
 export interface SagemakerAlgorithmInferenceSpecificationContainersModelInput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#data_input_config SagemakerAlgorithm#data_input_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#data_input_config SagemakerAlgorithm#data_input_config}
   */
   readonly dataInputConfig?: string;
 }
@@ -1260,71 +1260,71 @@ export class SagemakerAlgorithmInferenceSpecificationContainersModelInputList ex
 }
 export interface SagemakerAlgorithmInferenceSpecificationContainers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#container_hostname SagemakerAlgorithm#container_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#container_hostname SagemakerAlgorithm#container_hostname}
   */
   readonly containerHostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#environment SagemakerAlgorithm#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#environment SagemakerAlgorithm#environment}
   */
   readonly environment?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#framework SagemakerAlgorithm#framework}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#framework SagemakerAlgorithm#framework}
   */
   readonly framework?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#framework_version SagemakerAlgorithm#framework_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#framework_version SagemakerAlgorithm#framework_version}
   */
   readonly frameworkVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#image SagemakerAlgorithm#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#image SagemakerAlgorithm#image}
   */
   readonly image?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#image_digest SagemakerAlgorithm#image_digest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#image_digest SagemakerAlgorithm#image_digest}
   */
   readonly imageDigest?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#is_checkpoint SagemakerAlgorithm#is_checkpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#is_checkpoint SagemakerAlgorithm#is_checkpoint}
   */
   readonly isCheckpoint?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#model_data_etag SagemakerAlgorithm#model_data_etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#model_data_etag SagemakerAlgorithm#model_data_etag}
   */
   readonly modelDataEtag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#model_data_url SagemakerAlgorithm#model_data_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#model_data_url SagemakerAlgorithm#model_data_url}
   */
   readonly modelDataUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#nearest_model_name SagemakerAlgorithm#nearest_model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#nearest_model_name SagemakerAlgorithm#nearest_model_name}
   */
   readonly nearestModelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#product_id SagemakerAlgorithm#product_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#product_id SagemakerAlgorithm#product_id}
   */
   readonly productId?: string;
   /**
   * additional_s3_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#additional_s3_data_source SagemakerAlgorithm#additional_s3_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#additional_s3_data_source SagemakerAlgorithm#additional_s3_data_source}
   */
   readonly additionalS3DataSource?: SagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataSource[] | cdktn.IResolvable;
   /**
   * base_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#base_model SagemakerAlgorithm#base_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#base_model SagemakerAlgorithm#base_model}
   */
   readonly baseModel?: SagemakerAlgorithmInferenceSpecificationContainersBaseModel[] | cdktn.IResolvable;
   /**
   * model_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#model_data_source SagemakerAlgorithm#model_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#model_data_source SagemakerAlgorithm#model_data_source}
   */
   readonly modelDataSource?: SagemakerAlgorithmInferenceSpecificationContainersModelDataSource[] | cdktn.IResolvable;
   /**
   * model_input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#model_input SagemakerAlgorithm#model_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#model_input SagemakerAlgorithm#model_input}
   */
   readonly modelInput?: SagemakerAlgorithmInferenceSpecificationContainersModelInput[] | cdktn.IResolvable;
 }
@@ -1846,25 +1846,25 @@ export class SagemakerAlgorithmInferenceSpecificationContainersList extends cdkt
 }
 export interface SagemakerAlgorithmInferenceSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supported_content_types SagemakerAlgorithm#supported_content_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supported_content_types SagemakerAlgorithm#supported_content_types}
   */
   readonly supportedContentTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supported_realtime_inference_instance_types SagemakerAlgorithm#supported_realtime_inference_instance_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supported_realtime_inference_instance_types SagemakerAlgorithm#supported_realtime_inference_instance_types}
   */
   readonly supportedRealtimeInferenceInstanceTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supported_response_mime_types SagemakerAlgorithm#supported_response_mime_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supported_response_mime_types SagemakerAlgorithm#supported_response_mime_types}
   */
   readonly supportedResponseMimeTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supported_transform_instance_types SagemakerAlgorithm#supported_transform_instance_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supported_transform_instance_types SagemakerAlgorithm#supported_transform_instance_types}
   */
   readonly supportedTransformInstanceTypes?: string[];
   /**
   * containers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#containers SagemakerAlgorithm#containers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#containers SagemakerAlgorithm#containers}
   */
   readonly containers?: SagemakerAlgorithmInferenceSpecificationContainers[] | cdktn.IResolvable;
 }
@@ -2098,13 +2098,13 @@ export interface SagemakerAlgorithmTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#create SagemakerAlgorithm#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#create SagemakerAlgorithm#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#delete SagemakerAlgorithm#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#delete SagemakerAlgorithm#delete}
   */
   readonly delete?: string;
 }
@@ -2227,19 +2227,19 @@ export class SagemakerAlgorithmTimeoutsOutputReference extends cdktn.ComplexObje
 }
 export interface SagemakerAlgorithmTrainingSpecificationAdditionalS3DataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
   */
   readonly compressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#etag SagemakerAlgorithm#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#etag SagemakerAlgorithm#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_data_type SagemakerAlgorithm#s3_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_data_type SagemakerAlgorithm#s3_data_type}
   */
   readonly s3DataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_uri SagemakerAlgorithm#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_uri SagemakerAlgorithm#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -2436,11 +2436,11 @@ export class SagemakerAlgorithmTrainingSpecificationAdditionalS3DataSourceList e
 }
 export interface SagemakerAlgorithmTrainingSpecificationMetricDefinitions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#name SagemakerAlgorithm#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#name SagemakerAlgorithm#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#regex SagemakerAlgorithm#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#regex SagemakerAlgorithm#regex}
   */
   readonly regex: string;
 }
@@ -2579,7 +2579,7 @@ export class SagemakerAlgorithmTrainingSpecificationMetricDefinitionsList extend
 }
 export interface SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeCategoricalParameterRangeSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#values SagemakerAlgorithm#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#values SagemakerAlgorithm#values}
   */
   readonly values: string[];
 }
@@ -2692,11 +2692,11 @@ export class SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRang
 }
 export interface SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeContinuousParameterRangeSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#max_value SagemakerAlgorithm#max_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#max_value SagemakerAlgorithm#max_value}
   */
   readonly maxValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#min_value SagemakerAlgorithm#min_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#min_value SagemakerAlgorithm#min_value}
   */
   readonly minValue: string;
 }
@@ -2835,11 +2835,11 @@ export class SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRang
 }
 export interface SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeIntegerParameterRangeSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#max_value SagemakerAlgorithm#max_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#max_value SagemakerAlgorithm#max_value}
   */
   readonly maxValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#min_value SagemakerAlgorithm#min_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#min_value SagemakerAlgorithm#min_value}
   */
   readonly minValue: string;
 }
@@ -2980,19 +2980,19 @@ export interface SagemakerAlgorithmTrainingSpecificationSupportedHyperParameters
   /**
   * categorical_parameter_range_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#categorical_parameter_range_specification SagemakerAlgorithm#categorical_parameter_range_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#categorical_parameter_range_specification SagemakerAlgorithm#categorical_parameter_range_specification}
   */
   readonly categoricalParameterRangeSpecification?: SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeCategoricalParameterRangeSpecification[] | cdktn.IResolvable;
   /**
   * continuous_parameter_range_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#continuous_parameter_range_specification SagemakerAlgorithm#continuous_parameter_range_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#continuous_parameter_range_specification SagemakerAlgorithm#continuous_parameter_range_specification}
   */
   readonly continuousParameterRangeSpecification?: SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeContinuousParameterRangeSpecification[] | cdktn.IResolvable;
   /**
   * integer_parameter_range_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#integer_parameter_range_specification SagemakerAlgorithm#integer_parameter_range_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#integer_parameter_range_specification SagemakerAlgorithm#integer_parameter_range_specification}
   */
   readonly integerParameterRangeSpecification?: SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeIntegerParameterRangeSpecification[] | cdktn.IResolvable;
 }
@@ -3166,33 +3166,33 @@ export class SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRang
 }
 export interface SagemakerAlgorithmTrainingSpecificationSupportedHyperParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#default_value SagemakerAlgorithm#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#default_value SagemakerAlgorithm#default_value}
   */
   readonly defaultValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#description SagemakerAlgorithm#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#description SagemakerAlgorithm#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#is_required SagemakerAlgorithm#is_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#is_required SagemakerAlgorithm#is_required}
   */
   readonly isRequired?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#is_tunable SagemakerAlgorithm#is_tunable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#is_tunable SagemakerAlgorithm#is_tunable}
   */
   readonly isTunable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#name SagemakerAlgorithm#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#name SagemakerAlgorithm#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#type SagemakerAlgorithm#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#type SagemakerAlgorithm#type}
   */
   readonly type: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#range SagemakerAlgorithm#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#range SagemakerAlgorithm#range}
   */
   readonly range?: SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRange[] | cdktn.IResolvable;
 }
@@ -3476,11 +3476,11 @@ export class SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersList
 }
 export interface SagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#metric_name SagemakerAlgorithm#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#metric_name SagemakerAlgorithm#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#type SagemakerAlgorithm#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#type SagemakerAlgorithm#type}
   */
   readonly type: string;
 }
@@ -3619,27 +3619,27 @@ export class SagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveM
 }
 export interface SagemakerAlgorithmTrainingSpecificationTrainingChannels {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#description SagemakerAlgorithm#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#description SagemakerAlgorithm#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#is_required SagemakerAlgorithm#is_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#is_required SagemakerAlgorithm#is_required}
   */
   readonly isRequired?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#name SagemakerAlgorithm#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#name SagemakerAlgorithm#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supported_compression_types SagemakerAlgorithm#supported_compression_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supported_compression_types SagemakerAlgorithm#supported_compression_types}
   */
   readonly supportedCompressionTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supported_content_types SagemakerAlgorithm#supported_content_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supported_content_types SagemakerAlgorithm#supported_content_types}
   */
   readonly supportedContentTypes: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supported_input_modes SagemakerAlgorithm#supported_input_modes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supported_input_modes SagemakerAlgorithm#supported_input_modes}
   */
   readonly supportedInputModes: string[];
 }
@@ -3891,49 +3891,49 @@ export class SagemakerAlgorithmTrainingSpecificationTrainingChannelsList extends
 }
 export interface SagemakerAlgorithmTrainingSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supported_training_instance_types SagemakerAlgorithm#supported_training_instance_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supported_training_instance_types SagemakerAlgorithm#supported_training_instance_types}
   */
   readonly supportedTrainingInstanceTypes: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supports_distributed_training SagemakerAlgorithm#supports_distributed_training}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supports_distributed_training SagemakerAlgorithm#supports_distributed_training}
   */
   readonly supportsDistributedTraining?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#training_image SagemakerAlgorithm#training_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#training_image SagemakerAlgorithm#training_image}
   */
   readonly trainingImage: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#training_image_digest SagemakerAlgorithm#training_image_digest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#training_image_digest SagemakerAlgorithm#training_image_digest}
   */
   readonly trainingImageDigest?: string;
   /**
   * additional_s3_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#additional_s3_data_source SagemakerAlgorithm#additional_s3_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#additional_s3_data_source SagemakerAlgorithm#additional_s3_data_source}
   */
   readonly additionalS3DataSource?: SagemakerAlgorithmTrainingSpecificationAdditionalS3DataSource[] | cdktn.IResolvable;
   /**
   * metric_definitions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#metric_definitions SagemakerAlgorithm#metric_definitions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#metric_definitions SagemakerAlgorithm#metric_definitions}
   */
   readonly metricDefinitions?: SagemakerAlgorithmTrainingSpecificationMetricDefinitions[] | cdktn.IResolvable;
   /**
   * supported_hyper_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supported_hyper_parameters SagemakerAlgorithm#supported_hyper_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supported_hyper_parameters SagemakerAlgorithm#supported_hyper_parameters}
   */
   readonly supportedHyperParameters?: SagemakerAlgorithmTrainingSpecificationSupportedHyperParameters[] | cdktn.IResolvable;
   /**
   * supported_tuning_job_objective_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#supported_tuning_job_objective_metrics SagemakerAlgorithm#supported_tuning_job_objective_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#supported_tuning_job_objective_metrics SagemakerAlgorithm#supported_tuning_job_objective_metrics}
   */
   readonly supportedTuningJobObjectiveMetrics?: SagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveMetrics[] | cdktn.IResolvable;
   /**
   * training_channels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#training_channels SagemakerAlgorithm#training_channels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#training_channels SagemakerAlgorithm#training_channels}
   */
   readonly trainingChannels?: SagemakerAlgorithmTrainingSpecificationTrainingChannels[] | cdktn.IResolvable;
 }
@@ -4275,19 +4275,19 @@ export class SagemakerAlgorithmTrainingSpecificationList extends cdktn.ComplexLi
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#directory_path SagemakerAlgorithm#directory_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#directory_path SagemakerAlgorithm#directory_path}
   */
   readonly directoryPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#file_system_access_mode SagemakerAlgorithm#file_system_access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#file_system_access_mode SagemakerAlgorithm#file_system_access_mode}
   */
   readonly fileSystemAccessMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#file_system_id SagemakerAlgorithm#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#file_system_id SagemakerAlgorithm#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#file_system_type SagemakerAlgorithm#file_system_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#file_system_type SagemakerAlgorithm#file_system_type}
   */
   readonly fileSystemType: string;
 }
@@ -4478,7 +4478,7 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#hub_content_arn SagemakerAlgorithm#hub_content_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#hub_content_arn SagemakerAlgorithm#hub_content_arn}
   */
   readonly hubContentArn?: string;
 }
@@ -4594,7 +4594,7 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#accept_eula SagemakerAlgorithm#accept_eula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#accept_eula SagemakerAlgorithm#accept_eula}
   */
   readonly acceptEula?: boolean | cdktn.IResolvable;
 }
@@ -4710,35 +4710,35 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#attribute_names SagemakerAlgorithm#attribute_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#attribute_names SagemakerAlgorithm#attribute_names}
   */
   readonly attributeNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_group_names SagemakerAlgorithm#instance_group_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_group_names SagemakerAlgorithm#instance_group_names}
   */
   readonly instanceGroupNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_data_distribution_type SagemakerAlgorithm#s3_data_distribution_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_data_distribution_type SagemakerAlgorithm#s3_data_distribution_type}
   */
   readonly s3DataDistributionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_data_type SagemakerAlgorithm#s3_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_data_type SagemakerAlgorithm#s3_data_type}
   */
   readonly s3DataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_uri SagemakerAlgorithm#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_uri SagemakerAlgorithm#s3_uri}
   */
   readonly s3Uri: string;
   /**
   * hub_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#hub_access_config SagemakerAlgorithm#hub_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#hub_access_config SagemakerAlgorithm#hub_access_config}
   */
   readonly hubAccessConfig?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfig[] | cdktn.IResolvable;
   /**
   * model_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#model_access_config SagemakerAlgorithm#model_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#model_access_config SagemakerAlgorithm#model_access_config}
   */
   readonly modelAccessConfig?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfig[] | cdktn.IResolvable;
 }
@@ -5024,13 +5024,13 @@ export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrai
   /**
   * file_system_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#file_system_data_source SagemakerAlgorithm#file_system_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#file_system_data_source SagemakerAlgorithm#file_system_data_source}
   */
   readonly fileSystemDataSource?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSource[] | cdktn.IResolvable;
   /**
   * s3_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_data_source SagemakerAlgorithm#s3_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_data_source SagemakerAlgorithm#s3_data_source}
   */
   readonly s3DataSource?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSource[] | cdktn.IResolvable;
 }
@@ -5175,7 +5175,7 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigShuffleConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#seed SagemakerAlgorithm#seed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#seed SagemakerAlgorithm#seed}
   */
   readonly seed: number;
 }
@@ -5288,35 +5288,35 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#channel_name SagemakerAlgorithm#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#channel_name SagemakerAlgorithm#channel_name}
   */
   readonly channelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
   */
   readonly compressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#content_type SagemakerAlgorithm#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#content_type SagemakerAlgorithm#content_type}
   */
   readonly contentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#input_mode SagemakerAlgorithm#input_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#input_mode SagemakerAlgorithm#input_mode}
   */
   readonly inputMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#record_wrapper_type SagemakerAlgorithm#record_wrapper_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#record_wrapper_type SagemakerAlgorithm#record_wrapper_type}
   */
   readonly recordWrapperType?: string;
   /**
   * data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#data_source SagemakerAlgorithm#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#data_source SagemakerAlgorithm#data_source}
   */
   readonly dataSource?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSource[] | cdktn.IResolvable;
   /**
   * shuffle_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#shuffle_config SagemakerAlgorithm#shuffle_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#shuffle_config SagemakerAlgorithm#shuffle_config}
   */
   readonly shuffleConfig?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigShuffleConfig[] | cdktn.IResolvable;
 }
@@ -5603,15 +5603,15 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputDataConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
   */
   readonly compressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#kms_key_id SagemakerAlgorithm#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#kms_key_id SagemakerAlgorithm#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_output_path SagemakerAlgorithm#s3_output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_output_path SagemakerAlgorithm#s3_output_path}
   */
   readonly s3OutputPath: string;
 }
@@ -5782,15 +5782,15 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstanceGroups {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_count SagemakerAlgorithm#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_count SagemakerAlgorithm#instance_count}
   */
   readonly instanceCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_group_name SagemakerAlgorithm#instance_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_group_name SagemakerAlgorithm#instance_group_name}
   */
   readonly instanceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_type SagemakerAlgorithm#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_type SagemakerAlgorithm#instance_type}
   */
   readonly instanceType: string;
 }
@@ -5955,11 +5955,11 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecifications {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_count SagemakerAlgorithm#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_count SagemakerAlgorithm#instance_count}
   */
   readonly instanceCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#ultra_server_id SagemakerAlgorithm#ultra_server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#ultra_server_id SagemakerAlgorithm#ultra_server_id}
   */
   readonly ultraServerId?: string;
 }
@@ -6101,13 +6101,13 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#enable_multiple_jobs SagemakerAlgorithm#enable_multiple_jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#enable_multiple_jobs SagemakerAlgorithm#enable_multiple_jobs}
   */
   readonly enableMultipleJobs?: boolean | cdktn.IResolvable;
   /**
   * placement_specifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#placement_specifications SagemakerAlgorithm#placement_specifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#placement_specifications SagemakerAlgorithm#placement_specifications}
   */
   readonly placementSpecifications?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecifications[] | cdktn.IResolvable;
 }
@@ -6252,39 +6252,39 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_count SagemakerAlgorithm#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_count SagemakerAlgorithm#instance_count}
   */
   readonly instanceCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_type SagemakerAlgorithm#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_type SagemakerAlgorithm#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#keep_alive_period_in_seconds SagemakerAlgorithm#keep_alive_period_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#keep_alive_period_in_seconds SagemakerAlgorithm#keep_alive_period_in_seconds}
   */
   readonly keepAlivePeriodInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#training_plan_arn SagemakerAlgorithm#training_plan_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#training_plan_arn SagemakerAlgorithm#training_plan_arn}
   */
   readonly trainingPlanArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#volume_kms_key_id SagemakerAlgorithm#volume_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#volume_kms_key_id SagemakerAlgorithm#volume_kms_key_id}
   */
   readonly volumeKmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#volume_size_in_gb SagemakerAlgorithm#volume_size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#volume_size_in_gb SagemakerAlgorithm#volume_size_in_gb}
   */
   readonly volumeSizeInGb?: number;
   /**
   * instance_groups block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_groups SagemakerAlgorithm#instance_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_groups SagemakerAlgorithm#instance_groups}
   */
   readonly instanceGroups?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstanceGroups[] | cdktn.IResolvable;
   /**
   * instance_placement_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_placement_config SagemakerAlgorithm#instance_placement_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_placement_config SagemakerAlgorithm#instance_placement_config}
   */
   readonly instancePlacementConfig?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfig[] | cdktn.IResolvable;
 }
@@ -6603,15 +6603,15 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionStoppingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#max_pending_time_in_seconds SagemakerAlgorithm#max_pending_time_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#max_pending_time_in_seconds SagemakerAlgorithm#max_pending_time_in_seconds}
   */
   readonly maxPendingTimeInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#max_runtime_in_seconds SagemakerAlgorithm#max_runtime_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#max_runtime_in_seconds SagemakerAlgorithm#max_runtime_in_seconds}
   */
   readonly maxRuntimeInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#max_wait_time_in_seconds SagemakerAlgorithm#max_wait_time_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#max_wait_time_in_seconds SagemakerAlgorithm#max_wait_time_in_seconds}
   */
   readonly maxWaitTimeInSeconds?: number;
 }
@@ -6785,35 +6785,35 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#hyper_parameters SagemakerAlgorithm#hyper_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#hyper_parameters SagemakerAlgorithm#hyper_parameters}
   */
   readonly hyperParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#training_input_mode SagemakerAlgorithm#training_input_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#training_input_mode SagemakerAlgorithm#training_input_mode}
   */
   readonly trainingInputMode: string;
   /**
   * input_data_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#input_data_config SagemakerAlgorithm#input_data_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#input_data_config SagemakerAlgorithm#input_data_config}
   */
   readonly inputDataConfig?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfig[] | cdktn.IResolvable;
   /**
   * output_data_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#output_data_config SagemakerAlgorithm#output_data_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#output_data_config SagemakerAlgorithm#output_data_config}
   */
   readonly outputDataConfig?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputDataConfig[] | cdktn.IResolvable;
   /**
   * resource_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#resource_config SagemakerAlgorithm#resource_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#resource_config SagemakerAlgorithm#resource_config}
   */
   readonly resourceConfig?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfig[] | cdktn.IResolvable;
   /**
   * stopping_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#stopping_condition SagemakerAlgorithm#stopping_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#stopping_condition SagemakerAlgorithm#stopping_condition}
   */
   readonly stoppingCondition?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionStoppingCondition[] | cdktn.IResolvable;
 }
@@ -7071,11 +7071,11 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTraining
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_data_type SagemakerAlgorithm#s3_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_data_type SagemakerAlgorithm#s3_data_type}
   */
   readonly s3DataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_uri SagemakerAlgorithm#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_uri SagemakerAlgorithm#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -7216,7 +7216,7 @@ export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTran
   /**
   * s3_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_data_source SagemakerAlgorithm#s3_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_data_source SagemakerAlgorithm#s3_data_source}
   */
   readonly s3DataSource?: SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSource[] | cdktn.IResolvable;
 }
@@ -7332,21 +7332,21 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTransfor
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#compression_type SagemakerAlgorithm#compression_type}
   */
   readonly compressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#content_type SagemakerAlgorithm#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#content_type SagemakerAlgorithm#content_type}
   */
   readonly contentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#split_type SagemakerAlgorithm#split_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#split_type SagemakerAlgorithm#split_type}
   */
   readonly splitType?: string;
   /**
   * data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#data_source SagemakerAlgorithm#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#data_source SagemakerAlgorithm#data_source}
   */
   readonly dataSource?: SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSource[] | cdktn.IResolvable;
 }
@@ -7549,19 +7549,19 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTransfor
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#accept SagemakerAlgorithm#accept}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#accept SagemakerAlgorithm#accept}
   */
   readonly accept?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#assemble_with SagemakerAlgorithm#assemble_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#assemble_with SagemakerAlgorithm#assemble_with}
   */
   readonly assembleWith?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#kms_key_id SagemakerAlgorithm#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#kms_key_id SagemakerAlgorithm#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#s3_output_path SagemakerAlgorithm#s3_output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#s3_output_path SagemakerAlgorithm#s3_output_path}
   */
   readonly s3OutputPath: string;
 }
@@ -7761,19 +7761,19 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTransfor
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_count SagemakerAlgorithm#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_count SagemakerAlgorithm#instance_count}
   */
   readonly instanceCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#instance_type SagemakerAlgorithm#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#instance_type SagemakerAlgorithm#instance_type}
   */
   readonly instanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#transform_ami_version SagemakerAlgorithm#transform_ami_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#transform_ami_version SagemakerAlgorithm#transform_ami_version}
   */
   readonly transformAmiVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#volume_kms_key_id SagemakerAlgorithm#volume_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#volume_kms_key_id SagemakerAlgorithm#volume_kms_key_id}
   */
   readonly volumeKmsKeyId?: string;
 }
@@ -7970,37 +7970,37 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTransfor
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#batch_strategy SagemakerAlgorithm#batch_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#batch_strategy SagemakerAlgorithm#batch_strategy}
   */
   readonly batchStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#environment SagemakerAlgorithm#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#environment SagemakerAlgorithm#environment}
   */
   readonly environment?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#max_concurrent_transforms SagemakerAlgorithm#max_concurrent_transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#max_concurrent_transforms SagemakerAlgorithm#max_concurrent_transforms}
   */
   readonly maxConcurrentTransforms?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#max_payload_in_mb SagemakerAlgorithm#max_payload_in_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#max_payload_in_mb SagemakerAlgorithm#max_payload_in_mb}
   */
   readonly maxPayloadInMb?: number;
   /**
   * transform_input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#transform_input SagemakerAlgorithm#transform_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#transform_input SagemakerAlgorithm#transform_input}
   */
   readonly transformInput?: SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInput[] | cdktn.IResolvable;
   /**
   * transform_output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#transform_output SagemakerAlgorithm#transform_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#transform_output SagemakerAlgorithm#transform_output}
   */
   readonly transformOutput?: SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutput[] | cdktn.IResolvable;
   /**
   * transform_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#transform_resources SagemakerAlgorithm#transform_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#transform_resources SagemakerAlgorithm#transform_resources}
   */
   readonly transformResources?: SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformResources[] | cdktn.IResolvable;
 }
@@ -8290,19 +8290,19 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesTransfor
 }
 export interface SagemakerAlgorithmValidationSpecificationValidationProfiles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#profile_name SagemakerAlgorithm#profile_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#profile_name SagemakerAlgorithm#profile_name}
   */
   readonly profileName: string;
   /**
   * training_job_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#training_job_definition SagemakerAlgorithm#training_job_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#training_job_definition SagemakerAlgorithm#training_job_definition}
   */
   readonly trainingJobDefinition?: SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinition[] | cdktn.IResolvable;
   /**
   * transform_job_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#transform_job_definition SagemakerAlgorithm#transform_job_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#transform_job_definition SagemakerAlgorithm#transform_job_definition}
   */
   readonly transformJobDefinition?: SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinition[] | cdktn.IResolvable;
 }
@@ -8473,13 +8473,13 @@ export class SagemakerAlgorithmValidationSpecificationValidationProfilesList ext
 }
 export interface SagemakerAlgorithmValidationSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#validation_role SagemakerAlgorithm#validation_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#validation_role SagemakerAlgorithm#validation_role}
   */
   readonly validationRole: string;
   /**
   * validation_profiles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#validation_profiles SagemakerAlgorithm#validation_profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#validation_profiles SagemakerAlgorithm#validation_profiles}
   */
   readonly validationProfiles?: SagemakerAlgorithmValidationSpecificationValidationProfiles[] | cdktn.IResolvable;
 }
@@ -8621,7 +8621,7 @@ export class SagemakerAlgorithmValidationSpecificationList extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm aws_sagemaker_algorithm}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm aws_sagemaker_algorithm}
 */
 export class SagemakerAlgorithm extends cdktn.TerraformResource {
 
@@ -8637,7 +8637,7 @@ export class SagemakerAlgorithm extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SagemakerAlgorithm resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerAlgorithm to import
-  * @param importFromId The id of the existing SagemakerAlgorithm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SagemakerAlgorithm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerAlgorithm to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -8649,7 +8649,7 @@ export class SagemakerAlgorithm extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/sagemaker_algorithm aws_sagemaker_algorithm} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/sagemaker_algorithm aws_sagemaker_algorithm} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -8660,7 +8660,7 @@ export class SagemakerAlgorithm extends cdktn.TerraformResource {
       terraformResourceType: 'aws_sagemaker_algorithm',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.55.0',
+        providerVersion: '6.56.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

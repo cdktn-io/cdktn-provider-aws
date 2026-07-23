@@ -4,7 +4,7 @@
 
 ### IamUserSshKey <a name="IamUserSshKey" id="@cdktn/provider-aws.iamUserSshKey.IamUserSshKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key aws_iam_user_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key aws_iam_user_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamUserSshKey.IamUserSshKey.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the IamUserSshKey to import.
 
 The id of the existing IamUserSshKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,11 +864,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamusersshkey"
 | <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.encoding">Encoding</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#encoding IamUserSshKey#encoding}. |
-| <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.publicKey">PublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#public_key IamUserSshKey#public_key}. |
-| <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#username IamUserSshKey#username}. |
-| <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#id IamUserSshKey#id}. |
-| <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#status IamUserSshKey#status}. |
+| <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.encoding">Encoding</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#encoding IamUserSshKey#encoding}. |
+| <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.publicKey">PublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#public_key IamUserSshKey#public_key}. |
+| <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#username IamUserSshKey#username}. |
+| <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#id IamUserSshKey#id}. |
+| <code><a href="#@cdktn/provider-aws.iamUserSshKey.IamUserSshKeyConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#status IamUserSshKey#status}. |
 
 ---
 
@@ -950,7 +950,7 @@ Encoding *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#encoding IamUserSshKey#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#encoding IamUserSshKey#encoding}.
 
 ---
 
@@ -962,7 +962,7 @@ PublicKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#public_key IamUserSshKey#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#public_key IamUserSshKey#public_key}.
 
 ---
 
@@ -974,7 +974,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#username IamUserSshKey#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#username IamUserSshKey#username}.
 
 ---
 
@@ -986,7 +986,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#id IamUserSshKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#id IamUserSshKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1001,7 +1001,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_ssh_key#status IamUserSshKey#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_ssh_key#status IamUserSshKey#status}.
 
 ---
 

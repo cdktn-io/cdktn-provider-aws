@@ -1,3 +1,3 @@
 # `data_aws_uxc_services`
 
-Refer to the Terraform Registry for docs: [`data_aws_uxc_services`](https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/data-sources/uxc_services).
+Refer to the Terraform Registry for docs: [`data_aws_uxc_services`](https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/uxc_services).

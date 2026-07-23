@@ -4,7 +4,7 @@
 
 ### IamUserPolicy <a name="IamUserPolicy" id="@cdktn/provider-aws.iamUserPolicy.IamUserPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy aws_iam_user_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy aws_iam_user_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer"></a>
 
@@ -40,11 +40,11 @@ iamUserPolicy.IamUserPolicy(
 | <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#policy IamUserPolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.user">user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#user IamUserPolicy#user}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#id IamUserPolicy#id}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#name IamUserPolicy#name}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#name_prefix IamUserPolicy#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#policy IamUserPolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.user">user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#user IamUserPolicy#user}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#id IamUserPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#name IamUserPolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#name_prefix IamUserPolicy#name_prefix}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#policy IamUserPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#policy IamUserPolicy#policy}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#user IamUserPolicy#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#user IamUserPolicy#user}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#id IamUserPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#id IamUserPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#name IamUserPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#name IamUserPolicy#name}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#name_prefix IamUserPolicy#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#name_prefix IamUserPolicy#name_prefix}.
 
 ---
 
@@ -665,7 +665,7 @@ The construct id used in the generated config for the IamUserPolicy to import.
 
 The id of the existing IamUserPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1004,11 +1004,11 @@ iamUserPolicy.IamUserPolicyConfig(
 | <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#policy IamUserPolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.user">user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#user IamUserPolicy#user}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#id IamUserPolicy#id}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#name IamUserPolicy#name}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#name_prefix IamUserPolicy#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#policy IamUserPolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.user">user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#user IamUserPolicy#user}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#id IamUserPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#name IamUserPolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#name_prefix IamUserPolicy#name_prefix}. |
 
 ---
 
@@ -1090,7 +1090,7 @@ policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#policy IamUserPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#policy IamUserPolicy#policy}.
 
 ---
 
@@ -1102,7 +1102,7 @@ user: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#user IamUserPolicy#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#user IamUserPolicy#user}.
 
 ---
 
@@ -1114,7 +1114,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#id IamUserPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#id IamUserPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1129,7 +1129,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#name IamUserPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#name IamUserPolicy#name}.
 
 ---
 
@@ -1141,7 +1141,7 @@ name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/iam_user_policy#name_prefix IamUserPolicy#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/iam_user_policy#name_prefix IamUserPolicy#name_prefix}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### SecurityhubAggregatorV2 <a name="SecurityhubAggregatorV2" id="@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2 aws_securityhub_aggregator_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2 aws_securityhub_aggregator_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2.Initializer"></a>
 
@@ -40,7 +40,7 @@ SecurityhubAggregatorV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2.Initializer.parameter.regionLinkingMode">regionLinkingMode</a></code> | <code>java.lang.String</code> | Determines how Regions are linked: ALL_REGIONS, ALL_REGIONS_EXCEPT_SPECIFIED, or SPECIFIED_REGIONS. |
 | <code><a href="#@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2.Initializer.parameter.linkedRegions">linkedRegions</a></code> | <code>java.util.List<java.lang.String></code> | The list of Regions linked to the aggregation Region. |
 | <code><a href="#@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#tags SecurityhubAggregatorV2#tags}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#tags SecurityhubAggregatorV2#tags}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Determines how Regions are linked: ALL_REGIONS, ALL_REGIONS_EXCEPT_SPECIFIED, or SPECIFIED_REGIONS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#region_linking_mode SecurityhubAggregatorV2#region_linking_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#region_linking_mode SecurityhubAggregatorV2#region_linking_mode}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of Regions linked to the aggregation Region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#linked_regions SecurityhubAggregatorV2#linked_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#linked_regions SecurityhubAggregatorV2#linked_regions}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#region SecurityhubAggregatorV2#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#region SecurityhubAggregatorV2#region}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#tags SecurityhubAggregatorV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#tags SecurityhubAggregatorV2#tags}.
 
 ---
 
@@ -608,7 +608,7 @@ The construct id used in the generated config for the SecurityhubAggregatorV2 to
 
 The id of the existing SecurityhubAggregatorV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -960,7 +960,7 @@ SecurityhubAggregatorV2Config.builder()
 | <code><a href="#@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2Config.property.regionLinkingMode">regionLinkingMode</a></code> | <code>java.lang.String</code> | Determines how Regions are linked: ALL_REGIONS, ALL_REGIONS_EXCEPT_SPECIFIED, or SPECIFIED_REGIONS. |
 | <code><a href="#@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2Config.property.linkedRegions">linkedRegions</a></code> | <code>java.util.List<java.lang.String></code> | The list of Regions linked to the aggregation Region. |
 | <code><a href="#@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2Config.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#tags SecurityhubAggregatorV2#tags}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAggregatorV2.SecurityhubAggregatorV2Config.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#tags SecurityhubAggregatorV2#tags}. |
 
 ---
 
@@ -1044,7 +1044,7 @@ public java.lang.String getRegionLinkingMode();
 
 Determines how Regions are linked: ALL_REGIONS, ALL_REGIONS_EXCEPT_SPECIFIED, or SPECIFIED_REGIONS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#region_linking_mode SecurityhubAggregatorV2#region_linking_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#region_linking_mode SecurityhubAggregatorV2#region_linking_mode}
 
 ---
 
@@ -1058,7 +1058,7 @@ public java.util.List<java.lang.String> getLinkedRegions();
 
 The list of Regions linked to the aggregation Region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#linked_regions SecurityhubAggregatorV2#linked_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#linked_regions SecurityhubAggregatorV2#linked_regions}
 
 ---
 
@@ -1072,7 +1072,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#region SecurityhubAggregatorV2#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#region SecurityhubAggregatorV2#region}
 
 ---
 
@@ -1084,7 +1084,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/securityhub_aggregator_v2#tags SecurityhubAggregatorV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/securityhub_aggregator_v2#tags SecurityhubAggregatorV2#tags}.
 
 ---
 

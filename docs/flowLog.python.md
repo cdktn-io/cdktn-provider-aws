@@ -4,7 +4,7 @@
 
 ### FlowLog <a name="FlowLog" id="@cdktn/provider-aws.flowLog.FlowLog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log aws_flow_log}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log aws_flow_log}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.flowLog.FlowLog.Initializer"></a>
 
@@ -33,6 +33,7 @@ flowLog.FlowLog(
   region: str = None,
   regional_nat_gateway_id: str = None,
   subnet_id: str = None,
+  tag_field_specification: IResolvable | typing.List[FlowLogTagFieldSpecification] = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   traffic_type: str = None,
@@ -53,24 +54,25 @@ flowLog.FlowLog(
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.deliverCrossAccountRole">deliver_cross_account_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.deliverCrossAccountRole">deliver_cross_account_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}. |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.destinationOptions">destination_options</a></code> | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | destination_options block. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.eniId">eni_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#eni_id FlowLog#eni_id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.iamRoleArn">iam_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#id FlowLog#id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.logDestination">log_destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_destination FlowLog#log_destination}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.logDestinationType">log_destination_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.logFormat">log_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_format FlowLog#log_format}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.maxAggregationInterval">max_aggregation_interval</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.eniId">eni_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#eni_id FlowLog#eni_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.iamRoleArn">iam_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#id FlowLog#id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.logDestination">log_destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_destination FlowLog#log_destination}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.logDestinationType">log_destination_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.logFormat">log_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_format FlowLog#log_format}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.maxAggregationInterval">max_aggregation_interval</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}. |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.regionalNatGatewayId">regional_nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#tags FlowLog#tags}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#tags_all FlowLog#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.trafficType">traffic_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.transitGatewayAttachmentId">transit_gateway_attachment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.transitGatewayId">transit_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.regionalNatGatewayId">regional_nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.tagFieldSpecification">tag_field_specification</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a>]</code> | tag_field_specification block. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tags FlowLog#tags}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tags_all FlowLog#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.trafficType">traffic_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.transitGatewayAttachmentId">transit_gateway_attachment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.transitGatewayId">transit_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}. |
 
 ---
 
@@ -138,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}.
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 destination_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#destination_options FlowLog#destination_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#destination_options FlowLog#destination_options}
 
 ---
 
@@ -156,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#eni_id FlowLog#eni_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#eni_id FlowLog#eni_id}.
 
 ---
 
@@ -164,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}.
 
 ---
 
@@ -172,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#id FlowLog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#id FlowLog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_destination FlowLog#log_destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_destination FlowLog#log_destination}.
 
 ---
 
@@ -191,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}.
 
 ---
 
@@ -199,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_format FlowLog#log_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_format FlowLog#log_format}.
 
 ---
 
@@ -207,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}.
 
 ---
 
@@ -217,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#region FlowLog#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#region FlowLog#region}
 
 ---
 
@@ -225,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}.
 
 ---
 
@@ -233,7 +235,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}.
+
+---
+
+##### `tag_field_specification`<sup>Optional</sup> <a name="tag_field_specification" id="@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.tagFieldSpecification"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a>]
+
+tag_field_specification block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tag_field_specification FlowLog#tag_field_specification}
 
 ---
 
@@ -241,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#tags FlowLog#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tags FlowLog#tags}.
 
 ---
 
@@ -249,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#tags_all FlowLog#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tags_all FlowLog#tags_all}.
 
 ---
 
@@ -257,7 +269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}.
 
 ---
 
@@ -265,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}.
 
 ---
 
@@ -273,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}.
 
 ---
 
@@ -281,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}.
 
 ---
 
@@ -314,6 +326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.putDestinationOptions">put_destination_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.putTagFieldSpecification">put_tag_field_specification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetDeliverCrossAccountRole">reset_deliver_cross_account_role</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetDestinationOptions">reset_destination_options</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetEniId">reset_eni_id</a></code> | *No description.* |
@@ -326,6 +339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetRegionalNatGatewayId">reset_regional_nat_gateway_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetSubnetId">reset_subnet_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetTagFieldSpecification">reset_tag_field_specification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetTrafficType">reset_traffic_type</a></code> | *No description.* |
@@ -697,7 +711,7 @@ def put_destination_options(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#file_format FlowLog#file_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#file_format FlowLog#file_format}.
 
 ---
 
@@ -705,7 +719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}.
 
 ---
 
@@ -713,7 +727,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}.
+
+---
+
+##### `put_tag_field_specification` <a name="put_tag_field_specification" id="@cdktn/provider-aws.flowLog.FlowLog.putTagFieldSpecification"></a>
+
+```python
+def put_tag_field_specification(
+  value: IResolvable | typing.List[FlowLogTagFieldSpecification]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.flowLog.FlowLog.putTagFieldSpecification.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a>]
 
 ---
 
@@ -787,6 +815,12 @@ def reset_regional_nat_gateway_id() -> None
 
 ```python
 def reset_subnet_id() -> None
+```
+
+##### `reset_tag_field_specification` <a name="reset_tag_field_specification" id="@cdktn/provider-aws.flowLog.FlowLog.resetTagFieldSpecification"></a>
+
+```python
+def reset_tag_field_specification() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.flowLog.FlowLog.resetTags"></a>
@@ -939,7 +973,7 @@ The construct id used in the generated config for the FlowLog to import.
 
 The id of the existing FlowLog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -971,6 +1005,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.destinationOptions">destination_options</a></code> | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference">FlowLogDestinationOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.tagFieldSpecification">tag_field_specification</a></code> | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList">FlowLogTagFieldSpecificationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRoleInput">deliver_cross_account_role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.destinationOptionsInput">destination_options_input</a></code> | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.eniIdInput">eni_id_input</a></code> | <code>str</code> | *No description.* |
@@ -983,6 +1018,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.regionalNatGatewayIdInput">regional_nat_gateway_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.subnetIdInput">subnet_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.tagFieldSpecificationInput">tag_field_specification_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.trafficTypeInput">traffic_type_input</a></code> | <code>str</code> | *No description.* |
@@ -1171,6 +1207,16 @@ destination_options: FlowLogDestinationOptionsOutputReference
 
 ---
 
+##### `tag_field_specification`<sup>Required</sup> <a name="tag_field_specification" id="@cdktn/provider-aws.flowLog.FlowLog.property.tagFieldSpecification"></a>
+
+```python
+tag_field_specification: FlowLogTagFieldSpecificationList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList">FlowLogTagFieldSpecificationList</a>
+
+---
+
 ##### `deliver_cross_account_role_input`<sup>Optional</sup> <a name="deliver_cross_account_role_input" id="@cdktn/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRoleInput"></a>
 
 ```python
@@ -1288,6 +1334,16 @@ subnet_id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `tag_field_specification_input`<sup>Optional</sup> <a name="tag_field_specification_input" id="@cdktn/provider-aws.flowLog.FlowLog.property.tagFieldSpecificationInput"></a>
+
+```python
+tag_field_specification_input: IResolvable | typing.List[FlowLogTagFieldSpecification]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a>]
 
 ---
 
@@ -1568,6 +1624,7 @@ flowLog.FlowLogConfig(
   region: str = None,
   regional_nat_gateway_id: str = None,
   subnet_id: str = None,
+  tag_field_specification: IResolvable | typing.List[FlowLogTagFieldSpecification] = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   traffic_type: str = None,
@@ -1588,24 +1645,25 @@ flowLog.FlowLogConfig(
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.deliverCrossAccountRole">deliver_cross_account_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.deliverCrossAccountRole">deliver_cross_account_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}. |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.destinationOptions">destination_options</a></code> | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | destination_options block. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.eniId">eni_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#eni_id FlowLog#eni_id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.iamRoleArn">iam_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#id FlowLog#id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.logDestination">log_destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_destination FlowLog#log_destination}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.logDestinationType">log_destination_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.logFormat">log_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_format FlowLog#log_format}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.maxAggregationInterval">max_aggregation_interval</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.eniId">eni_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#eni_id FlowLog#eni_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.iamRoleArn">iam_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#id FlowLog#id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.logDestination">log_destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_destination FlowLog#log_destination}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.logDestinationType">log_destination_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.logFormat">log_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_format FlowLog#log_format}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.maxAggregationInterval">max_aggregation_interval</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}. |
 | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.regionalNatGatewayId">regional_nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#tags FlowLog#tags}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#tags_all FlowLog#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.trafficType">traffic_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.transitGatewayAttachmentId">transit_gateway_attachment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.transitGatewayId">transit_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.regionalNatGatewayId">regional_nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.tagFieldSpecification">tag_field_specification</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a>]</code> | tag_field_specification block. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tags FlowLog#tags}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tags_all FlowLog#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.trafficType">traffic_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.transitGatewayAttachmentId">transit_gateway_attachment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.transitGatewayId">transit_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}. |
 
 ---
 
@@ -1687,7 +1745,7 @@ deliver_cross_account_role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}.
 
 ---
 
@@ -1701,7 +1759,7 @@ destination_options: FlowLogDestinationOptions
 
 destination_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#destination_options FlowLog#destination_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#destination_options FlowLog#destination_options}
 
 ---
 
@@ -1713,7 +1771,7 @@ eni_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#eni_id FlowLog#eni_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#eni_id FlowLog#eni_id}.
 
 ---
 
@@ -1725,7 +1783,7 @@ iam_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}.
 
 ---
 
@@ -1737,7 +1795,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#id FlowLog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#id FlowLog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1752,7 +1810,7 @@ log_destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_destination FlowLog#log_destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_destination FlowLog#log_destination}.
 
 ---
 
@@ -1764,7 +1822,7 @@ log_destination_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}.
 
 ---
 
@@ -1776,7 +1834,7 @@ log_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#log_format FlowLog#log_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#log_format FlowLog#log_format}.
 
 ---
 
@@ -1788,7 +1846,7 @@ max_aggregation_interval: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}.
 
 ---
 
@@ -1802,7 +1860,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#region FlowLog#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#region FlowLog#region}
 
 ---
 
@@ -1814,7 +1872,7 @@ regional_nat_gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}.
 
 ---
 
@@ -1826,7 +1884,21 @@ subnet_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}.
+
+---
+
+##### `tag_field_specification`<sup>Optional</sup> <a name="tag_field_specification" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.tagFieldSpecification"></a>
+
+```python
+tag_field_specification: IResolvable | typing.List[FlowLogTagFieldSpecification]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a>]
+
+tag_field_specification block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tag_field_specification FlowLog#tag_field_specification}
 
 ---
 
@@ -1838,7 +1910,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#tags FlowLog#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tags FlowLog#tags}.
 
 ---
 
@@ -1850,7 +1922,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#tags_all FlowLog#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tags_all FlowLog#tags_all}.
 
 ---
 
@@ -1862,7 +1934,7 @@ traffic_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}.
 
 ---
 
@@ -1874,7 +1946,7 @@ transit_gateway_attachment_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}.
 
 ---
 
@@ -1886,7 +1958,7 @@ transit_gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}.
 
 ---
 
@@ -1898,7 +1970,7 @@ vpc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}.
 
 ---
 
@@ -1920,9 +1992,9 @@ flowLog.FlowLogDestinationOptions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.fileFormat">file_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#file_format FlowLog#file_format}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.hiveCompatiblePartitions">hive_compatible_partitions</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}. |
-| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.perHourPartition">per_hour_partition</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.fileFormat">file_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#file_format FlowLog#file_format}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.hiveCompatiblePartitions">hive_compatible_partitions</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.perHourPartition">per_hour_partition</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}. |
 
 ---
 
@@ -1934,7 +2006,7 @@ file_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#file_format FlowLog#file_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#file_format FlowLog#file_format}.
 
 ---
 
@@ -1946,7 +2018,7 @@ hive_compatible_partitions: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}.
 
 ---
 
@@ -1958,7 +2030,53 @@ per_hour_partition: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}.
+
+---
+
+### FlowLogTagFieldSpecification <a name="FlowLogTagFieldSpecification" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification.Initializer"></a>
+
+```python
+from cdktn_provider_aws import flow_log
+
+flowLog.FlowLogTagFieldSpecification(
+  resource_type: str,
+  tag_keys: typing.List[str]
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification.property.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#resource_type FlowLog#resource_type}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification.property.tagKeys">tag_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tag_keys FlowLog#tag_keys}. |
+
+---
+
+##### `resource_type`<sup>Required</sup> <a name="resource_type" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification.property.resourceType"></a>
+
+```python
+resource_type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#resource_type FlowLog#resource_type}.
+
+---
+
+##### `tag_keys`<sup>Required</sup> <a name="tag_keys" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification.property.tagKeys"></a>
+
+```python
+tag_keys: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/flow_log#tag_keys FlowLog#tag_keys}.
 
 ---
 
@@ -2321,6 +2439,514 @@ internal_value: FlowLogDestinationOptions
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a>
+
+---
+
+
+### FlowLogTagFieldSpecificationList <a name="FlowLogTagFieldSpecificationList" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.Initializer"></a>
+
+```python
+from cdktn_provider_aws import flow_log
+
+flowLog.FlowLogTagFieldSpecificationList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> FlowLogTagFieldSpecificationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[FlowLogTagFieldSpecification]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a>]
+
+---
+
+
+### FlowLogTagFieldSpecificationOutputReference <a name="FlowLogTagFieldSpecificationOutputReference" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import flow_log
+
+flowLog.FlowLogTagFieldSpecificationOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.resourceTypeInput">resource_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.tagKeysInput">tag_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.resourceType">resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.tagKeys">tag_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_type_input`<sup>Optional</sup> <a name="resource_type_input" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.resourceTypeInput"></a>
+
+```python
+resource_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `tag_keys_input`<sup>Optional</sup> <a name="tag_keys_input" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.tagKeysInput"></a>
+
+```python
+tag_keys_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `resource_type`<sup>Required</sup> <a name="resource_type" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.resourceType"></a>
+
+```python
+resource_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `tag_keys`<sup>Required</sup> <a name="tag_keys" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.tagKeys"></a>
+
+```python
+tag_keys: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecificationOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FlowLogTagFieldSpecification
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.flowLog.FlowLogTagFieldSpecification">FlowLogTagFieldSpecification</a>
 
 ---
 

@@ -1943,6 +1943,7 @@ Object.defineProperty(exports, 'dataAwsElasticacheCluster', { get: function () {
 Object.defineProperty(exports, 'dataAwsElasticacheReplicationGroup', { get: function () { return require('./data-aws-elasticache-replication-group'); } });
 Object.defineProperty(exports, 'dataAwsElasticacheReservedCacheNodeOffering', { get: function () { return require('./data-aws-elasticache-reserved-cache-node-offering'); } });
 Object.defineProperty(exports, 'dataAwsElasticacheServerlessCache', { get: function () { return require('./data-aws-elasticache-serverless-cache'); } });
+Object.defineProperty(exports, 'dataAwsElasticacheServiceUpdateActions', { get: function () { return require('./data-aws-elasticache-service-update-actions'); } });
 Object.defineProperty(exports, 'dataAwsElasticacheServiceUpdates', { get: function () { return require('./data-aws-elasticache-service-updates'); } });
 Object.defineProperty(exports, 'dataAwsElasticacheSubnetGroup', { get: function () { return require('./data-aws-elasticache-subnet-group'); } });
 Object.defineProperty(exports, 'dataAwsElasticacheUser', { get: function () { return require('./data-aws-elasticache-user'); } });
@@ -2223,6 +2224,7 @@ Object.defineProperty(exports, 'dataAwsS3BucketObjectLockConfiguration', { get: 
 Object.defineProperty(exports, 'dataAwsS3BucketObjects', { get: function () { return require('./data-aws-s3-bucket-objects'); } });
 Object.defineProperty(exports, 'dataAwsS3BucketPolicy', { get: function () { return require('./data-aws-s3-bucket-policy'); } });
 Object.defineProperty(exports, 'dataAwsS3BucketReplicationConfiguration', { get: function () { return require('./data-aws-s3-bucket-replication-configuration'); } });
+Object.defineProperty(exports, 'dataAwsS3Buckets', { get: function () { return require('./data-aws-s3-buckets'); } });
 Object.defineProperty(exports, 'dataAwsS3DirectoryBuckets', { get: function () { return require('./data-aws-s3-directory-buckets'); } });
 Object.defineProperty(exports, 'dataAwsS3Object', { get: function () { return require('./data-aws-s3-object'); } });
 Object.defineProperty(exports, 'dataAwsS3Objects', { get: function () { return require('./data-aws-s3-objects'); } });

@@ -4,7 +4,7 @@
 
 ### CloudfrontAnycastIpList <a name="CloudfrontAnycastIpList" id="@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/cloudfront_anycast_ip_list aws_cloudfront_anycast_ip_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/cloudfront_anycast_ip_list aws_cloudfront_anycast_ip_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the CloudfrontAnycastIpList to
 
 The id of the existing CloudfrontAnycastIpList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/cloudfront_anycast_ip_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/cloudfront_anycast_ip_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,9 +875,9 @@ const cloudfrontAnycastIpListConfig: cloudfrontAnycastIpList.CloudfrontAnycastIp
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.ipCount">ipCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.ipCount">ipCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListTimeouts">CloudfrontAnycastIpListTimeouts</a></code> | timeouts block. |
 
 ---
@@ -960,7 +960,7 @@ public readonly ipCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}.
 
 ---
 
@@ -972,7 +972,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}.
 
 ---
 
@@ -984,7 +984,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}.
 
 ---
 
@@ -998,7 +998,7 @@ public readonly timeouts: CloudfrontAnycastIpListTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/cloudfront_anycast_ip_list#timeouts CloudfrontAnycastIpList#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/cloudfront_anycast_ip_list#timeouts CloudfrontAnycastIpList#timeouts}
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/cloudfront_anycast_ip_list#create CloudfrontAnycastIpList#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/cloudfront_anycast_ip_list#create CloudfrontAnycastIpList#create}
 
 ---
 

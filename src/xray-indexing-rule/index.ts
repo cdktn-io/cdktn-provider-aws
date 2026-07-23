@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/xray_indexing_rule
+// https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/xray_indexing_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface XrayIndexingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/xray_indexing_rule#name XrayIndexingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/xray_indexing_rule#name XrayIndexingRule#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/xray_indexing_rule#region XrayIndexingRule#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/xray_indexing_rule#region XrayIndexingRule#region}
   */
   readonly region?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/xray_indexing_rule#rule XrayIndexingRule#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/xray_indexing_rule#rule XrayIndexingRule#rule}
   */
   readonly rule?: XrayIndexingRuleRule[] | cdktn.IResolvable;
 }
 export interface XrayIndexingRuleRuleProbabilistic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/xray_indexing_rule#desired_sampling_percentage XrayIndexingRule#desired_sampling_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/xray_indexing_rule#desired_sampling_percentage XrayIndexingRule#desired_sampling_percentage}
   */
   readonly desiredSamplingPercentage: number;
 }
@@ -151,7 +151,7 @@ export interface XrayIndexingRuleRule {
   /**
   * probabilistic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/xray_indexing_rule#probabilistic XrayIndexingRule#probabilistic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/xray_indexing_rule#probabilistic XrayIndexingRule#probabilistic}
   */
   readonly probabilistic?: XrayIndexingRuleRuleProbabilistic[] | cdktn.IResolvable;
 }
@@ -267,7 +267,7 @@ export class XrayIndexingRuleRuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/xray_indexing_rule aws_xray_indexing_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/xray_indexing_rule aws_xray_indexing_rule}
 */
 export class XrayIndexingRule extends cdktn.TerraformResource {
 
@@ -283,7 +283,7 @@ export class XrayIndexingRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a XrayIndexingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the XrayIndexingRule to import
-  * @param importFromId The id of the existing XrayIndexingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/xray_indexing_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing XrayIndexingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/xray_indexing_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the XrayIndexingRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -295,7 +295,7 @@ export class XrayIndexingRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.55.0/docs/resources/xray_indexing_rule aws_xray_indexing_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/xray_indexing_rule aws_xray_indexing_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -306,7 +306,7 @@ export class XrayIndexingRule extends cdktn.TerraformResource {
       terraformResourceType: 'aws_xray_indexing_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.55.0',
+        providerVersion: '6.56.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
