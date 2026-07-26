@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.NewSagemakerFlowDefinition(scope Construct, id *string, config SagemakerFlowDefinitionConfig) SagemakerFlowDefinition
 ```
@@ -494,7 +494,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.SagemakerFlowDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.SagemakerFlowDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ sagemakerflowdefinition.SagemakerFlowDefinition_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.SagemakerFlowDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ sagemakerflowdefinition.SagemakerFlowDefinition_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.SagemakerFlowDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1014,7 +1014,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 &sagemakerflowdefinition.SagemakerFlowDefinitionConfig {
 	Connection: interface{},
@@ -1025,11 +1025,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinitio
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	FlowDefinitionName: *string,
-	HumanLoopConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfig,
-	OutputConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerFlowDefinition.SagemakerFlowDefinitionOutputConfig,
+	HumanLoopConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfig,
+	OutputConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerFlowDefinition.SagemakerFlowDefinitionOutputConfig,
 	RoleArn: *string,
-	HumanLoopActivationConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfig,
-	HumanLoopRequestSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopRequestSource,
+	HumanLoopActivationConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfig,
+	HumanLoopRequestSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopRequestSource,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
@@ -1269,10 +1269,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 &sagemakerflowdefinition.SagemakerFlowDefinitionHumanLoopActivationConfig {
-	HumanLoopActivationConditionsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig,
+	HumanLoopActivationConditionsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig,
 }
 ```
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 &sagemakerflowdefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig {
 	HumanLoopActivationConditions: *string,
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 &sagemakerflowdefinition.SagemakerFlowDefinitionHumanLoopConfig {
 	HumanTaskUiArn: *string,
@@ -1343,7 +1343,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinitio
 	TaskDescription: *string,
 	TaskTitle: *string,
 	WorkteamArn: *string,
-	PublicWorkforceTaskPrice: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice,
+	PublicWorkforceTaskPrice: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice,
 	TaskAvailabilityLifetimeInSeconds: *f64,
 	TaskKeywords: *[]*string,
 	TaskTimeLimitInSeconds: *f64,
@@ -1481,10 +1481,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 &sagemakerflowdefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice {
-	AmountInUsd: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd,
+	AmountInUsd: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd,
 }
 ```
 
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 &sagemakerflowdefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd {
 	Cents: *f64,
@@ -1575,7 +1575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopRequestSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 &sagemakerflowdefinition.SagemakerFlowDefinitionHumanLoopRequestSource {
 	AwsManagedHumanLoopRequestSource: *string,
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionOutputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 &sagemakerflowdefinition.SagemakerFlowDefinitionOutputConfig {
 	S3OutputPath: *string,
@@ -1655,7 +1655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.NewSagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference
 ```
@@ -1926,7 +1926,7 @@ func InternalValue() SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.NewSagemakerFlowDefinitionHumanLoopActivationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference
 ```
@@ -2217,7 +2217,7 @@ func InternalValue() SagemakerFlowDefinitionHumanLoopActivationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.NewSagemakerFlowDefinitionHumanLoopConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFlowDefinitionHumanLoopConfigOutputReference
 ```
@@ -2705,7 +2705,7 @@ func InternalValue() SagemakerFlowDefinitionHumanLoopConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.NewSagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference
 ```
@@ -3041,7 +3041,7 @@ func InternalValue() SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.NewSagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference
 ```
@@ -3332,7 +3332,7 @@ func InternalValue() SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.NewSagemakerFlowDefinitionHumanLoopRequestSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference
 ```
@@ -3603,7 +3603,7 @@ func InternalValue() SagemakerFlowDefinitionHumanLoopRequestSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionOutputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerflowdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerflowdefinition"
 
 sagemakerflowdefinition.NewSagemakerFlowDefinitionOutputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFlowDefinitionOutputConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dmsReplicationInstance.DmsReplicationInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmsreplicationinstance"
 
 dmsreplicationinstance.NewDmsReplicationInstance(scope Construct, id *string, config DmsReplicationInstanceConfig) DmsReplicationInstance
 ```
@@ -566,7 +566,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dmsReplicationInstance.DmsReplicationInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmsreplicationinstance"
 
 dmsreplicationinstance.DmsReplicationInstance_IsConstruct(x interface{}) *bool
 ```
@@ -598,7 +598,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dmsReplicationInstance.DmsReplicationInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmsreplicationinstance"
 
 dmsreplicationinstance.DmsReplicationInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -612,7 +612,7 @@ dmsreplicationinstance.DmsReplicationInstance_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dmsReplicationInstance.DmsReplicationInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmsreplicationinstance"
 
 dmsreplicationinstance.DmsReplicationInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ dmsreplicationinstance.DmsReplicationInstance_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dmsReplicationInstance.DmsReplicationInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmsreplicationinstance"
 
 dmsreplicationinstance.DmsReplicationInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1372,7 +1372,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dmsReplicationInstance.DmsReplicationInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmsreplicationinstance"
 
 &dmsreplicationinstance.DmsReplicationInstanceConfig {
 	Connection: interface{},
@@ -1392,7 +1392,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance
 	DnsNameServers: *string,
 	EngineVersion: *string,
 	Id: *string,
-	KerberosAuthenticationSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dmsReplicationInstance.DmsReplicationInstanceKerberosAuthenticationSettings,
+	KerberosAuthenticationSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dmsReplicationInstance.DmsReplicationInstanceKerberosAuthenticationSettings,
 	KmsKeyArn: *string,
 	MultiAz: interface{},
 	NetworkType: *string,
@@ -1402,7 +1402,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance
 	ReplicationSubnetGroupId: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dmsReplicationInstance.DmsReplicationInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dmsReplicationInstance.DmsReplicationInstanceTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -1791,7 +1791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dmsReplicationInstance.DmsReplicationInstanceKerberosAuthenticationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmsreplicationinstance"
 
 &dmsreplicationinstance.DmsReplicationInstanceKerberosAuthenticationSettings {
 	KeyCacheSecretIamArn: *string,
@@ -1851,7 +1851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dmsReplicationInstance.DmsReplicationInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmsreplicationinstance"
 
 &dmsreplicationinstance.DmsReplicationInstanceTimeouts {
 	Create: *string,
@@ -1913,7 +1913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dmsReplicationInstance.DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmsreplicationinstance"
 
 dmsreplicationinstance.NewDmsReplicationInstanceKerberosAuthenticationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference
 ```
@@ -2228,7 +2228,7 @@ func InternalValue() DmsReplicationInstanceKerberosAuthenticationSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dmsReplicationInstance.DmsReplicationInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmsreplicationinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmsreplicationinstance"
 
 dmsreplicationinstance.NewDmsReplicationInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsReplicationInstanceTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncType.AppsyncType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsynctype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsynctype"
 
 appsynctype.NewAppsyncType(scope Construct, id *string, config AppsyncTypeConfig) AppsyncType
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appsyncType.AppsyncType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsynctype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsynctype"
 
 appsynctype.AppsyncType_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appsyncType.AppsyncType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsynctype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsynctype"
 
 appsynctype.AppsyncType_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ appsynctype.AppsyncType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appsyncType.AppsyncType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsynctype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsynctype"
 
 appsynctype.AppsyncType_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ appsynctype.AppsyncType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appsyncType.AppsyncType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsynctype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsynctype"
 
 appsynctype.AppsyncType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncType.AppsyncTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsynctype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsynctype"
 
 &appsynctype.AppsyncTypeConfig {
 	Connection: interface{},

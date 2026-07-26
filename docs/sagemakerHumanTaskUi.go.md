@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerhumantaskui"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerhumantaskui"
 
 sagemakerhumantaskui.NewSagemakerHumanTaskUi(scope Construct, id *string, config SagemakerHumanTaskUiConfig) SagemakerHumanTaskUi
 ```
@@ -441,7 +441,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerhumantaskui"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerhumantaskui"
 
 sagemakerhumantaskui.SagemakerHumanTaskUi_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerhumantaskui"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerhumantaskui"
 
 sagemakerhumantaskui.SagemakerHumanTaskUi_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ sagemakerhumantaskui.SagemakerHumanTaskUi_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerhumantaskui"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerhumantaskui"
 
 sagemakerhumantaskui.SagemakerHumanTaskUi_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ sagemakerhumantaskui.SagemakerHumanTaskUi_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerhumantaskui"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerhumantaskui"
 
 sagemakerhumantaskui.SagemakerHumanTaskUi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerhumantaskui"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerhumantaskui"
 
 &sagemakerhumantaskui.SagemakerHumanTaskUiConfig {
 	Connection: interface{},
@@ -884,7 +884,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerhumantaskui"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	HumanTaskUiName: *string,
-	UiTemplate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplate,
+	UiTemplate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplate,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerhumantaskui"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerhumantaskui"
 
 &sagemakerhumantaskui.SagemakerHumanTaskUiUiTemplate {
 	Content: *string,
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerhumantaskui"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerhumantaskui"
 
 sagemakerhumantaskui.NewSagemakerHumanTaskUiUiTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerHumanTaskUiUiTemplateOutputReference
 ```

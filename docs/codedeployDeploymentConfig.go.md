@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfig(scope Construct, id *string, config CodedeployDeploymentConfigConfig) CodedeployDeploymentConfig
 ```
@@ -481,7 +481,7 @@ func ResetZonalConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.CodedeployDeploymentConfig_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.CodedeployDeploymentConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ codedeploydeploymentconfig.CodedeployDeploymentConfig_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.CodedeployDeploymentConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ codedeploydeploymentconfig.CodedeployDeploymentConfig_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.CodedeployDeploymentConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigConfig {
 	Connection: interface{},
@@ -959,10 +959,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentco
 	DeploymentConfigName: *string,
 	ComputePlatform: *string,
 	Id: *string,
-	MinimumHealthyHosts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHosts,
+	MinimumHealthyHosts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHosts,
 	Region: *string,
-	TrafficRoutingConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfig,
-	ZonalConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codedeployDeploymentConfig.CodedeployDeploymentConfigZonalConfig,
+	TrafficRoutingConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfig,
+	ZonalConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.codedeployDeploymentConfig.CodedeployDeploymentConfigZonalConfig,
 }
 ```
 
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigMinimumHealthyHosts {
 	Type: *string,
@@ -1203,11 +1203,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigTrafficRoutingConfig {
-	TimeBasedCanary: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary,
-	TimeBasedLinear: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear,
+	TimeBasedCanary: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary,
+	TimeBasedLinear: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear,
 	Type: *string,
 }
 ```
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary {
 	Interval: *f64,
@@ -1313,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear {
 	Interval: *f64,
@@ -1359,11 +1359,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigZonalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigZonalConfig {
 	FirstZoneMonitorDurationInSeconds: *f64,
-	MinimumHealthyHostsPerZone: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codedeployDeploymentConfig.CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone,
+	MinimumHealthyHostsPerZone: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.codedeployDeploymentConfig.CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone,
 	MonitorDurationInSeconds: *f64,
 }
 ```
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone {
 	Type: *string,
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfigMinimumHealthyHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentConfigMinimumHealthyHostsOutputReference
 ```
@@ -1776,7 +1776,7 @@ func InternalValue() CodedeployDeploymentConfigMinimumHealthyHosts
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfigTrafficRoutingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentConfigTrafficRoutingConfigOutputReference
 ```
@@ -2138,7 +2138,7 @@ func InternalValue() CodedeployDeploymentConfigTrafficRoutingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference
 ```
@@ -2445,7 +2445,7 @@ func InternalValue() CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCana
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference
 ```
@@ -2752,7 +2752,7 @@ func InternalValue() CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLine
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneOutputReference
 ```
@@ -3059,7 +3059,7 @@ func InternalValue() CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPer
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigZonalConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codedeploydeploymentconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfigZonalConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentConfigZonalConfigOutputReference
 ```

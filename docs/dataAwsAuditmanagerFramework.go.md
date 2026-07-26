@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 dataawsauditmanagerframework.NewDataAwsAuditmanagerFramework(scope Construct, id *string, config DataAwsAuditmanagerFrameworkConfig) DataAwsAuditmanagerFramework
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 dataawsauditmanagerframework.DataAwsAuditmanagerFramework_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 dataawsauditmanagerframework.DataAwsAuditmanagerFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsauditmanagerframework.DataAwsAuditmanagerFramework_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 dataawsauditmanagerframework.DataAwsAuditmanagerFramework_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsauditmanagerframework.DataAwsAuditmanagerFramework_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 dataawsauditmanagerframework.DataAwsAuditmanagerFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 &dataawsauditmanagerframework.DataAwsAuditmanagerFrameworkConfig {
 	Connection: interface{},
@@ -850,7 +850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkControlSets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 &dataawsauditmanagerframework.DataAwsAuditmanagerFrameworkControlSets {
 
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerfra
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkControlSetsControls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 &dataawsauditmanagerframework.DataAwsAuditmanagerFrameworkControlSetsControls {
 
@@ -878,7 +878,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerfra
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkControlSetsControlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 dataawsauditmanagerframework.NewDataAwsAuditmanagerFrameworkControlSetsControlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAuditmanagerFrameworkControlSetsControlsList
 ```
@@ -1027,7 +1027,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 dataawsauditmanagerframework.NewDataAwsAuditmanagerFrameworkControlSetsControlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference
 ```
@@ -1305,7 +1305,7 @@ func InternalValue() DataAwsAuditmanagerFrameworkControlSetsControls
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkControlSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 dataawsauditmanagerframework.NewDataAwsAuditmanagerFrameworkControlSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAuditmanagerFrameworkControlSetsList
 ```
@@ -1454,7 +1454,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkControlSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsauditmanagerframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsauditmanagerframework"
 
 dataawsauditmanagerframework.NewDataAwsAuditmanagerFrameworkControlSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAuditmanagerFrameworkControlSetsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2Hosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2hosts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2hosts"
 
 dataawsec2hosts.NewDataAwsEc2Hosts(scope Construct, id *string, config DataAwsEc2HostsConfig) DataAwsEc2Hosts
 ```
@@ -339,7 +339,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2Hosts.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2hosts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2hosts"
 
 dataawsec2hosts.DataAwsEc2Hosts_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2Hosts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2hosts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2hosts"
 
 dataawsec2hosts.DataAwsEc2Hosts_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsec2hosts.DataAwsEc2Hosts_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2Hosts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2hosts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2hosts"
 
 dataawsec2hosts.DataAwsEc2Hosts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataawsec2hosts.DataAwsEc2Hosts_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2Hosts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2hosts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2hosts"
 
 dataawsec2hosts.DataAwsEc2Hosts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2hosts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2hosts"
 
 &dataawsec2hosts.DataAwsEc2HostsConfig {
 	Connection: interface{},
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2hosts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2hosts"
 
 &dataawsec2hosts.DataAwsEc2HostsFilter {
 	Name: *string,
@@ -915,7 +915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2hosts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2hosts"
 
 dataawsec2hosts.NewDataAwsEc2HostsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2HostsFilterList
 ```
@@ -1075,7 +1075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2hosts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2hosts"
 
 dataawsec2hosts.NewDataAwsEc2HostsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2HostsFilterOutputReference
 ```

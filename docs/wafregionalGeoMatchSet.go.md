@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalgeomatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalgeomatchset"
 
 wafregionalgeomatchset.NewWafregionalGeoMatchSet(scope Construct, id *string, config WafregionalGeoMatchSetConfig) WafregionalGeoMatchSet
 ```
@@ -434,7 +434,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalgeomatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalgeomatchset"
 
 wafregionalgeomatchset.WafregionalGeoMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalgeomatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalgeomatchset"
 
 wafregionalgeomatchset.WafregionalGeoMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ wafregionalgeomatchset.WafregionalGeoMatchSet_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalgeomatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalgeomatchset"
 
 wafregionalgeomatchset.WafregionalGeoMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ wafregionalgeomatchset.WafregionalGeoMatchSet_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalgeomatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalgeomatchset"
 
 wafregionalgeomatchset.WafregionalGeoMatchSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalgeomatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalgeomatchset"
 
 &wafregionalgeomatchset.WafregionalGeoMatchSetConfig {
 	Connection: interface{},
@@ -976,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSetGeoMatchConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalgeomatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalgeomatchset"
 
 &wafregionalgeomatchset.WafregionalGeoMatchSetGeoMatchConstraint {
 	Type: *string,
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSetGeoMatchConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalgeomatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalgeomatchset"
 
 wafregionalgeomatchset.NewWafregionalGeoMatchSetGeoMatchConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalGeoMatchSetGeoMatchConstraintList
 ```
@@ -1184,7 +1184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSetGeoMatchConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalgeomatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalgeomatchset"
 
 wafregionalgeomatchset.NewWafregionalGeoMatchSetGeoMatchConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalGeoMatchSetGeoMatchConstraintOutputReference
 ```

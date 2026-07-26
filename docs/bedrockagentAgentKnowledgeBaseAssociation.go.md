@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.NewBedrockagentAgentKnowledgeBaseAssociation(scope Construct, id *string, config BedrockagentAgentKnowledgeBaseAssociationConfig) BedrockagentAgentKnowledgeBaseAssociation
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentknowledgebaseassociation"
 
 &bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociationConfig {
 	Connection: interface{},
@@ -904,7 +904,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentknowl
 	KnowledgeBaseState: *string,
 	AgentVersion: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociationTimeouts,
 }
 ```
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentknowledgebaseassociation"
 
 &bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociationTimeouts {
 	Create: *string,
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.NewBedrockagentAgentKnowledgeBaseAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentAgentKnowledgeBaseAssociationTimeoutsOutputReference
 ```

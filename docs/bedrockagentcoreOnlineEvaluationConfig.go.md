@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfig(scope Construct, id *string, config BedrockagentcoreOnlineEvaluationConfigConfig) BedrockagentcoreOnlineEvaluationConfig
 ```
@@ -508,7 +508,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfig_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfig_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfig_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1083,7 +1083,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigConfig {
 	Connection: interface{},
@@ -1103,7 +1103,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonline
 	Region: *string,
 	Rule: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigTimeouts,
 }
 ```
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigDataSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigDataSourceConfig {
 	CloudwatchLogs: interface{},
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigDataSourceConfigCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigDataSourceConfigCloudwatchLogs {
 	LogGroupNames: *[]*string,
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigEvaluator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigEvaluator {
 	EvaluatorId: *string,
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigOutputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigOutputConfig {
 
@@ -1474,7 +1474,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonline
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigOutputConfigCloudwatchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigOutputConfigCloudwatchConfig {
 
@@ -1487,7 +1487,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonline
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigRule {
 	Filter: interface{},
@@ -1553,7 +1553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigRuleFilter {
 	Key: *string,
@@ -1615,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleFilterValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigRuleFilterValue {
 	BooleanValue: interface{},
@@ -1675,7 +1675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleSamplingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigRuleSamplingConfig {
 	SamplingPercentage: *f64,
@@ -1707,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleSessionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigRuleSessionConfig {
 	SessionTimeoutMinutes: *f64,
@@ -1739,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 &bedrockagentcoreonlineevaluationconfig.BedrockagentcoreOnlineEvaluationConfigTimeouts {
 	Create: *string,
@@ -1807,7 +1807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigDataSourceConfigCloudwatchLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigDataSourceConfigCloudwatchLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreOnlineEvaluationConfigDataSourceConfigCloudwatchLogsList
 ```
@@ -1967,7 +1967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigDataSourceConfigCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigDataSourceConfigCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreOnlineEvaluationConfigDataSourceConfigCloudwatchLogsOutputReference
 ```
@@ -2278,7 +2278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigDataSourceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigDataSourceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreOnlineEvaluationConfigDataSourceConfigList
 ```
@@ -2438,7 +2438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigDataSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigDataSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreOnlineEvaluationConfigDataSourceConfigOutputReference
 ```
@@ -2747,7 +2747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigEvaluatorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigEvaluatorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreOnlineEvaluationConfigEvaluatorList
 ```
@@ -2907,7 +2907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigEvaluatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigEvaluatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreOnlineEvaluationConfigEvaluatorOutputReference
 ```
@@ -3196,7 +3196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigOutputConfigCloudwatchConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigOutputConfigCloudwatchConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreOnlineEvaluationConfigOutputConfigCloudwatchConfigList
 ```
@@ -3345,7 +3345,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigOutputConfigCloudwatchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigOutputConfigCloudwatchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreOnlineEvaluationConfigOutputConfigCloudwatchConfigOutputReference
 ```
@@ -3623,7 +3623,7 @@ func InternalValue() BedrockagentcoreOnlineEvaluationConfigOutputConfigCloudwatc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigOutputConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigOutputConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreOnlineEvaluationConfigOutputConfigList
 ```
@@ -3772,7 +3772,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigOutputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigOutputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreOnlineEvaluationConfigOutputConfigOutputReference
 ```
@@ -4050,7 +4050,7 @@ func InternalValue() BedrockagentcoreOnlineEvaluationConfigOutputConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigRuleFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreOnlineEvaluationConfigRuleFilterList
 ```
@@ -4210,7 +4210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreOnlineEvaluationConfigRuleFilterOutputReference
 ```
@@ -4563,7 +4563,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleFilterValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigRuleFilterValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreOnlineEvaluationConfigRuleFilterValueList
 ```
@@ -4723,7 +4723,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleFilterValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigRuleFilterValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreOnlineEvaluationConfigRuleFilterValueOutputReference
 ```
@@ -5077,7 +5077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreOnlineEvaluationConfigRuleList
 ```
@@ -5237,7 +5237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreOnlineEvaluationConfigRuleOutputReference
 ```
@@ -5630,7 +5630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleSamplingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigRuleSamplingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreOnlineEvaluationConfigRuleSamplingConfigList
 ```
@@ -5790,7 +5790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleSamplingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigRuleSamplingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreOnlineEvaluationConfigRuleSamplingConfigOutputReference
 ```
@@ -6079,7 +6079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleSessionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigRuleSessionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreOnlineEvaluationConfigRuleSessionConfigList
 ```
@@ -6239,7 +6239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigRuleSessionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigRuleSessionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreOnlineEvaluationConfigRuleSessionConfigOutputReference
 ```
@@ -6528,7 +6528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreOnlineEvaluationConfig.BedrockagentcoreOnlineEvaluationConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreonlineevaluationconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreonlineevaluationconfig"
 
 bedrockagentcoreonlineevaluationconfig.NewBedrockagentcoreOnlineEvaluationConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreOnlineEvaluationConfigTimeoutsOutputReference
 ```

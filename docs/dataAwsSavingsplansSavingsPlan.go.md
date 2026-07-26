@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSavingsplansSavingsPlan.DataAwsSavingsplansSavingsPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplanssavingsplan"
 
 dataawssavingsplanssavingsplan.NewDataAwsSavingsplansSavingsPlan(scope Construct, id *string, config DataAwsSavingsplansSavingsPlanConfig) DataAwsSavingsplansSavingsPlan
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSavingsplansSavingsPlan.DataAwsSavingsplansSavingsPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplanssavingsplan"
 
 dataawssavingsplanssavingsplan.DataAwsSavingsplansSavingsPlan_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSavingsplansSavingsPlan.DataAwsSavingsplansSavingsPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplanssavingsplan"
 
 dataawssavingsplanssavingsplan.DataAwsSavingsplansSavingsPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawssavingsplanssavingsplan.DataAwsSavingsplansSavingsPlan_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSavingsplansSavingsPlan.DataAwsSavingsplansSavingsPlan.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplanssavingsplan"
 
 dataawssavingsplanssavingsplan.DataAwsSavingsplansSavingsPlan_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawssavingsplanssavingsplan.DataAwsSavingsplansSavingsPlan_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSavingsplansSavingsPlan.DataAwsSavingsplansSavingsPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplanssavingsplan"
 
 dataawssavingsplanssavingsplan.DataAwsSavingsplansSavingsPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -807,7 +807,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSavingsplansSavingsPlan.DataAwsSavingsplansSavingsPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplanssavingsplan"
 
 &dataawssavingsplanssavingsplan.DataAwsSavingsplansSavingsPlanConfig {
 	Connection: interface{},

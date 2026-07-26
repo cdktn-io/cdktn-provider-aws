@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 cloudwatchlogs3tableintegrationsource.NewCloudwatchLogS3TableIntegrationSource(scope Construct, id *string, config CloudwatchLogS3TableIntegrationSourceConfig) CloudwatchLogS3TableIntegrationSource
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 cloudwatchlogs3tableintegrationsource.CloudwatchLogS3TableIntegrationSource_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 cloudwatchlogs3tableintegrationsource.CloudwatchLogS3TableIntegrationSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ cloudwatchlogs3tableintegrationsource.CloudwatchLogS3TableIntegrationSource_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 cloudwatchlogs3tableintegrationsource.CloudwatchLogS3TableIntegrationSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ cloudwatchlogs3tableintegrationsource.CloudwatchLogS3TableIntegrationSource_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 cloudwatchlogs3tableintegrationsource.CloudwatchLogS3TableIntegrationSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 &cloudwatchlogs3tableintegrationsource.CloudwatchLogS3TableIntegrationSourceConfig {
 	Connection: interface{},
@@ -848,7 +848,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tablein
 	IntegrationArn: *string,
 	DataSource: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSourceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSourceTimeouts,
 }
 ```
 
@@ -999,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSourceDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 &cloudwatchlogs3tableintegrationsource.CloudwatchLogS3TableIntegrationSourceDataSource {
 	Name: *string,
@@ -1045,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 &cloudwatchlogs3tableintegrationsource.CloudwatchLogS3TableIntegrationSourceTimeouts {
 	Delete: *string,
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSourceDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 cloudwatchlogs3tableintegrationsource.NewCloudwatchLogS3TableIntegrationSourceDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogS3TableIntegrationSourceDataSourceList
 ```
@@ -1241,7 +1241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSourceDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 cloudwatchlogs3tableintegrationsource.NewCloudwatchLogS3TableIntegrationSourceDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogS3TableIntegrationSourceDataSourceOutputReference
 ```
@@ -1552,7 +1552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogS3TableIntegrationSource.CloudwatchLogS3TableIntegrationSourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogs3tableintegrationsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogs3tableintegrationsource"
 
 cloudwatchlogs3tableintegrationsource.NewCloudwatchLogS3TableIntegrationSourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchLogS3TableIntegrationSourceTimeoutsOutputReference
 ```

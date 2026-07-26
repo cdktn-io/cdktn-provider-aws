@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.NewVpclatticeListener(scope Construct, id *string, config VpclatticeListenerConfig) VpclatticeListener
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListener.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.VpclatticeListener_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListener.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.VpclatticeListener_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ vpclatticelistener.VpclatticeListener_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListener.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.VpclatticeListener_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ vpclatticelistener.VpclatticeListener_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListener.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.VpclatticeListener_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1057,7 +1057,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 &vpclatticelistener.VpclatticeListenerConfig {
 	Connection: interface{},
@@ -1067,7 +1067,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DefaultAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpclatticeListener.VpclatticeListenerDefaultAction,
+	DefaultAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListener.VpclatticeListenerDefaultAction,
 	Name: *string,
 	Protocol: *string,
 	Id: *string,
@@ -1077,7 +1077,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
 	ServiceIdentifier: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpclatticeListener.VpclatticeListenerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListener.VpclatticeListenerTimeouts,
 }
 ```
 
@@ -1322,10 +1322,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 &vpclatticelistener.VpclatticeListenerDefaultAction {
-	FixedResponse: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpclatticeListener.VpclatticeListenerDefaultActionFixedResponse,
+	FixedResponse: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListener.VpclatticeListenerDefaultActionFixedResponse,
 	Forward: interface{},
 }
 ```
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 &vpclatticelistener.VpclatticeListenerDefaultActionFixedResponse {
 	StatusCode: *f64,
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionForward.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 &vpclatticelistener.VpclatticeListenerDefaultActionForward {
 	TargetGroups: interface{},
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionForwardTargetGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 &vpclatticelistener.VpclatticeListenerDefaultActionForwardTargetGroups {
 	TargetGroupIdentifier: *string,
@@ -1484,7 +1484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 &vpclatticelistener.VpclatticeListenerTimeouts {
 	Create: *string,
@@ -1546,7 +1546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.NewVpclatticeListenerDefaultActionFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerDefaultActionFixedResponseOutputReference
 ```
@@ -1817,7 +1817,7 @@ func InternalValue() VpclatticeListenerDefaultActionFixedResponse
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionForwardList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.NewVpclatticeListenerDefaultActionForwardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeListenerDefaultActionForwardList
 ```
@@ -1977,7 +1977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionForwardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.NewVpclatticeListenerDefaultActionForwardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeListenerDefaultActionForwardOutputReference
 ```
@@ -2286,7 +2286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionForwardTargetGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.NewVpclatticeListenerDefaultActionForwardTargetGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeListenerDefaultActionForwardTargetGroupsList
 ```
@@ -2446,7 +2446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionForwardTargetGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.NewVpclatticeListenerDefaultActionForwardTargetGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeListenerDefaultActionForwardTargetGroupsOutputReference
 ```
@@ -2771,7 +2771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerDefaultActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.NewVpclatticeListenerDefaultActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerDefaultActionOutputReference
 ```
@@ -3104,7 +3104,7 @@ func InternalValue() VpclatticeListenerDefaultAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListener.VpclatticeListenerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistener"
 
 vpclatticelistener.NewVpclatticeListenerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerTimeoutsOutputReference
 ```

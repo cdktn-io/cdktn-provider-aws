@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apprunnervpcconnector"
 
 apprunnervpcconnector.NewApprunnerVpcConnector(scope Construct, id *string, config ApprunnerVpcConnectorConfig) ApprunnerVpcConnector
 ```
@@ -428,7 +428,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apprunnervpcconnector"
 
 apprunnervpcconnector.ApprunnerVpcConnector_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apprunnervpcconnector"
 
 apprunnervpcconnector.ApprunnerVpcConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ apprunnervpcconnector.ApprunnerVpcConnector_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apprunnervpcconnector"
 
 apprunnervpcconnector.ApprunnerVpcConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ apprunnervpcconnector.ApprunnerVpcConnector_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apprunnervpcconnector"
 
 apprunnervpcconnector.ApprunnerVpcConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apprunnervpcconnector"
 
 &apprunnervpcconnector.ApprunnerVpcConnectorConfig {
 	Connection: interface{},

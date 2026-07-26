@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogserviceaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogserviceaction"
 
 servicecatalogserviceaction.NewServicecatalogServiceAction(scope Construct, id *string, config ServicecatalogServiceActionConfig) ServicecatalogServiceAction
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogserviceaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogserviceaction"
 
 servicecatalogserviceaction.ServicecatalogServiceAction_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogserviceaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogserviceaction"
 
 servicecatalogserviceaction.ServicecatalogServiceAction_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ servicecatalogserviceaction.ServicecatalogServiceAction_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogserviceaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogserviceaction"
 
 servicecatalogserviceaction.ServicecatalogServiceAction_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ servicecatalogserviceaction.ServicecatalogServiceAction_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogserviceaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogserviceaction"
 
 servicecatalogserviceaction.ServicecatalogServiceAction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogserviceaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogserviceaction"
 
 &servicecatalogserviceaction.ServicecatalogServiceActionConfig {
 	Connection: interface{},
@@ -914,13 +914,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogservicea
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Definition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.servicecatalogServiceAction.ServicecatalogServiceActionDefinition,
+	Definition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.servicecatalogServiceAction.ServicecatalogServiceActionDefinition,
 	Name: *string,
 	AcceptLanguage: *string,
 	Description: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.servicecatalogServiceAction.ServicecatalogServiceActionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.servicecatalogServiceAction.ServicecatalogServiceActionTimeouts,
 }
 ```
 
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogserviceaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogserviceaction"
 
 &servicecatalogserviceaction.ServicecatalogServiceActionDefinition {
 	Name: *string,
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogserviceaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogserviceaction"
 
 &servicecatalogserviceaction.ServicecatalogServiceActionTimeouts {
 	Create: *string,
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogserviceaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogserviceaction"
 
 servicecatalogserviceaction.NewServicecatalogServiceActionDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogServiceActionDefinitionOutputReference
 ```
@@ -1657,7 +1657,7 @@ func InternalValue() ServicecatalogServiceActionDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogserviceaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogserviceaction"
 
 servicecatalogserviceaction.NewServicecatalogServiceActionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogServiceActionTimeoutsOutputReference
 ```

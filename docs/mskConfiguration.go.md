@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskConfiguration.MskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskconfiguration"
 
 mskconfiguration.NewMskConfiguration(scope Construct, id *string, config MskConfigurationConfig) MskConfiguration
 ```
@@ -428,7 +428,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.mskConfiguration.MskConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskconfiguration"
 
 mskconfiguration.MskConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.mskConfiguration.MskConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskconfiguration"
 
 mskconfiguration.MskConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ mskconfiguration.MskConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.mskConfiguration.MskConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskconfiguration"
 
 mskconfiguration.MskConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ mskconfiguration.MskConfiguration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.mskConfiguration.MskConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskconfiguration"
 
 mskconfiguration.MskConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskConfiguration.MskConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskconfiguration"
 
 &mskconfiguration.MskConfigurationConfig {
 	Connection: interface{},

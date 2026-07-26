@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpclatticeauthpolicy"
 
 dataawsvpclatticeauthpolicy.NewDataAwsVpclatticeAuthPolicy(scope Construct, id *string, config DataAwsVpclatticeAuthPolicyConfig) DataAwsVpclatticeAuthPolicy
 ```
@@ -326,7 +326,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpclatticeauthpolicy"
 
 dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpclatticeauthpolicy"
 
 dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpclatticeauthpolicy"
 
 dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpclatticeauthpolicy"
 
 dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -703,7 +703,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpclatticeauthpolicy"
 
 &dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicyConfig {
 	Connection: interface{},

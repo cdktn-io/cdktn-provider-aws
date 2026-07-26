@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockOffering.DataAwsEc2CapacityBlockOffering.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2capacityblockoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockoffering"
 
 dataawsec2capacityblockoffering.NewDataAwsEc2CapacityBlockOffering(scope Construct, id *string, config DataAwsEc2CapacityBlockOfferingConfig) DataAwsEc2CapacityBlockOffering
 ```
@@ -319,7 +319,7 @@ func ResetStartDateRange()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockOffering.DataAwsEc2CapacityBlockOffering.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2capacityblockoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockoffering"
 
 dataawsec2capacityblockoffering.DataAwsEc2CapacityBlockOffering_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockOffering.DataAwsEc2CapacityBlockOffering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2capacityblockoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockoffering"
 
 dataawsec2capacityblockoffering.DataAwsEc2CapacityBlockOffering_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsec2capacityblockoffering.DataAwsEc2CapacityBlockOffering_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockOffering.DataAwsEc2CapacityBlockOffering.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2capacityblockoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockoffering"
 
 dataawsec2capacityblockoffering.DataAwsEc2CapacityBlockOffering_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsec2capacityblockoffering.DataAwsEc2CapacityBlockOffering_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockOffering.DataAwsEc2CapacityBlockOffering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2capacityblockoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockoffering"
 
 dataawsec2capacityblockoffering.DataAwsEc2CapacityBlockOffering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockOffering.DataAwsEc2CapacityBlockOfferingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2capacityblockoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockoffering"
 
 &dataawsec2capacityblockoffering.DataAwsEc2CapacityBlockOfferingConfig {
 	Connection: interface{},

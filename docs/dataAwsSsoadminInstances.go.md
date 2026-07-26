@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadmininstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadmininstances"
 
 dataawsssoadmininstances.NewDataAwsSsoadminInstances(scope Construct, id *string, config DataAwsSsoadminInstancesConfig) DataAwsSsoadminInstances
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadmininstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadmininstances"
 
 dataawsssoadmininstances.DataAwsSsoadminInstances_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadmininstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadmininstances"
 
 dataawsssoadmininstances.DataAwsSsoadminInstances_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsssoadmininstances.DataAwsSsoadminInstances_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadmininstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadmininstances"
 
 dataawsssoadmininstances.DataAwsSsoadminInstances_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsssoadmininstances.DataAwsSsoadminInstances_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadmininstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadmininstances"
 
 dataawsssoadmininstances.DataAwsSsoadminInstances_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstancesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadmininstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadmininstances"
 
 &dataawsssoadmininstances.DataAwsSsoadminInstancesConfig {
 	Connection: interface{},

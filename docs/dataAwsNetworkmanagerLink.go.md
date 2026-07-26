@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerlink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.NewDataAwsNetworkmanagerLink(scope Construct, id *string, config DataAwsNetworkmanagerLinkConfig) DataAwsNetworkmanagerLink
 ```
@@ -312,7 +312,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerlink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.DataAwsNetworkmanagerLink_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerlink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.DataAwsNetworkmanagerLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsnetworkmanagerlink.DataAwsNetworkmanagerLink_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerlink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.DataAwsNetworkmanagerLink_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsnetworkmanagerlink.DataAwsNetworkmanagerLink_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerlink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.DataAwsNetworkmanagerLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerlink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerlink"
 
 &dataawsnetworkmanagerlink.DataAwsNetworkmanagerLinkBandwidth {
 
@@ -746,7 +746,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerl
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerlink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerlink"
 
 &dataawsnetworkmanagerlink.DataAwsNetworkmanagerLinkConfig {
 	Connection: interface{},
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerlink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.NewDataAwsNetworkmanagerLinkBandwidthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerLinkBandwidthList
 ```
@@ -1058,7 +1058,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerlink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.NewDataAwsNetworkmanagerLinkBandwidthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerLinkBandwidthOutputReference
 ```

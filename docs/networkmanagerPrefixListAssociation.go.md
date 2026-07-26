@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerprefixlistassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerprefixlistassociation"
 
 networkmanagerprefixlistassociation.NewNetworkmanagerPrefixListAssociation(scope Construct, id *string, config NetworkmanagerPrefixListAssociationConfig) NetworkmanagerPrefixListAssociation
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerprefixlistassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerprefixlistassociation"
 
 networkmanagerprefixlistassociation.NetworkmanagerPrefixListAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerprefixlistassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerprefixlistassociation"
 
 networkmanagerprefixlistassociation.NetworkmanagerPrefixListAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ networkmanagerprefixlistassociation.NetworkmanagerPrefixListAssociation_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerprefixlistassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerprefixlistassociation"
 
 networkmanagerprefixlistassociation.NetworkmanagerPrefixListAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ networkmanagerprefixlistassociation.NetworkmanagerPrefixListAssociation_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerprefixlistassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerprefixlistassociation"
 
 networkmanagerprefixlistassociation.NetworkmanagerPrefixListAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerprefixlistassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerprefixlistassociation"
 
 &networkmanagerprefixlistassociation.NetworkmanagerPrefixListAssociationConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 defaultroutetable.NewDefaultRouteTable(scope Construct, id *string, config DefaultRouteTableConfig) DefaultRouteTable
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 defaultroutetable.DefaultRouteTable_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 defaultroutetable.DefaultRouteTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ defaultroutetable.DefaultRouteTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 defaultroutetable.DefaultRouteTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ defaultroutetable.DefaultRouteTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 defaultroutetable.DefaultRouteTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -973,7 +973,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 &defaultroutetable.DefaultRouteTableConfig {
 	Connection: interface{},
@@ -990,7 +990,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
 	Route: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.defaultRouteTable.DefaultRouteTableTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.defaultRouteTable.DefaultRouteTableTimeouts,
 }
 ```
 
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 &defaultroutetable.DefaultRouteTableRoute {
 	CidrBlock: *string,
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 &defaultroutetable.DefaultRouteTableTimeouts {
 	Create: *string,
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 defaultroutetable.NewDefaultRouteTableRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DefaultRouteTableRouteList
 ```
@@ -1588,7 +1588,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 defaultroutetable.NewDefaultRouteTableRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DefaultRouteTableRouteOutputReference
 ```
@@ -2203,7 +2203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/defaultroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/defaultroutetable"
 
 defaultroutetable.NewDefaultRouteTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DefaultRouteTableTimeoutsOutputReference
 ```

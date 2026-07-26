@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQueue.DataAwsConnectQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectqueue"
 
 dataawsconnectqueue.NewDataAwsConnectQueue(scope Construct, id *string, config DataAwsConnectQueueConfig) DataAwsConnectQueue
 ```
@@ -333,7 +333,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsConnectQueue.DataAwsConnectQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectqueue"
 
 dataawsconnectqueue.DataAwsConnectQueue_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsConnectQueue.DataAwsConnectQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectqueue"
 
 dataawsconnectqueue.DataAwsConnectQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsconnectqueue.DataAwsConnectQueue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsConnectQueue.DataAwsConnectQueue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectqueue"
 
 dataawsconnectqueue.DataAwsConnectQueue_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawsconnectqueue.DataAwsConnectQueue_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsConnectQueue.DataAwsConnectQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectqueue"
 
 dataawsconnectqueue.DataAwsConnectQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectqueue"
 
 &dataawsconnectqueue.DataAwsConnectQueueConfig {
 	Connection: interface{},
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectqueue"
 
 &dataawsconnectqueue.DataAwsConnectQueueOutboundCallerConfig {
 
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectqueue"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectqueue"
 
 dataawsconnectqueue.NewDataAwsConnectQueueOutboundCallerConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectQueueOutboundCallerConfigList
 ```
@@ -1153,7 +1153,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectqueue"
 
 dataawsconnectqueue.NewDataAwsConnectQueueOutboundCallerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectQueueOutboundCallerConfigOutputReference
 ```

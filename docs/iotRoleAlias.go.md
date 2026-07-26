@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotRoleAlias.IotRoleAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotrolealias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotrolealias"
 
 iotrolealias.NewIotRoleAlias(scope Construct, id *string, config IotRoleAliasConfig) IotRoleAlias
 ```
@@ -435,7 +435,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iotRoleAlias.IotRoleAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotrolealias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotrolealias"
 
 iotrolealias.IotRoleAlias_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iotRoleAlias.IotRoleAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotrolealias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotrolealias"
 
 iotrolealias.IotRoleAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ iotrolealias.IotRoleAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iotRoleAlias.IotRoleAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotrolealias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotrolealias"
 
 iotrolealias.IotRoleAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ iotrolealias.IotRoleAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iotRoleAlias.IotRoleAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotrolealias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotrolealias"
 
 iotrolealias.IotRoleAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -889,7 +889,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotRoleAlias.IotRoleAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotrolealias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotrolealias"
 
 &iotrolealias.IotRoleAliasConfig {
 	Connection: interface{},

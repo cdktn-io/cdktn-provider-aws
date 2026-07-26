@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsAccount.OrganizationsAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsaccount"
 
 organizationsaccount.NewOrganizationsAccount(scope Construct, id *string, config OrganizationsAccountConfig) OrganizationsAccount
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.organizationsAccount.OrganizationsAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsaccount"
 
 organizationsaccount.OrganizationsAccount_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.organizationsAccount.OrganizationsAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsaccount"
 
 organizationsaccount.OrganizationsAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ organizationsaccount.OrganizationsAccount_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.organizationsAccount.OrganizationsAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsaccount"
 
 organizationsaccount.OrganizationsAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ organizationsaccount.OrganizationsAccount_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.organizationsAccount.OrganizationsAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsaccount"
 
 organizationsaccount.OrganizationsAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1073,7 +1073,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsaccount"
 
 &organizationsaccount.OrganizationsAccountConfig {
 	Connection: interface{},
@@ -1093,7 +1093,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsaccount"
 	RoleName: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.organizationsAccount.OrganizationsAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.organizationsAccount.OrganizationsAccountTimeouts,
 }
 ```
 
@@ -1334,7 +1334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.organizationsAccount.OrganizationsAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsaccount"
 
 &organizationsaccount.OrganizationsAccountTimeouts {
 	Create: *string,
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsAccount.OrganizationsAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsaccount"
 
 organizationsaccount.NewOrganizationsAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationsAccountTimeoutsOutputReference
 ```

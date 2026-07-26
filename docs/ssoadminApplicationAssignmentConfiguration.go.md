@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminApplicationAssignmentConfiguration.SsoadminApplicationAssignmentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminapplicationassignmentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationassignmentconfiguration"
 
 ssoadminapplicationassignmentconfiguration.NewSsoadminApplicationAssignmentConfiguration(scope Construct, id *string, config SsoadminApplicationAssignmentConfigurationConfig) SsoadminApplicationAssignmentConfiguration
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssoadminApplicationAssignmentConfiguration.SsoadminApplicationAssignmentConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminapplicationassignmentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationassignmentconfiguration"
 
 ssoadminapplicationassignmentconfiguration.SsoadminApplicationAssignmentConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssoadminApplicationAssignmentConfiguration.SsoadminApplicationAssignmentConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminapplicationassignmentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationassignmentconfiguration"
 
 ssoadminapplicationassignmentconfiguration.SsoadminApplicationAssignmentConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ ssoadminapplicationassignmentconfiguration.SsoadminApplicationAssignmentConfigur
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssoadminApplicationAssignmentConfiguration.SsoadminApplicationAssignmentConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminapplicationassignmentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationassignmentconfiguration"
 
 ssoadminapplicationassignmentconfiguration.SsoadminApplicationAssignmentConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ ssoadminapplicationassignmentconfiguration.SsoadminApplicationAssignmentConfigur
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssoadminApplicationAssignmentConfiguration.SsoadminApplicationAssignmentConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminapplicationassignmentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationassignmentconfiguration"
 
 ssoadminapplicationassignmentconfiguration.SsoadminApplicationAssignmentConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminApplicationAssignmentConfiguration.SsoadminApplicationAssignmentConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminapplicationassignmentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationassignmentconfiguration"
 
 &ssoadminapplicationassignmentconfiguration.SsoadminApplicationAssignmentConfigurationConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsimagebuildercomponent"
 
 dataawsimagebuildercomponent.NewDataAwsImagebuilderComponent(scope Construct, id *string, config DataAwsImagebuilderComponentConfig) DataAwsImagebuilderComponent
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsimagebuildercomponent"
 
 dataawsimagebuildercomponent.DataAwsImagebuilderComponent_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsimagebuildercomponent"
 
 dataawsimagebuildercomponent.DataAwsImagebuilderComponent_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsimagebuildercomponent.DataAwsImagebuilderComponent_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsimagebuildercomponent"
 
 dataawsimagebuildercomponent.DataAwsImagebuilderComponent_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsimagebuildercomponent.DataAwsImagebuilderComponent_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsimagebuildercomponent"
 
 dataawsimagebuildercomponent.DataAwsImagebuilderComponent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsimagebuildercomponent"
 
 &dataawsimagebuildercomponent.DataAwsImagebuilderComponentConfig {
 	Connection: interface{},

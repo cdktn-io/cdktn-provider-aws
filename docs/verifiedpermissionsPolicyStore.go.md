@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicyStore.VerifiedpermissionsPolicyStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicystore"
 
 verifiedpermissionspolicystore.NewVerifiedpermissionsPolicyStore(scope Construct, id *string, config VerifiedpermissionsPolicyStoreConfig) VerifiedpermissionsPolicyStore
 ```
@@ -448,7 +448,7 @@ func ResetValidationSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.verifiedpermissionsPolicyStore.VerifiedpermissionsPolicyStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicystore"
 
 verifiedpermissionspolicystore.VerifiedpermissionsPolicyStore_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.verifiedpermissionsPolicyStore.VerifiedpermissionsPolicyStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicystore"
 
 verifiedpermissionspolicystore.VerifiedpermissionsPolicyStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ verifiedpermissionspolicystore.VerifiedpermissionsPolicyStore_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.verifiedpermissionsPolicyStore.VerifiedpermissionsPolicyStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicystore"
 
 verifiedpermissionspolicystore.VerifiedpermissionsPolicyStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ verifiedpermissionspolicystore.VerifiedpermissionsPolicyStore_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.verifiedpermissionsPolicyStore.VerifiedpermissionsPolicyStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicystore"
 
 verifiedpermissionspolicystore.VerifiedpermissionsPolicyStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsPolicyStore.VerifiedpermissionsPolicyStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicystore"
 
 &verifiedpermissionspolicystore.VerifiedpermissionsPolicyStoreConfig {
 	Connection: interface{},
@@ -1067,7 +1067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsPolicyStore.VerifiedpermissionsPolicyStoreValidationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicystore"
 
 &verifiedpermissionspolicystore.VerifiedpermissionsPolicyStoreValidationSettings {
 	Mode: *string,
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicyStore.VerifiedpermissionsPolicyStoreValidationSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicystore"
 
 verifiedpermissionspolicystore.NewVerifiedpermissionsPolicyStoreValidationSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsPolicyStoreValidationSettingsList
 ```
@@ -1261,7 +1261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicyStore.VerifiedpermissionsPolicyStoreValidationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicystore"
 
 verifiedpermissionspolicystore.NewVerifiedpermissionsPolicyStoreValidationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsPolicyStoreValidationSettingsOutputReference
 ```

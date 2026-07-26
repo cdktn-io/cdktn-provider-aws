@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicyattachments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicyattachments"
 
 dataawsiamrolepolicyattachments.NewDataAwsIamRolePolicyAttachments(scope Construct, id *string, config DataAwsIamRolePolicyAttachmentsConfig) DataAwsIamRolePolicyAttachments
 ```
@@ -305,7 +305,7 @@ func ResetPathPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicyattachments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicyattachments"
 
 dataawsiamrolepolicyattachments.DataAwsIamRolePolicyAttachments_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicyattachments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicyattachments"
 
 dataawsiamrolepolicyattachments.DataAwsIamRolePolicyAttachments_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsiamrolepolicyattachments.DataAwsIamRolePolicyAttachments_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicyattachments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicyattachments"
 
 dataawsiamrolepolicyattachments.DataAwsIamRolePolicyAttachments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsiamrolepolicyattachments.DataAwsIamRolePolicyAttachments_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicyattachments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicyattachments"
 
 dataawsiamrolepolicyattachments.DataAwsIamRolePolicyAttachments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsAttachedPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicyattachments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicyattachments"
 
 &dataawsiamrolepolicyattachments.DataAwsIamRolePolicyAttachmentsAttachedPolicies {
 
@@ -640,7 +640,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicyat
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicyattachments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicyattachments"
 
 &dataawsiamrolepolicyattachments.DataAwsIamRolePolicyAttachmentsConfig {
 	Connection: interface{},
@@ -772,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsAttachedPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicyattachments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicyattachments"
 
 dataawsiamrolepolicyattachments.NewDataAwsIamRolePolicyAttachmentsAttachedPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamRolePolicyAttachmentsAttachedPoliciesList
 ```
@@ -921,7 +921,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamRolePolicyAttachments.DataAwsIamRolePolicyAttachmentsAttachedPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicyattachments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicyattachments"
 
 dataawsiamrolepolicyattachments.NewDataAwsIamRolePolicyAttachmentsAttachedPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamRolePolicyAttachmentsAttachedPoliciesOutputReference
 ```

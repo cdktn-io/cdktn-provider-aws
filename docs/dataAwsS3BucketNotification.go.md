@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.NewDataAwsS3BucketNotification(scope Construct, id *string, config DataAwsS3BucketNotificationConfig) DataAwsS3BucketNotification
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotification.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.DataAwsS3BucketNotification_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.DataAwsS3BucketNotification_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawss3bucketnotification.DataAwsS3BucketNotification_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotification.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.DataAwsS3BucketNotification_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawss3bucketnotification.DataAwsS3BucketNotification_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotification.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.DataAwsS3BucketNotification_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 &dataawss3bucketnotification.DataAwsS3BucketNotificationConfig {
 	Connection: interface{},
@@ -792,7 +792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotificationLambdaFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 &dataawss3bucketnotification.DataAwsS3BucketNotificationLambdaFunction {
 
@@ -805,7 +805,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotific
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotificationQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 &dataawss3bucketnotification.DataAwsS3BucketNotificationQueue {
 
@@ -818,7 +818,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotific
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotificationTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 &dataawss3bucketnotification.DataAwsS3BucketNotificationTopic {
 
@@ -833,7 +833,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotific
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotificationLambdaFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.NewDataAwsS3BucketNotificationLambdaFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketNotificationLambdaFunctionList
 ```
@@ -982,7 +982,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotificationLambdaFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.NewDataAwsS3BucketNotificationLambdaFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketNotificationLambdaFunctionOutputReference
 ```
@@ -1304,7 +1304,7 @@ func InternalValue() DataAwsS3BucketNotificationLambdaFunction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotificationQueueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.NewDataAwsS3BucketNotificationQueueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketNotificationQueueList
 ```
@@ -1453,7 +1453,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotificationQueueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.NewDataAwsS3BucketNotificationQueueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketNotificationQueueOutputReference
 ```
@@ -1775,7 +1775,7 @@ func InternalValue() DataAwsS3BucketNotificationQueue
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotificationTopicList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.NewDataAwsS3BucketNotificationTopicList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketNotificationTopicList
 ```
@@ -1924,7 +1924,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketNotification.DataAwsS3BucketNotificationTopicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketnotification"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketnotification"
 
 dataawss3bucketnotification.NewDataAwsS3BucketNotificationTopicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketNotificationTopicOutputReference
 ```

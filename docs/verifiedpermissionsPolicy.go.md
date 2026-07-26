@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicy(scope Construct, id *string, config VerifiedpermissionsPolicyConfig) VerifiedpermissionsPolicy
 ```
@@ -427,7 +427,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.VerifiedpermissionsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.VerifiedpermissionsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ verifiedpermissionspolicy.VerifiedpermissionsPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.VerifiedpermissionsPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ verifiedpermissionspolicy.VerifiedpermissionsPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.VerifiedpermissionsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 &verifiedpermissionspolicy.VerifiedpermissionsPolicyConfig {
 	Connection: interface{},
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 &verifiedpermissionspolicy.VerifiedpermissionsPolicyDefinition {
 	Static: interface{},
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionStatic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 &verifiedpermissionspolicy.VerifiedpermissionsPolicyDefinitionStatic {
 	Statement: *string,
@@ -1059,7 +1059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionTemplateLinked.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 &verifiedpermissionspolicy.VerifiedpermissionsPolicyDefinitionTemplateLinked {
 	PolicyTemplateId: *string,
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 &verifiedpermissionspolicy.VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipal {
 	EntityId: *string,
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionTemplateLinkedResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 &verifiedpermissionspolicy.VerifiedpermissionsPolicyDefinitionTemplateLinkedResource {
 	EntityId: *string,
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicyDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsPolicyDefinitionList
 ```
@@ -1377,7 +1377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicyDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsPolicyDefinitionOutputReference
 ```
@@ -1728,7 +1728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionStaticList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicyDefinitionStaticList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsPolicyDefinitionStaticList
 ```
@@ -1888,7 +1888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionStaticOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicyDefinitionStaticOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsPolicyDefinitionStaticOutputReference
 ```
@@ -2206,7 +2206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionTemplateLinkedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicyDefinitionTemplateLinkedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsPolicyDefinitionTemplateLinkedList
 ```
@@ -2366,7 +2366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsPolicyDefinitionTemplateLinkedOutputReference
 ```
@@ -2739,7 +2739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalList
 ```
@@ -2899,7 +2899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputReference
 ```
@@ -3210,7 +3210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicyDefinitionTemplateLinkedResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceList
 ```
@@ -3370,7 +3370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsPolicy.VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionspolicy"
 
 verifiedpermissionspolicy.NewVerifiedpermissionsPolicyDefinitionTemplateLinkedResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsPolicyDefinitionTemplateLinkedResourceOutputReference
 ```

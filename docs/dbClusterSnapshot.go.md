@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbClusterSnapshot.DbClusterSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbclustersnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbclustersnapshot"
 
 dbclustersnapshot.NewDbClusterSnapshot(scope Construct, id *string, config DbClusterSnapshotConfig) DbClusterSnapshot
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dbClusterSnapshot.DbClusterSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbclustersnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbclustersnapshot"
 
 dbclustersnapshot.DbClusterSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dbClusterSnapshot.DbClusterSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbclustersnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbclustersnapshot"
 
 dbclustersnapshot.DbClusterSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dbclustersnapshot.DbClusterSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dbClusterSnapshot.DbClusterSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbclustersnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbclustersnapshot"
 
 dbclustersnapshot.DbClusterSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ dbclustersnapshot.DbClusterSnapshot_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dbClusterSnapshot.DbClusterSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbclustersnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbclustersnapshot"
 
 dbclustersnapshot.DbClusterSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1063,7 +1063,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbClusterSnapshot.DbClusterSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbclustersnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbclustersnapshot"
 
 &dbclustersnapshot.DbClusterSnapshotConfig {
 	Connection: interface{},
@@ -1080,7 +1080,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbclustersnapshot"
 	SharedAccounts: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dbClusterSnapshot.DbClusterSnapshotTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dbClusterSnapshot.DbClusterSnapshotTimeouts,
 }
 ```
 
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbClusterSnapshot.DbClusterSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbclustersnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbclustersnapshot"
 
 &dbclustersnapshot.DbClusterSnapshotTimeouts {
 	Create: *string,
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbClusterSnapshot.DbClusterSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbclustersnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbclustersnapshot"
 
 dbclustersnapshot.NewDbClusterSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbClusterSnapshotTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafv2webacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2webacl"
 
 dataawswafv2webacl.NewDataAwsWafv2WebAcl(scope Construct, id *string, config DataAwsWafv2WebAclConfig) DataAwsWafv2WebAcl
 ```
@@ -326,7 +326,7 @@ func ResetResourceArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafv2webacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2webacl"
 
 dataawswafv2webacl.DataAwsWafv2WebAcl_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafv2webacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2webacl"
 
 dataawswafv2webacl.DataAwsWafv2WebAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawswafv2webacl.DataAwsWafv2WebAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafv2webacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2webacl"
 
 dataawswafv2webacl.DataAwsWafv2WebAcl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawswafv2webacl.DataAwsWafv2WebAcl_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafv2webacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2webacl"
 
 dataawswafv2webacl.DataAwsWafv2WebAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafv2webacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2webacl"
 
 &dataawswafv2webacl.DataAwsWafv2WebAclConfig {
 	Connection: interface{},

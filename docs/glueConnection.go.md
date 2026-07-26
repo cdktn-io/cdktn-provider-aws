@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueConnection.GlueConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.NewGlueConnection(scope Construct, id *string, config GlueConnectionConfig) GlueConnection
 ```
@@ -510,7 +510,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.glueConnection.GlueConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.GlueConnection_IsConstruct(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.glueConnection.GlueConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.GlueConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ glueconnection.GlueConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.glueConnection.GlueConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.GlueConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ glueconnection.GlueConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.glueConnection.GlueConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.GlueConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1096,14 +1096,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 &glueconnection.GlueConnectionAuthenticationConfiguration {
 	AuthenticationType: *string,
-	BasicAuthenticationCredentials: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueConnection.GlueConnectionAuthenticationConfigurationBasicAuthenticationCredentials,
+	BasicAuthenticationCredentials: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueConnection.GlueConnectionAuthenticationConfigurationBasicAuthenticationCredentials,
 	CustomAuthenticationCredentials: *map[string]*string,
 	KmsKeyArn: *string,
-	Oauth2Properties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueConnection.GlueConnectionAuthenticationConfigurationOauth2Properties,
+	Oauth2Properties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueConnection.GlueConnectionAuthenticationConfigurationOauth2Properties,
 	SecretArn: *string,
 }
 ```
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationBasicAuthenticationCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 &glueconnection.GlueConnectionAuthenticationConfigurationBasicAuthenticationCredentials {
 	Password: *string,
@@ -1248,12 +1248,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationOauth2Properties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 &glueconnection.GlueConnectionAuthenticationConfigurationOauth2Properties {
-	AuthorizationCodeProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties,
-	Oauth2ClientApplication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication,
-	Oauth2Credentials: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2Credentials,
+	AuthorizationCodeProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties,
+	Oauth2ClientApplication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication,
+	Oauth2Credentials: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2Credentials,
 	Oauth2GrantType: *string,
 	TokenUrl: *string,
 	TokenUrlParametersMap: *map[string]*string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 &glueconnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties {
 	AuthorizationCode: *string,
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 &glueconnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication {
 	AwsManagedClientApplicationReference: *string,
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2Credentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 &glueconnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2Credentials {
 	AccessToken: *string,
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueConnection.GlueConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 &glueconnection.GlueConnectionConfig {
 	Connection: interface{},
@@ -1534,14 +1534,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
 	Provisioners: *[]interface{},
 	Name: *string,
 	AthenaProperties: *map[string]*string,
-	AuthenticationConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueConnection.GlueConnectionAuthenticationConfiguration,
+	AuthenticationConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueConnection.GlueConnectionAuthenticationConfiguration,
 	CatalogId: *string,
 	ConnectionProperties: *map[string]*string,
 	ConnectionType: *string,
 	Description: *string,
 	Id: *string,
 	MatchCriteria: *[]*string,
-	PhysicalConnectionRequirements: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueConnection.GlueConnectionPhysicalConnectionRequirements,
+	PhysicalConnectionRequirements: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueConnection.GlueConnectionPhysicalConnectionRequirements,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 &glueconnection.GlueConnectionPhysicalConnectionRequirements {
 	AvailabilityZone: *string,
@@ -1877,7 +1877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationBasicAuthenticationCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.NewGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueConnectionAuthenticationConfigurationBasicAuthenticationCredentialsOutputReference
 ```
@@ -2170,7 +2170,7 @@ func InternalValue() GlueConnectionAuthenticationConfigurationBasicAuthenticatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.NewGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesOutputReference
 ```
@@ -2463,7 +2463,7 @@ func InternalValue() GlueConnectionAuthenticationConfigurationOauth2PropertiesAu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.NewGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplicationOutputReference
 ```
@@ -2770,7 +2770,7 @@ func InternalValue() GlueConnectionAuthenticationConfigurationOauth2PropertiesOa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2CredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.NewGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2CredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2CredentialsOutputReference
 ```
@@ -3135,7 +3135,7 @@ func InternalValue() GlueConnectionAuthenticationConfigurationOauth2PropertiesOa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationOauth2PropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.NewGlueConnectionAuthenticationConfigurationOauth2PropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueConnectionAuthenticationConfigurationOauth2PropertiesOutputReference
 ```
@@ -3597,7 +3597,7 @@ func InternalValue() GlueConnectionAuthenticationConfigurationOauth2Properties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueConnection.GlueConnectionAuthenticationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.NewGlueConnectionAuthenticationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueConnectionAuthenticationConfigurationOutputReference
 ```
@@ -4039,7 +4039,7 @@ func InternalValue() GlueConnectionAuthenticationConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/glueconnection"
 
 glueconnection.NewGlueConnectionPhysicalConnectionRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueConnectionPhysicalConnectionRequirementsOutputReference
 ```

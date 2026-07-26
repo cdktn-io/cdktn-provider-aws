@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightCustomPermissions.QuicksightCustomPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightcustompermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightcustompermissions"
 
 quicksightcustompermissions.NewQuicksightCustomPermissions(scope Construct, id *string, config QuicksightCustomPermissionsConfig) QuicksightCustomPermissions
 ```
@@ -441,7 +441,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.quicksightCustomPermissions.QuicksightCustomPermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightcustompermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightcustompermissions"
 
 quicksightcustompermissions.QuicksightCustomPermissions_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.quicksightCustomPermissions.QuicksightCustomPermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightcustompermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightcustompermissions"
 
 quicksightcustompermissions.QuicksightCustomPermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ quicksightcustompermissions.QuicksightCustomPermissions_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.quicksightCustomPermissions.QuicksightCustomPermissions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightcustompermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightcustompermissions"
 
 quicksightcustompermissions.QuicksightCustomPermissions_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ quicksightcustompermissions.QuicksightCustomPermissions_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.quicksightCustomPermissions.QuicksightCustomPermissions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightcustompermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightcustompermissions"
 
 quicksightcustompermissions.QuicksightCustomPermissions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightCustomPermissions.QuicksightCustomPermissionsCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightcustompermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightcustompermissions"
 
 &quicksightcustompermissions.QuicksightCustomPermissionsCapabilities {
 	AddOrRunAnomalyDetectionForAnalyses: *string,
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightCustomPermissions.QuicksightCustomPermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightcustompermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightcustompermissions"
 
 &quicksightcustompermissions.QuicksightCustomPermissionsConfig {
 	Connection: interface{},
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightCustomPermissions.QuicksightCustomPermissionsCapabilitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightcustompermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightcustompermissions"
 
 quicksightcustompermissions.NewQuicksightCustomPermissionsCapabilitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightCustomPermissionsCapabilitiesList
 ```
@@ -1540,7 +1540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightCustomPermissions.QuicksightCustomPermissionsCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightcustompermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightcustompermissions"
 
 quicksightcustompermissions.NewQuicksightCustomPermissionsCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightCustomPermissionsCapabilitiesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 dataawsamiids.NewDataAwsAmiIds(scope Construct, id *string, config DataAwsAmiIdsConfig) DataAwsAmiIds
 ```
@@ -380,7 +380,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 dataawsamiids.DataAwsAmiIds_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 dataawsamiids.DataAwsAmiIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ dataawsamiids.DataAwsAmiIds_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 dataawsamiids.DataAwsAmiIds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -440,7 +440,7 @@ dataawsamiids.DataAwsAmiIds_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIds.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 dataawsamiids.DataAwsAmiIds_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -856,7 +856,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 &dataawsamiids.DataAwsAmiIdsConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
 	NameRegex: *string,
 	Region: *string,
 	SortAscending: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsAmiIds.DataAwsAmiIdsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsAmiIds.DataAwsAmiIdsTimeouts,
 }
 ```
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 &dataawsamiids.DataAwsAmiIdsFilter {
 	Name: *string,
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 &dataawsamiids.DataAwsAmiIdsTimeouts {
 	Read: *string,
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 dataawsamiids.NewDataAwsAmiIdsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAmiIdsFilterList
 ```
@@ -1333,7 +1333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 dataawsamiids.NewDataAwsAmiIdsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAmiIdsFilterOutputReference
 ```
@@ -1644,7 +1644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsamiids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsamiids"
 
 dataawsamiids.NewDataAwsAmiIdsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsAmiIdsTimeoutsOutputReference
 ```

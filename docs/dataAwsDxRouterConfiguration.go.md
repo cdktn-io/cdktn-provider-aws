@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxrouterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.NewDataAwsDxRouterConfiguration(scope Construct, id *string, config DataAwsDxRouterConfigurationConfig) DataAwsDxRouterConfiguration
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxrouterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxrouterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxrouterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxrouterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxrouterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxrouterconfiguration"
 
 &dataawsdxrouterconfiguration.DataAwsDxRouterConfigurationConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxrouterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxrouterconfiguration"
 
 &dataawsdxrouterconfiguration.DataAwsDxRouterConfigurationRouter {
 
@@ -878,7 +878,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxrouterconfigu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxrouterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.NewDataAwsDxRouterConfigurationRouterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDxRouterConfigurationRouterList
 ```
@@ -1027,7 +1027,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxrouterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.NewDataAwsDxRouterConfigurationRouterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDxRouterConfigurationRouterOutputReference
 ```

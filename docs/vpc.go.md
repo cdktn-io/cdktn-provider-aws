@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpc.Vpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpc"
 
 vpc.NewVpc(scope Construct, id *string, config VpcConfig) Vpc
 ```
@@ -512,7 +512,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpc.Vpc.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpc"
 
 vpc.Vpc_IsConstruct(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpc.Vpc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpc"
 
 vpc.Vpc_IsTerraformElement(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ vpc.Vpc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpc.Vpc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpc"
 
 vpc.Vpc_IsTerraformResource(x interface{}) *bool
 ```
@@ -572,7 +572,7 @@ vpc.Vpc_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpc.Vpc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpc"
 
 vpc.Vpc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1241,7 +1241,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpc.VpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpc"
 
 &vpc.VpcConfig {
 	Connection: interface{},

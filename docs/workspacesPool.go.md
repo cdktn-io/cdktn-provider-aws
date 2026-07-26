@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesPool.WorkspacesPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.NewWorkspacesPool(scope Construct, id *string, config WorkspacesPoolConfig) WorkspacesPool
 ```
@@ -494,7 +494,7 @@ func ResetTimeoutSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspacesPool.WorkspacesPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.WorkspacesPool_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspacesPool.WorkspacesPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.WorkspacesPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ workspacespool.WorkspacesPool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspacesPool.WorkspacesPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.WorkspacesPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ workspacespool.WorkspacesPool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspacesPool.WorkspacesPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.WorkspacesPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1102,7 +1102,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolApplicationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 &workspacespool.WorkspacesPoolApplicationSettings {
 	SettingsGroup: *string,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 &workspacespool.WorkspacesPoolCapacity {
 	DesiredUserSessions: *f64,
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolCapacityStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 &workspacespool.WorkspacesPoolCapacityStatus {
 
@@ -1193,7 +1193,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 &workspacespool.WorkspacesPoolConfig {
 	Connection: interface{},
@@ -1212,7 +1212,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
 	Capacity: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.workspacesPool.WorkspacesPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.workspacesPool.WorkspacesPoolTimeouts,
 	TimeoutSettings: interface{},
 }
 ```
@@ -1455,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 &workspacespool.WorkspacesPoolTimeouts {
 	Create: *string,
@@ -1521,7 +1521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolTimeoutSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 &workspacespool.WorkspacesPoolTimeoutSettings {
 	DisconnectTimeoutInSeconds: *f64,
@@ -1583,7 +1583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolApplicationSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.NewWorkspacesPoolApplicationSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspacesPoolApplicationSettingsList
 ```
@@ -1743,7 +1743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolApplicationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.NewWorkspacesPoolApplicationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspacesPoolApplicationSettingsOutputReference
 ```
@@ -2068,7 +2068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolCapacityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.NewWorkspacesPoolCapacityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspacesPoolCapacityList
 ```
@@ -2228,7 +2228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.NewWorkspacesPoolCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspacesPoolCapacityOutputReference
 ```
@@ -2517,7 +2517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolCapacityStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.NewWorkspacesPoolCapacityStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspacesPoolCapacityStatusList
 ```
@@ -2666,7 +2666,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolCapacityStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.NewWorkspacesPoolCapacityStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspacesPoolCapacityStatusOutputReference
 ```
@@ -2977,7 +2977,7 @@ func InternalValue() WorkspacesPoolCapacityStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolTimeoutSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.NewWorkspacesPoolTimeoutSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspacesPoolTimeoutSettingsList
 ```
@@ -3137,7 +3137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolTimeoutSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.NewWorkspacesPoolTimeoutSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspacesPoolTimeoutSettingsOutputReference
 ```
@@ -3491,7 +3491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesPool.WorkspacesPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacespool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacespool"
 
 workspacespool.NewWorkspacesPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesPoolTimeoutsOutputReference
 ```

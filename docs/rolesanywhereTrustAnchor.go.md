@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.NewRolesanywhereTrustAnchor(scope Construct, id *string, config RolesanywhereTrustAnchorConfig) RolesanywhereTrustAnchor
 ```
@@ -461,7 +461,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.RolesanywhereTrustAnchor_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.RolesanywhereTrustAnchor_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ rolesanywheretrustanchor.RolesanywhereTrustAnchor_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.RolesanywhereTrustAnchor_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ rolesanywheretrustanchor.RolesanywhereTrustAnchor_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.RolesanywhereTrustAnchor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 &rolesanywheretrustanchor.RolesanywhereTrustAnchorConfig {
 	Connection: interface{},
@@ -926,7 +926,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanch
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Source: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSource,
+	Source: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSource,
 	Enabled: interface{},
 	Id: *string,
 	NotificationSettings: interface{},
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorNotificationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 &rolesanywheretrustanchor.RolesanywhereTrustAnchorNotificationSettings {
 	Channel: *string,
@@ -1196,10 +1196,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 &rolesanywheretrustanchor.RolesanywhereTrustAnchorSource {
-	SourceData: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceData,
+	SourceData: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceData,
 	SourceType: *string,
 }
 ```
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 &rolesanywheretrustanchor.RolesanywhereTrustAnchorSourceSourceData {
 	AcmPcaArn: *string,
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorNotificationSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.NewRolesanywhereTrustAnchorNotificationSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RolesanywhereTrustAnchorNotificationSettingsList
 ```
@@ -1452,7 +1452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorNotificationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.NewRolesanywhereTrustAnchorNotificationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RolesanywhereTrustAnchorNotificationSettingsOutputReference
 ```
@@ -1846,7 +1846,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.NewRolesanywhereTrustAnchorSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RolesanywhereTrustAnchorSourceOutputReference
 ```
@@ -2152,7 +2152,7 @@ func InternalValue() RolesanywhereTrustAnchorSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rolesanywheretrustanchor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.NewRolesanywhereTrustAnchorSourceSourceDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RolesanywhereTrustAnchorSourceSourceDataOutputReference
 ```

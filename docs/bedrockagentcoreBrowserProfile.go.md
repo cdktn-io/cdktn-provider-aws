@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowserProfile.BedrockagentcoreBrowserProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorebrowserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorebrowserprofile"
 
 bedrockagentcorebrowserprofile.NewBedrockagentcoreBrowserProfile(scope Construct, id *string, config BedrockagentcoreBrowserProfileConfig) BedrockagentcoreBrowserProfile
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreBrowserProfile.BedrockagentcoreBrowserProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorebrowserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorebrowserprofile"
 
 bedrockagentcorebrowserprofile.BedrockagentcoreBrowserProfile_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreBrowserProfile.BedrockagentcoreBrowserProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorebrowserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorebrowserprofile"
 
 bedrockagentcorebrowserprofile.BedrockagentcoreBrowserProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ bedrockagentcorebrowserprofile.BedrockagentcoreBrowserProfile_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreBrowserProfile.BedrockagentcoreBrowserProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorebrowserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorebrowserprofile"
 
 bedrockagentcorebrowserprofile.BedrockagentcoreBrowserProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ bedrockagentcorebrowserprofile.BedrockagentcoreBrowserProfile_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreBrowserProfile.BedrockagentcoreBrowserProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorebrowserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorebrowserprofile"
 
 bedrockagentcorebrowserprofile.BedrockagentcoreBrowserProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreBrowserProfile.BedrockagentcoreBrowserProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorebrowserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorebrowserprofile"
 
 &bedrockagentcorebrowserprofile.BedrockagentcoreBrowserProfileConfig {
 	Connection: interface{},
@@ -887,7 +887,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorebrowse
 	Description: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentcoreBrowserProfile.BedrockagentcoreBrowserProfileTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentcoreBrowserProfile.BedrockagentcoreBrowserProfileTimeouts,
 }
 ```
 
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreBrowserProfile.BedrockagentcoreBrowserProfileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorebrowserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorebrowserprofile"
 
 &bedrockagentcorebrowserprofile.BedrockagentcoreBrowserProfileTimeouts {
 	Create: *string,
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowserProfile.BedrockagentcoreBrowserProfileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorebrowserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorebrowserprofile"
 
 bedrockagentcorebrowserprofile.NewBedrockagentcoreBrowserProfileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreBrowserProfileTimeoutsOutputReference
 ```

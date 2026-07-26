@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.NewDataAwsEcrLifecyclePolicyDocument(scope Construct, id *string, config DataAwsEcrLifecyclePolicyDocumentConfig) DataAwsEcrLifecyclePolicyDocument
 ```
@@ -318,7 +318,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocument.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.DataAwsEcrLifecyclePolicyDocument_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocument.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.DataAwsEcrLifecyclePolicyDocument_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsecrlifecyclepolicydocument.DataAwsEcrLifecyclePolicyDocument_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocument.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.DataAwsEcrLifecyclePolicyDocument_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsecrlifecyclepolicydocument.DataAwsEcrLifecyclePolicyDocument_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocument.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.DataAwsEcrLifecyclePolicyDocument_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocumentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 &dataawsecrlifecyclepolicydocument.DataAwsEcrLifecyclePolicyDocumentConfig {
 	Connection: interface{},
@@ -736,7 +736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocumentRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 &dataawsecrlifecyclepolicydocument.DataAwsEcrLifecyclePolicyDocumentRule {
 	Priority: *f64,
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocumentRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 &dataawsecrlifecyclepolicydocument.DataAwsEcrLifecyclePolicyDocumentRuleAction {
 	Type: *string,
@@ -860,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocumentRuleSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 &dataawsecrlifecyclepolicydocument.DataAwsEcrLifecyclePolicyDocumentRuleSelection {
 	CountNumber: *f64,
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocumentRuleActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.NewDataAwsEcrLifecyclePolicyDocumentRuleActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcrLifecyclePolicyDocumentRuleActionList
 ```
@@ -1138,7 +1138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocumentRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.NewDataAwsEcrLifecyclePolicyDocumentRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcrLifecyclePolicyDocumentRuleActionOutputReference
 ```
@@ -1456,7 +1456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocumentRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.NewDataAwsEcrLifecyclePolicyDocumentRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcrLifecyclePolicyDocumentRuleList
 ```
@@ -1616,7 +1616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocumentRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.NewDataAwsEcrLifecyclePolicyDocumentRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcrLifecyclePolicyDocumentRuleOutputReference
 ```
@@ -2018,7 +2018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocumentRuleSelectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.NewDataAwsEcrLifecyclePolicyDocumentRuleSelectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcrLifecyclePolicyDocumentRuleSelectionList
 ```
@@ -2178,7 +2178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrLifecyclePolicyDocument.DataAwsEcrLifecyclePolicyDocumentRuleSelectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrlifecyclepolicydocument"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrlifecyclepolicydocument"
 
 dataawsecrlifecyclepolicydocument.NewDataAwsEcrLifecyclePolicyDocumentRuleSelectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcrLifecyclePolicyDocumentRuleSelectionOutputReference
 ```

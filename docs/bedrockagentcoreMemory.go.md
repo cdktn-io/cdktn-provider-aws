@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemory(scope Construct, id *string, config BedrockagentcoreMemoryConfig) BedrockagentcoreMemory
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.BedrockagentcoreMemory_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.BedrockagentcoreMemory_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ bedrockagentcorememory.BedrockagentcoreMemory_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.BedrockagentcoreMemory_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ bedrockagentcorememory.BedrockagentcoreMemory_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.BedrockagentcoreMemory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1037,7 +1037,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 &bedrockagentcorememory.BedrockagentcoreMemoryConfig {
 	Connection: interface{},
@@ -1056,7 +1056,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory
 	Region: *string,
 	StreamDeliveryResources: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentcoreMemory.BedrockagentcoreMemoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentcoreMemory.BedrockagentcoreMemoryTimeouts,
 }
 ```
 
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryIndexedKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 &bedrockagentcorememory.BedrockagentcoreMemoryIndexedKey {
 	Key: *string,
@@ -1333,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 &bedrockagentcorememory.BedrockagentcoreMemoryStreamDeliveryResources {
 	Resource: interface{},
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 &bedrockagentcorememory.BedrockagentcoreMemoryStreamDeliveryResourcesResource {
 	Kinesis: interface{},
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 &bedrockagentcorememory.BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesis {
 	DataStreamArn: *string,
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisContentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 &bedrockagentcorememory.BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisContentConfiguration {
 	Type: *string,
@@ -1495,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 &bedrockagentcorememory.BedrockagentcoreMemoryTimeouts {
 	Create: *string,
@@ -1547,7 +1547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryIndexedKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryIndexedKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreMemoryIndexedKeyList
 ```
@@ -1707,7 +1707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryIndexedKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryIndexedKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreMemoryIndexedKeyOutputReference
 ```
@@ -2018,7 +2018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryStreamDeliveryResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreMemoryStreamDeliveryResourcesList
 ```
@@ -2178,7 +2178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryStreamDeliveryResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreMemoryStreamDeliveryResourcesOutputReference
 ```
@@ -2487,7 +2487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisContentConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisContentConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisContentConfigurationList
 ```
@@ -2647,7 +2647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisContentConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisContentConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisContentConfigurationOutputReference
 ```
@@ -2965,7 +2965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisList
 ```
@@ -3125,7 +3125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreMemoryStreamDeliveryResourcesResourceKinesisOutputReference
 ```
@@ -3456,7 +3456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryStreamDeliveryResourcesResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreMemoryStreamDeliveryResourcesResourceList
 ```
@@ -3616,7 +3616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryStreamDeliveryResourcesResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryStreamDeliveryResourcesResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreMemoryStreamDeliveryResourcesResourceOutputReference
 ```
@@ -3925,7 +3925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreMemory.BedrockagentcoreMemoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorememory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorememory"
 
 bedrockagentcorememory.NewBedrockagentcoreMemoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreMemoryTimeoutsOutputReference
 ```

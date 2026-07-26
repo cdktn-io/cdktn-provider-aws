@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrsecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrsecurityconfiguration"
 
 emrsecurityconfiguration.NewEmrSecurityConfiguration(scope Construct, id *string, config EmrSecurityConfigurationConfig) EmrSecurityConfiguration
 ```
@@ -428,7 +428,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrsecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrsecurityconfiguration"
 
 emrsecurityconfiguration.EmrSecurityConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrsecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrsecurityconfiguration"
 
 emrsecurityconfiguration.EmrSecurityConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ emrsecurityconfiguration.EmrSecurityConfiguration_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrsecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrsecurityconfiguration"
 
 emrsecurityconfiguration.EmrSecurityConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ emrsecurityconfiguration.EmrSecurityConfiguration_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrsecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrsecurityconfiguration"
 
 emrsecurityconfiguration.EmrSecurityConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrsecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrsecurityconfiguration"
 
 &emrsecurityconfiguration.EmrSecurityConfigurationConfig {
 	Connection: interface{},

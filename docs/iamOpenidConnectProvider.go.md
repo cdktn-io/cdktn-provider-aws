@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamopenidconnectprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamopenidconnectprovider"
 
 iamopenidconnectprovider.NewIamOpenidConnectProvider(scope Construct, id *string, config IamOpenidConnectProviderConfig) IamOpenidConnectProvider
 ```
@@ -428,7 +428,7 @@ func ResetThumbprintList()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamopenidconnectprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamopenidconnectprovider"
 
 iamopenidconnectprovider.IamOpenidConnectProvider_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamopenidconnectprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamopenidconnectprovider"
 
 iamopenidconnectprovider.IamOpenidConnectProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ iamopenidconnectprovider.IamOpenidConnectProvider_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamopenidconnectprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamopenidconnectprovider"
 
 iamopenidconnectprovider.IamOpenidConnectProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ iamopenidconnectprovider.IamOpenidConnectProvider_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamopenidconnectprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamopenidconnectprovider"
 
 iamopenidconnectprovider.IamOpenidConnectProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamopenidconnectprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamopenidconnectprovider"
 
 &iamopenidconnectprovider.IamOpenidConnectProviderConfig {
 	Connection: interface{},

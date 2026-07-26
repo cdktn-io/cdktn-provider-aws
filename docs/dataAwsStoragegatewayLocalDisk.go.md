@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsstoragegatewaylocaldisk"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsstoragegatewaylocaldisk"
 
 dataawsstoragegatewaylocaldisk.NewDataAwsStoragegatewayLocalDisk(scope Construct, id *string, config DataAwsStoragegatewayLocalDiskConfig) DataAwsStoragegatewayLocalDisk
 ```
@@ -326,7 +326,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsstoragegatewaylocaldisk"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsstoragegatewaylocaldisk"
 
 dataawsstoragegatewaylocaldisk.DataAwsStoragegatewayLocalDisk_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsstoragegatewaylocaldisk"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsstoragegatewaylocaldisk"
 
 dataawsstoragegatewaylocaldisk.DataAwsStoragegatewayLocalDisk_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsstoragegatewaylocaldisk.DataAwsStoragegatewayLocalDisk_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsstoragegatewaylocaldisk"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsstoragegatewaylocaldisk"
 
 dataawsstoragegatewaylocaldisk.DataAwsStoragegatewayLocalDisk_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawsstoragegatewaylocaldisk.DataAwsStoragegatewayLocalDisk_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsstoragegatewaylocaldisk"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsstoragegatewaylocaldisk"
 
 dataawsstoragegatewaylocaldisk.DataAwsStoragegatewayLocalDisk_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -714,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDiskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsstoragegatewaylocaldisk"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsstoragegatewaylocaldisk"
 
 &dataawsstoragegatewaylocaldisk.DataAwsStoragegatewayLocalDiskConfig {
 	Connection: interface{},

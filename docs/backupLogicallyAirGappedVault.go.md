@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.NewBackupLogicallyAirGappedVault(scope Construct, id *string, config BackupLogicallyAirGappedVaultConfig) BackupLogicallyAirGappedVault
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
 
 &backuplogicallyairgappedvault.BackupLogicallyAirGappedVaultConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backuplogicallyairgapp
 	EncryptionKeyArn: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultTimeouts,
 }
 ```
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
 
 &backuplogicallyairgappedvault.BackupLogicallyAirGappedVaultTimeouts {
 	Create: *string,
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.NewBackupLogicallyAirGappedVaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupLogicallyAirGappedVaultTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
 
 dataawsopensearchserverlessaccesspolicy.NewDataAwsOpensearchserverlessAccessPolicy(scope Construct, id *string, config DataAwsOpensearchserverlessAccessPolicyConfig) DataAwsOpensearchserverlessAccessPolicy
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
 
 dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
 
 dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
 
 dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
 
 dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
 
 &dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicyConfig {
 	Connection: interface{},

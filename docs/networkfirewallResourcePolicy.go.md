@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallResourcePolicy.NetworkfirewallResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallresourcepolicy"
 
 networkfirewallresourcepolicy.NewNetworkfirewallResourcePolicy(scope Construct, id *string, config NetworkfirewallResourcePolicyConfig) NetworkfirewallResourcePolicy
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkfirewallResourcePolicy.NetworkfirewallResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallresourcepolicy"
 
 networkfirewallresourcepolicy.NetworkfirewallResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkfirewallResourcePolicy.NetworkfirewallResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallresourcepolicy"
 
 networkfirewallresourcepolicy.NetworkfirewallResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ networkfirewallresourcepolicy.NetworkfirewallResourcePolicy_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkfirewallResourcePolicy.NetworkfirewallResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallresourcepolicy"
 
 networkfirewallresourcepolicy.NetworkfirewallResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ networkfirewallresourcepolicy.NetworkfirewallResourcePolicy_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkfirewallResourcePolicy.NetworkfirewallResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallresourcepolicy"
 
 networkfirewallresourcepolicy.NetworkfirewallResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallResourcePolicy.NetworkfirewallResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallresourcepolicy"
 
 &networkfirewallresourcepolicy.NetworkfirewallResourcePolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 arczonalshiftzonalautoshiftconfiguration.NewArczonalshiftZonalAutoshiftConfiguration(scope Construct, id *string, config ArczonalshiftZonalAutoshiftConfigurationConfig) ArczonalshiftZonalAutoshiftConfiguration
 ```
@@ -468,7 +468,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 arczonalshiftzonalautoshiftconfiguration.ArczonalshiftZonalAutoshiftConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 arczonalshiftzonalautoshiftconfiguration.ArczonalshiftZonalAutoshiftConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ arczonalshiftzonalautoshiftconfiguration.ArczonalshiftZonalAutoshiftConfiguratio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 arczonalshiftzonalautoshiftconfiguration.ArczonalshiftZonalAutoshiftConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ arczonalshiftzonalautoshiftconfiguration.ArczonalshiftZonalAutoshiftConfiguratio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 arczonalshiftzonalautoshiftconfiguration.ArczonalshiftZonalAutoshiftConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -933,7 +933,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfigurationBlockingAlarms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 &arczonalshiftzonalautoshiftconfiguration.ArczonalshiftZonalAutoshiftConfigurationBlockingAlarms {
 	AlarmIdentifier: *string,
@@ -983,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 &arczonalshiftzonalautoshiftconfiguration.ArczonalshiftZonalAutoshiftConfigurationConfig {
 	Connection: interface{},
@@ -1213,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfigurationOutcomeAlarms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 &arczonalshiftzonalautoshiftconfiguration.ArczonalshiftZonalAutoshiftConfigurationOutcomeAlarms {
 	AlarmIdentifier: *string,
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfigurationBlockingAlarmsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 arczonalshiftzonalautoshiftconfiguration.NewArczonalshiftZonalAutoshiftConfigurationBlockingAlarmsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArczonalshiftZonalAutoshiftConfigurationBlockingAlarmsList
 ```
@@ -1425,7 +1425,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfigurationBlockingAlarmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 arczonalshiftzonalautoshiftconfiguration.NewArczonalshiftZonalAutoshiftConfigurationBlockingAlarmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArczonalshiftZonalAutoshiftConfigurationBlockingAlarmsOutputReference
 ```
@@ -1736,7 +1736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfigurationOutcomeAlarmsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 arczonalshiftzonalautoshiftconfiguration.NewArczonalshiftZonalAutoshiftConfigurationOutcomeAlarmsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArczonalshiftZonalAutoshiftConfigurationOutcomeAlarmsList
 ```
@@ -1896,7 +1896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.arczonalshiftZonalAutoshiftConfiguration.ArczonalshiftZonalAutoshiftConfigurationOutcomeAlarmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftzonalautoshiftconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftzonalautoshiftconfiguration"
 
 arczonalshiftzonalautoshiftconfiguration.NewArczonalshiftZonalAutoshiftConfigurationOutcomeAlarmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArczonalshiftZonalAutoshiftConfigurationOutcomeAlarmsOutputReference
 ```

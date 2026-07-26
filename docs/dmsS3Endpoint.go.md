@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dmsS3Endpoint.DmsS3Endpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmss3endpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmss3endpoint"
 
 dmss3endpoint.NewDmsS3Endpoint(scope Construct, id *string, config DmsS3EndpointConfig) DmsS3Endpoint
 ```
@@ -749,7 +749,7 @@ func ResetUseTaskStartTimeForFullLoadTimestamp()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dmsS3Endpoint.DmsS3Endpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmss3endpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_IsConstruct(x interface{}) *bool
 ```
@@ -781,7 +781,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dmsS3Endpoint.DmsS3Endpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmss3endpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -795,7 +795,7 @@ dmss3endpoint.DmsS3Endpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dmsS3Endpoint.DmsS3Endpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmss3endpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -809,7 +809,7 @@ dmss3endpoint.DmsS3Endpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dmsS3Endpoint.DmsS3Endpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmss3endpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2226,7 +2226,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmss3endpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmss3endpoint"
 
 &dmss3endpoint.DmsS3EndpointConfig {
 	Connection: interface{},
@@ -2284,7 +2284,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmss3endpoint"
 	SslMode: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dmsS3Endpoint.DmsS3EndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dmsS3Endpoint.DmsS3EndpointTimeouts,
 	TimestampColumnName: *string,
 	UseCsvNoSupValue: interface{},
 	UseTaskStartTimeForFullLoadTimestamp: interface{},
@@ -3063,7 +3063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmss3endpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmss3endpoint"
 
 &dmss3endpoint.DmsS3EndpointTimeouts {
 	Create: *string,
@@ -3111,7 +3111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dmss3endpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dmss3endpoint"
 
 dmss3endpoint.NewDmsS3EndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsS3EndpointTimeoutsOutputReference
 ```

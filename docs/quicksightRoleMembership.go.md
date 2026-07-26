@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightRoleMembership.QuicksightRoleMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightrolemembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightrolemembership"
 
 quicksightrolemembership.NewQuicksightRoleMembership(scope Construct, id *string, config QuicksightRoleMembershipConfig) QuicksightRoleMembership
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.quicksightRoleMembership.QuicksightRoleMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightrolemembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightrolemembership"
 
 quicksightrolemembership.QuicksightRoleMembership_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.quicksightRoleMembership.QuicksightRoleMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightrolemembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightrolemembership"
 
 quicksightrolemembership.QuicksightRoleMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ quicksightrolemembership.QuicksightRoleMembership_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.quicksightRoleMembership.QuicksightRoleMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightrolemembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightrolemembership"
 
 quicksightrolemembership.QuicksightRoleMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ quicksightrolemembership.QuicksightRoleMembership_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.quicksightRoleMembership.QuicksightRoleMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightrolemembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightrolemembership"
 
 quicksightrolemembership.QuicksightRoleMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightrolemembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightrolemembership"
 
 &quicksightrolemembership.QuicksightRoleMembershipConfig {
 	Connection: interface{},

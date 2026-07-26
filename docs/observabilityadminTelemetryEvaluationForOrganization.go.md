@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.observabilityadminTelemetryEvaluationForOrganization.ObservabilityadminTelemetryEvaluationForOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetryevaluationfororganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/observabilityadmintelemetryevaluationfororganization"
 
 observabilityadmintelemetryevaluationfororganization.NewObservabilityadminTelemetryEvaluationForOrganization(scope Construct, id *string, config ObservabilityadminTelemetryEvaluationForOrganizationConfig) ObservabilityadminTelemetryEvaluationForOrganization
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.observabilityadminTelemetryEvaluationForOrganization.ObservabilityadminTelemetryEvaluationForOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetryevaluationfororganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/observabilityadmintelemetryevaluationfororganization"
 
 observabilityadmintelemetryevaluationfororganization.ObservabilityadminTelemetryEvaluationForOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.observabilityadminTelemetryEvaluationForOrganization.ObservabilityadminTelemetryEvaluationForOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetryevaluationfororganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/observabilityadmintelemetryevaluationfororganization"
 
 observabilityadmintelemetryevaluationfororganization.ObservabilityadminTelemetryEvaluationForOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ observabilityadmintelemetryevaluationfororganization.ObservabilityadminTelemetry
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.observabilityadminTelemetryEvaluationForOrganization.ObservabilityadminTelemetryEvaluationForOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetryevaluationfororganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/observabilityadmintelemetryevaluationfororganization"
 
 observabilityadmintelemetryevaluationfororganization.ObservabilityadminTelemetryEvaluationForOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ observabilityadmintelemetryevaluationfororganization.ObservabilityadminTelemetry
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.observabilityadminTelemetryEvaluationForOrganization.ObservabilityadminTelemetryEvaluationForOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetryevaluationfororganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/observabilityadmintelemetryevaluationfororganization"
 
 observabilityadmintelemetryevaluationfororganization.ObservabilityadminTelemetryEvaluationForOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.observabilityadminTelemetryEvaluationForOrganization.ObservabilityadminTelemetryEvaluationForOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetryevaluationfororganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/observabilityadmintelemetryevaluationfororganization"
 
 &observabilityadmintelemetryevaluationfororganization.ObservabilityadminTelemetryEvaluationForOrganizationConfig {
 	Connection: interface{},
@@ -875,7 +875,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintele
 	AllRegions: interface{},
 	Region: *string,
 	Regions: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.observabilityadminTelemetryEvaluationForOrganization.ObservabilityadminTelemetryEvaluationForOrganizationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.observabilityadminTelemetryEvaluationForOrganization.ObservabilityadminTelemetryEvaluationForOrganizationTimeouts,
 }
 ```
 
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.observabilityadminTelemetryEvaluationForOrganization.ObservabilityadminTelemetryEvaluationForOrganizationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetryevaluationfororganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/observabilityadmintelemetryevaluationfororganization"
 
 &observabilityadmintelemetryevaluationfororganization.ObservabilityadminTelemetryEvaluationForOrganizationTimeouts {
 	Create: *string,
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.observabilityadminTelemetryEvaluationForOrganization.ObservabilityadminTelemetryEvaluationForOrganizationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetryevaluationfororganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/observabilityadmintelemetryevaluationfororganization"
 
 observabilityadmintelemetryevaluationfororganization.NewObservabilityadminTelemetryEvaluationForOrganizationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservabilityadminTelemetryEvaluationForOrganizationTimeoutsOutputReference
 ```

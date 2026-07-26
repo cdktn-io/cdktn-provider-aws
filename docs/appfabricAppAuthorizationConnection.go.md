@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnection(scope Construct, id *string, config AppfabricAppAuthorizationConnectionConfig) AppfabricAppAuthorizationConnection
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -879,7 +879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionAuthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 &appfabricappauthorizationconnection.AppfabricAppAuthorizationConnectionAuthRequest {
 	Code: *string,
@@ -925,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 &appfabricappauthorizationconnection.AppfabricAppAuthorizationConnectionConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizat
 	AppBundleArn: *string,
 	AuthRequest: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTimeouts,
 }
 ```
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTenant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 &appfabricappauthorizationconnection.AppfabricAppAuthorizationConnectionTenant {
 
@@ -1116,7 +1116,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizat
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 &appfabricappauthorizationconnection.AppfabricAppAuthorizationConnectionTimeouts {
 	Create: *string,
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionAuthRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnectionAuthRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricAppAuthorizationConnectionAuthRequestList
 ```
@@ -1312,7 +1312,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionAuthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnectionAuthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricAppAuthorizationConnectionAuthRequestOutputReference
 ```
@@ -1623,7 +1623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTenantList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnectionTenantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricAppAuthorizationConnectionTenantList
 ```
@@ -1772,7 +1772,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTenantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnectionTenantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricAppAuthorizationConnectionTenantOutputReference
 ```
@@ -2061,7 +2061,7 @@ func InternalValue() AppfabricAppAuthorizationConnectionTenant
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appfabricappauthorizationconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppfabricAppAuthorizationConnectionTimeoutsOutputReference
 ```

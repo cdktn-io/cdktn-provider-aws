@@ -63,5 +63,4 @@ package-lock.json
 API.md
 !/docs/*.md
 !/.copywrite.hcl
-!/.github/workflows/force-release.yml
 !/.projenrc.js

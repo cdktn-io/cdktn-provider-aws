@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotLoggingOptions.IotLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotloggingoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotloggingoptions"
 
 iotloggingoptions.NewIotLoggingOptions(scope Construct, id *string, config IotLoggingOptionsConfig) IotLoggingOptions
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iotLoggingOptions.IotLoggingOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotloggingoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotloggingoptions"
 
 iotloggingoptions.IotLoggingOptions_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iotLoggingOptions.IotLoggingOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotloggingoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotloggingoptions"
 
 iotloggingoptions.IotLoggingOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ iotloggingoptions.IotLoggingOptions_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iotLoggingOptions.IotLoggingOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotloggingoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotloggingoptions"
 
 iotloggingoptions.IotLoggingOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ iotloggingoptions.IotLoggingOptions_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iotLoggingOptions.IotLoggingOptions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotloggingoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotloggingoptions"
 
 iotloggingoptions.IotLoggingOptions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotloggingoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotloggingoptions"
 
 &iotloggingoptions.IotLoggingOptionsConfig {
 	Connection: interface{},

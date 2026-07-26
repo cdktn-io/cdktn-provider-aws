@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxlocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxlocation"
 
 dataawsdxlocation.NewDataAwsDxLocation(scope Construct, id *string, config DataAwsDxLocationConfig) DataAwsDxLocation
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxlocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxlocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsdxlocation.DataAwsDxLocation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxlocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsdxlocation.DataAwsDxLocation_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxlocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxlocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxlocation"
 
 &dataawsdxlocation.DataAwsDxLocationConfig {
 	Connection: interface{},
