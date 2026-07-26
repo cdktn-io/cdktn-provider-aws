@@ -15,12 +15,12 @@
     },
     {
       "name": "@cdktn/provider-project",
-      "version": "^0.7.0",
+      "version": "^0.8.0",
       "type": "build"
     },
     {
       "name": "@types/node",
-      "version": "^20",
+      "version": "^24",
       "type": "build"
     },
     {

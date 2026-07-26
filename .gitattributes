@@ -12,7 +12,6 @@
 /.github/workflows/auto-close-community-prs.yml linguist-generated
 /.github/workflows/automerge.yml linguist-generated
 /.github/workflows/build.yml linguist-generated
-/.github/workflows/force-release.yml linguist-generated
 /.github/workflows/lock.yml linguist-generated
 /.github/workflows/provider-upgrade.yml linguist-generated
 /.github/workflows/pull-request-lint.yml linguist-generated
