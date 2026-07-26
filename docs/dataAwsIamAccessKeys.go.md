@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamaccesskeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.NewDataAwsIamAccessKeys(scope Construct, id *string, config DataAwsIamAccessKeysConfig) DataAwsIamAccessKeys
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamaccesskeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.DataAwsIamAccessKeys_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamaccesskeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.DataAwsIamAccessKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsiamaccesskeys.DataAwsIamAccessKeys_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamaccesskeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.DataAwsIamAccessKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsiamaccesskeys.DataAwsIamAccessKeys_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamaccesskeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.DataAwsIamAccessKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeysAccessKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamaccesskeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamaccesskeys"
 
 &dataawsiamaccesskeys.DataAwsIamAccessKeysAccessKeys {
 
@@ -640,7 +640,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamaccesskeys"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamaccesskeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamaccesskeys"
 
 &dataawsiamaccesskeys.DataAwsIamAccessKeysConfig {
 	Connection: interface{},
@@ -775,7 +775,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeysAccessKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamaccesskeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.NewDataAwsIamAccessKeysAccessKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamAccessKeysAccessKeysList
 ```
@@ -924,7 +924,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeysAccessKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamaccesskeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.NewDataAwsIamAccessKeysAccessKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamAccessKeysAccessKeysOutputReference
 ```

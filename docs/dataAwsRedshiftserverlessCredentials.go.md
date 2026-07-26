@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsredshiftserverlesscredentials"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsredshiftserverlesscredentials"
 
 dataawsredshiftserverlesscredentials.NewDataAwsRedshiftserverlessCredentials(scope Construct, id *string, config DataAwsRedshiftserverlessCredentialsConfig) DataAwsRedshiftserverlessCredentials
 ```
@@ -326,7 +326,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsredshiftserverlesscredentials"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsredshiftserverlesscredentials"
 
 dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsredshiftserverlesscredentials"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsredshiftserverlesscredentials"
 
 dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentials_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsredshiftserverlesscredentials"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsredshiftserverlesscredentials"
 
 dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentials_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsredshiftserverlesscredentials"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsredshiftserverlesscredentials"
 
 dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsredshiftserverlesscredentials"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsredshiftserverlesscredentials"
 
 &dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentialsConfig {
 	Connection: interface{},

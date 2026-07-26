@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53resolverfirewallconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53resolverfirewallconfig"
 
 route53resolverfirewallconfig.NewRoute53ResolverFirewallConfig(scope Construct, id *string, config Route53ResolverFirewallConfigConfig) Route53ResolverFirewallConfig
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53resolverfirewallconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53resolverfirewallconfig"
 
 route53resolverfirewallconfig.Route53ResolverFirewallConfig_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53resolverfirewallconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53resolverfirewallconfig"
 
 route53resolverfirewallconfig.Route53ResolverFirewallConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ route53resolverfirewallconfig.Route53ResolverFirewallConfig_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53resolverfirewallconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53resolverfirewallconfig"
 
 route53resolverfirewallconfig.Route53ResolverFirewallConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ route53resolverfirewallconfig.Route53ResolverFirewallConfig_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53resolverfirewallconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53resolverfirewallconfig"
 
 route53resolverfirewallconfig.Route53ResolverFirewallConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53resolverfirewallconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53resolverfirewallconfig"
 
 &route53resolverfirewallconfig.Route53ResolverFirewallConfigConfig {
 	Connection: interface{},

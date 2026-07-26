@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.NewDataAwsDynamodbBackups(scope Construct, id *string, config DataAwsDynamodbBackupsConfig) DataAwsDynamodbBackups
 ```
@@ -333,7 +333,7 @@ func ResetTimeRangeUpperBound()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.DataAwsDynamodbBackups_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.DataAwsDynamodbBackups_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsdynamodbbackups.DataAwsDynamodbBackups_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.DataAwsDynamodbBackups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawsdynamodbbackups.DataAwsDynamodbBackups_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.DataAwsDynamodbBackups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsBackupSummaries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
 
 &dataawsdynamodbbackups.DataAwsDynamodbBackupsBackupSummaries {
 
@@ -734,7 +734,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdynamodbbackups
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
 
 &dataawsdynamodbbackups.DataAwsDynamodbBackupsConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsBackupSummariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.NewDataAwsDynamodbBackupsBackupSummariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDynamodbBackupsBackupSummariesList
 ```
@@ -1059,7 +1059,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsBackupSummariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.NewDataAwsDynamodbBackupsBackupSummariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDynamodbBackupsBackupSummariesOutputReference
 ```

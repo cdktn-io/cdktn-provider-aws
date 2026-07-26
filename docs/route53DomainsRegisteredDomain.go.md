@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.NewRoute53DomainsRegisteredDomain(scope Construct, id *string, config Route53DomainsRegisteredDomainConfig) Route53DomainsRegisteredDomain
 ```
@@ -583,7 +583,7 @@ func ResetTransferLock()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.Route53DomainsRegisteredDomain_IsConstruct(x interface{}) *bool
 ```
@@ -615,7 +615,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.Route53DomainsRegisteredDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -629,7 +629,7 @@ route53domainsregistereddomain.Route53DomainsRegisteredDomain_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.Route53DomainsRegisteredDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -643,7 +643,7 @@ route53domainsregistereddomain.Route53DomainsRegisteredDomain_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.Route53DomainsRegisteredDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1334,7 +1334,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainAdminContact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 &route53domainsregistereddomain.Route53DomainsRegisteredDomainAdminContact {
 	AddressLine1: *string,
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainBillingContact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 &route53domainsregistereddomain.Route53DomainsRegisteredDomainBillingContact {
 	AddressLine1: *string,
@@ -1762,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 &route53domainsregistereddomain.Route53DomainsRegisteredDomainConfig {
 	Connection: interface{},
@@ -1773,20 +1773,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregister
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DomainName: *string,
-	AdminContact: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainAdminContact,
+	AdminContact: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainAdminContact,
 	AdminPrivacy: interface{},
 	AutoRenew: interface{},
-	BillingContact: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainBillingContact,
+	BillingContact: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainBillingContact,
 	BillingPrivacy: interface{},
 	Id: *string,
 	NameServer: interface{},
-	RegistrantContact: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainRegistrantContact,
+	RegistrantContact: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainRegistrantContact,
 	RegistrantPrivacy: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	TechContact: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTechContact,
+	TechContact: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTechContact,
 	TechPrivacy: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTimeouts,
 	TransferLock: interface{},
 }
 ```
@@ -2103,7 +2103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 &route53domainsregistereddomain.Route53DomainsRegisteredDomainNameServer {
 	Name: *string,
@@ -2149,7 +2149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainRegistrantContact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 &route53domainsregistereddomain.Route53DomainsRegisteredDomainRegistrantContact {
 	AddressLine1: *string,
@@ -2363,7 +2363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTechContact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 &route53domainsregistereddomain.Route53DomainsRegisteredDomainTechContact {
 	AddressLine1: *string,
@@ -2577,7 +2577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 &route53domainsregistereddomain.Route53DomainsRegisteredDomainTimeouts {
 	Create: *string,
@@ -2625,7 +2625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainAdminContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.NewRoute53DomainsRegisteredDomainAdminContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53DomainsRegisteredDomainAdminContactOutputReference
 ```
@@ -3280,7 +3280,7 @@ func InternalValue() Route53DomainsRegisteredDomainAdminContact
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainBillingContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.NewRoute53DomainsRegisteredDomainBillingContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53DomainsRegisteredDomainBillingContactOutputReference
 ```
@@ -3935,7 +3935,7 @@ func InternalValue() Route53DomainsRegisteredDomainBillingContact
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.NewRoute53DomainsRegisteredDomainNameServerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsRegisteredDomainNameServerList
 ```
@@ -4095,7 +4095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.NewRoute53DomainsRegisteredDomainNameServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsRegisteredDomainNameServerOutputReference
 ```
@@ -4413,7 +4413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainRegistrantContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.NewRoute53DomainsRegisteredDomainRegistrantContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53DomainsRegisteredDomainRegistrantContactOutputReference
 ```
@@ -5068,7 +5068,7 @@ func InternalValue() Route53DomainsRegisteredDomainRegistrantContact
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTechContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.NewRoute53DomainsRegisteredDomainTechContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53DomainsRegisteredDomainTechContactOutputReference
 ```
@@ -5723,7 +5723,7 @@ func InternalValue() Route53DomainsRegisteredDomainTechContact
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsregistereddomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53domainsregistereddomain"
 
 route53domainsregistereddomain.NewRoute53DomainsRegisteredDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53DomainsRegisteredDomainTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleA(scope Construct, id *string, config Wafv2WebAclRuleAConfig) Wafv2WebAclRuleA
 ```
@@ -567,7 +567,7 @@ func ResetVisibilityConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.Wafv2WebAclRuleA_IsConstruct(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.Wafv2WebAclRuleA_IsTerraformElement(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ wafv2webaclrule.Wafv2WebAclRuleA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.Wafv2WebAclRuleA_IsTerraformResource(x interface{}) *bool
 ```
@@ -627,7 +627,7 @@ wafv2webaclrule.Wafv2WebAclRuleA_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.Wafv2WebAclRuleA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1120,7 +1120,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleAConfig {
 	Connection: interface{},
@@ -1140,7 +1140,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 	Region: *string,
 	RuleLabel: interface{},
 	Statement: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.wafv2WebAclRule.Wafv2WebAclRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.wafv2WebAclRule.Wafv2WebAclRuleTimeouts,
 	VisibilityConfig: interface{},
 }
 ```
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionA {
 	Allow: interface{},
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAllowA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionAllowA {
 	CustomRequestHandling: interface{},
@@ -1546,7 +1546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAllowCustomRequestHandlingA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionAllowCustomRequestHandlingA {
 	InsertHeader: interface{},
@@ -1580,7 +1580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderA {
 	Name: *string,
@@ -1626,7 +1626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionBlockA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionBlockA {
 	CustomResponse: interface{},
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionBlockCustomResponseA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionBlockCustomResponseA {
 	ResponseCode: *f64,
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderA {
 	Name: *string,
@@ -1768,7 +1768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCaptchaA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionCaptchaA {
 	CustomRequestHandling: interface{},
@@ -1802,7 +1802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingA {
 	InsertHeader: interface{},
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderA {
 	Name: *string,
@@ -1882,7 +1882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionChallengeA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionChallengeA {
 	CustomRequestHandling: interface{},
@@ -1916,7 +1916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionChallengeCustomRequestHandlingA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionChallengeCustomRequestHandlingA {
 	InsertHeader: interface{},
@@ -1950,7 +1950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderA {
 	Name: *string,
@@ -1996,7 +1996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCountA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionCountA {
 	CustomRequestHandling: interface{},
@@ -2030,7 +2030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCountCustomRequestHandlingA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionCountCustomRequestHandlingA {
 	InsertHeader: interface{},
@@ -2064,7 +2064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderA {
 	Name: *string,
@@ -2110,7 +2110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleCaptchaConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleCaptchaConfigA {
 	ImmunityTimeProperty: interface{},
@@ -2144,7 +2144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleCaptchaConfigImmunityTimePropertyA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleCaptchaConfigImmunityTimePropertyA {
 	ImmunityTime: *f64,
@@ -2176,7 +2176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleChallengeConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleChallengeConfigA {
 	ImmunityTimeProperty: interface{},
@@ -2210,7 +2210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleChallengeConfigImmunityTimePropertyA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleChallengeConfigImmunityTimePropertyA {
 	ImmunityTime: *f64,
@@ -2242,7 +2242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleOverrideActionA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleOverrideActionA {
 	Count: interface{},
@@ -2292,7 +2292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleOverrideActionCountA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleOverrideActionCountA {
 
@@ -2305,7 +2305,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleOverrideActionNoneA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleOverrideActionNoneA {
 
@@ -2318,7 +2318,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleRuleLabelA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleRuleLabelA {
 	Name: *string,
@@ -2352,7 +2352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatement {
 	AndStatement: interface{},
@@ -2626,7 +2626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementAndStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementAndStatement {
 	Statement: interface{},
@@ -2660,7 +2660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementAsnMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementAsnMatchStatement {
 	AsnList: *[]*f64,
@@ -2710,7 +2710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementAsnMatchStatementForwardedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementAsnMatchStatementForwardedIpConfig {
 	FallbackBehavior: *string,
@@ -2756,7 +2756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatement {
 	PositionalConstraint: *string,
@@ -2838,7 +2838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -3080,7 +3080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArguments {
 
@@ -3093,7 +3093,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -3125,7 +3125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -3187,7 +3187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -3249,7 +3249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -3262,7 +3262,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -3294,7 +3294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -3356,7 +3356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -3418,7 +3418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -3431,7 +3431,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -3463,7 +3463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -3495,7 +3495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -3571,7 +3571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -3619,7 +3619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -3632,7 +3632,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchMethod {
 
@@ -3645,7 +3645,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchQueryString {
 
@@ -3658,7 +3658,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -3692,7 +3692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -3726,7 +3726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -3758,7 +3758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriPath {
 
@@ -3771,7 +3771,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementByteMatchStatementTextTransformation {
 	Priority: *f64,
@@ -3817,7 +3817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementGeoMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementGeoMatchStatement {
 	CountryCodes: *[]*string,
@@ -3867,7 +3867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementGeoMatchStatementForwardedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementGeoMatchStatementForwardedIpConfig {
 	FallbackBehavior: *string,
@@ -3913,7 +3913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementIpSetReferenceStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementIpSetReferenceStatement {
 	Arn: *string,
@@ -3963,7 +3963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfig {
 	FallbackBehavior: *string,
@@ -4023,7 +4023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementLabelMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementLabelMatchStatement {
 	Key: *string,
@@ -4073,7 +4073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatement {
 	Name: *string,
@@ -4187,7 +4187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigs {
 	AwsManagedRulesAcfpRuleSet: interface{},
@@ -4329,7 +4329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSet {
 	CreationPath: *string,
@@ -4421,7 +4421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspection {
 	PayloadType: *string,
@@ -4533,7 +4533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFields {
 	Identifiers: *[]*string,
@@ -4565,7 +4565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailField {
 	Identifier: *string,
@@ -4597,7 +4597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordField {
 	Identifier: *string,
@@ -4629,7 +4629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFields {
 	Identifiers: *[]*string,
@@ -4661,7 +4661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameField {
 	Identifier: *string,
@@ -4693,7 +4693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspection {
 	BodyContains: interface{},
@@ -4775,7 +4775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContains {
 	FailureStrings: *[]*string,
@@ -4821,7 +4821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeader {
 	FailureValues: *[]*string,
@@ -4881,7 +4881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJson {
 	FailureValues: *[]*string,
@@ -4941,7 +4941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCode {
 	FailureCodes: *[]*f64,
@@ -4987,7 +4987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSet {
 	ClientSideActionConfig: interface{},
@@ -5035,7 +5035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfig {
 	Challenge: interface{},
@@ -5069,7 +5069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallenge {
 	UsageOfAction: *string,
@@ -5131,7 +5131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpression {
 	RegexString: *string,
@@ -5163,7 +5163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet {
 	LoginPath: *string,
@@ -5241,7 +5241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspection {
 	PayloadType: *string,
@@ -5305,7 +5305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordField {
 	Identifier: *string,
@@ -5337,7 +5337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameField {
 	Identifier: *string,
@@ -5369,7 +5369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspection {
 	BodyContains: interface{},
@@ -5451,7 +5451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContains {
 	FailureStrings: *[]*string,
@@ -5497,7 +5497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeader {
 	FailureValues: *[]*string,
@@ -5557,7 +5557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJson {
 	FailureValues: *[]*string,
@@ -5617,7 +5617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCode {
 	FailureCodes: *[]*f64,
@@ -5663,7 +5663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet {
 	InspectionLevel: *string,
@@ -5709,7 +5709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordField {
 	Identifier: *string,
@@ -5741,7 +5741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsUsernameField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsUsernameField {
 	Identifier: *string,
@@ -5773,7 +5773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverride {
 	Name: *string,
@@ -5823,7 +5823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUse {
 	Allow: interface{},
@@ -5921,7 +5921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllow {
 	CustomRequestHandling: interface{},
@@ -5955,7 +5955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandling {
 	InsertHeader: interface{},
@@ -5989,7 +5989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -6035,7 +6035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlock {
 	CustomResponse: interface{},
@@ -6069,7 +6069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponse {
 	ResponseCode: *f64,
@@ -6131,7 +6131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeader {
 	Name: *string,
@@ -6177,7 +6177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptcha.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptcha {
 	CustomRequestHandling: interface{},
@@ -6211,7 +6211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandling {
 	InsertHeader: interface{},
@@ -6245,7 +6245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -6291,7 +6291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallenge {
 	CustomRequestHandling: interface{},
@@ -6325,7 +6325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandling {
 	InsertHeader: interface{},
@@ -6359,7 +6359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -6405,7 +6405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCount {
 	CustomRequestHandling: interface{},
@@ -6439,7 +6439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandling {
 	InsertHeader: interface{},
@@ -6473,7 +6473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -6519,7 +6519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatement {
 	AsnMatchStatement: interface{},
@@ -6697,7 +6697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatement {
 	AsnList: *[]*f64,
@@ -6747,7 +6747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfig {
 	FallbackBehavior: *string,
@@ -6793,7 +6793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatement {
 	PositionalConstraint: *string,
@@ -6875,7 +6875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -7117,7 +7117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArguments {
 
@@ -7130,7 +7130,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -7162,7 +7162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -7224,7 +7224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -7286,7 +7286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -7299,7 +7299,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -7331,7 +7331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -7393,7 +7393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -7455,7 +7455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -7468,7 +7468,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -7500,7 +7500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -7532,7 +7532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -7608,7 +7608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -7656,7 +7656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -7669,7 +7669,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchMethod {
 
@@ -7682,7 +7682,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchQueryString {
 
@@ -7695,7 +7695,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -7729,7 +7729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -7763,7 +7763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -7795,7 +7795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPath {
 
@@ -7808,7 +7808,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementTextTransformation {
 	Priority: *f64,
@@ -7854,7 +7854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatement {
 	CountryCodes: *[]*string,
@@ -7904,7 +7904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfig {
 	FallbackBehavior: *string,
@@ -7950,7 +7950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatement {
 	Arn: *string,
@@ -8000,7 +8000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfig {
 	FallbackBehavior: *string,
@@ -8060,7 +8060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatement {
 	Key: *string,
@@ -8110,7 +8110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatement {
 	RegexString: *string,
@@ -8176,7 +8176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -8418,7 +8418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArguments {
 
@@ -8431,7 +8431,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -8463,7 +8463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -8525,7 +8525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -8587,7 +8587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -8600,7 +8600,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -8632,7 +8632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -8694,7 +8694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -8756,7 +8756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -8769,7 +8769,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -8801,7 +8801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -8833,7 +8833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -8909,7 +8909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -8957,7 +8957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -8970,7 +8970,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchMethod {
 
@@ -8983,7 +8983,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryString {
 
@@ -8996,7 +8996,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -9030,7 +9030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -9064,7 +9064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -9096,7 +9096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPath {
 
@@ -9109,7 +9109,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementTextTransformation {
 	Priority: *f64,
@@ -9155,7 +9155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatement {
 	Arn: *string,
@@ -9221,7 +9221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -9463,7 +9463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments {
 
@@ -9476,7 +9476,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -9508,7 +9508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -9570,7 +9570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -9632,7 +9632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -9645,7 +9645,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -9677,7 +9677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -9739,7 +9739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -9801,7 +9801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -9814,7 +9814,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -9846,7 +9846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -9878,7 +9878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -9954,7 +9954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -10002,7 +10002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -10015,7 +10015,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethod {
 
@@ -10028,7 +10028,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryString {
 
@@ -10041,7 +10041,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -10075,7 +10075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -10109,7 +10109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -10141,7 +10141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPath {
 
@@ -10154,7 +10154,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformation {
 	Priority: *f64,
@@ -10200,7 +10200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatement {
 	ComparisonOperator: *string,
@@ -10278,7 +10278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -10520,7 +10520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArguments {
 
@@ -10533,7 +10533,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -10565,7 +10565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -10627,7 +10627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -10689,7 +10689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -10702,7 +10702,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -10734,7 +10734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -10796,7 +10796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -10858,7 +10858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -10871,7 +10871,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -10903,7 +10903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -10935,7 +10935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -11011,7 +11011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -11059,7 +11059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -11072,7 +11072,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethod {
 
@@ -11085,7 +11085,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryString {
 
@@ -11098,7 +11098,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -11132,7 +11132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -11166,7 +11166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -11198,7 +11198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPath {
 
@@ -11211,7 +11211,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementTextTransformation {
 	Priority: *f64,
@@ -11257,7 +11257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatement {
 	FieldToMatch: interface{},
@@ -11323,7 +11323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -11565,7 +11565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArguments {
 
@@ -11578,7 +11578,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -11610,7 +11610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -11672,7 +11672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -11734,7 +11734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -11747,7 +11747,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -11779,7 +11779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -11841,7 +11841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -11903,7 +11903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -11916,7 +11916,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -11948,7 +11948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -11980,7 +11980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -12056,7 +12056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -12104,7 +12104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -12117,7 +12117,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchMethod {
 
@@ -12130,7 +12130,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryString {
 
@@ -12143,7 +12143,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -12177,7 +12177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -12211,7 +12211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -12243,7 +12243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPath {
 
@@ -12256,7 +12256,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementTextTransformation {
 	Priority: *f64,
@@ -12302,7 +12302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatement {
 	FieldToMatch: interface{},
@@ -12352,7 +12352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -12594,7 +12594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArguments {
 
@@ -12607,7 +12607,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -12639,7 +12639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -12701,7 +12701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -12763,7 +12763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -12776,7 +12776,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -12808,7 +12808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -12870,7 +12870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -12932,7 +12932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -12945,7 +12945,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -12977,7 +12977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -13009,7 +13009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -13085,7 +13085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -13133,7 +13133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -13146,7 +13146,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchMethod {
 
@@ -13159,7 +13159,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchQueryString {
 
@@ -13172,7 +13172,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -13206,7 +13206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -13240,7 +13240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -13272,7 +13272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPath {
 
@@ -13285,7 +13285,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementTextTransformation {
 	Priority: *f64,
@@ -13331,7 +13331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementNotStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementNotStatement {
 	Statement: interface{},
@@ -13365,7 +13365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementOrStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementOrStatement {
 	Statement: interface{},
@@ -13399,7 +13399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatement {
 	AggregateKeyType: *string,
@@ -13513,7 +13513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeys {
 	Asn: interface{},
@@ -13723,7 +13723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysAsn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysAsn {
 
@@ -13736,7 +13736,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysCookie.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysCookie {
 	Name: *string,
@@ -13784,7 +13784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysCookieTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysCookieTextTransformation {
 	Priority: *f64,
@@ -13830,7 +13830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysForwardedIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysForwardedIp {
 
@@ -13843,7 +13843,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysHeader {
 	Name: *string,
@@ -13891,7 +13891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysHeaderTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysHeaderTextTransformation {
 	Priority: *f64,
@@ -13937,7 +13937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysHttpMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysHttpMethod {
 
@@ -13950,7 +13950,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysIp {
 
@@ -13963,7 +13963,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -13995,7 +13995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -14027,7 +14027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysLabelNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysLabelNamespace {
 	Namespace: *string,
@@ -14059,7 +14059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysQueryArgument {
 	Name: *string,
@@ -14107,7 +14107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysQueryArgumentTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysQueryArgumentTextTransformation {
 	Priority: *f64,
@@ -14153,7 +14153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysQueryString {
 	TextTransformation: interface{},
@@ -14187,7 +14187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysQueryStringTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysQueryStringTextTransformation {
 	Priority: *f64,
@@ -14233,7 +14233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysUriPath {
 	TextTransformation: interface{},
@@ -14267,7 +14267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysUriPathTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementCustomKeysUriPathTextTransformation {
 	Priority: *f64,
@@ -14313,7 +14313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementForwardedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementForwardedIpConfig {
 	FallbackBehavior: *string,
@@ -14359,7 +14359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatement {
 	AsnMatchStatement: interface{},
@@ -14537,7 +14537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatement {
 	AsnList: *[]*f64,
@@ -14587,7 +14587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementForwardedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementForwardedIpConfig {
 	FallbackBehavior: *string,
@@ -14633,7 +14633,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatement {
 	PositionalConstraint: *string,
@@ -14715,7 +14715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -14957,7 +14957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArguments {
 
@@ -14970,7 +14970,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -15002,7 +15002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -15064,7 +15064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -15126,7 +15126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -15139,7 +15139,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -15171,7 +15171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -15233,7 +15233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -15295,7 +15295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -15308,7 +15308,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -15340,7 +15340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -15372,7 +15372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -15448,7 +15448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -15496,7 +15496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -15509,7 +15509,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchMethod {
 
@@ -15522,7 +15522,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchQueryString {
 
@@ -15535,7 +15535,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -15569,7 +15569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -15603,7 +15603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -15635,7 +15635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPath {
 
@@ -15648,7 +15648,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformation {
 	Priority: *f64,
@@ -15694,7 +15694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatement {
 	CountryCodes: *[]*string,
@@ -15744,7 +15744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfig {
 	FallbackBehavior: *string,
@@ -15790,7 +15790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatement {
 	Arn: *string,
@@ -15840,7 +15840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfig {
 	FallbackBehavior: *string,
@@ -15900,7 +15900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatement {
 	Key: *string,
@@ -15950,7 +15950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement {
 	RegexString: *string,
@@ -16016,7 +16016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -16258,7 +16258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArguments {
 
@@ -16271,7 +16271,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -16303,7 +16303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -16365,7 +16365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -16427,7 +16427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -16440,7 +16440,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -16472,7 +16472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -16534,7 +16534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -16596,7 +16596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -16609,7 +16609,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -16641,7 +16641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -16673,7 +16673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -16749,7 +16749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -16797,7 +16797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -16810,7 +16810,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchMethod {
 
@@ -16823,7 +16823,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryString {
 
@@ -16836,7 +16836,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -16870,7 +16870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -16904,7 +16904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -16936,7 +16936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPath {
 
@@ -16949,7 +16949,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementTextTransformation {
 	Priority: *f64,
@@ -16995,7 +16995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatement {
 	Arn: *string,
@@ -17061,7 +17061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -17303,7 +17303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments {
 
@@ -17316,7 +17316,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -17348,7 +17348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -17410,7 +17410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -17472,7 +17472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -17485,7 +17485,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -17517,7 +17517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -17579,7 +17579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -17641,7 +17641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -17654,7 +17654,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -17686,7 +17686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -17718,7 +17718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -17794,7 +17794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -17842,7 +17842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -17855,7 +17855,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethod {
 
@@ -17868,7 +17868,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryString {
 
@@ -17881,7 +17881,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -17915,7 +17915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -17949,7 +17949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -17981,7 +17981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPath {
 
@@ -17994,7 +17994,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformation {
 	Priority: *f64,
@@ -18040,7 +18040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatement {
 	ComparisonOperator: *string,
@@ -18118,7 +18118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -18360,7 +18360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArguments {
 
@@ -18373,7 +18373,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -18405,7 +18405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -18467,7 +18467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -18529,7 +18529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -18542,7 +18542,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -18574,7 +18574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -18636,7 +18636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -18698,7 +18698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -18711,7 +18711,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -18743,7 +18743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -18775,7 +18775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -18851,7 +18851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -18899,7 +18899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -18912,7 +18912,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethod {
 
@@ -18925,7 +18925,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryString {
 
@@ -18938,7 +18938,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -18972,7 +18972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -19006,7 +19006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -19038,7 +19038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPath {
 
@@ -19051,7 +19051,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementTextTransformation {
 	Priority: *f64,
@@ -19097,7 +19097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatement {
 	FieldToMatch: interface{},
@@ -19163,7 +19163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -19405,7 +19405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArguments {
 
@@ -19418,7 +19418,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -19450,7 +19450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -19512,7 +19512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -19574,7 +19574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -19587,7 +19587,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -19619,7 +19619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -19681,7 +19681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -19743,7 +19743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -19756,7 +19756,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -19788,7 +19788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -19820,7 +19820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -19896,7 +19896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -19944,7 +19944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -19957,7 +19957,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchMethod {
 
@@ -19970,7 +19970,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryString {
 
@@ -19983,7 +19983,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -20017,7 +20017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -20051,7 +20051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -20083,7 +20083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPath {
 
@@ -20096,7 +20096,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementTextTransformation {
 	Priority: *f64,
@@ -20142,7 +20142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatement {
 	FieldToMatch: interface{},
@@ -20192,7 +20192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -20434,7 +20434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArguments {
 
@@ -20447,7 +20447,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -20479,7 +20479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -20541,7 +20541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -20603,7 +20603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -20616,7 +20616,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -20648,7 +20648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -20710,7 +20710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -20772,7 +20772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -20785,7 +20785,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -20817,7 +20817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -20849,7 +20849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -20925,7 +20925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -20973,7 +20973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -20986,7 +20986,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchMethod {
 
@@ -20999,7 +20999,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchQueryString {
 
@@ -21012,7 +21012,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -21046,7 +21046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -21080,7 +21080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -21112,7 +21112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPath {
 
@@ -21125,7 +21125,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTextTransformation {
 	Priority: *f64,
@@ -21171,7 +21171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatement {
 	RegexString: *string,
@@ -21237,7 +21237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -21479,7 +21479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchAllQueryArguments {
 
@@ -21492,7 +21492,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -21524,7 +21524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -21586,7 +21586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -21648,7 +21648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -21661,7 +21661,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -21693,7 +21693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -21755,7 +21755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -21817,7 +21817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -21830,7 +21830,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -21862,7 +21862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -21894,7 +21894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -21970,7 +21970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -22018,7 +22018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -22031,7 +22031,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchMethod {
 
@@ -22044,7 +22044,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchQueryString {
 
@@ -22057,7 +22057,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -22091,7 +22091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -22125,7 +22125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -22157,7 +22157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementFieldToMatchUriPath {
 
@@ -22170,7 +22170,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexMatchStatementTextTransformation {
 	Priority: *f64,
@@ -22216,7 +22216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatement {
 	Arn: *string,
@@ -22282,7 +22282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -22524,7 +22524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments {
 
@@ -22537,7 +22537,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -22569,7 +22569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -22631,7 +22631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -22693,7 +22693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -22706,7 +22706,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -22738,7 +22738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -22800,7 +22800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -22862,7 +22862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -22875,7 +22875,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -22907,7 +22907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -22939,7 +22939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -23015,7 +23015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -23063,7 +23063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -23076,7 +23076,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchMethod {
 
@@ -23089,7 +23089,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchQueryString {
 
@@ -23102,7 +23102,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -23136,7 +23136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -23170,7 +23170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -23202,7 +23202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPath {
 
@@ -23215,7 +23215,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementTextTransformation {
 	Priority: *f64,
@@ -23261,7 +23261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatement {
 	Arn: *string,
@@ -23327,7 +23327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRule {
 	Name: *string,
@@ -23361,7 +23361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverride {
 	Name: *string,
@@ -23411,7 +23411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUse {
 	Allow: interface{},
@@ -23509,7 +23509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllow {
 	CustomRequestHandling: interface{},
@@ -23543,7 +23543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowCustomRequestHandling {
 	InsertHeader: interface{},
@@ -23577,7 +23577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -23623,7 +23623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlock {
 	CustomResponse: interface{},
@@ -23657,7 +23657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockCustomResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockCustomResponse {
 	ResponseCode: *f64,
@@ -23719,7 +23719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeader {
 	Name: *string,
@@ -23765,7 +23765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptcha.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptcha {
 	CustomRequestHandling: interface{},
@@ -23799,7 +23799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandling {
 	InsertHeader: interface{},
@@ -23833,7 +23833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -23879,7 +23879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallenge {
 	CustomRequestHandling: interface{},
@@ -23913,7 +23913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeCustomRequestHandling {
 	InsertHeader: interface{},
@@ -23947,7 +23947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -23993,7 +23993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCount {
 	CustomRequestHandling: interface{},
@@ -24027,7 +24027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountCustomRequestHandling {
 	InsertHeader: interface{},
@@ -24061,7 +24061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -24107,7 +24107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatement {
 	ComparisonOperator: *string,
@@ -24185,7 +24185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -24427,7 +24427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchAllQueryArguments {
 
@@ -24440,7 +24440,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -24472,7 +24472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -24534,7 +24534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -24596,7 +24596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -24609,7 +24609,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -24641,7 +24641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -24703,7 +24703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -24765,7 +24765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -24778,7 +24778,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -24810,7 +24810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -24842,7 +24842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -24918,7 +24918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -24966,7 +24966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -24979,7 +24979,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchMethod {
 
@@ -24992,7 +24992,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchQueryString {
 
@@ -25005,7 +25005,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -25039,7 +25039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -25073,7 +25073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -25105,7 +25105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchUriPath {
 
@@ -25118,7 +25118,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSizeConstraintStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSizeConstraintStatementTextTransformation {
 	Priority: *f64,
@@ -25164,7 +25164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatement {
 	FieldToMatch: interface{},
@@ -25230,7 +25230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -25472,7 +25472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchAllQueryArguments {
 
@@ -25485,7 +25485,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -25517,7 +25517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -25579,7 +25579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -25641,7 +25641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -25654,7 +25654,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -25686,7 +25686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -25748,7 +25748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -25810,7 +25810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -25823,7 +25823,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -25855,7 +25855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -25887,7 +25887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -25963,7 +25963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -26011,7 +26011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -26024,7 +26024,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchMethod {
 
@@ -26037,7 +26037,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchQueryString {
 
@@ -26050,7 +26050,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -26084,7 +26084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -26118,7 +26118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -26150,7 +26150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchUriPath {
 
@@ -26163,7 +26163,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementSqliMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementSqliMatchStatementTextTransformation {
 	Priority: *f64,
@@ -26209,7 +26209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatement {
 	FieldToMatch: interface{},
@@ -26259,7 +26259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatch {
 	AllQueryArguments: interface{},
@@ -26501,7 +26501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchAllQueryArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchAllQueryArguments {
 
@@ -26514,7 +26514,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchBody {
 	OversizeHandling: *string,
@@ -26546,7 +26546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchCookies {
 	MatchScope: *string,
@@ -26608,7 +26608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPattern {
 	All: interface{},
@@ -26670,7 +26670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll {
 
@@ -26683,7 +26683,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeaderOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeaderOrder {
 	OversizeHandling: *string,
@@ -26715,7 +26715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeaders {
 	MatchScope: *string,
@@ -26777,7 +26777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersMatchPattern {
 	All: interface{},
@@ -26839,7 +26839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll {
 
@@ -26852,7 +26852,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJa3Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJa3Fingerprint {
 	FallbackBehavior: *string,
@@ -26884,7 +26884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJa4Fingerprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJa4Fingerprint {
 	FallbackBehavior: *string,
@@ -26916,7 +26916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJsonBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJsonBody {
 	MatchScope: *string,
@@ -26992,7 +26992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern {
 	All: interface{},
@@ -27040,7 +27040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 
@@ -27053,7 +27053,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchMethod {
 
@@ -27066,7 +27066,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchQueryString {
 
@@ -27079,7 +27079,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchSingleHeader {
 	Name: *string,
@@ -27113,7 +27113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchSingleQueryArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchSingleQueryArgument {
 	Name: *string,
@@ -27147,7 +27147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchUriFragment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchUriFragment {
 	FallbackBehavior: *string,
@@ -27179,7 +27179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchUriPath {
 
@@ -27192,7 +27192,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementXssMatchStatementTextTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleStatementXssMatchStatementTextTransformation {
 	Priority: *f64,
@@ -27238,7 +27238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleTimeouts {
 	Create: *string,
@@ -27304,7 +27304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleVisibilityConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 &wafv2webaclrule.Wafv2WebAclRuleVisibilityConfigA {
 	CloudwatchMetricsEnabled: interface{},
@@ -27366,7 +27366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionAList
 ```
@@ -27526,7 +27526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAllowAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionAllowAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionAllowAList
 ```
@@ -27686,7 +27686,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAllowAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionAllowAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionAllowAOutputReference
 ```
@@ -27995,7 +27995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAllowCustomRequestHandlingAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionAllowCustomRequestHandlingAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionAllowCustomRequestHandlingAList
 ```
@@ -28155,7 +28155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAllowCustomRequestHandlingAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionAllowCustomRequestHandlingAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionAllowCustomRequestHandlingAOutputReference
 ```
@@ -28464,7 +28464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderAList
 ```
@@ -28624,7 +28624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderAOutputReference
 ```
@@ -28935,7 +28935,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionAOutputReference
 ```
@@ -29412,7 +29412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionBlockAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionBlockAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionBlockAList
 ```
@@ -29572,7 +29572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionBlockAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionBlockAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionBlockAOutputReference
 ```
@@ -29881,7 +29881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionBlockCustomResponseAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionBlockCustomResponseAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionBlockCustomResponseAList
 ```
@@ -30041,7 +30041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionBlockCustomResponseAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionBlockCustomResponseAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionBlockCustomResponseAOutputReference
 ```
@@ -30401,7 +30401,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionBlockCustomResponseResponseHeaderAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderAList
 ```
@@ -30561,7 +30561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionBlockCustomResponseResponseHeaderAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderAOutputReference
 ```
@@ -30872,7 +30872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCaptchaAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCaptchaAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionCaptchaAList
 ```
@@ -31032,7 +31032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCaptchaAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCaptchaAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionCaptchaAOutputReference
 ```
@@ -31341,7 +31341,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCaptchaCustomRequestHandlingAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionCaptchaCustomRequestHandlingAList
 ```
@@ -31501,7 +31501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCaptchaCustomRequestHandlingAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionCaptchaCustomRequestHandlingAOutputReference
 ```
@@ -31810,7 +31810,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderAList
 ```
@@ -31970,7 +31970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderAOutputReference
 ```
@@ -32281,7 +32281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionChallengeAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionChallengeAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionChallengeAList
 ```
@@ -32441,7 +32441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionChallengeAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionChallengeAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionChallengeAOutputReference
 ```
@@ -32750,7 +32750,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionChallengeCustomRequestHandlingAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionChallengeCustomRequestHandlingAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionChallengeCustomRequestHandlingAList
 ```
@@ -32910,7 +32910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionChallengeCustomRequestHandlingAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionChallengeCustomRequestHandlingAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionChallengeCustomRequestHandlingAOutputReference
 ```
@@ -33219,7 +33219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderAList
 ```
@@ -33379,7 +33379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderAOutputReference
 ```
@@ -33690,7 +33690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCountAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCountAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionCountAList
 ```
@@ -33850,7 +33850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCountAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCountAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionCountAOutputReference
 ```
@@ -34159,7 +34159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCountCustomRequestHandlingAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCountCustomRequestHandlingAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionCountCustomRequestHandlingAList
 ```
@@ -34319,7 +34319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCountCustomRequestHandlingAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCountCustomRequestHandlingAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionCountCustomRequestHandlingAOutputReference
 ```
@@ -34628,7 +34628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderAList
 ```
@@ -34788,7 +34788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderAOutputReference
 ```
@@ -35099,7 +35099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleCaptchaConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleCaptchaConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleCaptchaConfigAList
 ```
@@ -35259,7 +35259,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleCaptchaConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleCaptchaConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleCaptchaConfigAOutputReference
 ```
@@ -35568,7 +35568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleCaptchaConfigImmunityTimePropertyAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleCaptchaConfigImmunityTimePropertyAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleCaptchaConfigImmunityTimePropertyAList
 ```
@@ -35728,7 +35728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleCaptchaConfigImmunityTimePropertyAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleCaptchaConfigImmunityTimePropertyAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleCaptchaConfigImmunityTimePropertyAOutputReference
 ```
@@ -36024,7 +36024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleChallengeConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleChallengeConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleChallengeConfigAList
 ```
@@ -36184,7 +36184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleChallengeConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleChallengeConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleChallengeConfigAOutputReference
 ```
@@ -36493,7 +36493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleChallengeConfigImmunityTimePropertyAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleChallengeConfigImmunityTimePropertyAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleChallengeConfigImmunityTimePropertyAList
 ```
@@ -36653,7 +36653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleChallengeConfigImmunityTimePropertyAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleChallengeConfigImmunityTimePropertyAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleChallengeConfigImmunityTimePropertyAOutputReference
 ```
@@ -36949,7 +36949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleOverrideActionAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleOverrideActionAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleOverrideActionAList
 ```
@@ -37109,7 +37109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleOverrideActionAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleOverrideActionAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleOverrideActionAOutputReference
 ```
@@ -37460,7 +37460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleOverrideActionCountAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleOverrideActionCountAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleOverrideActionCountAList
 ```
@@ -37620,7 +37620,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleOverrideActionCountAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleOverrideActionCountAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleOverrideActionCountAOutputReference
 ```
@@ -37887,7 +37887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleOverrideActionNoneAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleOverrideActionNoneAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleOverrideActionNoneAList
 ```
@@ -38047,7 +38047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleOverrideActionNoneAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleOverrideActionNoneAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleOverrideActionNoneAOutputReference
 ```
@@ -38314,7 +38314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleRuleLabelAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleRuleLabelAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleRuleLabelAList
 ```
@@ -38474,7 +38474,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleRuleLabelAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleRuleLabelAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleRuleLabelAOutputReference
 ```
@@ -38763,7 +38763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementAndStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementAndStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementAndStatementList
 ```
@@ -38923,7 +38923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementAndStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementAndStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementAndStatementOutputReference
 ```
@@ -39232,7 +39232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementAsnMatchStatementForwardedIpConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementAsnMatchStatementForwardedIpConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementAsnMatchStatementForwardedIpConfigList
 ```
@@ -39392,7 +39392,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementAsnMatchStatementForwardedIpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementAsnMatchStatementForwardedIpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementAsnMatchStatementForwardedIpConfigOutputReference
 ```
@@ -39703,7 +39703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementAsnMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementAsnMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementAsnMatchStatementList
 ```
@@ -39863,7 +39863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementAsnMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementAsnMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementAsnMatchStatementOutputReference
 ```
@@ -40194,7 +40194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsList
 ```
@@ -40354,7 +40354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference
 ```
@@ -40621,7 +40621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchBodyList
 ```
@@ -40781,7 +40781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchBodyOutputReference
 ```
@@ -41077,7 +41077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesList
 ```
@@ -41237,7 +41237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllList
 ```
@@ -41397,7 +41397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference
 ```
@@ -41664,7 +41664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternList
 ```
@@ -41824,7 +41824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference
 ```
@@ -42191,7 +42191,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchCookiesOutputReference
 ```
@@ -42544,7 +42544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrderList
 ```
@@ -42704,7 +42704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrderOutputReference
 ```
@@ -42993,7 +42993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersList
 ```
@@ -43153,7 +43153,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllList
 ```
@@ -43313,7 +43313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference
 ```
@@ -43580,7 +43580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternList
 ```
@@ -43740,7 +43740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference
 ```
@@ -44107,7 +44107,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchHeadersOutputReference
 ```
@@ -44460,7 +44460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintList
 ```
@@ -44620,7 +44620,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference
 ```
@@ -44909,7 +44909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintList
 ```
@@ -45069,7 +45069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintOutputReference
 ```
@@ -45358,7 +45358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyList
 ```
@@ -45518,7 +45518,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllList
 ```
@@ -45678,7 +45678,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference
 ```
@@ -45945,7 +45945,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternList
 ```
@@ -46105,7 +46105,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference
 ```
@@ -46443,7 +46443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyOutputReference
 ```
@@ -46832,7 +46832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchList
 ```
@@ -46992,7 +46992,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchMethodList
 ```
@@ -47152,7 +47152,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchMethodOutputReference
 ```
@@ -47419,7 +47419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchOutputReference
 ```
@@ -48274,7 +48274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchQueryStringList
 ```
@@ -48434,7 +48434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchQueryStringOutputReference
 ```
@@ -48701,7 +48701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeaderList
 ```
@@ -48861,7 +48861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference
 ```
@@ -49150,7 +49150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentList
 ```
@@ -49310,7 +49310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference
 ```
@@ -49599,7 +49599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentList
 ```
@@ -49759,7 +49759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentOutputReference
 ```
@@ -50055,7 +50055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriPathList
 ```
@@ -50215,7 +50215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchUriPathOutputReference
 ```
@@ -50482,7 +50482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementList
 ```
@@ -50642,7 +50642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementOutputReference
 ```
@@ -51037,7 +51037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementTextTransformationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementTextTransformationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementByteMatchStatementTextTransformationList
 ```
@@ -51197,7 +51197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementByteMatchStatementTextTransformationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementByteMatchStatementTextTransformationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementByteMatchStatementTextTransformationOutputReference
 ```
@@ -51508,7 +51508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementGeoMatchStatementForwardedIpConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementGeoMatchStatementForwardedIpConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementGeoMatchStatementForwardedIpConfigList
 ```
@@ -51668,7 +51668,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementGeoMatchStatementForwardedIpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementGeoMatchStatementForwardedIpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementGeoMatchStatementForwardedIpConfigOutputReference
 ```
@@ -51979,7 +51979,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementGeoMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementGeoMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementGeoMatchStatementList
 ```
@@ -52139,7 +52139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementGeoMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementGeoMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementGeoMatchStatementOutputReference
 ```
@@ -52470,7 +52470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigList
 ```
@@ -52630,7 +52630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference
 ```
@@ -52963,7 +52963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementIpSetReferenceStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementIpSetReferenceStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementIpSetReferenceStatementList
 ```
@@ -53123,7 +53123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementIpSetReferenceStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementIpSetReferenceStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementIpSetReferenceStatementOutputReference
 ```
@@ -53454,7 +53454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementLabelMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementLabelMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementLabelMatchStatementList
 ```
@@ -53614,7 +53614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementLabelMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementLabelMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementLabelMatchStatementOutputReference
 ```
@@ -53925,7 +53925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementList
 ```
@@ -54085,7 +54085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementList
 ```
@@ -54245,7 +54245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetList
 ```
@@ -54405,7 +54405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetOutputReference
 ```
@@ -54829,7 +54829,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsList
 ```
@@ -54989,7 +54989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsOutputReference
 ```
@@ -55278,7 +55278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldList
 ```
@@ -55438,7 +55438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldOutputReference
 ```
@@ -55727,7 +55727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionList
 ```
@@ -55887,7 +55887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionOutputReference
 ```
@@ -56386,7 +56386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldList
 ```
@@ -56546,7 +56546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldOutputReference
 ```
@@ -56835,7 +56835,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsList
 ```
@@ -56995,7 +56995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsOutputReference
 ```
@@ -57284,7 +57284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldList
 ```
@@ -57444,7 +57444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldOutputReference
 ```
@@ -57733,7 +57733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsList
 ```
@@ -57893,7 +57893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsOutputReference
 ```
@@ -58204,7 +58204,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeaderList
 ```
@@ -58364,7 +58364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeaderOutputReference
 ```
@@ -58697,7 +58697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJsonList
 ```
@@ -58857,7 +58857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJsonOutputReference
 ```
@@ -59190,7 +59190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionList
 ```
@@ -59350,7 +59350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionOutputReference
 ```
@@ -59785,7 +59785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeList
 ```
@@ -59945,7 +59945,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeOutputReference
 ```
@@ -60256,7 +60256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpressionList
 ```
@@ -60416,7 +60416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpressionOutputReference
 ```
@@ -60712,7 +60712,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeList
 ```
@@ -60872,7 +60872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeOutputReference
 ```
@@ -61232,7 +61232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigList
 ```
@@ -61392,7 +61392,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigOutputReference
 ```
@@ -61701,7 +61701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetList
 ```
@@ -61861,7 +61861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetOutputReference
 ```
@@ -62199,7 +62199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetList
 ```
@@ -62359,7 +62359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetOutputReference
 ```
@@ -62761,7 +62761,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionList
 ```
@@ -62921,7 +62921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionOutputReference
 ```
@@ -63294,7 +63294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldList
 ```
@@ -63454,7 +63454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldOutputReference
 ```
@@ -63743,7 +63743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldList
 ```
@@ -63903,7 +63903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldOutputReference
 ```
@@ -64192,7 +64192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsList
 ```
@@ -64352,7 +64352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsOutputReference
 ```
@@ -64663,7 +64663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeaderList
 ```
@@ -64823,7 +64823,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeaderOutputReference
 ```
@@ -65156,7 +65156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJsonList
 ```
@@ -65316,7 +65316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJsonOutputReference
 ```
@@ -65649,7 +65649,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionList
 ```
@@ -65809,7 +65809,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionOutputReference
 ```
@@ -66244,7 +66244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeList
 ```
@@ -66404,7 +66404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeOutputReference
 ```
@@ -66715,7 +66715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetList
 ```
@@ -66875,7 +66875,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetOutputReference
 ```
@@ -67193,7 +67193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsList
 ```
@@ -67353,7 +67353,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference
 ```
@@ -67930,7 +67930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldList
 ```
@@ -68090,7 +68090,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldOutputReference
 ```
@@ -68379,7 +68379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsUsernameFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsUsernameFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsUsernameFieldList
 ```
@@ -68539,7 +68539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsUsernameFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsUsernameFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsUsernameFieldOutputReference
 ```
@@ -68828,7 +68828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference
 ```
@@ -69294,7 +69294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderList
 ```
@@ -69454,7 +69454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -69765,7 +69765,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingList
 ```
@@ -69925,7 +69925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingOutputReference
 ```
@@ -70234,7 +70234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowList
 ```
@@ -70394,7 +70394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowOutputReference
 ```
@@ -70703,7 +70703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseList
 ```
@@ -70863,7 +70863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseOutputReference
 ```
@@ -71223,7 +71223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderList
 ```
@@ -71383,7 +71383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderOutputReference
 ```
@@ -71694,7 +71694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockList
 ```
@@ -71854,7 +71854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockOutputReference
 ```
@@ -72163,7 +72163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderList
 ```
@@ -72323,7 +72323,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -72634,7 +72634,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingList
 ```
@@ -72794,7 +72794,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingOutputReference
 ```
@@ -73103,7 +73103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaList
 ```
@@ -73263,7 +73263,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaOutputReference
 ```
@@ -73572,7 +73572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderList
 ```
@@ -73732,7 +73732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -74043,7 +74043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingList
 ```
@@ -74203,7 +74203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingOutputReference
 ```
@@ -74512,7 +74512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeList
 ```
@@ -74672,7 +74672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeOutputReference
 ```
@@ -74981,7 +74981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderList
 ```
@@ -75141,7 +75141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -75452,7 +75452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingList
 ```
@@ -75612,7 +75612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingOutputReference
 ```
@@ -75921,7 +75921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountList
 ```
@@ -76081,7 +76081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountOutputReference
 ```
@@ -76390,7 +76390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseList
 ```
@@ -76550,7 +76550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseOutputReference
 ```
@@ -77027,7 +77027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideList
 ```
@@ -77187,7 +77187,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideOutputReference
 ```
@@ -77518,7 +77518,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfigList
 ```
@@ -77678,7 +77678,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfigOutputReference
 ```
@@ -77989,7 +77989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementList
 ```
@@ -78149,7 +78149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementOutputReference
 ```
@@ -78480,7 +78480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsList
 ```
@@ -78640,7 +78640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference
 ```
@@ -78907,7 +78907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchBodyList
 ```
@@ -79067,7 +79067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchBodyOutputReference
 ```
@@ -79363,7 +79363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesList
 ```
@@ -79523,7 +79523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllList
 ```
@@ -79683,7 +79683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference
 ```
@@ -79950,7 +79950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternList
 ```
@@ -80110,7 +80110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference
 ```
@@ -80477,7 +80477,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesOutputReference
 ```
@@ -80830,7 +80830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrderList
 ```
@@ -80990,7 +80990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrderOutputReference
 ```
@@ -81279,7 +81279,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersList
 ```
@@ -81439,7 +81439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllList
 ```
@@ -81599,7 +81599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference
 ```
@@ -81866,7 +81866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternList
 ```
@@ -82026,7 +82026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference
 ```
@@ -82393,7 +82393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersOutputReference
 ```
@@ -82746,7 +82746,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintList
 ```
@@ -82906,7 +82906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference
 ```
@@ -83195,7 +83195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintList
 ```
@@ -83355,7 +83355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintOutputReference
 ```
@@ -83644,7 +83644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyList
 ```
@@ -83804,7 +83804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllList
 ```
@@ -83964,7 +83964,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference
 ```
@@ -84231,7 +84231,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternList
 ```
@@ -84391,7 +84391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference
 ```
@@ -84729,7 +84729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyOutputReference
 ```
@@ -85118,7 +85118,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchList
 ```
@@ -85278,7 +85278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchMethodList
 ```
@@ -85438,7 +85438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchMethodOutputReference
 ```
@@ -85705,7 +85705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchOutputReference
 ```
@@ -86560,7 +86560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchQueryStringList
 ```
@@ -86720,7 +86720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchQueryStringOutputReference
 ```
@@ -86987,7 +86987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderList
 ```
@@ -87147,7 +87147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference
 ```
@@ -87436,7 +87436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentList
 ```
@@ -87596,7 +87596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference
 ```
@@ -87885,7 +87885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentList
 ```
@@ -88045,7 +88045,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentOutputReference
 ```
@@ -88341,7 +88341,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathList
 ```
@@ -88501,7 +88501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathOutputReference
 ```
@@ -88768,7 +88768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementList
 ```
@@ -88928,7 +88928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementOutputReference
 ```
@@ -89323,7 +89323,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementTextTransformationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementTextTransformationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementTextTransformationList
 ```
@@ -89483,7 +89483,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementTextTransformationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementTextTransformationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementTextTransformationOutputReference
 ```
@@ -89794,7 +89794,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfigList
 ```
@@ -89954,7 +89954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfigOutputReference
 ```
@@ -90265,7 +90265,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementList
 ```
@@ -90425,7 +90425,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementOutputReference
 ```
@@ -90756,7 +90756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigList
 ```
@@ -90916,7 +90916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference
 ```
@@ -91249,7 +91249,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementList
 ```
@@ -91409,7 +91409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementOutputReference
 ```
@@ -91740,7 +91740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatementList
 ```
@@ -91900,7 +91900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatementOutputReference
 ```
@@ -92211,7 +92211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementList
 ```
@@ -92371,7 +92371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementOutputReference
 ```
@@ -93058,7 +93058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsList
 ```
@@ -93218,7 +93218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference
 ```
@@ -93485,7 +93485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyList
 ```
@@ -93645,7 +93645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyOutputReference
 ```
@@ -93941,7 +93941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesList
 ```
@@ -94101,7 +94101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllList
 ```
@@ -94261,7 +94261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference
 ```
@@ -94528,7 +94528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternList
 ```
@@ -94688,7 +94688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference
 ```
@@ -95055,7 +95055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesOutputReference
 ```
@@ -95408,7 +95408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrderList
 ```
@@ -95568,7 +95568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrderOutputReference
 ```
@@ -95857,7 +95857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersList
 ```
@@ -96017,7 +96017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllList
 ```
@@ -96177,7 +96177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference
 ```
@@ -96444,7 +96444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternList
 ```
@@ -96604,7 +96604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference
 ```
@@ -96971,7 +96971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeadersOutputReference
 ```
@@ -97324,7 +97324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintList
 ```
@@ -97484,7 +97484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintOutputReference
 ```
@@ -97773,7 +97773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintList
 ```
@@ -97933,7 +97933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintOutputReference
 ```
@@ -98222,7 +98222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyList
 ```
@@ -98382,7 +98382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllList
 ```
@@ -98542,7 +98542,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference
 ```
@@ -98809,7 +98809,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternList
 ```
@@ -98969,7 +98969,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference
 ```
@@ -99307,7 +99307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference
 ```
@@ -99696,7 +99696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchList
 ```
@@ -99856,7 +99856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchMethodList
 ```
@@ -100016,7 +100016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchMethodOutputReference
 ```
@@ -100283,7 +100283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchOutputReference
 ```
@@ -101138,7 +101138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryStringList
 ```
@@ -101298,7 +101298,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryStringOutputReference
 ```
@@ -101565,7 +101565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderList
 ```
@@ -101725,7 +101725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference
 ```
@@ -102014,7 +102014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentList
 ```
@@ -102174,7 +102174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference
 ```
@@ -102463,7 +102463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentList
 ```
@@ -102623,7 +102623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentOutputReference
 ```
@@ -102919,7 +102919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathList
 ```
@@ -103079,7 +103079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathOutputReference
 ```
@@ -103346,7 +103346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementList
 ```
@@ -103506,7 +103506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementOutputReference
 ```
@@ -103879,7 +103879,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementTextTransformationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementTextTransformationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementTextTransformationList
 ```
@@ -104039,7 +104039,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementTextTransformationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementTextTransformationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementTextTransformationOutputReference
 ```
@@ -104350,7 +104350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsList
 ```
@@ -104510,7 +104510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference
 ```
@@ -104777,7 +104777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyList
 ```
@@ -104937,7 +104937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference
 ```
@@ -105233,7 +105233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesList
 ```
@@ -105393,7 +105393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllList
 ```
@@ -105553,7 +105553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference
 ```
@@ -105820,7 +105820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternList
 ```
@@ -105980,7 +105980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternOutputReference
 ```
@@ -106347,7 +106347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference
 ```
@@ -106700,7 +106700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderList
 ```
@@ -106860,7 +106860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderOutputReference
 ```
@@ -107149,7 +107149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList
 ```
@@ -107309,7 +107309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllList
 ```
@@ -107469,7 +107469,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference
 ```
@@ -107736,7 +107736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternList
 ```
@@ -107896,7 +107896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference
 ```
@@ -108263,7 +108263,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeadersOutputReference
 ```
@@ -108616,7 +108616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintList
 ```
@@ -108776,7 +108776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintOutputReference
 ```
@@ -109065,7 +109065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintList
 ```
@@ -109225,7 +109225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintOutputReference
 ```
@@ -109514,7 +109514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyList
 ```
@@ -109674,7 +109674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllList
 ```
@@ -109834,7 +109834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference
 ```
@@ -110101,7 +110101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternList
 ```
@@ -110261,7 +110261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference
 ```
@@ -110599,7 +110599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference
 ```
@@ -110988,7 +110988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchList
 ```
@@ -111148,7 +111148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodList
 ```
@@ -111308,7 +111308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference
 ```
@@ -111575,7 +111575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference
 ```
@@ -112430,7 +112430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringList
 ```
@@ -112590,7 +112590,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference
 ```
@@ -112857,7 +112857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderList
 ```
@@ -113017,7 +113017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference
 ```
@@ -113306,7 +113306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentList
 ```
@@ -113466,7 +113466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference
 ```
@@ -113755,7 +113755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentList
 ```
@@ -113915,7 +113915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentOutputReference
 ```
@@ -114211,7 +114211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathList
 ```
@@ -114371,7 +114371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference
 ```
@@ -114638,7 +114638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementList
 ```
@@ -114798,7 +114798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementOutputReference
 ```
@@ -115171,7 +115171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationList
 ```
@@ -115331,7 +115331,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationOutputReference
 ```
@@ -115642,7 +115642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsList
 ```
@@ -115802,7 +115802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference
 ```
@@ -116069,7 +116069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyList
 ```
@@ -116229,7 +116229,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyOutputReference
 ```
@@ -116525,7 +116525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesList
 ```
@@ -116685,7 +116685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllList
 ```
@@ -116845,7 +116845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference
 ```
@@ -117112,7 +117112,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList
 ```
@@ -117272,7 +117272,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference
 ```
@@ -117639,7 +117639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesOutputReference
 ```
@@ -117992,7 +117992,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrderList
 ```
@@ -118152,7 +118152,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrderOutputReference
 ```
@@ -118441,7 +118441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersList
 ```
@@ -118601,7 +118601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllList
 ```
@@ -118761,7 +118761,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference
 ```
@@ -119028,7 +119028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternList
 ```
@@ -119188,7 +119188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference
 ```
@@ -119555,7 +119555,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersOutputReference
 ```
@@ -119908,7 +119908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintList
 ```
@@ -120068,7 +120068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintOutputReference
 ```
@@ -120357,7 +120357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintList
 ```
@@ -120517,7 +120517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintOutputReference
 ```
@@ -120806,7 +120806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyList
 ```
@@ -120966,7 +120966,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllList
 ```
@@ -121126,7 +121126,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference
 ```
@@ -121393,7 +121393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternList
 ```
@@ -121553,7 +121553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference
 ```
@@ -121891,7 +121891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference
 ```
@@ -122280,7 +122280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchList
 ```
@@ -122440,7 +122440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodList
 ```
@@ -122600,7 +122600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodOutputReference
 ```
@@ -122867,7 +122867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchOutputReference
 ```
@@ -123722,7 +123722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringList
 ```
@@ -123882,7 +123882,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference
 ```
@@ -124149,7 +124149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderList
 ```
@@ -124309,7 +124309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference
 ```
@@ -124598,7 +124598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentList
 ```
@@ -124758,7 +124758,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference
 ```
@@ -125047,7 +125047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentList
 ```
@@ -125207,7 +125207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentOutputReference
 ```
@@ -125503,7 +125503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathList
 ```
@@ -125663,7 +125663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathOutputReference
 ```
@@ -125930,7 +125930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementList
 ```
@@ -126090,7 +126090,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementOutputReference
 ```
@@ -126485,7 +126485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementTextTransformationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementTextTransformationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementTextTransformationList
 ```
@@ -126645,7 +126645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementTextTransformationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementTextTransformationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementTextTransformationOutputReference
 ```
@@ -126956,7 +126956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsList
 ```
@@ -127116,7 +127116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference
 ```
@@ -127383,7 +127383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyList
 ```
@@ -127543,7 +127543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyOutputReference
 ```
@@ -127839,7 +127839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesList
 ```
@@ -127999,7 +127999,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllList
 ```
@@ -128159,7 +128159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference
 ```
@@ -128426,7 +128426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternList
 ```
@@ -128586,7 +128586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternOutputReference
 ```
@@ -128953,7 +128953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesOutputReference
 ```
@@ -129306,7 +129306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrderList
 ```
@@ -129466,7 +129466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrderOutputReference
 ```
@@ -129755,7 +129755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersList
 ```
@@ -129915,7 +129915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllList
 ```
@@ -130075,7 +130075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference
 ```
@@ -130342,7 +130342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternList
 ```
@@ -130502,7 +130502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference
 ```
@@ -130869,7 +130869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeadersOutputReference
 ```
@@ -131222,7 +131222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintList
 ```
@@ -131382,7 +131382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintOutputReference
 ```
@@ -131671,7 +131671,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintList
 ```
@@ -131831,7 +131831,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintOutputReference
 ```
@@ -132120,7 +132120,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyList
 ```
@@ -132280,7 +132280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllList
 ```
@@ -132440,7 +132440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference
 ```
@@ -132707,7 +132707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternList
 ```
@@ -132867,7 +132867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference
 ```
@@ -133205,7 +133205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference
 ```
@@ -133594,7 +133594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchList
 ```
@@ -133754,7 +133754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodList
 ```
@@ -133914,7 +133914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodOutputReference
 ```
@@ -134181,7 +134181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchOutputReference
 ```
@@ -135036,7 +135036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringList
 ```
@@ -135196,7 +135196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringOutputReference
 ```
@@ -135463,7 +135463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderList
 ```
@@ -135623,7 +135623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference
 ```
@@ -135912,7 +135912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentList
 ```
@@ -136072,7 +136072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference
 ```
@@ -136361,7 +136361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentList
 ```
@@ -136521,7 +136521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentOutputReference
 ```
@@ -136817,7 +136817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathList
 ```
@@ -136977,7 +136977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathOutputReference
 ```
@@ -137244,7 +137244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementList
 ```
@@ -137404,7 +137404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementOutputReference
 ```
@@ -137784,7 +137784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementTextTransformationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementTextTransformationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementTextTransformationList
 ```
@@ -137944,7 +137944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementTextTransformationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementTextTransformationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementTextTransformationOutputReference
 ```
@@ -138255,7 +138255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsList
 ```
@@ -138415,7 +138415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference
 ```
@@ -138682,7 +138682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchBodyList
 ```
@@ -138842,7 +138842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchBodyOutputReference
 ```
@@ -139138,7 +139138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesList
 ```
@@ -139298,7 +139298,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllList
 ```
@@ -139458,7 +139458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference
 ```
@@ -139725,7 +139725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternList
 ```
@@ -139885,7 +139885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference
 ```
@@ -140252,7 +140252,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesOutputReference
 ```
@@ -140605,7 +140605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrderList
 ```
@@ -140765,7 +140765,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrderOutputReference
 ```
@@ -141054,7 +141054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersList
 ```
@@ -141214,7 +141214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllList
 ```
@@ -141374,7 +141374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference
 ```
@@ -141641,7 +141641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternList
 ```
@@ -141801,7 +141801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference
 ```
@@ -142168,7 +142168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeadersOutputReference
 ```
@@ -142521,7 +142521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintList
 ```
@@ -142681,7 +142681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintOutputReference
 ```
@@ -142970,7 +142970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintList
 ```
@@ -143130,7 +143130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintOutputReference
 ```
@@ -143419,7 +143419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyList
 ```
@@ -143579,7 +143579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllList
 ```
@@ -143739,7 +143739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference
 ```
@@ -144006,7 +144006,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternList
 ```
@@ -144166,7 +144166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference
 ```
@@ -144504,7 +144504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyOutputReference
 ```
@@ -144893,7 +144893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchList
 ```
@@ -145053,7 +145053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchMethodList
 ```
@@ -145213,7 +145213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchMethodOutputReference
 ```
@@ -145480,7 +145480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchOutputReference
 ```
@@ -146335,7 +146335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringList
 ```
@@ -146495,7 +146495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringOutputReference
 ```
@@ -146762,7 +146762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderList
 ```
@@ -146922,7 +146922,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference
 ```
@@ -147211,7 +147211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentList
 ```
@@ -147371,7 +147371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference
 ```
@@ -147660,7 +147660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentList
 ```
@@ -147820,7 +147820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentOutputReference
 ```
@@ -148116,7 +148116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathList
 ```
@@ -148276,7 +148276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathOutputReference
 ```
@@ -148543,7 +148543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementList
 ```
@@ -148703,7 +148703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementOutputReference
 ```
@@ -149054,7 +149054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementTextTransformationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementTextTransformationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementTextTransformationList
 ```
@@ -149214,7 +149214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementTextTransformationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementTextTransformationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementTextTransformationOutputReference
 ```
@@ -149525,7 +149525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementNotStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementNotStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementNotStatementList
 ```
@@ -149685,7 +149685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementNotStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementNotStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleStatementNotStatementOutputReference
 ```
@@ -149994,6 +149994,6 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclRule.Wafv2WebAclRuleStatementOrStatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafv2webaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafv2webaclrule"
 
 wafv2webaclrule.NewWafv2WebAclRuleStatementOrStatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleStatementOrStatementList

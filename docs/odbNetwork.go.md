@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetwork(scope Construct, id *string, config OdbNetworkConfig) OdbNetwork
 ```
@@ -504,7 +504,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.OdbNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.OdbNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ odbnetwork.OdbNetwork_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.OdbNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ odbnetwork.OdbNetwork_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.OdbNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1387,7 +1387,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkConfig {
 	Connection: interface{},
@@ -1415,7 +1415,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
 	StsAccess: *string,
 	StsPolicyDocument: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.odbNetwork.OdbNetworkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.odbNetwork.OdbNetworkTimeouts,
 }
 ```
 
@@ -1817,7 +1817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServices {
 
@@ -1830,7 +1830,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess {
 
@@ -1843,7 +1843,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesKmsAccess {
 
@@ -1856,7 +1856,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesManagedS3BackupAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesManagedS3BackupAccess {
 
@@ -1869,7 +1869,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesS3Access.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesS3Access {
 
@@ -1882,7 +1882,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesServiceNetworkEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesServiceNetworkEndpoint {
 
@@ -1895,7 +1895,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesStsAccess {
 
@@ -1908,7 +1908,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesZeroEtlAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesZeroEtlAccess {
 
@@ -1921,7 +1921,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkOciDnsForwardingConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkOciDnsForwardingConfigs {
 
@@ -1934,7 +1934,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 &odbnetwork.OdbNetworkTimeouts {
 	Create: *string,
@@ -2002,7 +2002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList
 ```
@@ -2151,7 +2151,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference
 ```
@@ -2451,7 +2451,7 @@ func InternalValue() OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesKmsAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesKmsAccessList
 ```
@@ -2600,7 +2600,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesKmsAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesKmsAccessOutputReference
 ```
@@ -2911,7 +2911,7 @@ func InternalValue() OdbNetworkManagedServicesKmsAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesList
 ```
@@ -3060,7 +3060,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesManagedS3BackupAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesManagedS3BackupAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesManagedS3BackupAccessList
 ```
@@ -3209,7 +3209,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesManagedS3BackupAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesManagedS3BackupAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesManagedS3BackupAccessOutputReference
 ```
@@ -3498,7 +3498,7 @@ func InternalValue() OdbNetworkManagedServicesManagedS3BackupAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesOutputReference
 ```
@@ -3875,7 +3875,7 @@ func InternalValue() OdbNetworkManagedServices
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesS3AccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesS3AccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesS3AccessList
 ```
@@ -4024,7 +4024,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesS3AccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesS3AccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesS3AccessOutputReference
 ```
@@ -4335,7 +4335,7 @@ func InternalValue() OdbNetworkManagedServicesS3Access
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesServiceNetworkEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesServiceNetworkEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesServiceNetworkEndpointList
 ```
@@ -4484,7 +4484,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesServiceNetworkEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesServiceNetworkEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesServiceNetworkEndpointOutputReference
 ```
@@ -4773,7 +4773,7 @@ func InternalValue() OdbNetworkManagedServicesServiceNetworkEndpoint
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesStsAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesStsAccessList
 ```
@@ -4922,7 +4922,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesStsAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesStsAccessOutputReference
 ```
@@ -5233,7 +5233,7 @@ func InternalValue() OdbNetworkManagedServicesStsAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesZeroEtlAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesZeroEtlAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesZeroEtlAccessList
 ```
@@ -5382,7 +5382,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesZeroEtlAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesZeroEtlAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesZeroEtlAccessOutputReference
 ```
@@ -5671,7 +5671,7 @@ func InternalValue() OdbNetworkManagedServicesZeroEtlAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkOciDnsForwardingConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkOciDnsForwardingConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkOciDnsForwardingConfigsList
 ```
@@ -5820,7 +5820,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkOciDnsForwardingConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkOciDnsForwardingConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkOciDnsForwardingConfigsOutputReference
 ```
@@ -6109,7 +6109,7 @@ func InternalValue() OdbNetworkOciDnsForwardingConfigs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetwork"
 
 odbnetwork.NewOdbNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OdbNetworkTimeoutsOutputReference
 ```

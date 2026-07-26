@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.NewDataAwsSecurityhubSecurityControls(scope Construct, id *string, config DataAwsSecurityhubSecurityControlsConfig) DataAwsSecurityhubSecurityControls
 ```
@@ -312,7 +312,7 @@ func ResetStandardsArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
 
 &dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControlsConfig {
 	Connection: interface{},
@@ -766,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsSecurityControlDefinitions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
 
 &dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControlsSecurityControlDefinitions {
 
@@ -781,7 +781,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubsecu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsSecurityControlDefinitionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.NewDataAwsSecurityhubSecurityControlsSecurityControlDefinitionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecurityhubSecurityControlsSecurityControlDefinitionsList
 ```
@@ -930,7 +930,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsSecurityControlDefinitionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.NewDataAwsSecurityhubSecurityControlsSecurityControlDefinitionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecurityhubSecurityControlsSecurityControlDefinitionsOutputReference
 ```

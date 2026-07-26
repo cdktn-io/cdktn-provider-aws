@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerDxGatewayAttachment.NetworkmanagerDxGatewayAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerdxgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerdxgatewayattachment"
 
 networkmanagerdxgatewayattachment.NewNetworkmanagerDxGatewayAttachment(scope Construct, id *string, config NetworkmanagerDxGatewayAttachmentConfig) NetworkmanagerDxGatewayAttachment
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkmanagerDxGatewayAttachment.NetworkmanagerDxGatewayAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerdxgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerdxgatewayattachment"
 
 networkmanagerdxgatewayattachment.NetworkmanagerDxGatewayAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkmanagerDxGatewayAttachment.NetworkmanagerDxGatewayAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerdxgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerdxgatewayattachment"
 
 networkmanagerdxgatewayattachment.NetworkmanagerDxGatewayAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ networkmanagerdxgatewayattachment.NetworkmanagerDxGatewayAttachment_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkmanagerDxGatewayAttachment.NetworkmanagerDxGatewayAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerdxgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerdxgatewayattachment"
 
 networkmanagerdxgatewayattachment.NetworkmanagerDxGatewayAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ networkmanagerdxgatewayattachment.NetworkmanagerDxGatewayAttachment_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkmanagerDxGatewayAttachment.NetworkmanagerDxGatewayAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerdxgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerdxgatewayattachment"
 
 networkmanagerdxgatewayattachment.NetworkmanagerDxGatewayAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -954,7 +954,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerDxGatewayAttachment.NetworkmanagerDxGatewayAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerdxgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerdxgatewayattachment"
 
 &networkmanagerdxgatewayattachment.NetworkmanagerDxGatewayAttachmentConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerdxgatewa
 	EdgeLocations: *[]*string,
 	RoutingPolicyLabel: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkmanagerDxGatewayAttachment.NetworkmanagerDxGatewayAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkmanagerDxGatewayAttachment.NetworkmanagerDxGatewayAttachmentTimeouts,
 }
 ```
 
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerDxGatewayAttachment.NetworkmanagerDxGatewayAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerdxgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerdxgatewayattachment"
 
 &networkmanagerdxgatewayattachment.NetworkmanagerDxGatewayAttachmentTimeouts {
 	Create: *string,
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerDxGatewayAttachment.NetworkmanagerDxGatewayAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerdxgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerdxgatewayattachment"
 
 networkmanagerdxgatewayattachment.NewNetworkmanagerDxGatewayAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerDxGatewayAttachmentTimeoutsOutputReference
 ```

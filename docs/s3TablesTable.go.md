@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTable(scope Construct, id *string, config S3TablesTableConfig) S3TablesTable
 ```
@@ -474,7 +474,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.S3TablesTable_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.S3TablesTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ s3tablestable.S3TablesTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.S3TablesTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ s3tablestable.S3TablesTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.S3TablesTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1082,7 +1082,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableConfig {
 	Connection: interface{},
@@ -1096,8 +1096,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
 	Name: *string,
 	Namespace: *string,
 	TableBucketArn: *string,
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3TablesTable.S3TablesTableEncryptionConfiguration,
-	MaintenanceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3TablesTable.S3TablesTableMaintenanceConfiguration,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableEncryptionConfiguration,
+	MaintenanceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableMaintenanceConfiguration,
 	Metadata: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableEncryptionConfiguration {
 	KmsKeyArn: *string,
@@ -1360,11 +1360,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableMaintenanceConfiguration {
-	IcebergCompaction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction,
-	IcebergSnapshotManagement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement,
+	IcebergCompaction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction,
+	IcebergSnapshotManagement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement,
 }
 ```
 
@@ -1406,10 +1406,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableMaintenanceConfigurationIcebergCompaction {
-	Settings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings,
 	Status: *string,
 }
 ```
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings {
 	TargetFileSizeMb: *f64,
@@ -1484,10 +1484,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement {
-	Settings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings,
 	Status: *string,
 }
 ```
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings {
 	MaxSnapshotAgeHours: *f64,
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableMetadata {
 	Iceberg: interface{},
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIceberg.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableMetadataIceberg {
 	Properties: *map[string]*string,
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableMetadataIcebergSchema {
 	Field: interface{},
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchemaField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 &s3tablestable.S3TablesTableMetadataIcebergSchemaField {
 	Name: *string,
@@ -1762,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableEncryptionConfigurationOutputReference
 ```
@@ -2069,7 +2069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMaintenanceConfigurationIcebergCompactionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableMaintenanceConfigurationIcebergCompactionOutputReference
 ```
@@ -2389,7 +2389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMaintenanceConfigurationIcebergCompactionSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableMaintenanceConfigurationIcebergCompactionSettingsOutputReference
 ```
@@ -2667,7 +2667,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMaintenanceConfigurationIcebergSnapshotManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementOutputReference
 ```
@@ -2987,7 +2987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettingsOutputReference
 ```
@@ -3294,7 +3294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMaintenanceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableMaintenanceConfigurationOutputReference
 ```
@@ -3627,7 +3627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableMetadataIcebergList
 ```
@@ -3787,7 +3787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableMetadataIcebergOutputReference
 ```
@@ -4125,7 +4125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchemaFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergSchemaFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableMetadataIcebergSchemaFieldList
 ```
@@ -4285,7 +4285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchemaFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergSchemaFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableMetadataIcebergSchemaFieldOutputReference
 ```
@@ -4625,7 +4625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableMetadataIcebergSchemaList
 ```
@@ -4785,7 +4785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableMetadataIcebergSchemaOutputReference
 ```
@@ -5094,7 +5094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableMetadataList
 ```
@@ -5254,7 +5254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableMetadataOutputReference
 ```

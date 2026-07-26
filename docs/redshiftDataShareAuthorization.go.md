@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftdatashareauthorization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftdatashareauthorization"
 
 redshiftdatashareauthorization.NewRedshiftDataShareAuthorization(scope Construct, id *string, config RedshiftDataShareAuthorizationConfig) RedshiftDataShareAuthorization
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftdatashareauthorization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftdatashareauthorization"
 
 redshiftdatashareauthorization.RedshiftDataShareAuthorization_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftdatashareauthorization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftdatashareauthorization"
 
 redshiftdatashareauthorization.RedshiftDataShareAuthorization_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ redshiftdatashareauthorization.RedshiftDataShareAuthorization_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftdatashareauthorization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftdatashareauthorization"
 
 redshiftdatashareauthorization.RedshiftDataShareAuthorization_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ redshiftdatashareauthorization.RedshiftDataShareAuthorization_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftdatashareauthorization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftdatashareauthorization"
 
 redshiftdatashareauthorization.RedshiftDataShareAuthorization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftdatashareauthorization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftdatashareauthorization"
 
 &redshiftdatashareauthorization.RedshiftDataShareAuthorizationConfig {
 	Connection: interface{},

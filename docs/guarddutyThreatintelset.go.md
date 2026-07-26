@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutythreatintelset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutythreatintelset"
 
 guarddutythreatintelset.NewGuarddutyThreatintelset(scope Construct, id *string, config GuarddutyThreatintelsetConfig) GuarddutyThreatintelset
 ```
@@ -428,7 +428,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutythreatintelset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutythreatintelset"
 
 guarddutythreatintelset.GuarddutyThreatintelset_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutythreatintelset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutythreatintelset"
 
 guarddutythreatintelset.GuarddutyThreatintelset_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ guarddutythreatintelset.GuarddutyThreatintelset_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutythreatintelset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutythreatintelset"
 
 guarddutythreatintelset.GuarddutyThreatintelset_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ guarddutythreatintelset.GuarddutyThreatintelset_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutythreatintelset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutythreatintelset"
 
 guarddutythreatintelset.GuarddutyThreatintelset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelsetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutythreatintelset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutythreatintelset"
 
 &guarddutythreatintelset.GuarddutyThreatintelsetConfig {
 	Connection: interface{},

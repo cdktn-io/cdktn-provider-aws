@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyinviteaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyinviteaccepter"
 
 guarddutyinviteaccepter.NewGuarddutyInviteAccepter(scope Construct, id *string, config GuarddutyInviteAccepterConfig) GuarddutyInviteAccepter
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyinviteaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyinviteaccepter"
 
 guarddutyinviteaccepter.GuarddutyInviteAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyinviteaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyinviteaccepter"
 
 guarddutyinviteaccepter.GuarddutyInviteAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ guarddutyinviteaccepter.GuarddutyInviteAccepter_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyinviteaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyinviteaccepter"
 
 guarddutyinviteaccepter.GuarddutyInviteAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ guarddutyinviteaccepter.GuarddutyInviteAccepter_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyinviteaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyinviteaccepter"
 
 guarddutyinviteaccepter.GuarddutyInviteAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyinviteaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyinviteaccepter"
 
 &guarddutyinviteaccepter.GuarddutyInviteAccepterConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyinviteaccepte
 	MasterAccountId: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeouts,
 }
 ```
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyinviteaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyinviteaccepter"
 
 &guarddutyinviteaccepter.GuarddutyInviteAccepterTimeouts {
 	Create: *string,
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyinviteaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyinviteaccepter"
 
 guarddutyinviteaccepter.NewGuarddutyInviteAccepterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyInviteAccepterTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpoint(scope Construct, id *string, config SagemakerEndpointConfig) SagemakerEndpoint
 ```
@@ -455,7 +455,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.SagemakerEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.SagemakerEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ sagemakerendpoint.SagemakerEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.SagemakerEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ sagemakerendpoint.SagemakerEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.SagemakerEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -909,7 +909,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointConfig {
 	Connection: interface{},
@@ -920,7 +920,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	EndpointConfigName: *string,
-	DeploymentConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerEndpoint.SagemakerEndpointDeploymentConfig,
+	DeploymentConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerEndpoint.SagemakerEndpointDeploymentConfig,
 	Id: *string,
 	Name: *string,
 	Region: *string,
@@ -1116,12 +1116,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointDeploymentConfig {
-	AutoRollbackConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfiguration,
-	BlueGreenUpdatePolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy,
-	RollingUpdatePolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicy,
+	AutoRollbackConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfiguration,
+	BlueGreenUpdatePolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy,
+	RollingUpdatePolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicy,
 }
 ```
 
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfiguration {
 	Alarms: interface{},
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms {
 	AlarmName: *string,
@@ -1248,10 +1248,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy {
-	TrafficRoutingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration,
+	TrafficRoutingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration,
 	MaximumExecutionTimeoutInSeconds: *f64,
 	TerminationWaitInSeconds: *f64,
 }
@@ -1310,13 +1310,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration {
 	Type: *string,
 	WaitIntervalInSeconds: *f64,
-	CanarySize: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize,
-	LinearStepSize: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize,
+	CanarySize: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize,
+	LinearStepSize: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize,
 }
 ```
 
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize {
 	Type: *string,
@@ -1434,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize {
 	Type: *string,
@@ -1480,13 +1480,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicy {
-	MaximumBatchSize: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize,
+	MaximumBatchSize: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize,
 	WaitIntervalInSeconds: *f64,
 	MaximumExecutionTimeoutInSeconds: *f64,
-	RollbackMaximumBatchSize: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize,
+	RollbackMaximumBatchSize: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize,
 }
 ```
 
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize {
 	Type: *string,
@@ -1604,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 &sagemakerendpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize {
 	Type: *string,
@@ -1652,7 +1652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList
 ```
@@ -1812,7 +1812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference
 ```
@@ -2101,7 +2101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference
 ```
@@ -2392,7 +2392,7 @@ func InternalValue() SagemakerEndpointDeploymentConfigAutoRollbackConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference
 ```
@@ -2734,7 +2734,7 @@ func InternalValue() SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference
 ```
@@ -3027,7 +3027,7 @@ func InternalValue() SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTraff
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference
 ```
@@ -3320,7 +3320,7 @@ func InternalValue() SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTraff
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference
 ```
@@ -3697,7 +3697,7 @@ func InternalValue() SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTraff
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigOutputReference
 ```
@@ -4072,7 +4072,7 @@ func InternalValue() SagemakerEndpointDeploymentConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference
 ```
@@ -4365,7 +4365,7 @@ func InternalValue() SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximum
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference
 ```
@@ -4742,7 +4742,7 @@ func InternalValue() SagemakerEndpointDeploymentConfigRollingUpdatePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerendpoint"
 
 sagemakerendpoint.NewSagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeOutputReference
 ```

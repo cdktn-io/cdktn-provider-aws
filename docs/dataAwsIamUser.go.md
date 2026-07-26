@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamUser.DataAwsIamUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamuser"
 
 dataawsiamuser.NewDataAwsIamUser(scope Construct, id *string, config DataAwsIamUserConfig) DataAwsIamUser
 ```
@@ -312,7 +312,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIamUser.DataAwsIamUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamuser"
 
 dataawsiamuser.DataAwsIamUser_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIamUser.DataAwsIamUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamuser"
 
 dataawsiamuser.DataAwsIamUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsiamuser.DataAwsIamUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIamUser.DataAwsIamUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamuser"
 
 dataawsiamuser.DataAwsIamUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsiamuser.DataAwsIamUser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIamUser.DataAwsIamUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamuser"
 
 dataawsiamuser.DataAwsIamUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamuser"
 
 &dataawsiamuser.DataAwsIamUserConfig {
 	Connection: interface{},

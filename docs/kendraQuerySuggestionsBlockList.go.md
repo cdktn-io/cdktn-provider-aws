@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestionsblocklist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kendraquerysuggestionsblocklist"
 
 kendraquerysuggestionsblocklist.NewKendraQuerySuggestionsBlockList(scope Construct, id *string, config KendraQuerySuggestionsBlockListConfig) KendraQuerySuggestionsBlockList
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestionsblocklist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kendraquerysuggestionsblocklist"
 
 kendraquerysuggestionsblocklist.KendraQuerySuggestionsBlockList_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestionsblocklist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kendraquerysuggestionsblocklist"
 
 kendraquerysuggestionsblocklist.KendraQuerySuggestionsBlockList_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ kendraquerysuggestionsblocklist.KendraQuerySuggestionsBlockList_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestionsblocklist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kendraquerysuggestionsblocklist"
 
 kendraquerysuggestionsblocklist.KendraQuerySuggestionsBlockList_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ kendraquerysuggestionsblocklist.KendraQuerySuggestionsBlockList_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestionsblocklist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kendraquerysuggestionsblocklist"
 
 kendraquerysuggestionsblocklist.KendraQuerySuggestionsBlockList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestionsblocklist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kendraquerysuggestionsblocklist"
 
 &kendraquerysuggestionsblocklist.KendraQuerySuggestionsBlockListConfig {
 	Connection: interface{},
@@ -1023,13 +1023,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestions
 	IndexId: *string,
 	Name: *string,
 	RoleArn: *string,
-	SourceS3Path: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3Path,
+	SourceS3Path: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3Path,
 	Description: *string,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeouts,
 }
 ```
 
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3Path.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestionsblocklist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kendraquerysuggestionsblocklist"
 
 &kendraquerysuggestionsblocklist.KendraQuerySuggestionsBlockListSourceS3Path {
 	Bucket: *string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestionsblocklist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kendraquerysuggestionsblocklist"
 
 &kendraquerysuggestionsblocklist.KendraQuerySuggestionsBlockListTimeouts {
 	Create: *string,
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3PathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestionsblocklist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kendraquerysuggestionsblocklist"
 
 kendraquerysuggestionsblocklist.NewKendraQuerySuggestionsBlockListSourceS3PathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraQuerySuggestionsBlockListSourceS3PathOutputReference
 ```
@@ -1662,7 +1662,7 @@ func InternalValue() KendraQuerySuggestionsBlockListSourceS3Path
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraquerysuggestionsblocklist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kendraquerysuggestionsblocklist"
 
 kendraquerysuggestionsblocklist.NewKendraQuerySuggestionsBlockListTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraQuerySuggestionsBlockListTimeoutsOutputReference
 ```

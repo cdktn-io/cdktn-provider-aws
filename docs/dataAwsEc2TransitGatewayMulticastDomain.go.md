@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.NewDataAwsEc2TransitGatewayMulticastDomain(scope Construct, id *string, config DataAwsEc2TransitGatewayMulticastDomainConfig) DataAwsEc2TransitGatewayMulticastDomain
 ```
@@ -366,7 +366,7 @@ func ResetTransitGatewayMulticastDomainId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomain_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomain_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomain_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -886,7 +886,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 &dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomainAssociations {
 
@@ -899,7 +899,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatew
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 &dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomainConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatew
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainTimeouts,
 	TransitGatewayMulticastDomainId: *string,
 }
 ```
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 &dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomainFilter {
 	Name: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 &dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomainMembers {
 
@@ -1153,7 +1153,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatew
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 &dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomainSources {
 
@@ -1166,7 +1166,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatew
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 &dataawsec2transitgatewaymulticastdomain.DataAwsEc2TransitGatewayMulticastDomainTimeouts {
 	Read: *string,
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainAssociationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.NewDataAwsEc2TransitGatewayMulticastDomainAssociationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayMulticastDomainAssociationsList
 ```
@@ -1349,7 +1349,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainAssociationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.NewDataAwsEc2TransitGatewayMulticastDomainAssociationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2TransitGatewayMulticastDomainAssociationsOutputReference
 ```
@@ -1638,7 +1638,7 @@ func InternalValue() DataAwsEc2TransitGatewayMulticastDomainAssociations
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.NewDataAwsEc2TransitGatewayMulticastDomainFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayMulticastDomainFilterList
 ```
@@ -1798,7 +1798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.NewDataAwsEc2TransitGatewayMulticastDomainFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2TransitGatewayMulticastDomainFilterOutputReference
 ```
@@ -2109,7 +2109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.NewDataAwsEc2TransitGatewayMulticastDomainMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayMulticastDomainMembersList
 ```
@@ -2258,7 +2258,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.NewDataAwsEc2TransitGatewayMulticastDomainMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2TransitGatewayMulticastDomainMembersOutputReference
 ```
@@ -2547,7 +2547,7 @@ func InternalValue() DataAwsEc2TransitGatewayMulticastDomainMembers
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.NewDataAwsEc2TransitGatewayMulticastDomainSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayMulticastDomainSourcesList
 ```
@@ -2696,7 +2696,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.NewDataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference
 ```
@@ -2985,7 +2985,7 @@ func InternalValue() DataAwsEc2TransitGatewayMulticastDomainSources
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2transitgatewaymulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2transitgatewaymulticastdomain"
 
 dataawsec2transitgatewaymulticastdomain.NewDataAwsEc2TransitGatewayMulticastDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2TransitGatewayMulticastDomainTimeoutsOutputReference
 ```

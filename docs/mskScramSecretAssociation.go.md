@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskscramsecretassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskscramsecretassociation"
 
 mskscramsecretassociation.NewMskScramSecretAssociation(scope Construct, id *string, config MskScramSecretAssociationConfig) MskScramSecretAssociation
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskscramsecretassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskscramsecretassociation"
 
 mskscramsecretassociation.MskScramSecretAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskscramsecretassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskscramsecretassociation"
 
 mskscramsecretassociation.MskScramSecretAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ mskscramsecretassociation.MskScramSecretAssociation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskscramsecretassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskscramsecretassociation"
 
 mskscramsecretassociation.MskScramSecretAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ mskscramsecretassociation.MskScramSecretAssociation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskscramsecretassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskscramsecretassociation"
 
 mskscramsecretassociation.MskScramSecretAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskscramsecretassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskscramsecretassociation"
 
 &mskscramsecretassociation.MskScramSecretAssociationConfig {
 	Connection: interface{},

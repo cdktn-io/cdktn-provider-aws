@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceRegion.DirectoryServiceRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceregion"
 
 directoryserviceregion.NewDirectoryServiceRegion(scope Construct, id *string, config DirectoryServiceRegionConfig) DirectoryServiceRegion
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.directoryServiceRegion.DirectoryServiceRegion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceregion"
 
 directoryserviceregion.DirectoryServiceRegion_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.directoryServiceRegion.DirectoryServiceRegion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceregion"
 
 directoryserviceregion.DirectoryServiceRegion_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ directoryserviceregion.DirectoryServiceRegion_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.directoryServiceRegion.DirectoryServiceRegion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceregion"
 
 directoryserviceregion.DirectoryServiceRegion_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ directoryserviceregion.DirectoryServiceRegion_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.directoryServiceRegion.DirectoryServiceRegion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceregion"
 
 directoryserviceregion.DirectoryServiceRegion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -955,7 +955,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceRegion.DirectoryServiceRegionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceregion"
 
 &directoryserviceregion.DirectoryServiceRegionConfig {
 	Connection: interface{},
@@ -967,13 +967,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion
 	Provisioners: *[]interface{},
 	DirectoryId: *string,
 	RegionName: *string,
-	VpcSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.directoryServiceRegion.DirectoryServiceRegionVpcSettings,
+	VpcSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.directoryServiceRegion.DirectoryServiceRegionVpcSettings,
 	DesiredNumberOfDomainControllers: *f64,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.directoryServiceRegion.DirectoryServiceRegionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.directoryServiceRegion.DirectoryServiceRegionTimeouts,
 }
 ```
 
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceRegion.DirectoryServiceRegionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceregion"
 
 &directoryserviceregion.DirectoryServiceRegionTimeouts {
 	Create: *string,
@@ -1252,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceRegion.DirectoryServiceRegionVpcSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceregion"
 
 &directoryserviceregion.DirectoryServiceRegionVpcSettings {
 	SubnetIds: *[]*string,
@@ -1300,7 +1300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceRegion.DirectoryServiceRegionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceregion"
 
 directoryserviceregion.NewDirectoryServiceRegionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceRegionTimeoutsOutputReference
 ```
@@ -1636,7 +1636,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceRegion.DirectoryServiceRegionVpcSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceregion"
 
 directoryserviceregion.NewDirectoryServiceRegionVpcSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceRegionVpcSettingsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.xraySamplingRule.XraySamplingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraysamplingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraysamplingrule"
 
 xraysamplingrule.NewXraySamplingRule(scope Construct, id *string, config XraySamplingRuleConfig) XraySamplingRule
 ```
@@ -442,7 +442,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.xraySamplingRule.XraySamplingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraysamplingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraysamplingrule"
 
 xraysamplingrule.XraySamplingRule_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.xraySamplingRule.XraySamplingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraysamplingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraysamplingrule"
 
 xraysamplingrule.XraySamplingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ xraysamplingrule.XraySamplingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.xraySamplingRule.XraySamplingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraysamplingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraysamplingrule"
 
 xraysamplingrule.XraySamplingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ xraysamplingrule.XraySamplingRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.xraySamplingRule.XraySamplingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraysamplingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraysamplingrule"
 
 xraysamplingrule.XraySamplingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1094,7 +1094,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.xraySamplingRule.XraySamplingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraysamplingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraysamplingrule"
 
 &xraysamplingrule.XraySamplingRuleConfig {
 	Connection: interface{},

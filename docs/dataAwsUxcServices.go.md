@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsUxcServices.DataAwsUxcServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsuxcservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsuxcservices"
 
 dataawsuxcservices.NewDataAwsUxcServices(scope Construct, id *string, config DataAwsUxcServicesConfig) DataAwsUxcServices
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsUxcServices.DataAwsUxcServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsuxcservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsuxcservices"
 
 dataawsuxcservices.DataAwsUxcServices_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsUxcServices.DataAwsUxcServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsuxcservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsuxcservices"
 
 dataawsuxcservices.DataAwsUxcServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsuxcservices.DataAwsUxcServices_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsUxcServices.DataAwsUxcServices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsuxcservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsuxcservices"
 
 dataawsuxcservices.DataAwsUxcServices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsuxcservices.DataAwsUxcServices_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsUxcServices.DataAwsUxcServices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsuxcservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsuxcservices"
 
 dataawsuxcservices.DataAwsUxcServices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsUxcServices.DataAwsUxcServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsuxcservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsuxcservices"
 
 &dataawsuxcservices.DataAwsUxcServicesConfig {
 	Connection: interface{},

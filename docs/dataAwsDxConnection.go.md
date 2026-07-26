@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxconnection"
 
 dataawsdxconnection.NewDataAwsDxConnection(scope Construct, id *string, config DataAwsDxConnectionConfig) DataAwsDxConnection
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxconnection"
 
 dataawsdxconnection.DataAwsDxConnection_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxconnection"
 
 dataawsdxconnection.DataAwsDxConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsdxconnection.DataAwsDxConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxconnection"
 
 dataawsdxconnection.DataAwsDxConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsdxconnection.DataAwsDxConnection_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxconnection"
 
 dataawsdxconnection.DataAwsDxConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdxconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdxconnection"
 
 &dataawsdxconnection.DataAwsDxConnectionConfig {
 	Connection: interface{},

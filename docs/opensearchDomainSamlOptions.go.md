@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 opensearchdomainsamloptions.NewOpensearchDomainSamlOptions(scope Construct, id *string, config OpensearchDomainSamlOptionsConfig) OpensearchDomainSamlOptions
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 opensearchdomainsamloptions.OpensearchDomainSamlOptions_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 opensearchdomainsamloptions.OpensearchDomainSamlOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ opensearchdomainsamloptions.OpensearchDomainSamlOptions_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 opensearchdomainsamloptions.OpensearchDomainSamlOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ opensearchdomainsamloptions.OpensearchDomainSamlOptions_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 opensearchdomainsamloptions.OpensearchDomainSamlOptions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 &opensearchdomainsamloptions.OpensearchDomainSamlOptionsConfig {
 	Connection: interface{},
@@ -866,8 +866,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamlop
 	DomainName: *string,
 	Id: *string,
 	Region: *string,
-	SamlOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptions,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsTimeouts,
+	SamlOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptions,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsTimeouts,
 }
 ```
 
@@ -1034,11 +1034,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 &opensearchdomainsamloptions.OpensearchDomainSamlOptionsSamlOptions {
 	Enabled: interface{},
-	Idp: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsIdp,
+	Idp: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsIdp,
 	MasterBackendRole: *string,
 	MasterUserName: *string,
 	RolesKey: *string,
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsIdp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 &opensearchdomainsamloptions.OpensearchDomainSamlOptionsSamlOptionsIdp {
 	EntityId: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 &opensearchdomainsamloptions.OpensearchDomainSamlOptionsTimeouts {
 	Delete: *string,
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 opensearchdomainsamloptions.NewOpensearchDomainSamlOptionsSamlOptionsIdpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference
 ```
@@ -1539,7 +1539,7 @@ func InternalValue() OpensearchDomainSamlOptionsSamlOptionsIdp
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 opensearchdomainsamloptions.NewOpensearchDomainSamlOptionsSamlOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainSamlOptionsSamlOptionsOutputReference
 ```
@@ -2004,7 +2004,7 @@ func InternalValue() OpensearchDomainSamlOptionsSamlOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainsamloptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainsamloptions"
 
 opensearchdomainsamloptions.NewOpensearchDomainSamlOptionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainSamlOptionsTimeoutsOutputReference
 ```

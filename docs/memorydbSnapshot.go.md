@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 memorydbsnapshot.NewMemorydbSnapshot(scope Construct, id *string, config MemorydbSnapshotConfig) MemorydbSnapshot
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 memorydbsnapshot.MemorydbSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 memorydbsnapshot.MemorydbSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ memorydbsnapshot.MemorydbSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 memorydbsnapshot.MemorydbSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ memorydbsnapshot.MemorydbSnapshot_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 memorydbsnapshot.MemorydbSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -989,7 +989,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshotClusterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 &memorydbsnapshot.MemorydbSnapshotClusterConfiguration {
 
@@ -1002,7 +1002,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 &memorydbsnapshot.MemorydbSnapshotConfig {
 	Connection: interface{},
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.memorydbSnapshot.MemorydbSnapshotTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.memorydbSnapshot.MemorydbSnapshotTimeouts,
 }
 ```
 
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 &memorydbsnapshot.MemorydbSnapshotTimeouts {
 	Create: *string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshotClusterConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 memorydbsnapshot.NewMemorydbSnapshotClusterConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbSnapshotClusterConfigurationList
 ```
@@ -1434,7 +1434,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshotClusterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 memorydbsnapshot.NewMemorydbSnapshotClusterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbSnapshotClusterConfigurationOutputReference
 ```
@@ -1855,7 +1855,7 @@ func InternalValue() MemorydbSnapshotClusterConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbsnapshot"
 
 memorydbsnapshot.NewMemorydbSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MemorydbSnapshotTimeoutsOutputReference
 ```

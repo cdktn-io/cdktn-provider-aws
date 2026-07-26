@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessmentreport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerassessmentreport"
 
 auditmanagerassessmentreport.NewAuditmanagerAssessmentReport(scope Construct, id *string, config AuditmanagerAssessmentReportConfig) AuditmanagerAssessmentReport
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessmentreport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerassessmentreport"
 
 auditmanagerassessmentreport.AuditmanagerAssessmentReport_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessmentreport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerassessmentreport"
 
 auditmanagerassessmentreport.AuditmanagerAssessmentReport_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ auditmanagerassessmentreport.AuditmanagerAssessmentReport_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessmentreport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerassessmentreport"
 
 auditmanagerassessmentreport.AuditmanagerAssessmentReport_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ auditmanagerassessmentreport.AuditmanagerAssessmentReport_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessmentreport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerassessmentreport"
 
 auditmanagerassessmentreport.AuditmanagerAssessmentReport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessmentreport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerassessmentreport"
 
 &auditmanagerassessmentreport.AuditmanagerAssessmentReportConfig {
 	Connection: interface{},

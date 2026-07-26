@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcorePolicyEngine.BedrockagentcorePolicyEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicyengine"
 
 bedrockagentcorepolicyengine.NewBedrockagentcorePolicyEngine(scope Construct, id *string, config BedrockagentcorePolicyEngineConfig) BedrockagentcorePolicyEngine
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcorePolicyEngine.BedrockagentcorePolicyEngine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicyengine"
 
 bedrockagentcorepolicyengine.BedrockagentcorePolicyEngine_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcorePolicyEngine.BedrockagentcorePolicyEngine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicyengine"
 
 bedrockagentcorepolicyengine.BedrockagentcorePolicyEngine_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ bedrockagentcorepolicyengine.BedrockagentcorePolicyEngine_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcorePolicyEngine.BedrockagentcorePolicyEngine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicyengine"
 
 bedrockagentcorepolicyengine.BedrockagentcorePolicyEngine_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ bedrockagentcorepolicyengine.BedrockagentcorePolicyEngine_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcorePolicyEngine.BedrockagentcorePolicyEngine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicyengine"
 
 bedrockagentcorepolicyengine.BedrockagentcorePolicyEngine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcorePolicyEngine.BedrockagentcorePolicyEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicyengine"
 
 &bedrockagentcorepolicyengine.BedrockagentcorePolicyEngineConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy
 	EncryptionKeyArn: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentcorePolicyEngine.BedrockagentcorePolicyEngineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentcorePolicyEngine.BedrockagentcorePolicyEngineTimeouts,
 }
 ```
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcorePolicyEngine.BedrockagentcorePolicyEngineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicyengine"
 
 &bedrockagentcorepolicyengine.BedrockagentcorePolicyEngineTimeouts {
 	Create: *string,
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcorePolicyEngine.BedrockagentcorePolicyEngineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicyengine"
 
 bedrockagentcorepolicyengine.NewBedrockagentcorePolicyEngineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcorePolicyEngineTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dsqlCluster.DsqlCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 dsqlcluster.NewDsqlCluster(scope Construct, id *string, config DsqlClusterConfig) DsqlCluster
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dsqlCluster.DsqlCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 dsqlcluster.DsqlCluster_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dsqlCluster.DsqlCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 dsqlcluster.DsqlCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ dsqlcluster.DsqlCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dsqlCluster.DsqlCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 dsqlcluster.DsqlCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ dsqlcluster.DsqlCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dsqlCluster.DsqlCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 dsqlcluster.DsqlCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -973,7 +973,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dsqlCluster.DsqlClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 &dsqlcluster.DsqlClusterConfig {
 	Connection: interface{},
@@ -989,7 +989,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
 	MultiRegionProperties: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dsqlCluster.DsqlClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dsqlCluster.DsqlClusterTimeouts,
 }
 ```
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dsqlCluster.DsqlClusterEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 &dsqlcluster.DsqlClusterEncryptionDetails {
 
@@ -1192,7 +1192,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dsqlCluster.DsqlClusterMultiRegionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 &dsqlcluster.DsqlClusterMultiRegionProperties {
 	Clusters: *[]*string,
@@ -1238,7 +1238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dsqlCluster.DsqlClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 &dsqlcluster.DsqlClusterTimeouts {
 	Create: *string,
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dsqlCluster.DsqlClusterEncryptionDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 dsqlcluster.NewDsqlClusterEncryptionDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DsqlClusterEncryptionDetailsList
 ```
@@ -1455,7 +1455,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dsqlCluster.DsqlClusterEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 dsqlcluster.NewDsqlClusterEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DsqlClusterEncryptionDetailsOutputReference
 ```
@@ -1744,7 +1744,7 @@ func InternalValue() DsqlClusterEncryptionDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dsqlCluster.DsqlClusterMultiRegionPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 dsqlcluster.NewDsqlClusterMultiRegionPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DsqlClusterMultiRegionPropertiesList
 ```
@@ -1904,7 +1904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dsqlCluster.DsqlClusterMultiRegionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 dsqlcluster.NewDsqlClusterMultiRegionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DsqlClusterMultiRegionPropertiesOutputReference
 ```
@@ -2229,7 +2229,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dsqlCluster.DsqlClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dsqlcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dsqlcluster"
 
 dsqlcluster.NewDsqlClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DsqlClusterTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.keyspacesKeyspace.KeyspacesKeyspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/keyspaceskeyspace"
 
 keyspaceskeyspace.NewKeyspacesKeyspace(scope Construct, id *string, config KeyspacesKeyspaceConfig) KeyspacesKeyspace
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.keyspacesKeyspace.KeyspacesKeyspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/keyspaceskeyspace"
 
 keyspaceskeyspace.KeyspacesKeyspace_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.keyspacesKeyspace.KeyspacesKeyspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/keyspaceskeyspace"
 
 keyspaceskeyspace.KeyspacesKeyspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ keyspaceskeyspace.KeyspacesKeyspace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.keyspacesKeyspace.KeyspacesKeyspace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/keyspaceskeyspace"
 
 keyspaceskeyspace.KeyspacesKeyspace_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ keyspaceskeyspace.KeyspacesKeyspace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.keyspacesKeyspace.KeyspacesKeyspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/keyspaceskeyspace"
 
 keyspaceskeyspace.KeyspacesKeyspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -922,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.keyspacesKeyspace.KeyspacesKeyspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/keyspaceskeyspace"
 
 &keyspaceskeyspace.KeyspacesKeyspaceConfig {
 	Connection: interface{},
@@ -935,10 +935,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
 	Name: *string,
 	Id: *string,
 	Region: *string,
-	ReplicationSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.keyspacesKeyspace.KeyspacesKeyspaceReplicationSpecification,
+	ReplicationSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.keyspacesKeyspace.KeyspacesKeyspaceReplicationSpecification,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.keyspacesKeyspace.KeyspacesKeyspaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.keyspacesKeyspace.KeyspacesKeyspaceTimeouts,
 }
 ```
 
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.keyspacesKeyspace.KeyspacesKeyspaceReplicationSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/keyspaceskeyspace"
 
 &keyspaceskeyspace.KeyspacesKeyspaceReplicationSpecification {
 	RegionList: *[]*string,
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.keyspacesKeyspace.KeyspacesKeyspaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/keyspaceskeyspace"
 
 &keyspaceskeyspace.KeyspacesKeyspaceTimeouts {
 	Create: *string,
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.keyspacesKeyspace.KeyspacesKeyspaceReplicationSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/keyspaceskeyspace"
 
 keyspaceskeyspace.NewKeyspacesKeyspaceReplicationSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyspacesKeyspaceReplicationSpecificationOutputReference
 ```
@@ -1532,7 +1532,7 @@ func InternalValue() KeyspacesKeyspaceReplicationSpecification
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.keyspacesKeyspace.KeyspacesKeyspaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/keyspaceskeyspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/keyspaceskeyspace"
 
 keyspaceskeyspace.NewKeyspacesKeyspaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyspacesKeyspaceTimeoutsOutputReference
 ```

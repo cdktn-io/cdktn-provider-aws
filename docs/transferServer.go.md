@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferServer.TransferServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.NewTransferServer(scope Construct, id *string, config TransferServerConfig) TransferServer
 ```
@@ -634,7 +634,7 @@ func ResetWorkflowDetails()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.transferServer.TransferServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.TransferServer_IsConstruct(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.transferServer.TransferServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.TransferServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -680,7 +680,7 @@ transferserver.TransferServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.transferServer.TransferServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.TransferServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -694,7 +694,7 @@ transferserver.TransferServer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.transferServer.TransferServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.TransferServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1528,7 +1528,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferServer.TransferServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 &transferserver.TransferServerConfig {
 	Connection: interface{},
@@ -1541,7 +1541,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
 	Certificate: *string,
 	DirectoryId: *string,
 	Domain: *string,
-	EndpointDetails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.transferServer.TransferServerEndpointDetails,
+	EndpointDetails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.transferServer.TransferServerEndpointDetails,
 	EndpointType: *string,
 	ForceDestroy: interface{},
 	Function: *string,
@@ -1553,17 +1553,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
 	LoggingRole: *string,
 	PostAuthenticationLoginBanner: *string,
 	PreAuthenticationLoginBanner: *string,
-	ProtocolDetails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.transferServer.TransferServerProtocolDetails,
+	ProtocolDetails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.transferServer.TransferServerProtocolDetails,
 	Protocols: *[]*string,
 	Region: *string,
-	S3StorageOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.transferServer.TransferServerS3StorageOptions,
+	S3StorageOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.transferServer.TransferServerS3StorageOptions,
 	SecurityPolicyName: *string,
 	SftpAuthenticationMethods: *string,
 	StructuredLogDestinations: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Url: *string,
-	WorkflowDetails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.transferServer.TransferServerWorkflowDetails,
+	WorkflowDetails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.transferServer.TransferServerWorkflowDetails,
 }
 ```
 
@@ -2009,7 +2009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferServer.TransferServerEndpointDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 &transferserver.TransferServerEndpointDetails {
 	AddressAllocationIds: *[]*string,
@@ -2097,7 +2097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferServer.TransferServerProtocolDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 &transferserver.TransferServerProtocolDetails {
 	As2Transports: *[]*string,
@@ -2171,7 +2171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferServer.TransferServerS3StorageOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 &transferserver.TransferServerS3StorageOptions {
 	DirectoryListingOptimization: *string,
@@ -2203,11 +2203,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferServer.TransferServerWorkflowDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 &transferserver.TransferServerWorkflowDetails {
-	OnPartialUpload: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.transferServer.TransferServerWorkflowDetailsOnPartialUpload,
-	OnUpload: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.transferServer.TransferServerWorkflowDetailsOnUpload,
+	OnPartialUpload: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.transferServer.TransferServerWorkflowDetailsOnPartialUpload,
+	OnUpload: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.transferServer.TransferServerWorkflowDetailsOnUpload,
 }
 ```
 
@@ -2253,7 +2253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferServer.TransferServerWorkflowDetailsOnPartialUpload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 &transferserver.TransferServerWorkflowDetailsOnPartialUpload {
 	ExecutionRole: *string,
@@ -2299,7 +2299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferServer.TransferServerWorkflowDetailsOnUpload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 &transferserver.TransferServerWorkflowDetailsOnUpload {
 	ExecutionRole: *string,
@@ -2347,7 +2347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferServer.TransferServerEndpointDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.NewTransferServerEndpointDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferServerEndpointDetailsOutputReference
 ```
@@ -2741,7 +2741,7 @@ func InternalValue() TransferServerEndpointDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferServer.TransferServerProtocolDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.NewTransferServerProtocolDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferServerProtocolDetailsOutputReference
 ```
@@ -3106,7 +3106,7 @@ func InternalValue() TransferServerProtocolDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferServer.TransferServerS3StorageOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.NewTransferServerS3StorageOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferServerS3StorageOptionsOutputReference
 ```
@@ -3384,7 +3384,7 @@ func InternalValue() TransferServerS3StorageOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferServer.TransferServerWorkflowDetailsOnPartialUploadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.NewTransferServerWorkflowDetailsOnPartialUploadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferServerWorkflowDetailsOnPartialUploadOutputReference
 ```
@@ -3677,7 +3677,7 @@ func InternalValue() TransferServerWorkflowDetailsOnPartialUpload
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferServer.TransferServerWorkflowDetailsOnUploadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.NewTransferServerWorkflowDetailsOnUploadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferServerWorkflowDetailsOnUploadOutputReference
 ```
@@ -3970,7 +3970,7 @@ func InternalValue() TransferServerWorkflowDetailsOnUpload
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferServer.TransferServerWorkflowDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transferserver"
 
 transferserver.NewTransferServerWorkflowDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferServerWorkflowDetailsOutputReference
 ```

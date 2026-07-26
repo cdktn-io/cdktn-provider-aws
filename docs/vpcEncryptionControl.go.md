@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControl(scope Construct, id *string, config VpcEncryptionControlConfig) VpcEncryptionControl
 ```
@@ -490,7 +490,7 @@ func ResetVpcPeeringExclusion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.VpcEncryptionControl_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.VpcEncryptionControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ vpcencryptioncontrol.VpcEncryptionControl_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.VpcEncryptionControl_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ vpcencryptioncontrol.VpcEncryptionControl_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.VpcEncryptionControl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1120,7 +1120,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlConfig {
 	Connection: interface{},
@@ -1139,7 +1139,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
 	NatGatewayExclusion: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpcEncryptionControl.VpcEncryptionControlTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpcEncryptionControl.VpcEncryptionControlTimeouts,
 	VirtualPrivateGatewayExclusion: *string,
 	VpcLatticeExclusion: *string,
 	VpcPeeringExclusion: *string,
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlResourceExclusions {
 
@@ -1421,7 +1421,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsEgressOnlyInternetGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlResourceExclusionsEgressOnlyInternetGateway {
 
@@ -1434,7 +1434,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsElasticFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlResourceExclusionsElasticFileSystem {
 
@@ -1447,7 +1447,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsInternetGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlResourceExclusionsInternetGateway {
 
@@ -1460,7 +1460,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsLambda.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlResourceExclusionsLambda {
 
@@ -1473,7 +1473,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsNatGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlResourceExclusionsNatGateway {
 
@@ -1486,7 +1486,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsVirtualPrivateGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlResourceExclusionsVirtualPrivateGateway {
 
@@ -1499,7 +1499,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsVpcLattice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlResourceExclusionsVpcLattice {
 
@@ -1512,7 +1512,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsVpcPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlResourceExclusionsVpcPeering {
 
@@ -1525,7 +1525,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 &vpcencryptioncontrol.VpcEncryptionControlTimeouts {
 	Create: *string,
@@ -1593,7 +1593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayOutputReference
 ```
@@ -1864,7 +1864,7 @@ func InternalValue() VpcEncryptionControlResourceExclusionsEgressOnlyInternetGat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsElasticFileSystemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControlResourceExclusionsElasticFileSystemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEncryptionControlResourceExclusionsElasticFileSystemOutputReference
 ```
@@ -2135,7 +2135,7 @@ func InternalValue() VpcEncryptionControlResourceExclusionsElasticFileSystem
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsInternetGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControlResourceExclusionsInternetGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEncryptionControlResourceExclusionsInternetGatewayOutputReference
 ```
@@ -2406,7 +2406,7 @@ func InternalValue() VpcEncryptionControlResourceExclusionsInternetGateway
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsLambdaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControlResourceExclusionsLambdaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEncryptionControlResourceExclusionsLambdaOutputReference
 ```
@@ -2677,7 +2677,7 @@ func InternalValue() VpcEncryptionControlResourceExclusionsLambda
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsNatGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControlResourceExclusionsNatGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEncryptionControlResourceExclusionsNatGatewayOutputReference
 ```
@@ -2948,7 +2948,7 @@ func InternalValue() VpcEncryptionControlResourceExclusionsNatGateway
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControlResourceExclusionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEncryptionControlResourceExclusionsOutputReference
 ```
@@ -3285,7 +3285,7 @@ func InternalValue() VpcEncryptionControlResourceExclusions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsVirtualPrivateGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControlResourceExclusionsVirtualPrivateGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEncryptionControlResourceExclusionsVirtualPrivateGatewayOutputReference
 ```
@@ -3556,7 +3556,7 @@ func InternalValue() VpcEncryptionControlResourceExclusionsVirtualPrivateGateway
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsVpcLatticeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControlResourceExclusionsVpcLatticeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEncryptionControlResourceExclusionsVpcLatticeOutputReference
 ```
@@ -3827,7 +3827,7 @@ func InternalValue() VpcEncryptionControlResourceExclusionsVpcLattice
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlResourceExclusionsVpcPeeringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControlResourceExclusionsVpcPeeringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEncryptionControlResourceExclusionsVpcPeeringOutputReference
 ```
@@ -4098,7 +4098,7 @@ func InternalValue() VpcEncryptionControlResourceExclusionsVpcPeering
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEncryptionControl.VpcEncryptionControlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcencryptioncontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcencryptioncontrol"
 
 vpcencryptioncontrol.NewVpcEncryptionControlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEncryptionControlTimeoutsOutputReference
 ```

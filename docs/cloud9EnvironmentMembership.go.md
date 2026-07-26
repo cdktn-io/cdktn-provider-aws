@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentmembership"
 
 cloud9environmentmembership.NewCloud9EnvironmentMembership(scope Construct, id *string, config Cloud9EnvironmentMembershipConfig) Cloud9EnvironmentMembership
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentmembership"
 
 cloud9environmentmembership.Cloud9EnvironmentMembership_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentmembership"
 
 cloud9environmentmembership.Cloud9EnvironmentMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ cloud9environmentmembership.Cloud9EnvironmentMembership_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentmembership"
 
 cloud9environmentmembership.Cloud9EnvironmentMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ cloud9environmentmembership.Cloud9EnvironmentMembership_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentmembership"
 
 cloud9environmentmembership.Cloud9EnvironmentMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentmembership"
 
 &cloud9environmentmembership.Cloud9EnvironmentMembershipConfig {
 	Connection: interface{},

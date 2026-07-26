@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFramework(scope Construct, id *string, config DataAwsBackupFrameworkConfig) DataAwsBackupFramework
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsbackupframework.DataAwsBackupFramework_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsbackupframework.DataAwsBackupFramework_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControl {
 
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControlInputParameter {
 
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControlScope {
 
@@ -944,7 +944,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlInputParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlInputParameterList
 ```
@@ -1093,7 +1093,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlInputParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlInputParameterOutputReference
 ```
@@ -1382,7 +1382,7 @@ func InternalValue() DataAwsBackupFrameworkControlInputParameter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlList
 ```
@@ -1531,7 +1531,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlOutputReference
 ```
@@ -1831,7 +1831,7 @@ func InternalValue() DataAwsBackupFrameworkControl
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlScopeList
 ```
@@ -1980,7 +1980,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlScopeOutputReference
 ```

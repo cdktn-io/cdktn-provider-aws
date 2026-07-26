@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.NewCognitoUserPoolClient(scope Construct, id *string, config CognitoUserPoolClientConfig) CognitoUserPoolClient
 ```
@@ -593,7 +593,7 @@ func ResetWriteAttributes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.CognitoUserPoolClient_IsConstruct(x interface{}) *bool
 ```
@@ -625,7 +625,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.CognitoUserPoolClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ cognitouserpoolclient.CognitoUserPoolClient_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.CognitoUserPoolClient_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ cognitouserpoolclient.CognitoUserPoolClient_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.CognitoUserPoolClient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1432,7 +1432,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 &cognitouserpoolclient.CognitoUserPoolClientAnalyticsConfiguration {
 	ApplicationArn: *string,
@@ -1520,7 +1520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 &cognitouserpoolclient.CognitoUserPoolClientConfig {
 	Connection: interface{},
@@ -1966,7 +1966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientRefreshTokenRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 &cognitouserpoolclient.CognitoUserPoolClientRefreshTokenRotation {
 	Feature: *string,
@@ -2012,7 +2012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 &cognitouserpoolclient.CognitoUserPoolClientTokenValidityUnits {
 	AccessToken: *string,
@@ -2074,7 +2074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.NewCognitoUserPoolClientAnalyticsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitoUserPoolClientAnalyticsConfigurationList
 ```
@@ -2234,7 +2234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.NewCognitoUserPoolClientAnalyticsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitoUserPoolClientAnalyticsConfigurationOutputReference
 ```
@@ -2646,7 +2646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientRefreshTokenRotationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.NewCognitoUserPoolClientRefreshTokenRotationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitoUserPoolClientRefreshTokenRotationList
 ```
@@ -2806,7 +2806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientRefreshTokenRotationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.NewCognitoUserPoolClientRefreshTokenRotationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitoUserPoolClientRefreshTokenRotationOutputReference
 ```
@@ -3124,7 +3124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.NewCognitoUserPoolClientTokenValidityUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitoUserPoolClientTokenValidityUnitsList
 ```
@@ -3284,7 +3284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpoolclient"
 
 cognitouserpoolclient.NewCognitoUserPoolClientTokenValidityUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitoUserPoolClientTokenValidityUnitsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.NewDataAwsControltowerControls(scope Construct, id *string, config DataAwsControltowerControlsConfig) DataAwsControltowerControls
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscontroltowercontrols"
 
 &dataawscontroltowercontrols.DataAwsControltowerControlsConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsReplicationConfiguration.EfsReplicationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsreplicationconfiguration"
 
 efsreplicationconfiguration.NewEfsReplicationConfiguration(scope Construct, id *string, config EfsReplicationConfigurationConfig) EfsReplicationConfiguration
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.efsReplicationConfiguration.EfsReplicationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsreplicationconfiguration"
 
 efsreplicationconfiguration.EfsReplicationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.efsReplicationConfiguration.EfsReplicationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsreplicationconfiguration"
 
 efsreplicationconfiguration.EfsReplicationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ efsreplicationconfiguration.EfsReplicationConfiguration_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.efsReplicationConfiguration.EfsReplicationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsreplicationconfiguration"
 
 efsreplicationconfiguration.EfsReplicationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ efsreplicationconfiguration.EfsReplicationConfiguration_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.efsReplicationConfiguration.EfsReplicationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsreplicationconfiguration"
 
 efsreplicationconfiguration.EfsReplicationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -890,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsreplicationconfiguration"
 
 &efsreplicationconfiguration.EfsReplicationConfigurationConfig {
 	Connection: interface{},
@@ -900,11 +900,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfigur
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Destination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.efsReplicationConfiguration.EfsReplicationConfigurationDestination,
+	Destination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.efsReplicationConfiguration.EfsReplicationConfigurationDestination,
 	SourceFileSystemId: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.efsReplicationConfiguration.EfsReplicationConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.efsReplicationConfiguration.EfsReplicationConfigurationTimeouts,
 }
 ```
 
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsreplicationconfiguration"
 
 &efsreplicationconfiguration.EfsReplicationConfigurationDestination {
 	AvailabilityZoneName: *string,
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsreplicationconfiguration"
 
 &efsreplicationconfiguration.EfsReplicationConfigurationTimeouts {
 	Create: *string,
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsreplicationconfiguration"
 
 efsreplicationconfiguration.NewEfsReplicationConfigurationDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsReplicationConfigurationDestinationOutputReference
 ```
@@ -1569,7 +1569,7 @@ func InternalValue() EfsReplicationConfigurationDestination
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsreplicationconfiguration"
 
 efsreplicationconfiguration.NewEfsReplicationConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsReplicationConfigurationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
 
 efsfilesystempolicy.NewEfsFileSystemPolicy(scope Construct, id *string, config EfsFileSystemPolicyConfig) EfsFileSystemPolicy
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
 
 efsfilesystempolicy.EfsFileSystemPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
 
 efsfilesystempolicy.EfsFileSystemPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ efsfilesystempolicy.EfsFileSystemPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
 
 efsfilesystempolicy.EfsFileSystemPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ efsfilesystempolicy.EfsFileSystemPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
 
 efsfilesystempolicy.EfsFileSystemPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
 
 &efsfilesystempolicy.EfsFileSystemPolicyConfig {
 	Connection: interface{},

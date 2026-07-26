@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerpipeline"
 
 sagemakerpipeline.NewSagemakerPipeline(scope Construct, id *string, config SagemakerPipelineConfig) SagemakerPipeline
 ```
@@ -489,7 +489,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerpipeline"
 
 sagemakerpipeline.SagemakerPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerpipeline"
 
 sagemakerpipeline.SagemakerPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ sagemakerpipeline.SagemakerPipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerpipeline"
 
 sagemakerpipeline.SagemakerPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ sagemakerpipeline.SagemakerPipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerpipeline"
 
 sagemakerpipeline.SagemakerPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1031,7 +1031,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerpipeline"
 
 &sagemakerpipeline.SagemakerPipelineConfig {
 	Connection: interface{},
@@ -1044,9 +1044,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
 	PipelineDisplayName: *string,
 	PipelineName: *string,
 	Id: *string,
-	ParallelismConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerPipeline.SagemakerPipelineParallelismConfiguration,
+	ParallelismConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerPipeline.SagemakerPipelineParallelismConfiguration,
 	PipelineDefinition: *string,
-	PipelineDefinitionS3Location: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location,
+	PipelineDefinitionS3Location: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location,
 	PipelineDescription: *string,
 	Region: *string,
 	RoleArn: *string,
@@ -1296,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineParallelismConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerpipeline"
 
 &sagemakerpipeline.SagemakerPipelineParallelismConfiguration {
 	MaxParallelExecutionSteps: *f64,
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerpipeline"
 
 &sagemakerpipeline.SagemakerPipelinePipelineDefinitionS3Location {
 	Bucket: *string,
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineParallelismConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerpipeline"
 
 sagemakerpipeline.NewSagemakerPipelineParallelismConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerPipelineParallelismConfigurationOutputReference
 ```
@@ -1661,7 +1661,7 @@ func InternalValue() SagemakerPipelineParallelismConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3LocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerpipeline"
 
 sagemakerpipeline.NewSagemakerPipelinePipelineDefinitionS3LocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerPipelinePipelineDefinitionS3LocationOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueJob.GlueJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 gluejob.NewGlueJob(scope Construct, id *string, config GlueJobConfig) GlueJob
 ```
@@ -606,7 +606,7 @@ func ResetWorkerType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.glueJob.GlueJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 gluejob.GlueJob_IsConstruct(x interface{}) *bool
 ```
@@ -638,7 +638,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.glueJob.GlueJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 gluejob.GlueJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -652,7 +652,7 @@ gluejob.GlueJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.glueJob.GlueJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 gluejob.GlueJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ gluejob.GlueJob_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.glueJob.GlueJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 gluejob.GlueJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1456,7 +1456,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueJob.GlueJobCommand.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 &gluejob.GlueJobCommand {
 	ScriptLocation: *string,
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueJob.GlueJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 &gluejob.GlueJobConfig {
 	Connection: interface{},
@@ -1540,14 +1540,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Command: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueJob.GlueJobCommand,
+	Command: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueJob.GlueJobCommand,
 	Name: *string,
 	RoleArn: *string,
 	Connections: *[]*string,
 	DefaultArguments: *map[string]*string,
 	Description: *string,
 	ExecutionClass: *string,
-	ExecutionProperty: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueJob.GlueJobExecutionProperty,
+	ExecutionProperty: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueJob.GlueJobExecutionProperty,
 	GlueVersion: *string,
 	Id: *string,
 	JobMode: *string,
@@ -1556,11 +1556,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
 	MaxCapacity: *f64,
 	MaxRetries: *f64,
 	NonOverridableArguments: *map[string]*string,
-	NotificationProperty: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueJob.GlueJobNotificationProperty,
+	NotificationProperty: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueJob.GlueJobNotificationProperty,
 	NumberOfWorkers: *f64,
 	Region: *string,
 	SecurityConfiguration: *string,
-	SourceControlDetails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.glueJob.GlueJobSourceControlDetails,
+	SourceControlDetails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.glueJob.GlueJobSourceControlDetails,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Timeout: *f64,
@@ -1995,7 +1995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueJob.GlueJobExecutionProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 &gluejob.GlueJobExecutionProperty {
 	MaxConcurrentRuns: *f64,
@@ -2027,7 +2027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueJob.GlueJobNotificationProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 &gluejob.GlueJobNotificationProperty {
 	NotifyDelayAfter: *f64,
@@ -2059,7 +2059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueJob.GlueJobSourceControlDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 &gluejob.GlueJobSourceControlDetails {
 	AuthStrategy: *string,
@@ -2191,7 +2191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueJob.GlueJobCommandOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 gluejob.NewGlueJobCommandOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobCommandOutputReference
 ```
@@ -2549,7 +2549,7 @@ func InternalValue() GlueJobCommand
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueJob.GlueJobExecutionPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 gluejob.NewGlueJobExecutionPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobExecutionPropertyOutputReference
 ```
@@ -2827,7 +2827,7 @@ func InternalValue() GlueJobExecutionProperty
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueJob.GlueJobNotificationPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 gluejob.NewGlueJobNotificationPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobNotificationPropertyOutputReference
 ```
@@ -3105,7 +3105,7 @@ func InternalValue() GlueJobNotificationProperty
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueJob.GlueJobSourceControlDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluejob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluejob"
 
 gluejob.NewGlueJobSourceControlDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobSourceControlDetailsOutputReference
 ```

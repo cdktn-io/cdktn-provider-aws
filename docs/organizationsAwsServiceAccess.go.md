@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
 
 organizationsawsserviceaccess.NewOrganizationsAwsServiceAccess(scope Construct, id *string, config OrganizationsAwsServiceAccessConfig) OrganizationsAwsServiceAccess
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
 
 organizationsawsserviceaccess.OrganizationsAwsServiceAccess_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
 
 organizationsawsserviceaccess.OrganizationsAwsServiceAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ organizationsawsserviceaccess.OrganizationsAwsServiceAccess_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
 
 organizationsawsserviceaccess.OrganizationsAwsServiceAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ organizationsawsserviceaccess.OrganizationsAwsServiceAccess_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
 
 organizationsawsserviceaccess.OrganizationsAwsServiceAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
 
 &organizationsawsserviceaccess.OrganizationsAwsServiceAccessConfig {
 	Connection: interface{},

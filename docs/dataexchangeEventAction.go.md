@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventAction(scope Construct, id *string, config DataexchangeEventActionConfig) DataexchangeEventAction
 ```
@@ -447,7 +447,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventAction.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.DataexchangeEventAction_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventAction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.DataexchangeEventAction_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ dataexchangeeventaction.DataexchangeEventAction_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventAction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.DataexchangeEventAction_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ dataexchangeeventaction.DataexchangeEventAction_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventAction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.DataexchangeEventAction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 &dataexchangeeventaction.DataexchangeEventActionAction {
 	ExportRevisionToS3: interface{},
@@ -880,7 +880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 &dataexchangeeventaction.DataexchangeEventActionActionExportRevisionToS3 {
 	Encryption: interface{},
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 &dataexchangeeventaction.DataexchangeEventActionActionExportRevisionToS3Encryption {
 	KmsKeyArn: *string,
@@ -976,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 &dataexchangeeventaction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination {
 	Bucket: *string,
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 &dataexchangeeventaction.DataexchangeEventActionConfig {
 	Connection: interface{},
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 &dataexchangeeventaction.DataexchangeEventActionEvent {
 	RevisionPublished: interface{},
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 &dataexchangeeventaction.DataexchangeEventActionEventRevisionPublished {
 	DataSetId: *string,
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionActionExportRevisionToS3EncryptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeEventActionActionExportRevisionToS3EncryptionList
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference
 ```
@@ -1725,7 +1725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionActionExportRevisionToS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeEventActionActionExportRevisionToS3List
 ```
@@ -1885,7 +1885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionActionExportRevisionToS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeEventActionActionExportRevisionToS3OutputReference
 ```
@@ -2236,7 +2236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionActionExportRevisionToS3RevisionDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList
 ```
@@ -2396,7 +2396,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference
 ```
@@ -2714,7 +2714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeEventActionActionList
 ```
@@ -2874,7 +2874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeEventActionActionOutputReference
 ```
@@ -3183,7 +3183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionEventList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeEventActionEventList
 ```
@@ -3343,7 +3343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionEventOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeEventActionEventOutputReference
 ```
@@ -3652,7 +3652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionEventRevisionPublishedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeEventActionEventRevisionPublishedList
 ```
@@ -3812,7 +3812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataexchangeeventaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataexchangeeventaction"
 
 dataexchangeeventaction.NewDataexchangeEventActionEventRevisionPublishedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeEventActionEventRevisionPublishedOutputReference
 ```

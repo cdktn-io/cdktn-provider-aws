@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrail(scope Construct, id *string, config BedrockGuardrailConfig) BedrockGuardrail
 ```
@@ -568,7 +568,7 @@ func ResetWordPolicyConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrail.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.BedrockGuardrail_IsConstruct(x interface{}) *bool
 ```
@@ -600,7 +600,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrail.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.BedrockGuardrail_IsTerraformElement(x interface{}) *bool
 ```
@@ -614,7 +614,7 @@ bedrockguardrail.BedrockGuardrail_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrail.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.BedrockGuardrail_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ bedrockguardrail.BedrockGuardrail_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrail.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.BedrockGuardrail_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1242,7 +1242,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailConfig {
 	Connection: interface{},
@@ -1263,7 +1263,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
 	Region: *string,
 	SensitiveInformationPolicyConfig: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockGuardrail.BedrockGuardrailTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockGuardrail.BedrockGuardrailTimeouts,
 	TopicPolicyConfig: interface{},
 	WordPolicyConfig: interface{},
 }
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContentPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailContentPolicyConfig {
 	FiltersConfig: interface{},
@@ -1604,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContentPolicyConfigFiltersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailContentPolicyConfigFiltersConfig {
 	InputStrength: *string,
@@ -1748,7 +1748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContentPolicyConfigTierConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailContentPolicyConfigTierConfig {
 	TierName: *string,
@@ -1780,7 +1780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContextualGroundingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailContextualGroundingPolicyConfig {
 	FiltersConfig: interface{},
@@ -1814,7 +1814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContextualGroundingPolicyConfigFiltersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailContextualGroundingPolicyConfigFiltersConfig {
 	Threshold: *f64,
@@ -1860,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailCrossRegionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailCrossRegionConfig {
 	GuardrailProfileIdentifier: *string,
@@ -1892,7 +1892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailSensitiveInformationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailSensitiveInformationPolicyConfig {
 	PiiEntitiesConfig: interface{},
@@ -1942,7 +1942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfig {
 	Action: *string,
@@ -2044,7 +2044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfig {
 	Action: *string,
@@ -2174,7 +2174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailTimeouts {
 	Create: *string,
@@ -2240,7 +2240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTopicPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailTopicPolicyConfig {
 	TierConfig: interface{},
@@ -2288,7 +2288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTopicPolicyConfigTierConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailTopicPolicyConfigTierConfig {
 	TierName: *string,
@@ -2320,7 +2320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTopicPolicyConfigTopicsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailTopicPolicyConfigTopicsConfig {
 	Definition: *string,
@@ -2394,7 +2394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailWordPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailWordPolicyConfig {
 	ManagedWordListsConfig: interface{},
@@ -2444,7 +2444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailWordPolicyConfigManagedWordListsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailWordPolicyConfigManagedWordListsConfig {
 	Type: *string,
@@ -2532,7 +2532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailWordPolicyConfigWordsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 &bedrockguardrail.BedrockGuardrailWordPolicyConfigWordsConfig {
 	Text: *string,
@@ -2622,7 +2622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContentPolicyConfigFiltersConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailContentPolicyConfigFiltersConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailContentPolicyConfigFiltersConfigList
 ```
@@ -2782,7 +2782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContentPolicyConfigFiltersConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailContentPolicyConfigFiltersConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailContentPolicyConfigFiltersConfigOutputReference
 ```
@@ -3289,7 +3289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContentPolicyConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailContentPolicyConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailContentPolicyConfigList
 ```
@@ -3449,7 +3449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContentPolicyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailContentPolicyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailContentPolicyConfigOutputReference
 ```
@@ -3800,7 +3800,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContentPolicyConfigTierConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailContentPolicyConfigTierConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailContentPolicyConfigTierConfigList
 ```
@@ -3960,7 +3960,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContentPolicyConfigTierConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailContentPolicyConfigTierConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailContentPolicyConfigTierConfigOutputReference
 ```
@@ -4256,7 +4256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailContextualGroundingPolicyConfigFiltersConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigList
 ```
@@ -4416,7 +4416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailContextualGroundingPolicyConfigFiltersConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigOutputReference
 ```
@@ -4727,7 +4727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContextualGroundingPolicyConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailContextualGroundingPolicyConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailContextualGroundingPolicyConfigList
 ```
@@ -4887,7 +4887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailContextualGroundingPolicyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailContextualGroundingPolicyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailContextualGroundingPolicyConfigOutputReference
 ```
@@ -5196,7 +5196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailCrossRegionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailCrossRegionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailCrossRegionConfigList
 ```
@@ -5356,7 +5356,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailCrossRegionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailCrossRegionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailCrossRegionConfigOutputReference
 ```
@@ -5645,7 +5645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailSensitiveInformationPolicyConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailSensitiveInformationPolicyConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailSensitiveInformationPolicyConfigList
 ```
@@ -5805,7 +5805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailSensitiveInformationPolicyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailSensitiveInformationPolicyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailSensitiveInformationPolicyConfigOutputReference
 ```
@@ -6156,7 +6156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigList
 ```
@@ -6316,7 +6316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference
 ```
@@ -6743,7 +6743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigList
 ```
@@ -6903,7 +6903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigOutputReference
 ```
@@ -7381,7 +7381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockGuardrailTimeoutsOutputReference
 ```
@@ -7717,7 +7717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTopicPolicyConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailTopicPolicyConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailTopicPolicyConfigList
 ```
@@ -7877,7 +7877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTopicPolicyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailTopicPolicyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailTopicPolicyConfigOutputReference
 ```
@@ -8228,7 +8228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTopicPolicyConfigTierConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailTopicPolicyConfigTierConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailTopicPolicyConfigTierConfigList
 ```
@@ -8388,7 +8388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTopicPolicyConfigTierConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailTopicPolicyConfigTierConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailTopicPolicyConfigTierConfigOutputReference
 ```
@@ -8684,7 +8684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTopicPolicyConfigTopicsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailTopicPolicyConfigTopicsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailTopicPolicyConfigTopicsConfigList
 ```
@@ -8844,7 +8844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailTopicPolicyConfigTopicsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailTopicPolicyConfigTopicsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailTopicPolicyConfigTopicsConfigOutputReference
 ```
@@ -9206,7 +9206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailWordPolicyConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailWordPolicyConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailWordPolicyConfigList
 ```
@@ -9366,7 +9366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailWordPolicyConfigManagedWordListsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailWordPolicyConfigManagedWordListsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailWordPolicyConfigManagedWordListsConfigList
 ```
@@ -9526,7 +9526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference
 ```
@@ -9931,7 +9931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailWordPolicyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailWordPolicyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailWordPolicyConfigOutputReference
 ```
@@ -10282,7 +10282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailWordPolicyConfigWordsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailWordPolicyConfigWordsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockGuardrailWordPolicyConfigWordsConfigList
 ```
@@ -10442,7 +10442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrail.BedrockGuardrailWordPolicyConfigWordsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockguardrail"
 
 bedrockguardrail.NewBedrockGuardrailWordPolicyConfigWordsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockGuardrailWordPolicyConfigWordsConfigOutputReference
 ```

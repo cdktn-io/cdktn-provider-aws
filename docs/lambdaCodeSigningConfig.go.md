@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdacodesigningconfig"
 
 lambdacodesigningconfig.NewLambdaCodeSigningConfig(scope Construct, id *string, config LambdaCodeSigningConfigConfig) LambdaCodeSigningConfig
 ```
@@ -468,7 +468,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdacodesigningconfig"
 
 lambdacodesigningconfig.LambdaCodeSigningConfig_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdacodesigningconfig"
 
 lambdacodesigningconfig.LambdaCodeSigningConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ lambdacodesigningconfig.LambdaCodeSigningConfig_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdacodesigningconfig"
 
 lambdacodesigningconfig.LambdaCodeSigningConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ lambdacodesigningconfig.LambdaCodeSigningConfig_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdacodesigningconfig"
 
 lambdacodesigningconfig.LambdaCodeSigningConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -944,7 +944,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdacodesigningconfig"
 
 &lambdacodesigningconfig.LambdaCodeSigningConfigAllowedPublishers {
 	SigningProfileVersionArns: *[]*string,
@@ -976,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdacodesigningconfig"
 
 &lambdacodesigningconfig.LambdaCodeSigningConfigConfig {
 	Connection: interface{},
@@ -986,10 +986,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfi
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AllowedPublishers: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishers,
+	AllowedPublishers: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishers,
 	Description: *string,
 	Id: *string,
-	Policies: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lambdaCodeSigningConfig.LambdaCodeSigningConfigPolicies,
+	Policies: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.lambdaCodeSigningConfig.LambdaCodeSigningConfigPolicies,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdacodesigningconfig"
 
 &lambdacodesigningconfig.LambdaCodeSigningConfigPolicies {
 	UntrustedArtifactOnDeployment: *string,
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdacodesigningconfig"
 
 lambdacodesigningconfig.NewLambdaCodeSigningConfigAllowedPublishersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaCodeSigningConfigAllowedPublishersOutputReference
 ```
@@ -1490,7 +1490,7 @@ func InternalValue() LambdaCodeSigningConfigAllowedPublishers
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdacodesigningconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdacodesigningconfig"
 
 lambdacodesigningconfig.NewLambdaCodeSigningConfigPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaCodeSigningConfigPoliciesOutputReference
 ```

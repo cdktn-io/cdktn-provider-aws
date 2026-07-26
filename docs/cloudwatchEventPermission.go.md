@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatcheventpermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventpermission"
 
 cloudwatcheventpermission.NewCloudwatchEventPermission(scope Construct, id *string, config CloudwatchEventPermissionConfig) CloudwatchEventPermission
 ```
@@ -448,7 +448,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatcheventpermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatcheventpermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatcheventpermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatcheventpermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatcheventpermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventpermission"
 
 &cloudwatcheventpermission.CloudwatchEventPermissionCondition {
 	Key: *string,
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatcheventpermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventpermission"
 
 &cloudwatcheventpermission.CloudwatchEventPermissionConfig {
 	Connection: interface{},
@@ -964,7 +964,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatcheventpermiss
 	Principal: *string,
 	StatementId: *string,
 	Action: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.cloudwatchEventPermission.CloudwatchEventPermissionCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.cloudwatchEventPermission.CloudwatchEventPermissionCondition,
 	EventBusName: *string,
 	Id: *string,
 	Region: *string,
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatcheventpermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventpermission"
 
 cloudwatcheventpermission.NewCloudwatchEventPermissionConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventPermissionConditionOutputReference
 ```

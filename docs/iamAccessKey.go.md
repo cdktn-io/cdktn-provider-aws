@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamAccessKey.IamAccessKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamaccesskey"
 
 iamaccesskey.NewIamAccessKey(scope Construct, id *string, config IamAccessKeyConfig) IamAccessKey
 ```
@@ -421,7 +421,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iamAccessKey.IamAccessKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamaccesskey"
 
 iamaccesskey.IamAccessKey_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iamAccessKey.IamAccessKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamaccesskey"
 
 iamaccesskey.IamAccessKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ iamaccesskey.IamAccessKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iamAccessKey.IamAccessKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamaccesskey"
 
 iamaccesskey.IamAccessKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ iamaccesskey.IamAccessKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iamAccessKey.IamAccessKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamaccesskey"
 
 iamaccesskey.IamAccessKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamAccessKey.IamAccessKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamaccesskey"
 
 &iamaccesskey.IamAccessKeyConfig {
 	Connection: interface{},

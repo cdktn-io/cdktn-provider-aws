@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.NewDxHostedTransitVirtualInterface(scope Construct, id *string, config DxHostedTransitVirtualInterfaceConfig) DxHostedTransitVirtualInterface
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterface_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterface_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterface_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dxhostedtransitvirtualinterface"
 
 &dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterfaceConfig {
 	Connection: interface{},
@@ -1103,7 +1103,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedtransitvirtual
 	Id: *string,
 	Mtu: *f64,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterfaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterfaceTimeouts,
 }
 ```
 
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dxhostedtransitvirtualinterface"
 
 &dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterfaceTimeouts {
 	Create: *string,
@@ -1420,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.NewDxHostedTransitVirtualInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DxHostedTransitVirtualInterfaceTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailLbAttachment.LightsailLbAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsaillbattachment"
 
 lightsaillbattachment.NewLightsailLbAttachment(scope Construct, id *string, config LightsailLbAttachmentConfig) LightsailLbAttachment
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lightsailLbAttachment.LightsailLbAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsaillbattachment"
 
 lightsaillbattachment.LightsailLbAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lightsailLbAttachment.LightsailLbAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsaillbattachment"
 
 lightsaillbattachment.LightsailLbAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ lightsaillbattachment.LightsailLbAttachment_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lightsailLbAttachment.LightsailLbAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsaillbattachment"
 
 lightsaillbattachment.LightsailLbAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ lightsaillbattachment.LightsailLbAttachment_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lightsailLbAttachment.LightsailLbAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsaillbattachment"
 
 lightsaillbattachment.LightsailLbAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailLbAttachment.LightsailLbAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsaillbattachment"
 
 &lightsaillbattachment.LightsailLbAttachmentConfig {
 	Connection: interface{},

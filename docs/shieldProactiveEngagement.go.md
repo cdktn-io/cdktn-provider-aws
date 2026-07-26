@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldproactiveengagement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldproactiveengagement"
 
 shieldproactiveengagement.NewShieldProactiveEngagement(scope Construct, id *string, config ShieldProactiveEngagementConfig) ShieldProactiveEngagement
 ```
@@ -420,7 +420,7 @@ func ResetEmergencyContact()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagement.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldproactiveengagement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldproactiveengagement"
 
 shieldproactiveengagement.ShieldProactiveEngagement_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldproactiveengagement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldproactiveengagement"
 
 shieldproactiveengagement.ShieldProactiveEngagement_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ shieldproactiveengagement.ShieldProactiveEngagement_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldproactiveengagement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldproactiveengagement"
 
 shieldproactiveengagement.ShieldProactiveEngagement_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ shieldproactiveengagement.ShieldProactiveEngagement_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldproactiveengagement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldproactiveengagement"
 
 shieldproactiveengagement.ShieldProactiveEngagement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -764,7 +764,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldproactiveengagement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldproactiveengagement"
 
 &shieldproactiveengagement.ShieldProactiveEngagementConfig {
 	Connection: interface{},
@@ -896,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementEmergencyContact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldproactiveengagement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldproactiveengagement"
 
 &shieldproactiveengagement.ShieldProactiveEngagementEmergencyContact {
 	EmailAddress: *string,
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementEmergencyContactList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldproactiveengagement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldproactiveengagement"
 
 shieldproactiveengagement.NewShieldProactiveEngagementEmergencyContactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ShieldProactiveEngagementEmergencyContactList
 ```
@@ -1118,7 +1118,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementEmergencyContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldproactiveengagement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldproactiveengagement"
 
 shieldproactiveengagement.NewShieldProactiveEngagementEmergencyContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ShieldProactiveEngagementEmergencyContactOutputReference
 ```

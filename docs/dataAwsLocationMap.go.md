@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationmap"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationmap"
 
 dataawslocationmap.NewDataAwsLocationMap(scope Construct, id *string, config DataAwsLocationMapConfig) DataAwsLocationMap
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLocationMap.DataAwsLocationMap.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationmap"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationmap"
 
 dataawslocationmap.DataAwsLocationMap_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLocationMap.DataAwsLocationMap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationmap"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationmap"
 
 dataawslocationmap.DataAwsLocationMap_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawslocationmap.DataAwsLocationMap_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLocationMap.DataAwsLocationMap.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationmap"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationmap"
 
 dataawslocationmap.DataAwsLocationMap_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawslocationmap.DataAwsLocationMap_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLocationMap.DataAwsLocationMap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationmap"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationmap"
 
 dataawslocationmap.DataAwsLocationMap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationmap"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationmap"
 
 &dataawslocationmap.DataAwsLocationMapConfig {
 	Connection: interface{},
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationmap"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationmap"
 
 &dataawslocationmap.DataAwsLocationMapConfiguration {
 
@@ -907,7 +907,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationmap"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationmap"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationmap"
 
 dataawslocationmap.NewDataAwsLocationMapConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLocationMapConfigurationList
 ```
@@ -1056,7 +1056,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationmap"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationmap"
 
 dataawslocationmap.NewDataAwsLocationMapConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLocationMapConfigurationOutputReference
 ```

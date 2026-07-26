@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmPatchGroup.SsmPatchGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmpatchgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmpatchgroup"
 
 ssmpatchgroup.NewSsmPatchGroup(scope Construct, id *string, config SsmPatchGroupConfig) SsmPatchGroup
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssmPatchGroup.SsmPatchGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmpatchgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmpatchgroup"
 
 ssmpatchgroup.SsmPatchGroup_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssmPatchGroup.SsmPatchGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmpatchgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmpatchgroup"
 
 ssmpatchgroup.SsmPatchGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ ssmpatchgroup.SsmPatchGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssmPatchGroup.SsmPatchGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmpatchgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmpatchgroup"
 
 ssmpatchgroup.SsmPatchGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ ssmpatchgroup.SsmPatchGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssmPatchGroup.SsmPatchGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmpatchgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmpatchgroup"
 
 ssmpatchgroup.SsmPatchGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssmPatchGroup.SsmPatchGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmpatchgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmpatchgroup"
 
 &ssmpatchgroup.SsmPatchGroupConfig {
 	Connection: interface{},

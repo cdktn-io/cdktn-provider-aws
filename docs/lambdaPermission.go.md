@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaPermission.LambdaPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdapermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdapermission"
 
 lambdapermission.NewLambdaPermission(scope Construct, id *string, config LambdaPermissionConfig) LambdaPermission
 ```
@@ -497,7 +497,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lambdaPermission.LambdaPermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdapermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdapermission"
 
 lambdapermission.LambdaPermission_IsConstruct(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lambdaPermission.LambdaPermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdapermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdapermission"
 
 lambdapermission.LambdaPermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ lambdapermission.LambdaPermission_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lambdaPermission.LambdaPermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdapermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdapermission"
 
 lambdapermission.LambdaPermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ lambdapermission.LambdaPermission_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lambdaPermission.LambdaPermission.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdapermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdapermission"
 
 lambdapermission.LambdaPermission_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1116,7 +1116,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaPermission.LambdaPermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdapermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdapermission"
 
 &lambdapermission.LambdaPermissionConfig {
 	Connection: interface{},
@@ -1140,7 +1140,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdapermission"
 	SourceArn: *string,
 	StatementId: *string,
 	StatementIdPrefix: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lambdaPermission.LambdaPermissionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.lambdaPermission.LambdaPermissionTimeouts,
 }
 ```
 
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaPermission.LambdaPermissionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdapermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdapermission"
 
 &lambdapermission.LambdaPermissionTimeouts {
 	Create: *string,
@@ -1497,7 +1497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaPermission.LambdaPermissionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdapermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdapermission"
 
 lambdapermission.NewLambdaPermissionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaPermissionTimeoutsOutputReference
 ```

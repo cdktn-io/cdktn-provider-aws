@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbCluster.DocdbCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 docdbcluster.NewDocdbCluster(scope Construct, id *string, config DocdbClusterConfig) DocdbCluster
 ```
@@ -698,7 +698,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.docdbCluster.DocdbCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 docdbcluster.DocdbCluster_IsConstruct(x interface{}) *bool
 ```
@@ -730,7 +730,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.docdbCluster.DocdbCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 docdbcluster.DocdbCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -744,7 +744,7 @@ docdbcluster.DocdbCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.docdbCluster.DocdbCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 docdbcluster.DocdbCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -758,7 +758,7 @@ docdbcluster.DocdbCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.docdbCluster.DocdbCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 docdbcluster.DocdbCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1867,7 +1867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.docdbCluster.DocdbClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 &docdbcluster.DocdbClusterConfig {
 	Connection: interface{},
@@ -1904,15 +1904,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
 	PreferredBackupWindow: *string,
 	PreferredMaintenanceWindow: *string,
 	Region: *string,
-	RestoreToPointInTime: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.docdbCluster.DocdbClusterRestoreToPointInTime,
-	ServerlessV2ScalingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.docdbCluster.DocdbClusterServerlessV2ScalingConfiguration,
+	RestoreToPointInTime: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.docdbCluster.DocdbClusterRestoreToPointInTime,
+	ServerlessV2ScalingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.docdbCluster.DocdbClusterServerlessV2ScalingConfiguration,
 	SkipFinalSnapshot: interface{},
 	SnapshotIdentifier: *string,
 	StorageEncrypted: interface{},
 	StorageType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.docdbCluster.DocdbClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.docdbCluster.DocdbClusterTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -2498,7 +2498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.docdbCluster.DocdbClusterMasterUserSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 &docdbcluster.DocdbClusterMasterUserSecret {
 
@@ -2511,7 +2511,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.docdbCluster.DocdbClusterRestoreToPointInTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 &docdbcluster.DocdbClusterRestoreToPointInTime {
 	SourceClusterIdentifier: *string,
@@ -2585,7 +2585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.docdbCluster.DocdbClusterServerlessV2ScalingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 &docdbcluster.DocdbClusterServerlessV2ScalingConfiguration {
 	MaxCapacity: *f64,
@@ -2631,7 +2631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.docdbCluster.DocdbClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 &docdbcluster.DocdbClusterTimeouts {
 	Create: *string,
@@ -2693,7 +2693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbCluster.DocdbClusterMasterUserSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 docdbcluster.NewDocdbClusterMasterUserSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DocdbClusterMasterUserSecretList
 ```
@@ -2842,7 +2842,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbCluster.DocdbClusterMasterUserSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 docdbcluster.NewDocdbClusterMasterUserSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DocdbClusterMasterUserSecretOutputReference
 ```
@@ -3142,7 +3142,7 @@ func InternalValue() DocdbClusterMasterUserSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbCluster.DocdbClusterRestoreToPointInTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 docdbcluster.NewDocdbClusterRestoreToPointInTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DocdbClusterRestoreToPointInTimeOutputReference
 ```
@@ -3500,7 +3500,7 @@ func InternalValue() DocdbClusterRestoreToPointInTime
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbCluster.DocdbClusterServerlessV2ScalingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 docdbcluster.NewDocdbClusterServerlessV2ScalingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DocdbClusterServerlessV2ScalingConfigurationOutputReference
 ```
@@ -3793,7 +3793,7 @@ func InternalValue() DocdbClusterServerlessV2ScalingConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbCluster.DocdbClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbcluster"
 
 docdbcluster.NewDocdbClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DocdbClusterTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerstudiolifecycleconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerstudiolifecycleconfig"
 
 sagemakerstudiolifecycleconfig.NewSagemakerStudioLifecycleConfig(scope Construct, id *string, config SagemakerStudioLifecycleConfigConfig) SagemakerStudioLifecycleConfig
 ```
@@ -428,7 +428,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerstudiolifecycleconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerstudiolifecycleconfig"
 
 sagemakerstudiolifecycleconfig.SagemakerStudioLifecycleConfig_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerstudiolifecycleconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerstudiolifecycleconfig"
 
 sagemakerstudiolifecycleconfig.SagemakerStudioLifecycleConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ sagemakerstudiolifecycleconfig.SagemakerStudioLifecycleConfig_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerstudiolifecycleconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerstudiolifecycleconfig"
 
 sagemakerstudiolifecycleconfig.SagemakerStudioLifecycleConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ sagemakerstudiolifecycleconfig.SagemakerStudioLifecycleConfig_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerstudiolifecycleconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerstudiolifecycleconfig"
 
 sagemakerstudiolifecycleconfig.SagemakerStudioLifecycleConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerstudiolifecycleconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerstudiolifecycleconfig"
 
 &sagemakerstudiolifecycleconfig.SagemakerStudioLifecycleConfigConfig {
 	Connection: interface{},

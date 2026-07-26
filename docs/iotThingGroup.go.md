@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotThingGroup.IotThingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.NewIotThingGroup(scope Construct, id *string, config IotThingGroupConfig) IotThingGroup
 ```
@@ -455,7 +455,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iotThingGroup.IotThingGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.IotThingGroup_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iotThingGroup.IotThingGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.IotThingGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ iotthinggroup.IotThingGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iotThingGroup.IotThingGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.IotThingGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ iotthinggroup.IotThingGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iotThingGroup.IotThingGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.IotThingGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -931,7 +931,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 &iotthinggroup.IotThingGroupConfig {
 	Connection: interface{},
@@ -944,7 +944,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
 	Name: *string,
 	Id: *string,
 	ParentGroupName: *string,
-	Properties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.iotThingGroup.IotThingGroupProperties,
+	Properties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.iotThingGroup.IotThingGroupProperties,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 &iotthinggroup.IotThingGroupMetadata {
 
@@ -1151,7 +1151,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 &iotthinggroup.IotThingGroupMetadataRootToParentGroups {
 
@@ -1164,10 +1164,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 &iotthinggroup.IotThingGroupProperties {
-	AttributePayload: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.iotThingGroup.IotThingGroupPropertiesAttributePayload,
+	AttributePayload: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.iotThingGroup.IotThingGroupPropertiesAttributePayload,
 	Description: *string,
 }
 ```
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupPropertiesAttributePayload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 &iotthinggroup.IotThingGroupPropertiesAttributePayload {
 	Attributes: *map[string]*string,
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotThingGroupMetadataList
 ```
@@ -1395,7 +1395,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotThingGroupMetadataOutputReference
 ```
@@ -1695,7 +1695,7 @@ func InternalValue() IotThingGroupMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupMetadataRootToParentGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotThingGroupMetadataRootToParentGroupsList
 ```
@@ -1844,7 +1844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupMetadataRootToParentGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotThingGroupMetadataRootToParentGroupsOutputReference
 ```
@@ -2133,7 +2133,7 @@ func InternalValue() IotThingGroupMetadataRootToParentGroups
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupPropertiesAttributePayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupPropertiesAttributePayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotThingGroupPropertiesAttributePayloadOutputReference
 ```
@@ -2411,7 +2411,7 @@ func InternalValue() IotThingGroupPropertiesAttributePayload
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotThingGroup.IotThingGroupPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotthinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotThingGroupPropertiesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithm(scope Construct, id *string, config SagemakerAlgorithmConfig) SagemakerAlgorithm
 ```
@@ -508,7 +508,7 @@ func ResetValidationSpecification()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithm.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.SagemakerAlgorithm_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithm.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.SagemakerAlgorithm_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ sagemakeralgorithm.SagemakerAlgorithm_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithm.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.SagemakerAlgorithm_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ sagemakeralgorithm.SagemakerAlgorithm_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithm.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.SagemakerAlgorithm_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1050,7 +1050,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmConfig {
 	Connection: interface{},
@@ -1066,7 +1066,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
 	InferenceSpecification: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerAlgorithm.SagemakerAlgorithmTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerAlgorithm.SagemakerAlgorithmTimeouts,
 	TrainingSpecification: interface{},
 	ValidationSpecification: interface{},
 }
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmInferenceSpecification {
 	Containers: interface{},
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmInferenceSpecificationContainers {
 	AdditionalS3DataSource: interface{},
@@ -1614,7 +1614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataSource {
 	S3DataType: *string,
@@ -1688,7 +1688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersBaseModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmInferenceSpecificationContainersBaseModel {
 	HubContentName: *string,
@@ -1748,7 +1748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSource {
 	S3DataSource: interface{},
@@ -1782,7 +1782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSource {
 	CompressionType: *string,
@@ -1916,7 +1916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceHubAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceHubAccessConfig {
 	HubContentArn: *string,
@@ -1948,7 +1948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfig {
 	AcceptEula: interface{},
@@ -1980,7 +1980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelInput {
 	DataInputConfig: *string,
@@ -2012,7 +2012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTimeouts {
 	Create: *string,
@@ -2062,7 +2062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTrainingSpecification {
 	SupportedTrainingInstanceTypes: *[]*string,
@@ -2216,7 +2216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationAdditionalS3DataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTrainingSpecificationAdditionalS3DataSource {
 	S3DataType: *string,
@@ -2290,7 +2290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationMetricDefinitions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTrainingSpecificationMetricDefinitions {
 	Name: *string,
@@ -2336,7 +2336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParameters {
 	Name: *string,
@@ -2454,7 +2454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRange {
 	CategoricalParameterRangeSpecification: interface{},
@@ -2520,7 +2520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeCategoricalParameterRangeSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeCategoricalParameterRangeSpecification {
 	Values: *[]*string,
@@ -2552,7 +2552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeContinuousParameterRangeSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeContinuousParameterRangeSpecification {
 	MaxValue: *string,
@@ -2598,7 +2598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeIntegerParameterRangeSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeIntegerParameterRangeSpecification {
 	MaxValue: *string,
@@ -2644,7 +2644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveMetrics {
 	MetricName: *string,
@@ -2690,7 +2690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationTrainingChannels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmTrainingSpecificationTrainingChannels {
 	Name: *string,
@@ -2792,7 +2792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecification {
 	ValidationRole: *string,
@@ -2840,7 +2840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfiles {
 	ProfileName: *string,
@@ -2904,7 +2904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinition {
 	TrainingInputMode: *string,
@@ -3014,7 +3014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfig {
 	ChannelName: *string,
@@ -3134,7 +3134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSource {
 	FileSystemDataSource: interface{},
@@ -3184,7 +3184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSource {
 	DirectoryPath: *string,
@@ -3258,7 +3258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSource {
 	S3DataType: *string,
@@ -3378,7 +3378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfig {
 	HubContentArn: *string,
@@ -3410,7 +3410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfig {
 	AcceptEula: interface{},
@@ -3442,7 +3442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigShuffleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigShuffleConfig {
 	Seed: *f64,
@@ -3474,7 +3474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputDataConfig {
 	S3OutputPath: *string,
@@ -3534,7 +3534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfig {
 	InstanceCount: *f64,
@@ -3668,7 +3668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstanceGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstanceGroups {
 	InstanceCount: *f64,
@@ -3728,7 +3728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfig {
 	EnableMultipleJobs: interface{},
@@ -3776,7 +3776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecifications {
 	InstanceCount: *f64,
@@ -3822,7 +3822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionStoppingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionStoppingCondition {
 	MaxPendingTimeInSeconds: *f64,
@@ -3882,7 +3882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinition {
 	BatchStrategy: *string,
@@ -4004,7 +4004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInput {
 	CompressionType: *string,
@@ -4080,7 +4080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSource {
 	S3DataSource: interface{},
@@ -4114,7 +4114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSource {
 	S3DataType: *string,
@@ -4160,7 +4160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutput {
 	S3OutputPath: *string,
@@ -4234,7 +4234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 &sagemakeralgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformResources {
 	InstanceCount: *f64,
@@ -4310,7 +4310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataSourceList
 ```
@@ -4470,7 +4470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmInferenceSpecificationContainersAdditionalS3DataSourceOutputReference
 ```
@@ -4839,7 +4839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersBaseModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersBaseModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmInferenceSpecificationContainersBaseModelList
 ```
@@ -4999,7 +4999,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersBaseModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersBaseModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmInferenceSpecificationContainersBaseModelOutputReference
 ```
@@ -5353,7 +5353,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmInferenceSpecificationContainersList
 ```
@@ -5513,7 +5513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersModelDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceList
 ```
@@ -5673,7 +5673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersModelDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceOutputReference
 ```
@@ -5982,7 +5982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceHubAccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceHubAccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceHubAccessConfigList
 ```
@@ -6142,7 +6142,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceHubAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceHubAccessConfigOutputReference
 ```
@@ -6438,7 +6438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceList
 ```
@@ -6598,7 +6598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfigList
 ```
@@ -6758,7 +6758,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceModelAccessConfigOutputReference
 ```
@@ -7054,7 +7054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmInferenceSpecificationContainersModelDataSourceS3DataSourceOutputReference
 ```
@@ -7558,7 +7558,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelInputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersModelInputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmInferenceSpecificationContainersModelInputList
 ```
@@ -7718,7 +7718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersModelInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersModelInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmInferenceSpecificationContainersModelInputOutputReference
 ```
@@ -8014,7 +8014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmInferenceSpecificationContainersOutputReference
 ```
@@ -8768,7 +8768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmInferenceSpecificationList
 ```
@@ -8928,7 +8928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmInferenceSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmInferenceSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmInferenceSpecificationOutputReference
 ```
@@ -9353,7 +9353,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerAlgorithmTimeoutsOutputReference
 ```
@@ -9660,7 +9660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationAdditionalS3DataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationAdditionalS3DataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmTrainingSpecificationAdditionalS3DataSourceList
 ```
@@ -9820,7 +9820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationAdditionalS3DataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationAdditionalS3DataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmTrainingSpecificationAdditionalS3DataSourceOutputReference
 ```
@@ -10189,7 +10189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmTrainingSpecificationList
 ```
@@ -10349,7 +10349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationMetricDefinitionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationMetricDefinitionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmTrainingSpecificationMetricDefinitionsList
 ```
@@ -10509,7 +10509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationMetricDefinitionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationMetricDefinitionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmTrainingSpecificationMetricDefinitionsOutputReference
 ```
@@ -10820,7 +10820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmTrainingSpecificationOutputReference
 ```
@@ -11399,7 +11399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedHyperParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersList
 ```
@@ -11559,7 +11559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedHyperParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersOutputReference
 ```
@@ -12028,7 +12028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeCategoricalParameterRangeSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeCategoricalParameterRangeSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeCategoricalParameterRangeSpecificationList
 ```
@@ -12188,7 +12188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeCategoricalParameterRangeSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeCategoricalParameterRangeSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeCategoricalParameterRangeSpecificationOutputReference
 ```
@@ -12477,7 +12477,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeContinuousParameterRangeSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeContinuousParameterRangeSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeContinuousParameterRangeSpecificationList
 ```
@@ -12637,7 +12637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeContinuousParameterRangeSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeContinuousParameterRangeSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeContinuousParameterRangeSpecificationOutputReference
 ```
@@ -12948,7 +12948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeIntegerParameterRangeSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeIntegerParameterRangeSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeIntegerParameterRangeSpecificationList
 ```
@@ -13108,7 +13108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeIntegerParameterRangeSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeIntegerParameterRangeSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeIntegerParameterRangeSpecificationOutputReference
 ```
@@ -13419,7 +13419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeList
 ```
@@ -13579,7 +13579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedHyperParametersRangeOutputReference
 ```
@@ -13972,7 +13972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveMetricsList
 ```
@@ -14132,7 +14132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmTrainingSpecificationSupportedTuningJobObjectiveMetricsOutputReference
 ```
@@ -14443,7 +14443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationTrainingChannelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationTrainingChannelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmTrainingSpecificationTrainingChannelsList
 ```
@@ -14603,7 +14603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmTrainingSpecificationTrainingChannelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmTrainingSpecificationTrainingChannelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmTrainingSpecificationTrainingChannelsOutputReference
 ```
@@ -15023,7 +15023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationList
 ```
@@ -15183,7 +15183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationOutputReference
 ```
@@ -15514,7 +15514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesList
 ```
@@ -15674,7 +15674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesOutputReference
 ```
@@ -16047,7 +16047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSourceList
 ```
@@ -16207,7 +16207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSourceOutputReference
 ```
@@ -16562,7 +16562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceList
 ```
@@ -16722,7 +16722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceOutputReference
 ```
@@ -17073,7 +17073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfigList
 ```
@@ -17233,7 +17233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfigOutputReference
 ```
@@ -17529,7 +17529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceList
 ```
@@ -17689,7 +17689,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfigList
 ```
@@ -17849,7 +17849,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfigOutputReference
 ```
@@ -18145,7 +18145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceOutputReference
 ```
@@ -18627,7 +18627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigList
 ```
@@ -18787,7 +18787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigOutputReference
 ```
@@ -19276,7 +19276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigShuffleConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigShuffleConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigShuffleConfigList
 ```
@@ -19436,7 +19436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigShuffleConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigShuffleConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionInputDataConfigShuffleConfigOutputReference
 ```
@@ -19725,7 +19725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionList
 ```
@@ -19885,7 +19885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputDataConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputDataConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputDataConfigList
 ```
@@ -20045,7 +20045,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputDataConfigOutputReference
 ```
@@ -20392,7 +20392,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionOutputReference
 ```
@@ -20878,7 +20878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstanceGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstanceGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstanceGroupsList
 ```
@@ -21038,7 +21038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstanceGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstanceGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstanceGroupsOutputReference
 ```
@@ -21371,7 +21371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigList
 ```
@@ -21531,7 +21531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigOutputReference
 ```
@@ -21869,7 +21869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecificationsList
 ```
@@ -22029,7 +22029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecificationsOutputReference
 ```
@@ -22347,7 +22347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigList
 ```
@@ -22507,7 +22507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionResourceConfigOutputReference
 ```
@@ -23032,7 +23032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionStoppingConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionStoppingConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionStoppingConditionList
 ```
@@ -23192,7 +23192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionStoppingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionStoppingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTrainingJobDefinitionStoppingConditionOutputReference
 ```
@@ -23546,7 +23546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionList
 ```
@@ -23706,7 +23706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionOutputReference
 ```
@@ -24215,7 +24215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceList
 ```
@@ -24375,7 +24375,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceOutputReference
 ```
@@ -24684,7 +24684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSourceList
 ```
@@ -24844,7 +24844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSourceOutputReference
 ```
@@ -25155,7 +25155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputList
 ```
@@ -25315,7 +25315,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputOutputReference
 ```
@@ -25711,7 +25711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutputList
 ```
@@ -25871,7 +25871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutputOutputReference
 ```
@@ -26247,7 +26247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformResourcesList
 ```
@@ -26407,7 +26407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerAlgorithm.SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakeralgorithm"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakeralgorithm"
 
 sagemakeralgorithm.NewSagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAlgorithmValidationSpecificationValidationProfilesTransformJobDefinitionTransformResourcesOutputReference
 ```

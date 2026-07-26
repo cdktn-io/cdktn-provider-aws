@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreworkloadidentity"
 
 bedrockagentcoreworkloadidentity.NewBedrockagentcoreWorkloadIdentity(scope Construct, id *string, config BedrockagentcoreWorkloadIdentityConfig) BedrockagentcoreWorkloadIdentity
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreworkloadidentity"
 
 bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreworkloadidentity"
 
 bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreworkloadidentity"
 
 bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreworkloadidentity"
 
 bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreworkloadidentity"
 
 &bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentityConfig {
 	Connection: interface{},

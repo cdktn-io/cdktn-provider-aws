@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 dataawsroutetables.NewDataAwsRouteTables(scope Construct, id *string, config DataAwsRouteTablesConfig) DataAwsRouteTables
 ```
@@ -366,7 +366,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTables.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 dataawsroutetables.DataAwsRouteTables_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 dataawsroutetables.DataAwsRouteTables_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ dataawsroutetables.DataAwsRouteTables_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 dataawsroutetables.DataAwsRouteTables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ dataawsroutetables.DataAwsRouteTables_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTables.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 dataawsroutetables.DataAwsRouteTables_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 &dataawsroutetables.DataAwsRouteTablesConfig {
 	Connection: interface{},
@@ -790,7 +790,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsRouteTables.DataAwsRouteTablesTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsRouteTables.DataAwsRouteTablesTimeouts,
 	VpcId: *string,
 }
 ```
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 &dataawsroutetables.DataAwsRouteTablesFilter {
 	Name: *string,
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 &dataawsroutetables.DataAwsRouteTablesTimeouts {
 	Read: *string,
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 dataawsroutetables.NewDataAwsRouteTablesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRouteTablesFilterList
 ```
@@ -1211,7 +1211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 dataawsroutetables.NewDataAwsRouteTablesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRouteTablesFilterOutputReference
 ```
@@ -1522,7 +1522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroutetables"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroutetables"
 
 dataawsroutetables.NewDataAwsRouteTablesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsRouteTablesTimeoutsOutputReference
 ```

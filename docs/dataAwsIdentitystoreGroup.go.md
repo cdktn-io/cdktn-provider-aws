@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroup(scope Construct, id *string, config DataAwsIdentitystoreGroupConfig) DataAwsIdentitystoreGroup
 ```
@@ -339,7 +339,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.DataAwsIdentitystoreGroup_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.DataAwsIdentitystoreGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsidentitystoregroup.DataAwsIdentitystoreGroup_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.DataAwsIdentitystoreGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataawsidentitystoregroup.DataAwsIdentitystoreGroup_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.DataAwsIdentitystoreGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -749,11 +749,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 &dataawsidentitystoregroup.DataAwsIdentitystoreGroupAlternateIdentifier {
-	ExternalId: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId,
-	UniqueAttribute: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute,
+	ExternalId: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId,
+	UniqueAttribute: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute,
 }
 ```
 
@@ -799,7 +799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 &dataawsidentitystoregroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId {
 	Id: *string,
@@ -848,7 +848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 &dataawsidentitystoregroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute {
 	AttributePath: *string,
@@ -894,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 &dataawsidentitystoregroup.DataAwsIdentitystoreGroupConfig {
 	Connection: interface{},
@@ -905,7 +905,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregr
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	IdentityStoreId: *string,
-	AlternateIdentifier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifier,
+	AlternateIdentifier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifier,
 	GroupId: *string,
 	Id: *string,
 	Region: *string,
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 &dataawsidentitystoregroup.DataAwsIdentitystoreGroupExternalIds {
 
@@ -1088,7 +1088,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference
 ```
@@ -1381,7 +1381,7 @@ func InternalValue() DataAwsIdentitystoreGroupAlternateIdentifierExternalId
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroupAlternateIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreGroupAlternateIdentifierOutputReference
 ```
@@ -1714,7 +1714,7 @@ func InternalValue() DataAwsIdentitystoreGroupAlternateIdentifier
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference
 ```
@@ -2007,7 +2007,7 @@ func InternalValue() DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroupExternalIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreGroupExternalIdsList
 ```
@@ -2156,7 +2156,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroupExternalIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreGroupExternalIdsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53Record.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53Record(scope Construct, id *string, config Route53RecordConfig) Route53Record
 ```
@@ -609,7 +609,7 @@ func ResetWeightedRoutingPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route53Record.Route53Record.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.Route53Record_IsConstruct(x interface{}) *bool
 ```
@@ -641,7 +641,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route53Record.Route53Record.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.Route53Record_IsTerraformElement(x interface{}) *bool
 ```
@@ -655,7 +655,7 @@ route53record.Route53Record_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route53Record.Route53Record.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.Route53Record_IsTerraformResource(x interface{}) *bool
 ```
@@ -669,7 +669,7 @@ route53record.Route53Record_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route53Record.Route53Record.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.Route53Record_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1305,7 +1305,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Record.Route53RecordAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 &route53record.Route53RecordAlias {
 	EvaluateTargetHealth: interface{},
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Record.Route53RecordCidrRoutingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 &route53record.Route53RecordCidrRoutingPolicy {
 	CollectionId: *string,
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Record.Route53RecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 &route53record.Route53RecordConfig {
 	Connection: interface{},
@@ -1424,21 +1424,21 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
 	Name: *string,
 	Type: *string,
 	ZoneId: *string,
-	Alias: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53Record.Route53RecordAlias,
+	Alias: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53Record.Route53RecordAlias,
 	AllowOverwrite: interface{},
-	CidrRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53Record.Route53RecordCidrRoutingPolicy,
-	FailoverRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53Record.Route53RecordFailoverRoutingPolicy,
-	GeolocationRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53Record.Route53RecordGeolocationRoutingPolicy,
-	GeoproximityRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53Record.Route53RecordGeoproximityRoutingPolicy,
+	CidrRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53Record.Route53RecordCidrRoutingPolicy,
+	FailoverRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53Record.Route53RecordFailoverRoutingPolicy,
+	GeolocationRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53Record.Route53RecordGeolocationRoutingPolicy,
+	GeoproximityRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53Record.Route53RecordGeoproximityRoutingPolicy,
 	HealthCheckId: *string,
 	Id: *string,
-	LatencyRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53Record.Route53RecordLatencyRoutingPolicy,
+	LatencyRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53Record.Route53RecordLatencyRoutingPolicy,
 	MultivalueAnswerRoutingPolicy: interface{},
 	Records: *[]*string,
 	SetIdentifier: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53Record.Route53RecordTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53Record.Route53RecordTimeouts,
 	Ttl: *f64,
-	WeightedRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53Record.Route53RecordWeightedRoutingPolicy,
+	WeightedRoutingPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53Record.Route53RecordWeightedRoutingPolicy,
 }
 ```
 
@@ -1784,7 +1784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Record.Route53RecordFailoverRoutingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 &route53record.Route53RecordFailoverRoutingPolicy {
 	Type: *string,
@@ -1816,7 +1816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Record.Route53RecordGeolocationRoutingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 &route53record.Route53RecordGeolocationRoutingPolicy {
 	Continent: *string,
@@ -1876,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Record.Route53RecordGeoproximityRoutingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 &route53record.Route53RecordGeoproximityRoutingPolicy {
 	AwsRegion: *string,
@@ -1952,7 +1952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Record.Route53RecordGeoproximityRoutingPolicyCoordinates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 &route53record.Route53RecordGeoproximityRoutingPolicyCoordinates {
 	Latitude: *string,
@@ -1998,7 +1998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Record.Route53RecordLatencyRoutingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 &route53record.Route53RecordLatencyRoutingPolicy {
 	Region: *string,
@@ -2030,7 +2030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Record.Route53RecordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 &route53record.Route53RecordTimeouts {
 	Create: *string,
@@ -2090,7 +2090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Record.Route53RecordWeightedRoutingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 &route53record.Route53RecordWeightedRoutingPolicy {
 	Weight: *f64,
@@ -2124,7 +2124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53RecordAliasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53RecordAliasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecordAliasOutputReference
 ```
@@ -2439,7 +2439,7 @@ func InternalValue() Route53RecordAlias
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53RecordCidrRoutingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53RecordCidrRoutingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecordCidrRoutingPolicyOutputReference
 ```
@@ -2732,7 +2732,7 @@ func InternalValue() Route53RecordCidrRoutingPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53RecordFailoverRoutingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53RecordFailoverRoutingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecordFailoverRoutingPolicyOutputReference
 ```
@@ -3003,7 +3003,7 @@ func InternalValue() Route53RecordFailoverRoutingPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53RecordGeolocationRoutingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53RecordGeolocationRoutingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecordGeolocationRoutingPolicyOutputReference
 ```
@@ -3339,7 +3339,7 @@ func InternalValue() Route53RecordGeolocationRoutingPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53RecordGeoproximityRoutingPolicyCoordinatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53RecordGeoproximityRoutingPolicyCoordinatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53RecordGeoproximityRoutingPolicyCoordinatesList
 ```
@@ -3499,7 +3499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53RecordGeoproximityRoutingPolicyCoordinatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference
 ```
@@ -3810,7 +3810,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53RecordGeoproximityRoutingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53RecordGeoproximityRoutingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecordGeoproximityRoutingPolicyOutputReference
 ```
@@ -4188,7 +4188,7 @@ func InternalValue() Route53RecordGeoproximityRoutingPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53RecordLatencyRoutingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecordLatencyRoutingPolicyOutputReference
 ```
@@ -4459,7 +4459,7 @@ func InternalValue() Route53RecordLatencyRoutingPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53RecordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53RecordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecordTimeoutsOutputReference
 ```
@@ -4795,7 +4795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Record.Route53RecordWeightedRoutingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53record"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53record"
 
 route53record.NewRoute53RecordWeightedRoutingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecordWeightedRoutingPolicyOutputReference
 ```

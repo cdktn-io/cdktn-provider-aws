@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 macie2findingsfilter.NewMacie2FindingsFilter(scope Construct, id *string, config Macie2FindingsFilterConfig) Macie2FindingsFilter
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 macie2findingsfilter.Macie2FindingsFilter_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 macie2findingsfilter.Macie2FindingsFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ macie2findingsfilter.Macie2FindingsFilter_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 macie2findingsfilter.Macie2FindingsFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ macie2findingsfilter.Macie2FindingsFilter_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 macie2findingsfilter.Macie2FindingsFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1031,7 +1031,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 &macie2findingsfilter.Macie2FindingsFilterConfig {
 	Connection: interface{},
@@ -1042,7 +1042,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Action: *string,
-	FindingCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.macie2FindingsFilter.Macie2FindingsFilterFindingCriteria,
+	FindingCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.macie2FindingsFilter.Macie2FindingsFilterFindingCriteria,
 	Description: *string,
 	Id: *string,
 	Name: *string,
@@ -1051,7 +1051,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.macie2FindingsFilter.Macie2FindingsFilterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.macie2FindingsFilter.Macie2FindingsFilterTimeouts,
 }
 ```
 
@@ -1296,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 &macie2findingsfilter.Macie2FindingsFilterFindingCriteria {
 	Criterion: interface{},
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 &macie2findingsfilter.Macie2FindingsFilterFindingCriteriaCriterion {
 	Field: *string,
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 &macie2findingsfilter.Macie2FindingsFilterTimeouts {
 	Create: *string,
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 macie2findingsfilter.NewMacie2FindingsFilterFindingCriteriaCriterionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2FindingsFilterFindingCriteriaCriterionList
 ```
@@ -1654,7 +1654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 macie2findingsfilter.NewMacie2FindingsFilterFindingCriteriaCriterionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2FindingsFilterFindingCriteriaCriterionOutputReference
 ```
@@ -2146,7 +2146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 macie2findingsfilter.NewMacie2FindingsFilterFindingCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2FindingsFilterFindingCriteriaOutputReference
 ```
@@ -2437,7 +2437,7 @@ func InternalValue() Macie2FindingsFilterFindingCriteria
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2findingsfilter"
 
 macie2findingsfilter.NewMacie2FindingsFilterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2FindingsFilterTimeoutsOutputReference
 ```
