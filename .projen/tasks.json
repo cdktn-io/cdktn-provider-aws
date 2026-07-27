@@ -1,5 +1,20 @@
 {
+  "manifestVersion": 3,
+  "env": {
+    "PATH": "$(pnpm -c exec \"node --print process.env.PATH\")",
+    "NODE_OPTIONS": "--max-old-space-size=31744",
+    "CHECKPOINT_DISABLE": "1"
+  },
   "tasks": {
+    "audit": {
+      "name": "audit",
+      "description": "Run security audit",
+      "steps": [
+        {
+          "exec": "pnpm audit --audit-level high"
+        }
+      ]
+    },
     "build": {
       "name": "build",
       "description": "Full release build",
@@ -37,10 +52,32 @@
       },
       "steps": [
         {
-          "builtin": "release/bump-version"
+          "builtin": "release/resolve-latest-tag",
+          "outputEnv": "LATEST_TAG"
+        },
+        {
+          "spawn": "bump:releasable-commits",
+          "outputEnv": "RELEASABLE_COMMITS",
+          "condition": "git rev-parse --verify --quiet \"refs/tags/$LATEST_TAG\""
+        },
+        {
+          "builtin": "release/suggest-version-bump",
+          "outputEnv": "SUGGESTED_BUMP"
+        },
+        {
+          "builtin": "release/apply-version-bump"
         }
       ],
-      "condition": "git log --oneline -1 | grep -qv \"chore(release):\""
+      "condition": "git log --oneline -1 | grep -v \"chore(release):\" > /dev/null"
+    },
+    "bump:releasable-commits": {
+      "name": "bump:releasable-commits",
+      "description": "Print the releasable commits since the latest release",
+      "steps": [
+        {
+          "exec": "git log --oneline $LATEST_TAG..HEAD"
+        }
+      ]
     },
     "check-if-new-provider-version": {
       "name": "check-if-new-provider-version",
@@ -105,7 +142,10 @@
       "description": "Synthesize project files",
       "steps": [
         {
-          "exec": "node .projenrc.js"
+          "execArgs": [
+            "node",
+            ".projenrc.js"
+          ]
         }
       ]
     },
@@ -149,7 +189,7 @@
       "description": "Install project dependencies and update lockfile (non-frozen)",
       "steps": [
         {
-          "exec": "yarn install --check-files"
+          "exec": "pnpm i --no-frozen-lockfile"
         }
       ]
     },
@@ -158,7 +198,7 @@
       "description": "Install project dependencies using frozen lockfile",
       "steps": [
         {
-          "exec": "yarn install --check-files --frozen-lockfile"
+          "exec": "pnpm i --frozen-lockfile"
         }
       ]
     },
@@ -202,7 +242,14 @@
       "description": "Create dotnet language bindings",
       "steps": [
         {
-          "exec": "jsii-pacmak -v --target dotnet"
+          "execArgs": [
+            "jsii-pacmak",
+            "-v",
+            "--pack-command",
+            "pnpm pack",
+            "--target",
+            "dotnet"
+          ]
         }
       ]
     },
@@ -211,7 +258,14 @@
       "description": "Create go language bindings",
       "steps": [
         {
-          "exec": "jsii-pacmak -v --target go"
+          "execArgs": [
+            "jsii-pacmak",
+            "-v",
+            "--pack-command",
+            "pnpm pack",
+            "--target",
+            "go"
+          ]
         }
       ]
     },
@@ -220,7 +274,14 @@
       "description": "Create java language bindings",
       "steps": [
         {
-          "exec": "jsii-pacmak -v --target java"
+          "execArgs": [
+            "jsii-pacmak",
+            "-v",
+            "--pack-command",
+            "pnpm pack",
+            "--target",
+            "java"
+          ]
         }
       ]
     },
@@ -229,7 +290,14 @@
       "description": "Create js language bindings",
       "steps": [
         {
-          "exec": "jsii-pacmak -v --target js"
+          "execArgs": [
+            "jsii-pacmak",
+            "-v",
+            "--pack-command",
+            "pnpm pack",
+            "--target",
+            "js"
+          ]
         }
       ]
     },
@@ -238,7 +306,14 @@
       "description": "Create python language bindings",
       "steps": [
         {
-          "exec": "jsii-pacmak -v --target python"
+          "execArgs": [
+            "jsii-pacmak",
+            "-v",
+            "--pack-command",
+            "pnpm pack",
+            "--target",
+            "python"
+          ]
         }
       ]
     },
@@ -262,6 +337,9 @@
       "name": "pre-compile",
       "description": "Prepare the project for compilation",
       "steps": [
+        {
+          "spawn": "audit"
+        },
         {
           "spawn": "unconditional-bump"
         }
@@ -331,7 +409,15 @@
           "exec": "rm -f $CHANGELOG"
         },
         {
-          "builtin": "release/bump-version"
+          "builtin": "release/resolve-latest-tag",
+          "outputEnv": "LATEST_TAG"
+        },
+        {
+          "builtin": "release/suggest-version-bump",
+          "outputEnv": "SUGGESTED_BUMP"
+        },
+        {
+          "builtin": "release/apply-version-bump"
         }
       ]
     },
@@ -368,16 +454,49 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@20 --upgrade --target=minor --peer --no-deprecated --dep=dev,peer,prod,optional --filter=@action-validator/cli,@action-validator/core,jsii-diff,jsii-pacmak,projen"
+          "execArgs": [
+            "pnpm",
+            "dlx",
+            "npm-check-updates@20",
+            "--upgrade",
+            "--target=minor",
+            "--cooldown=4",
+            "--peer",
+            "--no-deprecated",
+            "--dep=dev,prod,peer,optional",
+            "--filter=@action-validator/cli,@action-validator/core,jsii-diff,jsii-pacmak,projen"
+          ]
         },
         {
-          "exec": "yarn install --check-files"
+          "exec": "pnpm i --no-frozen-lockfile"
         },
         {
-          "exec": "yarn upgrade @action-validator/cli @action-validator/core @actions/core @cdktn/provider-project @types/node cdktn-cli cdktn commit-and-tag-version constructs dot-prop jsii-diff jsii-docgen jsii-pacmak jsii-rosetta jsii projen semver typescript"
+          "execArgs": [
+            "pnpm",
+            "update",
+            "@action-validator/cli",
+            "@action-validator/core",
+            "@actions/core",
+            "@cdktn/provider-project",
+            "@types/node",
+            "cdktn-cli",
+            "cdktn",
+            "commit-and-tag-version",
+            "constructs",
+            "dot-prop",
+            "jsii-diff",
+            "jsii-docgen",
+            "jsii-pacmak",
+            "jsii-rosetta",
+            "jsii",
+            "projen",
+            "semver",
+            "typescript",
+            "--config.minimum-release-age=5760"
+          ]
         },
         {
-          "exec": "npx projen"
+          "exec": "pnpm exec projen"
         },
         {
           "spawn": "post-upgrade"
@@ -403,10 +522,5 @@
       ]
     }
   },
-  "env": {
-    "PATH": "$(npx -c \"node --print process.env.PATH\")",
-    "NODE_OPTIONS": "--max-old-space-size=31744",
-    "CHECKPOINT_DISABLE": "1"
-  },
-  "//": "~~ Generated by projen. To modify, edit .projenrc.js and run \"npx projen\"."
+  "//": "~~ Generated by projen. To modify, edit .projenrc.js and run \"pnpm exec projen\"."
 }

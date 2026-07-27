@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 const semver = require("semver");
-const actions = require("@actions/core");
 
 // Code is inlined below, as this import requires us to add all dev dependencies of cdktn-cli as we're not
 // using the bundle. A better alternative would be to refactor this method to move to its own package, that
@@ -21,14 +20,20 @@ const FQ_PROVIDER_NAME = "hashicorp/aws";
     console.log(
       `Found newer Terraform provider version matching the current constraint: ${CONSTRAINT}`
     );
-    setGithubStepOutput("new_version", "available");
+    await setGithubStepOutput("new_version", "available");
   } else {
     console.log("No changes detected.");
-    setGithubStepOutput("new_version", "unavailable");
+    await setGithubStepOutput("new_version", "unavailable");
   }
 })();
 
-function setGithubStepOutput(name, value) {
+// @actions/core is ESM-only from 3.x, so it cannot be `require`d. Load it from this
+// async path instead. Keep using its setOutput rather than appending to
+// $GITHUB_OUTPUT by hand: it emits a heredoc with a random delimiter for multiline
+// values and validates the value against it, which a plain `name=value` append
+// gets wrong.
+async function setGithubStepOutput(name, value) {
+  const actions = await import("@actions/core");
   actions.setOutput(name, value);
 }
 
