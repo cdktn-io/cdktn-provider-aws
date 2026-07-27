@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 dataawsservicecatalogportfolioconstraints.NewDataAwsServicecatalogPortfolioConstraints(scope Construct, id *string, config DataAwsServicecatalogPortfolioConstraintsConfig) DataAwsServicecatalogPortfolioConstraints
 ```
@@ -346,7 +346,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraints.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 dataawsservicecatalogportfolioconstraints.DataAwsServicecatalogPortfolioConstraints_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraints.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 dataawsservicecatalogportfolioconstraints.DataAwsServicecatalogPortfolioConstraints_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataawsservicecatalogportfolioconstraints.DataAwsServicecatalogPortfolioConstrai
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraints.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 dataawsservicecatalogportfolioconstraints.DataAwsServicecatalogPortfolioConstraints_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataawsservicecatalogportfolioconstraints.DataAwsServicecatalogPortfolioConstrai
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraints.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 dataawsservicecatalogportfolioconstraints.DataAwsServicecatalogPortfolioConstraints_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +756,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 &dataawsservicecatalogportfolioconstraints.DataAwsServicecatalogPortfolioConstraintsConfig {
 	Connection: interface{},
@@ -771,7 +771,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogp
 	Id: *string,
 	ProductId: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsTimeouts,
 }
 ```
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 &dataawsservicecatalogportfolioconstraints.DataAwsServicecatalogPortfolioConstraintsDetails {
 
@@ -962,7 +962,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogp
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 &dataawsservicecatalogportfolioconstraints.DataAwsServicecatalogPortfolioConstraintsTimeouts {
 	Read: *string,
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 dataawsservicecatalogportfolioconstraints.NewDataAwsServicecatalogPortfolioConstraintsDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServicecatalogPortfolioConstraintsDetailsList
 ```
@@ -1145,7 +1145,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 dataawsservicecatalogportfolioconstraints.NewDataAwsServicecatalogPortfolioConstraintsDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference
 ```
@@ -1478,7 +1478,7 @@ func InternalValue() DataAwsServicecatalogPortfolioConstraintsDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolioconstraints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicecatalogportfolioconstraints"
 
 dataawsservicecatalogportfolioconstraints.NewDataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference
 ```

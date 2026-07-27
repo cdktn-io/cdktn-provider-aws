@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.snsTopic.SnsTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/snstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/snstopic"
 
 snstopic.NewSnsTopic(scope Construct, id *string, config SnsTopicConfig) SnsTopic
 ```
@@ -617,7 +617,7 @@ func ResetTracingConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.snsTopic.SnsTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/snstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/snstopic"
 
 snstopic.SnsTopic_IsConstruct(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.snsTopic.SnsTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/snstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/snstopic"
 
 snstopic.SnsTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -663,7 +663,7 @@ snstopic.SnsTopic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.snsTopic.SnsTopic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/snstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/snstopic"
 
 snstopic.SnsTopic_IsTerraformResource(x interface{}) *bool
 ```
@@ -677,7 +677,7 @@ snstopic.SnsTopic_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.snsTopic.SnsTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/snstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/snstopic"
 
 snstopic.SnsTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1621,7 +1621,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/snstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/snstopic"
 
 &snstopic.SnsTopicConfig {
 	Connection: interface{},

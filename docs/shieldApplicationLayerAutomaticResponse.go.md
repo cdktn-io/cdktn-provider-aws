@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.shieldApplicationLayerAutomaticResponse.ShieldApplicationLayerAutomaticResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldapplicationlayerautomaticresponse"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldapplicationlayerautomaticresponse"
 
 shieldapplicationlayerautomaticresponse.NewShieldApplicationLayerAutomaticResponse(scope Construct, id *string, config ShieldApplicationLayerAutomaticResponseConfig) ShieldApplicationLayerAutomaticResponse
 ```
@@ -420,7 +420,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.shieldApplicationLayerAutomaticResponse.ShieldApplicationLayerAutomaticResponse.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldapplicationlayerautomaticresponse"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldapplicationlayerautomaticresponse"
 
 shieldapplicationlayerautomaticresponse.ShieldApplicationLayerAutomaticResponse_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.shieldApplicationLayerAutomaticResponse.ShieldApplicationLayerAutomaticResponse.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldapplicationlayerautomaticresponse"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldapplicationlayerautomaticresponse"
 
 shieldapplicationlayerautomaticresponse.ShieldApplicationLayerAutomaticResponse_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ shieldapplicationlayerautomaticresponse.ShieldApplicationLayerAutomaticResponse_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.shieldApplicationLayerAutomaticResponse.ShieldApplicationLayerAutomaticResponse.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldapplicationlayerautomaticresponse"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldapplicationlayerautomaticresponse"
 
 shieldapplicationlayerautomaticresponse.ShieldApplicationLayerAutomaticResponse_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ shieldapplicationlayerautomaticresponse.ShieldApplicationLayerAutomaticResponse_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.shieldApplicationLayerAutomaticResponse.ShieldApplicationLayerAutomaticResponse.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldapplicationlayerautomaticresponse"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldapplicationlayerautomaticresponse"
 
 shieldapplicationlayerautomaticresponse.ShieldApplicationLayerAutomaticResponse_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.shieldApplicationLayerAutomaticResponse.ShieldApplicationLayerAutomaticResponseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldapplicationlayerautomaticresponse"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldapplicationlayerautomaticresponse"
 
 &shieldapplicationlayerautomaticresponse.ShieldApplicationLayerAutomaticResponseConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldapplicationlayer
 	Provisioners: *[]interface{},
 	Action: *string,
 	ResourceArn: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.shieldApplicationLayerAutomaticResponse.ShieldApplicationLayerAutomaticResponseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.shieldApplicationLayerAutomaticResponse.ShieldApplicationLayerAutomaticResponseTimeouts,
 }
 ```
 
@@ -932,7 +932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.shieldApplicationLayerAutomaticResponse.ShieldApplicationLayerAutomaticResponseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldapplicationlayerautomaticresponse"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldapplicationlayerautomaticresponse"
 
 &shieldapplicationlayerautomaticresponse.ShieldApplicationLayerAutomaticResponseTimeouts {
 	Create: *string,
@@ -1000,7 +1000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.shieldApplicationLayerAutomaticResponse.ShieldApplicationLayerAutomaticResponseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/shieldapplicationlayerautomaticresponse"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldapplicationlayerautomaticresponse"
 
 shieldapplicationlayerautomaticresponse.NewShieldApplicationLayerAutomaticResponseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ShieldApplicationLayerAutomaticResponseTimeoutsOutputReference
 ```

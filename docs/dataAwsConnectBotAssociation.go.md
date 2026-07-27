@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectbotassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectbotassociation"
 
 dataawsconnectbotassociation.NewDataAwsConnectBotAssociation(scope Construct, id *string, config DataAwsConnectBotAssociationConfig) DataAwsConnectBotAssociation
 ```
@@ -325,7 +325,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectbotassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectbotassociation"
 
 dataawsconnectbotassociation.DataAwsConnectBotAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectbotassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectbotassociation"
 
 dataawsconnectbotassociation.DataAwsConnectBotAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsconnectbotassociation.DataAwsConnectBotAssociation_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectbotassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectbotassociation"
 
 dataawsconnectbotassociation.DataAwsConnectBotAssociation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsconnectbotassociation.DataAwsConnectBotAssociation_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectbotassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectbotassociation"
 
 dataawsconnectbotassociation.DataAwsConnectBotAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -680,7 +680,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectbotassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectbotassociation"
 
 &dataawsconnectbotassociation.DataAwsConnectBotAssociationConfig {
 	Connection: interface{},
@@ -691,7 +691,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectbotassoc
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	InstanceId: *string,
-	LexBot: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsConnectBotAssociation.DataAwsConnectBotAssociationLexBot,
+	LexBot: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsConnectBotAssociation.DataAwsConnectBotAssociationLexBot,
 	Id: *string,
 	Region: *string,
 }
@@ -845,7 +845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociationLexBot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectbotassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectbotassociation"
 
 &dataawsconnectbotassociation.DataAwsConnectBotAssociationLexBot {
 	Name: *string,
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociationLexBotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectbotassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectbotassociation"
 
 dataawsconnectbotassociation.NewDataAwsConnectBotAssociationLexBotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsConnectBotAssociationLexBotOutputReference
 ```

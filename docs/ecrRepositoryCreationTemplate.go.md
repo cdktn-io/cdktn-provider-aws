@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.NewEcrRepositoryCreationTemplate(scope Construct, id *string, config EcrRepositoryCreationTemplateConfig) EcrRepositoryCreationTemplate
 ```
@@ -496,7 +496,7 @@ func ResetResourceTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1060,7 +1060,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 &ecrrepositorycreationtemplate.EcrRepositoryCreationTemplateConfig {
 	Connection: interface{},
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 &ecrrepositorycreationtemplate.EcrRepositoryCreationTemplateEncryptionConfiguration {
 	EncryptionType: *string,
@@ -1385,7 +1385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 &ecrrepositorycreationtemplate.EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilter {
 	Filter: *string,
@@ -1433,7 +1433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.NewEcrRepositoryCreationTemplateEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcrRepositoryCreationTemplateEncryptionConfigurationList
 ```
@@ -1593,7 +1593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.NewEcrRepositoryCreationTemplateEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference
 ```
@@ -1918,7 +1918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.NewEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList
 ```
@@ -2078,7 +2078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrrepositorycreationtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.NewEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference
 ```

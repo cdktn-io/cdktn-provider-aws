@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfile(scope Construct, id *string, config DatazoneUserProfileConfig) DatazoneUserProfile
 ```
@@ -441,7 +441,7 @@ func ResetUserType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.DatazoneUserProfile_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.DatazoneUserProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ datazoneuserprofile.DatazoneUserProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.DatazoneUserProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ datazoneuserprofile.DatazoneUserProfile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.DatazoneUserProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 &datazoneuserprofile.DatazoneUserProfileConfig {
 	Connection: interface{},
@@ -909,7 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
 	UserIdentifier: *string,
 	Region: *string,
 	Status: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.datazoneUserProfile.DatazoneUserProfileTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.datazoneUserProfile.DatazoneUserProfileTimeouts,
 	UserType: *string,
 }
 ```
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 &datazoneuserprofile.DatazoneUserProfileDetails {
 
@@ -1098,7 +1098,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsIam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 &datazoneuserprofile.DatazoneUserProfileDetailsIam {
 
@@ -1111,7 +1111,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsSso.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 &datazoneuserprofile.DatazoneUserProfileDetailsSso {
 
@@ -1124,7 +1124,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 &datazoneuserprofile.DatazoneUserProfileTimeouts {
 	Create: *string,
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsIamList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsIamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneUserProfileDetailsIamList
 ```
@@ -1325,7 +1325,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsIamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsIamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneUserProfileDetailsIamOutputReference
 ```
@@ -1603,7 +1603,7 @@ func InternalValue() DatazoneUserProfileDetailsIam
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneUserProfileDetailsList
 ```
@@ -1752,7 +1752,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneUserProfileDetailsOutputReference
 ```
@@ -2041,7 +2041,7 @@ func InternalValue() DatazoneUserProfileDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsSsoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsSsoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneUserProfileDetailsSsoList
 ```
@@ -2190,7 +2190,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsSsoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsSsoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneUserProfileDetailsSsoOutputReference
 ```
@@ -2490,7 +2490,7 @@ func InternalValue() DatazoneUserProfileDetailsSso
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneuserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatazoneUserProfileTimeoutsOutputReference
 ```

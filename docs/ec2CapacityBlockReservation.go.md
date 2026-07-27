@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2capacityblockreservation"
 
 ec2capacityblockreservation.NewEc2CapacityBlockReservation(scope Construct, id *string, config Ec2CapacityBlockReservationConfig) Ec2CapacityBlockReservation
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2capacityblockreservation"
 
 ec2capacityblockreservation.Ec2CapacityBlockReservation_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2capacityblockreservation"
 
 ec2capacityblockreservation.Ec2CapacityBlockReservation_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ ec2capacityblockreservation.Ec2CapacityBlockReservation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2capacityblockreservation"
 
 ec2capacityblockreservation.Ec2CapacityBlockReservation_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ ec2capacityblockreservation.Ec2CapacityBlockReservation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2capacityblockreservation"
 
 ec2capacityblockreservation.Ec2CapacityBlockReservation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -998,7 +998,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2capacityblockreservation"
 
 &ec2capacityblockreservation.Ec2CapacityBlockReservationConfig {
 	Connection: interface{},
@@ -1012,7 +1012,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2capacityblockreserv
 	InstancePlatform: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ec2CapacityBlockReservation.Ec2CapacityBlockReservationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ec2CapacityBlockReservation.Ec2CapacityBlockReservationTimeouts,
 }
 ```
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2capacityblockreservation"
 
 &ec2capacityblockreservation.Ec2CapacityBlockReservationTimeouts {
 	Create: *string,
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2capacityblockreservation"
 
 ec2capacityblockreservation.NewEc2CapacityBlockReservationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2CapacityBlockReservationTimeoutsOutputReference
 ```

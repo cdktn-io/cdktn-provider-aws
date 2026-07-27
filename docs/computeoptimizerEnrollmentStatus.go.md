@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.computeoptimizerEnrollmentStatus.ComputeoptimizerEnrollmentStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/computeoptimizerenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/computeoptimizerenrollmentstatus"
 
 computeoptimizerenrollmentstatus.NewComputeoptimizerEnrollmentStatus(scope Construct, id *string, config ComputeoptimizerEnrollmentStatusConfig) ComputeoptimizerEnrollmentStatus
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.computeoptimizerEnrollmentStatus.ComputeoptimizerEnrollmentStatus.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/computeoptimizerenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/computeoptimizerenrollmentstatus"
 
 computeoptimizerenrollmentstatus.ComputeoptimizerEnrollmentStatus_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.computeoptimizerEnrollmentStatus.ComputeoptimizerEnrollmentStatus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/computeoptimizerenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/computeoptimizerenrollmentstatus"
 
 computeoptimizerenrollmentstatus.ComputeoptimizerEnrollmentStatus_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ computeoptimizerenrollmentstatus.ComputeoptimizerEnrollmentStatus_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.computeoptimizerEnrollmentStatus.ComputeoptimizerEnrollmentStatus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/computeoptimizerenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/computeoptimizerenrollmentstatus"
 
 computeoptimizerenrollmentstatus.ComputeoptimizerEnrollmentStatus_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeoptimizerenrollmentstatus.ComputeoptimizerEnrollmentStatus_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.computeoptimizerEnrollmentStatus.ComputeoptimizerEnrollmentStatus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/computeoptimizerenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/computeoptimizerenrollmentstatus"
 
 computeoptimizerenrollmentstatus.ComputeoptimizerEnrollmentStatus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.computeoptimizerEnrollmentStatus.ComputeoptimizerEnrollmentStatusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/computeoptimizerenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/computeoptimizerenrollmentstatus"
 
 &computeoptimizerenrollmentstatus.ComputeoptimizerEnrollmentStatusConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/computeoptimizerenroll
 	Status: *string,
 	IncludeMemberAccounts: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.computeoptimizerEnrollmentStatus.ComputeoptimizerEnrollmentStatusTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.computeoptimizerEnrollmentStatus.ComputeoptimizerEnrollmentStatusTimeouts,
 }
 ```
 
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.computeoptimizerEnrollmentStatus.ComputeoptimizerEnrollmentStatusTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/computeoptimizerenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/computeoptimizerenrollmentstatus"
 
 &computeoptimizerenrollmentstatus.ComputeoptimizerEnrollmentStatusTimeouts {
 	Create: *string,
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.computeoptimizerEnrollmentStatus.ComputeoptimizerEnrollmentStatusTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/computeoptimizerenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/computeoptimizerenrollmentstatus"
 
 computeoptimizerenrollmentstatus.NewComputeoptimizerEnrollmentStatusTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeoptimizerEnrollmentStatusTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferCertificate.TransferCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transfercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transfercertificate"
 
 transfercertificate.NewTransferCertificate(scope Construct, id *string, config TransferCertificateConfig) TransferCertificate
 ```
@@ -449,7 +449,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.transferCertificate.TransferCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transfercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transfercertificate"
 
 transfercertificate.TransferCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.transferCertificate.TransferCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transfercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transfercertificate"
 
 transfercertificate.TransferCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ transfercertificate.TransferCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.transferCertificate.TransferCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transfercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transfercertificate"
 
 transfercertificate.TransferCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ transfercertificate.TransferCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.transferCertificate.TransferCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transfercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transfercertificate"
 
 transfercertificate.TransferCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -980,7 +980,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/transfercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transfercertificate"
 
 &transfercertificate.TransferCertificateConfig {
 	Connection: interface{},

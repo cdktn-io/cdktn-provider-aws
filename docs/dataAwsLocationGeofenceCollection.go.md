@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationgeofencecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationgeofencecollection"
 
 dataawslocationgeofencecollection.NewDataAwsLocationGeofenceCollection(scope Construct, id *string, config DataAwsLocationGeofenceCollectionConfig) DataAwsLocationGeofenceCollection
 ```
@@ -326,7 +326,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationgeofencecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationgeofencecollection"
 
 dataawslocationgeofencecollection.DataAwsLocationGeofenceCollection_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationgeofencecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationgeofencecollection"
 
 dataawslocationgeofencecollection.DataAwsLocationGeofenceCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawslocationgeofencecollection.DataAwsLocationGeofenceCollection_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationgeofencecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationgeofencecollection"
 
 dataawslocationgeofencecollection.DataAwsLocationGeofenceCollection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawslocationgeofencecollection.DataAwsLocationGeofenceCollection_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationgeofencecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationgeofencecollection"
 
 dataawslocationgeofencecollection.DataAwsLocationGeofenceCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslocationgeofencecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslocationgeofencecollection"
 
 &dataawslocationgeofencecollection.DataAwsLocationGeofenceCollectionConfig {
 	Connection: interface{},

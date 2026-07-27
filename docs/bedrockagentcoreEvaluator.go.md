@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluator(scope Construct, id *string, config BedrockagentcoreEvaluatorConfig) BedrockagentcoreEvaluator
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.BedrockagentcoreEvaluator_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.BedrockagentcoreEvaluator_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ bedrockagentcoreevaluator.BedrockagentcoreEvaluator_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.BedrockagentcoreEvaluator_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ bedrockagentcoreevaluator.BedrockagentcoreEvaluator_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.BedrockagentcoreEvaluator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -999,7 +999,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorConfig {
 	Connection: interface{},
@@ -1016,7 +1016,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevalua
 	KmsKeyArn: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorTimeouts,
 }
 ```
 
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorEvaluatorConfig {
 	CodeBased: interface{},
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigCodeBased.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorEvaluatorConfigCodeBased {
 	LambdaConfig: interface{},
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigCodeBasedLambdaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorEvaluatorConfigCodeBasedLambdaConfig {
 	LambdaArn: *string,
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudge {
 	Instructions: *string,
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfig {
 	BedrockEvaluatorModelConfig: interface{},
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfig {
 	ModelId: *string,
@@ -1509,7 +1509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigInferenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigInferenceConfig {
 	MaxTokens: *f64,
@@ -1583,7 +1583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScale {
 	Categorical: interface{},
@@ -1633,7 +1633,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleCategorical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleCategorical {
 	Definition: *string,
@@ -1679,7 +1679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleNumerical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleNumerical {
 	Definition: *string,
@@ -1739,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 &bedrockagentcoreevaluator.BedrockagentcoreEvaluatorTimeouts {
 	Create: *string,
@@ -1807,7 +1807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigCodeBasedLambdaConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigCodeBasedLambdaConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigCodeBasedLambdaConfigList
 ```
@@ -1967,7 +1967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigCodeBasedLambdaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigCodeBasedLambdaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigCodeBasedLambdaConfigOutputReference
 ```
@@ -2285,7 +2285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigCodeBasedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigCodeBasedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigCodeBasedList
 ```
@@ -2445,7 +2445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigCodeBasedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigCodeBasedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigCodeBasedOutputReference
 ```
@@ -2754,7 +2754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigList
 ```
@@ -2914,7 +2914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeList
 ```
@@ -3074,7 +3074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigInferenceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigInferenceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigInferenceConfigList
 ```
@@ -3234,7 +3234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigInferenceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigInferenceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigInferenceConfigOutputReference
 ```
@@ -3617,7 +3617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigList
 ```
@@ -3777,7 +3777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigBedrockEvaluatorModelConfigOutputReference
 ```
@@ -4137,7 +4137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigList
 ```
@@ -4297,7 +4297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeModelConfigOutputReference
 ```
@@ -4606,7 +4606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeOutputReference
 ```
@@ -4979,7 +4979,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleCategoricalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleCategoricalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleCategoricalList
 ```
@@ -5139,7 +5139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleCategoricalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleCategoricalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleCategoricalOutputReference
 ```
@@ -5450,7 +5450,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleList
 ```
@@ -5610,7 +5610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleNumericalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleNumericalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleNumericalList
 ```
@@ -5770,7 +5770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleNumericalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleNumericalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleNumericalOutputReference
 ```
@@ -6103,7 +6103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigLlmAsAJudgeRatingScaleOutputReference
 ```
@@ -6454,7 +6454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorEvaluatorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorEvaluatorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreEvaluatorEvaluatorConfigOutputReference
 ```
@@ -6805,7 +6805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreEvaluator.BedrockagentcoreEvaluatorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreevaluator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreevaluator"
 
 bedrockagentcoreevaluator.NewBedrockagentcoreEvaluatorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreEvaluatorTimeoutsOutputReference
 ```

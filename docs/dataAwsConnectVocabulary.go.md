@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectvocabulary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectvocabulary"
 
 dataawsconnectvocabulary.NewDataAwsConnectVocabulary(scope Construct, id *string, config DataAwsConnectVocabularyConfig) DataAwsConnectVocabulary
 ```
@@ -333,7 +333,7 @@ func ResetVocabularyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectvocabulary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectvocabulary"
 
 dataawsconnectvocabulary.DataAwsConnectVocabulary_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectvocabulary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectvocabulary"
 
 dataawsconnectvocabulary.DataAwsConnectVocabulary_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsconnectvocabulary.DataAwsConnectVocabulary_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectvocabulary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectvocabulary"
 
 dataawsconnectvocabulary.DataAwsConnectVocabulary_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawsconnectvocabulary.DataAwsConnectVocabulary_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectvocabulary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectvocabulary"
 
 dataawsconnectvocabulary.DataAwsConnectVocabulary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectvocabulary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectvocabulary"
 
 &dataawsconnectvocabulary.DataAwsConnectVocabularyConfig {
 	Connection: interface{},

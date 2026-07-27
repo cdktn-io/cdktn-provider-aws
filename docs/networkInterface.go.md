@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 networkinterface.NewNetworkInterface(scope Construct, id *string, config NetworkInterfaceConfig) NetworkInterface
 ```
@@ -594,7 +594,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkInterface.NetworkInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 networkinterface.NetworkInterface_IsConstruct(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkInterface.NetworkInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 networkinterface.NetworkInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -640,7 +640,7 @@ networkinterface.NetworkInterface_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkInterface.NetworkInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 networkinterface.NetworkInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -654,7 +654,7 @@ networkinterface.NetworkInterface_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkInterface.NetworkInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 networkinterface.NetworkInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1488,7 +1488,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 &networkinterface.NetworkInterfaceAttachment {
 	DeviceIndex: *f64,
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 &networkinterface.NetworkInterfaceConfig {
 	Connection: interface{},
@@ -1562,7 +1562,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
 	Attachment: interface{},
 	Description: *string,
 	EnablePrimaryIpv6: interface{},
-	EnaSrdSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkInterface.NetworkInterfaceEnaSrdSpecification,
+	EnaSrdSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkInterface.NetworkInterfaceEnaSrdSpecification,
 	Id: *string,
 	InterfaceType: *string,
 	Ipv4PrefixCount: *f64,
@@ -2009,11 +2009,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 &networkinterface.NetworkInterfaceEnaSrdSpecification {
 	EnaSrdEnabled: interface{},
-	EnaSrdUdpSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification,
+	EnaSrdUdpSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification,
 }
 ```
 
@@ -2057,7 +2057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 &networkinterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification {
 	EnaSrdUdpEnabled: interface{},
@@ -2091,7 +2091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 networkinterface.NewNetworkInterfaceAttachmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkInterfaceAttachmentList
 ```
@@ -2251,7 +2251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 networkinterface.NewNetworkInterfaceAttachmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkInterfaceAttachmentOutputReference
 ```
@@ -2602,7 +2602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 networkinterface.NewNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference
 ```
@@ -2880,7 +2880,7 @@ func InternalValue() NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkinterface"
 
 networkinterface.NewNetworkInterfaceEnaSrdSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkInterfaceEnaSrdSpecificationOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraytracesegmentdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraytracesegmentdestination"
 
 xraytracesegmentdestination.NewXrayTraceSegmentDestination(scope Construct, id *string, config XrayTraceSegmentDestinationConfig) XrayTraceSegmentDestination
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraytracesegmentdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraytracesegmentdestination"
 
 xraytracesegmentdestination.XrayTraceSegmentDestination_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraytracesegmentdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraytracesegmentdestination"
 
 xraytracesegmentdestination.XrayTraceSegmentDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ xraytracesegmentdestination.XrayTraceSegmentDestination_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraytracesegmentdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraytracesegmentdestination"
 
 xraytracesegmentdestination.XrayTraceSegmentDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ xraytracesegmentdestination.XrayTraceSegmentDestination_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraytracesegmentdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraytracesegmentdestination"
 
 xraytracesegmentdestination.XrayTraceSegmentDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraytracesegmentdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraytracesegmentdestination"
 
 &xraytracesegmentdestination.XrayTraceSegmentDestinationConfig {
 	Connection: interface{},
@@ -805,7 +805,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraytracesegmentdestin
 	Provisioners: *[]interface{},
 	Destination: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.xrayTraceSegmentDestination.XrayTraceSegmentDestinationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.xrayTraceSegmentDestination.XrayTraceSegmentDestinationTimeouts,
 }
 ```
 
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraytracesegmentdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraytracesegmentdestination"
 
 &xraytracesegmentdestination.XrayTraceSegmentDestinationTimeouts {
 	Create: *string,
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xraytracesegmentdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/xraytracesegmentdestination"
 
 xraytracesegmentdestination.NewXrayTraceSegmentDestinationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) XrayTraceSegmentDestinationTimeoutsOutputReference
 ```

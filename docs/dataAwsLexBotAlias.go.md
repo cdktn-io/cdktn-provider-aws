@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslexbotalias"
 
 dataawslexbotalias.NewDataAwsLexBotAlias(scope Construct, id *string, config DataAwsLexBotAliasConfig) DataAwsLexBotAlias
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslexbotalias"
 
 dataawslexbotalias.DataAwsLexBotAlias_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslexbotalias"
 
 dataawslexbotalias.DataAwsLexBotAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawslexbotalias.DataAwsLexBotAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslexbotalias"
 
 dataawslexbotalias.DataAwsLexBotAlias_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawslexbotalias.DataAwsLexBotAlias_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslexbotalias"
 
 dataawslexbotalias.DataAwsLexBotAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslexbotalias"
 
 &dataawslexbotalias.DataAwsLexBotAliasConfig {
 	Connection: interface{},

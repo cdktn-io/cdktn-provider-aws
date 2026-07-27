@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogresourcepolicy"
 
 cloudwatchlogresourcepolicy.NewCloudwatchLogResourcePolicy(scope Construct, id *string, config CloudwatchLogResourcePolicyConfig) CloudwatchLogResourcePolicy
 ```
@@ -428,7 +428,7 @@ func ResetResourceArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogresourcepolicy"
 
 cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogresourcepolicy"
 
 cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogresourcepolicy"
 
 cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogresourcepolicy"
 
 cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogresourcepolicy"
 
 &cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicyConfig {
 	Connection: interface{},

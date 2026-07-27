@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecommitTrigger.CodecommitTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommittrigger"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommittrigger"
 
 codecommittrigger.NewCodecommitTrigger(scope Construct, id *string, config CodecommitTriggerConfig) CodecommitTrigger
 ```
@@ -427,7 +427,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codecommitTrigger.CodecommitTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommittrigger"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommittrigger"
 
 codecommittrigger.CodecommitTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codecommitTrigger.CodecommitTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommittrigger"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommittrigger"
 
 codecommittrigger.CodecommitTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ codecommittrigger.CodecommitTrigger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codecommitTrigger.CodecommitTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommittrigger"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommittrigger"
 
 codecommittrigger.CodecommitTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ codecommittrigger.CodecommitTrigger_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codecommitTrigger.CodecommitTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommittrigger"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommittrigger"
 
 codecommittrigger.CodecommitTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecommitTrigger.CodecommitTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommittrigger"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommittrigger"
 
 &codecommittrigger.CodecommitTriggerConfig {
 	Connection: interface{},
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecommitTrigger.CodecommitTriggerTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommittrigger"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommittrigger"
 
 &codecommittrigger.CodecommitTriggerTrigger {
 	DestinationArn: *string,
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecommitTrigger.CodecommitTriggerTriggerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommittrigger"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommittrigger"
 
 codecommittrigger.NewCodecommitTriggerTriggerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodecommitTriggerTriggerList
 ```
@@ -1230,7 +1230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommittrigger"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommittrigger"
 
 codecommittrigger.NewCodecommitTriggerTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodecommitTriggerTriggerOutputReference
 ```

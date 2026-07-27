@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockusecaseformodelaccess"
 
 dataawsbedrockusecaseformodelaccess.NewDataAwsBedrockUseCaseForModelAccess(scope Construct, id *string, config DataAwsBedrockUseCaseForModelAccessConfig) DataAwsBedrockUseCaseForModelAccess
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockusecaseformodelaccess"
 
 dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockusecaseformodelaccess"
 
 dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockusecaseformodelaccess"
 
 dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockusecaseformodelaccess"
 
 dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockusecaseformodelaccess"
 
 &dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccessConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationstag"
 
 organizationstag.NewOrganizationsTag(scope Construct, id *string, config OrganizationsTagConfig) OrganizationsTag
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationstag"
 
 organizationstag.OrganizationsTag_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationstag"
 
 organizationstag.OrganizationsTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ organizationstag.OrganizationsTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationstag"
 
 organizationstag.OrganizationsTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ organizationstag.OrganizationsTag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationstag"
 
 organizationstag.OrganizationsTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationstag"
 
 &organizationstag.OrganizationsTagConfig {
 	Connection: interface{},

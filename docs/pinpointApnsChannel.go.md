@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointApnsChannel.PinpointApnsChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointapnschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnschannel"
 
 pinpointapnschannel.NewPinpointApnsChannel(scope Construct, id *string, config PinpointApnsChannelConfig) PinpointApnsChannel
 ```
@@ -470,7 +470,7 @@ func ResetTokenKeyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointApnsChannel.PinpointApnsChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointapnschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnschannel"
 
 pinpointapnschannel.PinpointApnsChannel_IsConstruct(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointApnsChannel.PinpointApnsChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointapnschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnschannel"
 
 pinpointapnschannel.PinpointApnsChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ pinpointapnschannel.PinpointApnsChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointApnsChannel.PinpointApnsChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointapnschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnschannel"
 
 pinpointapnschannel.PinpointApnsChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -530,7 +530,7 @@ pinpointapnschannel.PinpointApnsChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointApnsChannel.PinpointApnsChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointapnschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnschannel"
 
 pinpointapnschannel.PinpointApnsChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1001,7 +1001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointApnsChannel.PinpointApnsChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointapnschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnschannel"
 
 &pinpointapnschannel.PinpointApnsChannelConfig {
 	Connection: interface{},

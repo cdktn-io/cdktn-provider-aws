@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpoint(scope Construct, id *string, config DataAwsEc2ClientVpnEndpointConfig) DataAwsEc2ClientVpnEndpoint
 ```
@@ -366,7 +366,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpoint_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpoint_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1007,7 +1007,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointAuthenticationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 &dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpointAuthenticationOptions {
 
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnend
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointClientConnectOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 &dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpointClientConnectOptions {
 
@@ -1033,7 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnend
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointClientLoginBannerOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 &dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpointClientLoginBannerOptions {
 
@@ -1046,7 +1046,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnend
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointClientRouteEnforcementOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 &dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpointClientRouteEnforcementOptions {
 
@@ -1059,7 +1059,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnend
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 &dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpointConfig {
 	Connection: interface{},
@@ -1074,7 +1074,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnend
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointTimeouts,
 }
 ```
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 &dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptions {
 
@@ -1267,7 +1267,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnend
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 &dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpointFilter {
 	Name: *string,
@@ -1313,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 &dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpointTimeouts {
 	Read: *string,
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointTransitGatewayConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 &dataawsec2clientvpnendpoint.DataAwsEc2ClientVpnEndpointTransitGatewayConfiguration {
 
@@ -1360,7 +1360,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnend
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointAuthenticationOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointAuthenticationOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ClientVpnEndpointAuthenticationOptionsList
 ```
@@ -1509,7 +1509,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointAuthenticationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointAuthenticationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ClientVpnEndpointAuthenticationOptionsOutputReference
 ```
@@ -1831,7 +1831,7 @@ func InternalValue() DataAwsEc2ClientVpnEndpointAuthenticationOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointClientConnectOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointClientConnectOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ClientVpnEndpointClientConnectOptionsList
 ```
@@ -1980,7 +1980,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointClientConnectOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointClientConnectOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ClientVpnEndpointClientConnectOptionsOutputReference
 ```
@@ -2269,7 +2269,7 @@ func InternalValue() DataAwsEc2ClientVpnEndpointClientConnectOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList
 ```
@@ -2418,7 +2418,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointClientLoginBannerOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsOutputReference
 ```
@@ -2707,7 +2707,7 @@ func InternalValue() DataAwsEc2ClientVpnEndpointClientLoginBannerOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointClientRouteEnforcementOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointClientRouteEnforcementOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ClientVpnEndpointClientRouteEnforcementOptionsList
 ```
@@ -2856,7 +2856,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference
 ```
@@ -3134,7 +3134,7 @@ func InternalValue() DataAwsEc2ClientVpnEndpointClientRouteEnforcementOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointConnectionLogOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ClientVpnEndpointConnectionLogOptionsList
 ```
@@ -3283,7 +3283,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference
 ```
@@ -3583,7 +3583,7 @@ func InternalValue() DataAwsEc2ClientVpnEndpointConnectionLogOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ClientVpnEndpointFilterList
 ```
@@ -3743,7 +3743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ClientVpnEndpointFilterOutputReference
 ```
@@ -4054,7 +4054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2ClientVpnEndpointTimeoutsOutputReference
 ```
@@ -4332,7 +4332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointTransitGatewayConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointTransitGatewayConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ClientVpnEndpointTransitGatewayConfigurationList
 ```
@@ -4481,7 +4481,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointTransitGatewayConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2clientvpnendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2clientvpnendpoint"
 
 dataawsec2clientvpnendpoint.NewDataAwsEc2ClientVpnEndpointTransitGatewayConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ClientVpnEndpointTransitGatewayConfigurationOutputReference
 ```

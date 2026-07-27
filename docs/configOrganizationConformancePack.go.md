@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 configorganizationconformancepack.NewConfigOrganizationConformancePack(scope Construct, id *string, config ConfigOrganizationConformancePackConfig) ConfigOrganizationConformancePack
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 configorganizationconformancepack.ConfigOrganizationConformancePack_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 configorganizationconformancepack.ConfigOrganizationConformancePack_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ configorganizationconformancepack.ConfigOrganizationConformancePack_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 configorganizationconformancepack.ConfigOrganizationConformancePack_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ configorganizationconformancepack.ConfigOrganizationConformancePack_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 configorganizationconformancepack.ConfigOrganizationConformancePack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1009,7 +1009,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 &configorganizationconformancepack.ConfigOrganizationConformancePackConfig {
 	Connection: interface{},
@@ -1028,7 +1028,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconf
 	Region: *string,
 	TemplateBody: *string,
 	TemplateS3Uri: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeouts,
 }
 ```
 
@@ -1260,7 +1260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 &configorganizationconformancepack.ConfigOrganizationConformancePackInputParameter {
 	ParameterName: *string,
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 &configorganizationconformancepack.ConfigOrganizationConformancePackTimeouts {
 	Create: *string,
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 configorganizationconformancepack.NewConfigOrganizationConformancePackInputParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigOrganizationConformancePackInputParameterList
 ```
@@ -1528,7 +1528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 configorganizationconformancepack.NewConfigOrganizationConformancePackInputParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigOrganizationConformancePackInputParameterOutputReference
 ```
@@ -1839,7 +1839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configorganizationconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configorganizationconformancepack"
 
 configorganizationconformancepack.NewConfigOrganizationConformancePackTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigOrganizationConformancePackTimeoutsOutputReference
 ```

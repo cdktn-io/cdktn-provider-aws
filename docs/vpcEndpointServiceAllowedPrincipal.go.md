@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointserviceallowedprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointserviceallowedprincipal"
 
 vpcendpointserviceallowedprincipal.NewVpcEndpointServiceAllowedPrincipal(scope Construct, id *string, config VpcEndpointServiceAllowedPrincipalConfig) VpcEndpointServiceAllowedPrincipal
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointserviceallowedprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointserviceallowedprincipal"
 
 vpcendpointserviceallowedprincipal.VpcEndpointServiceAllowedPrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointserviceallowedprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointserviceallowedprincipal"
 
 vpcendpointserviceallowedprincipal.VpcEndpointServiceAllowedPrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ vpcendpointserviceallowedprincipal.VpcEndpointServiceAllowedPrincipal_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointserviceallowedprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointserviceallowedprincipal"
 
 vpcendpointserviceallowedprincipal.VpcEndpointServiceAllowedPrincipal_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ vpcendpointserviceallowedprincipal.VpcEndpointServiceAllowedPrincipal_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointserviceallowedprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointserviceallowedprincipal"
 
 vpcendpointserviceallowedprincipal.VpcEndpointServiceAllowedPrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointserviceallowedprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointserviceallowedprincipal"
 
 &vpcendpointserviceallowedprincipal.VpcEndpointServiceAllowedPrincipalConfig {
 	Connection: interface{},

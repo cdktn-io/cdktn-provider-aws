@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbs.DataAwsLbs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslbs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslbs"
 
 dataawslbs.NewDataAwsLbs(scope Construct, id *string, config DataAwsLbsConfig) DataAwsLbs
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLbs.DataAwsLbs.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslbs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslbs"
 
 dataawslbs.DataAwsLbs_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLbs.DataAwsLbs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslbs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslbs"
 
 dataawslbs.DataAwsLbs_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawslbs.DataAwsLbs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLbs.DataAwsLbs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslbs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslbs"
 
 dataawslbs.DataAwsLbs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawslbs.DataAwsLbs_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLbs.DataAwsLbs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslbs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslbs"
 
 dataawslbs.DataAwsLbs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbs.DataAwsLbsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslbs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslbs"
 
 &dataawslbs.DataAwsLbsConfig {
 	Connection: interface{},

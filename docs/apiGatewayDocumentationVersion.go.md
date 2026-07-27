@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaydocumentationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydocumentationversion"
 
 apigatewaydocumentationversion.NewApiGatewayDocumentationVersion(scope Construct, id *string, config ApiGatewayDocumentationVersionConfig) ApiGatewayDocumentationVersion
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaydocumentationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydocumentationversion"
 
 apigatewaydocumentationversion.ApiGatewayDocumentationVersion_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaydocumentationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydocumentationversion"
 
 apigatewaydocumentationversion.ApiGatewayDocumentationVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ apigatewaydocumentationversion.ApiGatewayDocumentationVersion_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaydocumentationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydocumentationversion"
 
 apigatewaydocumentationversion.ApiGatewayDocumentationVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ apigatewaydocumentationversion.ApiGatewayDocumentationVersion_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaydocumentationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydocumentationversion"
 
 apigatewaydocumentationversion.ApiGatewayDocumentationVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaydocumentationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydocumentationversion"
 
 &apigatewaydocumentationversion.ApiGatewayDocumentationVersionConfig {
 	Connection: interface{},

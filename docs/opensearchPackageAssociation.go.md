@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchpackageassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchpackageassociation"
 
 opensearchpackageassociation.NewOpensearchPackageAssociation(scope Construct, id *string, config OpensearchPackageAssociationConfig) OpensearchPackageAssociation
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchpackageassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchpackageassociation"
 
 opensearchpackageassociation.OpensearchPackageAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchpackageassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchpackageassociation"
 
 opensearchpackageassociation.OpensearchPackageAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ opensearchpackageassociation.OpensearchPackageAssociation_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchpackageassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchpackageassociation"
 
 opensearchpackageassociation.OpensearchPackageAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ opensearchpackageassociation.OpensearchPackageAssociation_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchpackageassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchpackageassociation"
 
 opensearchpackageassociation.OpensearchPackageAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchpackageassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchpackageassociation"
 
 &opensearchpackageassociation.OpensearchPackageAssociationConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchpackageassoc
 	PackageId: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts,
 }
 ```
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchpackageassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchpackageassociation"
 
 &opensearchpackageassociation.OpensearchPackageAssociationTimeouts {
 	Create: *string,
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchpackageassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchpackageassociation"
 
 opensearchpackageassociation.NewOpensearchPackageAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchPackageAssociationTimeoutsOutputReference
 ```

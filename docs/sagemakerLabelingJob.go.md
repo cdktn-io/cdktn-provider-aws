@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJob(scope Construct, id *string, config SagemakerLabelingJobConfig) SagemakerLabelingJob
 ```
@@ -521,7 +521,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.SagemakerLabelingJob_IsConstruct(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.SagemakerLabelingJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ sagemakerlabelingjob.SagemakerLabelingJob_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.SagemakerLabelingJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ sagemakerlabelingjob.SagemakerLabelingJob_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.SagemakerLabelingJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1118,7 +1118,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobConfig {
 	Connection: interface{},
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobHumanTaskConfig {
 	NumberOfHumanWorkersPerDataObject: *f64,
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfig {
 	AnnotationConsolidationLambdaArn: *string,
@@ -1608,7 +1608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPrice {
 	AmountInUsd: interface{},
@@ -1642,7 +1642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd {
 	Cents: *f64,
@@ -1702,7 +1702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigUiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobHumanTaskConfigUiConfig {
 	HumanTaskUiArn: *string,
@@ -1748,7 +1748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobInputConfig {
 	DataAttributes: interface{},
@@ -1798,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobInputConfigDataAttributes {
 	ContentClassifiers: *[]*string,
@@ -1830,7 +1830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobInputConfigDataSource {
 	S3DataSource: interface{},
@@ -1880,7 +1880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataSourceS3DataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobInputConfigDataSourceS3DataSource {
 	ManifestS3Uri: *string,
@@ -1912,7 +1912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataSourceSnsDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobInputConfigDataSourceSnsDataSource {
 	SnsTopicArn: *string,
@@ -1944,7 +1944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelCounters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobLabelCounters {
 
@@ -1957,7 +1957,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelingJobAlgorithmsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobLabelingJobAlgorithmsConfig {
 	LabelingJobAlgorithmSpecificationArn: *string,
@@ -2019,7 +2019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfig {
 	VolumeKmsKeyId: *string,
@@ -2067,7 +2067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -2113,7 +2113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobOutputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobOutputConfig {
 	S3OutputPath: *string,
@@ -2173,7 +2173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobStoppingConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 &sagemakerlabelingjob.SagemakerLabelingJobStoppingConditions {
 	MaxHumanLabeledObjectCount: *f64,
@@ -2221,7 +2221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigList
 ```
@@ -2381,7 +2381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobHumanTaskConfigAnnotationConsolidationConfigOutputReference
 ```
@@ -2670,7 +2670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobHumanTaskConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobHumanTaskConfigList
 ```
@@ -2830,7 +2830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobHumanTaskConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobHumanTaskConfigOutputReference
 ```
@@ -3449,7 +3449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdList
 ```
@@ -3609,7 +3609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdOutputReference
 ```
@@ -3963,7 +3963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceList
 ```
@@ -4123,7 +4123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobHumanTaskConfigPublicWorkforceTaskPriceOutputReference
 ```
@@ -4432,7 +4432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigUiConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobHumanTaskConfigUiConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobHumanTaskConfigUiConfigList
 ```
@@ -4592,7 +4592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobHumanTaskConfigUiConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobHumanTaskConfigUiConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobHumanTaskConfigUiConfigOutputReference
 ```
@@ -4917,7 +4917,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobInputConfigDataAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobInputConfigDataAttributesList
 ```
@@ -5077,7 +5077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobInputConfigDataAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobInputConfigDataAttributesOutputReference
 ```
@@ -5373,7 +5373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobInputConfigDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobInputConfigDataSourceList
 ```
@@ -5533,7 +5533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobInputConfigDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobInputConfigDataSourceOutputReference
 ```
@@ -5884,7 +5884,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataSourceS3DataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobInputConfigDataSourceS3DataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobInputConfigDataSourceS3DataSourceList
 ```
@@ -6044,7 +6044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataSourceS3DataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobInputConfigDataSourceS3DataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobInputConfigDataSourceS3DataSourceOutputReference
 ```
@@ -6333,7 +6333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataSourceSnsDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobInputConfigDataSourceSnsDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobInputConfigDataSourceSnsDataSourceList
 ```
@@ -6493,7 +6493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigDataSourceSnsDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobInputConfigDataSourceSnsDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobInputConfigDataSourceSnsDataSourceOutputReference
 ```
@@ -6782,7 +6782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobInputConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobInputConfigList
 ```
@@ -6942,7 +6942,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobInputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobInputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobInputConfigOutputReference
 ```
@@ -7293,7 +7293,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelCountersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobLabelCountersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobLabelCountersList
 ```
@@ -7442,7 +7442,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelCountersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobLabelCountersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobLabelCountersOutputReference
 ```
@@ -7764,7 +7764,7 @@ func InternalValue() SagemakerLabelingJobLabelCounters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigList
 ```
@@ -7924,7 +7924,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigOutputReference
 ```
@@ -8262,7 +8262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigList
 ```
@@ -8422,7 +8422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigOutputReference
 ```
@@ -8733,7 +8733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelingJobAlgorithmsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobLabelingJobAlgorithmsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobLabelingJobAlgorithmsConfigList
 ```
@@ -8893,7 +8893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobLabelingJobAlgorithmsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobLabelingJobAlgorithmsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobLabelingJobAlgorithmsConfigOutputReference
 ```
@@ -9253,7 +9253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobOutputConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobOutputConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobOutputConfigList
 ```
@@ -9413,7 +9413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobOutputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobOutputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobOutputConfigOutputReference
 ```
@@ -9760,7 +9760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobStoppingConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobStoppingConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerLabelingJobStoppingConditionsList
 ```
@@ -9920,7 +9920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerLabelingJob.SagemakerLabelingJobStoppingConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerlabelingjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerlabelingjob"
 
 sagemakerlabelingjob.NewSagemakerLabelingJobStoppingConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerLabelingJobStoppingConditionsOutputReference
 ```

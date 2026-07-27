@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemon.EcsDaemon.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 ecsdaemon.NewEcsDaemon(scope Construct, id *string, config EcsDaemonConfig) EcsDaemon
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecsDaemon.EcsDaemon.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 ecsdaemon.EcsDaemon_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecsDaemon.EcsDaemon.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 ecsdaemon.EcsDaemon_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ ecsdaemon.EcsDaemon_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecsDaemon.EcsDaemon.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 ecsdaemon.EcsDaemon_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ ecsdaemon.EcsDaemon_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecsDaemon.EcsDaemon.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 ecsdaemon.EcsDaemon_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1057,7 +1057,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemon.EcsDaemonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 &ecsdaemon.EcsDaemonConfig {
 	Connection: interface{},
@@ -1077,7 +1077,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
 	PropagateTags: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsDaemon.EcsDaemonTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsDaemon.EcsDaemonTimeouts,
 }
 ```
 
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemon.EcsDaemonDeploymentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 &ecsdaemon.EcsDaemonDeploymentConfiguration {
 	Alarms: interface{},
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemon.EcsDaemonDeploymentConfigurationAlarms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 &ecsdaemon.EcsDaemonDeploymentConfigurationAlarms {
 	AlarmNames: *[]*string,
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemon.EcsDaemonTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 &ecsdaemon.EcsDaemonTimeouts {
 	Create: *string,
@@ -1495,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemon.EcsDaemonDeploymentConfigurationAlarmsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 ecsdaemon.NewEcsDaemonDeploymentConfigurationAlarmsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonDeploymentConfigurationAlarmsList
 ```
@@ -1655,7 +1655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemon.EcsDaemonDeploymentConfigurationAlarmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 ecsdaemon.NewEcsDaemonDeploymentConfigurationAlarmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonDeploymentConfigurationAlarmsOutputReference
 ```
@@ -1980,7 +1980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemon.EcsDaemonDeploymentConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 ecsdaemon.NewEcsDaemonDeploymentConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonDeploymentConfigurationList
 ```
@@ -2140,7 +2140,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemon.EcsDaemonDeploymentConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 ecsdaemon.NewEcsDaemonDeploymentConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonDeploymentConfigurationOutputReference
 ```
@@ -2507,7 +2507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemon.EcsDaemonTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemon"
 
 ecsdaemon.NewEcsDaemonTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsDaemonTimeoutsOutputReference
 ```

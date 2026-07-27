@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncLocationAzureBlob.DatasyncLocationAzureBlob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datasynclocationazureblob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datasynclocationazureblob"
 
 datasynclocationazureblob.NewDatasyncLocationAzureBlob(scope Construct, id *string, config DatasyncLocationAzureBlobConfig) DatasyncLocationAzureBlob
 ```
@@ -469,7 +469,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datasyncLocationAzureBlob.DatasyncLocationAzureBlob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datasynclocationazureblob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datasynclocationazureblob"
 
 datasynclocationazureblob.DatasyncLocationAzureBlob_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datasyncLocationAzureBlob.DatasyncLocationAzureBlob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datasynclocationazureblob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datasynclocationazureblob"
 
 datasynclocationazureblob.DatasyncLocationAzureBlob_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ datasynclocationazureblob.DatasyncLocationAzureBlob_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datasyncLocationAzureBlob.DatasyncLocationAzureBlob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datasynclocationazureblob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datasynclocationazureblob"
 
 datasynclocationazureblob.DatasyncLocationAzureBlob_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ datasynclocationazureblob.DatasyncLocationAzureBlob_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datasyncLocationAzureBlob.DatasyncLocationAzureBlob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datasynclocationazureblob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datasynclocationazureblob"
 
 datasynclocationazureblob.DatasyncLocationAzureBlob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1022,7 +1022,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncLocationAzureBlob.DatasyncLocationAzureBlobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datasynclocationazureblob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datasynclocationazureblob"
 
 &datasynclocationazureblob.DatasyncLocationAzureBlobConfig {
 	Connection: interface{},
@@ -1039,7 +1039,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datasynclocationazureb
 	BlobType: *string,
 	Id: *string,
 	Region: *string,
-	SasConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.datasyncLocationAzureBlob.DatasyncLocationAzureBlobSasConfiguration,
+	SasConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.datasyncLocationAzureBlob.DatasyncLocationAzureBlobSasConfiguration,
 	Subdirectory: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncLocationAzureBlob.DatasyncLocationAzureBlobSasConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datasynclocationazureblob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datasynclocationazureblob"
 
 &datasynclocationazureblob.DatasyncLocationAzureBlobSasConfiguration {
 	Token: *string,
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncLocationAzureBlob.DatasyncLocationAzureBlobSasConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datasynclocationazureblob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datasynclocationazureblob"
 
 datasynclocationazureblob.NewDatasyncLocationAzureBlobSasConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationAzureBlobSasConfigurationOutputReference
 ```

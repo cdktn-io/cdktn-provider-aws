@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 cloudsearchdomain.NewCloudsearchDomain(scope Construct, id *string, config CloudsearchDomainConfig) CloudsearchDomain
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 cloudsearchdomain.CloudsearchDomain_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 cloudsearchdomain.CloudsearchDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ cloudsearchdomain.CloudsearchDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 cloudsearchdomain.CloudsearchDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ cloudsearchdomain.CloudsearchDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 cloudsearchdomain.CloudsearchDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 &cloudsearchdomain.CloudsearchDomainConfig {
 	Connection: interface{},
@@ -1021,13 +1021,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	EndpointOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.cloudsearchDomain.CloudsearchDomainEndpointOptions,
+	EndpointOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.cloudsearchDomain.CloudsearchDomainEndpointOptions,
 	Id: *string,
 	IndexField: interface{},
 	MultiAz: interface{},
 	Region: *string,
-	ScalingParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.cloudsearchDomain.CloudsearchDomainScalingParameters,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.cloudsearchDomain.CloudsearchDomainTimeouts,
+	ScalingParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.cloudsearchDomain.CloudsearchDomainScalingParameters,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.cloudsearchDomain.CloudsearchDomainTimeouts,
 }
 ```
 
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 &cloudsearchdomain.CloudsearchDomainEndpointOptions {
 	EnforceHttps: interface{},
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 &cloudsearchdomain.CloudsearchDomainIndexField {
 	Name: *string,
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 &cloudsearchdomain.CloudsearchDomainScalingParameters {
 	DesiredInstanceType: *string,
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 &cloudsearchdomain.CloudsearchDomainTimeouts {
 	Create: *string,
@@ -1563,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 cloudsearchdomain.NewCloudsearchDomainEndpointOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudsearchDomainEndpointOptionsOutputReference
 ```
@@ -1870,7 +1870,7 @@ func InternalValue() CloudsearchDomainEndpointOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 cloudsearchdomain.NewCloudsearchDomainIndexFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudsearchDomainIndexFieldList
 ```
@@ -2030,7 +2030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 cloudsearchdomain.NewCloudsearchDomainIndexFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudsearchDomainIndexFieldOutputReference
 ```
@@ -2573,7 +2573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 cloudsearchdomain.NewCloudsearchDomainScalingParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudsearchDomainScalingParametersOutputReference
 ```
@@ -2909,7 +2909,7 @@ func InternalValue() CloudsearchDomainScalingParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudsearchdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudsearchdomain"
 
 cloudsearchdomain.NewCloudsearchDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudsearchDomainTimeoutsOutputReference
 ```

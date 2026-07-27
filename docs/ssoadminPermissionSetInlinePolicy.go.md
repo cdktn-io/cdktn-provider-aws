@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminpermissionsetinlinepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionsetinlinepolicy"
 
 ssoadminpermissionsetinlinepolicy.NewSsoadminPermissionSetInlinePolicy(scope Construct, id *string, config SsoadminPermissionSetInlinePolicyConfig) SsoadminPermissionSetInlinePolicy
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminpermissionsetinlinepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionsetinlinepolicy"
 
 ssoadminpermissionsetinlinepolicy.SsoadminPermissionSetInlinePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminpermissionsetinlinepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionsetinlinepolicy"
 
 ssoadminpermissionsetinlinepolicy.SsoadminPermissionSetInlinePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ ssoadminpermissionsetinlinepolicy.SsoadminPermissionSetInlinePolicy_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminpermissionsetinlinepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionsetinlinepolicy"
 
 ssoadminpermissionsetinlinepolicy.SsoadminPermissionSetInlinePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ ssoadminpermissionsetinlinepolicy.SsoadminPermissionSetInlinePolicy_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminpermissionsetinlinepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionsetinlinepolicy"
 
 ssoadminpermissionsetinlinepolicy.SsoadminPermissionSetInlinePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminpermissionsetinlinepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionsetinlinepolicy"
 
 &ssoadminpermissionsetinlinepolicy.SsoadminPermissionSetInlinePolicyConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminpermissionseti
 	PermissionSetArn: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicyTimeouts,
 }
 ```
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminpermissionsetinlinepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionsetinlinepolicy"
 
 &ssoadminpermissionsetinlinepolicy.SsoadminPermissionSetInlinePolicyTimeouts {
 	Create: *string,
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminpermissionsetinlinepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionsetinlinepolicy"
 
 ssoadminpermissionsetinlinepolicy.NewSsoadminPermissionSetInlinePolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsoadminPermissionSetInlinePolicyTimeoutsOutputReference
 ```

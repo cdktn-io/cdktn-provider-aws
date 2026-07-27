@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskCluster(scope Construct, id *string, config MskClusterConfig) MskCluster
 ```
@@ -595,7 +595,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.mskCluster.MskCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.MskCluster_IsConstruct(x interface{}) *bool
 ```
@@ -627,7 +627,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.mskCluster.MskCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.MskCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -641,7 +641,7 @@ mskcluster.MskCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.mskCluster.MskCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.MskCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -655,7 +655,7 @@ mskcluster.MskCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.mskCluster.MskCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.MskCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1478,15 +1478,15 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterBrokerNodeGroupInfo {
 	ClientSubnets: *[]*string,
 	InstanceType: *string,
 	SecurityGroups: *[]*string,
 	AzDistribution: *string,
-	ConnectivityInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfo,
-	StorageInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfo,
+	ConnectivityInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfo,
+	StorageInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfo,
 }
 ```
 
@@ -1584,12 +1584,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterBrokerNodeGroupInfoConnectivityInfo {
 	NetworkType: *string,
-	PublicAccess: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess,
-	VpcConnectivity: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivity,
+	PublicAccess: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess,
+	VpcConnectivity: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivity,
 }
 ```
 
@@ -1648,7 +1648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess {
 	Type: *string,
@@ -1680,10 +1680,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivity {
-	ClientAuthentication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication,
+	ClientAuthentication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication,
 }
 ```
 
@@ -1714,10 +1714,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication {
-	Sasl: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl,
+	Sasl: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl,
 	Tls: interface{},
 }
 ```
@@ -1762,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl {
 	Iam: interface{},
@@ -1808,10 +1808,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterBrokerNodeGroupInfoStorageInfo {
-	EbsStorageInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo,
+	EbsStorageInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo,
 }
 ```
 
@@ -1842,10 +1842,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo {
-	ProvisionedThroughput: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput,
+	ProvisionedThroughput: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput,
 	VolumeSize: *f64,
 }
 ```
@@ -1890,7 +1890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput {
 	Enabled: interface{},
@@ -1936,11 +1936,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterClientAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterClientAuthentication {
-	Sasl: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterClientAuthenticationSasl,
-	Tls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterClientAuthenticationTls,
+	Sasl: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterClientAuthenticationSasl,
+	Tls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterClientAuthenticationTls,
 	Unauthenticated: interface{},
 }
 ```
@@ -2000,7 +2000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterClientAuthenticationSasl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterClientAuthenticationSasl {
 	Iam: interface{},
@@ -2046,7 +2046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterClientAuthenticationTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterClientAuthenticationTls {
 	CertificateAuthorityArns: *[]*string,
@@ -2078,7 +2078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterConfig {
 	Connection: interface{},
@@ -2088,23 +2088,23 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	BrokerNodeGroupInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterBrokerNodeGroupInfo,
+	BrokerNodeGroupInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterBrokerNodeGroupInfo,
 	ClusterName: *string,
 	KafkaVersion: *string,
 	NumberOfBrokerNodes: *f64,
-	ClientAuthentication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterClientAuthentication,
-	ConfigurationInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterConfigurationInfo,
-	EncryptionInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterEncryptionInfo,
+	ClientAuthentication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterClientAuthentication,
+	ConfigurationInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterConfigurationInfo,
+	EncryptionInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterEncryptionInfo,
 	EnhancedMonitoring: *string,
 	Id: *string,
-	LoggingInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterLoggingInfo,
-	OpenMonitoring: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterOpenMonitoring,
-	Rebalancing: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterRebalancing,
+	LoggingInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterLoggingInfo,
+	OpenMonitoring: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterOpenMonitoring,
+	Rebalancing: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterRebalancing,
 	Region: *string,
 	StorageMode: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterTimeouts,
 }
 ```
 
@@ -2439,7 +2439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterConfigurationInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterConfigurationInfo {
 	Arn: *string,
@@ -2485,11 +2485,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterEncryptionInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterEncryptionInfo {
 	EncryptionAtRestKmsKeyArn: *string,
-	EncryptionInTransit: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterEncryptionInfoEncryptionInTransit,
+	EncryptionInTransit: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterEncryptionInfoEncryptionInTransit,
 }
 ```
 
@@ -2533,7 +2533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterEncryptionInfoEncryptionInTransit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterEncryptionInfoEncryptionInTransit {
 	ClientBroker: *string,
@@ -2579,10 +2579,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterLoggingInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterLoggingInfo {
-	BrokerLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterLoggingInfoBrokerLogs,
+	BrokerLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterLoggingInfoBrokerLogs,
 }
 ```
 
@@ -2613,12 +2613,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterLoggingInfoBrokerLogs {
-	CloudwatchLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogs,
-	Firehose: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterLoggingInfoBrokerLogsFirehose,
-	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterLoggingInfoBrokerLogsS3,
+	CloudwatchLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogs,
+	Firehose: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterLoggingInfoBrokerLogsFirehose,
+	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterLoggingInfoBrokerLogsS3,
 }
 ```
 
@@ -2679,7 +2679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogs {
 	Enabled: interface{},
@@ -2725,7 +2725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterLoggingInfoBrokerLogsFirehose {
 	Enabled: interface{},
@@ -2771,7 +2771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterLoggingInfoBrokerLogsS3 {
 	Enabled: interface{},
@@ -2831,10 +2831,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterOpenMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterOpenMonitoring {
-	Prometheus: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterOpenMonitoringPrometheus,
+	Prometheus: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterOpenMonitoringPrometheus,
 }
 ```
 
@@ -2865,11 +2865,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterOpenMonitoringPrometheus {
-	JmxExporter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterOpenMonitoringPrometheusJmxExporter,
-	NodeExporter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskCluster.MskClusterOpenMonitoringPrometheusNodeExporter,
+	JmxExporter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterOpenMonitoringPrometheusJmxExporter,
+	NodeExporter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskCluster.MskClusterOpenMonitoringPrometheusNodeExporter,
 }
 ```
 
@@ -2915,7 +2915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheusJmxExporter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterOpenMonitoringPrometheusJmxExporter {
 	EnabledInBroker: interface{},
@@ -2947,7 +2947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheusNodeExporter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterOpenMonitoringPrometheusNodeExporter {
 	EnabledInBroker: interface{},
@@ -2979,7 +2979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterRebalancing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterRebalancing {
 	Status: *string,
@@ -3011,7 +3011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskCluster.MskClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 &mskcluster.MskClusterTimeouts {
 	Create: *string,
@@ -3073,7 +3073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference
 ```
@@ -3435,7 +3435,7 @@ func InternalValue() MskClusterBrokerNodeGroupInfoConnectivityInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference
 ```
@@ -3713,7 +3713,7 @@ func InternalValue() MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationOutputReference
 ```
@@ -4033,7 +4033,7 @@ func InternalValue() MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivit
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSaslOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSaslOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSaslOutputReference
 ```
@@ -4340,7 +4340,7 @@ func InternalValue() MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivit
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityOutputReference
 ```
@@ -4631,7 +4631,7 @@ func InternalValue() MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivit
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterBrokerNodeGroupInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterBrokerNodeGroupInfoOutputReference
 ```
@@ -5059,7 +5059,7 @@ func InternalValue() MskClusterBrokerNodeGroupInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference
 ```
@@ -5379,7 +5379,7 @@ func InternalValue() MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference
 ```
@@ -5686,7 +5686,7 @@ func InternalValue() MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterBrokerNodeGroupInfoStorageInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterBrokerNodeGroupInfoStorageInfoOutputReference
 ```
@@ -5977,7 +5977,7 @@ func InternalValue() MskClusterBrokerNodeGroupInfoStorageInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterClientAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterClientAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterClientAuthenticationOutputReference
 ```
@@ -6339,7 +6339,7 @@ func InternalValue() MskClusterClientAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterClientAuthenticationSaslOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterClientAuthenticationSaslOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterClientAuthenticationSaslOutputReference
 ```
@@ -6646,7 +6646,7 @@ func InternalValue() MskClusterClientAuthenticationSasl
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterClientAuthenticationTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterClientAuthenticationTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterClientAuthenticationTlsOutputReference
 ```
@@ -6924,7 +6924,7 @@ func InternalValue() MskClusterClientAuthenticationTls
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterConfigurationInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterConfigurationInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterConfigurationInfoOutputReference
 ```
@@ -7217,7 +7217,7 @@ func InternalValue() MskClusterConfigurationInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterEncryptionInfoEncryptionInTransitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterEncryptionInfoEncryptionInTransitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterEncryptionInfoEncryptionInTransitOutputReference
 ```
@@ -7524,7 +7524,7 @@ func InternalValue() MskClusterEncryptionInfoEncryptionInTransit
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterEncryptionInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterEncryptionInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterEncryptionInfoOutputReference
 ```
@@ -7844,7 +7844,7 @@ func InternalValue() MskClusterEncryptionInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference
 ```
@@ -8144,7 +8144,7 @@ func InternalValue() MskClusterLoggingInfoBrokerLogsCloudwatchLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterLoggingInfoBrokerLogsFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterLoggingInfoBrokerLogsFirehoseOutputReference
 ```
@@ -8444,7 +8444,7 @@ func InternalValue() MskClusterLoggingInfoBrokerLogsFirehose
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterLoggingInfoBrokerLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterLoggingInfoBrokerLogsOutputReference
 ```
@@ -8819,7 +8819,7 @@ func InternalValue() MskClusterLoggingInfoBrokerLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterLoggingInfoBrokerLogsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterLoggingInfoBrokerLogsS3OutputReference
 ```
@@ -9148,7 +9148,7 @@ func InternalValue() MskClusterLoggingInfoBrokerLogsS3
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterLoggingInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterLoggingInfoOutputReference
 ```
@@ -9432,7 +9432,7 @@ func InternalValue() MskClusterLoggingInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterOpenMonitoringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterOpenMonitoringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterOpenMonitoringOutputReference
 ```
@@ -9716,7 +9716,7 @@ func InternalValue() MskClusterOpenMonitoring
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheusJmxExporterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterOpenMonitoringPrometheusJmxExporterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterOpenMonitoringPrometheusJmxExporterOutputReference
 ```
@@ -9987,7 +9987,7 @@ func InternalValue() MskClusterOpenMonitoringPrometheusJmxExporter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheusNodeExporterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterOpenMonitoringPrometheusNodeExporterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterOpenMonitoringPrometheusNodeExporterOutputReference
 ```
@@ -10258,7 +10258,7 @@ func InternalValue() MskClusterOpenMonitoringPrometheusNodeExporter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterOpenMonitoringPrometheusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterOpenMonitoringPrometheusOutputReference
 ```
@@ -10591,7 +10591,7 @@ func InternalValue() MskClusterOpenMonitoringPrometheus
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterRebalancingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterRebalancingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterRebalancingOutputReference
 ```
@@ -10862,7 +10862,7 @@ func InternalValue() MskClusterRebalancing
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskCluster.MskClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskcluster"
 
 mskcluster.NewMskClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskClusterTimeoutsOutputReference
 ```

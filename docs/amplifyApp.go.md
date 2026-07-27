@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.NewAmplifyApp(scope Construct, id *string, config AmplifyAppConfig) AmplifyApp
 ```
@@ -620,7 +620,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.AmplifyApp_IsConstruct(x interface{}) *bool
 ```
@@ -652,7 +652,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.AmplifyApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ amplifyapp.AmplifyApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.AmplifyApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -680,7 +680,7 @@ amplifyapp.AmplifyApp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.AmplifyApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1492,7 +1492,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 &amplifyapp.AmplifyAppAutoBranchCreationConfig {
 	BasicAuthCredentials: *string,
@@ -1650,7 +1650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 &amplifyapp.AmplifyAppCacheConfig {
 	Type: *string,
@@ -1682,7 +1682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 &amplifyapp.AmplifyAppConfig {
 	Connection: interface{},
@@ -1694,11 +1694,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
 	Provisioners: *[]interface{},
 	Name: *string,
 	AccessToken: *string,
-	AutoBranchCreationConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.amplifyApp.AmplifyAppAutoBranchCreationConfig,
+	AutoBranchCreationConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.amplifyApp.AmplifyAppAutoBranchCreationConfig,
 	AutoBranchCreationPatterns: *[]*string,
 	BasicAuthCredentials: *string,
 	BuildSpec: *string,
-	CacheConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.amplifyApp.AmplifyAppCacheConfig,
+	CacheConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.amplifyApp.AmplifyAppCacheConfig,
 	ComputeRoleArn: *string,
 	CustomHeaders: *string,
 	CustomRule: interface{},
@@ -1710,7 +1710,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
 	EnvironmentVariables: *map[string]*string,
 	IamServiceRoleArn: *string,
 	Id: *string,
-	JobConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.amplifyApp.AmplifyAppJobConfig,
+	JobConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.amplifyApp.AmplifyAppJobConfig,
 	OauthToken: *string,
 	Platform: *string,
 	Region: *string,
@@ -2147,7 +2147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 &amplifyapp.AmplifyAppCustomRule {
 	Source: *string,
@@ -2221,7 +2221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 &amplifyapp.AmplifyAppJobConfig {
 	BuildComputeType: *string,
@@ -2253,7 +2253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 &amplifyapp.AmplifyAppProductionBranch {
 
@@ -2268,7 +2268,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.NewAmplifyAppAutoBranchCreationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AmplifyAppAutoBranchCreationConfigOutputReference
 ```
@@ -2807,7 +2807,7 @@ func InternalValue() AmplifyAppAutoBranchCreationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.NewAmplifyAppCacheConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AmplifyAppCacheConfigOutputReference
 ```
@@ -3078,7 +3078,7 @@ func InternalValue() AmplifyAppCacheConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.NewAmplifyAppCustomRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AmplifyAppCustomRuleList
 ```
@@ -3238,7 +3238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.NewAmplifyAppCustomRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AmplifyAppCustomRuleOutputReference
 ```
@@ -3607,7 +3607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.NewAmplifyAppJobConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AmplifyAppJobConfigOutputReference
 ```
@@ -3885,7 +3885,7 @@ func InternalValue() AmplifyAppJobConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.NewAmplifyAppProductionBranchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AmplifyAppProductionBranchList
 ```
@@ -4034,7 +4034,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/amplifyapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifyapp"
 
 amplifyapp.NewAmplifyAppProductionBranchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AmplifyAppProductionBranchOutputReference
 ```

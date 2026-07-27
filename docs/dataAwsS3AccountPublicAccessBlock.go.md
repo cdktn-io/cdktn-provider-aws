@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3accountpublicaccessblock"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3accountpublicaccessblock"
 
 dataawss3accountpublicaccessblock.NewDataAwsS3AccountPublicAccessBlock(scope Construct, id *string, config DataAwsS3AccountPublicAccessBlockConfig) DataAwsS3AccountPublicAccessBlock
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3accountpublicaccessblock"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3accountpublicaccessblock"
 
 dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlock_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3accountpublicaccessblock"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3accountpublicaccessblock"
 
 dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlock_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlock_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3accountpublicaccessblock"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3accountpublicaccessblock"
 
 dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlock_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlock_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3accountpublicaccessblock"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3accountpublicaccessblock"
 
 dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlock_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3accountpublicaccessblock"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3accountpublicaccessblock"
 
 &dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlockConfig {
 	Connection: interface{},

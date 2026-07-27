@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 lexv2modelsbot.NewLexv2ModelsBot(scope Construct, id *string, config Lexv2ModelsBotConfig) Lexv2ModelsBot
 ```
@@ -495,7 +495,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 lexv2modelsbot.Lexv2ModelsBot_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 lexv2modelsbot.Lexv2ModelsBot_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ lexv2modelsbot.Lexv2ModelsBot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 lexv2modelsbot.Lexv2ModelsBot_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ lexv2modelsbot.Lexv2ModelsBot_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 lexv2modelsbot.Lexv2ModelsBot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1059,7 +1059,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 &lexv2modelsbot.Lexv2ModelsBotConfig {
 	Connection: interface{},
@@ -1078,7 +1078,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
 	Region: *string,
 	Tags: *map[string]*string,
 	TestBotAliasTags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.lexv2ModelsBot.Lexv2ModelsBotTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lexv2ModelsBot.Lexv2ModelsBotTimeouts,
 	Type: *string,
 }
 ```
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBotDataPrivacy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 &lexv2modelsbot.Lexv2ModelsBotDataPrivacy {
 	ChildDirected: interface{},
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBotMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 &lexv2modelsbot.Lexv2ModelsBotMembers {
 	AliasId: *string,
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 &lexv2modelsbot.Lexv2ModelsBotTimeouts {
 	Create: *string,
@@ -1514,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBotDataPrivacyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 lexv2modelsbot.NewLexv2ModelsBotDataPrivacyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsBotDataPrivacyList
 ```
@@ -1674,7 +1674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBotDataPrivacyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 lexv2modelsbot.NewLexv2ModelsBotDataPrivacyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsBotDataPrivacyOutputReference
 ```
@@ -1963,7 +1963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBotMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 lexv2modelsbot.NewLexv2ModelsBotMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsBotMembersList
 ```
@@ -2123,7 +2123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBotMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 lexv2modelsbot.NewLexv2ModelsBotMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsBotMembersOutputReference
 ```
@@ -2500,7 +2500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsBot.Lexv2ModelsBotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsbot"
 
 lexv2modelsbot.NewLexv2ModelsBotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Lexv2ModelsBotTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcSecurityGroupRulesExclusive.VpcSecurityGroupRulesExclusive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcsecuritygrouprulesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygrouprulesexclusive"
 
 vpcsecuritygrouprulesexclusive.NewVpcSecurityGroupRulesExclusive(scope Construct, id *string, config VpcSecurityGroupRulesExclusiveConfig) VpcSecurityGroupRulesExclusive
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcSecurityGroupRulesExclusive.VpcSecurityGroupRulesExclusive.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcsecuritygrouprulesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygrouprulesexclusive"
 
 vpcsecuritygrouprulesexclusive.VpcSecurityGroupRulesExclusive_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcSecurityGroupRulesExclusive.VpcSecurityGroupRulesExclusive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcsecuritygrouprulesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygrouprulesexclusive"
 
 vpcsecuritygrouprulesexclusive.VpcSecurityGroupRulesExclusive_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ vpcsecuritygrouprulesexclusive.VpcSecurityGroupRulesExclusive_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcSecurityGroupRulesExclusive.VpcSecurityGroupRulesExclusive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcsecuritygrouprulesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygrouprulesexclusive"
 
 vpcsecuritygrouprulesexclusive.VpcSecurityGroupRulesExclusive_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ vpcsecuritygrouprulesexclusive.VpcSecurityGroupRulesExclusive_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcSecurityGroupRulesExclusive.VpcSecurityGroupRulesExclusive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcsecuritygrouprulesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygrouprulesexclusive"
 
 vpcsecuritygrouprulesexclusive.VpcSecurityGroupRulesExclusive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcSecurityGroupRulesExclusive.VpcSecurityGroupRulesExclusiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcsecuritygrouprulesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygrouprulesexclusive"
 
 &vpcsecuritygrouprulesexclusive.VpcSecurityGroupRulesExclusiveConfig {
 	Connection: interface{},

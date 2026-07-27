@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesworkspace"
 
 workspacesworkspace.NewWorkspacesWorkspace(scope Construct, id *string, config WorkspacesWorkspaceConfig) WorkspacesWorkspace
 ```
@@ -489,7 +489,7 @@ func ResetWorkspaceProperties()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesworkspace"
 
 workspacesworkspace.WorkspacesWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesworkspace"
 
 workspacesworkspace.WorkspacesWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ workspacesworkspace.WorkspacesWorkspace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesworkspace"
 
 workspacesworkspace.WorkspacesWorkspace_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ workspacesworkspace.WorkspacesWorkspace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesworkspace"
 
 workspacesworkspace.WorkspacesWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1075,7 +1075,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesworkspace"
 
 &workspacesworkspace.WorkspacesWorkspaceConfig {
 	Connection: interface{},
@@ -1093,10 +1093,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
 	RootVolumeEncryptionEnabled: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.workspacesWorkspace.WorkspacesWorkspaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.workspacesWorkspace.WorkspacesWorkspaceTimeouts,
 	UserVolumeEncryptionEnabled: interface{},
 	VolumeEncryptionKey: *string,
-	WorkspaceProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.workspacesWorkspace.WorkspacesWorkspaceWorkspaceProperties,
+	WorkspaceProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.workspacesWorkspace.WorkspacesWorkspaceWorkspaceProperties,
 }
 ```
 
@@ -1354,7 +1354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesworkspace"
 
 &workspacesworkspace.WorkspacesWorkspaceTimeouts {
 	Create: *string,
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspaceProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesworkspace"
 
 &workspacesworkspace.WorkspacesWorkspaceWorkspaceProperties {
 	ComputeTypeName: *string,
@@ -1504,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesworkspace"
 
 workspacesworkspace.NewWorkspacesWorkspaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesWorkspaceTimeoutsOutputReference
 ```
@@ -1840,7 +1840,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspacePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspacesworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesworkspace"
 
 workspacesworkspace.NewWorkspacesWorkspaceWorkspacePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesWorkspaceWorkspacePropertiesOutputReference
 ```

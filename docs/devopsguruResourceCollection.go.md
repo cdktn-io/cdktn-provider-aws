@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 devopsgururesourcecollection.NewDevopsguruResourceCollection(scope Construct, id *string, config DevopsguruResourceCollectionConfig) DevopsguruResourceCollection
 ```
@@ -447,7 +447,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 devopsgururesourcecollection.DevopsguruResourceCollection_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 devopsgururesourcecollection.DevopsguruResourceCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ devopsgururesourcecollection.DevopsguruResourceCollection_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 devopsgururesourcecollection.DevopsguruResourceCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ devopsgururesourcecollection.DevopsguruResourceCollection_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 devopsgururesourcecollection.DevopsguruResourceCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollectionCloudformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 &devopsgururesourcecollection.DevopsguruResourceCollectionCloudformation {
 	StackNames: *[]*string,
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 &devopsgururesourcecollection.DevopsguruResourceCollectionConfig {
 	Connection: interface{},
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollectionTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 &devopsgururesourcecollection.DevopsguruResourceCollectionTags {
 	AppBoundaryKey: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollectionCloudformationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 devopsgururesourcecollection.NewDevopsguruResourceCollectionCloudformationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevopsguruResourceCollectionCloudformationList
 ```
@@ -1239,7 +1239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollectionCloudformationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 devopsgururesourcecollection.NewDevopsguruResourceCollectionCloudformationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevopsguruResourceCollectionCloudformationOutputReference
 ```
@@ -1528,7 +1528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollectionTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 devopsgururesourcecollection.NewDevopsguruResourceCollectionTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevopsguruResourceCollectionTagsList
 ```
@@ -1688,7 +1688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruResourceCollection.DevopsguruResourceCollectionTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devopsgururesourcecollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devopsgururesourcecollection"
 
 devopsgururesourcecollection.NewDevopsguruResourceCollectionTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevopsguruResourceCollectionTagsOutputReference
 ```

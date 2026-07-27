@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminregion"
 
 ssoadminregion.NewSsoadminRegion(scope Construct, id *string, config SsoadminRegionConfig) SsoadminRegion
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminregion"
 
 ssoadminregion.SsoadminRegion_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminregion"
 
 ssoadminregion.SsoadminRegion_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ ssoadminregion.SsoadminRegion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminregion"
 
 ssoadminregion.SsoadminRegion_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ ssoadminregion.SsoadminRegion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminregion"
 
 ssoadminregion.SsoadminRegion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminregion"
 
 &ssoadminregion.SsoadminRegionConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
 	InstanceArn: *string,
 	RegionName: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ssoadminRegion.SsoadminRegionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ssoadminRegion.SsoadminRegionTimeouts,
 }
 ```
 
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminregion"
 
 &ssoadminregion.SsoadminRegionTimeouts {
 	Create: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminregion"
 
 ssoadminregion.NewSsoadminRegionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsoadminRegionTimeoutsOutputReference
 ```

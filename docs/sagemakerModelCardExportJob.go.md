@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 sagemakermodelcardexportjob.NewSagemakerModelCardExportJob(scope Construct, id *string, config SagemakerModelCardExportJobConfig) SagemakerModelCardExportJob
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 sagemakermodelcardexportjob.SagemakerModelCardExportJob_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 sagemakermodelcardexportjob.SagemakerModelCardExportJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ sagemakermodelcardexportjob.SagemakerModelCardExportJob_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 sagemakermodelcardexportjob.SagemakerModelCardExportJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ sagemakermodelcardexportjob.SagemakerModelCardExportJob_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 sagemakermodelcardexportjob.SagemakerModelCardExportJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 &sagemakermodelcardexportjob.SagemakerModelCardExportJobConfig {
 	Connection: interface{},
@@ -912,7 +912,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexpo
 	ModelCardVersion: *f64,
 	OutputConfig: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerModelCardExportJob.SagemakerModelCardExportJobTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerModelCardExportJob.SagemakerModelCardExportJobTimeouts,
 }
 ```
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJobExportArtifacts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 &sagemakermodelcardexportjob.SagemakerModelCardExportJobExportArtifacts {
 
@@ -1102,7 +1102,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexpo
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJobOutputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 &sagemakermodelcardexportjob.SagemakerModelCardExportJobOutputConfig {
 	S3OutputPath: *string,
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 &sagemakermodelcardexportjob.SagemakerModelCardExportJobTimeouts {
 	Create: *string,
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJobExportArtifactsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 sagemakermodelcardexportjob.NewSagemakerModelCardExportJobExportArtifactsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerModelCardExportJobExportArtifactsList
 ```
@@ -1319,7 +1319,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJobExportArtifactsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 sagemakermodelcardexportjob.NewSagemakerModelCardExportJobExportArtifactsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerModelCardExportJobExportArtifactsOutputReference
 ```
@@ -1597,7 +1597,7 @@ func InternalValue() SagemakerModelCardExportJobExportArtifacts
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJobOutputConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 sagemakermodelcardexportjob.NewSagemakerModelCardExportJobOutputConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerModelCardExportJobOutputConfigList
 ```
@@ -1757,7 +1757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJobOutputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 sagemakermodelcardexportjob.NewSagemakerModelCardExportJobOutputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerModelCardExportJobOutputConfigOutputReference
 ```
@@ -2046,7 +2046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModelCardExportJob.SagemakerModelCardExportJobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcardexportjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcardexportjob"
 
 sagemakermodelcardexportjob.NewSagemakerModelCardExportJobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerModelCardExportJobTimeoutsOutputReference
 ```

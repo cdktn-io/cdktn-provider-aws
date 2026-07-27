@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebnetworksettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebnetworksettingsassociation"
 
 workspaceswebnetworksettingsassociation.NewWorkspaceswebNetworkSettingsAssociation(scope Construct, id *string, config WorkspaceswebNetworkSettingsAssociationConfig) WorkspaceswebNetworkSettingsAssociation
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebnetworksettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebnetworksettingsassociation"
 
 workspaceswebnetworksettingsassociation.WorkspaceswebNetworkSettingsAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebnetworksettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebnetworksettingsassociation"
 
 workspaceswebnetworksettingsassociation.WorkspaceswebNetworkSettingsAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ workspaceswebnetworksettingsassociation.WorkspaceswebNetworkSettingsAssociation_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebnetworksettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebnetworksettingsassociation"
 
 workspaceswebnetworksettingsassociation.WorkspaceswebNetworkSettingsAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ workspaceswebnetworksettingsassociation.WorkspaceswebNetworkSettingsAssociation_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebnetworksettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebnetworksettingsassociation"
 
 workspaceswebnetworksettingsassociation.WorkspaceswebNetworkSettingsAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebnetworksettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebnetworksettingsassociation"
 
 &workspaceswebnetworksettingsassociation.WorkspaceswebNetworkSettingsAssociationConfig {
 	Connection: interface{},

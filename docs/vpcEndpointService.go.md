@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 vpcendpointservice.NewVpcEndpointService(scope Construct, id *string, config VpcEndpointServiceConfig) VpcEndpointService
 ```
@@ -490,7 +490,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 vpcendpointservice.VpcEndpointService_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 vpcendpointservice.VpcEndpointService_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ vpcendpointservice.VpcEndpointService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 vpcendpointservice.VpcEndpointService_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ vpcendpointservice.VpcEndpointService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 vpcendpointservice.VpcEndpointService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1131,7 +1131,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 &vpcendpointservice.VpcEndpointServiceConfig {
 	Connection: interface{},
@@ -1152,7 +1152,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
 	SupportedRegions: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpcEndpointService.VpcEndpointServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpcEndpointService.VpcEndpointServiceTimeouts,
 }
 ```
 
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 &vpcendpointservice.VpcEndpointServicePrivateDnsNameConfiguration {
 
@@ -1421,7 +1421,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 &vpcendpointservice.VpcEndpointServiceTimeouts {
 	Create: *string,
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 vpcendpointservice.NewVpcEndpointServicePrivateDnsNameConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpcEndpointServicePrivateDnsNameConfigurationList
 ```
@@ -1632,7 +1632,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 vpcendpointservice.NewVpcEndpointServicePrivateDnsNameConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpcEndpointServicePrivateDnsNameConfigurationOutputReference
 ```
@@ -1943,7 +1943,7 @@ func InternalValue() VpcEndpointServicePrivateDnsNameConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEndpointService.VpcEndpointServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcendpointservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcendpointservice"
 
 vpcendpointservice.NewVpcEndpointServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEndpointServiceTimeoutsOutputReference
 ```

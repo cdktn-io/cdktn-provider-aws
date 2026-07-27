@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryService(scope Construct, id *string, config DataAwsServiceDiscoveryServiceConfig) DataAwsServiceDiscoveryService
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 &dataawsservicediscoveryservice.DataAwsServiceDiscoveryServiceConfig {
 	Connection: interface{},
@@ -928,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 &dataawsservicediscoveryservice.DataAwsServiceDiscoveryServiceDnsConfig {
 
@@ -941,7 +941,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscover
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 &dataawsservicediscoveryservice.DataAwsServiceDiscoveryServiceDnsConfigDnsRecords {
 
@@ -954,7 +954,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscover
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 &dataawsservicediscoveryservice.DataAwsServiceDiscoveryServiceHealthCheckConfig {
 
@@ -967,7 +967,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscover
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 &dataawsservicediscoveryservice.DataAwsServiceDiscoveryServiceHealthCheckCustomConfig {
 
@@ -982,7 +982,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscover
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList
 ```
@@ -1131,7 +1131,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference
 ```
@@ -1420,7 +1420,7 @@ func InternalValue() DataAwsServiceDiscoveryServiceDnsConfigDnsRecords
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceDnsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServiceDiscoveryServiceDnsConfigList
 ```
@@ -1569,7 +1569,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServiceDiscoveryServiceDnsConfigOutputReference
 ```
@@ -1869,7 +1869,7 @@ func InternalValue() DataAwsServiceDiscoveryServiceDnsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceHealthCheckConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServiceDiscoveryServiceHealthCheckConfigList
 ```
@@ -2018,7 +2018,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceHealthCheckConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServiceDiscoveryServiceHealthCheckConfigOutputReference
 ```
@@ -2318,7 +2318,7 @@ func InternalValue() DataAwsServiceDiscoveryServiceHealthCheckConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckCustomConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceHealthCheckCustomConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServiceDiscoveryServiceHealthCheckCustomConfigList
 ```
@@ -2467,7 +2467,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarness(scope Construct, id *string, config BedrockagentcoreHarnessConfig) BedrockagentcoreHarness
 ```
@@ -649,7 +649,7 @@ func ResetTruncation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.BedrockagentcoreHarness_IsConstruct(x interface{}) *bool
 ```
@@ -681,7 +681,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.BedrockagentcoreHarness_IsTerraformElement(x interface{}) *bool
 ```
@@ -695,7 +695,7 @@ bedrockagentcoreharness.BedrockagentcoreHarness_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.BedrockagentcoreHarness_IsTerraformResource(x interface{}) *bool
 ```
@@ -709,7 +709,7 @@ bedrockagentcoreharness.BedrockagentcoreHarness_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.BedrockagentcoreHarness_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1389,7 +1389,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfiguration {
 	CustomJwtAuthorizer: interface{},
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer {
 	DiscoveryUrl: *string,
@@ -1561,7 +1561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration {
 	HostingEnvironment: interface{},
@@ -1609,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment {
 	Arn: *string,
@@ -1641,7 +1641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaim {
 	InboundTokenClaimName: *string,
@@ -1703,7 +1703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue {
 	ClaimMatchOperator: *string,
@@ -1751,7 +1751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue {
 	MatchValueString: *string,
@@ -1797,7 +1797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint {
 	ManagedVpcResource: interface{},
@@ -1847,7 +1847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource {
 	EndpointIpAddressType: *string,
@@ -1949,7 +1949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides {
 	Domain: *string,
@@ -1997,7 +1997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint {
 	ManagedVpcResource: interface{},
@@ -2047,7 +2047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource {
 	EndpointIpAddressType: *string,
@@ -2149,7 +2149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource {
 	ResourceConfigurationIdentifier: *string,
@@ -2181,7 +2181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource {
 	ResourceConfigurationIdentifier: *string,
@@ -2213,7 +2213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessConfig {
 	Connection: interface{},
@@ -2238,7 +2238,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharnes
 	Skill: interface{},
 	SystemPrompt: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentcoreHarness.BedrockagentcoreHarnessTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentcoreHarness.BedrockagentcoreHarnessTimeouts,
 	TimeoutSeconds: *f64,
 	Tool: interface{},
 	Truncation: interface{},
@@ -2599,7 +2599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironment {
 	AgentcoreRuntimeEnvironment: interface{},
@@ -2631,7 +2631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironment {
 	AgentRuntimeArn: *string,
@@ -2733,7 +2733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration {
 	EfsAccessPoint: interface{},
@@ -2793,7 +2793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint {
 	AccessPointArn: *string,
@@ -2839,7 +2839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint {
 	AccessPointArn: *string,
@@ -2885,7 +2885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage {
 	MountPath: *string,
@@ -2917,7 +2917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration {
 	IdleRuntimeSessionTimeout: *f64,
@@ -2963,7 +2963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration {
 	NetworkMode: *string,
@@ -3009,7 +3009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig {
 	RequireServiceS3Endpoint: interface{},
@@ -3069,7 +3069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentArtifact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironmentArtifact {
 	ContainerConfiguration: interface{},
@@ -3103,7 +3103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentArtifactContainerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessEnvironmentArtifactContainerConfiguration {
 	ContainerUri: *string,
@@ -3135,7 +3135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessMemory {
 	AgentcoreMemoryConfiguration: interface{},
@@ -3169,7 +3169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfiguration {
 	Arn: *string,
@@ -3245,7 +3245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig {
 	MapBlockKey: *string,
@@ -3319,7 +3319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessModel {
 	BedrockModelConfig: interface{},
@@ -3385,7 +3385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessModelBedrockModelConfig {
 	ModelId: *string,
@@ -3459,7 +3459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessModelGeminiModelConfig {
 	ApiKeyArn: *string,
@@ -3561,7 +3561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessModelOpenaiModelConfig {
 	ApiKeyArn: *string,
@@ -3649,7 +3649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessSkill {
 	Path: *string,
@@ -3681,7 +3681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessSystemPrompt {
 	Text: *string,
@@ -3713,7 +3713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessTimeouts {
 	Create: *string,
@@ -3779,7 +3779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessTool {
 	Type: *string,
@@ -3841,7 +3841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessToolConfig {
 	AgentcoreBrowser: interface{},
@@ -3939,7 +3939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreBrowser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessToolConfigAgentcoreBrowser {
 	BrowserArn: *string,
@@ -3971,7 +3971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreter {
 	CodeInterpreterArn: *string,
@@ -4003,7 +4003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessToolConfigAgentcoreGateway {
 	GatewayArn: *string,
@@ -4051,7 +4051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuth {
 	AwsIam: interface{},
@@ -4113,7 +4113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth {
 	ProviderArn: *string,
@@ -4201,7 +4201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigInlineFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessToolConfigInlineFunction {
 	Description: *string,
@@ -4247,7 +4247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigRemoteMcp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessToolConfigRemoteMcp {
 	Url: *string,
@@ -4293,7 +4293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessTruncation {
 	Config: interface{},
@@ -4339,7 +4339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessTruncationConfig {
 	SlidingWindow: interface{},
@@ -4385,7 +4385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSlidingWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessTruncationConfigSlidingWindow {
 	MessagesCount: *f64,
@@ -4417,7 +4417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 &bedrockagentcoreharness.BedrockagentcoreHarnessTruncationConfigSummarization {
 	PreserveRecentMessages: *f64,
@@ -4479,7 +4479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironmentList
 ```
@@ -4639,7 +4639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironmentOutputReference
 ```
@@ -4928,7 +4928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationList
 ```
@@ -5088,7 +5088,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationOutputReference
 ```
@@ -5426,7 +5426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueList
 ```
@@ -5586,7 +5586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueOutputReference
 ```
@@ -5911,7 +5911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueList
 ```
@@ -6071,7 +6071,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueOutputReference
 ```
@@ -6402,7 +6402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimList
 ```
@@ -6562,7 +6562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimOutputReference
 ```
@@ -6915,7 +6915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerList
 ```
@@ -7075,7 +7075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerOutputReference
 ```
@@ -7619,7 +7619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointList
 ```
@@ -7779,7 +7779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceList
 ```
@@ -7939,7 +7939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceOutputReference
 ```
@@ -8359,7 +8359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOutputReference
 ```
@@ -8710,7 +8710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesList
 ```
@@ -8870,7 +8870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesOutputReference
 ```
@@ -9201,7 +9201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointList
 ```
@@ -9361,7 +9361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResourceList
 ```
@@ -9521,7 +9521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResourceOutputReference
 ```
@@ -9941,7 +9941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointOutputReference
 ```
@@ -10292,7 +10292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResourceList
 ```
@@ -10452,7 +10452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResourceOutputReference
 ```
@@ -10741,7 +10741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceList
 ```
@@ -10901,7 +10901,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceOutputReference
 ```
@@ -11190,7 +11190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationList
 ```
@@ -11350,7 +11350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessAuthorizerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessAuthorizerConfigurationOutputReference
 ```
@@ -11659,7 +11659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPointList
 ```
@@ -11819,7 +11819,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPointOutputReference
 ```
@@ -12144,7 +12144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationList
 ```
@@ -12304,7 +12304,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationOutputReference
 ```
@@ -12697,7 +12697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPointList
 ```
@@ -12857,7 +12857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPointOutputReference
 ```
@@ -13182,7 +13182,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorageList
 ```
@@ -13342,7 +13342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorageOutputReference
 ```
@@ -13638,7 +13638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfigurationList
 ```
@@ -13798,7 +13798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfigurationOutputReference
 ```
@@ -14123,7 +14123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentList
 ```
@@ -14283,7 +14283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationList
 ```
@@ -14443,7 +14443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfigList
 ```
@@ -14603,7 +14603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfigOutputReference
 ```
@@ -14957,7 +14957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationOutputReference
 ```
@@ -15295,7 +15295,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentOutputReference
 ```
@@ -15775,7 +15775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentArtifactContainerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentArtifactContainerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentArtifactContainerConfigurationList
 ```
@@ -15935,7 +15935,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentArtifactContainerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentArtifactContainerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentArtifactContainerConfigurationOutputReference
 ```
@@ -16224,7 +16224,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentArtifactList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentArtifactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentArtifactList
 ```
@@ -16384,7 +16384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentArtifactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentArtifactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentArtifactOutputReference
 ```
@@ -16693,7 +16693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessEnvironmentList
 ```
@@ -16853,7 +16853,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessEnvironmentOutputReference
 ```
@@ -17162,7 +17162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationList
 ```
@@ -17322,7 +17322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationOutputReference
 ```
@@ -17711,7 +17711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfigList
 ```
@@ -17871,7 +17871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfigOutputReference
 ```
@@ -18247,7 +18247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessMemoryList
 ```
@@ -18407,7 +18407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessMemoryOutputReference
 ```
@@ -18716,7 +18716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessModelBedrockModelConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessModelBedrockModelConfigList
 ```
@@ -18876,7 +18876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessModelBedrockModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessModelBedrockModelConfigOutputReference
 ```
@@ -19252,7 +19252,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessModelGeminiModelConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessModelGeminiModelConfigList
 ```
@@ -19412,7 +19412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessModelGeminiModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessModelGeminiModelConfigOutputReference
 ```
@@ -19839,7 +19839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessModelList
 ```
@@ -19999,7 +19999,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessModelOpenaiModelConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessModelOpenaiModelConfigList
 ```
@@ -20159,7 +20159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessModelOpenaiModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference
 ```
@@ -20557,7 +20557,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessModelOutputReference
 ```
@@ -20950,7 +20950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessSkillList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessSkillList
 ```
@@ -21110,7 +21110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessSkillOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessSkillOutputReference
 ```
@@ -21399,7 +21399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPromptList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessSystemPromptList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessSystemPromptList
 ```
@@ -21559,7 +21559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPromptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessSystemPromptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessSystemPromptOutputReference
 ```
@@ -21848,7 +21848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreHarnessTimeoutsOutputReference
 ```
@@ -22184,7 +22184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreBrowserList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigAgentcoreBrowserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessToolConfigAgentcoreBrowserList
 ```
@@ -22344,7 +22344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreBrowserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigAgentcoreBrowserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessToolConfigAgentcoreBrowserOutputReference
 ```
@@ -22640,7 +22640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreterList
 ```
@@ -22800,7 +22800,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreterOutputReference
 ```
@@ -23096,7 +23096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigAgentcoreGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessToolConfigAgentcoreGatewayList
 ```
@@ -23256,7 +23256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthList
 ```
@@ -23416,7 +23416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauthList
 ```
@@ -23576,7 +23576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauthOutputReference
 ```
@@ -23974,7 +23974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOutputReference
 ```
@@ -24341,7 +24341,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigAgentcoreGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutputReference
 ```
@@ -24672,7 +24672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigInlineFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigInlineFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessToolConfigInlineFunctionList
 ```
@@ -24832,7 +24832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigInlineFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigInlineFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessToolConfigInlineFunctionOutputReference
 ```
@@ -25143,7 +25143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessToolConfigList
 ```
@@ -25303,7 +25303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessToolConfigOutputReference
 ```
@@ -25780,7 +25780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigRemoteMcpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigRemoteMcpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessToolConfigRemoteMcpList
 ```
@@ -25940,7 +25940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigRemoteMcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolConfigRemoteMcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessToolConfigRemoteMcpOutputReference
 ```
@@ -26258,7 +26258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessToolList
 ```
@@ -26418,7 +26418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessToolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessToolOutputReference
 ```
@@ -26778,7 +26778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessTruncationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessTruncationConfigList
 ```
@@ -26938,7 +26938,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessTruncationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessTruncationConfigOutputReference
 ```
@@ -27289,7 +27289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSlidingWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessTruncationConfigSlidingWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessTruncationConfigSlidingWindowList
 ```
@@ -27449,7 +27449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSlidingWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessTruncationConfigSlidingWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessTruncationConfigSlidingWindowOutputReference
 ```
@@ -27745,7 +27745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarizationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessTruncationConfigSummarizationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessTruncationConfigSummarizationList
 ```
@@ -27905,7 +27905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessTruncationConfigSummarizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessTruncationConfigSummarizationOutputReference
 ```
@@ -28259,7 +28259,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessTruncationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreHarnessTruncationList
 ```
@@ -28419,7 +28419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreharness"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreharness"
 
 bedrockagentcoreharness.NewBedrockagentcoreHarnessTruncationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreHarnessTruncationOutputReference
 ```

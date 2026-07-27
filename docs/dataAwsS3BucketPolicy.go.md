@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.NewDataAwsS3BucketPolicy(scope Construct, id *string, config DataAwsS3BucketPolicyConfig) DataAwsS3BucketPolicy
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketpolicy"
 
 &dataawss3bucketpolicy.DataAwsS3BucketPolicyConfig {
 	Connection: interface{},

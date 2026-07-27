@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devicefarminstanceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devicefarminstanceprofile"
 
 devicefarminstanceprofile.NewDevicefarmInstanceProfile(scope Construct, id *string, config DevicefarmInstanceProfileConfig) DevicefarmInstanceProfile
 ```
@@ -456,7 +456,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devicefarminstanceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devicefarminstanceprofile"
 
 devicefarminstanceprofile.DevicefarmInstanceProfile_IsConstruct(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devicefarminstanceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devicefarminstanceprofile"
 
 devicefarminstanceprofile.DevicefarmInstanceProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ devicefarminstanceprofile.DevicefarmInstanceProfile_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devicefarminstanceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devicefarminstanceprofile"
 
 devicefarminstanceprofile.DevicefarmInstanceProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ devicefarminstanceprofile.DevicefarmInstanceProfile_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devicefarminstanceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devicefarminstanceprofile"
 
 devicefarminstanceprofile.DevicefarmInstanceProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -954,7 +954,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/devicefarminstanceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/devicefarminstanceprofile"
 
 &devicefarminstanceprofile.DevicefarmInstanceProfileConfig {
 	Connection: interface{},

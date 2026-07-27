@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollectionGroup.OpensearchserverlessCollectionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollectiongroup"
 
 opensearchserverlesscollectiongroup.NewOpensearchserverlessCollectionGroup(scope Construct, id *string, config OpensearchserverlessCollectionGroupConfig) OpensearchserverlessCollectionGroup
 ```
@@ -448,7 +448,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchserverlessCollectionGroup.OpensearchserverlessCollectionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollectiongroup"
 
 opensearchserverlesscollectiongroup.OpensearchserverlessCollectionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchserverlessCollectionGroup.OpensearchserverlessCollectionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollectiongroup"
 
 opensearchserverlesscollectiongroup.OpensearchserverlessCollectionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ opensearchserverlesscollectiongroup.OpensearchserverlessCollectionGroup_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchserverlessCollectionGroup.OpensearchserverlessCollectionGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollectiongroup"
 
 opensearchserverlesscollectiongroup.OpensearchserverlessCollectionGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ opensearchserverlesscollectiongroup.OpensearchserverlessCollectionGroup_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchserverlessCollectionGroup.OpensearchserverlessCollectionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollectiongroup"
 
 opensearchserverlesscollectiongroup.OpensearchserverlessCollectionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessCollectionGroup.OpensearchserverlessCollectionGroupCapacityLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollectiongroup"
 
 &opensearchserverlesscollectiongroup.OpensearchserverlessCollectionGroupCapacityLimits {
 	MaxIndexingCapacityInOcu: *f64,
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessCollectionGroup.OpensearchserverlessCollectionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollectiongroup"
 
 &opensearchserverlesscollectiongroup.OpensearchserverlessCollectionGroupConfig {
 	Connection: interface{},
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollectionGroup.OpensearchserverlessCollectionGroupCapacityLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollectiongroup"
 
 opensearchserverlesscollectiongroup.NewOpensearchserverlessCollectionGroupCapacityLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpensearchserverlessCollectionGroupCapacityLimitsList
 ```
@@ -1381,7 +1381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollectionGroup.OpensearchserverlessCollectionGroupCapacityLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollectiongroup"
 
 opensearchserverlesscollectiongroup.NewOpensearchserverlessCollectionGroupCapacityLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpensearchserverlessCollectionGroupCapacityLimitsOutputReference
 ```

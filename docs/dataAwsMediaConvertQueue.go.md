@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmediaconvertqueue"
 
 dataawsmediaconvertqueue.NewDataAwsMediaConvertQueue(scope Construct, id *string, config DataAwsMediaConvertQueueConfig) DataAwsMediaConvertQueue
 ```
@@ -312,7 +312,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmediaconvertqueue"
 
 dataawsmediaconvertqueue.DataAwsMediaConvertQueue_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmediaconvertqueue"
 
 dataawsmediaconvertqueue.DataAwsMediaConvertQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsmediaconvertqueue.DataAwsMediaConvertQueue_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmediaconvertqueue"
 
 dataawsmediaconvertqueue.DataAwsMediaConvertQueue_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsmediaconvertqueue.DataAwsMediaConvertQueue_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmediaconvertqueue"
 
 dataawsmediaconvertqueue.DataAwsMediaConvertQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmediaconvertqueue"
 
 &dataawsmediaconvertqueue.DataAwsMediaConvertQueueConfig {
 	Connection: interface{},

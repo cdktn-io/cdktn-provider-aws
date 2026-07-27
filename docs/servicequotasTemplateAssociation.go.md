@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicequotastemplateassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotastemplateassociation"
 
 servicequotastemplateassociation.NewServicequotasTemplateAssociation(scope Construct, id *string, config ServicequotasTemplateAssociationConfig) ServicequotasTemplateAssociation
 ```
@@ -414,7 +414,7 @@ func ResetSkipDestroy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicequotastemplateassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotastemplateassociation"
 
 servicequotastemplateassociation.ServicequotasTemplateAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicequotastemplateassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotastemplateassociation"
 
 servicequotastemplateassociation.ServicequotasTemplateAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ servicequotastemplateassociation.ServicequotasTemplateAssociation_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicequotastemplateassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotastemplateassociation"
 
 servicequotastemplateassociation.ServicequotasTemplateAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ servicequotastemplateassociation.ServicequotasTemplateAssociation_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicequotastemplateassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotastemplateassociation"
 
 servicequotastemplateassociation.ServicequotasTemplateAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicequotastemplateassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotastemplateassociation"
 
 &servicequotastemplateassociation.ServicequotasTemplateAssociationConfig {
 	Connection: interface{},

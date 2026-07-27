@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionsschema"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsschema"
 
 verifiedpermissionsschema.NewVerifiedpermissionsSchema(scope Construct, id *string, config VerifiedpermissionsSchemaConfig) VerifiedpermissionsSchema
 ```
@@ -427,7 +427,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionsschema"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsschema"
 
 verifiedpermissionsschema.VerifiedpermissionsSchema_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionsschema"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsschema"
 
 verifiedpermissionsschema.VerifiedpermissionsSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ verifiedpermissionsschema.VerifiedpermissionsSchema_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionsschema"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsschema"
 
 verifiedpermissionsschema.VerifiedpermissionsSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ verifiedpermissionsschema.VerifiedpermissionsSchema_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionsschema"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsschema"
 
 verifiedpermissionsschema.VerifiedpermissionsSchema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionsschema"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsschema"
 
 &verifiedpermissionsschema.VerifiedpermissionsSchemaConfig {
 	Connection: interface{},
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionsschema"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsschema"
 
 &verifiedpermissionsschema.VerifiedpermissionsSchemaDefinition {
 	Value: *string,
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionsschema"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsschema"
 
 verifiedpermissionsschema.NewVerifiedpermissionsSchemaDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsSchemaDefinitionList
 ```
@@ -1146,7 +1146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/verifiedpermissionsschema"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsschema"
 
 verifiedpermissionsschema.NewVerifiedpermissionsSchemaDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsSchemaDefinitionOutputReference
 ```

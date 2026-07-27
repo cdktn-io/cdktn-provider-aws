@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.NewDataAwsCognitoUserPoolClient(scope Construct, id *string, config DataAwsCognitoUserPoolClientConfig) DataAwsCognitoUserPoolClient
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.DataAwsCognitoUserPoolClient_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.DataAwsCognitoUserPoolClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawscognitouserpoolclient.DataAwsCognitoUserPoolClient_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.DataAwsCognitoUserPoolClient_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawscognitouserpoolclient.DataAwsCognitoUserPoolClient_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.DataAwsCognitoUserPoolClient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -909,7 +909,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientAnalyticsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 &dataawscognitouserpoolclient.DataAwsCognitoUserPoolClientAnalyticsConfiguration {
 
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpool
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 &dataawscognitouserpoolclient.DataAwsCognitoUserPoolClientConfig {
 	Connection: interface{},
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientRefreshTokenRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 &dataawscognitouserpoolclient.DataAwsCognitoUserPoolClientRefreshTokenRotation {
 
@@ -1098,7 +1098,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpool
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientTokenValidityUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 &dataawscognitouserpoolclient.DataAwsCognitoUserPoolClientTokenValidityUnits {
 
@@ -1113,7 +1113,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpool
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientAnalyticsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.NewDataAwsCognitoUserPoolClientAnalyticsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCognitoUserPoolClientAnalyticsConfigurationList
 ```
@@ -1262,7 +1262,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.NewDataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference
 ```
@@ -1584,7 +1584,7 @@ func InternalValue() DataAwsCognitoUserPoolClientAnalyticsConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientRefreshTokenRotationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.NewDataAwsCognitoUserPoolClientRefreshTokenRotationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCognitoUserPoolClientRefreshTokenRotationList
 ```
@@ -1733,7 +1733,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientRefreshTokenRotationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.NewDataAwsCognitoUserPoolClientRefreshTokenRotationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCognitoUserPoolClientRefreshTokenRotationOutputReference
 ```
@@ -2022,7 +2022,7 @@ func InternalValue() DataAwsCognitoUserPoolClientRefreshTokenRotation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientTokenValidityUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.NewDataAwsCognitoUserPoolClientTokenValidityUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCognitoUserPoolClientTokenValidityUnitsList
 ```
@@ -2171,7 +2171,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientTokenValidityUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscognitouserpoolclient"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscognitouserpoolclient"
 
 dataawscognitouserpoolclient.NewDataAwsCognitoUserPoolClientTokenValidityUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCognitoUserPoolClientTokenValidityUnitsOutputReference
 ```

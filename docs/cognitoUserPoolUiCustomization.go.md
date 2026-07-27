@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpooluicustomization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpooluicustomization"
 
 cognitouserpooluicustomization.NewCognitoUserPoolUiCustomization(scope Construct, id *string, config CognitoUserPoolUiCustomizationConfig) CognitoUserPoolUiCustomization
 ```
@@ -435,7 +435,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpooluicustomization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpooluicustomization"
 
 cognitouserpooluicustomization.CognitoUserPoolUiCustomization_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpooluicustomization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpooluicustomization"
 
 cognitouserpooluicustomization.CognitoUserPoolUiCustomization_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ cognitouserpooluicustomization.CognitoUserPoolUiCustomization_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpooluicustomization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpooluicustomization"
 
 cognitouserpooluicustomization.CognitoUserPoolUiCustomization_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ cognitouserpooluicustomization.CognitoUserPoolUiCustomization_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpooluicustomization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpooluicustomization"
 
 cognitouserpooluicustomization.CognitoUserPoolUiCustomization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -900,7 +900,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitouserpooluicustomization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitouserpooluicustomization"
 
 &cognitouserpooluicustomization.CognitoUserPoolUiCustomizationConfig {
 	Connection: interface{},

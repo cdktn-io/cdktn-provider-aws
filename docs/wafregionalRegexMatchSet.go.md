@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 wafregionalregexmatchset.NewWafregionalRegexMatchSet(scope Construct, id *string, config WafregionalRegexMatchSetConfig) WafregionalRegexMatchSet
 ```
@@ -434,7 +434,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 wafregionalregexmatchset.WafregionalRegexMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 wafregionalregexmatchset.WafregionalRegexMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ wafregionalregexmatchset.WafregionalRegexMatchSet_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 wafregionalregexmatchset.WafregionalRegexMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ wafregionalregexmatchset.WafregionalRegexMatchSet_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 wafregionalregexmatchset.WafregionalRegexMatchSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 &wafregionalregexmatchset.WafregionalRegexMatchSetConfig {
 	Connection: interface{},
@@ -976,10 +976,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTuple.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 &wafregionalregexmatchset.WafregionalRegexMatchSetRegexMatchTuple {
-	FieldToMatch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTupleFieldToMatch,
+	FieldToMatch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTupleFieldToMatch,
 	RegexPatternSetId: *string,
 	TextTransformation: *string,
 }
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTupleFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 &wafregionalregexmatchset.WafregionalRegexMatchSetRegexMatchTupleFieldToMatch {
 	Type: *string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 wafregionalregexmatchset.NewWafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputReference
 ```
@@ -1386,7 +1386,7 @@ func InternalValue() WafregionalRegexMatchSetRegexMatchTupleFieldToMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTupleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 wafregionalregexmatchset.NewWafregionalRegexMatchSetRegexMatchTupleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalRegexMatchSetRegexMatchTupleList
 ```
@@ -1546,7 +1546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTupleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexmatchset"
 
 wafregionalregexmatchset.NewWafregionalRegexMatchSetRegexMatchTupleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalRegexMatchSetRegexMatchTupleOutputReference
 ```

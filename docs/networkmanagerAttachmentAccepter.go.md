@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerattachmentaccepter"
 
 networkmanagerattachmentaccepter.NewNetworkmanagerAttachmentAccepter(scope Construct, id *string, config NetworkmanagerAttachmentAccepterConfig) NetworkmanagerAttachmentAccepter
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerattachmentaccepter"
 
 networkmanagerattachmentaccepter.NetworkmanagerAttachmentAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerattachmentaccepter"
 
 networkmanagerattachmentaccepter.NetworkmanagerAttachmentAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ networkmanagerattachmentaccepter.NetworkmanagerAttachmentAccepter_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerattachmentaccepter"
 
 networkmanagerattachmentaccepter.NetworkmanagerAttachmentAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ networkmanagerattachmentaccepter.NetworkmanagerAttachmentAccepter_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerattachmentaccepter"
 
 networkmanagerattachmentaccepter.NetworkmanagerAttachmentAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -903,7 +903,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerattachmentaccepter"
 
 &networkmanagerattachmentaccepter.NetworkmanagerAttachmentAccepterConfig {
 	Connection: interface{},
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerattachme
 	AttachmentId: *string,
 	AttachmentType: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterTimeouts,
 }
 ```
 
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerattachmentaccepter"
 
 &networkmanagerattachmentaccepter.NetworkmanagerAttachmentAccepterTimeouts {
 	Create: *string,
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerattachmentaccepter"
 
 networkmanagerattachmentaccepter.NewNetworkmanagerAttachmentAccepterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerAttachmentAccepterTimeoutsOutputReference
 ```

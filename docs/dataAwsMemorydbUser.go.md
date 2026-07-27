@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmemorydbuser"
 
 dataawsmemorydbuser.NewDataAwsMemorydbUser(scope Construct, id *string, config DataAwsMemorydbUserConfig) DataAwsMemorydbUser
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmemorydbuser"
 
 dataawsmemorydbuser.DataAwsMemorydbUser_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmemorydbuser"
 
 dataawsmemorydbuser.DataAwsMemorydbUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsmemorydbuser.DataAwsMemorydbUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmemorydbuser"
 
 dataawsmemorydbuser.DataAwsMemorydbUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsmemorydbuser.DataAwsMemorydbUser_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmemorydbuser"
 
 dataawsmemorydbuser.DataAwsMemorydbUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmemorydbuser"
 
 &dataawsmemorydbuser.DataAwsMemorydbUserAuthenticationMode {
 
@@ -731,7 +731,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbuser"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmemorydbuser"
 
 &dataawsmemorydbuser.DataAwsMemorydbUserConfig {
 	Connection: interface{},
@@ -896,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmemorydbuser"
 
 dataawsmemorydbuser.NewDataAwsMemorydbUserAuthenticationModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbUserAuthenticationModeList
 ```
@@ -1045,7 +1045,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmemorydbuser"
 
 dataawsmemorydbuser.NewDataAwsMemorydbUserAuthenticationModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbUserAuthenticationModeOutputReference
 ```

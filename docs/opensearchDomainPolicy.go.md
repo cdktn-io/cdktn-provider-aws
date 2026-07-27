@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainpolicy"
 
 opensearchdomainpolicy.NewOpensearchDomainPolicy(scope Construct, id *string, config OpensearchDomainPolicyConfig) OpensearchDomainPolicy
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainpolicy"
 
 opensearchdomainpolicy.OpensearchDomainPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainpolicy"
 
 opensearchdomainpolicy.OpensearchDomainPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ opensearchdomainpolicy.OpensearchDomainPolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainpolicy"
 
 opensearchdomainpolicy.OpensearchDomainPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ opensearchdomainpolicy.OpensearchDomainPolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainpolicy"
 
 opensearchdomainpolicy.OpensearchDomainPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainpolicy"
 
 &opensearchdomainpolicy.OpensearchDomainPolicyConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainpolicy
 	DomainName: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts,
 }
 ```
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainpolicy"
 
 &opensearchdomainpolicy.OpensearchDomainPolicyTimeouts {
 	Delete: *string,
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchdomainpolicy"
 
 opensearchdomainpolicy.NewOpensearchDomainPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainPolicyTimeoutsOutputReference
 ```

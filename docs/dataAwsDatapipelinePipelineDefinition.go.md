@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinition(scope Construct, id *string, config DataAwsDatapipelinePipelineDefinitionConfig) DataAwsDatapipelinePipelineDefinition
 ```
@@ -332,7 +332,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinition_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinition_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -709,7 +709,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 &dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinitionConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionParameterObject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 &dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinitionParameterObject {
 
@@ -887,7 +887,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepip
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionParameterObjectAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 &dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinitionParameterObjectAttribute {
 
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepip
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionParameterValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 &dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinitionParameterValue {
 
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepip
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionPipelineObject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 &dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinitionPipelineObject {
 
@@ -926,7 +926,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepip
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionPipelineObjectField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 &dataawsdatapipelinepipelinedefinition.DataAwsDatapipelinePipelineDefinitionPipelineObjectField {
 
@@ -941,7 +941,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepip
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionParameterObjectAttributeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinitionParameterObjectAttributeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDatapipelinePipelineDefinitionParameterObjectAttributeList
 ```
@@ -1090,7 +1090,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionParameterObjectAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinitionParameterObjectAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDatapipelinePipelineDefinitionParameterObjectAttributeOutputReference
 ```
@@ -1379,7 +1379,7 @@ func InternalValue() DataAwsDatapipelinePipelineDefinitionParameterObjectAttribu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionParameterObjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinitionParameterObjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDatapipelinePipelineDefinitionParameterObjectList
 ```
@@ -1528,7 +1528,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionParameterObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinitionParameterObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDatapipelinePipelineDefinitionParameterObjectOutputReference
 ```
@@ -1817,7 +1817,7 @@ func InternalValue() DataAwsDatapipelinePipelineDefinitionParameterObject
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionParameterValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinitionParameterValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDatapipelinePipelineDefinitionParameterValueList
 ```
@@ -1977,7 +1977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionParameterValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinitionParameterValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDatapipelinePipelineDefinitionParameterValueOutputReference
 ```
@@ -2266,7 +2266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionPipelineObjectFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinitionPipelineObjectFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDatapipelinePipelineDefinitionPipelineObjectFieldList
 ```
@@ -2415,7 +2415,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionPipelineObjectFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinitionPipelineObjectFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDatapipelinePipelineDefinitionPipelineObjectFieldOutputReference
 ```
@@ -2715,7 +2715,7 @@ func InternalValue() DataAwsDatapipelinePipelineDefinitionPipelineObjectField
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionPipelineObjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinitionPipelineObjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDatapipelinePipelineDefinitionPipelineObjectList
 ```
@@ -2864,7 +2864,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinitionPipelineObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdatapipelinepipelinedefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdatapipelinepipelinedefinition"
 
 dataawsdatapipelinepipelinedefinition.NewDataAwsDatapipelinePipelineDefinitionPipelineObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDatapipelinePipelineDefinitionPipelineObjectOutputReference
 ```

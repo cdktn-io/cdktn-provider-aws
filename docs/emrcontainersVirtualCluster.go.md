@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.NewEmrcontainersVirtualCluster(scope Construct, id *string, config EmrcontainersVirtualClusterConfig) EmrcontainersVirtualCluster
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.EmrcontainersVirtualCluster_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.EmrcontainersVirtualCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ emrcontainersvirtualcluster.EmrcontainersVirtualCluster_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.EmrcontainersVirtualCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ emrcontainersvirtualcluster.EmrcontainersVirtualCluster_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.EmrcontainersVirtualCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 &emrcontainersvirtualcluster.EmrcontainersVirtualClusterConfig {
 	Connection: interface{},
@@ -925,13 +925,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcl
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ContainerProvider: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProvider,
+	ContainerProvider: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProvider,
 	Name: *string,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeouts,
 }
 ```
 
@@ -1124,11 +1124,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 &emrcontainersvirtualcluster.EmrcontainersVirtualClusterContainerProvider {
 	Id: *string,
-	Info: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfo,
+	Info: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfo,
 	Type: *string,
 }
 ```
@@ -1189,10 +1189,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 &emrcontainersvirtualcluster.EmrcontainersVirtualClusterContainerProviderInfo {
-	EksInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfoEksInfo,
+	EksInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfoEksInfo,
 }
 ```
 
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfoEksInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 &emrcontainersvirtualcluster.EmrcontainersVirtualClusterContainerProviderInfoEksInfo {
 	Namespace: *string,
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 &emrcontainersvirtualcluster.EmrcontainersVirtualClusterTimeouts {
 	Delete: *string,
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.NewEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference
 ```
@@ -1567,7 +1567,7 @@ func InternalValue() EmrcontainersVirtualClusterContainerProviderInfoEksInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.NewEmrcontainersVirtualClusterContainerProviderInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersVirtualClusterContainerProviderInfoOutputReference
 ```
@@ -1851,7 +1851,7 @@ func InternalValue() EmrcontainersVirtualClusterContainerProviderInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.NewEmrcontainersVirtualClusterContainerProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersVirtualClusterContainerProviderOutputReference
 ```
@@ -2179,7 +2179,7 @@ func InternalValue() EmrcontainersVirtualClusterContainerProvider
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrcontainersvirtualcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.NewEmrcontainersVirtualClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersVirtualClusterTimeoutsOutputReference
 ```

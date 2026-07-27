@@ -13,7 +13,7 @@ const project = new CdktnProviderProject({
   minNodeVersion: "24.11.0", // first Node 24 LTS; Node 20 went EOL 2026-04-30
   typescriptVersion: "~5.9.0", // JSII and TS should always use the same major/minor version range
   jsiiVersion: "~5.9.0", // JSII and TS should always use the same major/minor version range
-  devDeps: ["@cdktn/provider-project@^0.8.0"],
+  devDeps: ["@cdktn/provider-project@^0.9.0"],
   isDeprecated: false,
   npmTrustedPublishing: true,
   pypiTrustedPublishing: true,

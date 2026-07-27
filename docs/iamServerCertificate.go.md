@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamServerCertificate.IamServerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamservercertificate"
 
 iamservercertificate.NewIamServerCertificate(scope Construct, id *string, config IamServerCertificateConfig) IamServerCertificate
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iamServerCertificate.IamServerCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamservercertificate"
 
 iamservercertificate.IamServerCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iamServerCertificate.IamServerCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamservercertificate"
 
 iamservercertificate.IamServerCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ iamservercertificate.IamServerCertificate_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iamServerCertificate.IamServerCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamservercertificate"
 
 iamservercertificate.IamServerCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ iamservercertificate.IamServerCertificate_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iamServerCertificate.IamServerCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamservercertificate"
 
 iamservercertificate.IamServerCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1011,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamservercertificate"
 
 &iamservercertificate.IamServerCertificateConfig {
 	Connection: interface{},
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservercertificate"
 	Path: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.iamServerCertificate.IamServerCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.iamServerCertificate.IamServerCertificateTimeouts,
 }
 ```
 
@@ -1258,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamServerCertificate.IamServerCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamservercertificate"
 
 &iamservercertificate.IamServerCertificateTimeouts {
 	Delete: *string,
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamServerCertificate.IamServerCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamservercertificate"
 
 iamservercertificate.NewIamServerCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamServerCertificateTimeoutsOutputReference
 ```

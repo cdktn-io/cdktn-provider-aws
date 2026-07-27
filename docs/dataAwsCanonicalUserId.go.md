@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscanonicaluserid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscanonicaluserid"
 
 dataawscanonicaluserid.NewDataAwsCanonicalUserId(scope Construct, id *string, config DataAwsCanonicalUserIdConfig) DataAwsCanonicalUserId
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscanonicaluserid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscanonicaluserid"
 
 dataawscanonicaluserid.DataAwsCanonicalUserId_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscanonicaluserid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscanonicaluserid"
 
 dataawscanonicaluserid.DataAwsCanonicalUserId_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawscanonicaluserid.DataAwsCanonicalUserId_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscanonicaluserid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscanonicaluserid"
 
 dataawscanonicaluserid.DataAwsCanonicalUserId_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawscanonicaluserid.DataAwsCanonicalUserId_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscanonicaluserid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscanonicaluserid"
 
 dataawscanonicaluserid.DataAwsCanonicalUserId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscanonicaluserid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscanonicaluserid"
 
 &dataawscanonicaluserid.DataAwsCanonicalUserIdConfig {
 	Connection: interface{},

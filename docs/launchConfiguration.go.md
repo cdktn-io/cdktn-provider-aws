@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.launchConfiguration.LaunchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.NewLaunchConfiguration(scope Construct, id *string, config LaunchConfigurationConfig) LaunchConfiguration
 ```
@@ -578,7 +578,7 @@ func ResetUserDataBase64()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.launchConfiguration.LaunchConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.launchConfiguration.LaunchConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ launchconfiguration.LaunchConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.launchConfiguration.LaunchConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -638,7 +638,7 @@ launchconfiguration.LaunchConfiguration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.launchConfiguration.LaunchConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1318,7 +1318,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationConfig {
 	Connection: interface{},
@@ -1338,12 +1338,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
 	IamInstanceProfile: *string,
 	Id: *string,
 	KeyName: *string,
-	MetadataOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.launchConfiguration.LaunchConfigurationMetadataOptions,
+	MetadataOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.launchConfiguration.LaunchConfigurationMetadataOptions,
 	Name: *string,
 	NamePrefix: *string,
 	PlacementTenancy: *string,
 	Region: *string,
-	RootBlockDevice: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.launchConfiguration.LaunchConfigurationRootBlockDevice,
+	RootBlockDevice: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.launchConfiguration.LaunchConfigurationRootBlockDevice,
 	SecurityGroups: *[]*string,
 	SpotPrice: *string,
 	UserData: *string,
@@ -1713,7 +1713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationEbsBlockDevice {
 	DeviceName: *string,
@@ -1857,7 +1857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationEphemeralBlockDevice {
 	DeviceName: *string,
@@ -1917,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationMetadataOptions {
 	HttpEndpoint: *string,
@@ -1977,7 +1977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationRootBlockDevice {
 	DeleteOnTermination: interface{},
@@ -2081,7 +2081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchConfigurationEbsBlockDeviceList
 ```
@@ -2241,7 +2241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchConfigurationEbsBlockDeviceOutputReference
 ```
@@ -2762,7 +2762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchConfigurationEphemeralBlockDeviceList
 ```
@@ -2922,7 +2922,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchConfigurationEphemeralBlockDeviceOutputReference
 ```
@@ -3269,7 +3269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchConfigurationMetadataOptionsOutputReference
 ```
@@ -3605,7 +3605,7 @@ func InternalValue() LaunchConfigurationMetadataOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/launchconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationRootBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchConfigurationRootBlockDeviceOutputReference
 ```

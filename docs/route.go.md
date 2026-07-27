@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route.Route.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route"
 
 route.NewRoute(scope Construct, id *string, config RouteConfig) Route
 ```
@@ -532,7 +532,7 @@ func ResetVpcPeeringConnectionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route.Route.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route"
 
 route.Route_IsConstruct(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route.Route.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route"
 
 route.Route_IsTerraformElement(x interface{}) *bool
 ```
@@ -578,7 +578,7 @@ route.Route_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route.Route.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route"
 
 route.Route_IsTerraformResource(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ route.Route_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route.Route.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route"
 
 route.Route_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1261,7 +1261,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route.RouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route"
 
 &route.RouteConfig {
 	Connection: interface{},
@@ -1285,7 +1285,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route"
 	NetworkInterfaceId: *string,
 	OdbNetworkArn: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route.RouteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route.RouteTimeouts,
 	TransitGatewayId: *string,
 	VpcEndpointId: *string,
 	VpcPeeringConnectionId: *string,
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route.RouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route"
 
 &route.RouteTimeouts {
 	Create: *string,
@@ -1684,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route.RouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route"
 
 route.NewRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RouteTimeoutsOutputReference
 ```

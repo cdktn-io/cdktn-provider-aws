@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.NewDataAwsOpensearchserverlessSecurityConfig(scope Construct, id *string, config DataAwsOpensearchserverlessSecurityConfigConfig) DataAwsOpensearchserverlessSecurityConfig
 ```
@@ -365,7 +365,7 @@ func ResetSamlOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.DataAwsOpensearchserverlessSecurityConfig_IsConstruct(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.DataAwsOpensearchserverlessSecurityConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ dataawsopensearchserverlesssecurityconfig.DataAwsOpensearchserverlessSecurityCon
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.DataAwsOpensearchserverlessSecurityConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ dataawsopensearchserverlesssecurityconfig.DataAwsOpensearchserverlessSecurityCon
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.DataAwsOpensearchserverlessSecurityConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -797,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 &dataawsopensearchserverlesssecurityconfig.DataAwsOpensearchserverlessSecurityConfigConfig {
 	Connection: interface{},
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfigIamFederationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 &dataawsopensearchserverlesssecurityconfig.DataAwsOpensearchserverlessSecurityConfigIamFederationOptions {
 
@@ -995,7 +995,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserve
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfigIamIdentityCenterOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 &dataawsopensearchserverlesssecurityconfig.DataAwsOpensearchserverlessSecurityConfigIamIdentityCenterOptions {
 
@@ -1008,7 +1008,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserve
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfigSamlOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 &dataawsopensearchserverlesssecurityconfig.DataAwsOpensearchserverlessSecurityConfigSamlOptions {
 
@@ -1023,7 +1023,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserve
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfigIamFederationOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.NewDataAwsOpensearchserverlessSecurityConfigIamFederationOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchserverlessSecurityConfigIamFederationOptionsList
 ```
@@ -1183,7 +1183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfigIamFederationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.NewDataAwsOpensearchserverlessSecurityConfigIamFederationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchserverlessSecurityConfigIamFederationOptionsOutputReference
 ```
@@ -1472,7 +1472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfigIamIdentityCenterOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.NewDataAwsOpensearchserverlessSecurityConfigIamIdentityCenterOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchserverlessSecurityConfigIamIdentityCenterOptionsList
 ```
@@ -1632,7 +1632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfigIamIdentityCenterOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.NewDataAwsOpensearchserverlessSecurityConfigIamIdentityCenterOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchserverlessSecurityConfigIamIdentityCenterOptionsOutputReference
 ```
@@ -1932,7 +1932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfigSamlOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.NewDataAwsOpensearchserverlessSecurityConfigSamlOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchserverlessSecurityConfigSamlOptionsList
 ```
@@ -2092,7 +2092,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessSecurityConfig.DataAwsOpensearchserverlessSecurityConfigSamlOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesssecurityconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsopensearchserverlesssecurityconfig"
 
 dataawsopensearchserverlesssecurityconfig.NewDataAwsOpensearchserverlessSecurityConfigSamlOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchserverlessSecurityConfigSamlOptionsOutputReference
 ```
