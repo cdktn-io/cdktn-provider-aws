@@ -69,7 +69,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
-          node-version: 24.11.0
+          node-version: 24.18.0
           package-manager-cache: false
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
@@ -121,7 +121,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
-          node-version: 24.11.0
+          node-version: 22.11.0
       - name: Install
         run: pnpm install --frozen-lockfile
       - name: Check deprecation status
@@ -149,7 +149,7 @@ jobs:
     steps:
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
-          node-version: 24.11.0
+          node-version: 24.18.0
           package-manager-cache: false
       - name: Download build artifacts
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
@@ -252,7 +252,7 @@ jobs:
           java-version: "11"
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
-          node-version: 24.11.0
+          node-version: 24.18.0
           package-manager-cache: false
       - name: Download build artifacts
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
@@ -314,7 +314,7 @@ jobs:
     steps:
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
-          node-version: 24.11.0
+          node-version: 24.18.0
           package-manager-cache: false
       - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
         with:
@@ -373,7 +373,7 @@ jobs:
     steps:
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
-          node-version: 24.11.0
+          node-version: 24.18.0
           package-manager-cache: false
       - uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7
         with:
@@ -433,7 +433,7 @@ jobs:
     steps:
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
-          node-version: 24.11.0
+          node-version: 24.18.0
           package-manager-cache: false
       - uses: actions/setup-go@4a3601121dd01d1626a1e23e37211e3254c1c06c
         with:
