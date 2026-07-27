@@ -52,7 +52,7 @@
     "@action-validator/core": "^0.6.0",
     "@actions/core": "^3.0.0",
     "@cdktn/provider-project": "^0.9.0",
-    "@types/node": "^24",
+    "@types/node": "^22",
     "cdktn": "^0.23.0",
     "cdktn-cli": "^0.23.0",
     "commit-and-tag-version": "^12",
@@ -87,7 +87,7 @@
     "terraform"
   ],
   "engines": {
-    "node": ">= 24.11.0"
+    "node": ">= 22.11.0"
   },
   "devEngines": {
     "packageManager": {
