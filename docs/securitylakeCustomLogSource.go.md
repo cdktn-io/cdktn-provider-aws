@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSource(scope Construct, id *string, config SecuritylakeCustomLogSourceConfig) SecuritylakeCustomLogSource
 ```
@@ -441,7 +441,7 @@ func ResetSourceVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.SecuritylakeCustomLogSource_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.SecuritylakeCustomLogSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ securitylakecustomlogsource.SecuritylakeCustomLogSource_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.SecuritylakeCustomLogSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ securitylakecustomlogsource.SecuritylakeCustomLogSource_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.SecuritylakeCustomLogSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 &securitylakecustomlogsource.SecuritylakeCustomLogSourceAttributes {
 
@@ -886,7 +886,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogs
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 &securitylakecustomlogsource.SecuritylakeCustomLogSourceConfig {
 	Connection: interface{},
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 &securitylakecustomlogsource.SecuritylakeCustomLogSourceConfiguration {
 	CrawlerConfiguration: interface{},
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 &securitylakecustomlogsource.SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration {
 	RoleArn: *string,
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceConfigurationProviderIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 &securitylakecustomlogsource.SecuritylakeCustomLogSourceConfigurationProviderIdentity {
 	ExternalId: *string,
@@ -1190,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceProviderDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 &securitylakecustomlogsource.SecuritylakeCustomLogSourceProviderDetails {
 
@@ -1205,7 +1205,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSourceAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeCustomLogSourceAttributesList
 ```
@@ -1354,7 +1354,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSourceAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeCustomLogSourceAttributesOutputReference
 ```
@@ -1654,7 +1654,7 @@ func InternalValue() SecuritylakeCustomLogSourceAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSourceConfigurationCrawlerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationList
 ```
@@ -1814,7 +1814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputReference
 ```
@@ -2103,7 +2103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSourceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeCustomLogSourceConfigurationList
 ```
@@ -2263,7 +2263,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeCustomLogSourceConfigurationOutputReference
 ```
@@ -2614,7 +2614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceConfigurationProviderIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSourceConfigurationProviderIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeCustomLogSourceConfigurationProviderIdentityList
 ```
@@ -2774,7 +2774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceConfigurationProviderIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSourceConfigurationProviderIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeCustomLogSourceConfigurationProviderIdentityOutputReference
 ```
@@ -3085,7 +3085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceProviderDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSourceProviderDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeCustomLogSourceProviderDetailsList
 ```
@@ -3234,7 +3234,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeCustomLogSource.SecuritylakeCustomLogSourceProviderDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakecustomlogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securitylakecustomlogsource"
 
 securitylakecustomlogsource.NewSecuritylakeCustomLogSourceProviderDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeCustomLogSourceProviderDetailsOutputReference
 ```

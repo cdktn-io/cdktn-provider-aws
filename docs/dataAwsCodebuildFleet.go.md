@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleet(scope Construct, id *string, config DataAwsCodebuildFleetConfig) DataAwsCodebuildFleet
 ```
@@ -312,7 +312,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.DataAwsCodebuildFleet_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.DataAwsCodebuildFleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawscodebuildfleet.DataAwsCodebuildFleet_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.DataAwsCodebuildFleet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawscodebuildfleet.DataAwsCodebuildFleet_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.DataAwsCodebuildFleet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetComputeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetComputeConfiguration {
 
@@ -812,7 +812,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetConfig {
 	Connection: interface{},
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetScalingConfiguration {
 
@@ -971,7 +971,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigs {
 
@@ -984,7 +984,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetStatus {
 
@@ -997,7 +997,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetVpcConfig {
 
@@ -1012,7 +1012,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetComputeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetComputeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodebuildFleetComputeConfigurationList
 ```
@@ -1161,7 +1161,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetComputeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetComputeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodebuildFleetComputeConfigurationOutputReference
 ```
@@ -1483,7 +1483,7 @@ func InternalValue() DataAwsCodebuildFleetComputeConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetScalingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodebuildFleetScalingConfigurationList
 ```
@@ -1632,7 +1632,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetScalingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodebuildFleetScalingConfigurationOutputReference
 ```
@@ -1943,7 +1943,7 @@ func InternalValue() DataAwsCodebuildFleetScalingConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList
 ```
@@ -2092,7 +2092,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference
 ```
@@ -2381,7 +2381,7 @@ func InternalValue() DataAwsCodebuildFleetScalingConfigurationTargetTrackingScal
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodebuildFleetStatusList
 ```
@@ -2530,7 +2530,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodebuildFleetStatusOutputReference
 ```
@@ -2830,7 +2830,7 @@ func InternalValue() DataAwsCodebuildFleetStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetVpcConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetVpcConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodebuildFleetVpcConfigList
 ```
@@ -2979,7 +2979,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodebuildFleetVpcConfigOutputReference
 ```

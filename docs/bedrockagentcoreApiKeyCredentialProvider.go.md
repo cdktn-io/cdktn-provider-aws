@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreApiKeyCredentialProvider.BedrockagentcoreApiKeyCredentialProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreapikeycredentialprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreapikeycredentialprovider"
 
 bedrockagentcoreapikeycredentialprovider.NewBedrockagentcoreApiKeyCredentialProvider(scope Construct, id *string, config BedrockagentcoreApiKeyCredentialProviderConfig) BedrockagentcoreApiKeyCredentialProvider
 ```
@@ -435,7 +435,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreApiKeyCredentialProvider.BedrockagentcoreApiKeyCredentialProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreapikeycredentialprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreapikeycredentialprovider"
 
 bedrockagentcoreapikeycredentialprovider.BedrockagentcoreApiKeyCredentialProvider_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreApiKeyCredentialProvider.BedrockagentcoreApiKeyCredentialProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreapikeycredentialprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreapikeycredentialprovider"
 
 bedrockagentcoreapikeycredentialprovider.BedrockagentcoreApiKeyCredentialProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ bedrockagentcoreapikeycredentialprovider.BedrockagentcoreApiKeyCredentialProvide
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreApiKeyCredentialProvider.BedrockagentcoreApiKeyCredentialProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreapikeycredentialprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreapikeycredentialprovider"
 
 bedrockagentcoreapikeycredentialprovider.BedrockagentcoreApiKeyCredentialProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ bedrockagentcoreapikeycredentialprovider.BedrockagentcoreApiKeyCredentialProvide
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreApiKeyCredentialProvider.BedrockagentcoreApiKeyCredentialProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreapikeycredentialprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreapikeycredentialprovider"
 
 bedrockagentcoreapikeycredentialprovider.BedrockagentcoreApiKeyCredentialProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -889,7 +889,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreApiKeyCredentialProvider.BedrockagentcoreApiKeyCredentialProviderApiKeySecretArn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreapikeycredentialprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreapikeycredentialprovider"
 
 &bedrockagentcoreapikeycredentialprovider.BedrockagentcoreApiKeyCredentialProviderApiKeySecretArn {
 
@@ -902,7 +902,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreapikey
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreApiKeyCredentialProvider.BedrockagentcoreApiKeyCredentialProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreapikeycredentialprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreapikeycredentialprovider"
 
 &bedrockagentcoreapikeycredentialprovider.BedrockagentcoreApiKeyCredentialProviderConfig {
 	Connection: interface{},
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreApiKeyCredentialProvider.BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreapikeycredentialprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreapikeycredentialprovider"
 
 bedrockagentcoreapikeycredentialprovider.NewBedrockagentcoreApiKeyCredentialProviderApiKeySecretArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnList
 ```
@@ -1241,7 +1241,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreApiKeyCredentialProvider.BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreapikeycredentialprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreapikeycredentialprovider"
 
 bedrockagentcoreapikeycredentialprovider.NewBedrockagentcoreApiKeyCredentialProviderApiKeySecretArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnOutputReference
 ```

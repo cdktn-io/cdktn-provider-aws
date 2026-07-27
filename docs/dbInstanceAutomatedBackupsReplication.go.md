@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbinstanceautomatedbackupsreplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbinstanceautomatedbackupsreplication"
 
 dbinstanceautomatedbackupsreplication.NewDbInstanceAutomatedBackupsReplication(scope Construct, id *string, config DbInstanceAutomatedBackupsReplicationConfig) DbInstanceAutomatedBackupsReplication
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbinstanceautomatedbackupsreplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbinstanceautomatedbackupsreplication"
 
 dbinstanceautomatedbackupsreplication.DbInstanceAutomatedBackupsReplication_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbinstanceautomatedbackupsreplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbinstanceautomatedbackupsreplication"
 
 dbinstanceautomatedbackupsreplication.DbInstanceAutomatedBackupsReplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dbinstanceautomatedbackupsreplication.DbInstanceAutomatedBackupsReplication_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbinstanceautomatedbackupsreplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbinstanceautomatedbackupsreplication"
 
 dbinstanceautomatedbackupsreplication.DbInstanceAutomatedBackupsReplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ dbinstanceautomatedbackupsreplication.DbInstanceAutomatedBackupsReplication_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbinstanceautomatedbackupsreplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbinstanceautomatedbackupsreplication"
 
 dbinstanceautomatedbackupsreplication.DbInstanceAutomatedBackupsReplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -898,7 +898,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbinstanceautomatedbackupsreplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbinstanceautomatedbackupsreplication"
 
 &dbinstanceautomatedbackupsreplication.DbInstanceAutomatedBackupsReplicationConfig {
 	Connection: interface{},
@@ -914,7 +914,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbinstanceautomatedbac
 	PreSignedUrl: *string,
 	Region: *string,
 	RetentionPeriod: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplicationTimeouts,
 }
 ```
 
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbinstanceautomatedbackupsreplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbinstanceautomatedbackupsreplication"
 
 &dbinstanceautomatedbackupsreplication.DbInstanceAutomatedBackupsReplicationTimeouts {
 	Create: *string,
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbinstanceautomatedbackupsreplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbinstanceautomatedbackupsreplication"
 
 dbinstanceautomatedbackupsreplication.NewDbInstanceAutomatedBackupsReplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference
 ```

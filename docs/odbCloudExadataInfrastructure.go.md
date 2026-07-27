@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.NewOdbCloudExadataInfrastructure(scope Construct, id *string, config OdbCloudExadataInfrastructureConfig) OdbCloudExadataInfrastructure
 ```
@@ -509,7 +509,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructure.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.OdbCloudExadataInfrastructure_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.OdbCloudExadataInfrastructure_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ odbcloudexadatainfrastructure.OdbCloudExadataInfrastructure_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.OdbCloudExadataInfrastructure_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ odbcloudexadatainfrastructure.OdbCloudExadataInfrastructure_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructure.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.OdbCloudExadataInfrastructure_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1403,7 +1403,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 &odbcloudexadatainfrastructure.OdbCloudExadataInfrastructureConfig {
 	Connection: interface{},
@@ -1425,7 +1425,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrast
 	StorageCount: *f64,
 	StorageServerType: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureTimeouts,
 }
 ```
 
@@ -1721,7 +1721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureCustomerContactsToSendToOci.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 &odbcloudexadatainfrastructure.OdbCloudExadataInfrastructureCustomerContactsToSendToOci {
 	Email: *string,
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 &odbcloudexadatainfrastructure.OdbCloudExadataInfrastructureMaintenanceWindow {
 	CustomActionTimeoutInMins: *f64,
@@ -1897,7 +1897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 &odbcloudexadatainfrastructure.OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek {
 	Name: *string,
@@ -1929,7 +1929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureMaintenanceWindowMonths.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 &odbcloudexadatainfrastructure.OdbCloudExadataInfrastructureMaintenanceWindowMonths {
 	Name: *string,
@@ -1961,7 +1961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 &odbcloudexadatainfrastructure.OdbCloudExadataInfrastructureTimeouts {
 	Create: *string,
@@ -2029,7 +2029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureCustomerContactsToSendToOciList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.NewOdbCloudExadataInfrastructureCustomerContactsToSendToOciList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbCloudExadataInfrastructureCustomerContactsToSendToOciList
 ```
@@ -2189,7 +2189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.NewOdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference
 ```
@@ -2485,7 +2485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.NewOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekList
 ```
@@ -2645,7 +2645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.NewOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference
 ```
@@ -2941,7 +2941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureMaintenanceWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.NewOdbCloudExadataInfrastructureMaintenanceWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbCloudExadataInfrastructureMaintenanceWindowList
 ```
@@ -3101,7 +3101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureMaintenanceWindowMonthsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.NewOdbCloudExadataInfrastructureMaintenanceWindowMonthsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbCloudExadataInfrastructureMaintenanceWindowMonthsList
 ```
@@ -3261,7 +3261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.NewOdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputReference
 ```
@@ -3557,7 +3557,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.NewOdbCloudExadataInfrastructureMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbCloudExadataInfrastructureMaintenanceWindowOutputReference
 ```
@@ -4083,7 +4083,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbCloudExadataInfrastructure.OdbCloudExadataInfrastructureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbcloudexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbcloudexadatainfrastructure"
 
 odbcloudexadatainfrastructure.NewOdbCloudExadataInfrastructureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OdbCloudExadataInfrastructureTimeoutsOutputReference
 ```

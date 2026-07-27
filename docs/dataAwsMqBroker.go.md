@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBroker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBroker(scope Construct, id *string, config DataAwsMqBrokerConfig) DataAwsMqBroker
 ```
@@ -333,7 +333,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBroker.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.DataAwsMqBroker_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBroker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.DataAwsMqBroker_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsmqbroker.DataAwsMqBroker_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBroker.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.DataAwsMqBroker_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawsmqbroker.DataAwsMqBroker_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBroker.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.DataAwsMqBroker_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -930,7 +930,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 &dataawsmqbroker.DataAwsMqBrokerConfig {
 	Connection: interface{},
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 &dataawsmqbroker.DataAwsMqBrokerConfiguration {
 
@@ -1120,7 +1120,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 &dataawsmqbroker.DataAwsMqBrokerEncryptionOptions {
 
@@ -1133,7 +1133,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 &dataawsmqbroker.DataAwsMqBrokerInstances {
 
@@ -1146,7 +1146,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerLdapServerMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 &dataawsmqbroker.DataAwsMqBrokerLdapServerMetadata {
 
@@ -1159,7 +1159,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 &dataawsmqbroker.DataAwsMqBrokerLogs {
 
@@ -1172,7 +1172,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 &dataawsmqbroker.DataAwsMqBrokerMaintenanceWindowStartTime {
 
@@ -1185,7 +1185,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerSharedResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 &dataawsmqbroker.DataAwsMqBrokerSharedResources {
 
@@ -1198,7 +1198,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 &dataawsmqbroker.DataAwsMqBrokerUser {
 
@@ -1213,7 +1213,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerConfigurationList
 ```
@@ -1362,7 +1362,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerConfigurationOutputReference
 ```
@@ -1651,7 +1651,7 @@ func InternalValue() DataAwsMqBrokerConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerEncryptionOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerEncryptionOptionsList
 ```
@@ -1800,7 +1800,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerEncryptionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerEncryptionOptionsOutputReference
 ```
@@ -2089,7 +2089,7 @@ func InternalValue() DataAwsMqBrokerEncryptionOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerInstancesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerInstancesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerInstancesList
 ```
@@ -2238,7 +2238,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerInstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerInstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerInstancesOutputReference
 ```
@@ -2538,7 +2538,7 @@ func InternalValue() DataAwsMqBrokerInstances
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerLdapServerMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerLdapServerMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerLdapServerMetadataList
 ```
@@ -2687,7 +2687,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerLdapServerMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerLdapServerMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerLdapServerMetadataOutputReference
 ```
@@ -3075,7 +3075,7 @@ func InternalValue() DataAwsMqBrokerLdapServerMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerLogsList
 ```
@@ -3224,7 +3224,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerLogsOutputReference
 ```
@@ -3513,7 +3513,7 @@ func InternalValue() DataAwsMqBrokerLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerMaintenanceWindowStartTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerMaintenanceWindowStartTimeList
 ```
@@ -3662,7 +3662,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerMaintenanceWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference
 ```
@@ -3962,7 +3962,7 @@ func InternalValue() DataAwsMqBrokerMaintenanceWindowStartTime
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerSharedResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerSharedResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerSharedResourcesList
 ```
@@ -4111,7 +4111,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerSharedResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerSharedResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerSharedResourcesOutputReference
 ```
@@ -4422,7 +4422,7 @@ func InternalValue() DataAwsMqBrokerSharedResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerUserList
 ```
@@ -4571,7 +4571,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmqbroker"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmqbroker"
 
 dataawsmqbroker.NewDataAwsMqBrokerUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerUserOutputReference
 ```

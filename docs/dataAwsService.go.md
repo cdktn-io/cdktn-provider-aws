@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsService.DataAwsService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservice"
 
 dataawsservice.NewDataAwsService(scope Construct, id *string, config DataAwsServiceConfig) DataAwsService
 ```
@@ -340,7 +340,7 @@ func ResetServiceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsService.DataAwsService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservice"
 
 dataawsservice.DataAwsService_IsConstruct(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsService.DataAwsService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservice"
 
 dataawsservice.DataAwsService_IsTerraformElement(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawsservice.DataAwsService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsService.DataAwsService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservice"
 
 dataawsservice.DataAwsService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ dataawsservice.DataAwsService_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsService.DataAwsService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservice"
 
 dataawsservice.DataAwsService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -761,7 +761,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsService.DataAwsServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservice"
 
 &dataawsservice.DataAwsServiceConfig {
 	Connection: interface{},

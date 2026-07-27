@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetwork(scope Construct, id *string, config NetworkmanagerCoreNetworkConfig) NetworkmanagerCoreNetwork
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NetworkmanagerCoreNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NetworkmanagerCoreNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ networkmanagercorenetwork.NetworkmanagerCoreNetwork_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NetworkmanagerCoreNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ networkmanagercorenetwork.NetworkmanagerCoreNetwork_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NetworkmanagerCoreNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1011,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 &networkmanagercorenetwork.NetworkmanagerCoreNetworkConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetw
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkTimeouts,
 }
 ```
 
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkEdges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 &networkmanagercorenetwork.NetworkmanagerCoreNetworkEdges {
 
@@ -1257,7 +1257,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetw
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 &networkmanagercorenetwork.NetworkmanagerCoreNetworkSegments {
 
@@ -1270,7 +1270,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetw
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 &networkmanagercorenetwork.NetworkmanagerCoreNetworkTimeouts {
 	Create: *string,
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkEdgesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetworkEdgesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkmanagerCoreNetworkEdgesList
 ```
@@ -1481,7 +1481,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkEdgesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetworkEdgesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkmanagerCoreNetworkEdgesOutputReference
 ```
@@ -1781,7 +1781,7 @@ func InternalValue() NetworkmanagerCoreNetworkEdges
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetworkSegmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkmanagerCoreNetworkSegmentsList
 ```
@@ -1930,7 +1930,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetworkSegmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkmanagerCoreNetworkSegmentsOutputReference
 ```
@@ -2230,7 +2230,7 @@ func InternalValue() NetworkmanagerCoreNetworkSegments
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerCoreNetworkTimeoutsOutputReference
 ```

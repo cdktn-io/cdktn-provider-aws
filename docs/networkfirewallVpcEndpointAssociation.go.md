@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NewNetworkfirewallVpcEndpointAssociation(scope Construct, id *string, config NetworkfirewallVpcEndpointAssociationConfig) NetworkfirewallVpcEndpointAssociation
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociation_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociation_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -948,7 +948,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 &networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociationConfig {
 	Connection: interface{},
@@ -964,7 +964,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendp
 	Region: *string,
 	SubnetMapping: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationTimeouts,
 }
 ```
 
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationSubnetMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 &networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociationSubnetMapping {
 	SubnetId: *string,
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 &networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociationTimeouts {
 	Create: *string,
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 &networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatus {
 
@@ -1263,7 +1263,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendp
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 &networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncState {
 
@@ -1276,7 +1276,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendp
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 &networkfirewallvpcendpointassociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachment {
 
@@ -1291,7 +1291,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendp
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationSubnetMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NewNetworkfirewallVpcEndpointAssociationSubnetMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallVpcEndpointAssociationSubnetMappingList
 ```
@@ -1451,7 +1451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationSubnetMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NewNetworkfirewallVpcEndpointAssociationSubnetMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallVpcEndpointAssociationSubnetMappingOutputReference
 ```
@@ -1769,7 +1769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NewNetworkfirewallVpcEndpointAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference
 ```
@@ -2076,7 +2076,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NewNetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentList
 ```
@@ -2225,7 +2225,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NewNetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentOutputReference
 ```
@@ -2536,7 +2536,7 @@ func InternalValue() NetworkfirewallVpcEndpointAssociationVpcEndpointAssociation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NewNetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateList
 ```
@@ -2685,7 +2685,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NewNetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateOutputReference
 ```
@@ -2974,7 +2974,7 @@ func InternalValue() NetworkfirewallVpcEndpointAssociationVpcEndpointAssociation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NewNetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusList
 ```
@@ -3123,7 +3123,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallVpcEndpointAssociation.NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallvpcendpointassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallvpcendpointassociation"
 
 networkfirewallvpcendpointassociation.NewNetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusOutputReference
 ```

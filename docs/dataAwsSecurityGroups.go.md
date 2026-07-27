@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 dataawssecuritygroups.NewDataAwsSecurityGroups(scope Construct, id *string, config DataAwsSecurityGroupsConfig) DataAwsSecurityGroups
 ```
@@ -359,7 +359,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 dataawssecuritygroups.DataAwsSecurityGroups_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 dataawssecuritygroups.DataAwsSecurityGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ dataawssecuritygroups.DataAwsSecurityGroups_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 dataawssecuritygroups.DataAwsSecurityGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ dataawssecuritygroups.DataAwsSecurityGroups_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 dataawssecuritygroups.DataAwsSecurityGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 &dataawssecuritygroups.DataAwsSecurityGroupsConfig {
 	Connection: interface{},
@@ -783,7 +783,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts,
 }
 ```
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 &dataawssecuritygroups.DataAwsSecurityGroupsFilter {
 	Name: *string,
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 &dataawssecuritygroups.DataAwsSecurityGroupsTimeouts {
 	Read: *string,
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 dataawssecuritygroups.NewDataAwsSecurityGroupsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecurityGroupsFilterList
 ```
@@ -1190,7 +1190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 dataawssecuritygroups.NewDataAwsSecurityGroupsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecurityGroupsFilterOutputReference
 ```
@@ -1501,7 +1501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecuritygroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecuritygroups"
 
 dataawssecuritygroups.NewDataAwsSecurityGroupsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsSecurityGroupsTimeoutsOutputReference
 ```

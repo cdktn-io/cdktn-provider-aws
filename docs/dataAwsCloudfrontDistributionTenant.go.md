@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenant(scope Construct, id *string, config DataAwsCloudfrontDistributionTenantConfig) DataAwsCloudfrontDistributionTenant
 ```
@@ -326,7 +326,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenant.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenant_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenant_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenant_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenant.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenant_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenant_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 &dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenantConfig {
 	Connection: interface{},
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 &dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenantCustomizations {
 
@@ -965,7 +965,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 &dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenantCustomizationsCertificate {
 
@@ -978,7 +978,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsGeoRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 &dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenantCustomizationsGeoRestriction {
 
@@ -991,7 +991,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsWebAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 &dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenantCustomizationsWebAcl {
 
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 &dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenantDomains {
 
@@ -1017,7 +1017,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantManagedCertificateRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 &dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenantManagedCertificateRequest {
 
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 &dataawscloudfrontdistributiontenant.DataAwsCloudfrontDistributionTenantParameters {
 
@@ -1045,7 +1045,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantCustomizationsCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudfrontDistributionTenantCustomizationsCertificateList
 ```
@@ -1194,7 +1194,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantCustomizationsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudfrontDistributionTenantCustomizationsCertificateOutputReference
 ```
@@ -1472,7 +1472,7 @@ func InternalValue() DataAwsCloudfrontDistributionTenantCustomizationsCertificat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsGeoRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantCustomizationsGeoRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudfrontDistributionTenantCustomizationsGeoRestrictionList
 ```
@@ -1621,7 +1621,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsGeoRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantCustomizationsGeoRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudfrontDistributionTenantCustomizationsGeoRestrictionOutputReference
 ```
@@ -1910,7 +1910,7 @@ func InternalValue() DataAwsCloudfrontDistributionTenantCustomizationsGeoRestric
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantCustomizationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudfrontDistributionTenantCustomizationsList
 ```
@@ -2059,7 +2059,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantCustomizationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudfrontDistributionTenantCustomizationsOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() DataAwsCloudfrontDistributionTenantCustomizations
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsWebAclList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantCustomizationsWebAclList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudfrontDistributionTenantCustomizationsWebAclList
 ```
@@ -2508,7 +2508,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantCustomizationsWebAclOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantCustomizationsWebAclOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudfrontDistributionTenantCustomizationsWebAclOutputReference
 ```
@@ -2797,7 +2797,7 @@ func InternalValue() DataAwsCloudfrontDistributionTenantCustomizationsWebAcl
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudfrontDistributionTenantDomainsList
 ```
@@ -2946,7 +2946,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudfrontDistributionTenantDomainsOutputReference
 ```
@@ -3235,7 +3235,7 @@ func InternalValue() DataAwsCloudfrontDistributionTenantDomains
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantManagedCertificateRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantManagedCertificateRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudfrontDistributionTenantManagedCertificateRequestList
 ```
@@ -3384,7 +3384,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantManagedCertificateRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantManagedCertificateRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudfrontDistributionTenantManagedCertificateRequestOutputReference
 ```
@@ -3684,7 +3684,7 @@ func InternalValue() DataAwsCloudfrontDistributionTenantManagedCertificateReques
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudfrontDistributionTenantParametersList
 ```
@@ -3833,7 +3833,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontDistributionTenant.DataAwsCloudfrontDistributionTenantParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontdistributiontenant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontdistributiontenant"
 
 dataawscloudfrontdistributiontenant.NewDataAwsCloudfrontDistributionTenantParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudfrontDistributionTenantParametersOutputReference
 ```

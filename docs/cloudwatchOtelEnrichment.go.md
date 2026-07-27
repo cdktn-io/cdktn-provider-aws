@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchOtelEnrichment.CloudwatchOtelEnrichment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchotelenrichment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchotelenrichment"
 
 cloudwatchotelenrichment.NewCloudwatchOtelEnrichment(scope Construct, id *string, config CloudwatchOtelEnrichmentConfig) CloudwatchOtelEnrichment
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchOtelEnrichment.CloudwatchOtelEnrichment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchotelenrichment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchotelenrichment"
 
 cloudwatchotelenrichment.CloudwatchOtelEnrichment_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchOtelEnrichment.CloudwatchOtelEnrichment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchotelenrichment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchotelenrichment"
 
 cloudwatchotelenrichment.CloudwatchOtelEnrichment_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ cloudwatchotelenrichment.CloudwatchOtelEnrichment_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchOtelEnrichment.CloudwatchOtelEnrichment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchotelenrichment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchotelenrichment"
 
 cloudwatchotelenrichment.CloudwatchOtelEnrichment_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cloudwatchotelenrichment.CloudwatchOtelEnrichment_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchOtelEnrichment.CloudwatchOtelEnrichment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchotelenrichment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchotelenrichment"
 
 cloudwatchotelenrichment.CloudwatchOtelEnrichment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -771,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchOtelEnrichment.CloudwatchOtelEnrichmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchotelenrichment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchotelenrichment"
 
 &cloudwatchotelenrichment.CloudwatchOtelEnrichmentConfig {
 	Connection: interface{},
@@ -782,7 +782,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchotelenrichme
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.cloudwatchOtelEnrichment.CloudwatchOtelEnrichmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.cloudwatchOtelEnrichment.CloudwatchOtelEnrichmentTimeouts,
 }
 ```
 
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchOtelEnrichment.CloudwatchOtelEnrichmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchotelenrichment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchotelenrichment"
 
 &cloudwatchotelenrichment.CloudwatchOtelEnrichmentTimeouts {
 	Create: *string,
@@ -957,7 +957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchOtelEnrichment.CloudwatchOtelEnrichmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchotelenrichment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchotelenrichment"
 
 cloudwatchotelenrichment.NewCloudwatchOtelEnrichmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchOtelEnrichmentTimeoutsOutputReference
 ```

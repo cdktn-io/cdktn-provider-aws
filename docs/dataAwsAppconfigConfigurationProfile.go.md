@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.NewDataAwsAppconfigConfigurationProfile(scope Construct, id *string, config DataAwsAppconfigConfigurationProfileConfig) DataAwsAppconfigConfigurationProfile
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappconfigconfigurationprofile"
 
 &dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfileConfig {
 	Connection: interface{},
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileValidator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappconfigconfigurationprofile"
 
 &dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfileValidator {
 
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileValidatorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.NewDataAwsAppconfigConfigurationProfileValidatorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppconfigConfigurationProfileValidatorList
 ```
@@ -1125,7 +1125,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileValidatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.NewDataAwsAppconfigConfigurationProfileValidatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppconfigConfigurationProfileValidatorOutputReference
 ```

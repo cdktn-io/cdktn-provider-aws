@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.NewGuarddutyOrganizationConfigurationFeature(scope Construct, id *string, config GuarddutyOrganizationConfigurationFeatureConfig) GuarddutyOrganizationConfigurationFeature
 ```
@@ -434,7 +434,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeature_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeature.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeature_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyorganizationconfigurationfeature"
 
 &guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration {
 	AutoEnable: *string,
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyorganizationconfigurationfeature"
 
 &guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeatureConfig {
 	Connection: interface{},
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.NewGuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList
 ```
@@ -1256,7 +1256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.NewGuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOutputReference
 ```

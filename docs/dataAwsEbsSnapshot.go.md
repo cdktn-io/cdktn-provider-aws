@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 dataawsebssnapshot.NewDataAwsEbsSnapshot(scope Construct, id *string, config DataAwsEbsSnapshotConfig) DataAwsEbsSnapshot
 ```
@@ -387,7 +387,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 dataawsebssnapshot.DataAwsEbsSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 dataawsebssnapshot.DataAwsEbsSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ dataawsebssnapshot.DataAwsEbsSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 dataawsebssnapshot.DataAwsEbsSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ dataawsebssnapshot.DataAwsEbsSnapshot_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 dataawsebssnapshot.DataAwsEbsSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1006,7 +1006,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 &dataawsebssnapshot.DataAwsEbsSnapshotConfig {
 	Connection: interface{},
@@ -1024,7 +1024,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
 	RestorableByUserIds: *[]*string,
 	SnapshotIds: *[]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsEbsSnapshot.DataAwsEbsSnapshotTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsEbsSnapshot.DataAwsEbsSnapshotTimeouts,
 }
 ```
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 &dataawsebssnapshot.DataAwsEbsSnapshotFilter {
 	Name: *string,
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 &dataawsebssnapshot.DataAwsEbsSnapshotTimeouts {
 	Read: *string,
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 dataawsebssnapshot.NewDataAwsEbsSnapshotFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEbsSnapshotFilterList
 ```
@@ -1483,7 +1483,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 dataawsebssnapshot.NewDataAwsEbsSnapshotFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEbsSnapshotFilterOutputReference
 ```
@@ -1794,7 +1794,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebssnapshot"
 
 dataawsebssnapshot.NewDataAwsEbsSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEbsSnapshotTimeoutsOutputReference
 ```

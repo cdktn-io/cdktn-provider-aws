@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 dataawsvpcipampool.NewDataAwsVpcIpamPool(scope Construct, id *string, config DataAwsVpcIpamPoolConfig) DataAwsVpcIpamPool
 ```
@@ -373,7 +373,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 dataawsvpcipampool.DataAwsVpcIpamPool_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 dataawsvpcipampool.DataAwsVpcIpamPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ dataawsvpcipampool.DataAwsVpcIpamPool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 dataawsvpcipampool.DataAwsVpcIpamPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ dataawsvpcipampool.DataAwsVpcIpamPool_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 dataawsvpcipampool.DataAwsVpcIpamPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 &dataawsvpcipampool.DataAwsVpcIpamPoolConfig {
 	Connection: interface{},
@@ -986,7 +986,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
 	IpamPoolId: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeouts,
 }
 ```
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 &dataawsvpcipampool.DataAwsVpcIpamPoolFilter {
 	Name: *string,
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 &dataawsvpcipampool.DataAwsVpcIpamPoolSourceResource {
 
@@ -1238,7 +1238,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 &dataawsvpcipampool.DataAwsVpcIpamPoolTimeouts {
 	Read: *string,
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 dataawsvpcipampool.NewDataAwsVpcIpamPoolFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcIpamPoolFilterList
 ```
@@ -1432,7 +1432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 dataawsvpcipampool.NewDataAwsVpcIpamPoolFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcIpamPoolFilterOutputReference
 ```
@@ -1743,7 +1743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 dataawsvpcipampool.NewDataAwsVpcIpamPoolSourceResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcIpamPoolSourceResourceList
 ```
@@ -1892,7 +1892,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 dataawsvpcipampool.NewDataAwsVpcIpamPoolSourceResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcIpamPoolSourceResourceOutputReference
 ```
@@ -2203,7 +2203,7 @@ func InternalValue() DataAwsVpcIpamPoolSourceResource
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipampool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcipampool"
 
 dataawsvpcipampool.NewDataAwsVpcIpamPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsVpcIpamPoolTimeoutsOutputReference
 ```

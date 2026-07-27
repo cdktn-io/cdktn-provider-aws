@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcRouteServerEndpoint.VpcRouteServerEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserverendpoint"
 
 vpcrouteserverendpoint.NewVpcRouteServerEndpoint(scope Construct, id *string, config VpcRouteServerEndpointConfig) VpcRouteServerEndpoint
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcRouteServerEndpoint.VpcRouteServerEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserverendpoint"
 
 vpcrouteserverendpoint.VpcRouteServerEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcRouteServerEndpoint.VpcRouteServerEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserverendpoint"
 
 vpcrouteserverendpoint.VpcRouteServerEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ vpcrouteserverendpoint.VpcRouteServerEndpoint_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcRouteServerEndpoint.VpcRouteServerEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserverendpoint"
 
 vpcrouteserverendpoint.VpcRouteServerEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ vpcrouteserverendpoint.VpcRouteServerEndpoint_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcRouteServerEndpoint.VpcRouteServerEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserverendpoint"
 
 vpcrouteserverendpoint.VpcRouteServerEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcRouteServerEndpoint.VpcRouteServerEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserverendpoint"
 
 &vpcrouteserverendpoint.VpcRouteServerEndpointConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserverendpoint
 	SubnetId: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpcRouteServerEndpoint.VpcRouteServerEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpcRouteServerEndpoint.VpcRouteServerEndpointTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcRouteServerEndpoint.VpcRouteServerEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserverendpoint"
 
 &vpcrouteserverendpoint.VpcRouteServerEndpointTimeouts {
 	Create: *string,
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcRouteServerEndpoint.VpcRouteServerEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserverendpoint"
 
 vpcrouteserverendpoint.NewVpcRouteServerEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcRouteServerEndpointTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrstudiosessionmapping"
 
 emrstudiosessionmapping.NewEmrStudioSessionMapping(scope Construct, id *string, config EmrStudioSessionMappingConfig) EmrStudioSessionMapping
 ```
@@ -428,7 +428,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrstudiosessionmapping"
 
 &emrstudiosessionmapping.EmrStudioSessionMappingConfig {
 	Connection: interface{},

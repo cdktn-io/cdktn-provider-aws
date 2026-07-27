@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftNamespaceRegistration.RedshiftNamespaceRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftnamespaceregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftnamespaceregistration"
 
 redshiftnamespaceregistration.NewRedshiftNamespaceRegistration(scope Construct, id *string, config RedshiftNamespaceRegistrationConfig) RedshiftNamespaceRegistration
 ```
@@ -428,7 +428,7 @@ func ResetServerlessWorkgroupIdentifier()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftNamespaceRegistration.RedshiftNamespaceRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftnamespaceregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftnamespaceregistration"
 
 redshiftnamespaceregistration.RedshiftNamespaceRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftNamespaceRegistration.RedshiftNamespaceRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftnamespaceregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftnamespaceregistration"
 
 redshiftnamespaceregistration.RedshiftNamespaceRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ redshiftnamespaceregistration.RedshiftNamespaceRegistration_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftNamespaceRegistration.RedshiftNamespaceRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftnamespaceregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftnamespaceregistration"
 
 redshiftnamespaceregistration.RedshiftNamespaceRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ redshiftnamespaceregistration.RedshiftNamespaceRegistration_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftNamespaceRegistration.RedshiftNamespaceRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftnamespaceregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftnamespaceregistration"
 
 redshiftnamespaceregistration.RedshiftNamespaceRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftNamespaceRegistration.RedshiftNamespaceRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftnamespaceregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftnamespaceregistration"
 
 &redshiftnamespaceregistration.RedshiftNamespaceRegistrationConfig {
 	Connection: interface{},

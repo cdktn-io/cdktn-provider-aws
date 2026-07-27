@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmdefaultpatchbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmdefaultpatchbaseline"
 
 ssmdefaultpatchbaseline.NewSsmDefaultPatchBaseline(scope Construct, id *string, config SsmDefaultPatchBaselineConfig) SsmDefaultPatchBaseline
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmdefaultpatchbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmdefaultpatchbaseline"
 
 ssmdefaultpatchbaseline.SsmDefaultPatchBaseline_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmdefaultpatchbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmdefaultpatchbaseline"
 
 ssmdefaultpatchbaseline.SsmDefaultPatchBaseline_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ ssmdefaultpatchbaseline.SsmDefaultPatchBaseline_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmdefaultpatchbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmdefaultpatchbaseline"
 
 ssmdefaultpatchbaseline.SsmDefaultPatchBaseline_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ ssmdefaultpatchbaseline.SsmDefaultPatchBaseline_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmdefaultpatchbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmdefaultpatchbaseline"
 
 ssmdefaultpatchbaseline.SsmDefaultPatchBaseline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaselineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmdefaultpatchbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmdefaultpatchbaseline"
 
 &ssmdefaultpatchbaseline.SsmDefaultPatchBaselineConfig {
 	Connection: interface{},

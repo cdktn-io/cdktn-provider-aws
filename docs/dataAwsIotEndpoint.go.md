@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiotendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiotendpoint"
 
 dataawsiotendpoint.NewDataAwsIotEndpoint(scope Construct, id *string, config DataAwsIotEndpointConfig) DataAwsIotEndpoint
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiotendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiotendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiotendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiotendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiotendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiotendpoint"
 
 &dataawsiotendpoint.DataAwsIotEndpointConfig {
 	Connection: interface{},

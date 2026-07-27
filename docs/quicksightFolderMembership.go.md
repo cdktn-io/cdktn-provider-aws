@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightFolderMembership.QuicksightFolderMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightfoldermembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightfoldermembership"
 
 quicksightfoldermembership.NewQuicksightFolderMembership(scope Construct, id *string, config QuicksightFolderMembershipConfig) QuicksightFolderMembership
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.quicksightFolderMembership.QuicksightFolderMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightfoldermembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightfoldermembership"
 
 quicksightfoldermembership.QuicksightFolderMembership_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.quicksightFolderMembership.QuicksightFolderMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightfoldermembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightfoldermembership"
 
 quicksightfoldermembership.QuicksightFolderMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ quicksightfoldermembership.QuicksightFolderMembership_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.quicksightFolderMembership.QuicksightFolderMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightfoldermembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightfoldermembership"
 
 quicksightfoldermembership.QuicksightFolderMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ quicksightfoldermembership.QuicksightFolderMembership_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.quicksightFolderMembership.QuicksightFolderMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightfoldermembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightfoldermembership"
 
 quicksightfoldermembership.QuicksightFolderMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightFolderMembership.QuicksightFolderMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightfoldermembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/quicksightfoldermembership"
 
 &quicksightfoldermembership.QuicksightFolderMembershipConfig {
 	Connection: interface{},

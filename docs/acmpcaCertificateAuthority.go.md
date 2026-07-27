@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.NewAcmpcaCertificateAuthority(scope Construct, id *string, config AcmpcaCertificateAuthorityConfig) AcmpcaCertificateAuthority
 ```
@@ -516,7 +516,7 @@ func ResetUsageMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.AcmpcaCertificateAuthority_IsConstruct(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.AcmpcaCertificateAuthority_IsTerraformElement(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ acmpcacertificateauthority.AcmpcaCertificateAuthority_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.AcmpcaCertificateAuthority_IsTerraformResource(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ acmpcacertificateauthority.AcmpcaCertificateAuthority_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.AcmpcaCertificateAuthority_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1146,12 +1146,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 &acmpcacertificateauthority.AcmpcaCertificateAuthorityCertificateAuthorityConfiguration {
 	KeyAlgorithm: *string,
 	SigningAlgorithm: *string,
-	Subject: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject,
+	Subject: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject,
 }
 ```
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 &acmpcacertificateauthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject {
 	CommonName: *string,
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 &acmpcacertificateauthority.AcmpcaCertificateAuthorityConfig {
 	Connection: interface{},
@@ -1418,16 +1418,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateautho
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	CertificateAuthorityConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfiguration,
+	CertificateAuthorityConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfiguration,
 	Enabled: interface{},
 	Id: *string,
 	KeyStorageSecurityStandard: *string,
 	PermanentDeletionTimeInDays: *f64,
 	Region: *string,
-	RevocationConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfiguration,
+	RevocationConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeouts,
 	Type: *string,
 	UsageMode: *string,
 }
@@ -1689,11 +1689,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 &acmpcacertificateauthority.AcmpcaCertificateAuthorityRevocationConfiguration {
-	CrlConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration,
-	OcspConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration,
+	CrlConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration,
+	OcspConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration,
 }
 ```
 
@@ -1739,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 &acmpcacertificateauthority.AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration {
 	CustomCname: *string,
@@ -1841,7 +1841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 &acmpcacertificateauthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration {
 	Enabled: interface{},
@@ -1887,7 +1887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 &acmpcacertificateauthority.AcmpcaCertificateAuthorityTimeouts {
 	Create: *string,
@@ -1921,7 +1921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.NewAcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference
 ```
@@ -2249,7 +2249,7 @@ func InternalValue() AcmpcaCertificateAuthorityCertificateAuthorityConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.NewAcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference
 ```
@@ -2875,7 +2875,7 @@ func InternalValue() AcmpcaCertificateAuthorityCertificateAuthorityConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.NewAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference
 ```
@@ -3298,7 +3298,7 @@ func InternalValue() AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.NewAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference
 ```
@@ -3598,7 +3598,7 @@ func InternalValue() AcmpcaCertificateAuthorityRevocationConfigurationOcspConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.NewAcmpcaCertificateAuthorityRevocationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmpcaCertificateAuthorityRevocationConfigurationOutputReference
 ```
@@ -3931,7 +3931,7 @@ func InternalValue() AcmpcaCertificateAuthorityRevocationConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/acmpcacertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificateauthority"
 
 acmpcacertificateauthority.NewAcmpcaCertificateAuthorityTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmpcaCertificateAuthorityTimeoutsOutputReference
 ```

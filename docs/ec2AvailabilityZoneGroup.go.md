@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2availabilityzonegroup"
 
 ec2availabilityzonegroup.NewEc2AvailabilityZoneGroup(scope Construct, id *string, config Ec2AvailabilityZoneGroupConfig) Ec2AvailabilityZoneGroup
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2availabilityzonegroup"
 
 ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2availabilityzonegroup"
 
 ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2availabilityzonegroup"
 
 ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2availabilityzonegroup"
 
 ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2availabilityzonegroup"
 
 &ec2availabilityzonegroup.Ec2AvailabilityZoneGroupConfig {
 	Connection: interface{},

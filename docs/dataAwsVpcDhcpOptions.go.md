@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.NewDataAwsVpcDhcpOptions(scope Construct, id *string, config DataAwsVpcDhcpOptionsConfig) DataAwsVpcDhcpOptions
 ```
@@ -366,7 +366,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.DataAwsVpcDhcpOptions_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.DataAwsVpcDhcpOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ dataawsvpcdhcpoptions.DataAwsVpcDhcpOptions_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.DataAwsVpcDhcpOptions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ dataawsvpcdhcpoptions.DataAwsVpcDhcpOptions_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.DataAwsVpcDhcpOptions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 &dataawsvpcdhcpoptions.DataAwsVpcDhcpOptionsConfig {
 	Connection: interface{},
@@ -868,7 +868,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeouts,
 }
 ```
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 &dataawsvpcdhcpoptions.DataAwsVpcDhcpOptionsFilter {
 	Name: *string,
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 &dataawsvpcdhcpoptions.DataAwsVpcDhcpOptionsTimeouts {
 	Read: *string,
@@ -1128,7 +1128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.NewDataAwsVpcDhcpOptionsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcDhcpOptionsFilterList
 ```
@@ -1288,7 +1288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.NewDataAwsVpcDhcpOptionsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcDhcpOptionsFilterOutputReference
 ```
@@ -1599,7 +1599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.NewDataAwsVpcDhcpOptionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsVpcDhcpOptionsTimeoutsOutputReference
 ```

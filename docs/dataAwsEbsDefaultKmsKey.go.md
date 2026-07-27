@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebsdefaultkmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebsdefaultkmskey"
 
 dataawsebsdefaultkmskey.NewDataAwsEbsDefaultKmsKey(scope Construct, id *string, config DataAwsEbsDefaultKmsKeyConfig) DataAwsEbsDefaultKmsKey
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebsdefaultkmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebsdefaultkmskey"
 
 dataawsebsdefaultkmskey.DataAwsEbsDefaultKmsKey_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebsdefaultkmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebsdefaultkmskey"
 
 dataawsebsdefaultkmskey.DataAwsEbsDefaultKmsKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsebsdefaultkmskey.DataAwsEbsDefaultKmsKey_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebsdefaultkmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebsdefaultkmskey"
 
 dataawsebsdefaultkmskey.DataAwsEbsDefaultKmsKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataawsebsdefaultkmskey.DataAwsEbsDefaultKmsKey_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebsdefaultkmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebsdefaultkmskey"
 
 dataawsebsdefaultkmskey.DataAwsEbsDefaultKmsKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebsdefaultkmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebsdefaultkmskey"
 
 &dataawsebsdefaultkmskey.DataAwsEbsDefaultKmsKeyConfig {
 	Connection: interface{},
@@ -688,7 +688,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebsdefaultkmske
 	Provisioners: *[]interface{},
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKeyTimeouts,
 }
 ```
 
@@ -827,7 +827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebsdefaultkmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebsdefaultkmskey"
 
 &dataawsebsdefaultkmskey.DataAwsEbsDefaultKmsKeyTimeouts {
 	Read: *string,
@@ -861,7 +861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsebsdefaultkmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsebsdefaultkmskey"
 
 dataawsebsdefaultkmskey.NewDataAwsEbsDefaultKmsKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEbsDefaultKmsKeyTimeoutsOutputReference
 ```

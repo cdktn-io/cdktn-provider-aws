@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplicationAssignments.DataAwsSsoadminApplicationAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadminapplicationassignments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadminapplicationassignments"
 
 dataawsssoadminapplicationassignments.NewDataAwsSsoadminApplicationAssignments(scope Construct, id *string, config DataAwsSsoadminApplicationAssignmentsConfig) DataAwsSsoadminApplicationAssignments
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSsoadminApplicationAssignments.DataAwsSsoadminApplicationAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadminapplicationassignments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadminapplicationassignments"
 
 dataawsssoadminapplicationassignments.DataAwsSsoadminApplicationAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSsoadminApplicationAssignments.DataAwsSsoadminApplicationAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadminapplicationassignments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadminapplicationassignments"
 
 dataawsssoadminapplicationassignments.DataAwsSsoadminApplicationAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsssoadminapplicationassignments.DataAwsSsoadminApplicationAssignments_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSsoadminApplicationAssignments.DataAwsSsoadminApplicationAssignments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadminapplicationassignments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadminapplicationassignments"
 
 dataawsssoadminapplicationassignments.DataAwsSsoadminApplicationAssignments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsssoadminapplicationassignments.DataAwsSsoadminApplicationAssignments_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSsoadminApplicationAssignments.DataAwsSsoadminApplicationAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadminapplicationassignments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadminapplicationassignments"
 
 dataawsssoadminapplicationassignments.DataAwsSsoadminApplicationAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsoadminApplicationAssignments.DataAwsSsoadminApplicationAssignmentsApplicationAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadminapplicationassignments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadminapplicationassignments"
 
 &dataawsssoadminapplicationassignments.DataAwsSsoadminApplicationAssignmentsApplicationAssignments {
 
@@ -651,7 +651,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadminapplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsoadminApplicationAssignments.DataAwsSsoadminApplicationAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadminapplicationassignments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadminapplicationassignments"
 
 &dataawsssoadminapplicationassignments.DataAwsSsoadminApplicationAssignmentsConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplicationAssignments.DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadminapplicationassignments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadminapplicationassignments"
 
 dataawsssoadminapplicationassignments.NewDataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList
 ```
@@ -934,7 +934,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplicationAssignments.DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssoadminapplicationassignments"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsssoadminapplicationassignments"
 
 dataawsssoadminapplicationassignments.NewDataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference
 ```

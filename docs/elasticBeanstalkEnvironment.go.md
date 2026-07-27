@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 elasticbeanstalkenvironment.NewElasticBeanstalkEnvironment(scope Construct, id *string, config ElasticBeanstalkEnvironmentConfig) ElasticBeanstalkEnvironment
 ```
@@ -511,7 +511,7 @@ func ResetWaitForReadyTimeout()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 elasticbeanstalkenvironment.ElasticBeanstalkEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 elasticbeanstalkenvironment.ElasticBeanstalkEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ elasticbeanstalkenvironment.ElasticBeanstalkEnvironment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 elasticbeanstalkenvironment.ElasticBeanstalkEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ elasticbeanstalkenvironment.ElasticBeanstalkEnvironment_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 elasticbeanstalkenvironment.ElasticBeanstalkEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1262,7 +1262,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentAllSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 &elasticbeanstalkenvironment.ElasticBeanstalkEnvironmentAllSettings {
 
@@ -1275,7 +1275,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenviro
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 &elasticbeanstalkenvironment.ElasticBeanstalkEnvironmentConfig {
 	Connection: interface{},
@@ -1608,7 +1608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 &elasticbeanstalkenvironment.ElasticBeanstalkEnvironmentSetting {
 	Name: *string,
@@ -1684,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentAllSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 elasticbeanstalkenvironment.NewElasticBeanstalkEnvironmentAllSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticBeanstalkEnvironmentAllSettingsList
 ```
@@ -1833,7 +1833,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentAllSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 elasticbeanstalkenvironment.NewElasticBeanstalkEnvironmentAllSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElasticBeanstalkEnvironmentAllSettingsOutputReference
 ```
@@ -2144,7 +2144,7 @@ func InternalValue() ElasticBeanstalkEnvironmentAllSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 elasticbeanstalkenvironment.NewElasticBeanstalkEnvironmentSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticBeanstalkEnvironmentSettingList
 ```
@@ -2304,7 +2304,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticbeanstalkenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticbeanstalkenvironment"
 
 elasticbeanstalkenvironment.NewElasticBeanstalkEnvironmentSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElasticBeanstalkEnvironmentSettingOutputReference
 ```

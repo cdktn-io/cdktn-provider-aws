@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesIdentityPolicy.SesIdentityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesidentitypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesidentitypolicy"
 
 sesidentitypolicy.NewSesIdentityPolicy(scope Construct, id *string, config SesIdentityPolicyConfig) SesIdentityPolicy
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sesIdentityPolicy.SesIdentityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesidentitypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesidentitypolicy"
 
 sesidentitypolicy.SesIdentityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sesIdentityPolicy.SesIdentityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesidentitypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesidentitypolicy"
 
 sesidentitypolicy.SesIdentityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ sesidentitypolicy.SesIdentityPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sesIdentityPolicy.SesIdentityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesidentitypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesidentitypolicy"
 
 sesidentitypolicy.SesIdentityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ sesidentitypolicy.SesIdentityPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sesIdentityPolicy.SesIdentityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesidentitypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesidentitypolicy"
 
 sesidentitypolicy.SesIdentityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesIdentityPolicy.SesIdentityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesidentitypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesidentitypolicy"
 
 &sesidentitypolicy.SesIdentityPolicyConfig {
 	Connection: interface{},

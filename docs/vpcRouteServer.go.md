@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcRouteServer.VpcRouteServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserver"
 
 vpcrouteserver.NewVpcRouteServer(scope Construct, id *string, config VpcRouteServerConfig) VpcRouteServer
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcRouteServer.VpcRouteServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserver"
 
 vpcrouteserver.VpcRouteServer_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcRouteServer.VpcRouteServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserver"
 
 vpcrouteserver.VpcRouteServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ vpcrouteserver.VpcRouteServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcRouteServer.VpcRouteServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserver"
 
 vpcrouteserver.VpcRouteServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ vpcrouteserver.VpcRouteServer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcRouteServer.VpcRouteServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserver"
 
 vpcrouteserver.VpcRouteServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -942,7 +942,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcRouteServer.VpcRouteServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserver"
 
 &vpcrouteserver.VpcRouteServerConfig {
 	Connection: interface{},
@@ -958,7 +958,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserver"
 	Region: *string,
 	SnsNotificationsEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpcRouteServer.VpcRouteServerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpcRouteServer.VpcRouteServerTimeouts,
 }
 ```
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcRouteServer.VpcRouteServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserver"
 
 &vpcrouteserver.VpcRouteServerTimeouts {
 	Create: *string,
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcRouteServer.VpcRouteServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcrouteserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcrouteserver"
 
 vpcrouteserver.NewVpcRouteServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcRouteServerTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2View.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 resourceexplorer2view.NewResourceexplorer2View(scope Construct, id *string, config Resourceexplorer2ViewConfig) Resourceexplorer2View
 ```
@@ -468,7 +468,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2View.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 resourceexplorer2view.Resourceexplorer2View_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2View.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 resourceexplorer2view.Resourceexplorer2View_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ resourceexplorer2view.Resourceexplorer2View_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2View.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 resourceexplorer2view.Resourceexplorer2View_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ resourceexplorer2view.Resourceexplorer2View_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2View.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 resourceexplorer2view.Resourceexplorer2View_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -944,7 +944,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 &resourceexplorer2view.Resourceexplorer2ViewConfig {
 	Connection: interface{},
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 &resourceexplorer2view.Resourceexplorer2ViewFilters {
 	FilterString: *string,
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 &resourceexplorer2view.Resourceexplorer2ViewIncludedProperty {
 	Name: *string,
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 resourceexplorer2view.NewResourceexplorer2ViewFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Resourceexplorer2ViewFiltersList
 ```
@@ -1376,7 +1376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 resourceexplorer2view.NewResourceexplorer2ViewFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Resourceexplorer2ViewFiltersOutputReference
 ```
@@ -1665,7 +1665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 resourceexplorer2view.NewResourceexplorer2ViewIncludedPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Resourceexplorer2ViewIncludedPropertyList
 ```
@@ -1825,7 +1825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resourceexplorer2view"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourceexplorer2view"
 
 resourceexplorer2view.NewResourceexplorer2ViewIncludedPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Resourceexplorer2ViewIncludedPropertyOutputReference
 ```

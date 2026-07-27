@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSfnAlias.DataAwsSfnAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssfnalias"
 
 dataawssfnalias.NewDataAwsSfnAlias(scope Construct, id *string, config DataAwsSfnAliasConfig) DataAwsSfnAlias
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSfnAlias.DataAwsSfnAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssfnalias"
 
 dataawssfnalias.DataAwsSfnAlias_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSfnAlias.DataAwsSfnAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssfnalias"
 
 dataawssfnalias.DataAwsSfnAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawssfnalias.DataAwsSfnAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSfnAlias.DataAwsSfnAlias.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssfnalias"
 
 dataawssfnalias.DataAwsSfnAlias_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawssfnalias.DataAwsSfnAlias_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSfnAlias.DataAwsSfnAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssfnalias"
 
 dataawssfnalias.DataAwsSfnAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSfnAlias.DataAwsSfnAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssfnalias"
 
 &dataawssfnalias.DataAwsSfnAliasConfig {
 	Connection: interface{},
@@ -906,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSfnAlias.DataAwsSfnAliasRoutingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssfnalias"
 
 &dataawssfnalias.DataAwsSfnAliasRoutingConfiguration {
 
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssfnalias"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSfnAlias.DataAwsSfnAliasRoutingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssfnalias"
 
 dataawssfnalias.NewDataAwsSfnAliasRoutingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSfnAliasRoutingConfigurationList
 ```
@@ -1070,7 +1070,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSfnAlias.DataAwsSfnAliasRoutingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssfnalias"
 
 dataawssfnalias.NewDataAwsSfnAliasRoutingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSfnAliasRoutingConfigurationOutputReference
 ```

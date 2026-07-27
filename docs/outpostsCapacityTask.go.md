@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTask(scope Construct, id *string, config OutpostsCapacityTaskConfig) OutpostsCapacityTask
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 outpostscapacitytask.OutpostsCapacityTask_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 outpostscapacitytask.OutpostsCapacityTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ outpostscapacitytask.OutpostsCapacityTask_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 outpostscapacitytask.OutpostsCapacityTask_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ outpostscapacitytask.OutpostsCapacityTask_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 outpostscapacitytask.OutpostsCapacityTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 &outpostscapacitytask.OutpostsCapacityTaskConfig {
 	Connection: interface{},
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
 	OrderId: *string,
 	Region: *string,
 	TaskActionOnBlockingInstances: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.outpostsCapacityTask.OutpostsCapacityTaskTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.outpostsCapacityTask.OutpostsCapacityTaskTimeouts,
 }
 ```
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancePool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 &outpostscapacitytask.OutpostsCapacityTaskInstancePool {
 	Count: *f64,
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancesToExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 &outpostscapacitytask.OutpostsCapacityTaskInstancesToExclude {
 	Instances: *[]*string,
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 &outpostscapacitytask.OutpostsCapacityTaskTimeouts {
 	Create: *string,
@@ -1360,7 +1360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancePoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTaskInstancePoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OutpostsCapacityTaskInstancePoolList
 ```
@@ -1520,7 +1520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancePoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTaskInstancePoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OutpostsCapacityTaskInstancePoolOutputReference
 ```
@@ -1831,7 +1831,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancesToExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTaskInstancesToExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OutpostsCapacityTaskInstancesToExcludeList
 ```
@@ -1991,7 +1991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancesToExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTaskInstancesToExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OutpostsCapacityTaskInstancesToExcludeOutputReference
 ```
@@ -2280,7 +2280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTaskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OutpostsCapacityTaskTimeoutsOutputReference
 ```

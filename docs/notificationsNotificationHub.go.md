@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsnotificationhub"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsnotificationhub"
 
 notificationsnotificationhub.NewNotificationsNotificationHub(scope Construct, id *string, config NotificationsNotificationHubConfig) NotificationsNotificationHub
 ```
@@ -420,7 +420,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsnotificationhub"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsnotificationhub"
 
 notificationsnotificationhub.NotificationsNotificationHub_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsnotificationhub"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsnotificationhub"
 
 notificationsnotificationhub.NotificationsNotificationHub_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ notificationsnotificationhub.NotificationsNotificationHub_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsnotificationhub"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsnotificationhub"
 
 notificationsnotificationhub.NotificationsNotificationHub_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ notificationsnotificationhub.NotificationsNotificationHub_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsnotificationhub"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsnotificationhub"
 
 notificationsnotificationhub.NotificationsNotificationHub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationsNotificationHub.NotificationsNotificationHubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsnotificationhub"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsnotificationhub"
 
 &notificationsnotificationhub.NotificationsNotificationHubConfig {
 	Connection: interface{},
@@ -764,7 +764,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsnotificat
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	NotificationHubRegion: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.notificationsNotificationHub.NotificationsNotificationHubTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.notificationsNotificationHub.NotificationsNotificationHubTimeouts,
 }
 ```
 
@@ -885,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationsNotificationHub.NotificationsNotificationHubTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsnotificationhub"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsnotificationhub"
 
 &notificationsnotificationhub.NotificationsNotificationHubTimeouts {
 	Create: *string,
@@ -937,7 +937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsNotificationHub.NotificationsNotificationHubTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsnotificationhub"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsnotificationhub"
 
 notificationsnotificationhub.NewNotificationsNotificationHubTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationsNotificationHubTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmschannel"
 
 pinpointsmschannel.NewPinpointSmsChannel(scope Construct, id *string, config PinpointSmsChannelConfig) PinpointSmsChannel
 ```
@@ -435,7 +435,7 @@ func ResetShortCode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointSmsChannel.PinpointSmsChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmschannel"
 
 pinpointsmschannel.PinpointSmsChannel_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointSmsChannel.PinpointSmsChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmschannel"
 
 pinpointsmschannel.PinpointSmsChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ pinpointsmschannel.PinpointSmsChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointSmsChannel.PinpointSmsChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmschannel"
 
 pinpointsmschannel.PinpointSmsChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ pinpointsmschannel.PinpointSmsChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointSmsChannel.PinpointSmsChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmschannel"
 
 pinpointsmschannel.PinpointSmsChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -878,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmschannel"
 
 &pinpointsmschannel.PinpointSmsChannelConfig {
 	Connection: interface{},

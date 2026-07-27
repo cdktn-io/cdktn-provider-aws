@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.NewDataAwsEfsAccessPoint(scope Construct, id *string, config DataAwsEfsAccessPointConfig) DataAwsEfsAccessPoint
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.DataAwsEfsAccessPoint_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.DataAwsEfsAccessPoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsefsaccesspoint.DataAwsEfsAccessPoint_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.DataAwsEfsAccessPoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsefsaccesspoint.DataAwsEfsAccessPoint_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.DataAwsEfsAccessPoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 &dataawsefsaccesspoint.DataAwsEfsAccessPointConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 &dataawsefsaccesspoint.DataAwsEfsAccessPointPosixUser {
 
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 &dataawsefsaccesspoint.DataAwsEfsAccessPointRootDirectory {
 
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryCreationInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 &dataawsefsaccesspoint.DataAwsEfsAccessPointRootDirectoryCreationInfo {
 
@@ -944,7 +944,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.NewDataAwsEfsAccessPointPosixUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEfsAccessPointPosixUserList
 ```
@@ -1093,7 +1093,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.NewDataAwsEfsAccessPointPosixUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEfsAccessPointPosixUserOutputReference
 ```
@@ -1393,7 +1393,7 @@ func InternalValue() DataAwsEfsAccessPointPosixUser
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryCreationInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.NewDataAwsEfsAccessPointRootDirectoryCreationInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEfsAccessPointRootDirectoryCreationInfoList
 ```
@@ -1542,7 +1542,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.NewDataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference
 ```
@@ -1842,7 +1842,7 @@ func InternalValue() DataAwsEfsAccessPointRootDirectoryCreationInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.NewDataAwsEfsAccessPointRootDirectoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEfsAccessPointRootDirectoryList
 ```
@@ -1991,7 +1991,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoint"
 
 dataawsefsaccesspoint.NewDataAwsEfsAccessPointRootDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEfsAccessPointRootDirectoryOutputReference
 ```

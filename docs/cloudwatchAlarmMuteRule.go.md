@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.NewCloudwatchAlarmMuteRule(scope Construct, id *string, config CloudwatchAlarmMuteRuleConfig) CloudwatchAlarmMuteRule
 ```
@@ -475,7 +475,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.CloudwatchAlarmMuteRule_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.CloudwatchAlarmMuteRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ cloudwatchalarmmuterule.CloudwatchAlarmMuteRule_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.CloudwatchAlarmMuteRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ cloudwatchalarmmuterule.CloudwatchAlarmMuteRule_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.CloudwatchAlarmMuteRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -995,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 &cloudwatchalarmmuterule.CloudwatchAlarmMuteRuleConfig {
 	Connection: interface{},
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRuleMuteTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 &cloudwatchalarmmuterule.CloudwatchAlarmMuteRuleMuteTargets {
 	AlarmNames: *[]*string,
@@ -1247,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRuleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 &cloudwatchalarmmuterule.CloudwatchAlarmMuteRuleRule {
 	Schedule: interface{},
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRuleRuleSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 &cloudwatchalarmmuterule.CloudwatchAlarmMuteRuleRuleSchedule {
 	Duration: *string,
@@ -1343,7 +1343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRuleMuteTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.NewCloudwatchAlarmMuteRuleMuteTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchAlarmMuteRuleMuteTargetsList
 ```
@@ -1503,7 +1503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRuleMuteTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.NewCloudwatchAlarmMuteRuleMuteTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchAlarmMuteRuleMuteTargetsOutputReference
 ```
@@ -1792,7 +1792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRuleRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.NewCloudwatchAlarmMuteRuleRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchAlarmMuteRuleRuleList
 ```
@@ -1952,7 +1952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRuleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.NewCloudwatchAlarmMuteRuleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchAlarmMuteRuleRuleOutputReference
 ```
@@ -2261,7 +2261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRuleRuleScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.NewCloudwatchAlarmMuteRuleRuleScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchAlarmMuteRuleRuleScheduleList
 ```
@@ -2421,7 +2421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchAlarmMuteRule.CloudwatchAlarmMuteRuleRuleScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchalarmmuterule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchalarmmuterule"
 
 cloudwatchalarmmuterule.NewCloudwatchAlarmMuteRuleRuleScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchAlarmMuteRuleRuleScheduleOutputReference
 ```

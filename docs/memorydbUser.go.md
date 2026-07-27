@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.memorydbUser.MemorydbUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbuser"
 
 memorydbuser.NewMemorydbUser(scope Construct, id *string, config MemorydbUserConfig) MemorydbUser
 ```
@@ -441,7 +441,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.memorydbUser.MemorydbUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbuser"
 
 memorydbuser.MemorydbUser_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.memorydbUser.MemorydbUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbuser"
 
 memorydbuser.MemorydbUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ memorydbuser.MemorydbUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.memorydbUser.MemorydbUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbuser"
 
 memorydbuser.MemorydbUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ memorydbuser.MemorydbUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.memorydbUser.MemorydbUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbuser"
 
 memorydbuser.MemorydbUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.memorydbUser.MemorydbUserAuthenticationMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbuser"
 
 &memorydbuser.MemorydbUserAuthenticationMode {
 	Type: *string,
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.memorydbUser.MemorydbUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbuser"
 
 &memorydbuser.MemorydbUserConfig {
 	Connection: interface{},
@@ -963,7 +963,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbuser"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccessString: *string,
-	AuthenticationMode: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.memorydbUser.MemorydbUserAuthenticationMode,
+	AuthenticationMode: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.memorydbUser.MemorydbUserAuthenticationMode,
 	UserName: *string,
 	Id: *string,
 	Region: *string,
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.memorydbUser.MemorydbUserAuthenticationModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/memorydbuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/memorydbuser"
 
 memorydbuser.NewMemorydbUserAuthenticationModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MemorydbUserAuthenticationModeOutputReference
 ```

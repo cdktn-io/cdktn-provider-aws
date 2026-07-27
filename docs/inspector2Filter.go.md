@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2Filter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2Filter(scope Construct, id *string, config Inspector2FilterConfig) Inspector2Filter
 ```
@@ -448,7 +448,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.inspector2Filter.Inspector2Filter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.Inspector2Filter_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.inspector2Filter.Inspector2Filter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.Inspector2Filter_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ inspector2filter.Inspector2Filter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.inspector2Filter.Inspector2Filter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.Inspector2Filter_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ inspector2filter.Inspector2Filter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.inspector2Filter.Inspector2Filter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.Inspector2Filter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterConfig {
 	Connection: interface{},
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteria {
 	AwsAccountId: interface{},
@@ -1871,7 +1871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaAwsAccountId {
 	Comparison: *string,
@@ -1917,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName {
 	Comparison: *string,
@@ -1963,7 +1963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType {
 	Comparison: *string,
@@ -2009,7 +2009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName {
 	Comparison: *string,
@@ -2055,7 +2055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags {
 	Comparison: *string,
@@ -2101,7 +2101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath {
 	Comparison: *string,
@@ -2147,7 +2147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaComponentId {
 	Comparison: *string,
@@ -2193,7 +2193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaComponentType {
 	Comparison: *string,
@@ -2239,7 +2239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEc2InstanceImageId {
 	Comparison: *string,
@@ -2285,7 +2285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId {
 	Comparison: *string,
@@ -2331,7 +2331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId {
 	Comparison: *string,
@@ -2377,7 +2377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEcrImageArchitecture {
 	Comparison: *string,
@@ -2423,7 +2423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEcrImageHash {
 	Comparison: *string,
@@ -2469,7 +2469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEcrImageInUseCount {
 	LowerInclusive: *f64,
@@ -2515,7 +2515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt {
 	EndInclusive: *string,
@@ -2561,7 +2561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEcrImagePushedAt {
 	EndInclusive: *string,
@@ -2607,7 +2607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEcrImageRegistry {
 	Comparison: *string,
@@ -2653,7 +2653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName {
 	Comparison: *string,
@@ -2699,7 +2699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEcrImageTags {
 	Comparison: *string,
@@ -2745,7 +2745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaEpssScore {
 	LowerInclusive: *f64,
@@ -2791,7 +2791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaExploitAvailable {
 	Comparison: *string,
@@ -2837,7 +2837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaFindingArn {
 	Comparison: *string,
@@ -2883,7 +2883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaFindingStatus {
 	Comparison: *string,
@@ -2929,7 +2929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaFindingType {
 	Comparison: *string,
@@ -2975,7 +2975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaFirstObservedAt {
 	EndInclusive: *string,
@@ -3021,7 +3021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaFixAvailable {
 	Comparison: *string,
@@ -3067,7 +3067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaInspectorScore {
 	LowerInclusive: *f64,
@@ -3113,7 +3113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn {
 	Comparison: *string,
@@ -3159,7 +3159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt {
 	EndInclusive: *string,
@@ -3205,7 +3205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers {
 	Comparison: *string,
@@ -3251,7 +3251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaLambdaFunctionName {
 	Comparison: *string,
@@ -3297,7 +3297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime {
 	Comparison: *string,
@@ -3343,7 +3343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaLastObservedAt {
 	EndInclusive: *string,
@@ -3389,7 +3389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaNetworkProtocol {
 	Comparison: *string,
@@ -3435,7 +3435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaPortRange {
 	BeginInclusive: *f64,
@@ -3481,7 +3481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities {
 	Comparison: *string,
@@ -3527,7 +3527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaResourceId {
 	Comparison: *string,
@@ -3573,7 +3573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaResourceTags {
 	Comparison: *string,
@@ -3633,7 +3633,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaResourceType {
 	Comparison: *string,
@@ -3679,7 +3679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaSeverity {
 	Comparison: *string,
@@ -3725,7 +3725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaTitle {
 	Comparison: *string,
@@ -3771,7 +3771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaUpdatedAt {
 	EndInclusive: *string,
@@ -3817,7 +3817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVendorSeverity {
 	Comparison: *string,
@@ -3863,7 +3863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerabilityId {
 	Comparison: *string,
@@ -3909,7 +3909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerabilitySource {
 	Comparison: *string,
@@ -3955,7 +3955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerablePackages {
 	Architecture: interface{},
@@ -4101,7 +4101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture {
 	Comparison: *string,
@@ -4147,7 +4147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch {
 	LowerInclusive: *f64,
@@ -4193,7 +4193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath {
 	Comparison: *string,
@@ -4239,7 +4239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerablePackagesName {
 	Comparison: *string,
@@ -4285,7 +4285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease {
 	Comparison: *string,
@@ -4331,7 +4331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn {
 	Comparison: *string,
@@ -4377,7 +4377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash {
 	Comparison: *string,
@@ -4423,7 +4423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 &inspector2filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion {
 	Comparison: *string,
@@ -4471,7 +4471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaAwsAccountIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaAwsAccountIdList
 ```
@@ -4631,7 +4631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaAwsAccountIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaAwsAccountIdOutputReference
 ```
@@ -4942,7 +4942,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaCodeRepositoryProjectNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList
 ```
@@ -5102,7 +5102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference
 ```
@@ -5413,7 +5413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaCodeRepositoryProviderTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList
 ```
@@ -5573,7 +5573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference
 ```
@@ -5884,7 +5884,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList
 ```
@@ -6044,7 +6044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference
 ```
@@ -6355,7 +6355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList
 ```
@@ -6515,7 +6515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference
 ```
@@ -6826,7 +6826,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaCodeVulnerabilityFilePathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList
 ```
@@ -6986,7 +6986,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference
 ```
@@ -7297,7 +7297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaComponentIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaComponentIdList
 ```
@@ -7457,7 +7457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaComponentIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaComponentIdOutputReference
 ```
@@ -7768,7 +7768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaComponentTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaComponentTypeList
 ```
@@ -7928,7 +7928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaComponentTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaComponentTypeOutputReference
 ```
@@ -8239,7 +8239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEc2InstanceImageIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEc2InstanceImageIdList
 ```
@@ -8399,7 +8399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference
 ```
@@ -8710,7 +8710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEc2InstanceSubnetIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList
 ```
@@ -8870,7 +8870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference
 ```
@@ -9181,7 +9181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEc2InstanceVpcIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEc2InstanceVpcIdList
 ```
@@ -9341,7 +9341,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference
 ```
@@ -9652,7 +9652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageArchitectureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEcrImageArchitectureList
 ```
@@ -9812,7 +9812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageArchitectureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference
 ```
@@ -10123,7 +10123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageHashList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEcrImageHashList
 ```
@@ -10283,7 +10283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageHashOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEcrImageHashOutputReference
 ```
@@ -10594,7 +10594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageInUseCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEcrImageInUseCountList
 ```
@@ -10754,7 +10754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageInUseCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference
 ```
@@ -11065,7 +11065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageLastInUseAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEcrImageLastInUseAtList
 ```
@@ -11225,7 +11225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference
 ```
@@ -11550,7 +11550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImagePushedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEcrImagePushedAtList
 ```
@@ -11710,7 +11710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImagePushedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference
 ```
@@ -12035,7 +12035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageRegistryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEcrImageRegistryList
 ```
@@ -12195,7 +12195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageRegistryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference
 ```
@@ -12506,7 +12506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageRepositoryNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEcrImageRepositoryNameList
 ```
@@ -12666,7 +12666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference
 ```
@@ -12977,7 +12977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEcrImageTagsList
 ```
@@ -13137,7 +13137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEcrImageTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEcrImageTagsOutputReference
 ```
@@ -13448,7 +13448,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEpssScoreList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaEpssScoreList
 ```
@@ -13608,7 +13608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaEpssScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaEpssScoreOutputReference
 ```
@@ -13919,7 +13919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaExploitAvailableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaExploitAvailableList
 ```
@@ -14079,7 +14079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaExploitAvailableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaExploitAvailableOutputReference
 ```
@@ -14390,7 +14390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaFindingArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaFindingArnList
 ```
@@ -14550,7 +14550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaFindingArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaFindingArnOutputReference
 ```
@@ -14861,7 +14861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaFindingStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaFindingStatusList
 ```
@@ -15021,7 +15021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaFindingStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaFindingStatusOutputReference
 ```
@@ -15332,7 +15332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaFindingTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaFindingTypeList
 ```
@@ -15492,7 +15492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaFindingTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaFindingTypeOutputReference
 ```
@@ -15803,7 +15803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaFirstObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaFirstObservedAtList
 ```
@@ -15963,7 +15963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaFirstObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaFirstObservedAtOutputReference
 ```
@@ -16288,7 +16288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaFixAvailableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaFixAvailableList
 ```
@@ -16448,7 +16448,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaFixAvailableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaFixAvailableOutputReference
 ```
@@ -16759,7 +16759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaInspectorScoreList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaInspectorScoreList
 ```
@@ -16919,7 +16919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaInspectorScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaInspectorScoreOutputReference
 ```
@@ -17230,7 +17230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList
 ```
@@ -17390,7 +17390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference
 ```
@@ -17701,7 +17701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList
 ```
@@ -17861,7 +17861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference
 ```
@@ -18186,7 +18186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLambdaFunctionLayersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaLambdaFunctionLayersList
 ```
@@ -18346,7 +18346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference
 ```
@@ -18657,7 +18657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLambdaFunctionNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaLambdaFunctionNameList
 ```
@@ -18817,7 +18817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLambdaFunctionNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference
 ```
@@ -19128,7 +19128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLambdaFunctionRuntimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList
 ```
@@ -19288,7 +19288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference
 ```
@@ -19599,7 +19599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLastObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaLastObservedAtList
 ```
@@ -19759,7 +19759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaLastObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaLastObservedAtOutputReference
 ```
@@ -20084,7 +20084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaList
 ```
@@ -20244,7 +20244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaNetworkProtocolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaNetworkProtocolList
 ```
@@ -20404,7 +20404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaNetworkProtocolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaNetworkProtocolOutputReference
 ```
@@ -20715,7 +20715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaOutputReference
 ```
@@ -22914,7 +22914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaPortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaPortRangeList
 ```
@@ -23074,7 +23074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaPortRangeOutputReference
 ```
@@ -23385,7 +23385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaRelatedVulnerabilitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList
 ```
@@ -23545,7 +23545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference
 ```
@@ -23856,7 +23856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaResourceIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaResourceIdList
 ```
@@ -24016,7 +24016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaResourceIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaResourceIdOutputReference
 ```
@@ -24327,7 +24327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaResourceTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaResourceTagsList
 ```
@@ -24487,7 +24487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaResourceTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaResourceTagsOutputReference
 ```
@@ -24820,7 +24820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaResourceTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaResourceTypeList
 ```
@@ -24980,7 +24980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaResourceTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaResourceTypeOutputReference
 ```
@@ -25291,7 +25291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaSeverityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaSeverityList
 ```
@@ -25451,7 +25451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaSeverityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaSeverityOutputReference
 ```
@@ -25762,7 +25762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaTitleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaTitleList
 ```
@@ -25922,7 +25922,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaTitleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaTitleOutputReference
 ```
@@ -26233,7 +26233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaUpdatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaUpdatedAtList
 ```
@@ -26393,7 +26393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaUpdatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaUpdatedAtOutputReference
 ```
@@ -26718,7 +26718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVendorSeverityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVendorSeverityList
 ```
@@ -26878,7 +26878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVendorSeverityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVendorSeverityOutputReference
 ```
@@ -27189,7 +27189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerabilityIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerabilityIdList
 ```
@@ -27349,7 +27349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerabilityIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference
 ```
@@ -27660,7 +27660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerabilitySourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerabilitySourceList
 ```
@@ -27820,7 +27820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerabilitySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference
 ```
@@ -28131,7 +28131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesArchitectureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList
 ```
@@ -28291,7 +28291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference
 ```
@@ -28602,7 +28602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesEpochList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesEpochList
 ```
@@ -28762,7 +28762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference
 ```
@@ -29073,7 +29073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesFilePathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList
 ```
@@ -29233,7 +29233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference
 ```
@@ -29544,7 +29544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesList
 ```
@@ -29704,7 +29704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesNameList
 ```
@@ -29864,7 +29864,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference
 ```
@@ -30175,7 +30175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference
 ```
@@ -30778,7 +30778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesReleaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList
 ```
@@ -30938,7 +30938,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference
 ```
@@ -31249,7 +31249,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList
 ```
@@ -31409,7 +31409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference
 ```
@@ -31720,7 +31720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList
 ```
@@ -31880,7 +31880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference
 ```
@@ -32191,7 +32191,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesVersionList
 ```
@@ -32351,7 +32351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/inspector2filter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2filter"
 
 inspector2filter.NewInspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.arczonalshiftAutoshiftObserverNotificationStatus.ArczonalshiftAutoshiftObserverNotificationStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftautoshiftobservernotificationstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftautoshiftobservernotificationstatus"
 
 arczonalshiftautoshiftobservernotificationstatus.NewArczonalshiftAutoshiftObserverNotificationStatus(scope Construct, id *string, config ArczonalshiftAutoshiftObserverNotificationStatusConfig) ArczonalshiftAutoshiftObserverNotificationStatus
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.arczonalshiftAutoshiftObserverNotificationStatus.ArczonalshiftAutoshiftObserverNotificationStatus.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftautoshiftobservernotificationstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftautoshiftobservernotificationstatus"
 
 arczonalshiftautoshiftobservernotificationstatus.ArczonalshiftAutoshiftObserverNotificationStatus_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.arczonalshiftAutoshiftObserverNotificationStatus.ArczonalshiftAutoshiftObserverNotificationStatus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftautoshiftobservernotificationstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftautoshiftobservernotificationstatus"
 
 arczonalshiftautoshiftobservernotificationstatus.ArczonalshiftAutoshiftObserverNotificationStatus_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ arczonalshiftautoshiftobservernotificationstatus.ArczonalshiftAutoshiftObserverN
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.arczonalshiftAutoshiftObserverNotificationStatus.ArczonalshiftAutoshiftObserverNotificationStatus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftautoshiftobservernotificationstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftautoshiftobservernotificationstatus"
 
 arczonalshiftautoshiftobservernotificationstatus.ArczonalshiftAutoshiftObserverNotificationStatus_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ arczonalshiftautoshiftobservernotificationstatus.ArczonalshiftAutoshiftObserverN
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.arczonalshiftAutoshiftObserverNotificationStatus.ArczonalshiftAutoshiftObserverNotificationStatus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftautoshiftobservernotificationstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftautoshiftobservernotificationstatus"
 
 arczonalshiftautoshiftobservernotificationstatus.ArczonalshiftAutoshiftObserverNotificationStatus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.arczonalshiftAutoshiftObserverNotificationStatus.ArczonalshiftAutoshiftObserverNotificationStatusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/arczonalshiftautoshiftobservernotificationstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arczonalshiftautoshiftobservernotificationstatus"
 
 &arczonalshiftautoshiftobservernotificationstatus.ArczonalshiftAutoshiftObserverNotificationStatusConfig {
 	Connection: interface{},

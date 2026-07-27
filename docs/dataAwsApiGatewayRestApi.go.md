@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapigatewayrestapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapigatewayrestapi"
 
 dataawsapigatewayrestapi.NewDataAwsApiGatewayRestApi(scope Construct, id *string, config DataAwsApiGatewayRestApiConfig) DataAwsApiGatewayRestApi
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapigatewayrestapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapigatewayrestapi"
 
 dataawsapigatewayrestapi.DataAwsApiGatewayRestApi_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapigatewayrestapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapigatewayrestapi"
 
 dataawsapigatewayrestapi.DataAwsApiGatewayRestApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsapigatewayrestapi.DataAwsApiGatewayRestApi_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApi.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapigatewayrestapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapigatewayrestapi"
 
 dataawsapigatewayrestapi.DataAwsApiGatewayRestApi_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsapigatewayrestapi.DataAwsApiGatewayRestApi_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapigatewayrestapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapigatewayrestapi"
 
 dataawsapigatewayrestapi.DataAwsApiGatewayRestApi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapigatewayrestapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapigatewayrestapi"
 
 &dataawsapigatewayrestapi.DataAwsApiGatewayRestApiConfig {
 	Connection: interface{},
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapigatewayrestapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapigatewayrestapi"
 
 &dataawsapigatewayrestapi.DataAwsApiGatewayRestApiEndpointConfiguration {
 
@@ -973,7 +973,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapigatewayresta
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapigatewayrestapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapigatewayrestapi"
 
 dataawsapigatewayrestapi.NewDataAwsApiGatewayRestApiEndpointConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsApiGatewayRestApiEndpointConfigurationList
 ```
@@ -1122,7 +1122,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapigatewayrestapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapigatewayrestapi"
 
 dataawsapigatewayrestapi.NewDataAwsApiGatewayRestApiEndpointConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsApiGatewayRestApiEndpointConfigurationOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicecatalogConstraint.ServicecatalogConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogconstraint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogconstraint"
 
 servicecatalogconstraint.NewServicecatalogConstraint(scope Construct, id *string, config ServicecatalogConstraintConfig) ServicecatalogConstraint
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.servicecatalogConstraint.ServicecatalogConstraint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogconstraint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogconstraint"
 
 servicecatalogconstraint.ServicecatalogConstraint_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.servicecatalogConstraint.ServicecatalogConstraint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogconstraint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogconstraint"
 
 servicecatalogconstraint.ServicecatalogConstraint_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ servicecatalogconstraint.ServicecatalogConstraint_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.servicecatalogConstraint.ServicecatalogConstraint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogconstraint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogconstraint"
 
 servicecatalogconstraint.ServicecatalogConstraint_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ servicecatalogconstraint.ServicecatalogConstraint_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.servicecatalogConstraint.ServicecatalogConstraint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogconstraint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogconstraint"
 
 servicecatalogconstraint.ServicecatalogConstraint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicecatalogConstraint.ServicecatalogConstraintConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogconstraint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogconstraint"
 
 &servicecatalogconstraint.ServicecatalogConstraintConfig {
 	Connection: interface{},
@@ -975,7 +975,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogconstrai
 	Description: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.servicecatalogConstraint.ServicecatalogConstraintTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.servicecatalogConstraint.ServicecatalogConstraintTimeouts,
 }
 ```
 
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicecatalogConstraint.ServicecatalogConstraintTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogconstraint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogconstraint"
 
 &servicecatalogconstraint.ServicecatalogConstraintTimeouts {
 	Create: *string,
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicecatalogConstraint.ServicecatalogConstraintTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicecatalogconstraint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicecatalogconstraint"
 
 servicecatalogconstraint.NewServicecatalogConstraintTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogConstraintTimeoutsOutputReference
 ```

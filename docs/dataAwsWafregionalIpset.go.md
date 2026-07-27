@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafregionalipset"
 
 dataawswafregionalipset.NewDataAwsWafregionalIpset(scope Construct, id *string, config DataAwsWafregionalIpsetConfig) DataAwsWafregionalIpset
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafregionalipset"
 
 dataawswafregionalipset.DataAwsWafregionalIpset_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafregionalipset"
 
 dataawswafregionalipset.DataAwsWafregionalIpset_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawswafregionalipset.DataAwsWafregionalIpset_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafregionalipset"
 
 dataawswafregionalipset.DataAwsWafregionalIpset_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawswafregionalipset.DataAwsWafregionalIpset_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafregionalipset"
 
 dataawswafregionalipset.DataAwsWafregionalIpset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpsetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafregionalipset"
 
 &dataawswafregionalipset.DataAwsWafregionalIpsetConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewayconnectpeer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewayconnectpeer"
 
 ec2transitgatewayconnectpeer.NewEc2TransitGatewayConnectPeer(scope Construct, id *string, config Ec2TransitGatewayConnectPeerConfig) Ec2TransitGatewayConnectPeer
 ```
@@ -462,7 +462,7 @@ func ResetTransitGatewayAddress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewayconnectpeer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewayconnectpeer"
 
 ec2transitgatewayconnectpeer.Ec2TransitGatewayConnectPeer_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewayconnectpeer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewayconnectpeer"
 
 ec2transitgatewayconnectpeer.Ec2TransitGatewayConnectPeer_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ ec2transitgatewayconnectpeer.Ec2TransitGatewayConnectPeer_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewayconnectpeer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewayconnectpeer"
 
 ec2transitgatewayconnectpeer.Ec2TransitGatewayConnectPeer_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ ec2transitgatewayconnectpeer.Ec2TransitGatewayConnectPeer_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewayconnectpeer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewayconnectpeer"
 
 ec2transitgatewayconnectpeer.Ec2TransitGatewayConnectPeer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1004,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewayconnectpeer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewayconnectpeer"
 
 &ec2transitgatewayconnectpeer.Ec2TransitGatewayConnectPeerConfig {
 	Connection: interface{},
@@ -1022,7 +1022,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewayconne
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeerTimeouts,
 	TransitGatewayAddress: *string,
 }
 ```
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewayconnectpeer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewayconnectpeer"
 
 &ec2transitgatewayconnectpeer.Ec2TransitGatewayConnectPeerTimeouts {
 	Create: *string,
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewayconnectpeer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewayconnectpeer"
 
 ec2transitgatewayconnectpeer.NewEc2TransitGatewayConnectPeerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2TransitGatewayConnectPeerTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaPreparedStatement.AthenaPreparedStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/athenapreparedstatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/athenapreparedstatement"
 
 athenapreparedstatement.NewAthenaPreparedStatement(scope Construct, id *string, config AthenaPreparedStatementConfig) AthenaPreparedStatement
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.athenaPreparedStatement.AthenaPreparedStatement.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/athenapreparedstatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/athenapreparedstatement"
 
 athenapreparedstatement.AthenaPreparedStatement_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.athenaPreparedStatement.AthenaPreparedStatement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/athenapreparedstatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/athenapreparedstatement"
 
 athenapreparedstatement.AthenaPreparedStatement_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ athenapreparedstatement.AthenaPreparedStatement_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.athenaPreparedStatement.AthenaPreparedStatement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/athenapreparedstatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/athenapreparedstatement"
 
 athenapreparedstatement.AthenaPreparedStatement_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ athenapreparedstatement.AthenaPreparedStatement_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.athenaPreparedStatement.AthenaPreparedStatement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/athenapreparedstatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/athenapreparedstatement"
 
 athenapreparedstatement.AthenaPreparedStatement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/athenapreparedstatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/athenapreparedstatement"
 
 &athenapreparedstatement.AthenaPreparedStatementConfig {
 	Connection: interface{},
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/athenapreparedstatemen
 	Description: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.athenaPreparedStatement.AthenaPreparedStatementTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.athenaPreparedStatement.AthenaPreparedStatementTimeouts,
 }
 ```
 
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaPreparedStatement.AthenaPreparedStatementTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/athenapreparedstatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/athenapreparedstatement"
 
 &athenapreparedstatement.AthenaPreparedStatementTimeouts {
 	Create: *string,
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaPreparedStatement.AthenaPreparedStatementTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/athenapreparedstatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/athenapreparedstatement"
 
 athenapreparedstatement.NewAthenaPreparedStatementTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaPreparedStatementTimeoutsOutputReference
 ```

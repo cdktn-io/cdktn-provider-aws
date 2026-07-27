@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ebsVolumeCopy.EbsVolumeCopy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsvolumecopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsvolumecopy"
 
 ebsvolumecopy.NewEbsVolumeCopy(scope Construct, id *string, config EbsVolumeCopyConfig) EbsVolumeCopy
 ```
@@ -462,7 +462,7 @@ func ResetVolumeType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ebsVolumeCopy.EbsVolumeCopy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsvolumecopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsvolumecopy"
 
 ebsvolumecopy.EbsVolumeCopy_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ebsVolumeCopy.EbsVolumeCopy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsvolumecopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsvolumecopy"
 
 ebsvolumecopy.EbsVolumeCopy_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ ebsvolumecopy.EbsVolumeCopy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ebsVolumeCopy.EbsVolumeCopy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsvolumecopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsvolumecopy"
 
 ebsvolumecopy.EbsVolumeCopy_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ ebsvolumecopy.EbsVolumeCopy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ebsVolumeCopy.EbsVolumeCopy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsvolumecopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsvolumecopy"
 
 ebsvolumecopy.EbsVolumeCopy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -971,7 +971,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ebsVolumeCopy.EbsVolumeCopyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsvolumecopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsvolumecopy"
 
 &ebsvolumecopy.EbsVolumeCopyConfig {
 	Connection: interface{},
@@ -987,7 +987,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsvolumecopy"
 	Size: *f64,
 	Tags: *map[string]*string,
 	Throughput: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ebsVolumeCopy.EbsVolumeCopyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ebsVolumeCopy.EbsVolumeCopyTimeouts,
 	VolumeType: *string,
 }
 ```
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ebsVolumeCopy.EbsVolumeCopyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsvolumecopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsvolumecopy"
 
 &ebsvolumecopy.EbsVolumeCopyTimeouts {
 	Create: *string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ebsVolumeCopy.EbsVolumeCopyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsvolumecopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsvolumecopy"
 
 ebsvolumecopy.NewEbsVolumeCopyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EbsVolumeCopyTimeoutsOutputReference
 ```

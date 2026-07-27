@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmscustomkeystore"
 
 kmscustomkeystore.NewKmsCustomKeyStore(scope Construct, id *string, config KmsCustomKeyStoreConfig) KmsCustomKeyStore
 ```
@@ -510,7 +510,7 @@ func ResetXksProxyVpcEndpointServiceName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmscustomkeystore"
 
 kmscustomkeystore.KmsCustomKeyStore_IsConstruct(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmscustomkeystore"
 
 kmscustomkeystore.KmsCustomKeyStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ kmscustomkeystore.KmsCustomKeyStore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmscustomkeystore"
 
 kmscustomkeystore.KmsCustomKeyStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ kmscustomkeystore.KmsCustomKeyStore_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmscustomkeystore"
 
 kmscustomkeystore.KmsCustomKeyStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1085,7 +1085,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kmsCustomKeyStore.KmsCustomKeyStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmscustomkeystore"
 
 &kmscustomkeystore.KmsCustomKeyStoreConfig {
 	Connection: interface{},
@@ -1101,9 +1101,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
 	Id: *string,
 	KeyStorePassword: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.kmsCustomKeyStore.KmsCustomKeyStoreTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kmsCustomKeyStore.KmsCustomKeyStoreTimeouts,
 	TrustAnchorCertificate: *string,
-	XksProxyAuthenticationCredential: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.kmsCustomKeyStore.KmsCustomKeyStoreXksProxyAuthenticationCredential,
+	XksProxyAuthenticationCredential: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kmsCustomKeyStore.KmsCustomKeyStoreXksProxyAuthenticationCredential,
 	XksProxyConnectivity: *string,
 	XksProxyUriEndpoint: *string,
 	XksProxyUriPath: *string,
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kmsCustomKeyStore.KmsCustomKeyStoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmscustomkeystore"
 
 &kmscustomkeystore.KmsCustomKeyStoreTimeouts {
 	Create: *string,
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kmsCustomKeyStore.KmsCustomKeyStoreXksProxyAuthenticationCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmscustomkeystore"
 
 &kmscustomkeystore.KmsCustomKeyStoreXksProxyAuthenticationCredential {
 	AccessKeyId: *string,
@@ -1486,7 +1486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kmsCustomKeyStore.KmsCustomKeyStoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmscustomkeystore"
 
 kmscustomkeystore.NewKmsCustomKeyStoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KmsCustomKeyStoreTimeoutsOutputReference
 ```
@@ -1822,7 +1822,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kmsCustomKeyStore.KmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmscustomkeystore"
 
 kmscustomkeystore.NewKmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference
 ```

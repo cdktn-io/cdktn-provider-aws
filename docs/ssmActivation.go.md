@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmActivation.SsmActivation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmactivation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmactivation"
 
 ssmactivation.NewSsmActivation(scope Construct, id *string, config SsmActivationConfig) SsmActivation
 ```
@@ -456,7 +456,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssmActivation.SsmActivation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmactivation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmactivation"
 
 ssmactivation.SsmActivation_IsConstruct(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssmActivation.SsmActivation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmactivation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmactivation"
 
 ssmactivation.SsmActivation_IsTerraformElement(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ ssmactivation.SsmActivation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssmActivation.SsmActivation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmactivation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmactivation"
 
 ssmactivation.SsmActivation_IsTerraformResource(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ ssmactivation.SsmActivation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssmActivation.SsmActivation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmactivation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmactivation"
 
 ssmactivation.SsmActivation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -976,7 +976,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssmActivation.SsmActivationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmactivation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmactivation"
 
 &ssmactivation.SsmActivationConfig {
 	Connection: interface{},

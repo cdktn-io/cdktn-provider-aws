@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunction(scope Construct, id *string, config DataAwsLambdaFunctionConfig) DataAwsLambdaFunction
 ```
@@ -326,7 +326,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.DataAwsLambdaFunction_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.DataAwsLambdaFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawslambdafunction.DataAwsLambdaFunction_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunction.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.DataAwsLambdaFunction_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawslambdafunction.DataAwsLambdaFunction_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.DataAwsLambdaFunction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1088,7 +1088,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionCapacityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionCapacityProviderConfig {
 
@@ -1101,7 +1101,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig {
 
@@ -1114,7 +1114,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionConfig {
 	Connection: interface{},
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionDeadLetterConfig {
 
@@ -1304,7 +1304,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDurableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionDurableConfig {
 
@@ -1317,7 +1317,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionEnvironment {
 
@@ -1330,7 +1330,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionEphemeralStorage {
 
@@ -1343,7 +1343,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionFileSystemConfig {
 
@@ -1356,7 +1356,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionLoggingConfig {
 
@@ -1369,7 +1369,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTenancyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionTenancyConfig {
 
@@ -1382,7 +1382,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionTracingConfig {
 
@@ -1395,7 +1395,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 &dataawslambdafunction.DataAwsLambdaFunctionVpcConfig {
 
@@ -1410,7 +1410,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigList
 ```
@@ -1559,7 +1559,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference
 ```
@@ -1859,7 +1859,7 @@ func InternalValue() DataAwsLambdaFunctionCapacityProviderConfigLambdaManagedIns
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionCapacityProviderConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionCapacityProviderConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionCapacityProviderConfigList
 ```
@@ -2008,7 +2008,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionCapacityProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionCapacityProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionCapacityProviderConfigOutputReference
 ```
@@ -2286,7 +2286,7 @@ func InternalValue() DataAwsLambdaFunctionCapacityProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionDeadLetterConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionDeadLetterConfigList
 ```
@@ -2435,7 +2435,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionDeadLetterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionDeadLetterConfigOutputReference
 ```
@@ -2713,7 +2713,7 @@ func InternalValue() DataAwsLambdaFunctionDeadLetterConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDurableConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionDurableConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionDurableConfigList
 ```
@@ -2862,7 +2862,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDurableConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionDurableConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionDurableConfigOutputReference
 ```
@@ -3151,7 +3151,7 @@ func InternalValue() DataAwsLambdaFunctionDurableConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionEnvironmentList
 ```
@@ -3300,7 +3300,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionEnvironmentOutputReference
 ```
@@ -3578,7 +3578,7 @@ func InternalValue() DataAwsLambdaFunctionEnvironment
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionEphemeralStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionEphemeralStorageList
 ```
@@ -3727,7 +3727,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionEphemeralStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionEphemeralStorageOutputReference
 ```
@@ -4005,7 +4005,7 @@ func InternalValue() DataAwsLambdaFunctionEphemeralStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionFileSystemConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionFileSystemConfigList
 ```
@@ -4154,7 +4154,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionFileSystemConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionFileSystemConfigOutputReference
 ```
@@ -4443,7 +4443,7 @@ func InternalValue() DataAwsLambdaFunctionFileSystemConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionLoggingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionLoggingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionLoggingConfigList
 ```
@@ -4592,7 +4592,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionLoggingConfigOutputReference
 ```
@@ -4903,7 +4903,7 @@ func InternalValue() DataAwsLambdaFunctionLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTenancyConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionTenancyConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionTenancyConfigList
 ```
@@ -5052,7 +5052,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTenancyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionTenancyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionTenancyConfigOutputReference
 ```
@@ -5330,7 +5330,7 @@ func InternalValue() DataAwsLambdaFunctionTenancyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionTracingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionTracingConfigList
 ```
@@ -5479,7 +5479,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionTracingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionTracingConfigOutputReference
 ```
@@ -5757,7 +5757,7 @@ func InternalValue() DataAwsLambdaFunctionTracingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionVpcConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionVpcConfigList
 ```
@@ -5906,7 +5906,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdafunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslambdafunction"
 
 dataawslambdafunction.NewDataAwsLambdaFunctionVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionVpcConfigOutputReference
 ```

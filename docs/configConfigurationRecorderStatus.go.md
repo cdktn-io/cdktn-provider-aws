@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationrecorderstatus"
 
 configconfigurationrecorderstatus.NewConfigConfigurationRecorderStatus(scope Construct, id *string, config ConfigConfigurationRecorderStatusConfig) ConfigConfigurationRecorderStatus
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationrecorderstatus"
 
 configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationrecorderstatus"
 
 configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationrecorderstatus"
 
 configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationrecorderstatus"
 
 configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationrecorderstatus"
 
 &configconfigurationrecorderstatus.ConfigConfigurationRecorderStatusConfig {
 	Connection: interface{},

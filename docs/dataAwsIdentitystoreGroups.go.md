@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 dataawsidentitystoregroups.NewDataAwsIdentitystoreGroups(scope Construct, id *string, config DataAwsIdentitystoreGroupsConfig) DataAwsIdentitystoreGroups
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 dataawsidentitystoregroups.DataAwsIdentitystoreGroups_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 dataawsidentitystoregroups.DataAwsIdentitystoreGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsidentitystoregroups.DataAwsIdentitystoreGroups_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 dataawsidentitystoregroups.DataAwsIdentitystoreGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsidentitystoregroups.DataAwsIdentitystoreGroups_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 dataawsidentitystoregroups.DataAwsIdentitystoreGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 &dataawsidentitystoregroups.DataAwsIdentitystoreGroupsConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 &dataawsidentitystoregroups.DataAwsIdentitystoreGroupsGroups {
 
@@ -772,7 +772,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroupsGroupsExternalIds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 &dataawsidentitystoregroups.DataAwsIdentitystoreGroupsGroupsExternalIds {
 
@@ -787,7 +787,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroupsGroupsExternalIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 dataawsidentitystoregroups.NewDataAwsIdentitystoreGroupsGroupsExternalIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreGroupsGroupsExternalIdsList
 ```
@@ -936,7 +936,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroupsGroupsExternalIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 dataawsidentitystoregroups.NewDataAwsIdentitystoreGroupsGroupsExternalIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreGroupsGroupsExternalIdsOutputReference
 ```
@@ -1225,7 +1225,7 @@ func InternalValue() DataAwsIdentitystoreGroupsGroupsExternalIds
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 dataawsidentitystoregroups.NewDataAwsIdentitystoreGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreGroupsGroupsList
 ```
@@ -1374,7 +1374,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIdentitystoreGroups.DataAwsIdentitystoreGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsidentitystoregroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsidentitystoregroups"
 
 dataawsidentitystoregroups.NewDataAwsIdentitystoreGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreGroupsGroupsOutputReference
 ```

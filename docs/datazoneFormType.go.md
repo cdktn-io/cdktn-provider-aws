@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormType(scope Construct, id *string, config DatazoneFormTypeConfig) DatazoneFormType
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 datazoneformtype.DatazoneFormType_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 datazoneformtype.DatazoneFormType_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ datazoneformtype.DatazoneFormType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 datazoneformtype.DatazoneFormType_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ datazoneformtype.DatazoneFormType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 datazoneformtype.DatazoneFormType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -992,7 +992,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 &datazoneformtype.DatazoneFormTypeConfig {
 	Connection: interface{},
@@ -1009,7 +1009,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
 	Model: interface{},
 	Region: *string,
 	Status: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.datazoneFormType.DatazoneFormTypeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.datazoneFormType.DatazoneFormTypeTimeouts,
 }
 ```
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeImports.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 &datazoneformtype.DatazoneFormTypeImports {
 
@@ -1225,7 +1225,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 &datazoneformtype.DatazoneFormTypeModel {
 	Smithy: *string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 &datazoneformtype.DatazoneFormTypeTimeouts {
 	Create: *string,
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeImportsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormTypeImportsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneFormTypeImportsList
 ```
@@ -1442,7 +1442,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeImportsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormTypeImportsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneFormTypeImportsOutputReference
 ```
@@ -1731,7 +1731,7 @@ func InternalValue() DatazoneFormTypeImports
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormTypeModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneFormTypeModelList
 ```
@@ -1891,7 +1891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormTypeModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneFormTypeModelOutputReference
 ```
@@ -2180,7 +2180,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatazoneFormTypeTimeoutsOutputReference
 ```

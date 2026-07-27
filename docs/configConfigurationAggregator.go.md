@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationaggregator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationaggregator"
 
 configconfigurationaggregator.NewConfigConfigurationAggregator(scope Construct, id *string, config ConfigConfigurationAggregatorConfig) ConfigConfigurationAggregator
 ```
@@ -468,7 +468,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationaggregator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationaggregator"
 
 configconfigurationaggregator.ConfigConfigurationAggregator_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationaggregator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationaggregator"
 
 configconfigurationaggregator.ConfigConfigurationAggregator_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ configconfigurationaggregator.ConfigConfigurationAggregator_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationaggregator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationaggregator"
 
 configconfigurationaggregator.ConfigConfigurationAggregator_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ configconfigurationaggregator.ConfigConfigurationAggregator_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationaggregator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationaggregator"
 
 configconfigurationaggregator.ConfigConfigurationAggregator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -922,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationaggregator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationaggregator"
 
 &configconfigurationaggregator.ConfigConfigurationAggregatorAccountAggregationSource {
 	AccountIds: *[]*string,
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationaggregator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationaggregator"
 
 &configconfigurationaggregator.ConfigConfigurationAggregatorConfig {
 	Connection: interface{},
@@ -993,9 +993,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationagg
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AccountAggregationSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSource,
+	AccountAggregationSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSource,
 	Id: *string,
-	OrganizationAggregationSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.configConfigurationAggregator.ConfigConfigurationAggregatorOrganizationAggregationSource,
+	OrganizationAggregationSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.configConfigurationAggregator.ConfigConfigurationAggregatorOrganizationAggregationSource,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorOrganizationAggregationSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationaggregator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationaggregator"
 
 &configconfigurationaggregator.ConfigConfigurationAggregatorOrganizationAggregationSource {
 	RoleArn: *string,
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationaggregator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationaggregator"
 
 configconfigurationaggregator.NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigurationAggregatorAccountAggregationSourceOutputReference
 ```
@@ -1582,7 +1582,7 @@ func InternalValue() ConfigConfigurationAggregatorAccountAggregationSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationaggregator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconfigurationaggregator"
 
 configconfigurationaggregator.NewConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayusageplankey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayusageplankey"
 
 apigatewayusageplankey.NewApiGatewayUsagePlanKey(scope Construct, id *string, config ApiGatewayUsagePlanKeyConfig) ApiGatewayUsagePlanKey
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayusageplankey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayusageplankey"
 
 apigatewayusageplankey.ApiGatewayUsagePlanKey_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayusageplankey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayusageplankey"
 
 apigatewayusageplankey.ApiGatewayUsagePlanKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ apigatewayusageplankey.ApiGatewayUsagePlanKey_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayusageplankey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayusageplankey"
 
 apigatewayusageplankey.ApiGatewayUsagePlanKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ apigatewayusageplankey.ApiGatewayUsagePlanKey_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayusageplankey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayusageplankey"
 
 apigatewayusageplankey.ApiGatewayUsagePlanKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayusageplankey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayusageplankey"
 
 &apigatewayusageplankey.ApiGatewayUsagePlanKeyConfig {
 	Connection: interface{},

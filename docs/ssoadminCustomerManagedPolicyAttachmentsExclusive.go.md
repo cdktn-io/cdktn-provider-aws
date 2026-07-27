@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 ssoadmincustomermanagedpolicyattachmentsexclusive.NewSsoadminCustomerManagedPolicyAttachmentsExclusive(scope Construct, id *string, config SsoadminCustomerManagedPolicyAttachmentsExclusiveConfig) SsoadminCustomerManagedPolicyAttachmentsExclusive
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusive.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 ssoadmincustomermanagedpolicyattachmentsexclusive.SsoadminCustomerManagedPolicyAttachmentsExclusive_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 ssoadmincustomermanagedpolicyattachmentsexclusive.SsoadminCustomerManagedPolicyAttachmentsExclusive_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ ssoadmincustomermanagedpolicyattachmentsexclusive.SsoadminCustomerManagedPolicyA
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 ssoadmincustomermanagedpolicyattachmentsexclusive.SsoadminCustomerManagedPolicyAttachmentsExclusive_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ ssoadmincustomermanagedpolicyattachmentsexclusive.SsoadminCustomerManagedPolicyA
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 ssoadmincustomermanagedpolicyattachmentsexclusive.SsoadminCustomerManagedPolicyAttachmentsExclusive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 &ssoadmincustomermanagedpolicyattachmentsexclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveConfig {
 	Connection: interface{},
@@ -860,7 +860,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanage
 	PermissionSetArn: *string,
 	CustomerManagedPolicyReference: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts,
 }
 ```
 
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 &ssoadmincustomermanagedpolicyattachmentsexclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference {
 	Name: *string,
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 &ssoadmincustomermanagedpolicyattachmentsexclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 ssoadmincustomermanagedpolicyattachmentsexclusive.NewSsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceList
 ```
@@ -1282,7 +1282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 ssoadmincustomermanagedpolicyattachmentsexclusive.NewSsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceOutputReference
 ```
@@ -1600,7 +1600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminCustomerManagedPolicyAttachmentsExclusive.SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadmincustomermanagedpolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadmincustomermanagedpolicyattachmentsexclusive"
 
 ssoadmincustomermanagedpolicyattachmentsexclusive.NewSsoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsOutputReference
 ```

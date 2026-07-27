@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbelasticcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbelasticcluster"
 
 docdbelasticcluster.NewDocdbelasticCluster(scope Construct, id *string, config DocdbelasticClusterConfig) DocdbelasticCluster
 ```
@@ -483,7 +483,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbelasticcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbelasticcluster"
 
 docdbelasticcluster.DocdbelasticCluster_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbelasticcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbelasticcluster"
 
 docdbelasticcluster.DocdbelasticCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ docdbelasticcluster.DocdbelasticCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbelasticcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbelasticcluster"
 
 docdbelasticcluster.DocdbelasticCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ docdbelasticcluster.DocdbelasticCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbelasticcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbelasticcluster"
 
 docdbelasticcluster.DocdbelasticCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1168,7 +1168,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbelasticcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbelasticcluster"
 
 &docdbelasticcluster.DocdbelasticClusterConfig {
 	Connection: interface{},
@@ -1192,7 +1192,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbelasticcluster"
 	ShardInstanceCount: *f64,
 	SubnetIds: *[]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.docdbelasticCluster.DocdbelasticClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.docdbelasticCluster.DocdbelasticClusterTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -1498,7 +1498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbelasticcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbelasticcluster"
 
 &docdbelasticcluster.DocdbelasticClusterTimeouts {
 	Create: *string,
@@ -1566,7 +1566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbelasticcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbelasticcluster"
 
 docdbelasticcluster.NewDocdbelasticClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DocdbelasticClusterTimeoutsOutputReference
 ```

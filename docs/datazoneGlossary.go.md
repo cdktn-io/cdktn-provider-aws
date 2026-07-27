@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneGlossary.DatazoneGlossary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneglossary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneglossary"
 
 datazoneglossary.NewDatazoneGlossary(scope Construct, id *string, config DatazoneGlossaryConfig) DatazoneGlossary
 ```
@@ -421,7 +421,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datazoneGlossary.DatazoneGlossary.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneglossary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneglossary"
 
 datazoneglossary.DatazoneGlossary_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datazoneGlossary.DatazoneGlossary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneglossary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneglossary"
 
 datazoneglossary.DatazoneGlossary_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ datazoneglossary.DatazoneGlossary_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datazoneGlossary.DatazoneGlossary.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneglossary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneglossary"
 
 datazoneglossary.DatazoneGlossary_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ datazoneglossary.DatazoneGlossary_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datazoneGlossary.DatazoneGlossary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneglossary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneglossary"
 
 datazoneglossary.DatazoneGlossary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneGlossary.DatazoneGlossaryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneglossary"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneglossary"
 
 &datazoneglossary.DatazoneGlossaryConfig {
 	Connection: interface{},

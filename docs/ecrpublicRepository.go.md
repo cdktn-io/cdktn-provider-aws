@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrpublicrepository"
 
 ecrpublicrepository.NewEcrpublicRepository(scope Construct, id *string, config EcrpublicRepositoryConfig) EcrpublicRepository
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrpublicrepository"
 
 ecrpublicrepository.EcrpublicRepository_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrpublicrepository"
 
 ecrpublicrepository.EcrpublicRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ ecrpublicrepository.EcrpublicRepository_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrpublicrepository"
 
 ecrpublicrepository.EcrpublicRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ ecrpublicrepository.EcrpublicRepository_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrpublicrepository"
 
 ecrpublicrepository.EcrpublicRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -973,7 +973,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrpublicrepository"
 
 &ecrpublicrepository.EcrpublicRepositoryCatalogData {
 	AboutText: *string,
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrpublicrepository"
 
 &ecrpublicrepository.EcrpublicRepositoryConfig {
 	Connection: interface{},
@@ -1086,13 +1086,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	RepositoryName: *string,
-	CatalogData: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecrpublicRepository.EcrpublicRepositoryCatalogData,
+	CatalogData: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecrpublicRepository.EcrpublicRepositoryCatalogData,
 	ForceDestroy: interface{},
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecrpublicRepository.EcrpublicRepositoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecrpublicRepository.EcrpublicRepositoryTimeouts,
 }
 ```
 
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrpublicrepository"
 
 &ecrpublicrepository.EcrpublicRepositoryTimeouts {
 	Delete: *string,
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrpublicrepository"
 
 ecrpublicrepository.NewEcrpublicRepositoryCatalogDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcrpublicRepositoryCatalogDataOutputReference
 ```
@@ -1755,7 +1755,7 @@ func InternalValue() EcrpublicRepositoryCatalogData
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecrpublicrepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecrpublicrepository"
 
 ecrpublicrepository.NewEcrpublicRepositoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcrpublicRepositoryTimeoutsOutputReference
 ```

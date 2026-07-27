@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 invoicinginvoiceunit.NewInvoicingInvoiceUnit(scope Construct, id *string, config InvoicingInvoiceUnitConfig) InvoicingInvoiceUnit
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 invoicinginvoiceunit.InvoicingInvoiceUnit_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 invoicinginvoiceunit.InvoicingInvoiceUnit_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ invoicinginvoiceunit.InvoicingInvoiceUnit_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 invoicinginvoiceunit.InvoicingInvoiceUnit_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ invoicinginvoiceunit.InvoicingInvoiceUnit_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 invoicinginvoiceunit.InvoicingInvoiceUnit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 &invoicinginvoiceunit.InvoicingInvoiceUnitConfig {
 	Connection: interface{},
@@ -983,7 +983,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
 	Rule: interface{},
 	Tags: *map[string]*string,
 	TaxInheritanceDisabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.invoicingInvoiceUnit.InvoicingInvoiceUnitTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.invoicingInvoiceUnit.InvoicingInvoiceUnitTimeouts,
 }
 ```
 
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 &invoicinginvoiceunit.InvoicingInvoiceUnitRule {
 	LinkedAccounts: *[]*string,
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 &invoicinginvoiceunit.InvoicingInvoiceUnitTimeouts {
 	Create: *string,
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 invoicinginvoiceunit.NewInvoicingInvoiceUnitRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InvoicingInvoiceUnitRuleList
 ```
@@ -1446,7 +1446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 invoicinginvoiceunit.NewInvoicingInvoiceUnitRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InvoicingInvoiceUnitRuleOutputReference
 ```
@@ -1735,7 +1735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/invoicinginvoiceunit"
 
 invoicinginvoiceunit.NewInvoicingInvoiceUnitTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InvoicingInvoiceUnitTimeoutsOutputReference
 ```

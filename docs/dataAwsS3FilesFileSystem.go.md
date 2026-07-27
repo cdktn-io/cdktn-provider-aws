@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3FilesFileSystem.DataAwsS3FilesFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3filesfilesystem"
 
 dataawss3filesfilesystem.NewDataAwsS3FilesFileSystem(scope Construct, id *string, config DataAwsS3FilesFileSystemConfig) DataAwsS3FilesFileSystem
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3FilesFileSystem.DataAwsS3FilesFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3filesfilesystem"
 
 dataawss3filesfilesystem.DataAwsS3FilesFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3FilesFileSystem.DataAwsS3FilesFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3filesfilesystem"
 
 dataawss3filesfilesystem.DataAwsS3FilesFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawss3filesfilesystem.DataAwsS3FilesFileSystem_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3FilesFileSystem.DataAwsS3FilesFileSystem.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3filesfilesystem"
 
 dataawss3filesfilesystem.DataAwsS3FilesFileSystem_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawss3filesfilesystem.DataAwsS3FilesFileSystem_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3FilesFileSystem.DataAwsS3FilesFileSystem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3filesfilesystem"
 
 dataawss3filesfilesystem.DataAwsS3FilesFileSystem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -737,7 +737,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3FilesFileSystem.DataAwsS3FilesFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3filesfilesystem"
 
 &dataawss3filesfilesystem.DataAwsS3FilesFileSystemConfig {
 	Connection: interface{},

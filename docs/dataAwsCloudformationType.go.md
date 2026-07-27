@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudformationtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudformationtype"
 
 dataawscloudformationtype.NewDataAwsCloudformationType(scope Construct, id *string, config DataAwsCloudformationTypeConfig) DataAwsCloudformationType
 ```
@@ -340,7 +340,7 @@ func ResetVersionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudformationtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudformationtype"
 
 dataawscloudformationtype.DataAwsCloudformationType_IsConstruct(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudformationtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudformationtype"
 
 dataawscloudformationtype.DataAwsCloudformationType_IsTerraformElement(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawscloudformationtype.DataAwsCloudformationType_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudformationtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudformationtype"
 
 dataawscloudformationtype.DataAwsCloudformationType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ dataawscloudformationtype.DataAwsCloudformationType_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudformationtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudformationtype"
 
 dataawscloudformationtype.DataAwsCloudformationType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudformationtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudformationtype"
 
 &dataawscloudformationtype.DataAwsCloudformationTypeConfig {
 	Connection: interface{},
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudformationtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudformationtype"
 
 &dataawscloudformationtype.DataAwsCloudformationTypeLoggingConfig {
 
@@ -1077,7 +1077,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudformationt
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudformationtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudformationtype"
 
 dataawscloudformationtype.NewDataAwsCloudformationTypeLoggingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudformationTypeLoggingConfigList
 ```
@@ -1226,7 +1226,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudformationtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudformationtype"
 
 dataawscloudformationtype.NewDataAwsCloudformationTypeLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudformationTypeLoggingConfigOutputReference
 ```

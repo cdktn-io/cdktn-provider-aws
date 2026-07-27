@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rdsclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rdsclusterendpoint"
 
 rdsclusterendpoint.NewRdsClusterEndpoint(scope Construct, id *string, config RdsClusterEndpointConfig) RdsClusterEndpoint
 ```
@@ -442,7 +442,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rdsclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rdsclusterendpoint"
 
 rdsclusterendpoint.RdsClusterEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rdsclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rdsclusterendpoint"
 
 rdsclusterendpoint.RdsClusterEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ rdsclusterendpoint.RdsClusterEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rdsclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rdsclusterendpoint"
 
 rdsclusterendpoint.RdsClusterEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ rdsclusterendpoint.RdsClusterEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rdsclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rdsclusterendpoint"
 
 rdsclusterendpoint.RdsClusterEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -951,7 +951,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rdsClusterEndpoint.RdsClusterEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rdsclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rdsclusterendpoint"
 
 &rdsclusterendpoint.RdsClusterEndpointConfig {
 	Connection: interface{},

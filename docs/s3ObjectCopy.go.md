@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 s3objectcopy.NewS3ObjectCopy(scope Construct, id *string, config S3ObjectCopyConfig) S3ObjectCopy
 ```
@@ -706,7 +706,7 @@ func ResetWebsiteRedirect()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 s3objectcopy.S3ObjectCopy_IsConstruct(x interface{}) *bool
 ```
@@ -738,7 +738,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 s3objectcopy.S3ObjectCopy_IsTerraformElement(x interface{}) *bool
 ```
@@ -752,7 +752,7 @@ s3objectcopy.S3ObjectCopy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 s3objectcopy.S3ObjectCopy_IsTerraformResource(x interface{}) *bool
 ```
@@ -766,7 +766,7 @@ s3objectcopy.S3ObjectCopy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 s3objectcopy.S3ObjectCopy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2073,7 +2073,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 &s3objectcopy.S3ObjectCopyConfig {
 	Connection: interface{},
@@ -2114,7 +2114,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
 	ObjectLockLegalHoldStatus: *string,
 	ObjectLockMode: *string,
 	ObjectLockRetainUntilDate: *string,
-	OverrideProvider: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3ObjectCopy.S3ObjectCopyOverrideProvider,
+	OverrideProvider: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ObjectCopy.S3ObjectCopyOverrideProvider,
 	Region: *string,
 	RequestPayer: *string,
 	ServerSideEncryption: *string,
@@ -2786,7 +2786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 &s3objectcopy.S3ObjectCopyGrant {
 	Permissions: *[]*string,
@@ -2877,10 +2877,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 &s3objectcopy.S3ObjectCopyOverrideProvider {
-	DefaultTags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags,
+	DefaultTags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags,
 }
 ```
 
@@ -2911,7 +2911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 &s3objectcopy.S3ObjectCopyOverrideProviderDefaultTags {
 	Tags: *map[string]*string,
@@ -2945,7 +2945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 s3objectcopy.NewS3ObjectCopyGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3ObjectCopyGrantList
 ```
@@ -3105,7 +3105,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 s3objectcopy.NewS3ObjectCopyGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3ObjectCopyGrantOutputReference
 ```
@@ -3503,7 +3503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 s3objectcopy.NewS3ObjectCopyOverrideProviderDefaultTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ObjectCopyOverrideProviderDefaultTagsOutputReference
 ```
@@ -3781,7 +3781,7 @@ func InternalValue() S3ObjectCopyOverrideProviderDefaultTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3objectcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3objectcopy"
 
 s3objectcopy.NewS3ObjectCopyOverrideProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ObjectCopyOverrideProviderOutputReference
 ```

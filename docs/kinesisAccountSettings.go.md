@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kinesisaccountsettings"
 
 kinesisaccountsettings.NewKinesisAccountSettings(scope Construct, id *string, config KinesisAccountSettingsConfig) KinesisAccountSettings
 ```
@@ -427,7 +427,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kinesisaccountsettings"
 
 kinesisaccountsettings.KinesisAccountSettings_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kinesisaccountsettings"
 
 kinesisaccountsettings.KinesisAccountSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ kinesisaccountsettings.KinesisAccountSettings_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kinesisaccountsettings"
 
 kinesisaccountsettings.KinesisAccountSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ kinesisaccountsettings.KinesisAccountSettings_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kinesisaccountsettings"
 
 kinesisaccountsettings.KinesisAccountSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -771,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kinesisaccountsettings"
 
 &kinesisaccountsettings.KinesisAccountSettingsConfig {
 	Connection: interface{},
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettingsMinimumThroughputBillingCommitment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kinesisaccountsettings"
 
 &kinesisaccountsettings.KinesisAccountSettingsMinimumThroughputBillingCommitment {
 	Status: *string,
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettingsMinimumThroughputBillingCommitmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kinesisaccountsettings"
 
 kinesisaccountsettings.NewKinesisAccountSettingsMinimumThroughputBillingCommitmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisAccountSettingsMinimumThroughputBillingCommitmentList
 ```
@@ -1099,7 +1099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettingsMinimumThroughputBillingCommitmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kinesisaccountsettings"
 
 kinesisaccountsettings.NewKinesisAccountSettingsMinimumThroughputBillingCommitmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisAccountSettingsMinimumThroughputBillingCommitmentOutputReference
 ```

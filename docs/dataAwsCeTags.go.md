@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTags(scope Construct, id *string, config DataAwsCeTagsConfig) DataAwsCeTags
 ```
@@ -372,7 +372,7 @@ func ResetTagKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.DataAwsCeTags_IsConstruct(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.DataAwsCeTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ dataawscetags.DataAwsCeTags_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.DataAwsCeTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ dataawscetags.DataAwsCeTags_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.DataAwsCeTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsConfig {
 	Connection: interface{},
@@ -792,8 +792,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	TimePeriod: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsTimePeriod,
-	Filter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilter,
+	TimePeriod: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsTimePeriod,
+	Filter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilter,
 	Id: *string,
 	SearchString: *string,
 	SortBy: interface{},
@@ -977,15 +977,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilter {
 	And: interface{},
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterDimension,
-	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterNot,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterDimension,
+	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterNot,
 	Or: interface{},
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterTags,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterTags,
 }
 ```
 
@@ -1091,12 +1091,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterAnd {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterAndCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterAndDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterAndTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterAndCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterAndDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterAndTags,
 }
 ```
 
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterAndCostCategory {
 	Key: *string,
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterAndDimension {
 	Key: *string,
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterAndTags {
 	Key: *string,
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterCostCategory {
 	Key: *string,
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterDimension {
 	Key: *string,
@@ -1457,12 +1457,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterNot {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterNotDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterNotTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterNotDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterNotTags,
 }
 ```
 
@@ -1523,7 +1523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterNotCostCategory {
 	Key: *string,
@@ -1583,7 +1583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterNotDimension {
 	Key: *string,
@@ -1643,7 +1643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterNotTags {
 	Key: *string,
@@ -1703,12 +1703,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterOr {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterOrCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterOrDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsCeTags.DataAwsCeTagsFilterOrTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterOrCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterOrDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsCeTags.DataAwsCeTagsFilterOrTags,
 }
 ```
 
@@ -1769,7 +1769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterOrCostCategory {
 	Key: *string,
@@ -1829,7 +1829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterOrDimension {
 	Key: *string,
@@ -1889,7 +1889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterOrTags {
 	Key: *string,
@@ -1949,7 +1949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsFilterTags {
 	Key: *string,
@@ -2009,7 +2009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsSortBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsSortBy {
 	Key: *string,
@@ -2055,7 +2055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsTimePeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 &dataawscetags.DataAwsCeTagsTimePeriod {
 	End: *string,
@@ -2103,7 +2103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterAndCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterAndCostCategoryOutputReference
 ```
@@ -2439,7 +2439,7 @@ func InternalValue() DataAwsCeTagsFilterAndCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterAndDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterAndDimensionOutputReference
 ```
@@ -2775,7 +2775,7 @@ func InternalValue() DataAwsCeTagsFilterAndDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeTagsFilterAndList
 ```
@@ -2935,7 +2935,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeTagsFilterAndOutputReference
 ```
@@ -3328,7 +3328,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterAndTagsOutputReference
 ```
@@ -3664,7 +3664,7 @@ func InternalValue() DataAwsCeTagsFilterAndTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterCostCategoryOutputReference
 ```
@@ -4000,7 +4000,7 @@ func InternalValue() DataAwsCeTagsFilterCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterDimensionOutputReference
 ```
@@ -4336,7 +4336,7 @@ func InternalValue() DataAwsCeTagsFilterDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterNotCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterNotCostCategoryOutputReference
 ```
@@ -4672,7 +4672,7 @@ func InternalValue() DataAwsCeTagsFilterNotCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterNotDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterNotDimensionOutputReference
 ```
@@ -5008,7 +5008,7 @@ func InternalValue() DataAwsCeTagsFilterNotDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterNotOutputReference
 ```
@@ -5383,7 +5383,7 @@ func InternalValue() DataAwsCeTagsFilterNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterNotTagsOutputReference
 ```
@@ -5719,7 +5719,7 @@ func InternalValue() DataAwsCeTagsFilterNotTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterOrCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterOrCostCategoryOutputReference
 ```
@@ -6055,7 +6055,7 @@ func InternalValue() DataAwsCeTagsFilterOrCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterOrDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterOrDimensionOutputReference
 ```
@@ -6391,7 +6391,7 @@ func InternalValue() DataAwsCeTagsFilterOrDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeTagsFilterOrList
 ```
@@ -6551,7 +6551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeTagsFilterOrOutputReference
 ```
@@ -6944,7 +6944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterOrTagsOutputReference
 ```
@@ -7280,7 +7280,7 @@ func InternalValue() DataAwsCeTagsFilterOrTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterOutputReference
 ```
@@ -7781,7 +7781,7 @@ func InternalValue() DataAwsCeTagsFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsFilterTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterTagsOutputReference
 ```
@@ -8117,7 +8117,7 @@ func InternalValue() DataAwsCeTagsFilterTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsSortByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCeTagsSortByList
 ```
@@ -8277,7 +8277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsSortByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCeTagsSortByOutputReference
 ```
@@ -8602,7 +8602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsTimePeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscetags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscetags"
 
 dataawscetags.NewDataAwsCeTagsTimePeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsTimePeriodOutputReference
 ```

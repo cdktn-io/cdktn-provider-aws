@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.savingsplansSavingsPlan.SavingsplansSavingsPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/savingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/savingsplanssavingsplan"
 
 savingsplanssavingsplan.NewSavingsplansSavingsPlan(scope Construct, id *string, config SavingsplansSavingsPlanConfig) SavingsplansSavingsPlan
 ```
@@ -441,7 +441,7 @@ func ResetUpfrontPaymentAmount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.savingsplansSavingsPlan.SavingsplansSavingsPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/savingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/savingsplanssavingsplan"
 
 savingsplanssavingsplan.SavingsplansSavingsPlan_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.savingsplansSavingsPlan.SavingsplansSavingsPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/savingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/savingsplanssavingsplan"
 
 savingsplanssavingsplan.SavingsplansSavingsPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ savingsplanssavingsplan.SavingsplansSavingsPlan_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.savingsplansSavingsPlan.SavingsplansSavingsPlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/savingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/savingsplanssavingsplan"
 
 savingsplanssavingsplan.SavingsplansSavingsPlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ savingsplanssavingsplan.SavingsplansSavingsPlan_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.savingsplansSavingsPlan.SavingsplansSavingsPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/savingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/savingsplanssavingsplan"
 
 savingsplanssavingsplan.SavingsplansSavingsPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1049,7 +1049,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.savingsplansSavingsPlan.SavingsplansSavingsPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/savingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/savingsplanssavingsplan"
 
 &savingsplanssavingsplan.SavingsplansSavingsPlanConfig {
 	Connection: interface{},
@@ -1063,7 +1063,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/savingsplanssavingspla
 	SavingsPlanOfferingId: *string,
 	PurchaseTime: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.savingsplansSavingsPlan.SavingsplansSavingsPlanTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.savingsplansSavingsPlan.SavingsplansSavingsPlanTimeouts,
 	UpfrontPaymentAmount: *string,
 }
 ```
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.savingsplansSavingsPlan.SavingsplansSavingsPlanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/savingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/savingsplanssavingsplan"
 
 &savingsplanssavingsplan.SavingsplansSavingsPlanTimeouts {
 	Create: *string,
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.savingsplansSavingsPlan.SavingsplansSavingsPlanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/savingsplanssavingsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/savingsplanssavingsplan"
 
 savingsplanssavingsplan.NewSavingsplansSavingsPlanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SavingsplansSavingsPlanTimeoutsOutputReference
 ```

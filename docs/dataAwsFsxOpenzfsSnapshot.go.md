@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsfsxopenzfssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsfsxopenzfssnapshot"
 
 dataawsfsxopenzfssnapshot.NewDataAwsFsxOpenzfsSnapshot(scope Construct, id *string, config DataAwsFsxOpenzfsSnapshotConfig) DataAwsFsxOpenzfsSnapshot
 ```
@@ -360,7 +360,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsfsxopenzfssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsfsxopenzfssnapshot"
 
 dataawsfsxopenzfssnapshot.DataAwsFsxOpenzfsSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsfsxopenzfssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsfsxopenzfssnapshot"
 
 dataawsfsxopenzfssnapshot.DataAwsFsxOpenzfsSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataawsfsxopenzfssnapshot.DataAwsFsxOpenzfsSnapshot_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsfsxopenzfssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsfsxopenzfssnapshot"
 
 dataawsfsxopenzfssnapshot.DataAwsFsxOpenzfsSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ dataawsfsxopenzfssnapshot.DataAwsFsxOpenzfsSnapshot_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsfsxopenzfssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsfsxopenzfssnapshot"
 
 dataawsfsxopenzfssnapshot.DataAwsFsxOpenzfsSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -825,7 +825,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsfsxopenzfssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsfsxopenzfssnapshot"
 
 &dataawsfsxopenzfssnapshot.DataAwsFsxOpenzfsSnapshotConfig {
 	Connection: interface{},
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsfsxopenzfssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsfsxopenzfssnapshot"
 
 &dataawsfsxopenzfssnapshot.DataAwsFsxOpenzfsSnapshotFilter {
 	Name: *string,
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsfsxopenzfssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsfsxopenzfssnapshot"
 
 dataawsfsxopenzfssnapshot.NewDataAwsFsxOpenzfsSnapshotFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxOpenzfsSnapshotFilterList
 ```
@@ -1240,7 +1240,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsfsxopenzfssnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsfsxopenzfssnapshot"
 
 dataawsfsxopenzfssnapshot.NewDataAwsFsxOpenzfsSnapshotFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsFsxOpenzfsSnapshotFilterOutputReference
 ```

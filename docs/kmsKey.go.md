@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kmsKey.KmsKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmskey"
 
 kmskey.NewKmsKey(scope Construct, id *string, config KmsKeyConfig) KmsKey
 ```
@@ -532,7 +532,7 @@ func ResetXksKeyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kmsKey.KmsKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmskey"
 
 kmskey.KmsKey_IsConstruct(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kmsKey.KmsKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmskey"
 
 kmskey.KmsKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -578,7 +578,7 @@ kmskey.KmsKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kmsKey.KmsKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmskey"
 
 kmskey.KmsKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ kmskey.KmsKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kmsKey.KmsKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmskey"
 
 kmskey.KmsKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1217,7 +1217,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kmsKey.KmsKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmskey"
 
 &kmskey.KmsKeyConfig {
 	Connection: interface{},
@@ -1242,7 +1242,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmskey"
 	RotationPeriodInDays: *f64,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.kmsKey.KmsKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kmsKey.KmsKeyTimeouts,
 	XksKeyId: *string,
 }
 ```
@@ -1564,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kmsKey.KmsKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmskey"
 
 &kmskey.KmsKeyTimeouts {
 	Create: *string,
@@ -1598,7 +1598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kmsKey.KmsKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmskey"
 
 kmskey.NewKmsKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KmsKeyTimeoutsOutputReference
 ```

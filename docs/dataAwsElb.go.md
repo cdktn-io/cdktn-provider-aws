@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.NewDataAwsElb(scope Construct, id *string, config DataAwsElbConfig) DataAwsElb
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.DataAwsElb_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.DataAwsElb_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawselb.DataAwsElb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.DataAwsElb_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawselb.DataAwsElb_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.DataAwsElb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbAccessLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 &dataawselb.DataAwsElbAccessLogs {
 
@@ -885,7 +885,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 &dataawselb.DataAwsElbConfig {
 	Connection: interface{},
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 &dataawselb.DataAwsElbHealthCheck {
 
@@ -1061,7 +1061,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 &dataawselb.DataAwsElbListener {
 
@@ -1076,7 +1076,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbAccessLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.NewDataAwsElbAccessLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElbAccessLogsList
 ```
@@ -1225,7 +1225,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbAccessLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.NewDataAwsElbAccessLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElbAccessLogsOutputReference
 ```
@@ -1536,7 +1536,7 @@ func InternalValue() DataAwsElbAccessLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.NewDataAwsElbHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElbHealthCheckList
 ```
@@ -1685,7 +1685,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.NewDataAwsElbHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElbHealthCheckOutputReference
 ```
@@ -2007,7 +2007,7 @@ func InternalValue() DataAwsElbHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.NewDataAwsElbListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElbListenerList
 ```
@@ -2156,7 +2156,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselb"
 
 dataawselb.NewDataAwsElbListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElbListenerOutputReference
 ```

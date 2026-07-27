@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicies"
 
 dataawsiamrolepolicies.NewDataAwsIamRolePolicies(scope Construct, id *string, config DataAwsIamRolePoliciesConfig) DataAwsIamRolePolicies
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicies"
 
 dataawsiamrolepolicies.DataAwsIamRolePolicies_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicies"
 
 dataawsiamrolepolicies.DataAwsIamRolePolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsiamrolepolicies.DataAwsIamRolePolicies_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicies"
 
 dataawsiamrolepolicies.DataAwsIamRolePolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsiamrolepolicies.DataAwsIamRolePolicies_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicies"
 
 dataawsiamrolepolicies.DataAwsIamRolePolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsiamrolepolicies"
 
 &dataawsiamrolepolicies.DataAwsIamRolePoliciesConfig {
 	Connection: interface{},

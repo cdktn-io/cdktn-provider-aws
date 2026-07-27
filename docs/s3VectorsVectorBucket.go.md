@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3VectorsVectorBucket.S3VectorsVectorBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsvectorbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3vectorsvectorbucket"
 
 s3vectorsvectorbucket.NewS3VectorsVectorBucket(scope Construct, id *string, config S3VectorsVectorBucketConfig) S3VectorsVectorBucket
 ```
@@ -441,7 +441,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3VectorsVectorBucket.S3VectorsVectorBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsvectorbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3vectorsvectorbucket"
 
 s3vectorsvectorbucket.S3VectorsVectorBucket_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3VectorsVectorBucket.S3VectorsVectorBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsvectorbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3vectorsvectorbucket"
 
 s3vectorsvectorbucket.S3VectorsVectorBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ s3vectorsvectorbucket.S3VectorsVectorBucket_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3VectorsVectorBucket.S3VectorsVectorBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsvectorbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3vectorsvectorbucket"
 
 s3vectorsvectorbucket.S3VectorsVectorBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ s3vectorsvectorbucket.S3VectorsVectorBucket_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3VectorsVectorBucket.S3VectorsVectorBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsvectorbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3vectorsvectorbucket"
 
 s3vectorsvectorbucket.S3VectorsVectorBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3VectorsVectorBucket.S3VectorsVectorBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsvectorbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3vectorsvectorbucket"
 
 &s3vectorsvectorbucket.S3VectorsVectorBucketConfig {
 	Connection: interface{},
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3VectorsVectorBucket.S3VectorsVectorBucketEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsvectorbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3vectorsvectorbucket"
 
 &s3vectorsvectorbucket.S3VectorsVectorBucketEncryptionConfiguration {
 	KmsKeyArn: *string,
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3VectorsVectorBucket.S3VectorsVectorBucketEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsvectorbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3vectorsvectorbucket"
 
 s3vectorsvectorbucket.NewS3VectorsVectorBucketEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3VectorsVectorBucketEncryptionConfigurationList
 ```
@@ -1255,7 +1255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3VectorsVectorBucket.S3VectorsVectorBucketEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsvectorbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3vectorsvectorbucket"
 
 s3vectorsvectorbucket.NewS3VectorsVectorBucketEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3VectorsVectorBucketEncryptionConfigurationOutputReference
 ```

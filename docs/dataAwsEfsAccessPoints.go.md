@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.NewDataAwsEfsAccessPoints(scope Construct, id *string, config DataAwsEfsAccessPointsConfig) DataAwsEfsAccessPoints
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.DataAwsEfsAccessPoints_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsefsaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsefsaccesspoints"
 
 &dataawsefsaccesspoints.DataAwsEfsAccessPointsConfig {
 	Connection: interface{},

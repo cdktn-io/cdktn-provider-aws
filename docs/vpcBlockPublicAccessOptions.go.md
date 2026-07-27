@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcBlockPublicAccessOptions.VpcBlockPublicAccessOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcblockpublicaccessoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcblockpublicaccessoptions"
 
 vpcblockpublicaccessoptions.NewVpcBlockPublicAccessOptions(scope Construct, id *string, config VpcBlockPublicAccessOptionsConfig) VpcBlockPublicAccessOptions
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcBlockPublicAccessOptions.VpcBlockPublicAccessOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcblockpublicaccessoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcblockpublicaccessoptions"
 
 vpcblockpublicaccessoptions.VpcBlockPublicAccessOptions_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcBlockPublicAccessOptions.VpcBlockPublicAccessOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcblockpublicaccessoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcblockpublicaccessoptions"
 
 vpcblockpublicaccessoptions.VpcBlockPublicAccessOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ vpcblockpublicaccessoptions.VpcBlockPublicAccessOptions_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcBlockPublicAccessOptions.VpcBlockPublicAccessOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcblockpublicaccessoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcblockpublicaccessoptions"
 
 vpcblockpublicaccessoptions.VpcBlockPublicAccessOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ vpcblockpublicaccessoptions.VpcBlockPublicAccessOptions_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcBlockPublicAccessOptions.VpcBlockPublicAccessOptions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcblockpublicaccessoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcblockpublicaccessoptions"
 
 vpcblockpublicaccessoptions.VpcBlockPublicAccessOptions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcBlockPublicAccessOptions.VpcBlockPublicAccessOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcblockpublicaccessoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcblockpublicaccessoptions"
 
 &vpcblockpublicaccessoptions.VpcBlockPublicAccessOptionsConfig {
 	Connection: interface{},
@@ -827,7 +827,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcblockpublicaccessop
 	Provisioners: *[]interface{},
 	InternetGatewayBlockMode: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpcBlockPublicAccessOptions.VpcBlockPublicAccessOptionsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpcBlockPublicAccessOptions.VpcBlockPublicAccessOptionsTimeouts,
 }
 ```
 
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcBlockPublicAccessOptions.VpcBlockPublicAccessOptionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcblockpublicaccessoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcblockpublicaccessoptions"
 
 &vpcblockpublicaccessoptions.VpcBlockPublicAccessOptionsTimeouts {
 	Create: *string,
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcBlockPublicAccessOptions.VpcBlockPublicAccessOptionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcblockpublicaccessoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcblockpublicaccessoptions"
 
 vpcblockpublicaccessoptions.NewVpcBlockPublicAccessOptionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcBlockPublicAccessOptionsTimeoutsOutputReference
 ```
