@@ -86,7 +86,9 @@ jobs:
       - name: Check for new commits or cancel via faking a SHA if release was cancelled
         id: git_remote
         if: github.event_name != 'workflow_dispatch'
-        run: node ./scripts/should-release.js && (echo "latest_commit=$(git ls-remote origin -h ${{ github.ref }} | cut -f1)" >> $GITHUB_OUTPUT && cat $GITHUB_OUTPUT) || echo "latest_commit=release_cancelled" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_REF: ${{ github.ref }}
+        run: node ./scripts/should-release.js && (echo "latest_commit=$(git ls-remote origin -h "$GITHUB_REF" | cut -f1)" >> $GITHUB_OUTPUT && cat $GITHUB_OUTPUT) || echo "latest_commit=release_cancelled" >> $GITHUB_OUTPUT
         shell: bash
       - name: Backup artifact permissions
         if: ${{ github.event_name == 'workflow_dispatch' || steps.git_remote.outputs.latest_commit == github.sha }}

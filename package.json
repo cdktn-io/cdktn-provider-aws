@@ -8,6 +8,7 @@
   "scripts": {
     "build": "projen build",
     "bump": "projen bump",
+    "bump:releasable-commits": "projen bump:releasable-commits",
     "check-if-new-provider-version": "projen check-if-new-provider-version",
     "clobber": "projen clobber",
     "compat": "projen compat",
@@ -57,11 +58,11 @@
     "constructs": "^10.6.0",
     "dot-prop": "^5.2.0",
     "jsii": "~5.9.0",
-    "jsii-diff": "^1.135.0",
+    "jsii-diff": "^1.139.0",
     "jsii-docgen": "^10.2.3",
-    "jsii-pacmak": "^1.135.0",
+    "jsii-pacmak": "^1.139.0",
     "jsii-rosetta": "~5.9.0",
-    "projen": "^0.99.74",
+    "projen": "^0.101.20",
     "semver": "^7.5.3",
     "typescript": "~5.9.0"
   },
@@ -87,12 +88,12 @@
   },
   "main": "lib/index.js",
   "license": "MPL-2.0",
+  "stability": "stable",
   "publishConfig": {
     "access": "public"
   },
   "version": "0.0.0",
   "types": "lib/index.d.ts",
-  "stability": "stable",
   "jsii": {
     "outdir": "dist",
     "targets": {
@@ -116,10 +117,8 @@
         "packageName": "aws"
       }
     },
-    "tsc": {
-      "outDir": "lib",
-      "rootDir": "src"
-    }
+    "tsconfig": "tsconfig.json",
+    "validateTsconfig": "strict"
   },
   "standard-version": {
     "types": [

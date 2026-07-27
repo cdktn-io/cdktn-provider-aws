@@ -36,12 +36,12 @@ jspm_packages/
 !/.github/workflows/release.yml
 !/.github/workflows/upgrade-main.yml
 !/test/
-!/tsconfig.dev.json
+!/tsconfig.json
+!/test/tsconfig.json
 !/src/
 /lib
 /dist/
 .jsii
-tsconfig.json
 .gen
 .terraform
 package-lock.json
