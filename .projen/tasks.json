@@ -2,7 +2,7 @@
   "manifestVersion": 3,
   "env": {
     "PATH": "$(pnpm -c exec \"node --print process.env.PATH\")",
-    "NODE_OPTIONS": "--max-old-space-size=31744",
+    "NODE_OPTIONS": "--max-old-space-size=28672",
     "CHECKPOINT_DISABLE": "1"
   },
   "tasks": {
