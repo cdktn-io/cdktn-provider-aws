@@ -14,7 +14,6 @@ dist
 /.github/
 /.vscode/
 /.idea/
-/.projenrc.js
 tsconfig.tsbuildinfo
 !.jsii
 .gen
@@ -26,3 +25,4 @@ scripts
 .projenrc.js
 .copywrite.hcl
 /.gitattributes
+/.projenrc.js
