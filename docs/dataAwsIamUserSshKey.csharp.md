@@ -4,7 +4,7 @@
 
 ### DataAwsIamUserSshKey <a name="DataAwsIamUserSshKey" id="@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/iam_user_ssh_key aws_iam_user_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/iam_user_ssh_key aws_iam_user_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsIamUserSshKey to im
 
 The id of the existing DataAwsIamUserSshKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/iam_user_ssh_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/iam_user_ssh_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,10 +721,10 @@ new DataAwsIamUserSshKeyConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.encoding">Encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/iam_user_ssh_key#encoding DataAwsIamUserSshKey#encoding}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.sshPublicKeyId">SshPublicKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/iam_user_ssh_key#ssh_public_key_id DataAwsIamUserSshKey#ssh_public_key_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/iam_user_ssh_key#username DataAwsIamUserSshKey#username}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/iam_user_ssh_key#id DataAwsIamUserSshKey#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.encoding">Encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/iam_user_ssh_key#encoding DataAwsIamUserSshKey#encoding}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.sshPublicKeyId">SshPublicKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/iam_user_ssh_key#ssh_public_key_id DataAwsIamUserSshKey#ssh_public_key_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/iam_user_ssh_key#username DataAwsIamUserSshKey#username}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/iam_user_ssh_key#id DataAwsIamUserSshKey#id}. |
 
 ---
 
@@ -806,7 +806,7 @@ public string Encoding { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/iam_user_ssh_key#encoding DataAwsIamUserSshKey#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/iam_user_ssh_key#encoding DataAwsIamUserSshKey#encoding}.
 
 ---
 
@@ -818,7 +818,7 @@ public string SshPublicKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/iam_user_ssh_key#ssh_public_key_id DataAwsIamUserSshKey#ssh_public_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/iam_user_ssh_key#ssh_public_key_id DataAwsIamUserSshKey#ssh_public_key_id}.
 
 ---
 
@@ -830,7 +830,7 @@ public string Username { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/iam_user_ssh_key#username DataAwsIamUserSshKey#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/iam_user_ssh_key#username DataAwsIamUserSshKey#username}.
 
 ---
 
@@ -842,7 +842,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/iam_user_ssh_key#id DataAwsIamUserSshKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/iam_user_ssh_key#id DataAwsIamUserSshKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

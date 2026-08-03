@@ -4,7 +4,7 @@
 
 ### ApprunnerDeployment <a name="ApprunnerDeployment" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/apprunner_deployment aws_apprunner_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/apprunner_deployment aws_apprunner_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeployment.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ApprunnerDeployment to imp
 
 The id of the existing ApprunnerDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/apprunner_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/apprunner_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,7 +842,7 @@ new ApprunnerDeploymentConfig {
 | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.serviceArn">ServiceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/apprunner_deployment#service_arn ApprunnerDeployment#service_arn}. |
+| <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.serviceArn">ServiceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/apprunner_deployment#service_arn ApprunnerDeployment#service_arn}. |
 | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentTimeouts">ApprunnerDeploymentTimeouts</a></code> | timeouts block. |
 
@@ -926,7 +926,7 @@ public string ServiceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/apprunner_deployment#service_arn ApprunnerDeployment#service_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/apprunner_deployment#service_arn ApprunnerDeployment#service_arn}.
 
 ---
 
@@ -940,7 +940,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/apprunner_deployment#region ApprunnerDeployment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/apprunner_deployment#region ApprunnerDeployment#region}
 
 ---
 
@@ -954,7 +954,7 @@ public ApprunnerDeploymentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/apprunner_deployment#timeouts ApprunnerDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/apprunner_deployment#timeouts ApprunnerDeployment#timeouts}
 
 ---
 
@@ -988,7 +988,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/apprunner_deployment#create ApprunnerDeployment#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/apprunner_deployment#create ApprunnerDeployment#create}
 
 ---
 

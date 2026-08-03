@@ -4,7 +4,7 @@
 
 ### AthenaNamedQuery <a name="AthenaNamedQuery" id="@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query aws_athena_named_query}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query aws_athena_named_query}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer"></a>
 
@@ -40,13 +40,13 @@ AthenaNamedQuery.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#database AthenaNamedQuery#database}. |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#name AthenaNamedQuery#name}. |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.query">query</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#query AthenaNamedQuery#query}. |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#description AthenaNamedQuery#description}. |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#id AthenaNamedQuery#id}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#database AthenaNamedQuery#database}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#name AthenaNamedQuery#name}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.query">query</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#query AthenaNamedQuery#query}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#description AthenaNamedQuery#description}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#id AthenaNamedQuery#id}. |
 | <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.workgroup">workgroup</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQuery.Initializer.parameter.workgroup">workgroup</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#database AthenaNamedQuery#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#database AthenaNamedQuery#database}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#name AthenaNamedQuery#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#name AthenaNamedQuery#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#query AthenaNamedQuery#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#query AthenaNamedQuery#query}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#description AthenaNamedQuery#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#description AthenaNamedQuery#description}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#id AthenaNamedQuery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#id AthenaNamedQuery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#region AthenaNamedQuery#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#region AthenaNamedQuery#region}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}.
 
 ---
 
@@ -644,7 +644,7 @@ The construct id used in the generated config for the AthenaNamedQuery to import
 
 The id of the existing AthenaNamedQuery that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1029,13 +1029,13 @@ AthenaNamedQueryConfig.builder()
 | <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.database">database</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#database AthenaNamedQuery#database}. |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#name AthenaNamedQuery#name}. |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.query">query</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#query AthenaNamedQuery#query}. |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#description AthenaNamedQuery#description}. |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#id AthenaNamedQuery#id}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.database">database</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#database AthenaNamedQuery#database}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#name AthenaNamedQuery#name}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.query">query</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#query AthenaNamedQuery#query}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#description AthenaNamedQuery#description}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#id AthenaNamedQuery#id}. |
 | <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.workgroup">workgroup</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}. |
+| <code><a href="#@cdktn/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig.property.workgroup">workgroup</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}. |
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.String getDatabase();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#database AthenaNamedQuery#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#database AthenaNamedQuery#database}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#name AthenaNamedQuery#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#name AthenaNamedQuery#name}.
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.String getQuery();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#query AthenaNamedQuery#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#query AthenaNamedQuery#query}.
 
 ---
 
@@ -1153,7 +1153,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#description AthenaNamedQuery#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#description AthenaNamedQuery#description}.
 
 ---
 
@@ -1165,7 +1165,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#id AthenaNamedQuery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#id AthenaNamedQuery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1182,7 +1182,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#region AthenaNamedQuery#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#region AthenaNamedQuery#region}
 
 ---
 
@@ -1194,7 +1194,7 @@ public java.lang.String getWorkgroup();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/athena_named_query#workgroup AthenaNamedQuery#workgroup}.
 
 ---
 

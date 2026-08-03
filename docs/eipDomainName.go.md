@@ -4,7 +4,7 @@
 
 ### EipDomainName <a name="EipDomainName" id="@cdktn/provider-aws.eipDomainName.EipDomainName"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name aws_eip_domain_name}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name aws_eip_domain_name}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eipDomainName.EipDomainName.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the EipDomainName to import.
 
 The id of the existing EipDomainName that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,8 +854,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eipdomainname"
 | <code><a href="#@cdktn/provider-aws.eipDomainName.EipDomainNameConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eipDomainName.EipDomainNameConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eipDomainName.EipDomainNameConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.eipDomainName.EipDomainNameConfig.property.allocationId">AllocationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}. |
-| <code><a href="#@cdktn/provider-aws.eipDomainName.EipDomainNameConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.eipDomainName.EipDomainNameConfig.property.allocationId">AllocationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}. |
+| <code><a href="#@cdktn/provider-aws.eipDomainName.EipDomainNameConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}. |
 | <code><a href="#@cdktn/provider-aws.eipDomainName.EipDomainNameConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.eipDomainName.EipDomainNameConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.eipDomainName.EipDomainNameTimeouts">EipDomainNameTimeouts</a></code> | timeouts block. |
 
@@ -939,7 +939,7 @@ AllocationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}.
 
 ---
 
@@ -951,7 +951,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}.
 
 ---
 
@@ -965,7 +965,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name#region EipDomainName#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name#region EipDomainName#region}
 
 ---
 
@@ -979,7 +979,7 @@ Timeouts EipDomainNameTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name#timeouts EipDomainName#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name#timeouts EipDomainName#timeouts}
 
 ---
 
@@ -1017,7 +1017,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name#create EipDomainName#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name#create EipDomainName#create}
 
 ---
 
@@ -1031,7 +1031,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name#delete EipDomainName#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name#delete EipDomainName#delete}
 
 ---
 
@@ -1045,7 +1045,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eip_domain_name#update EipDomainName#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eip_domain_name#update EipDomainName#update}
 
 ---
 

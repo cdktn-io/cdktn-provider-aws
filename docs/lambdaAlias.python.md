@@ -4,7 +4,7 @@
 
 ### LambdaAlias <a name="LambdaAlias" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias aws_lambda_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias aws_lambda_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer"></a>
 
@@ -43,11 +43,11 @@ lambdaAlias.LambdaAlias(
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.functionName">function_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.functionVersion">function_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#name LambdaAlias#name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#description LambdaAlias#description}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#id LambdaAlias#id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.functionName">function_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#function_name LambdaAlias#function_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.functionVersion">function_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#function_version LambdaAlias#function_version}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#name LambdaAlias#name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#description LambdaAlias#description}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#id LambdaAlias#id}. |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.routingConfig">routing_config</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig">LambdaAliasRoutingConfig</a></code> | routing_config block. |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts">LambdaAliasTimeouts</a></code> | timeouts block. |
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#function_name LambdaAlias#function_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#function_version LambdaAlias#function_version}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#name LambdaAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#name LambdaAlias#name}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#description LambdaAlias#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#description LambdaAlias#description}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#id LambdaAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#id LambdaAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#region LambdaAlias#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#region LambdaAlias#region}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 routing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#timeouts LambdaAlias#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#timeouts LambdaAlias#timeouts}
 
 ---
 
@@ -585,7 +585,7 @@ def put_routing_config(
 
 - *Type:* typing.Mapping[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
 
 ---
 
@@ -601,7 +601,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#update LambdaAlias#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#update LambdaAlias#update}.
 
 ---
 
@@ -749,7 +749,7 @@ The construct id used in the generated config for the LambdaAlias to import.
 
 The id of the existing LambdaAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1179,11 +1179,11 @@ lambdaAlias.LambdaAliasConfig(
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionName">function_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionVersion">function_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#name LambdaAlias#name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#description LambdaAlias#description}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#id LambdaAlias#id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionName">function_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#function_name LambdaAlias#function_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionVersion">function_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#function_version LambdaAlias#function_version}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#name LambdaAlias#name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#description LambdaAlias#description}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#id LambdaAlias#id}. |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.routingConfig">routing_config</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig">LambdaAliasRoutingConfig</a></code> | routing_config block. |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts">LambdaAliasTimeouts</a></code> | timeouts block. |
@@ -1268,7 +1268,7 @@ function_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#function_name LambdaAlias#function_name}.
 
 ---
 
@@ -1280,7 +1280,7 @@ function_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#function_version LambdaAlias#function_version}.
 
 ---
 
@@ -1292,7 +1292,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#name LambdaAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#name LambdaAlias#name}.
 
 ---
 
@@ -1304,7 +1304,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#description LambdaAlias#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#description LambdaAlias#description}.
 
 ---
 
@@ -1316,7 +1316,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#id LambdaAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#id LambdaAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1333,7 +1333,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#region LambdaAlias#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#region LambdaAlias#region}
 
 ---
 
@@ -1347,7 +1347,7 @@ routing_config: LambdaAliasRoutingConfig
 
 routing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
 
 ---
 
@@ -1361,7 +1361,7 @@ timeouts: LambdaAliasTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#timeouts LambdaAlias#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#timeouts LambdaAlias#timeouts}
 
 ---
 
@@ -1381,7 +1381,7 @@ lambdaAlias.LambdaAliasRoutingConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig.property.additionalVersionWeights">additional_version_weights</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig.property.additionalVersionWeights">additional_version_weights</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}. |
 
 ---
 
@@ -1393,7 +1393,7 @@ additional_version_weights: typing.Mapping[typing.Union[int, float]]
 
 - *Type:* typing.Mapping[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
 
 ---
 
@@ -1413,7 +1413,7 @@ lambdaAlias.LambdaAliasTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#update LambdaAlias#update}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#update LambdaAlias#update}. |
 
 ---
 
@@ -1425,7 +1425,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/lambda_alias#update LambdaAlias#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lambda_alias#update LambdaAlias#update}.
 
 ---
 
