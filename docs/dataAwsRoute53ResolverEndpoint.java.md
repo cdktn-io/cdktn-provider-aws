@@ -4,7 +4,7 @@
 
 ### DataAwsRoute53ResolverEndpoint <a name="DataAwsRoute53ResolverEndpoint" id="@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.Initializer"></a>
 
@@ -38,9 +38,9 @@ DataAwsRoute53ResolverEndpoint.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.Initializer.parameter.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilter">DataAwsRoute53ResolverEndpointFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#id DataAwsRoute53ResolverEndpoint#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#id DataAwsRoute53ResolverEndpoint#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.Initializer.parameter.resolverEndpointId">resolverEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#resolver_endpoint_id DataAwsRoute53ResolverEndpoint#resolver_endpoint_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.Initializer.parameter.resolverEndpointId">resolverEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#resolver_endpoint_id DataAwsRoute53ResolverEndpoint#resolver_endpoint_id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#filter DataAwsRoute53ResolverEndpoint#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#filter DataAwsRoute53ResolverEndpoint#filter}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#id DataAwsRoute53ResolverEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#id DataAwsRoute53ResolverEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#region DataAwsRoute53ResolverEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#region DataAwsRoute53ResolverEndpoint#region}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#resolver_endpoint_id DataAwsRoute53ResolverEndpoint#resolver_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#resolver_endpoint_id DataAwsRoute53ResolverEndpoint#resolver_endpoint_id}.
 
 ---
 
@@ -525,7 +525,7 @@ The construct id used in the generated config for the DataAwsRoute53ResolverEndp
 
 The id of the existing DataAwsRoute53ResolverEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -930,9 +930,9 @@ DataAwsRoute53ResolverEndpointConfig.builder()
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig.property.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilter">DataAwsRoute53ResolverEndpointFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#id DataAwsRoute53ResolverEndpoint#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#id DataAwsRoute53ResolverEndpoint#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig.property.resolverEndpointId">resolverEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#resolver_endpoint_id DataAwsRoute53ResolverEndpoint#resolver_endpoint_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig.property.resolverEndpointId">resolverEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#resolver_endpoint_id DataAwsRoute53ResolverEndpoint#resolver_endpoint_id}. |
 
 ---
 
@@ -1016,7 +1016,7 @@ public IResolvable|java.util.List<DataAwsRoute53ResolverEndpointFilter> getFilte
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#filter DataAwsRoute53ResolverEndpoint#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#filter DataAwsRoute53ResolverEndpoint#filter}
 
 ---
 
@@ -1028,7 +1028,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#id DataAwsRoute53ResolverEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#id DataAwsRoute53ResolverEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1045,7 +1045,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#region DataAwsRoute53ResolverEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#region DataAwsRoute53ResolverEndpoint#region}
 
 ---
 
@@ -1057,7 +1057,7 @@ public java.lang.String getResolverEndpointId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#resolver_endpoint_id DataAwsRoute53ResolverEndpoint#resolver_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#resolver_endpoint_id DataAwsRoute53ResolverEndpoint#resolver_endpoint_id}.
 
 ---
 
@@ -1078,8 +1078,8 @@ DataAwsRoute53ResolverEndpointFilter.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilter.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#name DataAwsRoute53ResolverEndpoint#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#values DataAwsRoute53ResolverEndpoint#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilter.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#name DataAwsRoute53ResolverEndpoint#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#values DataAwsRoute53ResolverEndpoint#values}. |
 
 ---
 
@@ -1091,7 +1091,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#name DataAwsRoute53ResolverEndpoint#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#name DataAwsRoute53ResolverEndpoint#name}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public java.util.List<java.lang.String> getValues();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/route53_resolver_endpoint#values DataAwsRoute53ResolverEndpoint#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/route53_resolver_endpoint#values DataAwsRoute53ResolverEndpoint#values}.
 
 ---
 

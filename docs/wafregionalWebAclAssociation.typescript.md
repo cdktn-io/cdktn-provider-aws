@@ -4,7 +4,7 @@
 
 ### WafregionalWebAclAssociation <a name="WafregionalWebAclAssociation" id="@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the WafregionalWebAclAssociati
 
 The id of the existing WafregionalWebAclAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -849,9 +849,9 @@ const wafregionalWebAclAssociationConfig: wafregionalWebAclAssociation.Wafregion
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#resource_arn WafregionalWebAclAssociation#resource_arn}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.webAclId">webAclId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#web_acl_id WafregionalWebAclAssociation#web_acl_id}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#id WafregionalWebAclAssociation#id}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#resource_arn WafregionalWebAclAssociation#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.webAclId">webAclId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#web_acl_id WafregionalWebAclAssociation#web_acl_id}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#id WafregionalWebAclAssociation#id}. |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationTimeouts">WafregionalWebAclAssociationTimeouts</a></code> | timeouts block. |
 
@@ -935,7 +935,7 @@ public readonly resourceArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#resource_arn WafregionalWebAclAssociation#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#resource_arn WafregionalWebAclAssociation#resource_arn}.
 
 ---
 
@@ -947,7 +947,7 @@ public readonly webAclId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#web_acl_id WafregionalWebAclAssociation#web_acl_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#web_acl_id WafregionalWebAclAssociation#web_acl_id}.
 
 ---
 
@@ -959,7 +959,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#id WafregionalWebAclAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#id WafregionalWebAclAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -976,7 +976,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#region WafregionalWebAclAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#region WafregionalWebAclAssociation#region}
 
 ---
 
@@ -990,7 +990,7 @@ public readonly timeouts: WafregionalWebAclAssociationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#timeouts WafregionalWebAclAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#timeouts WafregionalWebAclAssociation#timeouts}
 
 ---
 
@@ -1008,7 +1008,7 @@ const wafregionalWebAclAssociationTimeouts: wafregionalWebAclAssociation.Wafregi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#create WafregionalWebAclAssociation#create}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#create WafregionalWebAclAssociation#create}. |
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/wafregional_web_acl_association#create WafregionalWebAclAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/wafregional_web_acl_association#create WafregionalWebAclAssociation#create}.
 
 ---
 

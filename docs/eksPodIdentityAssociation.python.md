@@ -4,7 +4,7 @@
 
 ### EksPodIdentityAssociation <a name="EksPodIdentityAssociation" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer"></a>
 
@@ -26,6 +26,7 @@ eksPodIdentityAssociation.EksPodIdentityAssociation(
   role_arn: str,
   service_account: str,
   disable_session_tags: bool | IResolvable = None,
+  policy: str = None,
   region: str = None,
   tags: typing.Mapping[str] = None,
   target_role_arn: str = None
@@ -43,14 +44,15 @@ eksPodIdentityAssociation.EksPodIdentityAssociation(
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}. |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}. |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.serviceAccount">service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}. |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.disableSessionTags">disable_session_tags</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.serviceAccount">service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.disableSessionTags">disable_session_tags</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#policy EksPodIdentityAssociation#policy}. |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}. |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.targetRoleArn">target_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.targetRoleArn">target_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}. |
 
 ---
 
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}.
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}.
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}.
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}.
 
 ---
 
@@ -150,7 +152,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}.
+
+---
+
+##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer.parameter.policy"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#policy EksPodIdentityAssociation#policy}.
 
 ---
 
@@ -160,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#region EksPodIdentityAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#region EksPodIdentityAssociation#region}
 
 ---
 
@@ -168,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}.
 
 ---
 
@@ -176,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}.
 
 ---
 
@@ -209,6 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.resetDisableSessionTags">reset_disable_session_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.resetPolicy">reset_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.resetTargetRoleArn">reset_target_role_arn</a></code> | *No description.* |
@@ -569,6 +580,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_disable_session_tags() -> None
 ```
 
+##### `reset_policy` <a name="reset_policy" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.resetPolicy"></a>
+
+```python
+def reset_policy() -> None
+```
+
 ##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.resetRegion"></a>
 
 ```python
@@ -701,7 +718,7 @@ The construct id used in the generated config for the EksPodIdentityAssociation 
 
 The id of the existing EksPodIdentityAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -739,6 +756,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.clusterNameInput">cluster_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.disableSessionTagsInput">disable_session_tags_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.policyInput">policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.serviceAccountInput">service_account_input</a></code> | <code>str</code> | *No description.* |
@@ -747,6 +765,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.clusterName">cluster_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.disableSessionTags">disable_session_tags</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.policy">policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.serviceAccount">service_account</a></code> | <code>str</code> | *No description.* |
@@ -977,6 +996,16 @@ namespace_input: str
 
 ---
 
+##### `policy_input`<sup>Optional</sup> <a name="policy_input" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.policyInput"></a>
+
+```python
+policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.regionInput"></a>
 
 ```python
@@ -1051,6 +1080,16 @@ disable_session_tags: bool | IResolvable
 
 ```python
 namespace: str
+```
+
+- *Type:* str
+
+---
+
+##### `policy`<sup>Required</sup> <a name="policy" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.property.policy"></a>
+
+```python
+policy: str
 ```
 
 - *Type:* str
@@ -1147,6 +1186,7 @@ eksPodIdentityAssociation.EksPodIdentityAssociationConfig(
   role_arn: str,
   service_account: str,
   disable_session_tags: bool | IResolvable = None,
+  policy: str = None,
   region: str = None,
   tags: typing.Mapping[str] = None,
   target_role_arn: str = None
@@ -1164,14 +1204,15 @@ eksPodIdentityAssociation.EksPodIdentityAssociationConfig(
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}. |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}. |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.serviceAccount">service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}. |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.disableSessionTags">disable_session_tags</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.serviceAccount">service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.disableSessionTags">disable_session_tags</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#policy EksPodIdentityAssociation#policy}. |
 | <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}. |
-| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.targetRoleArn">target_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}. |
+| <code><a href="#@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.targetRoleArn">target_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}. |
 
 ---
 
@@ -1253,7 +1294,7 @@ cluster_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}.
 
 ---
 
@@ -1265,7 +1306,7 @@ namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}.
 
 ---
 
@@ -1277,7 +1318,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}.
 
 ---
 
@@ -1289,7 +1330,7 @@ service_account: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}.
 
 ---
 
@@ -1301,7 +1342,19 @@ disable_session_tags: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}.
+
+---
+
+##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.property.policy"></a>
+
+```python
+policy: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#policy EksPodIdentityAssociation#policy}.
 
 ---
 
@@ -1315,7 +1368,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#region EksPodIdentityAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#region EksPodIdentityAssociation#region}
 
 ---
 
@@ -1327,7 +1380,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}.
 
 ---
 
@@ -1339,7 +1392,7 @@ target_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}.
 
 ---
 

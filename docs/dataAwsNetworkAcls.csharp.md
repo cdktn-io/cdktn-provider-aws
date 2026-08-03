@@ -4,7 +4,7 @@
 
 ### DataAwsNetworkAcls <a name="DataAwsNetworkAcls" id="@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls aws_network_acls}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls aws_network_acls}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.Initializer"></a>
 
@@ -455,7 +455,7 @@ The construct id used in the generated config for the DataAwsNetworkAcls to impo
 
 The id of the existing DataAwsNetworkAcls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,11 +807,11 @@ new DataAwsNetworkAclsConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.filter">Filter</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter">DataAwsNetworkAclsFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts">DataAwsNetworkAclsTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}. |
 
 ---
 
@@ -895,7 +895,7 @@ public IResolvable|DataAwsNetworkAclsFilter[] Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#filter DataAwsNetworkAcls#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#filter DataAwsNetworkAcls#filter}
 
 ---
 
@@ -907,7 +907,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#region DataAwsNetworkAcls#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#region DataAwsNetworkAcls#region}
 
 ---
 
@@ -936,7 +936,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}.
 
 ---
 
@@ -950,7 +950,7 @@ public DataAwsNetworkAclsTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#timeouts DataAwsNetworkAcls#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#timeouts DataAwsNetworkAcls#timeouts}
 
 ---
 
@@ -962,7 +962,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}.
 
 ---
 
@@ -983,8 +983,8 @@ new DataAwsNetworkAclsFilter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#name DataAwsNetworkAcls#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#values DataAwsNetworkAcls#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#name DataAwsNetworkAcls#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#values DataAwsNetworkAcls#values}. |
 
 ---
 
@@ -996,7 +996,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#name DataAwsNetworkAcls#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#name DataAwsNetworkAcls#name}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#values DataAwsNetworkAcls#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#values DataAwsNetworkAcls#values}.
 
 ---
 
@@ -1028,7 +1028,7 @@ new DataAwsNetworkAclsTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#read DataAwsNetworkAcls#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#read DataAwsNetworkAcls#read}. |
 
 ---
 
@@ -1040,7 +1040,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/network_acls#read DataAwsNetworkAcls#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/network_acls#read DataAwsNetworkAcls#read}.
 
 ---
 

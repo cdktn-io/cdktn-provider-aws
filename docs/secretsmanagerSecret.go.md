@@ -4,7 +4,7 @@
 
 ### SecretsmanagerSecret <a name="SecretsmanagerSecret" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret aws_secretsmanager_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret aws_secretsmanager_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.Initializer"></a>
 
@@ -87,6 +87,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.resetReplica">ResetReplica</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.resetType">ResetType</a></code> | *No description.* |
 
 ---
 
@@ -483,6 +484,12 @@ func ResetTags()
 func ResetTagsAll()
 ```
 
+##### `ResetType` <a name="ResetType" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.resetType"></a>
+
+```go
+func ResetType()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -586,7 +593,7 @@ The construct id used in the generated config for the SecretsmanagerSecret to im
 
 The id of the existing SecretsmanagerSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -630,6 +637,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.replicaInput">ReplicaInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.forceOverwriteReplicaSecret">ForceOverwriteReplicaSecret</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -641,6 +649,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -926,6 +935,16 @@ func TagsInput() *map[string]*string
 
 ---
 
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.typeInput"></a>
+
+```go
+func TypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.description"></a>
 
 ```go
@@ -1036,6 +1055,16 @@ func TagsAll() *map[string]*string
 
 ---
 
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.property.type"></a>
+
+```go
+func Type() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1083,6 +1112,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
 	Replica: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
+	Type: *string,
 }
 ```
 
@@ -1097,18 +1127,19 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#description SecretsmanagerSecret#description}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.forceOverwriteReplicaSecret">ForceOverwriteReplicaSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#force_overwrite_replica_secret SecretsmanagerSecret#force_overwrite_replica_secret}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#id SecretsmanagerSecret#id}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#kms_key_id SecretsmanagerSecret#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#name SecretsmanagerSecret#name}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#name_prefix SecretsmanagerSecret#name_prefix}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#policy SecretsmanagerSecret#policy}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.recoveryWindowInDays">RecoveryWindowInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#recovery_window_in_days SecretsmanagerSecret#recovery_window_in_days}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#description SecretsmanagerSecret#description}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.forceOverwriteReplicaSecret">ForceOverwriteReplicaSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#force_overwrite_replica_secret SecretsmanagerSecret#force_overwrite_replica_secret}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#id SecretsmanagerSecret#id}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#kms_key_id SecretsmanagerSecret#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#name SecretsmanagerSecret#name}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#name_prefix SecretsmanagerSecret#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#policy SecretsmanagerSecret#policy}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.recoveryWindowInDays">RecoveryWindowInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#recovery_window_in_days SecretsmanagerSecret#recovery_window_in_days}. |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.replica">Replica</a></code> | <code>interface{}</code> | replica block. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#tags SecretsmanagerSecret#tags}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#tags_all SecretsmanagerSecret#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#tags SecretsmanagerSecret#tags}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#tags_all SecretsmanagerSecret#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#type SecretsmanagerSecret#type}. |
 
 ---
 
@@ -1190,7 +1221,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#description SecretsmanagerSecret#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#description SecretsmanagerSecret#description}.
 
 ---
 
@@ -1202,7 +1233,7 @@ ForceOverwriteReplicaSecret interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#force_overwrite_replica_secret SecretsmanagerSecret#force_overwrite_replica_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#force_overwrite_replica_secret SecretsmanagerSecret#force_overwrite_replica_secret}.
 
 ---
 
@@ -1214,7 +1245,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#id SecretsmanagerSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#id SecretsmanagerSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1229,7 +1260,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#kms_key_id SecretsmanagerSecret#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#kms_key_id SecretsmanagerSecret#kms_key_id}.
 
 ---
 
@@ -1241,7 +1272,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#name SecretsmanagerSecret#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#name SecretsmanagerSecret#name}.
 
 ---
 
@@ -1253,7 +1284,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#name_prefix SecretsmanagerSecret#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#name_prefix SecretsmanagerSecret#name_prefix}.
 
 ---
 
@@ -1265,7 +1296,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#policy SecretsmanagerSecret#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#policy SecretsmanagerSecret#policy}.
 
 ---
 
@@ -1277,7 +1308,7 @@ RecoveryWindowInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#recovery_window_in_days SecretsmanagerSecret#recovery_window_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#recovery_window_in_days SecretsmanagerSecret#recovery_window_in_days}.
 
 ---
 
@@ -1291,7 +1322,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#region SecretsmanagerSecret#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#region SecretsmanagerSecret#region}
 
 ---
 
@@ -1305,7 +1336,7 @@ Replica interface{}
 
 replica block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#replica SecretsmanagerSecret#replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#replica SecretsmanagerSecret#replica}
 
 ---
 
@@ -1317,7 +1348,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#tags SecretsmanagerSecret#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#tags SecretsmanagerSecret#tags}.
 
 ---
 
@@ -1329,7 +1360,19 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#tags_all SecretsmanagerSecret#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#tags_all SecretsmanagerSecret#tags_all}.
+
+---
+
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.property.type"></a>
+
+```go
+Type *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#type SecretsmanagerSecret#type}.
 
 ---
 
@@ -1350,8 +1393,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplica.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#region SecretsmanagerSecret#region}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplica.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#kms_key_id SecretsmanagerSecret#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplica.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#region SecretsmanagerSecret#region}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplica.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#kms_key_id SecretsmanagerSecret#kms_key_id}. |
 
 ---
 
@@ -1363,7 +1406,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#region SecretsmanagerSecret#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#region SecretsmanagerSecret#region}.
 
 ---
 
@@ -1375,7 +1418,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret#kms_key_id SecretsmanagerSecret#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret#kms_key_id SecretsmanagerSecret#kms_key_id}.
 
 ---
 

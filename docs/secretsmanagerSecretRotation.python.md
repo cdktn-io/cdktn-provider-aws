@@ -4,7 +4,7 @@
 
 ### SecretsmanagerSecretRotation <a name="SecretsmanagerSecretRotation" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer"></a>
 
@@ -23,6 +23,8 @@ secretsmanagerSecretRotation.SecretsmanagerSecretRotation(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   rotation_rules: SecretsmanagerSecretRotationRotationRules,
   secret_id: str,
+  external_secret_rotation_metadata: IResolvable | typing.List[SecretsmanagerSecretRotationExternalSecretRotationMetadata] = None,
+  external_secret_rotation_role_arn: str = None,
   id: str = None,
   region: str = None,
   rotate_immediately: bool | IResolvable = None,
@@ -42,11 +44,13 @@ secretsmanagerSecretRotation.SecretsmanagerSecretRotation(
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.rotationRules">rotation_rules</a></code> | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules">SecretsmanagerSecretRotationRotationRules</a></code> | rotation_rules block. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.secretId">secret_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.secretId">secret_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.externalSecretRotationMetadata">external_secret_rotation_metadata</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a>]</code> | external_secret_rotation_metadata block. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.externalSecretRotationRoleArn">external_secret_rotation_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#external_secret_rotation_role_arn SecretsmanagerSecretRotation#external_secret_rotation_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}. |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.rotateImmediately">rotate_immediately</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.rotationLambdaArn">rotation_lambda_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.rotateImmediately">rotate_immediately</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.rotationLambdaArn">rotation_lambda_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}. |
 
 ---
 
@@ -116,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 rotation_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
 
 ---
 
@@ -124,7 +128,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}.
+
+---
+
+##### `external_secret_rotation_metadata`<sup>Optional</sup> <a name="external_secret_rotation_metadata" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.externalSecretRotationMetadata"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a>]
+
+external_secret_rotation_metadata block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#external_secret_rotation_metadata SecretsmanagerSecretRotation#external_secret_rotation_metadata}
+
+---
+
+##### `external_secret_rotation_role_arn`<sup>Optional</sup> <a name="external_secret_rotation_role_arn" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer.parameter.externalSecretRotationRoleArn"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#external_secret_rotation_role_arn SecretsmanagerSecretRotation#external_secret_rotation_role_arn}.
 
 ---
 
@@ -132,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#region SecretsmanagerSecretRotation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#region SecretsmanagerSecretRotation#region}
 
 ---
 
@@ -153,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}.
 
 ---
 
@@ -161,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}.
 
 ---
 
@@ -193,7 +215,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.putExternalSecretRotationMetadata">put_external_secret_rotation_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.putRotationRules">put_rotation_rules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.resetExternalSecretRotationMetadata">reset_external_secret_rotation_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.resetExternalSecretRotationRoleArn">reset_external_secret_rotation_role_arn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.resetRotateImmediately">reset_rotate_immediately</a></code> | *No description.* |
@@ -549,6 +574,20 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_external_secret_rotation_metadata` <a name="put_external_secret_rotation_metadata" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.putExternalSecretRotationMetadata"></a>
+
+```python
+def put_external_secret_rotation_metadata(
+  value: IResolvable | typing.List[SecretsmanagerSecretRotationExternalSecretRotationMetadata]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.putExternalSecretRotationMetadata.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a>]
+
+---
+
 ##### `put_rotation_rules` <a name="put_rotation_rules" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.putRotationRules"></a>
 
 ```python
@@ -563,7 +602,7 @@ def put_rotation_rules(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}.
 
 ---
 
@@ -571,7 +610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}.
 
 ---
 
@@ -579,9 +618,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}.
 
 ---
+
+##### `reset_external_secret_rotation_metadata` <a name="reset_external_secret_rotation_metadata" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.resetExternalSecretRotationMetadata"></a>
+
+```python
+def reset_external_secret_rotation_metadata() -> None
+```
+
+##### `reset_external_secret_rotation_role_arn` <a name="reset_external_secret_rotation_role_arn" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.resetExternalSecretRotationRoleArn"></a>
+
+```python
+def reset_external_secret_rotation_role_arn() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.resetId"></a>
 
@@ -721,7 +772,7 @@ The construct id used in the generated config for the SecretsmanagerSecretRotati
 
 The id of the existing SecretsmanagerSecretRotation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,14 +802,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.externalSecretRotationMetadata">external_secret_rotation_metadata</a></code> | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList">SecretsmanagerSecretRotationExternalSecretRotationMetadataList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.rotationEnabled">rotation_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.rotationRules">rotation_rules</a></code> | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference">SecretsmanagerSecretRotationRotationRulesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.externalSecretRotationMetadataInput">external_secret_rotation_metadata_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.externalSecretRotationRoleArnInput">external_secret_rotation_role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.rotateImmediatelyInput">rotate_immediately_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.rotationLambdaArnInput">rotation_lambda_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.rotationRulesInput">rotation_rules_input</a></code> | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules">SecretsmanagerSecretRotationRotationRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.secretIdInput">secret_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.externalSecretRotationRoleArn">external_secret_rotation_role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.rotateImmediately">rotate_immediately</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -909,6 +964,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `external_secret_rotation_metadata`<sup>Required</sup> <a name="external_secret_rotation_metadata" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.externalSecretRotationMetadata"></a>
+
+```python
+external_secret_rotation_metadata: SecretsmanagerSecretRotationExternalSecretRotationMetadataList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList">SecretsmanagerSecretRotationExternalSecretRotationMetadataList</a>
+
+---
+
 ##### `rotation_enabled`<sup>Required</sup> <a name="rotation_enabled" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.rotationEnabled"></a>
 
 ```python
@@ -926,6 +991,26 @@ rotation_rules: SecretsmanagerSecretRotationRotationRulesOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference">SecretsmanagerSecretRotationRotationRulesOutputReference</a>
+
+---
+
+##### `external_secret_rotation_metadata_input`<sup>Optional</sup> <a name="external_secret_rotation_metadata_input" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.externalSecretRotationMetadataInput"></a>
+
+```python
+external_secret_rotation_metadata_input: IResolvable | typing.List[SecretsmanagerSecretRotationExternalSecretRotationMetadata]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a>]
+
+---
+
+##### `external_secret_rotation_role_arn_input`<sup>Optional</sup> <a name="external_secret_rotation_role_arn_input" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.externalSecretRotationRoleArnInput"></a>
+
+```python
+external_secret_rotation_role_arn_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -983,6 +1068,16 @@ rotation_rules_input: SecretsmanagerSecretRotationRotationRules
 
 ```python
 secret_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `external_secret_rotation_role_arn`<sup>Required</sup> <a name="external_secret_rotation_role_arn" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.property.externalSecretRotationRoleArn"></a>
+
+```python
+external_secret_rotation_role_arn: str
 ```
 
 - *Type:* str
@@ -1076,6 +1171,8 @@ secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   rotation_rules: SecretsmanagerSecretRotationRotationRules,
   secret_id: str,
+  external_secret_rotation_metadata: IResolvable | typing.List[SecretsmanagerSecretRotationExternalSecretRotationMetadata] = None,
+  external_secret_rotation_role_arn: str = None,
   id: str = None,
   region: str = None,
   rotate_immediately: bool | IResolvable = None,
@@ -1095,11 +1192,13 @@ secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig(
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.rotationRules">rotation_rules</a></code> | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules">SecretsmanagerSecretRotationRotationRules</a></code> | rotation_rules block. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.secretId">secret_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.secretId">secret_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.externalSecretRotationMetadata">external_secret_rotation_metadata</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a>]</code> | external_secret_rotation_metadata block. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.externalSecretRotationRoleArn">external_secret_rotation_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#external_secret_rotation_role_arn SecretsmanagerSecretRotation#external_secret_rotation_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}. |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.rotateImmediately">rotate_immediately</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.rotationLambdaArn">rotation_lambda_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.rotateImmediately">rotate_immediately</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.rotationLambdaArn">rotation_lambda_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}. |
 
 ---
 
@@ -1183,7 +1282,7 @@ rotation_rules: SecretsmanagerSecretRotationRotationRules
 
 rotation_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
 
 ---
 
@@ -1195,7 +1294,33 @@ secret_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}.
+
+---
+
+##### `external_secret_rotation_metadata`<sup>Optional</sup> <a name="external_secret_rotation_metadata" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.externalSecretRotationMetadata"></a>
+
+```python
+external_secret_rotation_metadata: IResolvable | typing.List[SecretsmanagerSecretRotationExternalSecretRotationMetadata]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a>]
+
+external_secret_rotation_metadata block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#external_secret_rotation_metadata SecretsmanagerSecretRotation#external_secret_rotation_metadata}
+
+---
+
+##### `external_secret_rotation_role_arn`<sup>Optional</sup> <a name="external_secret_rotation_role_arn" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.externalSecretRotationRoleArn"></a>
+
+```python
+external_secret_rotation_role_arn: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#external_secret_rotation_role_arn SecretsmanagerSecretRotation#external_secret_rotation_role_arn}.
 
 ---
 
@@ -1207,7 +1332,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1224,7 +1349,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#region SecretsmanagerSecretRotation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#region SecretsmanagerSecretRotation#region}
 
 ---
 
@@ -1236,7 +1361,7 @@ rotate_immediately: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}.
 
 ---
 
@@ -1248,7 +1373,53 @@ rotation_lambda_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}.
+
+---
+
+### SecretsmanagerSecretRotationExternalSecretRotationMetadata <a name="SecretsmanagerSecretRotationExternalSecretRotationMetadata" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata.Initializer"></a>
+
+```python
+from cdktn_provider_aws import secretsmanager_secret_rotation
+
+secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata(
+  key: str,
+  value: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#key SecretsmanagerSecretRotation#key}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#value SecretsmanagerSecretRotation#value}. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#key SecretsmanagerSecretRotation#key}.
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#value SecretsmanagerSecretRotation#value}.
 
 ---
 
@@ -1270,9 +1441,9 @@ secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.automaticallyAfterDays">automatically_after_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.duration">duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.scheduleExpression">schedule_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.automaticallyAfterDays">automatically_after_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.duration">duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.scheduleExpression">schedule_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}. |
 
 ---
 
@@ -1284,7 +1455,7 @@ automatically_after_days: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}.
 
 ---
 
@@ -1296,7 +1467,7 @@ duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}.
 
 ---
 
@@ -1308,11 +1479,519 @@ schedule_expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### SecretsmanagerSecretRotationExternalSecretRotationMetadataList <a name="SecretsmanagerSecretRotationExternalSecretRotationMetadataList" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.Initializer"></a>
+
+```python
+from cdktn_provider_aws import secretsmanager_secret_rotation
+
+secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[SecretsmanagerSecretRotationExternalSecretRotationMetadata]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a>]
+
+---
+
+
+### SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference <a name="SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import secretsmanager_secret_rotation
+
+secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.valueInput"></a>
+
+```python
+value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | SecretsmanagerSecretRotationExternalSecretRotationMetadata
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationExternalSecretRotationMetadata">SecretsmanagerSecretRotationExternalSecretRotationMetadata</a>
+
+---
+
 
 ### SecretsmanagerSecretRotationRotationRulesOutputReference <a name="SecretsmanagerSecretRotationRotationRulesOutputReference" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference"></a>
 

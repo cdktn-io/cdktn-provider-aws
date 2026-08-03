@@ -4,7 +4,7 @@
 
 ### Codepipeline <a name="Codepipeline" id="@cdktn/provider-aws.codepipeline.Codepipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline aws_codepipeline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline aws_codepipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.Codepipeline.Initializer"></a>
 
@@ -46,15 +46,15 @@ Codepipeline.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.artifactStore">artifactStore</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStore">CodepipelineArtifactStore</a>></code> | artifact_store block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.stage">stage</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStage">CodepipelineStage</a>></code> | stage block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.executionMode">executionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#id Codepipeline#id}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.pipelineType">pipelineType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.executionMode">executionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#id Codepipeline#id}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.pipelineType">pipelineType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#tags Codepipeline#tags}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#tags_all Codepipeline#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#tags Codepipeline#tags}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#tags_all Codepipeline#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.trigger">trigger</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineTrigger">CodepipelineTrigger</a>></code> | trigger block. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.Codepipeline.Initializer.parameter.variable">variable</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineVariable">CodepipelineVariable</a>></code> | variable block. |
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 artifact_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 stage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#stage Codepipeline#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#stage Codepipeline#stage}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#id Codepipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#id Codepipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +179,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#tags Codepipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#tags Codepipeline#tags}.
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#tags_all Codepipeline#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#tags_all Codepipeline#tags_all}.
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#trigger Codepipeline#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#trigger Codepipeline#trigger}
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#variable Codepipeline#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#variable Codepipeline#variable}
 
 ---
 
@@ -782,7 +782,7 @@ The construct id used in the generated config for the Codepipeline to import.
 
 The id of the existing Codepipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1282,10 +1282,10 @@ CodepipelineArtifactStore.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStore.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#location Codepipeline#location}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStore.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#type Codepipeline#type}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStore.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#location Codepipeline#location}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStore.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#type Codepipeline#type}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStore.property.encryptionKey">encryptionKey</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKey">CodepipelineArtifactStoreEncryptionKey</a></code> | encryption_key block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStore.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStore.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}. |
 
 ---
 
@@ -1297,7 +1297,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#location Codepipeline#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#location Codepipeline#location}.
 
 ---
 
@@ -1309,7 +1309,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#type Codepipeline#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#type Codepipeline#type}.
 
 ---
 
@@ -1323,7 +1323,7 @@ public CodepipelineArtifactStoreEncryptionKey getEncryptionKey();
 
 encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#encryption_key Codepipeline#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#encryption_key Codepipeline#encryption_key}
 
 ---
 
@@ -1335,7 +1335,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}.
 
 ---
 
@@ -1356,8 +1356,8 @@ CodepipelineArtifactStoreEncryptionKey.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKey.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#id Codepipeline#id}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKey.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#type Codepipeline#type}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKey.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#id Codepipeline#id}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKey.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#type Codepipeline#type}. |
 
 ---
 
@@ -1369,7 +1369,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#id Codepipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#id Codepipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1384,7 +1384,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#type Codepipeline#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#type Codepipeline#type}.
 
 ---
 
@@ -1430,15 +1430,15 @@ CodepipelineConfig.builder()
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.artifactStore">artifactStore</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineArtifactStore">CodepipelineArtifactStore</a>></code> | artifact_store block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.stage">stage</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStage">CodepipelineStage</a>></code> | stage block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.executionMode">executionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#id Codepipeline#id}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.pipelineType">pipelineType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.executionMode">executionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#id Codepipeline#id}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.pipelineType">pipelineType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#tags Codepipeline#tags}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#tags_all Codepipeline#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#tags Codepipeline#tags}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#tags_all Codepipeline#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.trigger">trigger</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineTrigger">CodepipelineTrigger</a>></code> | trigger block. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineConfig.property.variable">variable</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineVariable">CodepipelineVariable</a>></code> | variable block. |
 
@@ -1524,7 +1524,7 @@ public IResolvable|java.util.List<CodepipelineArtifactStore> getArtifactStore();
 
 artifact_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
 
 ---
 
@@ -1536,7 +1536,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}.
 
 ---
 
@@ -1548,7 +1548,7 @@ public java.lang.String getRoleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
 
 ---
 
@@ -1562,7 +1562,7 @@ public IResolvable|java.util.List<CodepipelineStage> getStage();
 
 stage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#stage Codepipeline#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#stage Codepipeline#stage}
 
 ---
 
@@ -1574,7 +1574,7 @@ public java.lang.String getExecutionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}.
 
 ---
 
@@ -1586,7 +1586,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#id Codepipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#id Codepipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1601,7 +1601,7 @@ public java.lang.String getPipelineType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}.
 
 ---
 
@@ -1615,7 +1615,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}
 
 ---
 
@@ -1627,7 +1627,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#tags Codepipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#tags Codepipeline#tags}.
 
 ---
 
@@ -1639,7 +1639,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#tags_all Codepipeline#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#tags_all Codepipeline#tags_all}.
 
 ---
 
@@ -1653,7 +1653,7 @@ public IResolvable|java.util.List<CodepipelineTrigger> getTrigger();
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#trigger Codepipeline#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#trigger Codepipeline#trigger}
 
 ---
 
@@ -1667,7 +1667,7 @@ public IResolvable|java.util.List<CodepipelineVariable> getVariable();
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#variable Codepipeline#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#variable Codepipeline#variable}
 
 ---
 
@@ -1692,7 +1692,7 @@ CodepipelineStage.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStage.property.action">action</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction">CodepipelineStageAction</a>></code> | action block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStage.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStage.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStage.property.beforeEntry">beforeEntry</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntry">CodepipelineStageBeforeEntry</a></code> | before_entry block. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStage.property.onFailure">onFailure</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailure">CodepipelineStageOnFailure</a></code> | on_failure block. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStage.property.onSuccess">onSuccess</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccess">CodepipelineStageOnSuccess</a></code> | on_success block. |
@@ -1709,7 +1709,7 @@ public IResolvable|java.util.List<CodepipelineStageAction> getAction();
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#action Codepipeline#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#action Codepipeline#action}
 
 ---
 
@@ -1721,7 +1721,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}.
 
 ---
 
@@ -1735,7 +1735,7 @@ public CodepipelineStageBeforeEntry getBeforeEntry();
 
 before_entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#before_entry Codepipeline#before_entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#before_entry Codepipeline#before_entry}
 
 ---
 
@@ -1749,7 +1749,7 @@ public CodepipelineStageOnFailure getOnFailure();
 
 on_failure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#on_failure Codepipeline#on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#on_failure Codepipeline#on_failure}
 
 ---
 
@@ -1763,7 +1763,7 @@ public CodepipelineStageOnSuccess getOnSuccess();
 
 on_success block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#on_success Codepipeline#on_success}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#on_success Codepipeline#on_success}
 
 ---
 
@@ -1780,10 +1780,13 @@ CodepipelineStageAction.builder()
     .owner(java.lang.String)
     .provider(java.lang.String)
     .version(java.lang.String)
+//  .commands(java.util.List<java.lang.String>)
 //  .configuration(java.util.Map<java.lang.String, java.lang.String>)
 //  .inputArtifacts(java.util.List<java.lang.String>)
 //  .namespace(java.lang.String)
 //  .outputArtifacts(java.util.List<java.lang.String>)
+//  .outputArtifactsForComputeAction(IResolvable|java.util.List<CodepipelineStageActionOutputArtifactsForComputeAction>)
+//  .outputVariables(java.util.List<java.lang.String>)
 //  .region(java.lang.String)
 //  .roleArn(java.lang.String)
 //  .runOrder(java.lang.Number)
@@ -1795,19 +1798,22 @@ CodepipelineStageAction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.category">category</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#category Codepipeline#category}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#owner Codepipeline#owner}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.provider">provider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#provider Codepipeline#provider}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#version Codepipeline#version}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#configuration Codepipeline#configuration}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.inputArtifacts">inputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#namespace Codepipeline#namespace}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.outputArtifacts">outputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#output_artifacts Codepipeline#output_artifacts}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.runOrder">runOrder</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#run_order Codepipeline#run_order}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.timeoutInMinutes">timeoutInMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.category">category</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#category Codepipeline#category}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#owner Codepipeline#owner}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.provider">provider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#provider Codepipeline#provider}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#version Codepipeline#version}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.commands">commands</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#commands Codepipeline#commands}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#configuration Codepipeline#configuration}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.inputArtifacts">inputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#namespace Codepipeline#namespace}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.outputArtifacts">outputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#output_artifacts Codepipeline#output_artifacts}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.outputArtifactsForComputeAction">outputArtifactsForComputeAction</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction">CodepipelineStageActionOutputArtifactsForComputeAction</a>></code> | output_artifacts_for_compute_action block. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.outputVariables">outputVariables</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#output_variables Codepipeline#output_variables}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.runOrder">runOrder</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#run_order Codepipeline#run_order}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.timeoutInMinutes">timeoutInMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}. |
 
 ---
 
@@ -1819,7 +1825,7 @@ public java.lang.String getCategory();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#category Codepipeline#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#category Codepipeline#category}.
 
 ---
 
@@ -1831,7 +1837,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}.
 
 ---
 
@@ -1843,7 +1849,7 @@ public java.lang.String getOwner();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#owner Codepipeline#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#owner Codepipeline#owner}.
 
 ---
 
@@ -1855,7 +1861,7 @@ public java.lang.String getProvider();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#provider Codepipeline#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#provider Codepipeline#provider}.
 
 ---
 
@@ -1867,7 +1873,19 @@ public java.lang.String getVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#version Codepipeline#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#version Codepipeline#version}.
+
+---
+
+##### `commands`<sup>Optional</sup> <a name="commands" id="@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.commands"></a>
+
+```java
+public java.util.List<java.lang.String> getCommands();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#commands Codepipeline#commands}.
 
 ---
 
@@ -1879,7 +1897,7 @@ public java.util.Map<java.lang.String, java.lang.String> getConfiguration();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#configuration Codepipeline#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#configuration Codepipeline#configuration}.
 
 ---
 
@@ -1891,7 +1909,7 @@ public java.util.List<java.lang.String> getInputArtifacts();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}.
 
 ---
 
@@ -1903,7 +1921,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#namespace Codepipeline#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#namespace Codepipeline#namespace}.
 
 ---
 
@@ -1915,7 +1933,33 @@ public java.util.List<java.lang.String> getOutputArtifacts();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#output_artifacts Codepipeline#output_artifacts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#output_artifacts Codepipeline#output_artifacts}.
+
+---
+
+##### `outputArtifactsForComputeAction`<sup>Optional</sup> <a name="outputArtifactsForComputeAction" id="@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.outputArtifactsForComputeAction"></a>
+
+```java
+public IResolvable|java.util.List<CodepipelineStageActionOutputArtifactsForComputeAction> getOutputArtifactsForComputeAction();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction">CodepipelineStageActionOutputArtifactsForComputeAction</a>>
+
+output_artifacts_for_compute_action block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#output_artifacts_for_compute_action Codepipeline#output_artifacts_for_compute_action}
+
+---
+
+##### `outputVariables`<sup>Optional</sup> <a name="outputVariables" id="@cdktn/provider-aws.codepipeline.CodepipelineStageAction.property.outputVariables"></a>
+
+```java
+public java.util.List<java.lang.String> getOutputVariables();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#output_variables Codepipeline#output_variables}.
 
 ---
 
@@ -1927,7 +1971,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}.
 
 ---
 
@@ -1939,7 +1983,7 @@ public java.lang.String getRoleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
 
 ---
 
@@ -1951,7 +1995,7 @@ public java.lang.Number getRunOrder();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#run_order Codepipeline#run_order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#run_order Codepipeline#run_order}.
 
 ---
 
@@ -1963,7 +2007,53 @@ public java.lang.Number getTimeoutInMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}.
+
+---
+
+### CodepipelineStageActionOutputArtifactsForComputeAction <a name="CodepipelineStageActionOutputArtifactsForComputeAction" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction;
+
+CodepipelineStageActionOutputArtifactsForComputeAction.builder()
+    .name(java.lang.String)
+//  .files(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction.property.files">files</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#files Codepipeline#files}. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}.
+
+---
+
+##### `files`<sup>Optional</sup> <a name="files" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction.property.files"></a>
+
+```java
+public java.util.List<java.lang.String> getFiles();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#files Codepipeline#files}.
 
 ---
 
@@ -1997,7 +2087,7 @@ public CodepipelineStageBeforeEntryCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#condition Codepipeline#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#condition Codepipeline#condition}
 
 ---
 
@@ -2019,7 +2109,7 @@ CodepipelineStageBeforeEntryCondition.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryCondition.property.rule">rule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule">CodepipelineStageBeforeEntryConditionRule</a>></code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryCondition.property.result">result</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#result Codepipeline#result}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryCondition.property.result">result</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#result Codepipeline#result}. |
 
 ---
 
@@ -2033,7 +2123,7 @@ public IResolvable|java.util.List<CodepipelineStageBeforeEntryConditionRule> get
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#rule Codepipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#rule Codepipeline#rule}
 
 ---
 
@@ -2045,7 +2135,7 @@ public java.lang.String getResult();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#result Codepipeline#result}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#result Codepipeline#result}.
 
 ---
 
@@ -2072,14 +2162,14 @@ CodepipelineStageBeforeEntryConditionRule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.ruleTypeId">ruleTypeId</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId">CodepipelineStageBeforeEntryConditionRuleRuleTypeId</a></code> | rule_type_id block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.commands">commands</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#commands Codepipeline#commands}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#configuration Codepipeline#configuration}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.inputArtifacts">inputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.timeoutInMinutes">timeoutInMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.commands">commands</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#commands Codepipeline#commands}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#configuration Codepipeline#configuration}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.inputArtifacts">inputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.property.timeoutInMinutes">timeoutInMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}. |
 
 ---
 
@@ -2091,7 +2181,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}.
 
 ---
 
@@ -2105,7 +2195,7 @@ public CodepipelineStageBeforeEntryConditionRuleRuleTypeId getRuleTypeId();
 
 rule_type_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
 
 ---
 
@@ -2117,7 +2207,7 @@ public java.util.List<java.lang.String> getCommands();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#commands Codepipeline#commands}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#commands Codepipeline#commands}.
 
 ---
 
@@ -2129,7 +2219,7 @@ public java.util.Map<java.lang.String, java.lang.String> getConfiguration();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#configuration Codepipeline#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#configuration Codepipeline#configuration}.
 
 ---
 
@@ -2141,7 +2231,7 @@ public java.util.List<java.lang.String> getInputArtifacts();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}.
 
 ---
 
@@ -2153,7 +2243,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}.
 
 ---
 
@@ -2165,7 +2255,7 @@ public java.lang.String getRoleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
 
 ---
 
@@ -2177,7 +2267,7 @@ public java.lang.Number getTimeoutInMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}.
 
 ---
 
@@ -2200,10 +2290,10 @@ CodepipelineStageBeforeEntryConditionRuleRuleTypeId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId.property.category">category</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#category Codepipeline#category}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId.property.provider">provider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#provider Codepipeline#provider}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId.property.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#owner Codepipeline#owner}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#version Codepipeline#version}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId.property.category">category</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#category Codepipeline#category}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId.property.provider">provider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#provider Codepipeline#provider}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId.property.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#owner Codepipeline#owner}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#version Codepipeline#version}. |
 
 ---
 
@@ -2215,7 +2305,7 @@ public java.lang.String getCategory();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#category Codepipeline#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#category Codepipeline#category}.
 
 ---
 
@@ -2227,7 +2317,7 @@ public java.lang.String getProvider();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#provider Codepipeline#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#provider Codepipeline#provider}.
 
 ---
 
@@ -2239,7 +2329,7 @@ public java.lang.String getOwner();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#owner Codepipeline#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#owner Codepipeline#owner}.
 
 ---
 
@@ -2251,7 +2341,7 @@ public java.lang.String getVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#version Codepipeline#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#version Codepipeline#version}.
 
 ---
 
@@ -2274,7 +2364,7 @@ CodepipelineStageOnFailure.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailure.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureCondition">CodepipelineStageOnFailureCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailure.property.result">result</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#result Codepipeline#result}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailure.property.result">result</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#result Codepipeline#result}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailure.property.retryConfiguration">retryConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureRetryConfiguration">CodepipelineStageOnFailureRetryConfiguration</a></code> | retry_configuration block. |
 
 ---
@@ -2289,7 +2379,7 @@ public CodepipelineStageOnFailureCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#condition Codepipeline#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#condition Codepipeline#condition}
 
 ---
 
@@ -2301,7 +2391,7 @@ public java.lang.String getResult();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#result Codepipeline#result}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#result Codepipeline#result}.
 
 ---
 
@@ -2315,7 +2405,7 @@ public CodepipelineStageOnFailureRetryConfiguration getRetryConfiguration();
 
 retry_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#retry_configuration Codepipeline#retry_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#retry_configuration Codepipeline#retry_configuration}
 
 ---
 
@@ -2337,7 +2427,7 @@ CodepipelineStageOnFailureCondition.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureCondition.property.rule">rule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule">CodepipelineStageOnFailureConditionRule</a>></code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureCondition.property.result">result</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#result Codepipeline#result}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureCondition.property.result">result</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#result Codepipeline#result}. |
 
 ---
 
@@ -2351,7 +2441,7 @@ public IResolvable|java.util.List<CodepipelineStageOnFailureConditionRule> getRu
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#rule Codepipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#rule Codepipeline#rule}
 
 ---
 
@@ -2363,7 +2453,7 @@ public java.lang.String getResult();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#result Codepipeline#result}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#result Codepipeline#result}.
 
 ---
 
@@ -2390,14 +2480,14 @@ CodepipelineStageOnFailureConditionRule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.ruleTypeId">ruleTypeId</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId">CodepipelineStageOnFailureConditionRuleRuleTypeId</a></code> | rule_type_id block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.commands">commands</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#commands Codepipeline#commands}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#configuration Codepipeline#configuration}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.inputArtifacts">inputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.timeoutInMinutes">timeoutInMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.commands">commands</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#commands Codepipeline#commands}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#configuration Codepipeline#configuration}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.inputArtifacts">inputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.property.timeoutInMinutes">timeoutInMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}. |
 
 ---
 
@@ -2409,7 +2499,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}.
 
 ---
 
@@ -2423,7 +2513,7 @@ public CodepipelineStageOnFailureConditionRuleRuleTypeId getRuleTypeId();
 
 rule_type_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
 
 ---
 
@@ -2435,7 +2525,7 @@ public java.util.List<java.lang.String> getCommands();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#commands Codepipeline#commands}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#commands Codepipeline#commands}.
 
 ---
 
@@ -2447,7 +2537,7 @@ public java.util.Map<java.lang.String, java.lang.String> getConfiguration();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#configuration Codepipeline#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#configuration Codepipeline#configuration}.
 
 ---
 
@@ -2459,7 +2549,7 @@ public java.util.List<java.lang.String> getInputArtifacts();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}.
 
 ---
 
@@ -2471,7 +2561,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}.
 
 ---
 
@@ -2483,7 +2573,7 @@ public java.lang.String getRoleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
 
 ---
 
@@ -2495,7 +2585,7 @@ public java.lang.Number getTimeoutInMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}.
 
 ---
 
@@ -2518,10 +2608,10 @@ CodepipelineStageOnFailureConditionRuleRuleTypeId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId.property.category">category</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#category Codepipeline#category}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId.property.provider">provider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#provider Codepipeline#provider}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId.property.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#owner Codepipeline#owner}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#version Codepipeline#version}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId.property.category">category</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#category Codepipeline#category}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId.property.provider">provider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#provider Codepipeline#provider}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId.property.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#owner Codepipeline#owner}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#version Codepipeline#version}. |
 
 ---
 
@@ -2533,7 +2623,7 @@ public java.lang.String getCategory();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#category Codepipeline#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#category Codepipeline#category}.
 
 ---
 
@@ -2545,7 +2635,7 @@ public java.lang.String getProvider();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#provider Codepipeline#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#provider Codepipeline#provider}.
 
 ---
 
@@ -2557,7 +2647,7 @@ public java.lang.String getOwner();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#owner Codepipeline#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#owner Codepipeline#owner}.
 
 ---
 
@@ -2569,7 +2659,7 @@ public java.lang.String getVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#version Codepipeline#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#version Codepipeline#version}.
 
 ---
 
@@ -2589,7 +2679,7 @@ CodepipelineStageOnFailureRetryConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureRetryConfiguration.property.retryMode">retryMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#retry_mode Codepipeline#retry_mode}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureRetryConfiguration.property.retryMode">retryMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#retry_mode Codepipeline#retry_mode}. |
 
 ---
 
@@ -2601,7 +2691,7 @@ public java.lang.String getRetryMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#retry_mode Codepipeline#retry_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#retry_mode Codepipeline#retry_mode}.
 
 ---
 
@@ -2635,7 +2725,7 @@ public CodepipelineStageOnSuccessCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#condition Codepipeline#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#condition Codepipeline#condition}
 
 ---
 
@@ -2657,7 +2747,7 @@ CodepipelineStageOnSuccessCondition.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessCondition.property.rule">rule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule">CodepipelineStageOnSuccessConditionRule</a>></code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessCondition.property.result">result</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#result Codepipeline#result}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessCondition.property.result">result</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#result Codepipeline#result}. |
 
 ---
 
@@ -2671,7 +2761,7 @@ public IResolvable|java.util.List<CodepipelineStageOnSuccessConditionRule> getRu
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#rule Codepipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#rule Codepipeline#rule}
 
 ---
 
@@ -2683,7 +2773,7 @@ public java.lang.String getResult();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#result Codepipeline#result}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#result Codepipeline#result}.
 
 ---
 
@@ -2710,14 +2800,14 @@ CodepipelineStageOnSuccessConditionRule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.ruleTypeId">ruleTypeId</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId">CodepipelineStageOnSuccessConditionRuleRuleTypeId</a></code> | rule_type_id block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.commands">commands</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#commands Codepipeline#commands}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#configuration Codepipeline#configuration}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.inputArtifacts">inputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.timeoutInMinutes">timeoutInMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.commands">commands</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#commands Codepipeline#commands}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#configuration Codepipeline#configuration}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.inputArtifacts">inputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.property.timeoutInMinutes">timeoutInMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}. |
 
 ---
 
@@ -2729,7 +2819,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}.
 
 ---
 
@@ -2743,7 +2833,7 @@ public CodepipelineStageOnSuccessConditionRuleRuleTypeId getRuleTypeId();
 
 rule_type_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
 
 ---
 
@@ -2755,7 +2845,7 @@ public java.util.List<java.lang.String> getCommands();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#commands Codepipeline#commands}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#commands Codepipeline#commands}.
 
 ---
 
@@ -2767,7 +2857,7 @@ public java.util.Map<java.lang.String, java.lang.String> getConfiguration();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#configuration Codepipeline#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#configuration Codepipeline#configuration}.
 
 ---
 
@@ -2779,7 +2869,7 @@ public java.util.List<java.lang.String> getInputArtifacts();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}.
 
 ---
 
@@ -2791,7 +2881,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#region Codepipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#region Codepipeline#region}.
 
 ---
 
@@ -2803,7 +2893,7 @@ public java.lang.String getRoleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}.
 
 ---
 
@@ -2815,7 +2905,7 @@ public java.lang.Number getTimeoutInMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}.
 
 ---
 
@@ -2838,10 +2928,10 @@ CodepipelineStageOnSuccessConditionRuleRuleTypeId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId.property.category">category</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#category Codepipeline#category}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId.property.provider">provider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#provider Codepipeline#provider}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId.property.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#owner Codepipeline#owner}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#version Codepipeline#version}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId.property.category">category</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#category Codepipeline#category}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId.property.provider">provider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#provider Codepipeline#provider}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId.property.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#owner Codepipeline#owner}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#version Codepipeline#version}. |
 
 ---
 
@@ -2853,7 +2943,7 @@ public java.lang.String getCategory();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#category Codepipeline#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#category Codepipeline#category}.
 
 ---
 
@@ -2865,7 +2955,7 @@ public java.lang.String getProvider();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#provider Codepipeline#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#provider Codepipeline#provider}.
 
 ---
 
@@ -2877,7 +2967,7 @@ public java.lang.String getOwner();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#owner Codepipeline#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#owner Codepipeline#owner}.
 
 ---
 
@@ -2889,7 +2979,7 @@ public java.lang.String getVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#version Codepipeline#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#version Codepipeline#version}.
 
 ---
 
@@ -2911,7 +3001,7 @@ CodepipelineTrigger.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTrigger.property.gitConfiguration">gitConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfiguration">CodepipelineTriggerGitConfiguration</a></code> | git_configuration block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTrigger.property.providerType">providerType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#provider_type Codepipeline#provider_type}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTrigger.property.providerType">providerType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#provider_type Codepipeline#provider_type}. |
 
 ---
 
@@ -2925,7 +3015,7 @@ public CodepipelineTriggerGitConfiguration getGitConfiguration();
 
 git_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#git_configuration Codepipeline#git_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#git_configuration Codepipeline#git_configuration}
 
 ---
 
@@ -2937,7 +3027,7 @@ public java.lang.String getProviderType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#provider_type Codepipeline#provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#provider_type Codepipeline#provider_type}.
 
 ---
 
@@ -3067,7 +3157,7 @@ CodepipelineTriggerGitConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfiguration.property.sourceActionName">sourceActionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#source_action_name Codepipeline#source_action_name}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfiguration.property.sourceActionName">sourceActionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#source_action_name Codepipeline#source_action_name}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfiguration.property.pullRequest">pullRequest</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequest">CodepipelineTriggerGitConfigurationPullRequest</a>></code> | pull_request block. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfiguration.property.push">push</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPush">CodepipelineTriggerGitConfigurationPush</a>></code> | push block. |
 
@@ -3081,7 +3171,7 @@ public java.lang.String getSourceActionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#source_action_name Codepipeline#source_action_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#source_action_name Codepipeline#source_action_name}.
 
 ---
 
@@ -3095,7 +3185,7 @@ public IResolvable|java.util.List<CodepipelineTriggerGitConfigurationPullRequest
 
 pull_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#pull_request Codepipeline#pull_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#pull_request Codepipeline#pull_request}
 
 ---
 
@@ -3109,7 +3199,7 @@ public IResolvable|java.util.List<CodepipelineTriggerGitConfigurationPush> getPu
 
 push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#push Codepipeline#push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#push Codepipeline#push}
 
 ---
 
@@ -3132,7 +3222,7 @@ CodepipelineTriggerGitConfigurationPullRequest.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequest.property.branches">branches</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestBranches">CodepipelineTriggerGitConfigurationPullRequestBranches</a></code> | branches block. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequest.property.events">events</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#events Codepipeline#events}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequest.property.events">events</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#events Codepipeline#events}. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequest.property.filePaths">filePaths</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestFilePaths">CodepipelineTriggerGitConfigurationPullRequestFilePaths</a></code> | file_paths block. |
 
 ---
@@ -3147,7 +3237,7 @@ public CodepipelineTriggerGitConfigurationPullRequestBranches getBranches();
 
 branches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#branches Codepipeline#branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#branches Codepipeline#branches}
 
 ---
 
@@ -3159,7 +3249,7 @@ public java.util.List<java.lang.String> getEvents();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#events Codepipeline#events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#events Codepipeline#events}.
 
 ---
 
@@ -3173,7 +3263,7 @@ public CodepipelineTriggerGitConfigurationPullRequestFilePaths getFilePaths();
 
 file_paths block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
 
 ---
 
@@ -3194,8 +3284,8 @@ CodepipelineTriggerGitConfigurationPullRequestBranches.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestBranches.property.excludes">excludes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#excludes Codepipeline#excludes}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestBranches.property.includes">includes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#includes Codepipeline#includes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestBranches.property.excludes">excludes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#excludes Codepipeline#excludes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestBranches.property.includes">includes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#includes Codepipeline#includes}. |
 
 ---
 
@@ -3207,7 +3297,7 @@ public java.util.List<java.lang.String> getExcludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#excludes Codepipeline#excludes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#excludes Codepipeline#excludes}.
 
 ---
 
@@ -3219,7 +3309,7 @@ public java.util.List<java.lang.String> getIncludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#includes Codepipeline#includes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#includes Codepipeline#includes}.
 
 ---
 
@@ -3240,8 +3330,8 @@ CodepipelineTriggerGitConfigurationPullRequestFilePaths.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestFilePaths.property.excludes">excludes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#excludes Codepipeline#excludes}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestFilePaths.property.includes">includes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#includes Codepipeline#includes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestFilePaths.property.excludes">excludes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#excludes Codepipeline#excludes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestFilePaths.property.includes">includes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#includes Codepipeline#includes}. |
 
 ---
 
@@ -3253,7 +3343,7 @@ public java.util.List<java.lang.String> getExcludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#excludes Codepipeline#excludes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#excludes Codepipeline#excludes}.
 
 ---
 
@@ -3265,7 +3355,7 @@ public java.util.List<java.lang.String> getIncludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#includes Codepipeline#includes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#includes Codepipeline#includes}.
 
 ---
 
@@ -3303,7 +3393,7 @@ public CodepipelineTriggerGitConfigurationPushBranches getBranches();
 
 branches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#branches Codepipeline#branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#branches Codepipeline#branches}
 
 ---
 
@@ -3317,7 +3407,7 @@ public CodepipelineTriggerGitConfigurationPushFilePaths getFilePaths();
 
 file_paths block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
 
 ---
 
@@ -3331,7 +3421,7 @@ public CodepipelineTriggerGitConfigurationPushTags getTags();
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#tags Codepipeline#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#tags Codepipeline#tags}
 
 ---
 
@@ -3352,8 +3442,8 @@ CodepipelineTriggerGitConfigurationPushBranches.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushBranches.property.excludes">excludes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#excludes Codepipeline#excludes}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushBranches.property.includes">includes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#includes Codepipeline#includes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushBranches.property.excludes">excludes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#excludes Codepipeline#excludes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushBranches.property.includes">includes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#includes Codepipeline#includes}. |
 
 ---
 
@@ -3365,7 +3455,7 @@ public java.util.List<java.lang.String> getExcludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#excludes Codepipeline#excludes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#excludes Codepipeline#excludes}.
 
 ---
 
@@ -3377,7 +3467,7 @@ public java.util.List<java.lang.String> getIncludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#includes Codepipeline#includes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#includes Codepipeline#includes}.
 
 ---
 
@@ -3398,8 +3488,8 @@ CodepipelineTriggerGitConfigurationPushFilePaths.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushFilePaths.property.excludes">excludes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#excludes Codepipeline#excludes}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushFilePaths.property.includes">includes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#includes Codepipeline#includes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushFilePaths.property.excludes">excludes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#excludes Codepipeline#excludes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushFilePaths.property.includes">includes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#includes Codepipeline#includes}. |
 
 ---
 
@@ -3411,7 +3501,7 @@ public java.util.List<java.lang.String> getExcludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#excludes Codepipeline#excludes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#excludes Codepipeline#excludes}.
 
 ---
 
@@ -3423,7 +3513,7 @@ public java.util.List<java.lang.String> getIncludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#includes Codepipeline#includes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#includes Codepipeline#includes}.
 
 ---
 
@@ -3444,8 +3534,8 @@ CodepipelineTriggerGitConfigurationPushTags.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushTags.property.excludes">excludes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#excludes Codepipeline#excludes}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushTags.property.includes">includes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#includes Codepipeline#includes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushTags.property.excludes">excludes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#excludes Codepipeline#excludes}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushTags.property.includes">includes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#includes Codepipeline#includes}. |
 
 ---
 
@@ -3457,7 +3547,7 @@ public java.util.List<java.lang.String> getExcludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#excludes Codepipeline#excludes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#excludes Codepipeline#excludes}.
 
 ---
 
@@ -3469,7 +3559,7 @@ public java.util.List<java.lang.String> getIncludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#includes Codepipeline#includes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#includes Codepipeline#includes}.
 
 ---
 
@@ -3491,9 +3581,9 @@ CodepipelineVariable.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineVariable.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineVariable.property.defaultValue">defaultValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#default_value Codepipeline#default_value}. |
-| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineVariable.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#description Codepipeline#description}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineVariable.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineVariable.property.defaultValue">defaultValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#default_value Codepipeline#default_value}. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineVariable.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#description Codepipeline#description}. |
 
 ---
 
@@ -3505,7 +3595,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#name Codepipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#name Codepipeline#name}.
 
 ---
 
@@ -3517,7 +3607,7 @@ public java.lang.String getDefaultValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#default_value Codepipeline#default_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#default_value Codepipeline#default_value}.
 
 ---
 
@@ -3529,7 +3619,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/codepipeline#description Codepipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/codepipeline#description Codepipeline#description}.
 
 ---
 
@@ -4530,6 +4620,484 @@ public IResolvable|java.util.List<CodepipelineStageAction> getInternalValue();
 ---
 
 
+### CodepipelineStageActionOutputArtifactsForComputeActionList <a name="CodepipelineStageActionOutputArtifactsForComputeActionList" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList;
+
+new CodepipelineStageActionOutputArtifactsForComputeActionList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.get"></a>
+
+```java
+public CodepipelineStageActionOutputArtifactsForComputeActionOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction">CodepipelineStageActionOutputArtifactsForComputeAction</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<CodepipelineStageActionOutputArtifactsForComputeAction> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction">CodepipelineStageActionOutputArtifactsForComputeAction</a>>
+
+---
+
+
+### CodepipelineStageActionOutputArtifactsForComputeActionOutputReference <a name="CodepipelineStageActionOutputArtifactsForComputeActionOutputReference" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference;
+
+new CodepipelineStageActionOutputArtifactsForComputeActionOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.resetFiles">resetFiles</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetFiles` <a name="resetFiles" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.resetFiles"></a>
+
+```java
+public void resetFiles()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.filesInput">filesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.files">files</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction">CodepipelineStageActionOutputArtifactsForComputeAction</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `filesInput`<sup>Optional</sup> <a name="filesInput" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.filesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getFilesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `files`<sup>Required</sup> <a name="files" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.files"></a>
+
+```java
+public java.util.List<java.lang.String> getFiles();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|CodepipelineStageActionOutputArtifactsForComputeAction getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction">CodepipelineStageActionOutputArtifactsForComputeAction</a>
+
+---
+
+
 ### CodepipelineStageActionOutputReference <a name="CodepipelineStageActionOutputReference" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.Initializer"></a>
@@ -4598,10 +5166,14 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.putOutputArtifactsForComputeAction">putOutputArtifactsForComputeAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetCommands">resetCommands</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetConfiguration">resetConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetInputArtifacts">resetInputArtifacts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetOutputArtifacts">resetOutputArtifacts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetOutputArtifactsForComputeAction">resetOutputArtifactsForComputeAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetOutputVariables">resetOutputVariables</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetRoleArn">resetRoleArn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetRunOrder">resetRunOrder</a></code> | *No description.* |
@@ -4759,6 +5331,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putOutputArtifactsForComputeAction` <a name="putOutputArtifactsForComputeAction" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.putOutputArtifactsForComputeAction"></a>
+
+```java
+public void putOutputArtifactsForComputeAction(IResolvable|java.util.List<CodepipelineStageActionOutputArtifactsForComputeAction> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.putOutputArtifactsForComputeAction.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction">CodepipelineStageActionOutputArtifactsForComputeAction</a>>
+
+---
+
+##### `resetCommands` <a name="resetCommands" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetCommands"></a>
+
+```java
+public void resetCommands()
+```
+
 ##### `resetConfiguration` <a name="resetConfiguration" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetConfiguration"></a>
 
 ```java
@@ -4781,6 +5371,18 @@ public void resetNamespace()
 
 ```java
 public void resetOutputArtifacts()
+```
+
+##### `resetOutputArtifactsForComputeAction` <a name="resetOutputArtifactsForComputeAction" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetOutputArtifactsForComputeAction"></a>
+
+```java
+public void resetOutputArtifactsForComputeAction()
+```
+
+##### `resetOutputVariables` <a name="resetOutputVariables" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetOutputVariables"></a>
+
+```java
+public void resetOutputVariables()
 ```
 
 ##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.resetRegion"></a>
@@ -4814,12 +5416,16 @@ public void resetTimeoutInMinutes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputArtifactsForComputeAction">outputArtifactsForComputeAction</a></code> | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList">CodepipelineStageActionOutputArtifactsForComputeActionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.categoryInput">categoryInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.commandsInput">commandsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.configurationInput">configurationInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.inputArtifactsInput">inputArtifactsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputArtifactsForComputeActionInput">outputArtifactsForComputeActionInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction">CodepipelineStageActionOutputArtifactsForComputeAction</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputArtifactsInput">outputArtifactsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputVariablesInput">outputVariablesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.ownerInput">ownerInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.providerInput">providerInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -4828,11 +5434,13 @@ public void resetTimeoutInMinutes()
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.timeoutInMinutesInput">timeoutInMinutesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.versionInput">versionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.category">category</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.commands">commands</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.inputArtifacts">inputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputArtifacts">outputArtifacts</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputVariables">outputVariables</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.owner">owner</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.provider">provider</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -4868,6 +5476,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `outputArtifactsForComputeAction`<sup>Required</sup> <a name="outputArtifactsForComputeAction" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputArtifactsForComputeAction"></a>
+
+```java
+public CodepipelineStageActionOutputArtifactsForComputeActionList getOutputArtifactsForComputeAction();
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeActionList">CodepipelineStageActionOutputArtifactsForComputeActionList</a>
+
+---
+
 ##### `categoryInput`<sup>Optional</sup> <a name="categoryInput" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.categoryInput"></a>
 
 ```java
@@ -4875,6 +5493,16 @@ public java.lang.String getCategoryInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `commandsInput`<sup>Optional</sup> <a name="commandsInput" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.commandsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getCommandsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -4918,10 +5546,30 @@ public java.lang.String getNamespaceInput();
 
 ---
 
+##### `outputArtifactsForComputeActionInput`<sup>Optional</sup> <a name="outputArtifactsForComputeActionInput" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputArtifactsForComputeActionInput"></a>
+
+```java
+public IResolvable|java.util.List<CodepipelineStageActionOutputArtifactsForComputeAction> getOutputArtifactsForComputeActionInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputArtifactsForComputeAction">CodepipelineStageActionOutputArtifactsForComputeAction</a>>
+
+---
+
 ##### `outputArtifactsInput`<sup>Optional</sup> <a name="outputArtifactsInput" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputArtifactsInput"></a>
 
 ```java
 public java.util.List<java.lang.String> getOutputArtifactsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `outputVariablesInput`<sup>Optional</sup> <a name="outputVariablesInput" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputVariablesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getOutputVariablesInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -5008,6 +5656,16 @@ public java.lang.String getCategory();
 
 ---
 
+##### `commands`<sup>Required</sup> <a name="commands" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.commands"></a>
+
+```java
+public java.util.List<java.lang.String> getCommands();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `configuration`<sup>Required</sup> <a name="configuration" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.configuration"></a>
 
 ```java
@@ -5052,6 +5710,16 @@ public java.lang.String getNamespace();
 
 ```java
 public java.util.List<java.lang.String> getOutputArtifacts();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `outputVariables`<sup>Required</sup> <a name="outputVariables" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.property.outputVariables"></a>
+
+```java
+public java.util.List<java.lang.String> getOutputVariables();
 ```
 
 - *Type:* java.util.List<java.lang.String>

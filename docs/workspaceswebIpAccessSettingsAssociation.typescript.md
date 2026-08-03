@@ -4,7 +4,7 @@
 
 ### WorkspaceswebIpAccessSettingsAssociation <a name="WorkspaceswebIpAccessSettingsAssociation" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workspacesweb_ip_access_settings_association aws_workspacesweb_ip_access_settings_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/workspacesweb_ip_access_settings_association aws_workspacesweb_ip_access_settings_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WorkspaceswebIpAccessSetti
 
 The id of the existing WorkspaceswebIpAccessSettingsAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workspacesweb_ip_access_settings_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/workspacesweb_ip_access_settings_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,8 +778,8 @@ const workspaceswebIpAccessSettingsAssociationConfig: workspaceswebIpAccessSetti
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.ipAccessSettingsArn">ipAccessSettingsArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workspacesweb_ip_access_settings_association#ip_access_settings_arn WorkspaceswebIpAccessSettingsAssociation#ip_access_settings_arn}. |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.portalArn">portalArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workspacesweb_ip_access_settings_association#portal_arn WorkspaceswebIpAccessSettingsAssociation#portal_arn}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.ipAccessSettingsArn">ipAccessSettingsArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/workspacesweb_ip_access_settings_association#ip_access_settings_arn WorkspaceswebIpAccessSettingsAssociation#ip_access_settings_arn}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.portalArn">portalArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/workspacesweb_ip_access_settings_association#portal_arn WorkspaceswebIpAccessSettingsAssociation#portal_arn}. |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -862,7 +862,7 @@ public readonly ipAccessSettingsArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workspacesweb_ip_access_settings_association#ip_access_settings_arn WorkspaceswebIpAccessSettingsAssociation#ip_access_settings_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/workspacesweb_ip_access_settings_association#ip_access_settings_arn WorkspaceswebIpAccessSettingsAssociation#ip_access_settings_arn}.
 
 ---
 
@@ -874,7 +874,7 @@ public readonly portalArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workspacesweb_ip_access_settings_association#portal_arn WorkspaceswebIpAccessSettingsAssociation#portal_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/workspacesweb_ip_access_settings_association#portal_arn WorkspaceswebIpAccessSettingsAssociation#portal_arn}.
 
 ---
 
@@ -888,7 +888,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/workspacesweb_ip_access_settings_association#region WorkspaceswebIpAccessSettingsAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/workspacesweb_ip_access_settings_association#region WorkspaceswebIpAccessSettingsAssociation#region}
 
 ---
 

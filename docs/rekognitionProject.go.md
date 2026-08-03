@@ -4,7 +4,7 @@
 
 ### RekognitionProject <a name="RekognitionProject" id="@cdktn/provider-aws.rekognitionProject.RekognitionProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project aws_rekognition_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project aws_rekognition_project}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionProject.RekognitionProject.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the RekognitionProject to impo
 
 The id of the existing RekognitionProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -932,11 +932,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rekognitionproject"
 | <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#name RekognitionProject#name}. |
-| <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.autoUpdate">AutoUpdate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#auto_update RekognitionProject#auto_update}. |
-| <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.feature">Feature</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#feature RekognitionProject#feature}. |
+| <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#name RekognitionProject#name}. |
+| <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.autoUpdate">AutoUpdate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#auto_update RekognitionProject#auto_update}. |
+| <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.feature">Feature</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#feature RekognitionProject#feature}. |
 | <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#tags RekognitionProject#tags}. |
+| <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#tags RekognitionProject#tags}. |
 | <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.rekognitionProject.RekognitionProjectTimeouts">RekognitionProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1019,7 +1019,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#name RekognitionProject#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#name RekognitionProject#name}.
 
 ---
 
@@ -1031,7 +1031,7 @@ AutoUpdate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#auto_update RekognitionProject#auto_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#auto_update RekognitionProject#auto_update}.
 
 ---
 
@@ -1043,7 +1043,7 @@ Feature *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#feature RekognitionProject#feature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#feature RekognitionProject#feature}.
 
 ---
 
@@ -1057,7 +1057,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#region RekognitionProject#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#region RekognitionProject#region}
 
 ---
 
@@ -1069,7 +1069,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#tags RekognitionProject#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#tags RekognitionProject#tags}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Timeouts RekognitionProjectTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#timeouts RekognitionProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#timeouts RekognitionProject#timeouts}
 
 ---
 
@@ -1119,7 +1119,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#create RekognitionProject#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#create RekognitionProject#create}
 
 ---
 
@@ -1133,7 +1133,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/rekognition_project#delete RekognitionProject#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/rekognition_project#delete RekognitionProject#delete}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsVpc <a name="DataAwsVpc" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc aws_vpc}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc aws_vpc}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer"></a>
 
@@ -42,14 +42,14 @@ DataAwsVpc.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.cidrBlock">cidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.default">default</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#default DataAwsVpc#default}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.dhcpOptionsId">dhcpOptionsId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.cidrBlock">cidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.default">default</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#default DataAwsVpc#default}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.dhcpOptionsId">dhcpOptionsId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter">DataAwsVpcFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#id DataAwsVpc#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#id DataAwsVpc#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#state DataAwsVpc#state}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#tags DataAwsVpc#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#state DataAwsVpc#state}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#tags DataAwsVpc#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcTimeouts">DataAwsVpcTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#default DataAwsVpc#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#default DataAwsVpc#default}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#filter DataAwsVpc#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#filter DataAwsVpc#filter}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#id DataAwsVpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#id DataAwsVpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#region DataAwsVpc#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#region DataAwsVpc#region}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#state DataAwsVpc#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#state DataAwsVpc#state}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#tags DataAwsVpc#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#tags DataAwsVpc#tags}.
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#timeouts DataAwsVpc#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#timeouts DataAwsVpc#timeouts}
 
 ---
 
@@ -625,7 +625,7 @@ The construct id used in the generated config for the DataAwsVpc to import.
 
 The id of the existing DataAwsVpc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -662,6 +662,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.instanceTenancy">instanceTenancy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.ipv6AssociationId">ipv6AssociationId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.ipv6CidrBlock">ipv6CidrBlock</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.ipv6CidrBlockAssociations">ipv6CidrBlockAssociations</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList">DataAwsVpcIpv6CidrBlockAssociationsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.mainRouteTableId">mainRouteTableId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.ownerId">ownerId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcTimeoutsOutputReference">DataAwsVpcTimeoutsOutputReference</a></code> | *No description.* |
@@ -893,6 +894,16 @@ public java.lang.String getIpv6CidrBlock();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `ipv6CidrBlockAssociations`<sup>Required</sup> <a name="ipv6CidrBlockAssociations" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpc.property.ipv6CidrBlockAssociations"></a>
+
+```java
+public DataAwsVpcIpv6CidrBlockAssociationsList getIpv6CidrBlockAssociations();
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList">DataAwsVpcIpv6CidrBlockAssociationsList</a>
 
 ---
 
@@ -1156,14 +1167,14 @@ DataAwsVpcConfig.builder()
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.cidrBlock">cidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.default">default</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#default DataAwsVpc#default}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.dhcpOptionsId">dhcpOptionsId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.cidrBlock">cidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.default">default</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#default DataAwsVpc#default}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.dhcpOptionsId">dhcpOptionsId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter">DataAwsVpcFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#id DataAwsVpc#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#id DataAwsVpc#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#state DataAwsVpc#state}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#tags DataAwsVpc#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#state DataAwsVpc#state}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#tags DataAwsVpc#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcTimeouts">DataAwsVpcTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1246,7 +1257,7 @@ public java.lang.String getCidrBlock();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#cidr_block DataAwsVpc#cidr_block}.
 
 ---
 
@@ -1258,7 +1269,7 @@ public java.lang.Boolean|IResolvable getDefault();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#default DataAwsVpc#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#default DataAwsVpc#default}.
 
 ---
 
@@ -1270,7 +1281,7 @@ public java.lang.String getDhcpOptionsId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#dhcp_options_id DataAwsVpc#dhcp_options_id}.
 
 ---
 
@@ -1284,7 +1295,7 @@ public IResolvable|java.util.List<DataAwsVpcFilter> getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#filter DataAwsVpc#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#filter DataAwsVpc#filter}
 
 ---
 
@@ -1296,7 +1307,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#id DataAwsVpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#id DataAwsVpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1313,7 +1324,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#region DataAwsVpc#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#region DataAwsVpc#region}
 
 ---
 
@@ -1325,7 +1336,7 @@ public java.lang.String getState();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#state DataAwsVpc#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#state DataAwsVpc#state}.
 
 ---
 
@@ -1337,7 +1348,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#tags DataAwsVpc#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#tags DataAwsVpc#tags}.
 
 ---
 
@@ -1351,7 +1362,7 @@ public DataAwsVpcTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#timeouts DataAwsVpc#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#timeouts DataAwsVpc#timeouts}
 
 ---
 
@@ -1372,8 +1383,8 @@ DataAwsVpcFilter.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#name DataAwsVpc#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#values DataAwsVpc#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#name DataAwsVpc#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#values DataAwsVpc#values}. |
 
 ---
 
@@ -1385,7 +1396,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#name DataAwsVpc#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#name DataAwsVpc#name}.
 
 ---
 
@@ -1397,9 +1408,21 @@ public java.util.List<java.lang.String> getValues();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#values DataAwsVpc#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#values DataAwsVpc#values}.
 
 ---
+
+### DataAwsVpcIpv6CidrBlockAssociations <a name="DataAwsVpcIpv6CidrBlockAssociations" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociations"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociations.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.data_aws_vpc.DataAwsVpcIpv6CidrBlockAssociations;
+
+DataAwsVpcIpv6CidrBlockAssociations.builder()
+    .build();
+```
+
 
 ### DataAwsVpcTimeouts <a name="DataAwsVpcTimeouts" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcTimeouts"></a>
 
@@ -1417,7 +1440,7 @@ DataAwsVpcTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#read DataAwsVpc#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#read DataAwsVpc#read}. |
 
 ---
 
@@ -1429,7 +1452,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpc#read DataAwsVpc#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpc#read DataAwsVpc#read}.
 
 ---
 
@@ -2351,6 +2374,499 @@ public IResolvable|DataAwsVpcFilter getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcFilter">DataAwsVpcFilter</a>
+
+---
+
+
+### DataAwsVpcIpv6CidrBlockAssociationsList <a name="DataAwsVpcIpv6CidrBlockAssociationsList" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.data_aws_vpc.DataAwsVpcIpv6CidrBlockAssociationsList;
+
+new DataAwsVpcIpv6CidrBlockAssociationsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.get"></a>
+
+```java
+public DataAwsVpcIpv6CidrBlockAssociationsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### DataAwsVpcIpv6CidrBlockAssociationsOutputReference <a name="DataAwsVpcIpv6CidrBlockAssociationsOutputReference" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.data_aws_vpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference;
+
+new DataAwsVpcIpv6CidrBlockAssociationsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.associationId">associationId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.ipSource">ipSource</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.ipv6AddressAttribute">ipv6AddressAttribute</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.ipv6CidrBlock">ipv6CidrBlock</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.ipv6Pool">ipv6Pool</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.networkBorderGroup">networkBorderGroup</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociations">DataAwsVpcIpv6CidrBlockAssociations</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `associationId`<sup>Required</sup> <a name="associationId" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.associationId"></a>
+
+```java
+public java.lang.String getAssociationId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ipSource`<sup>Required</sup> <a name="ipSource" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.ipSource"></a>
+
+```java
+public java.lang.String getIpSource();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ipv6AddressAttribute`<sup>Required</sup> <a name="ipv6AddressAttribute" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.ipv6AddressAttribute"></a>
+
+```java
+public java.lang.String getIpv6AddressAttribute();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ipv6CidrBlock`<sup>Required</sup> <a name="ipv6CidrBlock" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.ipv6CidrBlock"></a>
+
+```java
+public java.lang.String getIpv6CidrBlock();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ipv6Pool`<sup>Required</sup> <a name="ipv6Pool" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.ipv6Pool"></a>
+
+```java
+public java.lang.String getIpv6Pool();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `networkBorderGroup`<sup>Required</sup> <a name="networkBorderGroup" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.networkBorderGroup"></a>
+
+```java
+public java.lang.String getNetworkBorderGroup();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.state"></a>
+
+```java
+public java.lang.String getState();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociationsOutputReference.property.internalValue"></a>
+
+```java
+public DataAwsVpcIpv6CidrBlockAssociations getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsVpc.DataAwsVpcIpv6CidrBlockAssociations">DataAwsVpcIpv6CidrBlockAssociations</a>
 
 ---
 

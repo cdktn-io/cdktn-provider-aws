@@ -4,7 +4,7 @@
 
 ### DataAwsVpnConnection <a name="DataAwsVpnConnection" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpn_connection aws_vpn_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpn_connection aws_vpn_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataAwsVpnConnection to im
 
 The id of the existing DataAwsVpnConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpn_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpn_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ const dataAwsVpnConnectionConfig: dataAwsVpnConnection.DataAwsVpnConnectionConfi
 | <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.property.filter">filter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter">DataAwsVpnConnectionFilter</a>[]</code> | filter block. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.property.vpnConnectionId">vpnConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpn_connection#vpn_connection_id DataAwsVpnConnection#vpn_connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.property.vpnConnectionId">vpnConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpn_connection#vpn_connection_id DataAwsVpnConnection#vpn_connection_id}. |
 
 ---
 
@@ -932,7 +932,7 @@ public readonly filter: IResolvable | DataAwsVpnConnectionFilter[];
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpn_connection#filter DataAwsVpnConnection#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpn_connection#filter DataAwsVpnConnection#filter}
 
 ---
 
@@ -946,7 +946,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpn_connection#region DataAwsVpnConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpn_connection#region DataAwsVpnConnection#region}
 
 ---
 
@@ -958,7 +958,7 @@ public readonly vpnConnectionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpn_connection#vpn_connection_id DataAwsVpnConnection#vpn_connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpn_connection#vpn_connection_id DataAwsVpnConnection#vpn_connection_id}.
 
 ---
 
@@ -976,8 +976,8 @@ const dataAwsVpnConnectionFilter: dataAwsVpnConnection.DataAwsVpnConnectionFilte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpn_connection#name DataAwsVpnConnection#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpn_connection#values DataAwsVpnConnection#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpn_connection#name DataAwsVpnConnection#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpn_connection#values DataAwsVpnConnection#values}. |
 
 ---
 
@@ -989,7 +989,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpn_connection#name DataAwsVpnConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpn_connection#name DataAwsVpnConnection#name}.
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/data-sources/vpn_connection#values DataAwsVpnConnection#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/vpn_connection#values DataAwsVpnConnection#values}.
 
 ---
 
