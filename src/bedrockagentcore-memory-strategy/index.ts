@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy
+// https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,55 +13,65 @@ import * as cdktn from 'cdktn';
 
 export interface BedrockagentcoreMemoryStrategyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#description BedrockagentcoreMemoryStrategy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#description BedrockagentcoreMemoryStrategy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#memory_execution_role_arn BedrockagentcoreMemoryStrategy#memory_execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#memory_execution_role_arn BedrockagentcoreMemoryStrategy#memory_execution_role_arn}
   */
   readonly memoryExecutionRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#memory_id BedrockagentcoreMemoryStrategy#memory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#memory_id BedrockagentcoreMemoryStrategy#memory_id}
   */
   readonly memoryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#name BedrockagentcoreMemoryStrategy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#name BedrockagentcoreMemoryStrategy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#namespaces BedrockagentcoreMemoryStrategy#namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#namespace_templates BedrockagentcoreMemoryStrategy#namespace_templates}
   */
-  readonly namespaces: string[];
+  readonly namespaceTemplates?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#namespaces BedrockagentcoreMemoryStrategy#namespaces}
+  */
+  readonly namespaces?: string[];
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#region BedrockagentcoreMemoryStrategy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#region BedrockagentcoreMemoryStrategy#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#type BedrockagentcoreMemoryStrategy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#type BedrockagentcoreMemoryStrategy#type}
   */
   readonly type: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#configuration BedrockagentcoreMemoryStrategy#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#configuration BedrockagentcoreMemoryStrategy#configuration}
   */
   readonly configuration?: BedrockagentcoreMemoryStrategyConfiguration[] | cdktn.IResolvable;
   /**
+  * reflection_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#reflection_configuration BedrockagentcoreMemoryStrategy#reflection_configuration}
+  */
+  readonly reflectionConfiguration?: BedrockagentcoreMemoryStrategyReflectionConfiguration[] | cdktn.IResolvable;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#timeouts BedrockagentcoreMemoryStrategy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#timeouts BedrockagentcoreMemoryStrategy#timeouts}
   */
   readonly timeouts?: BedrockagentcoreMemoryStrategyTimeouts;
 }
 export interface BedrockagentcoreMemoryStrategyConfigurationConsolidation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#append_to_prompt BedrockagentcoreMemoryStrategy#append_to_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#append_to_prompt BedrockagentcoreMemoryStrategy#append_to_prompt}
   */
   readonly appendToPrompt: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#model_id BedrockagentcoreMemoryStrategy#model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#model_id BedrockagentcoreMemoryStrategy#model_id}
   */
   readonly modelId: string;
 }
@@ -200,11 +210,11 @@ export class BedrockagentcoreMemoryStrategyConfigurationConsolidationList extend
 }
 export interface BedrockagentcoreMemoryStrategyConfigurationExtraction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#append_to_prompt BedrockagentcoreMemoryStrategy#append_to_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#append_to_prompt BedrockagentcoreMemoryStrategy#append_to_prompt}
   */
   readonly appendToPrompt: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#model_id BedrockagentcoreMemoryStrategy#model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#model_id BedrockagentcoreMemoryStrategy#model_id}
   */
   readonly modelId: string;
 }
@@ -341,23 +351,202 @@ export class BedrockagentcoreMemoryStrategyConfigurationExtractionList extends c
     return new BedrockagentcoreMemoryStrategyConfigurationExtractionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BedrockagentcoreMemoryStrategyConfigurationReflection {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#append_to_prompt BedrockagentcoreMemoryStrategy#append_to_prompt}
+  */
+  readonly appendToPrompt: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#model_id BedrockagentcoreMemoryStrategy#model_id}
+  */
+  readonly modelId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#namespace_templates BedrockagentcoreMemoryStrategy#namespace_templates}
+  */
+  readonly namespaceTemplates: string[];
+}
+
+export function bedrockagentcoreMemoryStrategyConfigurationReflectionToTerraform(struct?: BedrockagentcoreMemoryStrategyConfigurationReflection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    append_to_prompt: cdktn.stringToTerraform(struct!.appendToPrompt),
+    model_id: cdktn.stringToTerraform(struct!.modelId),
+    namespace_templates: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.namespaceTemplates),
+  }
+}
+
+
+export function bedrockagentcoreMemoryStrategyConfigurationReflectionToHclTerraform(struct?: BedrockagentcoreMemoryStrategyConfigurationReflection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    append_to_prompt: {
+      value: cdktn.stringToHclTerraform(struct!.appendToPrompt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    model_id: {
+      value: cdktn.stringToHclTerraform(struct!.modelId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace_templates: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.namespaceTemplates),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreMemoryStrategyConfigurationReflectionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreMemoryStrategyConfigurationReflection | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._appendToPrompt !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appendToPrompt = this._appendToPrompt;
+    }
+    if (this._modelId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelId = this._modelId;
+    }
+    if (this._namespaceTemplates !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.namespaceTemplates = this._namespaceTemplates;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreMemoryStrategyConfigurationReflection | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._appendToPrompt = undefined;
+      this._modelId = undefined;
+      this._namespaceTemplates = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._appendToPrompt = value.appendToPrompt;
+      this._modelId = value.modelId;
+      this._namespaceTemplates = value.namespaceTemplates;
+    }
+  }
+
+  // append_to_prompt - computed: false, optional: false, required: true
+  private _appendToPrompt?: string; 
+  public get appendToPrompt() {
+    return this.getStringAttribute('append_to_prompt');
+  }
+  public set appendToPrompt(value: string) {
+    this._appendToPrompt = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appendToPromptInput() {
+    return this._appendToPrompt;
+  }
+
+  // model_id - computed: false, optional: false, required: true
+  private _modelId?: string; 
+  public get modelId() {
+    return this.getStringAttribute('model_id');
+  }
+  public set modelId(value: string) {
+    this._modelId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelIdInput() {
+    return this._modelId;
+  }
+
+  // namespace_templates - computed: false, optional: false, required: true
+  private _namespaceTemplates?: string[]; 
+  public get namespaceTemplates() {
+    return cdktn.Fn.tolist(this.getListAttribute('namespace_templates'));
+  }
+  public set namespaceTemplates(value: string[]) {
+    this._namespaceTemplates = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceTemplatesInput() {
+    return this._namespaceTemplates;
+  }
+}
+
+export class BedrockagentcoreMemoryStrategyConfigurationReflectionList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreMemoryStrategyConfigurationReflection[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreMemoryStrategyConfigurationReflectionOutputReference {
+    return new BedrockagentcoreMemoryStrategyConfigurationReflectionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BedrockagentcoreMemoryStrategyConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#type BedrockagentcoreMemoryStrategy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#type BedrockagentcoreMemoryStrategy#type}
   */
   readonly type: string;
   /**
   * consolidation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#consolidation BedrockagentcoreMemoryStrategy#consolidation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#consolidation BedrockagentcoreMemoryStrategy#consolidation}
   */
   readonly consolidation?: BedrockagentcoreMemoryStrategyConfigurationConsolidation[] | cdktn.IResolvable;
   /**
   * extraction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#extraction BedrockagentcoreMemoryStrategy#extraction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#extraction BedrockagentcoreMemoryStrategy#extraction}
   */
   readonly extraction?: BedrockagentcoreMemoryStrategyConfigurationExtraction[] | cdktn.IResolvable;
+  /**
+  * reflection block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#reflection BedrockagentcoreMemoryStrategy#reflection}
+  */
+  readonly reflection?: BedrockagentcoreMemoryStrategyConfigurationReflection[] | cdktn.IResolvable;
 }
 
 export function bedrockagentcoreMemoryStrategyConfigurationToTerraform(struct?: BedrockagentcoreMemoryStrategyConfiguration | cdktn.IResolvable): any {
@@ -369,6 +558,7 @@ export function bedrockagentcoreMemoryStrategyConfigurationToTerraform(struct?: 
     type: cdktn.stringToTerraform(struct!.type),
     consolidation: cdktn.listMapper(bedrockagentcoreMemoryStrategyConfigurationConsolidationToTerraform, true)(struct!.consolidation),
     extraction: cdktn.listMapper(bedrockagentcoreMemoryStrategyConfigurationExtractionToTerraform, true)(struct!.extraction),
+    reflection: cdktn.listMapper(bedrockagentcoreMemoryStrategyConfigurationReflectionToTerraform, true)(struct!.reflection),
   }
 }
 
@@ -396,6 +586,12 @@ export function bedrockagentcoreMemoryStrategyConfigurationToHclTerraform(struct
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreMemoryStrategyConfigurationExtractionList",
+    },
+    reflection: {
+      value: cdktn.listMapperHcl(bedrockagentcoreMemoryStrategyConfigurationReflectionToHclTerraform, true)(struct!.reflection),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreMemoryStrategyConfigurationReflectionList",
     },
   };
 
@@ -435,6 +631,10 @@ export class BedrockagentcoreMemoryStrategyConfigurationOutputReference extends 
       hasAnyValues = true;
       internalValueResult.extraction = this._extraction?.internalValue;
     }
+    if (this._reflection?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.reflection = this._reflection?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -445,6 +645,7 @@ export class BedrockagentcoreMemoryStrategyConfigurationOutputReference extends 
       this._type = undefined;
       this._consolidation.internalValue = undefined;
       this._extraction.internalValue = undefined;
+      this._reflection.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -456,6 +657,7 @@ export class BedrockagentcoreMemoryStrategyConfigurationOutputReference extends 
       this._type = value.type;
       this._consolidation.internalValue = value.consolidation;
       this._extraction.internalValue = value.extraction;
+      this._reflection.internalValue = value.reflection;
     }
   }
 
@@ -503,6 +705,22 @@ export class BedrockagentcoreMemoryStrategyConfigurationOutputReference extends 
   public get extractionInput() {
     return this._extraction.internalValue;
   }
+
+  // reflection - computed: false, optional: true, required: false
+  private _reflection = new BedrockagentcoreMemoryStrategyConfigurationReflectionList(this, "reflection", false);
+  public get reflection() {
+    return this._reflection;
+  }
+  public putReflection(value: BedrockagentcoreMemoryStrategyConfigurationReflection[] | cdktn.IResolvable) {
+    this._reflection.internalValue = value;
+  }
+  public resetReflection() {
+    this._reflection.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reflectionInput() {
+    return this._reflection.internalValue;
+  }
 }
 
 export class BedrockagentcoreMemoryStrategyConfigurationList extends cdktn.ComplexList {
@@ -524,23 +742,136 @@ export class BedrockagentcoreMemoryStrategyConfigurationList extends cdktn.Compl
     return new BedrockagentcoreMemoryStrategyConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BedrockagentcoreMemoryStrategyReflectionConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#namespace_templates BedrockagentcoreMemoryStrategy#namespace_templates}
+  */
+  readonly namespaceTemplates: string[];
+}
+
+export function bedrockagentcoreMemoryStrategyReflectionConfigurationToTerraform(struct?: BedrockagentcoreMemoryStrategyReflectionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    namespace_templates: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.namespaceTemplates),
+  }
+}
+
+
+export function bedrockagentcoreMemoryStrategyReflectionConfigurationToHclTerraform(struct?: BedrockagentcoreMemoryStrategyReflectionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    namespace_templates: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.namespaceTemplates),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreMemoryStrategyReflectionConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreMemoryStrategyReflectionConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._namespaceTemplates !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.namespaceTemplates = this._namespaceTemplates;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreMemoryStrategyReflectionConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._namespaceTemplates = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._namespaceTemplates = value.namespaceTemplates;
+    }
+  }
+
+  // namespace_templates - computed: false, optional: false, required: true
+  private _namespaceTemplates?: string[]; 
+  public get namespaceTemplates() {
+    return cdktn.Fn.tolist(this.getListAttribute('namespace_templates'));
+  }
+  public set namespaceTemplates(value: string[]) {
+    this._namespaceTemplates = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceTemplatesInput() {
+    return this._namespaceTemplates;
+  }
+}
+
+export class BedrockagentcoreMemoryStrategyReflectionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreMemoryStrategyReflectionConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreMemoryStrategyReflectionConfigurationOutputReference {
+    return new BedrockagentcoreMemoryStrategyReflectionConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BedrockagentcoreMemoryStrategyTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#create BedrockagentcoreMemoryStrategy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#create BedrockagentcoreMemoryStrategy#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#delete BedrockagentcoreMemoryStrategy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#delete BedrockagentcoreMemoryStrategy#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#update BedrockagentcoreMemoryStrategy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#update BedrockagentcoreMemoryStrategy#update}
   */
   readonly update?: string;
 }
@@ -692,7 +1023,7 @@ export class BedrockagentcoreMemoryStrategyTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy aws_bedrockagentcore_memory_strategy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy aws_bedrockagentcore_memory_strategy}
 */
 export class BedrockagentcoreMemoryStrategy extends cdktn.TerraformResource {
 
@@ -708,7 +1039,7 @@ export class BedrockagentcoreMemoryStrategy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BedrockagentcoreMemoryStrategy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreMemoryStrategy to import
-  * @param importFromId The id of the existing BedrockagentcoreMemoryStrategy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockagentcoreMemoryStrategy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreMemoryStrategy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -720,7 +1051,7 @@ export class BedrockagentcoreMemoryStrategy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.56.0/docs/resources/bedrockagentcore_memory_strategy aws_bedrockagentcore_memory_strategy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrockagentcore_memory_strategy aws_bedrockagentcore_memory_strategy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -731,7 +1062,7 @@ export class BedrockagentcoreMemoryStrategy extends cdktn.TerraformResource {
       terraformResourceType: 'aws_bedrockagentcore_memory_strategy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.56.0',
+        providerVersion: '6.57.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -746,10 +1077,12 @@ export class BedrockagentcoreMemoryStrategy extends cdktn.TerraformResource {
     this._memoryExecutionRoleArn = config.memoryExecutionRoleArn;
     this._memoryId = config.memoryId;
     this._name = config.name;
+    this._namespaceTemplates = config.namespaceTemplates;
     this._namespaces = config.namespaces;
     this._region = config.region;
     this._type = config.type;
     this._configuration.internalValue = config.configuration;
+    this._reflectionConfiguration.internalValue = config.reflectionConfiguration;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -820,13 +1153,32 @@ export class BedrockagentcoreMemoryStrategy extends cdktn.TerraformResource {
     return this._name;
   }
 
-  // namespaces - computed: false, optional: false, required: true
+  // namespace_templates - computed: true, optional: true, required: false
+  private _namespaceTemplates?: string[]; 
+  public get namespaceTemplates() {
+    return cdktn.Fn.tolist(this.getListAttribute('namespace_templates'));
+  }
+  public set namespaceTemplates(value: string[]) {
+    this._namespaceTemplates = value;
+  }
+  public resetNamespaceTemplates() {
+    this._namespaceTemplates = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceTemplatesInput() {
+    return this._namespaceTemplates;
+  }
+
+  // namespaces - computed: true, optional: true, required: false
   private _namespaces?: string[]; 
   public get namespaces() {
     return cdktn.Fn.tolist(this.getListAttribute('namespaces'));
   }
   public set namespaces(value: string[]) {
     this._namespaces = value;
+  }
+  public resetNamespaces() {
+    this._namespaces = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get namespacesInput() {
@@ -878,6 +1230,22 @@ export class BedrockagentcoreMemoryStrategy extends cdktn.TerraformResource {
     return this._configuration.internalValue;
   }
 
+  // reflection_configuration - computed: false, optional: true, required: false
+  private _reflectionConfiguration = new BedrockagentcoreMemoryStrategyReflectionConfigurationList(this, "reflection_configuration", false);
+  public get reflectionConfiguration() {
+    return this._reflectionConfiguration;
+  }
+  public putReflectionConfiguration(value: BedrockagentcoreMemoryStrategyReflectionConfiguration[] | cdktn.IResolvable) {
+    this._reflectionConfiguration.internalValue = value;
+  }
+  public resetReflectionConfiguration() {
+    this._reflectionConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reflectionConfigurationInput() {
+    return this._reflectionConfiguration.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new BedrockagentcoreMemoryStrategyTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -904,10 +1272,12 @@ export class BedrockagentcoreMemoryStrategy extends cdktn.TerraformResource {
       memory_execution_role_arn: cdktn.stringToTerraform(this._memoryExecutionRoleArn),
       memory_id: cdktn.stringToTerraform(this._memoryId),
       name: cdktn.stringToTerraform(this._name),
+      namespace_templates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._namespaceTemplates),
       namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(this._namespaces),
       region: cdktn.stringToTerraform(this._region),
       type: cdktn.stringToTerraform(this._type),
       configuration: cdktn.listMapper(bedrockagentcoreMemoryStrategyConfigurationToTerraform, true)(this._configuration.internalValue),
+      reflection_configuration: cdktn.listMapper(bedrockagentcoreMemoryStrategyReflectionConfigurationToTerraform, true)(this._reflectionConfiguration.internalValue),
       timeouts: bedrockagentcoreMemoryStrategyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -938,6 +1308,12 @@ export class BedrockagentcoreMemoryStrategy extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      namespace_templates: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._namespaceTemplates),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
       namespaces: {
         value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._namespaces),
         isBlock: false,
@@ -961,6 +1337,12 @@ export class BedrockagentcoreMemoryStrategy extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentcoreMemoryStrategyConfigurationList",
+      },
+      reflection_configuration: {
+        value: cdktn.listMapperHcl(bedrockagentcoreMemoryStrategyReflectionConfigurationToHclTerraform, true)(this._reflectionConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BedrockagentcoreMemoryStrategyReflectionConfigurationList",
       },
       timeouts: {
         value: bedrockagentcoreMemoryStrategyTimeoutsToHclTerraform(this._timeouts.internalValue),

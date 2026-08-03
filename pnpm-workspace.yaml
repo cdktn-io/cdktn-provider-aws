@@ -4,3 +4,7 @@ auditConfig:
   ignoreGhsas:
     - GHSA-mh99-v99m-4gvg
 nodeLinker: hoisted
+minimumReleaseAgeExclude:
+  - "@cdktn/provider-project"
+  - cdktn
+  - cdktn-cli
