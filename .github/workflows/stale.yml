@@ -12,7 +12,8 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: actions/stale@b5d41d4e1d5dceea10e7104786b73624c18a190f
+      - id: auto_65b1296e
+        uses: actions/stale@b5d41d4e1d5dceea10e7104786b73624c18a190f
         with:
           days-before-stale: -1
           days-before-close: -1

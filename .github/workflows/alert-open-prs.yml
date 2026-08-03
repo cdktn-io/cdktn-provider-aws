@@ -23,6 +23,7 @@ jobs:
             echo "pr_links=$PR_LINKS" >> $GITHUB_OUTPUT
           fi
       - name: Alert Slack on old PRs
+        id: alert_slack_on_old_prs
         if: ${{ steps.old_prs.outputs.pr_links }}
         uses: slackapi/slack-github-action@45a88b9581bfab2566dc881e2cd66d334e621e2c
         with:

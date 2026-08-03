@@ -25,6 +25,7 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'automerge') && !contains(github.event.pull_request.labels.*.name, 'do-not-merge') && github.event.pull_request.draft == false
     steps:
       - name: Checkout
+        id: checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           ref: ${{ env.GIT_REF }}
@@ -36,6 +37,7 @@ jobs:
           app-id: ${{ env.PROJEN_APP_ID }}
           private-key: ${{ env.PROJEN_APP_PRIVATE_KEY }}
       - name: Turn on automerge for this PR by a trusted user or bot
+        id: turn_on_automerge_for_this_pr_by_a_trusted_user_or_bot
         if: github.event.pull_request.user.login == 'team-cdk-terrain[bot]' || contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.pull_request.author_association) || github.actor == 'dependabot[bot]'
         env:
           GH_TOKEN: ${{ steps.generate_token.outputs.token }}
