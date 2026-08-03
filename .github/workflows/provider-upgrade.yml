@@ -19,34 +19,42 @@ jobs:
       NODE_OPTIONS: --max-old-space-size=28672
     steps:
       - name: Checkout
+        id: checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
       - name: Setup Terraform
+        id: setup_terraform
         uses: hashicorp/setup-terraform@5e8dbf3c6d9deaf4193ca7a8fb23f2ac83bb6c85
         with:
           terraform_wrapper: false
       - name: Setup pnpm
+        id: setup_pnpm
         uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320
         with:
           version: 10.33.0
       - name: Setup Node.js
+        id: setup_node_js
         uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
           node-version: 22.11.0
       - name: Setup Copywrite tool
+        id: setup_copywrite_tool
         uses: hashicorp/setup-copywrite@32638da2d4e81d56a0764aa1547882fc4d209636
-      - run: pnpm install --frozen-lockfile
+      - id: auto_f733afb2
+        run: pnpm install --frozen-lockfile
       - id: check_version
         run: pnpm run check-if-new-provider-version
       - name: get provider current version
         id: current_version
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
         run: echo "value=$(jq -r '(.cdktn // .cdktf).provider.version' package.json)" >> $GITHUB_OUTPUT
-      - if: ${{ steps.check_version.outputs.new_version == 'available' }}
+      - id: auto_836b3b07
+        if: ${{ steps.check_version.outputs.new_version == 'available' }}
         env:
           CHECKPOINT_DISABLE: "1"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: pnpm run fetch
       - name: Add headers using Copywrite tool
+        id: add_headers_using_copywrite_tool
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
         run: copywrite headers
       - name: get provider updated version
@@ -78,6 +86,7 @@ jobs:
           GH_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: echo "id=$(gh api "/users/${{ steps.generate_token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
       - name: Create Pull Request
+        id: create_pull_request
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1
         with:

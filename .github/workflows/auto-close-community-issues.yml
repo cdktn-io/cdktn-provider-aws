@@ -14,12 +14,15 @@ jobs:
     if: github.event.issue.user.login != 'team-cdk-terrain[bot]' && !contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR", "CONTRIBUTOR"]'), github.event.issue.author_association)
     steps:
       - name: Checkout
+        id: checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
       - name: Auto-close issues by non-collaborators
+        id: auto-close_issues_by_non-collaborators
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh issue close ${{ github.event.issue.number }} --reason "not planned" --comment "Hi there! 👋 We appreciate your interest, but this is probably not the right place. All the code in this repository is auto-generated using [cdktn-provider-project](https://github.com/cdktn-io/cdktn-provider-project) and [cdktn-repository-manager](https://github.com/cdktn-io/cdktn-repository-manager) from the source [Terraform provider](https://github.com/terraform-providers/terraform-provider-aws). If there are problems, they should be addressed in one of those 3 repositories, not here, as any changes here will just get overwritten the next time there is an update upstream. Please open a new issue or PR in one of those repos. In the meantime, I'll auto-close this. Thanks!"
       - name: Add labels
+        id: add_labels
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh issue edit ${{ github.event.issue.number }} --add-label "invalid,wontfix"

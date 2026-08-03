@@ -31,16 +31,19 @@ jobs:
           app-id: ${{ env.PROJEN_APP_ID }}
           private-key: ${{ env.PROJEN_APP_PRIVATE_KEY }}
       - name: Checkout PR
+        id: checkout_pr
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           ref: ${{ env.GIT_REF }}
           repository: ${{ env.GIT_REPO }}
       - name: Auto-approve PRs by other users as team-cdk-terrain
+        id: auto-approve_prs_by_other_users_as_team-cdk-terrain
         if: github.event.pull_request.user.login != 'team-cdk-terrain[bot]' && (contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.pull_request.author_association) || github.actor == 'dependabot[bot]')
         env:
           GH_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: gh pr review $PR_ID --approve
       - name: Auto-approve PRs by team-cdk-terrain[bot] as github-actions[bot]
+        id: auto-approve_prs_by_team-cdk-terrain_bot_as_github-actions_bot
         if: github.event.pull_request.user.login == 'team-cdk-terrain[bot]'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
