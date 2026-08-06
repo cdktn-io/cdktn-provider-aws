@@ -4,7 +4,7 @@
 
 ### FsxFileCache <a name="FsxFileCache" id="@cdktn/provider-aws.fsxFileCache.FsxFileCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache aws_fsx_file_cache}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache aws_fsx_file_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer"></a>
 
@@ -47,19 +47,19 @@ FsxFileCache.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.fileCacheType">fileCacheType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.fileCacheTypeVersion">fileCacheTypeVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.storageCapacity">storageCapacity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.copyTagsToDataRepositoryAssociations">copyTagsToDataRepositoryAssociations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.fileCacheType">fileCacheType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.fileCacheTypeVersion">fileCacheTypeVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.storageCapacity">storageCapacity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.copyTagsToDataRepositoryAssociations">copyTagsToDataRepositoryAssociations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}. |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.dataRepositoryAssociation">dataRepositoryAssociation</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation">FsxFileCacheDataRepositoryAssociation</a>></code> | data_repository_association block. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#id FsxFileCache#id}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.kmsKeyId">kmsKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#kms_key_id FsxFileCache#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#id FsxFileCache#id}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.kmsKeyId">kmsKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#kms_key_id FsxFileCache#kms_key_id}. |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.lustreConfiguration">lustreConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfiguration">FsxFileCacheLustreConfiguration</a>></code> | lustre_configuration block. |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.securityGroupIds">securityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#tags FsxFileCache#tags}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#tags_all FsxFileCache#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.securityGroupIds">securityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#tags FsxFileCache#tags}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#tags_all FsxFileCache#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCache.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheTimeouts">FsxFileCacheTimeouts</a></code> | timeouts block. |
 
 ---
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 data_repository_association block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#data_repository_association FsxFileCache#data_repository_association}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#data_repository_association FsxFileCache#data_repository_association}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#id FsxFileCache#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#id FsxFileCache#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#kms_key_id FsxFileCache#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#kms_key_id FsxFileCache#kms_key_id}.
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 lustre_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#lustre_configuration FsxFileCache#lustre_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#lustre_configuration FsxFileCache#lustre_configuration}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#region FsxFileCache#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#region FsxFileCache#region}
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}.
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#tags FsxFileCache#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#tags FsxFileCache#tags}.
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#tags_all FsxFileCache#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#tags_all FsxFileCache#tags_all}.
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#timeouts FsxFileCache#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#timeouts FsxFileCache#timeouts}
 
 ---
 
@@ -801,7 +801,7 @@ The construct id used in the generated config for the FsxFileCache to import.
 
 The id of the existing FsxFileCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1424,19 +1424,19 @@ FsxFileCacheConfig.builder()
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.fileCacheType">fileCacheType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.fileCacheTypeVersion">fileCacheTypeVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.storageCapacity">storageCapacity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.copyTagsToDataRepositoryAssociations">copyTagsToDataRepositoryAssociations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.fileCacheType">fileCacheType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.fileCacheTypeVersion">fileCacheTypeVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.storageCapacity">storageCapacity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.copyTagsToDataRepositoryAssociations">copyTagsToDataRepositoryAssociations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}. |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.dataRepositoryAssociation">dataRepositoryAssociation</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation">FsxFileCacheDataRepositoryAssociation</a>></code> | data_repository_association block. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#id FsxFileCache#id}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#kms_key_id FsxFileCache#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#id FsxFileCache#id}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#kms_key_id FsxFileCache#kms_key_id}. |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.lustreConfiguration">lustreConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfiguration">FsxFileCacheLustreConfiguration</a>></code> | lustre_configuration block. |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.securityGroupIds">securityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#tags FsxFileCache#tags}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#tags_all FsxFileCache#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.securityGroupIds">securityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#tags FsxFileCache#tags}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#tags_all FsxFileCache#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheTimeouts">FsxFileCacheTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1519,7 +1519,7 @@ public java.lang.String getFileCacheType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}.
 
 ---
 
@@ -1531,7 +1531,7 @@ public java.lang.String getFileCacheTypeVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}.
 
 ---
 
@@ -1543,7 +1543,7 @@ public java.lang.Number getStorageCapacity();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}.
 
 ---
 
@@ -1555,7 +1555,7 @@ public java.util.List<java.lang.String> getSubnetIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}.
 
 ---
 
@@ -1567,7 +1567,7 @@ public java.lang.Boolean|IResolvable getCopyTagsToDataRepositoryAssociations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}.
 
 ---
 
@@ -1581,7 +1581,7 @@ public IResolvable|java.util.List<FsxFileCacheDataRepositoryAssociation> getData
 
 data_repository_association block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#data_repository_association FsxFileCache#data_repository_association}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#data_repository_association FsxFileCache#data_repository_association}
 
 ---
 
@@ -1593,7 +1593,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#id FsxFileCache#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#id FsxFileCache#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1608,7 +1608,7 @@ public java.lang.String getKmsKeyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#kms_key_id FsxFileCache#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#kms_key_id FsxFileCache#kms_key_id}.
 
 ---
 
@@ -1622,7 +1622,7 @@ public IResolvable|java.util.List<FsxFileCacheLustreConfiguration> getLustreConf
 
 lustre_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#lustre_configuration FsxFileCache#lustre_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#lustre_configuration FsxFileCache#lustre_configuration}
 
 ---
 
@@ -1636,7 +1636,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#region FsxFileCache#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#region FsxFileCache#region}
 
 ---
 
@@ -1648,7 +1648,7 @@ public java.util.List<java.lang.String> getSecurityGroupIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}.
 
 ---
 
@@ -1660,7 +1660,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#tags FsxFileCache#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#tags FsxFileCache#tags}.
 
 ---
 
@@ -1672,7 +1672,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#tags_all FsxFileCache#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#tags_all FsxFileCache#tags_all}.
 
 ---
 
@@ -1686,7 +1686,7 @@ public FsxFileCacheTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#timeouts FsxFileCache#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#timeouts FsxFileCache#timeouts}
 
 ---
 
@@ -1710,11 +1710,11 @@ FsxFileCacheDataRepositoryAssociation.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation.property.dataRepositoryPath">dataRepositoryPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#data_repository_path FsxFileCache#data_repository_path}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation.property.fileCachePath">fileCachePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#file_cache_path FsxFileCache#file_cache_path}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation.property.dataRepositorySubdirectories">dataRepositorySubdirectories</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#data_repository_subdirectories FsxFileCache#data_repository_subdirectories}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation.property.dataRepositoryPath">dataRepositoryPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#data_repository_path FsxFileCache#data_repository_path}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation.property.fileCachePath">fileCachePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#file_cache_path FsxFileCache#file_cache_path}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation.property.dataRepositorySubdirectories">dataRepositorySubdirectories</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#data_repository_subdirectories FsxFileCache#data_repository_subdirectories}. |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation.property.nfs">nfs</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfs">FsxFileCacheDataRepositoryAssociationNfs</a>></code> | nfs block. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#tags FsxFileCache#tags}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#tags FsxFileCache#tags}. |
 
 ---
 
@@ -1726,7 +1726,7 @@ public java.lang.String getDataRepositoryPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#data_repository_path FsxFileCache#data_repository_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#data_repository_path FsxFileCache#data_repository_path}.
 
 ---
 
@@ -1738,7 +1738,7 @@ public java.lang.String getFileCachePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#file_cache_path FsxFileCache#file_cache_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#file_cache_path FsxFileCache#file_cache_path}.
 
 ---
 
@@ -1750,7 +1750,7 @@ public java.util.List<java.lang.String> getDataRepositorySubdirectories();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#data_repository_subdirectories FsxFileCache#data_repository_subdirectories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#data_repository_subdirectories FsxFileCache#data_repository_subdirectories}.
 
 ---
 
@@ -1764,7 +1764,7 @@ public IResolvable|java.util.List<FsxFileCacheDataRepositoryAssociationNfs> getN
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#nfs FsxFileCache#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#nfs FsxFileCache#nfs}
 
 ---
 
@@ -1776,7 +1776,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#tags FsxFileCache#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#tags FsxFileCache#tags}.
 
 ---
 
@@ -1797,8 +1797,8 @@ FsxFileCacheDataRepositoryAssociationNfs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfs.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#version FsxFileCache#version}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfs.property.dnsIps">dnsIps</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#dns_ips FsxFileCache#dns_ips}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfs.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#version FsxFileCache#version}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfs.property.dnsIps">dnsIps</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#dns_ips FsxFileCache#dns_ips}. |
 
 ---
 
@@ -1810,7 +1810,7 @@ public java.lang.String getVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#version FsxFileCache#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#version FsxFileCache#version}.
 
 ---
 
@@ -1822,7 +1822,7 @@ public java.util.List<java.lang.String> getDnsIps();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#dns_ips FsxFileCache#dns_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#dns_ips FsxFileCache#dns_ips}.
 
 ---
 
@@ -1845,10 +1845,10 @@ FsxFileCacheLustreConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfiguration.property.deploymentType">deploymentType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#deployment_type FsxFileCache#deployment_type}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfiguration.property.deploymentType">deploymentType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#deployment_type FsxFileCache#deployment_type}. |
 | <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfiguration.property.metadataConfiguration">metadataConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfiguration">FsxFileCacheLustreConfigurationMetadataConfiguration</a>></code> | metadata_configuration block. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfiguration.property.perUnitStorageThroughput">perUnitStorageThroughput</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#per_unit_storage_throughput FsxFileCache#per_unit_storage_throughput}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfiguration.property.weeklyMaintenanceStartTime">weeklyMaintenanceStartTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#weekly_maintenance_start_time FsxFileCache#weekly_maintenance_start_time}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfiguration.property.perUnitStorageThroughput">perUnitStorageThroughput</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#per_unit_storage_throughput FsxFileCache#per_unit_storage_throughput}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfiguration.property.weeklyMaintenanceStartTime">weeklyMaintenanceStartTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#weekly_maintenance_start_time FsxFileCache#weekly_maintenance_start_time}. |
 
 ---
 
@@ -1860,7 +1860,7 @@ public java.lang.String getDeploymentType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#deployment_type FsxFileCache#deployment_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#deployment_type FsxFileCache#deployment_type}.
 
 ---
 
@@ -1874,7 +1874,7 @@ public IResolvable|java.util.List<FsxFileCacheLustreConfigurationMetadataConfigu
 
 metadata_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#metadata_configuration FsxFileCache#metadata_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#metadata_configuration FsxFileCache#metadata_configuration}
 
 ---
 
@@ -1886,7 +1886,7 @@ public java.lang.Number getPerUnitStorageThroughput();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#per_unit_storage_throughput FsxFileCache#per_unit_storage_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#per_unit_storage_throughput FsxFileCache#per_unit_storage_throughput}.
 
 ---
 
@@ -1898,7 +1898,7 @@ public java.lang.String getWeeklyMaintenanceStartTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#weekly_maintenance_start_time FsxFileCache#weekly_maintenance_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#weekly_maintenance_start_time FsxFileCache#weekly_maintenance_start_time}.
 
 ---
 
@@ -1930,7 +1930,7 @@ FsxFileCacheLustreConfigurationMetadataConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfiguration.property.storageCapacity">storageCapacity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfiguration.property.storageCapacity">storageCapacity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}. |
 
 ---
 
@@ -1942,7 +1942,7 @@ public java.lang.Number getStorageCapacity();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}.
 
 ---
 
@@ -1964,9 +1964,9 @@ FsxFileCacheTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#create FsxFileCache#create}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#delete FsxFileCache#delete}. |
-| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#update FsxFileCache#update}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#create FsxFileCache#create}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#delete FsxFileCache#delete}. |
+| <code><a href="#@cdktn/provider-aws.fsxFileCache.FsxFileCacheTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#update FsxFileCache#update}. |
 
 ---
 
@@ -1978,7 +1978,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#create FsxFileCache#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#create FsxFileCache#create}.
 
 ---
 
@@ -1990,7 +1990,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#delete FsxFileCache#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#delete FsxFileCache#delete}.
 
 ---
 
@@ -2002,7 +2002,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/fsx_file_cache#update FsxFileCache#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/fsx_file_cache#update FsxFileCache#update}.
 
 ---
 

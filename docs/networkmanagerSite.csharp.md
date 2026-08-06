@@ -4,7 +4,7 @@
 
 ### NetworkmanagerSite <a name="NetworkmanagerSite" id="@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site aws_networkmanager_site}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site aws_networkmanager_site}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSite.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the NetworkmanagerSite to impo
 
 The id of the existing NetworkmanagerSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -953,12 +953,12 @@ new NetworkmanagerSiteConfig {
 | <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#global_network_id NetworkmanagerSite#global_network_id}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#description NetworkmanagerSite#description}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#id NetworkmanagerSite#id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#global_network_id NetworkmanagerSite#global_network_id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#description NetworkmanagerSite#description}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#id NetworkmanagerSite#id}. |
 | <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.location">Location</a></code> | <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteLocation">NetworkmanagerSiteLocation</a></code> | location block. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#tags NetworkmanagerSite#tags}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#tags_all NetworkmanagerSite#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#tags NetworkmanagerSite#tags}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#tags_all NetworkmanagerSite#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts">NetworkmanagerSiteTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1041,7 +1041,7 @@ public string GlobalNetworkId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#global_network_id NetworkmanagerSite#global_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#global_network_id NetworkmanagerSite#global_network_id}.
 
 ---
 
@@ -1053,7 +1053,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#description NetworkmanagerSite#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#description NetworkmanagerSite#description}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#id NetworkmanagerSite#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#id NetworkmanagerSite#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1082,7 @@ public NetworkmanagerSiteLocation Location { get; set; }
 
 location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#location NetworkmanagerSite#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#location NetworkmanagerSite#location}
 
 ---
 
@@ -1094,7 +1094,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#tags NetworkmanagerSite#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#tags NetworkmanagerSite#tags}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#tags_all NetworkmanagerSite#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#tags_all NetworkmanagerSite#tags_all}.
 
 ---
 
@@ -1120,7 +1120,7 @@ public NetworkmanagerSiteTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#timeouts NetworkmanagerSite#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#timeouts NetworkmanagerSite#timeouts}
 
 ---
 
@@ -1142,9 +1142,9 @@ new NetworkmanagerSiteLocation {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteLocation.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#address NetworkmanagerSite#address}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteLocation.property.latitude">Latitude</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#latitude NetworkmanagerSite#latitude}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteLocation.property.longitude">Longitude</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#longitude NetworkmanagerSite#longitude}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteLocation.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#address NetworkmanagerSite#address}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteLocation.property.latitude">Latitude</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#latitude NetworkmanagerSite#latitude}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteLocation.property.longitude">Longitude</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#longitude NetworkmanagerSite#longitude}. |
 
 ---
 
@@ -1156,7 +1156,7 @@ public string Address { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#address NetworkmanagerSite#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#address NetworkmanagerSite#address}.
 
 ---
 
@@ -1168,7 +1168,7 @@ public string Latitude { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#latitude NetworkmanagerSite#latitude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#latitude NetworkmanagerSite#latitude}.
 
 ---
 
@@ -1180,7 +1180,7 @@ public string Longitude { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#longitude NetworkmanagerSite#longitude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#longitude NetworkmanagerSite#longitude}.
 
 ---
 
@@ -1202,9 +1202,9 @@ new NetworkmanagerSiteTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#create NetworkmanagerSite#create}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#delete NetworkmanagerSite#delete}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#update NetworkmanagerSite#update}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#create NetworkmanagerSite#create}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#delete NetworkmanagerSite#delete}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#update NetworkmanagerSite#update}. |
 
 ---
 
@@ -1216,7 +1216,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#create NetworkmanagerSite#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#create NetworkmanagerSite#create}.
 
 ---
 
@@ -1228,7 +1228,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#delete NetworkmanagerSite#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#delete NetworkmanagerSite#delete}.
 
 ---
 
@@ -1240,7 +1240,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_site#update NetworkmanagerSite#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_site#update NetworkmanagerSite#update}.
 
 ---
 

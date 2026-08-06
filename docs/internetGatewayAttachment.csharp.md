@@ -4,7 +4,7 @@
 
 ### InternetGatewayAttachment <a name="InternetGatewayAttachment" id="@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment aws_internet_gateway_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment aws_internet_gateway_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachment.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the InternetGatewayAttachment 
 
 The id of the existing InternetGatewayAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,9 +862,9 @@ new InternetGatewayAttachmentConfig {
 | <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.internetGatewayId">InternetGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#internet_gateway_id InternetGatewayAttachment#internet_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#vpc_id InternetGatewayAttachment#vpc_id}. |
-| <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#id InternetGatewayAttachment#id}. |
+| <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.internetGatewayId">InternetGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#internet_gateway_id InternetGatewayAttachment#internet_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#vpc_id InternetGatewayAttachment#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#id InternetGatewayAttachment#id}. |
 | <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeouts">InternetGatewayAttachmentTimeouts</a></code> | timeouts block. |
 
@@ -948,7 +948,7 @@ public string InternetGatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#internet_gateway_id InternetGatewayAttachment#internet_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#internet_gateway_id InternetGatewayAttachment#internet_gateway_id}.
 
 ---
 
@@ -960,7 +960,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#vpc_id InternetGatewayAttachment#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#vpc_id InternetGatewayAttachment#vpc_id}.
 
 ---
 
@@ -972,7 +972,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#id InternetGatewayAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#id InternetGatewayAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -989,7 +989,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#region InternetGatewayAttachment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#region InternetGatewayAttachment#region}
 
 ---
 
@@ -1003,7 +1003,7 @@ public InternetGatewayAttachmentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#timeouts InternetGatewayAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#timeouts InternetGatewayAttachment#timeouts}
 
 ---
 
@@ -1024,8 +1024,8 @@ new InternetGatewayAttachmentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#create InternetGatewayAttachment#create}. |
-| <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#delete InternetGatewayAttachment#delete}. |
+| <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#create InternetGatewayAttachment#create}. |
+| <code><a href="#@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#delete InternetGatewayAttachment#delete}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#create InternetGatewayAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#create InternetGatewayAttachment#create}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/internet_gateway_attachment#delete InternetGatewayAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/internet_gateway_attachment#delete InternetGatewayAttachment#delete}.
 
 ---
 

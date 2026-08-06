@@ -4,7 +4,7 @@
 
 ### TransferWebAppCustomization <a name="TransferWebAppCustomization" id="@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization aws_transfer_web_app_customization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization aws_transfer_web_app_customization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomization.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the TransferWebAppCustomizatio
 
 The id of the existing TransferWebAppCustomization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,11 +856,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/transferwebappcustomiz
 | <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.webAppId">WebAppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization#web_app_id TransferWebAppCustomization#web_app_id}. |
-| <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.faviconFile">FaviconFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization#favicon_file TransferWebAppCustomization#favicon_file}. |
-| <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.logoFile">LogoFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization#logo_file TransferWebAppCustomization#logo_file}. |
+| <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.webAppId">WebAppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization#web_app_id TransferWebAppCustomization#web_app_id}. |
+| <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.faviconFile">FaviconFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization#favicon_file TransferWebAppCustomization#favicon_file}. |
+| <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.logoFile">LogoFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization#logo_file TransferWebAppCustomization#logo_file}. |
 | <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization#title TransferWebAppCustomization#title}. |
+| <code><a href="#@cdktn/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization#title TransferWebAppCustomization#title}. |
 
 ---
 
@@ -942,7 +942,7 @@ WebAppId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization#web_app_id TransferWebAppCustomization#web_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization#web_app_id TransferWebAppCustomization#web_app_id}.
 
 ---
 
@@ -954,7 +954,7 @@ FaviconFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization#favicon_file TransferWebAppCustomization#favicon_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization#favicon_file TransferWebAppCustomization#favicon_file}.
 
 ---
 
@@ -966,7 +966,7 @@ LogoFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization#logo_file TransferWebAppCustomization#logo_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization#logo_file TransferWebAppCustomization#logo_file}.
 
 ---
 
@@ -980,7 +980,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization#region TransferWebAppCustomization#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization#region TransferWebAppCustomization#region}
 
 ---
 
@@ -992,7 +992,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app_customization#title TransferWebAppCustomization#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app_customization#title TransferWebAppCustomization#title}.
 
 ---
 

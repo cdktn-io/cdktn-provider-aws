@@ -4,7 +4,7 @@
 
 ### TransferWebApp <a name="TransferWebApp" id="@cdktn/provider-aws.transferWebApp.TransferWebApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app aws_transfer_web_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app aws_transfer_web_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer"></a>
 
@@ -40,13 +40,13 @@ TransferWebApp.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.accessEndpoint">accessEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.accessEndpoint">accessEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}. |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.endpointDetails">endpointDetails</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetails">TransferWebAppEndpointDetails</a>></code> | endpoint_details block. |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.identityProviderDetails">identityProviderDetails</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetails">TransferWebAppIdentityProviderDetails</a>></code> | identity_provider_details block. |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#tags TransferWebApp#tags}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.webAppEndpointPolicy">webAppEndpointPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.webAppUnits">webAppUnits</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits">TransferWebAppWebAppUnits</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.webAppEndpointPolicy">webAppEndpointPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer.parameter.webAppUnits">webAppUnits</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits">TransferWebAppWebAppUnits</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 endpoint_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#endpoint_details TransferWebApp#endpoint_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#endpoint_details TransferWebApp#endpoint_details}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 identity_provider_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#region TransferWebApp#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#region TransferWebApp#region}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#tags TransferWebApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits">TransferWebAppWebAppUnits</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}.
 
 ---
 
@@ -705,7 +705,7 @@ The construct id used in the generated config for the TransferWebApp to import.
 
 The id of the existing TransferWebApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1123,13 +1123,13 @@ TransferWebAppConfig.builder()
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.accessEndpoint">accessEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.accessEndpoint">accessEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}. |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.endpointDetails">endpointDetails</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetails">TransferWebAppEndpointDetails</a>></code> | endpoint_details block. |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.identityProviderDetails">identityProviderDetails</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetails">TransferWebAppIdentityProviderDetails</a>></code> | identity_provider_details block. |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#tags TransferWebApp#tags}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.webAppEndpointPolicy">webAppEndpointPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.webAppUnits">webAppUnits</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits">TransferWebAppWebAppUnits</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.webAppEndpointPolicy">webAppEndpointPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.webAppUnits">webAppUnits</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits">TransferWebAppWebAppUnits</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}. |
 
 ---
 
@@ -1211,7 +1211,7 @@ public java.lang.String getAccessEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public IResolvable|java.util.List<TransferWebAppEndpointDetails> getEndpointDeta
 
 endpoint_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#endpoint_details TransferWebApp#endpoint_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#endpoint_details TransferWebApp#endpoint_details}
 
 ---
 
@@ -1239,7 +1239,7 @@ public IResolvable|java.util.List<TransferWebAppIdentityProviderDetails> getIden
 
 identity_provider_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
 
 ---
 
@@ -1253,7 +1253,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#region TransferWebApp#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#region TransferWebApp#region}
 
 ---
 
@@ -1265,7 +1265,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#tags TransferWebApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}.
 
 ---
 
@@ -1277,7 +1277,7 @@ public java.lang.String getWebAppEndpointPolicy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}.
 
 ---
 
@@ -1289,7 +1289,7 @@ public IResolvable|java.util.List<TransferWebAppWebAppUnits> getWebAppUnits();
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits">TransferWebAppWebAppUnits</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}.
 
 ---
 
@@ -1323,7 +1323,7 @@ public IResolvable|java.util.List<TransferWebAppEndpointDetailsVpc> getVpc();
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#vpc TransferWebApp#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#vpc TransferWebApp#vpc}
 
 ---
 
@@ -1345,9 +1345,9 @@ TransferWebAppEndpointDetailsVpc.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#subnet_ids TransferWebApp#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#vpc_id TransferWebApp#vpc_id}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.securityGroupIds">securityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#security_group_ids TransferWebApp#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#subnet_ids TransferWebApp#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#vpc_id TransferWebApp#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.securityGroupIds">securityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#security_group_ids TransferWebApp#security_group_ids}. |
 
 ---
 
@@ -1359,7 +1359,7 @@ public java.util.List<java.lang.String> getSubnetIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#subnet_ids TransferWebApp#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#subnet_ids TransferWebApp#subnet_ids}.
 
 ---
 
@@ -1371,7 +1371,7 @@ public java.lang.String getVpcId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#vpc_id TransferWebApp#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#vpc_id TransferWebApp#vpc_id}.
 
 ---
 
@@ -1383,7 +1383,7 @@ public java.util.List<java.lang.String> getSecurityGroupIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#security_group_ids TransferWebApp#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#security_group_ids TransferWebApp#security_group_ids}.
 
 ---
 
@@ -1417,7 +1417,7 @@ public IResolvable|java.util.List<TransferWebAppIdentityProviderDetailsIdentityC
 
 identity_center_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#identity_center_config TransferWebApp#identity_center_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#identity_center_config TransferWebApp#identity_center_config}
 
 ---
 
@@ -1438,8 +1438,8 @@ TransferWebAppIdentityProviderDetailsIdentityCenterConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfig.property.instanceArn">instanceArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#role TransferWebApp#role}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfig.property.instanceArn">instanceArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#role TransferWebApp#role}. |
 
 ---
 
@@ -1451,7 +1451,7 @@ public java.lang.String getInstanceArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}.
 
 ---
 
@@ -1463,7 +1463,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#role TransferWebApp#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#role TransferWebApp#role}.
 
 ---
 
@@ -1483,7 +1483,7 @@ TransferWebAppWebAppUnits.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits.property.provisioned">provisioned</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits.property.provisioned">provisioned</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}. |
 
 ---
 
@@ -1495,7 +1495,7 @@ public java.lang.Number getProvisioned();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}.
 
 ---
 

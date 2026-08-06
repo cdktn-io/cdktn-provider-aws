@@ -4,7 +4,7 @@
 
 ### LakeformationOptIn <a name="LakeformationOptIn" id="@cdktn/provider-aws.lakeformationOptIn.LakeformationOptIn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lakeformationOptIn.LakeformationOptIn.Initializer"></a>
 
@@ -556,7 +556,7 @@ The construct id used in the generated config for the LakeformationOptIn to impo
 
 The id of the existing LakeformationOptIn that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,7 +994,7 @@ public IResolvable|LakeformationOptInCondition[] Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#condition LakeformationOptIn#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#condition LakeformationOptIn#condition}
 
 ---
 
@@ -1008,7 +1008,7 @@ public IResolvable|LakeformationOptInPrincipal[] Principal { get; set; }
 
 principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#principal LakeformationOptIn#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#principal LakeformationOptIn#principal}
 
 ---
 
@@ -1022,7 +1022,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#region LakeformationOptIn#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#region LakeformationOptIn#region}
 
 ---
 
@@ -1036,7 +1036,7 @@ public IResolvable|LakeformationOptInResourceData[] ResourceData { get; set; }
 
 resource_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#resource_data LakeformationOptIn#resource_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#resource_data LakeformationOptIn#resource_data}
 
 ---
 
@@ -1056,7 +1056,7 @@ new LakeformationOptInPrincipal {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInPrincipal.property.dataLakePrincipalIdentifier">DataLakePrincipalIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#data_lake_principal_identifier LakeformationOptIn#data_lake_principal_identifier}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInPrincipal.property.dataLakePrincipalIdentifier">DataLakePrincipalIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#data_lake_principal_identifier LakeformationOptIn#data_lake_principal_identifier}. |
 
 ---
 
@@ -1068,7 +1068,7 @@ public string DataLakePrincipalIdentifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#data_lake_principal_identifier LakeformationOptIn#data_lake_principal_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#data_lake_principal_identifier LakeformationOptIn#data_lake_principal_identifier}.
 
 ---
 
@@ -1118,7 +1118,7 @@ public IResolvable|LakeformationOptInResourceDataCatalog[] Catalog { get; set; }
 
 catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog LakeformationOptIn#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog LakeformationOptIn#catalog}
 
 ---
 
@@ -1132,7 +1132,7 @@ public IResolvable|LakeformationOptInResourceDataDatabase[] Database { get; set;
 
 database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#database LakeformationOptIn#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#database LakeformationOptIn#database}
 
 ---
 
@@ -1146,7 +1146,7 @@ public IResolvable|LakeformationOptInResourceDataDataCellsFilter[] DataCellsFilt
 
 data_cells_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#data_cells_filter LakeformationOptIn#data_cells_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#data_cells_filter LakeformationOptIn#data_cells_filter}
 
 ---
 
@@ -1160,7 +1160,7 @@ public IResolvable|LakeformationOptInResourceDataDataLocation[] DataLocation { g
 
 data_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#data_location LakeformationOptIn#data_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#data_location LakeformationOptIn#data_location}
 
 ---
 
@@ -1174,7 +1174,7 @@ public IResolvable|LakeformationOptInResourceDataLfTag[] LfTag { get; set; }
 
 lf_tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#lf_tag LakeformationOptIn#lf_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#lf_tag LakeformationOptIn#lf_tag}
 
 ---
 
@@ -1188,7 +1188,7 @@ public IResolvable|LakeformationOptInResourceDataLfTagExpression[] LfTagExpressi
 
 lf_tag_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#lf_tag_expression LakeformationOptIn#lf_tag_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#lf_tag_expression LakeformationOptIn#lf_tag_expression}
 
 ---
 
@@ -1202,7 +1202,7 @@ public IResolvable|LakeformationOptInResourceDataLfTagPolicy[] LfTagPolicy { get
 
 lf_tag_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#lf_tag_policy LakeformationOptIn#lf_tag_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#lf_tag_policy LakeformationOptIn#lf_tag_policy}
 
 ---
 
@@ -1216,7 +1216,7 @@ public IResolvable|LakeformationOptInResourceDataTable[] Table { get; set; }
 
 table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#table LakeformationOptIn#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#table LakeformationOptIn#table}
 
 ---
 
@@ -1230,7 +1230,7 @@ public IResolvable|LakeformationOptInResourceDataTableWithColumns[] TableWithCol
 
 table_with_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#table_with_columns LakeformationOptIn#table_with_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#table_with_columns LakeformationOptIn#table_with_columns}
 
 ---
 
@@ -1250,7 +1250,7 @@ new LakeformationOptInResourceDataCatalog {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataCatalog.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#id LakeformationOptIn#id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataCatalog.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#id LakeformationOptIn#id}. |
 
 ---
 
@@ -1262,7 +1262,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#id LakeformationOptIn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#id LakeformationOptIn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1286,8 +1286,8 @@ new LakeformationOptInResourceDataDatabase {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDatabase.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDatabase.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDatabase.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDatabase.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
 
 ---
 
@@ -1299,7 +1299,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
 
 ---
 
@@ -1311,7 +1311,7 @@ public string CatalogId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
 
 ---
 
@@ -1334,10 +1334,10 @@ new LakeformationOptInResourceDataDataCellsFilter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilter.property.databaseName">DatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilter.property.tableCatalogId">TableCatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#table_catalog_id LakeformationOptIn#table_catalog_id}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilter.property.tableName">TableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#table_name LakeformationOptIn#table_name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilter.property.databaseName">DatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilter.property.tableCatalogId">TableCatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#table_catalog_id LakeformationOptIn#table_catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilter.property.tableName">TableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#table_name LakeformationOptIn#table_name}. |
 
 ---
 
@@ -1349,7 +1349,7 @@ public string DatabaseName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}.
 
 ---
 
@@ -1361,7 +1361,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
 
 ---
 
@@ -1373,7 +1373,7 @@ public string TableCatalogId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#table_catalog_id LakeformationOptIn#table_catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#table_catalog_id LakeformationOptIn#table_catalog_id}.
 
 ---
 
@@ -1385,7 +1385,7 @@ public string TableName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#table_name LakeformationOptIn#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#table_name LakeformationOptIn#table_name}.
 
 ---
 
@@ -1406,8 +1406,8 @@ new LakeformationOptInResourceDataDataLocation {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataLocation.property.resourceArn">ResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#resource_arn LakeformationOptIn#resource_arn}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataLocation.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataLocation.property.resourceArn">ResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#resource_arn LakeformationOptIn#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataLocation.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
 
 ---
 
@@ -1419,7 +1419,7 @@ public string ResourceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#resource_arn LakeformationOptIn#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#resource_arn LakeformationOptIn#resource_arn}.
 
 ---
 
@@ -1431,7 +1431,7 @@ public string CatalogId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
 
 ---
 
@@ -1453,9 +1453,9 @@ new LakeformationOptInResourceDataLfTag {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTag.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#key LakeformationOptIn#key}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTag.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#values LakeformationOptIn#values}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTag.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTag.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#key LakeformationOptIn#key}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTag.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#values LakeformationOptIn#values}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTag.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
 
 ---
 
@@ -1467,7 +1467,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#key LakeformationOptIn#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#key LakeformationOptIn#key}.
 
 ---
 
@@ -1479,7 +1479,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#values LakeformationOptIn#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#values LakeformationOptIn#values}.
 
 ---
 
@@ -1491,7 +1491,7 @@ public string CatalogId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
 
 ---
 
@@ -1512,8 +1512,8 @@ new LakeformationOptInResourceDataLfTagExpression {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagExpression.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagExpression.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagExpression.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagExpression.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
 
 ---
 
@@ -1525,7 +1525,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
 
 ---
 
@@ -1537,7 +1537,7 @@ public string CatalogId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
 
 ---
 
@@ -1560,10 +1560,10 @@ new LakeformationOptInResourceDataLfTagPolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicy.property.resourceType">ResourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#resource_type LakeformationOptIn#resource_type}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicy.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicy.property.expression">Expression</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#expression LakeformationOptIn#expression}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicy.property.expressionName">ExpressionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#expression_name LakeformationOptIn#expression_name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicy.property.resourceType">ResourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#resource_type LakeformationOptIn#resource_type}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicy.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicy.property.expression">Expression</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#expression LakeformationOptIn#expression}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicy.property.expressionName">ExpressionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#expression_name LakeformationOptIn#expression_name}. |
 
 ---
 
@@ -1575,7 +1575,7 @@ public string ResourceType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#resource_type LakeformationOptIn#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#resource_type LakeformationOptIn#resource_type}.
 
 ---
 
@@ -1587,7 +1587,7 @@ public string CatalogId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
 
 ---
 
@@ -1599,7 +1599,7 @@ public string[] Expression { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#expression LakeformationOptIn#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#expression LakeformationOptIn#expression}.
 
 ---
 
@@ -1611,7 +1611,7 @@ public string ExpressionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#expression_name LakeformationOptIn#expression_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#expression_name LakeformationOptIn#expression_name}.
 
 ---
 
@@ -1634,10 +1634,10 @@ new LakeformationOptInResourceDataTable {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTable.property.databaseName">DatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTable.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTable.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTable.property.wildcard">Wildcard</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#wildcard LakeformationOptIn#wildcard}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTable.property.databaseName">DatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTable.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTable.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTable.property.wildcard">Wildcard</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#wildcard LakeformationOptIn#wildcard}. |
 
 ---
 
@@ -1649,7 +1649,7 @@ public string DatabaseName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}.
 
 ---
 
@@ -1661,7 +1661,7 @@ public string CatalogId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
 
 ---
 
@@ -1673,7 +1673,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
 
 ---
 
@@ -1685,7 +1685,7 @@ public bool|IResolvable Wildcard { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#wildcard LakeformationOptIn#wildcard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#wildcard LakeformationOptIn#wildcard}.
 
 ---
 
@@ -1709,10 +1709,10 @@ new LakeformationOptInResourceDataTableWithColumns {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumns.property.databaseName">DatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumns.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumns.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumns.property.columnNames">ColumnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#column_names LakeformationOptIn#column_names}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumns.property.databaseName">DatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumns.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumns.property.catalogId">CatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumns.property.columnNames">ColumnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#column_names LakeformationOptIn#column_names}. |
 | <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumns.property.columnWildcard">ColumnWildcard</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumnsColumnWildcard">LakeformationOptInResourceDataTableWithColumnsColumnWildcard</a>[]</code> | column_wildcard block. |
 
 ---
@@ -1725,7 +1725,7 @@ public string DatabaseName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#database_name LakeformationOptIn#database_name}.
 
 ---
 
@@ -1737,7 +1737,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
 
 ---
 
@@ -1749,7 +1749,7 @@ public string CatalogId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
 
 ---
 
@@ -1761,7 +1761,7 @@ public string[] ColumnNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#column_names LakeformationOptIn#column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#column_names LakeformationOptIn#column_names}.
 
 ---
 
@@ -1775,7 +1775,7 @@ public IResolvable|LakeformationOptInResourceDataTableWithColumnsColumnWildcard[
 
 column_wildcard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#column_wildcard LakeformationOptIn#column_wildcard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#column_wildcard LakeformationOptIn#column_wildcard}
 
 ---
 
@@ -1795,7 +1795,7 @@ new LakeformationOptInResourceDataTableWithColumnsColumnWildcard {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumnsColumnWildcard.property.excludedColumnNames">ExcludedColumnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#excluded_column_names LakeformationOptIn#excluded_column_names}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumnsColumnWildcard.property.excludedColumnNames">ExcludedColumnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#excluded_column_names LakeformationOptIn#excluded_column_names}. |
 
 ---
 
@@ -1807,7 +1807,7 @@ public string[] ExcludedColumnNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/lakeformation_opt_in#excluded_column_names LakeformationOptIn#excluded_column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lakeformation_opt_in#excluded_column_names LakeformationOptIn#excluded_column_names}.
 
 ---
 

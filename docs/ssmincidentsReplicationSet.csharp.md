@@ -4,7 +4,7 @@
 
 ### SsmincidentsReplicationSet <a name="SsmincidentsReplicationSet" id="@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSet.Initializer"></a>
 
@@ -570,7 +570,7 @@ The construct id used in the generated config for the SsmincidentsReplicationSet
 
 The id of the existing SsmincidentsReplicationSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -987,11 +987,11 @@ new SsmincidentsReplicationSetConfig {
 | <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#id SsmincidentsReplicationSet#id}. |
+| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#id SsmincidentsReplicationSet#id}. |
 | <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.region">Region</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegion">SsmincidentsReplicationSetRegion</a>[]</code> | region block. |
 | <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.regions">Regions</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegions">SsmincidentsReplicationSetRegions</a>[]</code> | regions block. |
-| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#tags SsmincidentsReplicationSet#tags}. |
-| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#tags_all SsmincidentsReplicationSet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#tags SsmincidentsReplicationSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#tags_all SsmincidentsReplicationSet#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeouts">SsmincidentsReplicationSetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1074,7 +1074,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#id SsmincidentsReplicationSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#id SsmincidentsReplicationSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ public IResolvable|SsmincidentsReplicationSetRegion[] Region { get; set; }
 
 region block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#region SsmincidentsReplicationSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#region SsmincidentsReplicationSet#region}
 
 ---
 
@@ -1105,7 +1105,7 @@ public IResolvable|SsmincidentsReplicationSetRegions[] Regions { get; set; }
 
 regions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#regions SsmincidentsReplicationSet#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#regions SsmincidentsReplicationSet#regions}
 
 ---
 
@@ -1117,7 +1117,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#tags SsmincidentsReplicationSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#tags SsmincidentsReplicationSet#tags}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#tags_all SsmincidentsReplicationSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#tags_all SsmincidentsReplicationSet#tags_all}.
 
 ---
 
@@ -1143,7 +1143,7 @@ public SsmincidentsReplicationSetTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#timeouts SsmincidentsReplicationSet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#timeouts SsmincidentsReplicationSet#timeouts}
 
 ---
 
@@ -1164,8 +1164,8 @@ new SsmincidentsReplicationSetRegion {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegion.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#name SsmincidentsReplicationSet#name}. |
-| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegion.property.kmsKeyArn">KmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#kms_key_arn SsmincidentsReplicationSet#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegion.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#name SsmincidentsReplicationSet#name}. |
+| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegion.property.kmsKeyArn">KmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#kms_key_arn SsmincidentsReplicationSet#kms_key_arn}. |
 
 ---
 
@@ -1177,7 +1177,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#name SsmincidentsReplicationSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#name SsmincidentsReplicationSet#name}.
 
 ---
 
@@ -1189,7 +1189,7 @@ public string KmsKeyArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#kms_key_arn SsmincidentsReplicationSet#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#kms_key_arn SsmincidentsReplicationSet#kms_key_arn}.
 
 ---
 
@@ -1210,8 +1210,8 @@ new SsmincidentsReplicationSetRegions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegions.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#name SsmincidentsReplicationSet#name}. |
-| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegions.property.kmsKeyArn">KmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#kms_key_arn SsmincidentsReplicationSet#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegions.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#name SsmincidentsReplicationSet#name}. |
+| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegions.property.kmsKeyArn">KmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#kms_key_arn SsmincidentsReplicationSet#kms_key_arn}. |
 
 ---
 
@@ -1223,7 +1223,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#name SsmincidentsReplicationSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#name SsmincidentsReplicationSet#name}.
 
 ---
 
@@ -1235,7 +1235,7 @@ public string KmsKeyArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#kms_key_arn SsmincidentsReplicationSet#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#kms_key_arn SsmincidentsReplicationSet#kms_key_arn}.
 
 ---
 
@@ -1257,9 +1257,9 @@ new SsmincidentsReplicationSetTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#create SsmincidentsReplicationSet#create}. |
-| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#delete SsmincidentsReplicationSet#delete}. |
-| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#update SsmincidentsReplicationSet#update}. |
+| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#create SsmincidentsReplicationSet#create}. |
+| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#delete SsmincidentsReplicationSet#delete}. |
+| <code><a href="#@cdktn/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#update SsmincidentsReplicationSet#update}. |
 
 ---
 
@@ -1271,7 +1271,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#create SsmincidentsReplicationSet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#create SsmincidentsReplicationSet#create}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#delete SsmincidentsReplicationSet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#delete SsmincidentsReplicationSet#delete}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssmincidents_replication_set#update SsmincidentsReplicationSet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssmincidents_replication_set#update SsmincidentsReplicationSet#update}.
 
 ---
 

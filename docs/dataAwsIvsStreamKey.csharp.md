@@ -4,7 +4,7 @@
 
 ### DataAwsIvsStreamKey <a name="DataAwsIvsStreamKey" id="@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ivs_stream_key aws_ivs_stream_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ivs_stream_key aws_ivs_stream_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsIvsStreamKey to imp
 
 The id of the existing DataAwsIvsStreamKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ivs_stream_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ivs_stream_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -724,10 +724,10 @@ new DataAwsIvsStreamKeyConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.channelArn">ChannelArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.channelArn">ChannelArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}. |
 
 ---
 
@@ -809,7 +809,7 @@ public string ChannelArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}.
 
 ---
 
@@ -821,7 +821,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -838,7 +838,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ivs_stream_key#region DataAwsIvsStreamKey#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ivs_stream_key#region DataAwsIvsStreamKey#region}
 
 ---
 
@@ -850,7 +850,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}.
 
 ---
 

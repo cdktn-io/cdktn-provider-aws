@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_foundation_model_agreement
+// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_foundation_model_agreement
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +13,23 @@ import * as cdktn from 'cdktn';
 
 export interface BedrockFoundationModelAgreementConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_foundation_model_agreement#model_id BedrockFoundationModelAgreement#model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_foundation_model_agreement#model_id BedrockFoundationModelAgreement#model_id}
   */
   readonly modelId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_foundation_model_agreement#offer_token BedrockFoundationModelAgreement#offer_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_foundation_model_agreement#offer_token BedrockFoundationModelAgreement#offer_token}
   */
   readonly offerToken: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_foundation_model_agreement#region BedrockFoundationModelAgreement#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_foundation_model_agreement#region BedrockFoundationModelAgreement#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_foundation_model_agreement#timeouts BedrockFoundationModelAgreement#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_foundation_model_agreement#timeouts BedrockFoundationModelAgreement#timeouts}
   */
   readonly timeouts?: BedrockFoundationModelAgreementTimeouts;
 }
@@ -37,13 +37,13 @@ export interface BedrockFoundationModelAgreementTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_foundation_model_agreement#create BedrockFoundationModelAgreement#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_foundation_model_agreement#create BedrockFoundationModelAgreement#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_foundation_model_agreement#delete BedrockFoundationModelAgreement#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_foundation_model_agreement#delete BedrockFoundationModelAgreement#delete}
   */
   readonly delete?: string;
 }
@@ -166,7 +166,7 @@ export class BedrockFoundationModelAgreementTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_foundation_model_agreement aws_bedrock_foundation_model_agreement}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_foundation_model_agreement aws_bedrock_foundation_model_agreement}
 */
 export class BedrockFoundationModelAgreement extends cdktn.TerraformResource {
 
@@ -182,7 +182,7 @@ export class BedrockFoundationModelAgreement extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BedrockFoundationModelAgreement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockFoundationModelAgreement to import
-  * @param importFromId The id of the existing BedrockFoundationModelAgreement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_foundation_model_agreement#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockFoundationModelAgreement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_foundation_model_agreement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockFoundationModelAgreement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -194,7 +194,7 @@ export class BedrockFoundationModelAgreement extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_foundation_model_agreement aws_bedrock_foundation_model_agreement} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_foundation_model_agreement aws_bedrock_foundation_model_agreement} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -205,7 +205,7 @@ export class BedrockFoundationModelAgreement extends cdktn.TerraformResource {
       terraformResourceType: 'aws_bedrock_foundation_model_agreement',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.57.1',
+        providerVersion: '6.58.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

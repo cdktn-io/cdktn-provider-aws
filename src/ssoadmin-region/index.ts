@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssoadmin_region
+// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssoadmin_region
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +13,23 @@ import * as cdktn from 'cdktn';
 
 export interface SsoadminRegionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssoadmin_region#instance_arn SsoadminRegion#instance_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssoadmin_region#instance_arn SsoadminRegion#instance_arn}
   */
   readonly instanceArn: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssoadmin_region#region SsoadminRegion#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssoadmin_region#region SsoadminRegion#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssoadmin_region#region_name SsoadminRegion#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssoadmin_region#region_name SsoadminRegion#region_name}
   */
   readonly regionName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssoadmin_region#timeouts SsoadminRegion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssoadmin_region#timeouts SsoadminRegion#timeouts}
   */
   readonly timeouts?: SsoadminRegionTimeouts;
 }
@@ -37,13 +37,13 @@ export interface SsoadminRegionTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssoadmin_region#create SsoadminRegion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssoadmin_region#create SsoadminRegion#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssoadmin_region#delete SsoadminRegion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssoadmin_region#delete SsoadminRegion#delete}
   */
   readonly delete?: string;
 }
@@ -166,7 +166,7 @@ export class SsoadminRegionTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssoadmin_region aws_ssoadmin_region}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssoadmin_region aws_ssoadmin_region}
 */
 export class SsoadminRegion extends cdktn.TerraformResource {
 
@@ -182,7 +182,7 @@ export class SsoadminRegion extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SsoadminRegion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminRegion to import
-  * @param importFromId The id of the existing SsoadminRegion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssoadmin_region#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsoadminRegion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssoadmin_region#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminRegion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -194,7 +194,7 @@ export class SsoadminRegion extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/ssoadmin_region aws_ssoadmin_region} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssoadmin_region aws_ssoadmin_region} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -205,7 +205,7 @@ export class SsoadminRegion extends cdktn.TerraformResource {
       terraformResourceType: 'aws_ssoadmin_region',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.57.1',
+        providerVersion: '6.58.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

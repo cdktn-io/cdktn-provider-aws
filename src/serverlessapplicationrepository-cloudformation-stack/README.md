@@ -1,3 +1,3 @@
 # `aws_serverlessapplicationrepository_cloudformation_stack`
 
-Refer to the Terraform Registry for docs: [`aws_serverlessapplicationrepository_cloudformation_stack`](https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/serverlessapplicationrepository_cloudformation_stack).
+Refer to the Terraform Registry for docs: [`aws_serverlessapplicationrepository_cloudformation_stack`](https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/serverlessapplicationrepository_cloudformation_stack).

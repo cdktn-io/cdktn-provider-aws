@@ -4,7 +4,7 @@
 
 ### DataAwsAvailabilityZone <a name="DataAwsAvailabilityZone" id="@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone aws_availability_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone aws_availability_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone.Initializer"></a>
 
@@ -469,7 +469,7 @@ The construct id used in the generated config for the DataAwsAvailabilityZone to
 
 The id of the existing DataAwsAvailabilityZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,14 +943,14 @@ new DataAwsAvailabilityZoneConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.allAvailabilityZones">AllAvailabilityZones</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#all_availability_zones DataAwsAvailabilityZone#all_availability_zones}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.allAvailabilityZones">AllAvailabilityZones</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#all_availability_zones DataAwsAvailabilityZone#all_availability_zones}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.filter">Filter</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilter">DataAwsAvailabilityZoneFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#id DataAwsAvailabilityZone#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#name DataAwsAvailabilityZone#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#id DataAwsAvailabilityZone#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#name DataAwsAvailabilityZone#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#state DataAwsAvailabilityZone#state}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#state DataAwsAvailabilityZone#state}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeouts">DataAwsAvailabilityZoneTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#zone_id DataAwsAvailabilityZone#zone_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#zone_id DataAwsAvailabilityZone#zone_id}. |
 
 ---
 
@@ -1032,7 +1032,7 @@ public bool|IResolvable AllAvailabilityZones { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#all_availability_zones DataAwsAvailabilityZone#all_availability_zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#all_availability_zones DataAwsAvailabilityZone#all_availability_zones}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public IResolvable|DataAwsAvailabilityZoneFilter[] Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#filter DataAwsAvailabilityZone#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#filter DataAwsAvailabilityZone#filter}
 
 ---
 
@@ -1058,7 +1058,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#id DataAwsAvailabilityZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#id DataAwsAvailabilityZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1073,7 +1073,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#name DataAwsAvailabilityZone#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#name DataAwsAvailabilityZone#name}.
 
 ---
 
@@ -1087,7 +1087,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#region DataAwsAvailabilityZone#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#region DataAwsAvailabilityZone#region}
 
 ---
 
@@ -1099,7 +1099,7 @@ public string State { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#state DataAwsAvailabilityZone#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#state DataAwsAvailabilityZone#state}.
 
 ---
 
@@ -1113,7 +1113,7 @@ public DataAwsAvailabilityZoneTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#timeouts DataAwsAvailabilityZone#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#timeouts DataAwsAvailabilityZone#timeouts}
 
 ---
 
@@ -1125,7 +1125,7 @@ public string ZoneId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#zone_id DataAwsAvailabilityZone#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#zone_id DataAwsAvailabilityZone#zone_id}.
 
 ---
 
@@ -1146,8 +1146,8 @@ new DataAwsAvailabilityZoneFilter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#name DataAwsAvailabilityZone#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#values DataAwsAvailabilityZone#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#name DataAwsAvailabilityZone#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#values DataAwsAvailabilityZone#values}. |
 
 ---
 
@@ -1159,7 +1159,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#name DataAwsAvailabilityZone#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#name DataAwsAvailabilityZone#name}.
 
 ---
 
@@ -1171,7 +1171,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#values DataAwsAvailabilityZone#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#values DataAwsAvailabilityZone#values}.
 
 ---
 
@@ -1191,7 +1191,7 @@ new DataAwsAvailabilityZoneTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#read DataAwsAvailabilityZone#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#read DataAwsAvailabilityZone#read}. |
 
 ---
 
@@ -1203,7 +1203,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/availability_zone#read DataAwsAvailabilityZone#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/availability_zone#read DataAwsAvailabilityZone#read}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Route53ResolverRule <a name="Route53ResolverRule" id="@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule aws_route53_resolver_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule aws_route53_resolver_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer"></a>
 
@@ -43,14 +43,14 @@ Route53ResolverRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.domainName">domainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#domain_name Route53ResolverRule#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.ruleType">ruleType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#rule_type Route53ResolverRule#rule_type}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#id Route53ResolverRule#id}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#name Route53ResolverRule#name}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.domainName">domainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#domain_name Route53ResolverRule#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.ruleType">ruleType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#rule_type Route53ResolverRule#rule_type}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#id Route53ResolverRule#id}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#name Route53ResolverRule#name}. |
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.resolverEndpointId">resolverEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#resolver_endpoint_id Route53ResolverRule#resolver_endpoint_id}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#tags Route53ResolverRule#tags}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#tags_all Route53ResolverRule#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.resolverEndpointId">resolverEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#resolver_endpoint_id Route53ResolverRule#resolver_endpoint_id}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#tags Route53ResolverRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#tags_all Route53ResolverRule#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.targetIp">targetIp</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp">Route53ResolverRuleTargetIp</a>></code> | target_ip block. |
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts">Route53ResolverRuleTimeouts</a></code> | timeouts block. |
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#domain_name Route53ResolverRule#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#domain_name Route53ResolverRule#domain_name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#rule_type Route53ResolverRule#rule_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#rule_type Route53ResolverRule#rule_type}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#id Route53ResolverRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#id Route53ResolverRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#name Route53ResolverRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#name Route53ResolverRule#name}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#region Route53ResolverRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#region Route53ResolverRule#region}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#resolver_endpoint_id Route53ResolverRule#resolver_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#resolver_endpoint_id Route53ResolverRule#resolver_endpoint_id}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#tags Route53ResolverRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#tags Route53ResolverRule#tags}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#tags_all Route53ResolverRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#tags_all Route53ResolverRule#tags_all}.
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 target_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#target_ip Route53ResolverRule#target_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#target_ip Route53ResolverRule#target_ip}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#timeouts Route53ResolverRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#timeouts Route53ResolverRule#timeouts}
 
 ---
 
@@ -732,7 +732,7 @@ The construct id used in the generated config for the Route53ResolverRule to imp
 
 The id of the existing Route53ResolverRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1219,14 +1219,14 @@ Route53ResolverRuleConfig.builder()
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.domainName">domainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#domain_name Route53ResolverRule#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.ruleType">ruleType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#rule_type Route53ResolverRule#rule_type}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#id Route53ResolverRule#id}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#name Route53ResolverRule#name}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.domainName">domainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#domain_name Route53ResolverRule#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.ruleType">ruleType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#rule_type Route53ResolverRule#rule_type}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#id Route53ResolverRule#id}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#name Route53ResolverRule#name}. |
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.resolverEndpointId">resolverEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#resolver_endpoint_id Route53ResolverRule#resolver_endpoint_id}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#tags Route53ResolverRule#tags}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#tags_all Route53ResolverRule#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.resolverEndpointId">resolverEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#resolver_endpoint_id Route53ResolverRule#resolver_endpoint_id}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#tags Route53ResolverRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#tags_all Route53ResolverRule#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.targetIp">targetIp</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp">Route53ResolverRuleTargetIp</a>></code> | target_ip block. |
 | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts">Route53ResolverRuleTimeouts</a></code> | timeouts block. |
 
@@ -1310,7 +1310,7 @@ public java.lang.String getDomainName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#domain_name Route53ResolverRule#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#domain_name Route53ResolverRule#domain_name}.
 
 ---
 
@@ -1322,7 +1322,7 @@ public java.lang.String getRuleType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#rule_type Route53ResolverRule#rule_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#rule_type Route53ResolverRule#rule_type}.
 
 ---
 
@@ -1334,7 +1334,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#id Route53ResolverRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#id Route53ResolverRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1349,7 +1349,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#name Route53ResolverRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#name Route53ResolverRule#name}.
 
 ---
 
@@ -1363,7 +1363,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#region Route53ResolverRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#region Route53ResolverRule#region}
 
 ---
 
@@ -1375,7 +1375,7 @@ public java.lang.String getResolverEndpointId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#resolver_endpoint_id Route53ResolverRule#resolver_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#resolver_endpoint_id Route53ResolverRule#resolver_endpoint_id}.
 
 ---
 
@@ -1387,7 +1387,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#tags Route53ResolverRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#tags Route53ResolverRule#tags}.
 
 ---
 
@@ -1399,7 +1399,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#tags_all Route53ResolverRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#tags_all Route53ResolverRule#tags_all}.
 
 ---
 
@@ -1413,7 +1413,7 @@ public IResolvable|java.util.List<Route53ResolverRuleTargetIp> getTargetIp();
 
 target_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#target_ip Route53ResolverRule#target_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#target_ip Route53ResolverRule#target_ip}
 
 ---
 
@@ -1427,7 +1427,7 @@ public Route53ResolverRuleTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#timeouts Route53ResolverRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#timeouts Route53ResolverRule#timeouts}
 
 ---
 
@@ -1450,10 +1450,10 @@ Route53ResolverRuleTargetIp.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp.property.ip">ip</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#ip Route53ResolverRule#ip}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp.property.ipv6">ipv6</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#ipv6 Route53ResolverRule#ipv6}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp.property.port">port</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#port Route53ResolverRule#port}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#protocol Route53ResolverRule#protocol}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp.property.ip">ip</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#ip Route53ResolverRule#ip}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp.property.ipv6">ipv6</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#ipv6 Route53ResolverRule#ipv6}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp.property.port">port</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#port Route53ResolverRule#port}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#protocol Route53ResolverRule#protocol}. |
 
 ---
 
@@ -1465,7 +1465,7 @@ public java.lang.String getIp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#ip Route53ResolverRule#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#ip Route53ResolverRule#ip}.
 
 ---
 
@@ -1477,7 +1477,7 @@ public java.lang.String getIpv6();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#ipv6 Route53ResolverRule#ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#ipv6 Route53ResolverRule#ipv6}.
 
 ---
 
@@ -1489,7 +1489,7 @@ public java.lang.Number getPort();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#port Route53ResolverRule#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#port Route53ResolverRule#port}.
 
 ---
 
@@ -1501,7 +1501,7 @@ public java.lang.String getProtocol();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#protocol Route53ResolverRule#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#protocol Route53ResolverRule#protocol}.
 
 ---
 
@@ -1523,9 +1523,9 @@ Route53ResolverRuleTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#create Route53ResolverRule#create}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#delete Route53ResolverRule#delete}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#update Route53ResolverRule#update}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#create Route53ResolverRule#create}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#delete Route53ResolverRule#delete}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#update Route53ResolverRule#update}. |
 
 ---
 
@@ -1537,7 +1537,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#create Route53ResolverRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#create Route53ResolverRule#create}.
 
 ---
 
@@ -1549,7 +1549,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#delete Route53ResolverRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#delete Route53ResolverRule#delete}.
 
 ---
 
@@ -1561,7 +1561,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/route53_resolver_rule#update Route53ResolverRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/route53_resolver_rule#update Route53ResolverRule#update}.
 
 ---
 
