@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job
+// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,71 +13,71 @@ import * as cdktn from 'cdktn';
 
 export interface BedrockEvaluationJobConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#application_type BedrockEvaluationJob#application_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#application_type BedrockEvaluationJob#application_type}
   */
   readonly applicationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#customer_encryption_key_id BedrockEvaluationJob#customer_encryption_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#customer_encryption_key_id BedrockEvaluationJob#customer_encryption_key_id}
   */
   readonly customerEncryptionKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#job_description BedrockEvaluationJob#job_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#job_description BedrockEvaluationJob#job_description}
   */
   readonly jobDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#job_name BedrockEvaluationJob#job_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#job_name BedrockEvaluationJob#job_name}
   */
   readonly jobName: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#region BedrockEvaluationJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#region BedrockEvaluationJob#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#role_arn BedrockEvaluationJob#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#role_arn BedrockEvaluationJob#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#skip_destroy BedrockEvaluationJob#skip_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#skip_destroy BedrockEvaluationJob#skip_destroy}
   */
   readonly skipDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#tags BedrockEvaluationJob#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#tags BedrockEvaluationJob#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * evaluation_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#evaluation_config BedrockEvaluationJob#evaluation_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#evaluation_config BedrockEvaluationJob#evaluation_config}
   */
   readonly evaluationConfig?: BedrockEvaluationJobEvaluationConfig[] | cdktn.IResolvable;
   /**
   * inference_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#inference_config BedrockEvaluationJob#inference_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#inference_config BedrockEvaluationJob#inference_config}
   */
   readonly inferenceConfig?: BedrockEvaluationJobInferenceConfig[] | cdktn.IResolvable;
   /**
   * output_data_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#output_data_config BedrockEvaluationJob#output_data_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#output_data_config BedrockEvaluationJob#output_data_config}
   */
   readonly outputDataConfig?: BedrockEvaluationJobOutputDataConfig[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#timeouts BedrockEvaluationJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#timeouts BedrockEvaluationJob#timeouts}
   */
   readonly timeouts?: BedrockEvaluationJobTimeouts;
 }
 export interface BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#float_value BedrockEvaluationJob#float_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#float_value BedrockEvaluationJob#float_value}
   */
   readonly floatValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#string_value BedrockEvaluationJob#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#string_value BedrockEvaluationJob#string_value}
   */
   readonly stringValue?: string;
 }
@@ -222,13 +222,13 @@ export class BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCust
 }
 export interface BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#definition BedrockEvaluationJob#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#definition BedrockEvaluationJob#definition}
   */
   readonly definition: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#value BedrockEvaluationJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#value BedrockEvaluationJob#value}
   */
   readonly value?: BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValue[] | cdktn.IResolvable;
 }
@@ -370,17 +370,17 @@ export class BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCust
 }
 export interface BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}
   */
   readonly instructions: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}
   */
   readonly name: string;
   /**
   * rating_scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#rating_scale BedrockEvaluationJob#rating_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#rating_scale BedrockEvaluationJob#rating_scale}
   */
   readonly ratingScale?: BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScale[] | cdktn.IResolvable;
 }
@@ -550,7 +550,7 @@ export interface BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfig
   /**
   * custom_metric_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#custom_metric_definition BedrockEvaluationJob#custom_metric_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#custom_metric_definition BedrockEvaluationJob#custom_metric_definition}
   */
   readonly customMetricDefinition?: BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinition[] | cdktn.IResolvable;
 }
@@ -666,7 +666,7 @@ export class BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCust
 }
 export interface BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}
   */
   readonly modelIdentifier: string;
 }
@@ -781,7 +781,7 @@ export interface BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfig
   /**
   * bedrock_evaluator_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#bedrock_evaluator_model BedrockEvaluationJob#bedrock_evaluator_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#bedrock_evaluator_model BedrockEvaluationJob#bedrock_evaluator_model}
   */
   readonly bedrockEvaluatorModel?: BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModel[] | cdktn.IResolvable;
 }
@@ -899,13 +899,13 @@ export interface BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfig
   /**
   * custom_metric block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#custom_metric BedrockEvaluationJob#custom_metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#custom_metric BedrockEvaluationJob#custom_metric}
   */
   readonly customMetric?: BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetric[] | cdktn.IResolvable;
   /**
   * evaluator_model_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#evaluator_model_config BedrockEvaluationJob#evaluator_model_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#evaluator_model_config BedrockEvaluationJob#evaluator_model_config}
   */
   readonly evaluatorModelConfig?: BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfig[] | cdktn.IResolvable;
 }
@@ -1050,7 +1050,7 @@ export class BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigList
 }
 export interface BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -1163,13 +1163,13 @@ export class BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDat
 }
 export interface BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDataset {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}
   */
   readonly name: string;
   /**
   * dataset_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#dataset_location BedrockEvaluationJob#dataset_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#dataset_location BedrockEvaluationJob#dataset_location}
   */
   readonly datasetLocation?: BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocation[] | cdktn.IResolvable;
 }
@@ -1311,17 +1311,17 @@ export class BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDat
 }
 export interface BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}
   */
   readonly metricNames: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}
   */
   readonly taskType: string;
   /**
   * dataset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#dataset BedrockEvaluationJob#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#dataset BedrockEvaluationJob#dataset}
   */
   readonly dataset?: BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDataset[] | cdktn.IResolvable;
 }
@@ -1489,7 +1489,7 @@ export class BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigLis
 }
 export interface BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}
   */
   readonly modelIdentifier: string;
 }
@@ -1604,7 +1604,7 @@ export interface BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConf
   /**
   * bedrock_evaluator_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#bedrock_evaluator_model BedrockEvaluationJob#bedrock_evaluator_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#bedrock_evaluator_model BedrockEvaluationJob#bedrock_evaluator_model}
   */
   readonly bedrockEvaluatorModel?: BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModel[] | cdktn.IResolvable;
 }
@@ -1722,19 +1722,19 @@ export interface BedrockEvaluationJobEvaluationConfigAutomated {
   /**
   * custom_metric_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#custom_metric_config BedrockEvaluationJob#custom_metric_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#custom_metric_config BedrockEvaluationJob#custom_metric_config}
   */
   readonly customMetricConfig?: BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfig[] | cdktn.IResolvable;
   /**
   * dataset_metric_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#dataset_metric_config BedrockEvaluationJob#dataset_metric_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#dataset_metric_config BedrockEvaluationJob#dataset_metric_config}
   */
   readonly datasetMetricConfig?: BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfig[] | cdktn.IResolvable;
   /**
   * evaluator_model_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#evaluator_model_config BedrockEvaluationJob#evaluator_model_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#evaluator_model_config BedrockEvaluationJob#evaluator_model_config}
   */
   readonly evaluatorModelConfig?: BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfig[] | cdktn.IResolvable;
 }
@@ -1908,15 +1908,15 @@ export class BedrockEvaluationJobEvaluationConfigAutomatedList extends cdktn.Com
 }
 export interface BedrockEvaluationJobEvaluationConfigHumanCustomMetric {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#description BedrockEvaluationJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#description BedrockEvaluationJob#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#rating_method BedrockEvaluationJob#rating_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#rating_method BedrockEvaluationJob#rating_method}
   */
   readonly ratingMethod: string;
 }
@@ -2084,7 +2084,7 @@ export class BedrockEvaluationJobEvaluationConfigHumanCustomMetricList extends c
 }
 export interface BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -2197,13 +2197,13 @@ export class BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDataset
 }
 export interface BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDataset {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}
   */
   readonly name: string;
   /**
   * dataset_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#dataset_location BedrockEvaluationJob#dataset_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#dataset_location BedrockEvaluationJob#dataset_location}
   */
   readonly datasetLocation?: BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocation[] | cdktn.IResolvable;
 }
@@ -2345,17 +2345,17 @@ export class BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDataset
 }
 export interface BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}
   */
   readonly metricNames: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}
   */
   readonly taskType: string;
   /**
   * dataset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#dataset BedrockEvaluationJob#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#dataset BedrockEvaluationJob#dataset}
   */
   readonly dataset?: BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDataset[] | cdktn.IResolvable;
 }
@@ -2523,11 +2523,11 @@ export class BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigList ex
 }
 export interface BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#flow_definition_arn BedrockEvaluationJob#flow_definition_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#flow_definition_arn BedrockEvaluationJob#flow_definition_arn}
   */
   readonly flowDefinitionArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}
   */
   readonly instructions?: string;
 }
@@ -2671,19 +2671,19 @@ export interface BedrockEvaluationJobEvaluationConfigHuman {
   /**
   * custom_metric block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#custom_metric BedrockEvaluationJob#custom_metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#custom_metric BedrockEvaluationJob#custom_metric}
   */
   readonly customMetric?: BedrockEvaluationJobEvaluationConfigHumanCustomMetric[] | cdktn.IResolvable;
   /**
   * dataset_metric_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#dataset_metric_config BedrockEvaluationJob#dataset_metric_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#dataset_metric_config BedrockEvaluationJob#dataset_metric_config}
   */
   readonly datasetMetricConfig?: BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfig[] | cdktn.IResolvable;
   /**
   * human_workflow_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#human_workflow_config BedrockEvaluationJob#human_workflow_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#human_workflow_config BedrockEvaluationJob#human_workflow_config}
   */
   readonly humanWorkflowConfig?: BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfig[] | cdktn.IResolvable;
 }
@@ -2859,13 +2859,13 @@ export interface BedrockEvaluationJobEvaluationConfig {
   /**
   * automated block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#automated BedrockEvaluationJob#automated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#automated BedrockEvaluationJob#automated}
   */
   readonly automated?: BedrockEvaluationJobEvaluationConfigAutomated[] | cdktn.IResolvable;
   /**
   * human block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#human BedrockEvaluationJob#human}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#human BedrockEvaluationJob#human}
   */
   readonly human?: BedrockEvaluationJobEvaluationConfigHuman[] | cdktn.IResolvable;
 }
@@ -3010,7 +3010,7 @@ export class BedrockEvaluationJobEvaluationConfigList extends cdktn.ComplexList 
 }
 export interface BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#latency BedrockEvaluationJob#latency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#latency BedrockEvaluationJob#latency}
   */
   readonly latency?: string;
 }
@@ -3126,17 +3126,17 @@ export class BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConf
 }
 export interface BedrockEvaluationJobInferenceConfigModelBedrockModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#inference_params BedrockEvaluationJob#inference_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#inference_params BedrockEvaluationJob#inference_params}
   */
   readonly inferenceParams?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}
   */
   readonly modelIdentifier: string;
   /**
   * performance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#performance_config BedrockEvaluationJob#performance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#performance_config BedrockEvaluationJob#performance_config}
   */
   readonly performanceConfig?: BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfig[] | cdktn.IResolvable;
 }
@@ -3307,7 +3307,7 @@ export class BedrockEvaluationJobInferenceConfigModelBedrockModelList extends cd
 }
 export interface BedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#inference_source_identifier BedrockEvaluationJob#inference_source_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#inference_source_identifier BedrockEvaluationJob#inference_source_identifier}
   */
   readonly inferenceSourceIdentifier: string;
 }
@@ -3422,13 +3422,13 @@ export interface BedrockEvaluationJobInferenceConfigModel {
   /**
   * bedrock_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#bedrock_model BedrockEvaluationJob#bedrock_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#bedrock_model BedrockEvaluationJob#bedrock_model}
   */
   readonly bedrockModel?: BedrockEvaluationJobInferenceConfigModelBedrockModel[] | cdktn.IResolvable;
   /**
   * precomputed_inference_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#precomputed_inference_source BedrockEvaluationJob#precomputed_inference_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#precomputed_inference_source BedrockEvaluationJob#precomputed_inference_source}
   */
   readonly precomputedInferenceSource?: BedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSource[] | cdktn.IResolvable;
 }
@@ -3573,7 +3573,7 @@ export class BedrockEvaluationJobInferenceConfigModelList extends cdktn.ComplexL
 }
 export interface BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}
   */
   readonly numberOfResults?: number;
 }
@@ -3691,7 +3691,7 @@ export interface BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfig
   /**
   * vector_search_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#vector_search_configuration BedrockEvaluationJob#vector_search_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#vector_search_configuration BedrockEvaluationJob#vector_search_configuration}
   */
   readonly vectorSearchConfiguration?: BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfiguration[] | cdktn.IResolvable;
 }
@@ -3807,17 +3807,17 @@ export class BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetr
 }
 export interface BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}
   */
   readonly knowledgeBaseId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#model_arn BedrockEvaluationJob#model_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#model_arn BedrockEvaluationJob#model_arn}
   */
   readonly modelArn: string;
   /**
   * retrieval_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#retrieval_configuration BedrockEvaluationJob#retrieval_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#retrieval_configuration BedrockEvaluationJob#retrieval_configuration}
   */
   readonly retrievalConfiguration?: BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfiguration[] | cdktn.IResolvable;
 }
@@ -3985,7 +3985,7 @@ export class BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetr
 }
 export interface BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}
   */
   readonly numberOfResults?: number;
 }
@@ -4103,7 +4103,7 @@ export interface BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfig
   /**
   * vector_search_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#vector_search_configuration BedrockEvaluationJob#vector_search_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#vector_search_configuration BedrockEvaluationJob#vector_search_configuration}
   */
   readonly vectorSearchConfiguration?: BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfiguration[] | cdktn.IResolvable;
 }
@@ -4219,13 +4219,13 @@ export class BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetr
 }
 export interface BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}
   */
   readonly knowledgeBaseId: string;
   /**
   * knowledge_base_retrieval_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#knowledge_base_retrieval_configuration BedrockEvaluationJob#knowledge_base_retrieval_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#knowledge_base_retrieval_configuration BedrockEvaluationJob#knowledge_base_retrieval_configuration}
   */
   readonly knowledgeBaseRetrievalConfiguration?: BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfiguration[] | cdktn.IResolvable;
 }
@@ -4369,13 +4369,13 @@ export interface BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfig
   /**
   * retrieve_and_generate_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#retrieve_and_generate_config BedrockEvaluationJob#retrieve_and_generate_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#retrieve_and_generate_config BedrockEvaluationJob#retrieve_and_generate_config}
   */
   readonly retrieveAndGenerateConfig?: BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfig[] | cdktn.IResolvable;
   /**
   * retrieve_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#retrieve_config BedrockEvaluationJob#retrieve_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#retrieve_config BedrockEvaluationJob#retrieve_config}
   */
   readonly retrieveConfig?: BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfig[] | cdktn.IResolvable;
 }
@@ -4520,7 +4520,7 @@ export class BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigList
 }
 export interface BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}
   */
   readonly ragSourceIdentifier: string;
 }
@@ -4633,7 +4633,7 @@ export class BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceCon
 }
 export interface BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}
   */
   readonly ragSourceIdentifier: string;
 }
@@ -4748,13 +4748,13 @@ export interface BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourc
   /**
   * retrieve_and_generate_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#retrieve_and_generate_source_config BedrockEvaluationJob#retrieve_and_generate_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#retrieve_and_generate_source_config BedrockEvaluationJob#retrieve_and_generate_source_config}
   */
   readonly retrieveAndGenerateSourceConfig?: BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfig[] | cdktn.IResolvable;
   /**
   * retrieve_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#retrieve_source_config BedrockEvaluationJob#retrieve_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#retrieve_source_config BedrockEvaluationJob#retrieve_source_config}
   */
   readonly retrieveSourceConfig?: BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfig[] | cdktn.IResolvable;
 }
@@ -4901,13 +4901,13 @@ export interface BedrockEvaluationJobInferenceConfigRagConfig {
   /**
   * knowledge_base_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#knowledge_base_config BedrockEvaluationJob#knowledge_base_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#knowledge_base_config BedrockEvaluationJob#knowledge_base_config}
   */
   readonly knowledgeBaseConfig?: BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfig[] | cdktn.IResolvable;
   /**
   * precomputed_rag_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#precomputed_rag_source_config BedrockEvaluationJob#precomputed_rag_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#precomputed_rag_source_config BedrockEvaluationJob#precomputed_rag_source_config}
   */
   readonly precomputedRagSourceConfig?: BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfig[] | cdktn.IResolvable;
 }
@@ -5054,13 +5054,13 @@ export interface BedrockEvaluationJobInferenceConfig {
   /**
   * model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#model BedrockEvaluationJob#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#model BedrockEvaluationJob#model}
   */
   readonly model?: BedrockEvaluationJobInferenceConfigModel[] | cdktn.IResolvable;
   /**
   * rag_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#rag_config BedrockEvaluationJob#rag_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#rag_config BedrockEvaluationJob#rag_config}
   */
   readonly ragConfig?: BedrockEvaluationJobInferenceConfigRagConfig[] | cdktn.IResolvable;
 }
@@ -5205,7 +5205,7 @@ export class BedrockEvaluationJobInferenceConfigList extends cdktn.ComplexList {
 }
 export interface BedrockEvaluationJobOutputDataConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -5320,13 +5320,13 @@ export interface BedrockEvaluationJobTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#create BedrockEvaluationJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#create BedrockEvaluationJob#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#delete BedrockEvaluationJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#delete BedrockEvaluationJob#delete}
   */
   readonly delete?: string;
 }
@@ -5449,7 +5449,7 @@ export class BedrockEvaluationJobTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job aws_bedrock_evaluation_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job aws_bedrock_evaluation_job}
 */
 export class BedrockEvaluationJob extends cdktn.TerraformResource {
 
@@ -5465,7 +5465,7 @@ export class BedrockEvaluationJob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BedrockEvaluationJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockEvaluationJob to import
-  * @param importFromId The id of the existing BedrockEvaluationJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockEvaluationJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockEvaluationJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5477,7 +5477,7 @@ export class BedrockEvaluationJob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/bedrock_evaluation_job aws_bedrock_evaluation_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/bedrock_evaluation_job aws_bedrock_evaluation_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5488,7 +5488,7 @@ export class BedrockEvaluationJob extends cdktn.TerraformResource {
       terraformResourceType: 'aws_bedrock_evaluation_job',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.57.1',
+        providerVersion: '6.58.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

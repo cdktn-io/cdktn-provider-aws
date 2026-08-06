@@ -1,3 +1,3 @@
 # `aws_workspacesweb_network_settings`
 
-Refer to the Terraform Registry for docs: [`aws_workspacesweb_network_settings`](https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/workspacesweb_network_settings).
+Refer to the Terraform Registry for docs: [`aws_workspacesweb_network_settings`](https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/workspacesweb_network_settings).

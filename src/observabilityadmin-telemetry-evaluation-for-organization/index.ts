@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/observabilityadmin_telemetry_evaluation_for_organization
+// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/observabilityadmin_telemetry_evaluation_for_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +13,23 @@ import * as cdktn from 'cdktn';
 
 export interface ObservabilityadminTelemetryEvaluationForOrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#all_regions ObservabilityadminTelemetryEvaluationForOrganization#all_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#all_regions ObservabilityadminTelemetryEvaluationForOrganization#all_regions}
   */
   readonly allRegions?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#region ObservabilityadminTelemetryEvaluationForOrganization#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#region ObservabilityadminTelemetryEvaluationForOrganization#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#regions ObservabilityadminTelemetryEvaluationForOrganization#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#regions ObservabilityadminTelemetryEvaluationForOrganization#regions}
   */
   readonly regions?: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#timeouts ObservabilityadminTelemetryEvaluationForOrganization#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#timeouts ObservabilityadminTelemetryEvaluationForOrganization#timeouts}
   */
   readonly timeouts?: ObservabilityadminTelemetryEvaluationForOrganizationTimeouts;
 }
@@ -37,13 +37,13 @@ export interface ObservabilityadminTelemetryEvaluationForOrganizationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#create ObservabilityadminTelemetryEvaluationForOrganization#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#create ObservabilityadminTelemetryEvaluationForOrganization#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#delete ObservabilityadminTelemetryEvaluationForOrganization#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#delete ObservabilityadminTelemetryEvaluationForOrganization#delete}
   */
   readonly delete?: string;
 }
@@ -166,7 +166,7 @@ export class ObservabilityadminTelemetryEvaluationForOrganizationTimeoutsOutputR
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/observabilityadmin_telemetry_evaluation_for_organization aws_observabilityadmin_telemetry_evaluation_for_organization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/observabilityadmin_telemetry_evaluation_for_organization aws_observabilityadmin_telemetry_evaluation_for_organization}
 */
 export class ObservabilityadminTelemetryEvaluationForOrganization extends cdktn.TerraformResource {
 
@@ -182,7 +182,7 @@ export class ObservabilityadminTelemetryEvaluationForOrganization extends cdktn.
   * Generates CDKTN code for importing a ObservabilityadminTelemetryEvaluationForOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservabilityadminTelemetryEvaluationForOrganization to import
-  * @param importFromId The id of the existing ObservabilityadminTelemetryEvaluationForOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservabilityadminTelemetryEvaluationForOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/observabilityadmin_telemetry_evaluation_for_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservabilityadminTelemetryEvaluationForOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -194,7 +194,7 @@ export class ObservabilityadminTelemetryEvaluationForOrganization extends cdktn.
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/observabilityadmin_telemetry_evaluation_for_organization aws_observabilityadmin_telemetry_evaluation_for_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/observabilityadmin_telemetry_evaluation_for_organization aws_observabilityadmin_telemetry_evaluation_for_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -205,7 +205,7 @@ export class ObservabilityadminTelemetryEvaluationForOrganization extends cdktn.
       terraformResourceType: 'aws_observabilityadmin_telemetry_evaluation_for_organization',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.57.1',
+        providerVersion: '6.58.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
