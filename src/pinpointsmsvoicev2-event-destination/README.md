@@ -1,3 +1,3 @@
 # `aws_pinpointsmsvoicev2_event_destination`
 
-Refer to the Terraform Registry for docs: [`aws_pinpointsmsvoicev2_event_destination`](https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/pinpointsmsvoicev2_event_destination).
+Refer to the Terraform Registry for docs: [`aws_pinpointsmsvoicev2_event_destination`](https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/pinpointsmsvoicev2_event_destination).

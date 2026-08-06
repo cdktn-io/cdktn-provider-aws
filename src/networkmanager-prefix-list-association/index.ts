@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_prefix_list_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_prefix_list_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface NetworkmanagerPrefixListAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_prefix_list_association#core_network_id NetworkmanagerPrefixListAssociation#core_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_prefix_list_association#core_network_id NetworkmanagerPrefixListAssociation#core_network_id}
   */
   readonly coreNetworkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_prefix_list_association#prefix_list_alias NetworkmanagerPrefixListAssociation#prefix_list_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_prefix_list_association#prefix_list_alias NetworkmanagerPrefixListAssociation#prefix_list_alias}
   */
   readonly prefixListAlias: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_prefix_list_association#prefix_list_arn NetworkmanagerPrefixListAssociation#prefix_list_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_prefix_list_association#prefix_list_arn NetworkmanagerPrefixListAssociation#prefix_list_arn}
   */
   readonly prefixListArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_prefix_list_association aws_networkmanager_prefix_list_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_prefix_list_association aws_networkmanager_prefix_list_association}
 */
 export class NetworkmanagerPrefixListAssociation extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class NetworkmanagerPrefixListAssociation extends cdktn.TerraformResource
   * Generates CDKTN code for importing a NetworkmanagerPrefixListAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmanagerPrefixListAssociation to import
-  * @param importFromId The id of the existing NetworkmanagerPrefixListAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_prefix_list_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkmanagerPrefixListAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_prefix_list_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmanagerPrefixListAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class NetworkmanagerPrefixListAssociation extends cdktn.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/networkmanager_prefix_list_association aws_networkmanager_prefix_list_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/networkmanager_prefix_list_association aws_networkmanager_prefix_list_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class NetworkmanagerPrefixListAssociation extends cdktn.TerraformResource
       terraformResourceType: 'aws_networkmanager_prefix_list_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.57.1',
+        providerVersion: '6.58.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
