@@ -4,7 +4,7 @@
 
 ### ElasticacheUserGroup <a name="ElasticacheUserGroup" id="@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group aws_elasticache_user_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group aws_elasticache_user_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroup.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the ElasticacheUserGroup to im
 
 The id of the existing ElasticacheUserGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -905,13 +905,13 @@ const elasticacheUserGroupConfig: elasticacheUserGroup.ElasticacheUserGroupConfi
 | <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.engine">engine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#engine ElasticacheUserGroup#engine}. |
-| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.userGroupId">userGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#user_group_id ElasticacheUserGroup#user_group_id}. |
-| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#id ElasticacheUserGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.engine">engine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#engine ElasticacheUserGroup#engine}. |
+| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.userGroupId">userGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#user_group_id ElasticacheUserGroup#user_group_id}. |
+| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#id ElasticacheUserGroup#id}. |
 | <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#tags ElasticacheUserGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#tags_all ElasticacheUserGroup#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.userIds">userIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#user_ids ElasticacheUserGroup#user_ids}. |
+| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#tags ElasticacheUserGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#tags_all ElasticacheUserGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig.property.userIds">userIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#user_ids ElasticacheUserGroup#user_ids}. |
 
 ---
 
@@ -993,7 +993,7 @@ public readonly engine: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#engine ElasticacheUserGroup#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#engine ElasticacheUserGroup#engine}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly userGroupId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#user_group_id ElasticacheUserGroup#user_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#user_group_id ElasticacheUserGroup#user_group_id}.
 
 ---
 
@@ -1017,7 +1017,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#id ElasticacheUserGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#id ElasticacheUserGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1034,7 +1034,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#region ElasticacheUserGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#region ElasticacheUserGroup#region}
 
 ---
 
@@ -1046,7 +1046,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#tags ElasticacheUserGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#tags ElasticacheUserGroup#tags}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#tags_all ElasticacheUserGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#tags_all ElasticacheUserGroup#tags_all}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly userIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/elasticache_user_group#user_ids ElasticacheUserGroup#user_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/elasticache_user_group#user_ids ElasticacheUserGroup#user_ids}.
 
 ---
 

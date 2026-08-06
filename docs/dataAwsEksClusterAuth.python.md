@@ -4,7 +4,7 @@
 
 ### DataAwsEksClusterAuth <a name="DataAwsEksClusterAuth" id="@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth aws_eks_cluster_auth}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth aws_eks_cluster_auth}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer"></a>
 
@@ -38,8 +38,8 @@ dataAwsEksClusterAuth.DataAwsEksClusterAuth(
 | <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#name DataAwsEksClusterAuth#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#id DataAwsEksClusterAuth#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#name DataAwsEksClusterAuth#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#id DataAwsEksClusterAuth#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#name DataAwsEksClusterAuth#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#name DataAwsEksClusterAuth#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#id DataAwsEksClusterAuth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#id DataAwsEksClusterAuth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#region DataAwsEksClusterAuth#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#region DataAwsEksClusterAuth#region}
 
 ---
 
@@ -526,7 +526,7 @@ The construct id used in the generated config for the DataAwsEksClusterAuth to i
 
 The id of the existing DataAwsEksClusterAuth that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,8 +808,8 @@ dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#name DataAwsEksClusterAuth#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#id DataAwsEksClusterAuth#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#name DataAwsEksClusterAuth#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#id DataAwsEksClusterAuth#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -892,7 +892,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#name DataAwsEksClusterAuth#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#name DataAwsEksClusterAuth#name}.
 
 ---
 
@@ -904,7 +904,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#id DataAwsEksClusterAuth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#id DataAwsEksClusterAuth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -921,7 +921,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/eks_cluster_auth#region DataAwsEksClusterAuth#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster_auth#region DataAwsEksClusterAuth#region}
 
 ---
 

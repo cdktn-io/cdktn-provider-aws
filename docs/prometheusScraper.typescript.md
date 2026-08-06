@@ -4,7 +4,7 @@
 
 ### PrometheusScraper <a name="PrometheusScraper" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraper"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper aws_prometheus_scraper}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper aws_prometheus_scraper}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraper.Initializer"></a>
 
@@ -590,7 +590,7 @@ The construct id used in the generated config for the PrometheusScraper to impor
 
 The id of the existing PrometheusScraper that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1026,13 +1026,13 @@ const prometheusScraperConfig: prometheusScraper.PrometheusScraperConfig = { ...
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.scrapeConfiguration">scrapeConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.alias">alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.scrapeConfiguration">scrapeConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.alias">alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.destination">destination</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestination">PrometheusScraperDestination</a>[]</code> | destination block. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.roleConfiguration">roleConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration">PrometheusScraperRoleConfiguration</a>[]</code> | role_configuration block. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.source">source</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSource">PrometheusScraperSource</a>[]</code> | source block. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperTimeouts">PrometheusScraperTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1115,7 +1115,7 @@ public readonly scrapeConfiguration: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}.
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly alias: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}.
 
 ---
 
@@ -1141,7 +1141,7 @@ public readonly destination: IResolvable | PrometheusScraperDestination[];
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#destination PrometheusScraper#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#destination PrometheusScraper#destination}
 
 ---
 
@@ -1155,7 +1155,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#region PrometheusScraper#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#region PrometheusScraper#region}
 
 ---
 
@@ -1169,7 +1169,7 @@ public readonly roleConfiguration: IResolvable | PrometheusScraperRoleConfigurat
 
 role_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#role_configuration PrometheusScraper#role_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#role_configuration PrometheusScraper#role_configuration}
 
 ---
 
@@ -1183,7 +1183,7 @@ public readonly source: IResolvable | PrometheusScraperSource[];
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#source PrometheusScraper#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#source PrometheusScraper#source}
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}.
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly timeouts: PrometheusScraperTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#timeouts PrometheusScraper#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#timeouts PrometheusScraper#timeouts}
 
 ---
 
@@ -1228,6 +1228,7 @@ const prometheusScraperDestination: prometheusScraper.PrometheusScraperDestinati
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestination.property.amp">amp</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmp">PrometheusScraperDestinationAmp</a>[]</code> | amp block. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestination.property.cloudwatch">cloudwatch</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch">PrometheusScraperDestinationCloudwatch</a>[]</code> | cloudwatch block. |
 
 ---
 
@@ -1241,7 +1242,21 @@ public readonly amp: IResolvable | PrometheusScraperDestinationAmp[];
 
 amp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#amp PrometheusScraper#amp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#amp PrometheusScraper#amp}
+
+---
+
+##### `cloudwatch`<sup>Optional</sup> <a name="cloudwatch" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestination.property.cloudwatch"></a>
+
+```typescript
+public readonly cloudwatch: IResolvable | PrometheusScraperDestinationCloudwatch[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch">PrometheusScraperDestinationCloudwatch</a>[]
+
+cloudwatch block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#cloudwatch PrometheusScraper#cloudwatch}
 
 ---
 
@@ -1259,7 +1274,7 @@ const prometheusScraperDestinationAmp: prometheusScraper.PrometheusScraperDestin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmp.property.workspaceArn">workspaceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmp.property.workspaceArn">workspaceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}. |
 
 ---
 
@@ -1271,7 +1286,37 @@ public readonly workspaceArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}.
+
+---
+
+### PrometheusScraperDestinationCloudwatch <a name="PrometheusScraperDestinationCloudwatch" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch.Initializer"></a>
+
+```typescript
+import { prometheusScraper } from '@cdktn/provider-aws'
+
+const prometheusScraperDestinationCloudwatch: prometheusScraper.PrometheusScraperDestinationCloudwatch = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch.property.datasetArn">datasetArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#dataset_arn PrometheusScraper#dataset_arn}. |
+
+---
+
+##### `datasetArn`<sup>Required</sup> <a name="datasetArn" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch.property.datasetArn"></a>
+
+```typescript
+public readonly datasetArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#dataset_arn PrometheusScraper#dataset_arn}.
 
 ---
 
@@ -1289,8 +1334,8 @@ const prometheusScraperRoleConfiguration: prometheusScraper.PrometheusScraperRol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration.property.sourceRoleArn">sourceRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration.property.targetRoleArn">targetRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration.property.sourceRoleArn">sourceRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration.property.targetRoleArn">targetRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}. |
 
 ---
 
@@ -1302,7 +1347,7 @@ public readonly sourceRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}.
 
 ---
 
@@ -1314,7 +1359,7 @@ public readonly targetRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}.
 
 ---
 
@@ -1347,7 +1392,7 @@ public readonly eks: IResolvable | PrometheusScraperSourceEks[];
 
 eks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#eks PrometheusScraper#eks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#eks PrometheusScraper#eks}
 
 ---
 
@@ -1361,7 +1406,7 @@ public readonly vpc: IResolvable | PrometheusScraperSourceVpc[];
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#vpc PrometheusScraper#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#vpc PrometheusScraper#vpc}
 
 ---
 
@@ -1379,9 +1424,9 @@ const prometheusScraperSourceEks: prometheusScraper.PrometheusScraperSourceEks =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.clusterArn">clusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.clusterArn">clusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}. |
 
 ---
 
@@ -1393,7 +1438,7 @@ public readonly clusterArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}.
 
 ---
 
@@ -1405,7 +1450,7 @@ public readonly subnetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}.
 
 ---
 
@@ -1417,7 +1462,7 @@ public readonly securityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}.
 
 ---
 
@@ -1435,8 +1480,8 @@ const prometheusScraperSourceVpc: prometheusScraper.PrometheusScraperSourceVpc =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceVpc.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceVpc.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceVpc.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceVpc.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}. |
 
 ---
 
@@ -1448,7 +1493,7 @@ public readonly securityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}.
 
 ---
 
@@ -1460,7 +1505,7 @@ public readonly subnetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}.
 
 ---
 
@@ -1494,7 +1539,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#create PrometheusScraper#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#create PrometheusScraper#create}
 
 ---
 
@@ -1508,7 +1553,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#delete PrometheusScraper#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#delete PrometheusScraper#delete}
 
 ---
 
@@ -1522,7 +1567,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/prometheus_scraper#update PrometheusScraper#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#update PrometheusScraper#update}
 
 ---
 
@@ -1977,6 +2022,455 @@ public readonly internalValue: IResolvable | PrometheusScraperDestinationAmp;
 ---
 
 
+### PrometheusScraperDestinationCloudwatchList <a name="PrometheusScraperDestinationCloudwatchList" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.Initializer"></a>
+
+```typescript
+import { prometheusScraper } from '@cdktn/provider-aws'
+
+new prometheusScraper.PrometheusScraperDestinationCloudwatchList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.get"></a>
+
+```typescript
+public get(index: number): PrometheusScraperDestinationCloudwatchOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch">PrometheusScraperDestinationCloudwatch</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | PrometheusScraperDestinationCloudwatch[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch">PrometheusScraperDestinationCloudwatch</a>[]
+
+---
+
+
+### PrometheusScraperDestinationCloudwatchOutputReference <a name="PrometheusScraperDestinationCloudwatchOutputReference" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.Initializer"></a>
+
+```typescript
+import { prometheusScraper } from '@cdktn/provider-aws'
+
+new prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.property.datasetArnInput">datasetArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.property.datasetArn">datasetArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch">PrometheusScraperDestinationCloudwatch</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `datasetArnInput`<sup>Optional</sup> <a name="datasetArnInput" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.property.datasetArnInput"></a>
+
+```typescript
+public readonly datasetArnInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `datasetArn`<sup>Required</sup> <a name="datasetArn" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.property.datasetArn"></a>
+
+```typescript
+public readonly datasetArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | PrometheusScraperDestinationCloudwatch;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch">PrometheusScraperDestinationCloudwatch</a>
+
+---
+
+
 ### PrometheusScraperDestinationList <a name="PrometheusScraperDestinationList" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationList.Initializer"></a>
@@ -2206,7 +2700,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.putAmp">putAmp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.putCloudwatch">putCloudwatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.resetAmp">resetAmp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.resetCloudwatch">resetCloudwatch</a></code> | *No description.* |
 
 ---
 
@@ -2372,10 +2868,28 @@ public putAmp(value: IResolvable | PrometheusScraperDestinationAmp[]): void
 
 ---
 
+##### `putCloudwatch` <a name="putCloudwatch" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.putCloudwatch"></a>
+
+```typescript
+public putCloudwatch(value: IResolvable | PrometheusScraperDestinationCloudwatch[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.putCloudwatch.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch">PrometheusScraperDestinationCloudwatch</a>[]
+
+---
+
 ##### `resetAmp` <a name="resetAmp" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.resetAmp"></a>
 
 ```typescript
 public resetAmp(): void
+```
+
+##### `resetCloudwatch` <a name="resetCloudwatch" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.resetCloudwatch"></a>
+
+```typescript
+public resetCloudwatch(): void
 ```
 
 
@@ -2386,7 +2900,9 @@ public resetAmp(): void
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.property.amp">amp</a></code> | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmpList">PrometheusScraperDestinationAmpList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.property.cloudwatch">cloudwatch</a></code> | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList">PrometheusScraperDestinationCloudwatchList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.property.ampInput">ampInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmp">PrometheusScraperDestinationAmp</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.property.cloudwatchInput">cloudwatchInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch">PrometheusScraperDestinationCloudwatch</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestination">PrometheusScraperDestination</a></code> | *No description.* |
 
 ---
@@ -2425,6 +2941,16 @@ public readonly amp: PrometheusScraperDestinationAmpList;
 
 ---
 
+##### `cloudwatch`<sup>Required</sup> <a name="cloudwatch" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.property.cloudwatch"></a>
+
+```typescript
+public readonly cloudwatch: PrometheusScraperDestinationCloudwatchList;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatchList">PrometheusScraperDestinationCloudwatchList</a>
+
+---
+
 ##### `ampInput`<sup>Optional</sup> <a name="ampInput" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.property.ampInput"></a>
 
 ```typescript
@@ -2432,6 +2958,16 @@ public readonly ampInput: IResolvable | PrometheusScraperDestinationAmp[];
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmp">PrometheusScraperDestinationAmp</a>[]
+
+---
+
+##### `cloudwatchInput`<sup>Optional</sup> <a name="cloudwatchInput" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.property.cloudwatchInput"></a>
+
+```typescript
+public readonly cloudwatchInput: IResolvable | PrometheusScraperDestinationCloudwatch[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch">PrometheusScraperDestinationCloudwatch</a>[]
 
 ---
 

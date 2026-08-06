@@ -4,7 +4,7 @@
 
 ### GlueCrawler <a name="GlueCrawler" id="@cdktn/provider-aws.glueCrawler.GlueCrawler"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler aws_glue_crawler}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler aws_glue_crawler}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer"></a>
 
@@ -58,18 +58,18 @@ GlueCrawler.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.databaseName">databaseName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#database_name GlueCrawler#database_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#name GlueCrawler#name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#role GlueCrawler#role}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.databaseName">databaseName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#name GlueCrawler#name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#role GlueCrawler#role}. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.catalogTarget">catalogTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget">GlueCrawlerCatalogTarget</a>></code> | catalog_target block. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.classifiers">classifiers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.configuration">configuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#configuration GlueCrawler#configuration}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.classifiers">classifiers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.configuration">configuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#configuration GlueCrawler#configuration}. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.deltaTarget">deltaTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDeltaTarget">GlueCrawlerDeltaTarget</a>></code> | delta_target block. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#description GlueCrawler#description}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#description GlueCrawler#description}. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.dynamodbTarget">dynamodbTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget">GlueCrawlerDynamodbTarget</a>></code> | dynamodb_target block. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.hudiTarget">hudiTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerHudiTarget">GlueCrawlerHudiTarget</a>></code> | hudi_target block. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.icebergTarget">icebergTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a>></code> | iceberg_target block. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#id GlueCrawler#id}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#id GlueCrawler#id}. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.jdbcTarget">jdbcTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerJdbcTarget">GlueCrawlerJdbcTarget</a>></code> | jdbc_target block. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.lakeFormationConfiguration">lakeFormationConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration">GlueCrawlerLakeFormationConfiguration</a></code> | lake_formation_configuration block. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.lineageConfiguration">lineageConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerLineageConfiguration">GlueCrawlerLineageConfiguration</a></code> | lineage_configuration block. |
@@ -77,12 +77,12 @@ GlueCrawler.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.recrawlPolicy">recrawlPolicy</a></code> | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicy">GlueCrawlerRecrawlPolicy</a></code> | recrawl_policy block. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.s3Target">s3Target</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target">GlueCrawlerS3Target</a>></code> | s3_target block. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.schedule">schedule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#schedule GlueCrawler#schedule}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.schedule">schedule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#schedule GlueCrawler#schedule}. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.schemaChangePolicy">schemaChangePolicy</a></code> | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy">GlueCrawlerSchemaChangePolicy</a></code> | schema_change_policy block. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.securityConfiguration">securityConfiguration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.tablePrefix">tablePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#tags GlueCrawler#tags}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.securityConfiguration">securityConfiguration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.tablePrefix">tablePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#tags GlueCrawler#tags}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawler.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}. |
 
 ---
 
@@ -150,7 +150,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#name GlueCrawler#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#name GlueCrawler#name}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#role GlueCrawler#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#role GlueCrawler#role}.
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 catalog_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#catalog_target GlueCrawler#catalog_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#catalog_target GlueCrawler#catalog_target}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}.
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#configuration GlueCrawler#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#configuration GlueCrawler#configuration}.
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 delta_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#delta_target GlueCrawler#delta_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#delta_target GlueCrawler#delta_target}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#description GlueCrawler#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#description GlueCrawler#description}.
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dynamodb_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#dynamodb_target GlueCrawler#dynamodb_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#dynamodb_target GlueCrawler#dynamodb_target}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 hudi_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#hudi_target GlueCrawler#hudi_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#hudi_target GlueCrawler#hudi_target}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 iceberg_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#iceberg_target GlueCrawler#iceberg_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#iceberg_target GlueCrawler#iceberg_target}
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#id GlueCrawler#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#id GlueCrawler#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -261,7 +261,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 jdbc_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#jdbc_target GlueCrawler#jdbc_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#jdbc_target GlueCrawler#jdbc_target}
 
 ---
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 lake_formation_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#lake_formation_configuration GlueCrawler#lake_formation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#lake_formation_configuration GlueCrawler#lake_formation_configuration}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 lineage_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#lineage_configuration GlueCrawler#lineage_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#lineage_configuration GlueCrawler#lineage_configuration}
 
 ---
 
@@ -291,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 mongodb_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#mongodb_target GlueCrawler#mongodb_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#mongodb_target GlueCrawler#mongodb_target}
 
 ---
 
@@ -301,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 recrawl_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#recrawl_policy GlueCrawler#recrawl_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#recrawl_policy GlueCrawler#recrawl_policy}
 
 ---
 
@@ -311,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#region GlueCrawler#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#region GlueCrawler#region}
 
 ---
 
@@ -321,7 +321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 s3_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#s3_target GlueCrawler#s3_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#s3_target GlueCrawler#s3_target}
 
 ---
 
@@ -329,7 +329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#schedule GlueCrawler#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#schedule GlueCrawler#schedule}.
 
 ---
 
@@ -339,7 +339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 schema_change_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#schema_change_policy GlueCrawler#schema_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#schema_change_policy GlueCrawler#schema_change_policy}
 
 ---
 
@@ -347,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}.
 
 ---
 
@@ -355,7 +355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}.
 
 ---
 
@@ -363,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#tags GlueCrawler#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#tags GlueCrawler#tags}.
 
 ---
 
@@ -371,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}.
 
 ---
 
@@ -1130,7 +1130,7 @@ The construct id used in the generated config for the GlueCrawler to import.
 
 The id of the existing GlueCrawler that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1906,11 +1906,11 @@ GlueCrawlerCatalogTarget.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.databaseName">databaseName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#database_name GlueCrawler#database_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.tables">tables</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#tables GlueCrawler#tables}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.dlqEventQueueArn">dlqEventQueueArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.eventQueueArn">eventQueueArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.databaseName">databaseName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.tables">tables</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#tables GlueCrawler#tables}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.dlqEventQueueArn">dlqEventQueueArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.eventQueueArn">eventQueueArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}. |
 
 ---
 
@@ -1922,7 +1922,7 @@ public java.lang.String getDatabaseName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
 
 ---
 
@@ -1934,7 +1934,7 @@ public java.util.List<java.lang.String> getTables();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#tables GlueCrawler#tables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#tables GlueCrawler#tables}.
 
 ---
 
@@ -1946,7 +1946,7 @@ public java.lang.String getConnectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -1958,7 +1958,7 @@ public java.lang.String getDlqEventQueueArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}.
 
 ---
 
@@ -1970,7 +1970,7 @@ public java.lang.String getEventQueueArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}.
 
 ---
 
@@ -2028,18 +2028,18 @@ GlueCrawlerConfig.builder()
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.databaseName">databaseName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#database_name GlueCrawler#database_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#name GlueCrawler#name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#role GlueCrawler#role}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.databaseName">databaseName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#name GlueCrawler#name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#role GlueCrawler#role}. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.catalogTarget">catalogTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerCatalogTarget">GlueCrawlerCatalogTarget</a>></code> | catalog_target block. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.classifiers">classifiers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.configuration">configuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#configuration GlueCrawler#configuration}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.classifiers">classifiers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.configuration">configuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#configuration GlueCrawler#configuration}. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.deltaTarget">deltaTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDeltaTarget">GlueCrawlerDeltaTarget</a>></code> | delta_target block. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#description GlueCrawler#description}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#description GlueCrawler#description}. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.dynamodbTarget">dynamodbTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget">GlueCrawlerDynamodbTarget</a>></code> | dynamodb_target block. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.hudiTarget">hudiTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerHudiTarget">GlueCrawlerHudiTarget</a>></code> | hudi_target block. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.icebergTarget">icebergTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a>></code> | iceberg_target block. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#id GlueCrawler#id}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#id GlueCrawler#id}. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.jdbcTarget">jdbcTarget</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerJdbcTarget">GlueCrawlerJdbcTarget</a>></code> | jdbc_target block. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.lakeFormationConfiguration">lakeFormationConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration">GlueCrawlerLakeFormationConfiguration</a></code> | lake_formation_configuration block. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.lineageConfiguration">lineageConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerLineageConfiguration">GlueCrawlerLineageConfiguration</a></code> | lineage_configuration block. |
@@ -2047,12 +2047,12 @@ GlueCrawlerConfig.builder()
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.recrawlPolicy">recrawlPolicy</a></code> | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicy">GlueCrawlerRecrawlPolicy</a></code> | recrawl_policy block. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.s3Target">s3Target</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target">GlueCrawlerS3Target</a>></code> | s3_target block. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.schedule">schedule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#schedule GlueCrawler#schedule}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.schedule">schedule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#schedule GlueCrawler#schedule}. |
 | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.schemaChangePolicy">schemaChangePolicy</a></code> | <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy">GlueCrawlerSchemaChangePolicy</a></code> | schema_change_policy block. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.securityConfiguration">securityConfiguration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.tablePrefix">tablePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#tags GlueCrawler#tags}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.securityConfiguration">securityConfiguration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.tablePrefix">tablePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#tags GlueCrawler#tags}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}. |
 
 ---
 
@@ -2134,7 +2134,7 @@ public java.lang.String getDatabaseName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
 
 ---
 
@@ -2146,7 +2146,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#name GlueCrawler#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#name GlueCrawler#name}.
 
 ---
 
@@ -2158,7 +2158,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#role GlueCrawler#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#role GlueCrawler#role}.
 
 ---
 
@@ -2172,7 +2172,7 @@ public IResolvable|java.util.List<GlueCrawlerCatalogTarget> getCatalogTarget();
 
 catalog_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#catalog_target GlueCrawler#catalog_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#catalog_target GlueCrawler#catalog_target}
 
 ---
 
@@ -2184,7 +2184,7 @@ public java.util.List<java.lang.String> getClassifiers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}.
 
 ---
 
@@ -2196,7 +2196,7 @@ public java.lang.String getConfiguration();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#configuration GlueCrawler#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#configuration GlueCrawler#configuration}.
 
 ---
 
@@ -2210,7 +2210,7 @@ public IResolvable|java.util.List<GlueCrawlerDeltaTarget> getDeltaTarget();
 
 delta_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#delta_target GlueCrawler#delta_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#delta_target GlueCrawler#delta_target}
 
 ---
 
@@ -2222,7 +2222,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#description GlueCrawler#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#description GlueCrawler#description}.
 
 ---
 
@@ -2236,7 +2236,7 @@ public IResolvable|java.util.List<GlueCrawlerDynamodbTarget> getDynamodbTarget()
 
 dynamodb_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#dynamodb_target GlueCrawler#dynamodb_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#dynamodb_target GlueCrawler#dynamodb_target}
 
 ---
 
@@ -2250,7 +2250,7 @@ public IResolvable|java.util.List<GlueCrawlerHudiTarget> getHudiTarget();
 
 hudi_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#hudi_target GlueCrawler#hudi_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#hudi_target GlueCrawler#hudi_target}
 
 ---
 
@@ -2264,7 +2264,7 @@ public IResolvable|java.util.List<GlueCrawlerIcebergTarget> getIcebergTarget();
 
 iceberg_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#iceberg_target GlueCrawler#iceberg_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#iceberg_target GlueCrawler#iceberg_target}
 
 ---
 
@@ -2276,7 +2276,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#id GlueCrawler#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#id GlueCrawler#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2293,7 +2293,7 @@ public IResolvable|java.util.List<GlueCrawlerJdbcTarget> getJdbcTarget();
 
 jdbc_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#jdbc_target GlueCrawler#jdbc_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#jdbc_target GlueCrawler#jdbc_target}
 
 ---
 
@@ -2307,7 +2307,7 @@ public GlueCrawlerLakeFormationConfiguration getLakeFormationConfiguration();
 
 lake_formation_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#lake_formation_configuration GlueCrawler#lake_formation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#lake_formation_configuration GlueCrawler#lake_formation_configuration}
 
 ---
 
@@ -2321,7 +2321,7 @@ public GlueCrawlerLineageConfiguration getLineageConfiguration();
 
 lineage_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#lineage_configuration GlueCrawler#lineage_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#lineage_configuration GlueCrawler#lineage_configuration}
 
 ---
 
@@ -2335,7 +2335,7 @@ public IResolvable|java.util.List<GlueCrawlerMongodbTarget> getMongodbTarget();
 
 mongodb_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#mongodb_target GlueCrawler#mongodb_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#mongodb_target GlueCrawler#mongodb_target}
 
 ---
 
@@ -2349,7 +2349,7 @@ public GlueCrawlerRecrawlPolicy getRecrawlPolicy();
 
 recrawl_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#recrawl_policy GlueCrawler#recrawl_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#recrawl_policy GlueCrawler#recrawl_policy}
 
 ---
 
@@ -2363,7 +2363,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#region GlueCrawler#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#region GlueCrawler#region}
 
 ---
 
@@ -2377,7 +2377,7 @@ public IResolvable|java.util.List<GlueCrawlerS3Target> getS3Target();
 
 s3_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#s3_target GlueCrawler#s3_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#s3_target GlueCrawler#s3_target}
 
 ---
 
@@ -2389,7 +2389,7 @@ public java.lang.String getSchedule();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#schedule GlueCrawler#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#schedule GlueCrawler#schedule}.
 
 ---
 
@@ -2403,7 +2403,7 @@ public GlueCrawlerSchemaChangePolicy getSchemaChangePolicy();
 
 schema_change_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#schema_change_policy GlueCrawler#schema_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#schema_change_policy GlueCrawler#schema_change_policy}
 
 ---
 
@@ -2415,7 +2415,7 @@ public java.lang.String getSecurityConfiguration();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}.
 
 ---
 
@@ -2427,7 +2427,7 @@ public java.lang.String getTablePrefix();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}.
 
 ---
 
@@ -2439,7 +2439,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#tags GlueCrawler#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#tags GlueCrawler#tags}.
 
 ---
 
@@ -2451,7 +2451,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}.
 
 ---
 
@@ -2474,10 +2474,10 @@ GlueCrawlerDeltaTarget.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.deltaTables">deltaTables</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#delta_tables GlueCrawler#delta_tables}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.writeManifest">writeManifest</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#write_manifest GlueCrawler#write_manifest}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.createNativeDeltaTable">createNativeDeltaTable</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.deltaTables">deltaTables</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#delta_tables GlueCrawler#delta_tables}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.writeManifest">writeManifest</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#write_manifest GlueCrawler#write_manifest}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.createNativeDeltaTable">createNativeDeltaTable</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}. |
 
 ---
 
@@ -2489,7 +2489,7 @@ public java.util.List<java.lang.String> getDeltaTables();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#delta_tables GlueCrawler#delta_tables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#delta_tables GlueCrawler#delta_tables}.
 
 ---
 
@@ -2501,7 +2501,7 @@ public java.lang.Boolean|IResolvable getWriteManifest();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#write_manifest GlueCrawler#write_manifest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#write_manifest GlueCrawler#write_manifest}.
 
 ---
 
@@ -2513,7 +2513,7 @@ public java.lang.String getConnectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -2525,7 +2525,7 @@ public java.lang.Boolean|IResolvable getCreateNativeDeltaTable();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}.
 
 ---
 
@@ -2547,9 +2547,9 @@ GlueCrawlerDynamodbTarget.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#path GlueCrawler#path}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.scanAll">scanAll</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.scanRate">scanRate</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#scan_rate GlueCrawler#scan_rate}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#path GlueCrawler#path}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.scanAll">scanAll</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.scanRate">scanRate</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#scan_rate GlueCrawler#scan_rate}. |
 
 ---
 
@@ -2561,7 +2561,7 @@ public java.lang.String getPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#path GlueCrawler#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#path GlueCrawler#path}.
 
 ---
 
@@ -2573,7 +2573,7 @@ public java.lang.Boolean|IResolvable getScanAll();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}.
 
 ---
 
@@ -2585,7 +2585,7 @@ public java.lang.Number getScanRate();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#scan_rate GlueCrawler#scan_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#scan_rate GlueCrawler#scan_rate}.
 
 ---
 
@@ -2608,10 +2608,10 @@ GlueCrawlerHudiTarget.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerHudiTarget.property.maximumTraversalDepth">maximumTraversalDepth</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#maximum_traversal_depth GlueCrawler#maximum_traversal_depth}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerHudiTarget.property.paths">paths</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#paths GlueCrawler#paths}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerHudiTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerHudiTarget.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerHudiTarget.property.maximumTraversalDepth">maximumTraversalDepth</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#maximum_traversal_depth GlueCrawler#maximum_traversal_depth}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerHudiTarget.property.paths">paths</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#paths GlueCrawler#paths}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerHudiTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerHudiTarget.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
 
 ---
 
@@ -2623,7 +2623,7 @@ public java.lang.Number getMaximumTraversalDepth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#maximum_traversal_depth GlueCrawler#maximum_traversal_depth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#maximum_traversal_depth GlueCrawler#maximum_traversal_depth}.
 
 ---
 
@@ -2635,7 +2635,7 @@ public java.util.List<java.lang.String> getPaths();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#paths GlueCrawler#paths}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#paths GlueCrawler#paths}.
 
 ---
 
@@ -2647,7 +2647,7 @@ public java.lang.String getConnectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -2659,7 +2659,7 @@ public java.util.List<java.lang.String> getExclusions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
 
 ---
 
@@ -2682,10 +2682,10 @@ GlueCrawlerIcebergTarget.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.maximumTraversalDepth">maximumTraversalDepth</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#maximum_traversal_depth GlueCrawler#maximum_traversal_depth}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.paths">paths</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#paths GlueCrawler#paths}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.maximumTraversalDepth">maximumTraversalDepth</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#maximum_traversal_depth GlueCrawler#maximum_traversal_depth}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.paths">paths</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#paths GlueCrawler#paths}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
 
 ---
 
@@ -2697,7 +2697,7 @@ public java.lang.Number getMaximumTraversalDepth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#maximum_traversal_depth GlueCrawler#maximum_traversal_depth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#maximum_traversal_depth GlueCrawler#maximum_traversal_depth}.
 
 ---
 
@@ -2709,7 +2709,7 @@ public java.util.List<java.lang.String> getPaths();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#paths GlueCrawler#paths}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#paths GlueCrawler#paths}.
 
 ---
 
@@ -2721,7 +2721,7 @@ public java.lang.String getConnectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -2733,7 +2733,7 @@ public java.util.List<java.lang.String> getExclusions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
 
 ---
 
@@ -2756,10 +2756,10 @@ GlueCrawlerJdbcTarget.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#path GlueCrawler#path}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.enableAdditionalMetadata">enableAdditionalMetadata</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#enable_additional_metadata GlueCrawler#enable_additional_metadata}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#path GlueCrawler#path}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.enableAdditionalMetadata">enableAdditionalMetadata</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#enable_additional_metadata GlueCrawler#enable_additional_metadata}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
 
 ---
 
@@ -2771,7 +2771,7 @@ public java.lang.String getConnectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -2783,7 +2783,7 @@ public java.lang.String getPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#path GlueCrawler#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#path GlueCrawler#path}.
 
 ---
 
@@ -2795,7 +2795,7 @@ public java.util.List<java.lang.String> getEnableAdditionalMetadata();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#enable_additional_metadata GlueCrawler#enable_additional_metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#enable_additional_metadata GlueCrawler#enable_additional_metadata}.
 
 ---
 
@@ -2807,7 +2807,7 @@ public java.util.List<java.lang.String> getExclusions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
 
 ---
 
@@ -2828,8 +2828,8 @@ GlueCrawlerLakeFormationConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#account_id GlueCrawler#account_id}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration.property.useLakeFormationCredentials">useLakeFormationCredentials</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#use_lake_formation_credentials GlueCrawler#use_lake_formation_credentials}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#account_id GlueCrawler#account_id}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration.property.useLakeFormationCredentials">useLakeFormationCredentials</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#use_lake_formation_credentials GlueCrawler#use_lake_formation_credentials}. |
 
 ---
 
@@ -2841,7 +2841,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#account_id GlueCrawler#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#account_id GlueCrawler#account_id}.
 
 ---
 
@@ -2853,7 +2853,7 @@ public java.lang.Boolean|IResolvable getUseLakeFormationCredentials();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#use_lake_formation_credentials GlueCrawler#use_lake_formation_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#use_lake_formation_credentials GlueCrawler#use_lake_formation_credentials}.
 
 ---
 
@@ -2873,7 +2873,7 @@ GlueCrawlerLineageConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerLineageConfiguration.property.crawlerLineageSettings">crawlerLineageSettings</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#crawler_lineage_settings GlueCrawler#crawler_lineage_settings}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerLineageConfiguration.property.crawlerLineageSettings">crawlerLineageSettings</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#crawler_lineage_settings GlueCrawler#crawler_lineage_settings}. |
 
 ---
 
@@ -2885,7 +2885,7 @@ public java.lang.String getCrawlerLineageSettings();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#crawler_lineage_settings GlueCrawler#crawler_lineage_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#crawler_lineage_settings GlueCrawler#crawler_lineage_settings}.
 
 ---
 
@@ -2907,9 +2907,9 @@ GlueCrawlerMongodbTarget.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#path GlueCrawler#path}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.scanAll">scanAll</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#path GlueCrawler#path}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.scanAll">scanAll</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}. |
 
 ---
 
@@ -2921,7 +2921,7 @@ public java.lang.String getConnectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -2933,7 +2933,7 @@ public java.lang.String getPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#path GlueCrawler#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#path GlueCrawler#path}.
 
 ---
 
@@ -2945,7 +2945,7 @@ public java.lang.Boolean|IResolvable getScanAll();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}.
 
 ---
 
@@ -2965,7 +2965,7 @@ GlueCrawlerRecrawlPolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicy.property.recrawlBehavior">recrawlBehavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicy.property.recrawlBehavior">recrawlBehavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}. |
 
 ---
 
@@ -2977,7 +2977,7 @@ public java.lang.String getRecrawlBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}.
 
 ---
 
@@ -3002,12 +3002,12 @@ GlueCrawlerS3Target.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#path GlueCrawler#path}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.dlqEventQueueArn">dlqEventQueueArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.eventQueueArn">eventQueueArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.sampleSize">sampleSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#sample_size GlueCrawler#sample_size}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#path GlueCrawler#path}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.dlqEventQueueArn">dlqEventQueueArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.eventQueueArn">eventQueueArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerS3Target.property.sampleSize">sampleSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#sample_size GlueCrawler#sample_size}. |
 
 ---
 
@@ -3019,7 +3019,7 @@ public java.lang.String getPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#path GlueCrawler#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#path GlueCrawler#path}.
 
 ---
 
@@ -3031,7 +3031,7 @@ public java.lang.String getConnectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -3043,7 +3043,7 @@ public java.lang.String getDlqEventQueueArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}.
 
 ---
 
@@ -3055,7 +3055,7 @@ public java.lang.String getEventQueueArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}.
 
 ---
 
@@ -3067,7 +3067,7 @@ public java.util.List<java.lang.String> getExclusions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
 
 ---
 
@@ -3079,7 +3079,7 @@ public java.lang.Number getSampleSize();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#sample_size GlueCrawler#sample_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#sample_size GlueCrawler#sample_size}.
 
 ---
 
@@ -3100,8 +3100,8 @@ GlueCrawlerSchemaChangePolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy.property.deleteBehavior">deleteBehavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#delete_behavior GlueCrawler#delete_behavior}. |
-| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy.property.updateBehavior">updateBehavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#update_behavior GlueCrawler#update_behavior}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy.property.deleteBehavior">deleteBehavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#delete_behavior GlueCrawler#delete_behavior}. |
+| <code><a href="#@cdktn/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy.property.updateBehavior">updateBehavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#update_behavior GlueCrawler#update_behavior}. |
 
 ---
 
@@ -3113,7 +3113,7 @@ public java.lang.String getDeleteBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#delete_behavior GlueCrawler#delete_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#delete_behavior GlueCrawler#delete_behavior}.
 
 ---
 
@@ -3125,7 +3125,7 @@ public java.lang.String getUpdateBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/glue_crawler#update_behavior GlueCrawler#update_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/glue_crawler#update_behavior GlueCrawler#update_behavior}.
 
 ---
 

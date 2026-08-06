@@ -4,7 +4,7 @@
 
 ### DataAwsWafregionalRateBasedRule <a name="DataAwsWafregionalRateBasedRule" id="@cdktn/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/wafregional_rate_based_rule aws_wafregional_rate_based_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/wafregional_rate_based_rule aws_wafregional_rate_based_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsWafregionalRateBase
 
 The id of the existing DataAwsWafregionalRateBasedRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/wafregional_rate_based_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/wafregional_rate_based_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -661,8 +661,8 @@ const dataAwsWafregionalRateBasedRuleConfig: dataAwsWafregionalRateBasedRule.Dat
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/wafregional_rate_based_rule#name DataAwsWafregionalRateBasedRule#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/wafregional_rate_based_rule#id DataAwsWafregionalRateBasedRule#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/wafregional_rate_based_rule#name DataAwsWafregionalRateBasedRule#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/wafregional_rate_based_rule#id DataAwsWafregionalRateBasedRule#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -745,7 +745,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/wafregional_rate_based_rule#name DataAwsWafregionalRateBasedRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/wafregional_rate_based_rule#name DataAwsWafregionalRateBasedRule#name}.
 
 ---
 
@@ -757,7 +757,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/wafregional_rate_based_rule#id DataAwsWafregionalRateBasedRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/wafregional_rate_based_rule#id DataAwsWafregionalRateBasedRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -774,7 +774,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/wafregional_rate_based_rule#region DataAwsWafregionalRateBasedRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/wafregional_rate_based_rule#region DataAwsWafregionalRateBasedRule#region}
 
 ---
 

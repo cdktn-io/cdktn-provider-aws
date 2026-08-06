@@ -4,7 +4,7 @@
 
 ### QuicksightTemplate <a name="QuicksightTemplate" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template aws_quicksight_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template aws_quicksight_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplate.Initializer"></a>
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the QuicksightTemplate to impo
 
 The id of the existing QuicksightTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1157,17 +1157,17 @@ new QuicksightTemplateConfig {
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#name QuicksightTemplate#name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.templateId">TemplateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#template_id QuicksightTemplate#template_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.versionDescription">VersionDescription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#version_description QuicksightTemplate#version_description}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.awsAccountId">AwsAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#aws_account_id QuicksightTemplate#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#name QuicksightTemplate#name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.templateId">TemplateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#template_id QuicksightTemplate#template_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.versionDescription">VersionDescription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#version_description QuicksightTemplate#version_description}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.awsAccountId">AwsAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#aws_account_id QuicksightTemplate#aws_account_id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.definition">Definition</a></code> | <code>object</code> | definition block. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#id QuicksightTemplate#id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#id QuicksightTemplate#id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.permissions">Permissions</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissions">QuicksightTemplatePermissions</a>[]</code> | permissions block. |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.sourceEntity">SourceEntity</a></code> | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntity">QuicksightTemplateSourceEntity</a></code> | source_entity block. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#tags QuicksightTemplate#tags}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#tags_all QuicksightTemplate#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#tags QuicksightTemplate#tags}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#tags_all QuicksightTemplate#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts">QuicksightTemplateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1250,7 +1250,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#name QuicksightTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#name QuicksightTemplate#name}.
 
 ---
 
@@ -1262,7 +1262,7 @@ public string TemplateId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#template_id QuicksightTemplate#template_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#template_id QuicksightTemplate#template_id}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public string VersionDescription { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#version_description QuicksightTemplate#version_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#version_description QuicksightTemplate#version_description}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public string AwsAccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#aws_account_id QuicksightTemplate#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#aws_account_id QuicksightTemplate#aws_account_id}.
 
 ---
 
@@ -1300,7 +1300,7 @@ public object Definition { get; set; }
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#definition QuicksightTemplate#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#definition QuicksightTemplate#definition}
 
 ---
 
@@ -1312,7 +1312,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#id QuicksightTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#id QuicksightTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1329,7 +1329,7 @@ public IResolvable|QuicksightTemplatePermissions[] Permissions { get; set; }
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#permissions QuicksightTemplate#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#permissions QuicksightTemplate#permissions}
 
 ---
 
@@ -1343,7 +1343,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#region QuicksightTemplate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#region QuicksightTemplate#region}
 
 ---
 
@@ -1357,7 +1357,7 @@ public QuicksightTemplateSourceEntity SourceEntity { get; set; }
 
 source_entity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#source_entity QuicksightTemplate#source_entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#source_entity QuicksightTemplate#source_entity}
 
 ---
 
@@ -1369,7 +1369,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#tags QuicksightTemplate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#tags QuicksightTemplate#tags}.
 
 ---
 
@@ -1381,7 +1381,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#tags_all QuicksightTemplate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#tags_all QuicksightTemplate#tags_all}.
 
 ---
 
@@ -1395,7 +1395,7 @@ public QuicksightTemplateTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#timeouts QuicksightTemplate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#timeouts QuicksightTemplate#timeouts}
 
 ---
 
@@ -1416,8 +1416,8 @@ new QuicksightTemplatePermissions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissions.property.actions">Actions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#actions QuicksightTemplate#actions}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissions.property.principal">Principal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#principal QuicksightTemplate#principal}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissions.property.actions">Actions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#actions QuicksightTemplate#actions}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissions.property.principal">Principal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#principal QuicksightTemplate#principal}. |
 
 ---
 
@@ -1429,7 +1429,7 @@ public string[] Actions { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#actions QuicksightTemplate#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#actions QuicksightTemplate#actions}.
 
 ---
 
@@ -1441,7 +1441,7 @@ public string Principal { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#principal QuicksightTemplate#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#principal QuicksightTemplate#principal}.
 
 ---
 
@@ -1477,7 +1477,7 @@ public QuicksightTemplateSourceEntitySourceAnalysis SourceAnalysis { get; set; }
 
 source_analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#source_analysis QuicksightTemplate#source_analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#source_analysis QuicksightTemplate#source_analysis}
 
 ---
 
@@ -1491,7 +1491,7 @@ public QuicksightTemplateSourceEntitySourceTemplate SourceTemplate { get; set; }
 
 source_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#source_template QuicksightTemplate#source_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#source_template QuicksightTemplate#source_template}
 
 ---
 
@@ -1512,7 +1512,7 @@ new QuicksightTemplateSourceEntitySourceAnalysis {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#arn QuicksightTemplate#arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#arn QuicksightTemplate#arn}. |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis.property.dataSetReferences">DataSetReferences</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences">QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences</a>[]</code> | data_set_references block. |
 
 ---
@@ -1525,7 +1525,7 @@ public string Arn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#arn QuicksightTemplate#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#arn QuicksightTemplate#arn}.
 
 ---
 
@@ -1539,7 +1539,7 @@ public IResolvable|QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences
 
 data_set_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#data_set_references QuicksightTemplate#data_set_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#data_set_references QuicksightTemplate#data_set_references}
 
 ---
 
@@ -1560,8 +1560,8 @@ new QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences.property.dataSetArn">DataSetArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#data_set_arn QuicksightTemplate#data_set_arn}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences.property.dataSetPlaceholder">DataSetPlaceholder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#data_set_placeholder QuicksightTemplate#data_set_placeholder}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences.property.dataSetArn">DataSetArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#data_set_arn QuicksightTemplate#data_set_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences.property.dataSetPlaceholder">DataSetPlaceholder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#data_set_placeholder QuicksightTemplate#data_set_placeholder}. |
 
 ---
 
@@ -1573,7 +1573,7 @@ public string DataSetArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#data_set_arn QuicksightTemplate#data_set_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#data_set_arn QuicksightTemplate#data_set_arn}.
 
 ---
 
@@ -1585,7 +1585,7 @@ public string DataSetPlaceholder { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#data_set_placeholder QuicksightTemplate#data_set_placeholder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#data_set_placeholder QuicksightTemplate#data_set_placeholder}.
 
 ---
 
@@ -1605,7 +1605,7 @@ new QuicksightTemplateSourceEntitySourceTemplate {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplate.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#arn QuicksightTemplate#arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplate.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#arn QuicksightTemplate#arn}. |
 
 ---
 
@@ -1617,7 +1617,7 @@ public string Arn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#arn QuicksightTemplate#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#arn QuicksightTemplate#arn}.
 
 ---
 
@@ -1639,9 +1639,9 @@ new QuicksightTemplateTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#create QuicksightTemplate#create}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#delete QuicksightTemplate#delete}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#update QuicksightTemplate#update}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#create QuicksightTemplate#create}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#delete QuicksightTemplate#delete}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#update QuicksightTemplate#update}. |
 
 ---
 
@@ -1653,7 +1653,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#create QuicksightTemplate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#create QuicksightTemplate#create}.
 
 ---
 
@@ -1665,7 +1665,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#delete QuicksightTemplate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#delete QuicksightTemplate#delete}.
 
 ---
 
@@ -1677,7 +1677,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/quicksight_template#update QuicksightTemplate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/quicksight_template#update QuicksightTemplate#update}.
 
 ---
 

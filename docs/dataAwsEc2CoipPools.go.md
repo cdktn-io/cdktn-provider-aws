@@ -4,7 +4,7 @@
 
 ### DataAwsEc2CoipPools <a name="DataAwsEc2CoipPools" id="@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools aws_ec2_coip_pools}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools aws_ec2_coip_pools}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools.Initializer"></a>
 
@@ -448,7 +448,7 @@ The construct id used in the generated config for the DataAwsEc2CoipPools to imp
 
 The id of the existing DataAwsEc2CoipPools that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,9 +777,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2coippools"
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#id DataAwsEc2CoipPools#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#id DataAwsEc2CoipPools#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#tags DataAwsEc2CoipPools#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#tags DataAwsEc2CoipPools#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsTimeouts">DataAwsEc2CoipPoolsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -864,7 +864,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#filter DataAwsEc2CoipPools#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#filter DataAwsEc2CoipPools#filter}
 
 ---
 
@@ -876,7 +876,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#id DataAwsEc2CoipPools#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#id DataAwsEc2CoipPools#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -893,7 +893,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#region DataAwsEc2CoipPools#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#region DataAwsEc2CoipPools#region}
 
 ---
 
@@ -905,7 +905,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#tags DataAwsEc2CoipPools#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#tags DataAwsEc2CoipPools#tags}.
 
 ---
 
@@ -919,7 +919,7 @@ Timeouts DataAwsEc2CoipPoolsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#timeouts DataAwsEc2CoipPools#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#timeouts DataAwsEc2CoipPools#timeouts}
 
 ---
 
@@ -940,8 +940,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2coippools"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#name DataAwsEc2CoipPools#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#values DataAwsEc2CoipPools#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#name DataAwsEc2CoipPools#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#values DataAwsEc2CoipPools#values}. |
 
 ---
 
@@ -953,7 +953,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#name DataAwsEc2CoipPools#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#name DataAwsEc2CoipPools#name}.
 
 ---
 
@@ -965,7 +965,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#values DataAwsEc2CoipPools#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#values DataAwsEc2CoipPools#values}.
 
 ---
 
@@ -985,7 +985,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2coippools"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#read DataAwsEc2CoipPools#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#read DataAwsEc2CoipPools#read}. |
 
 ---
 
@@ -997,7 +997,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/data-sources/ec2_coip_pools#read DataAwsEc2CoipPools#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_coip_pools#read DataAwsEc2CoipPools#read}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### TimestreamwriteDatabase <a name="TimestreamwriteDatabase" id="@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database aws_timestreamwrite_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database aws_timestreamwrite_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer"></a>
 
@@ -41,12 +41,12 @@ timestreamwriteDatabase.TimestreamwriteDatabase(
 | <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}. |
-| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}. |
-| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}. |
+| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}. |
+| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}. |
 | <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}. |
-| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}. |
+| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}.
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#region TimestreamwriteDatabase#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#region TimestreamwriteDatabase#region}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}.
 
 ---
 
@@ -691,7 +691,7 @@ The construct id used in the generated config for the TimestreamwriteDatabase to
 
 The id of the existing TimestreamwriteDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1075,12 +1075,12 @@ timestreamwriteDatabase.TimestreamwriteDatabaseConfig(
 | <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}. |
-| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}. |
-| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}. |
+| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}. |
+| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}. |
 | <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}. |
-| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}. |
+| <code><a href="#@cdktn/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}. |
 
 ---
 
@@ -1162,7 +1162,7 @@ database_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}.
 
 ---
 
@@ -1174,7 +1174,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1189,7 +1189,7 @@ kms_key_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}.
 
 ---
 
@@ -1203,7 +1203,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#region TimestreamwriteDatabase#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#region TimestreamwriteDatabase#region}
 
 ---
 
@@ -1215,7 +1215,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}.
 
 ---
 
@@ -1227,7 +1227,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}.
 
 ---
 

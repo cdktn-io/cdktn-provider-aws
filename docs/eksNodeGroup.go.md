@@ -4,7 +4,7 @@
 
 ### EksNodeGroup <a name="EksNodeGroup" id="@cdktn/provider-aws.eksNodeGroup.EksNodeGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group aws_eks_node_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group aws_eks_node_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksNodeGroup.EksNodeGroup.Initializer"></a>
 
@@ -740,7 +740,7 @@ The construct id used in the generated config for the EksNodeGroup to import.
 
 The id of the existing EksNodeGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1572,30 +1572,30 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksnodegroup"
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeRoleArn">NodeRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeRoleArn">NodeRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.scalingConfig">ScalingConfig</a></code> | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig">EksNodeGroupScalingConfig</a></code> | scaling_config block. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.amiType">AmiType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.capacityType">CapacityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.diskSize">DiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.forceUpdateVersion">ForceUpdateVersion</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#id EksNodeGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.instanceTypes">InstanceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#labels EksNodeGroup#labels}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.amiType">AmiType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.capacityType">CapacityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.diskSize">DiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.forceUpdateVersion">ForceUpdateVersion</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#id EksNodeGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.instanceTypes">InstanceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}. |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.launchTemplate">LaunchTemplate</a></code> | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate">EksNodeGroupLaunchTemplate</a></code> | launch_template block. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeGroupName">NodeGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeGroupNamePrefix">NodeGroupNamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeGroupName">NodeGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeGroupNamePrefix">NodeGroupNamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}. |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeRepairConfig">NodeRepairConfig</a></code> | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig">EksNodeGroupNodeRepairConfig</a></code> | node_repair_config block. |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.releaseVersion">ReleaseVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.releaseVersion">ReleaseVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}. |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.remoteAccess">RemoteAccess</a></code> | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess">EksNodeGroupRemoteAccess</a></code> | remote_access block. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#tags EksNodeGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.taint">Taint</a></code> | <code>interface{}</code> | taint block. |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTimeouts">EksNodeGroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.updateConfig">UpdateConfig</a></code> | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig">EksNodeGroupUpdateConfig</a></code> | update_config block. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#version EksNodeGroup#version}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#version EksNodeGroup#version}. |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.warmPoolConfig">WarmPoolConfig</a></code> | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupWarmPoolConfig">EksNodeGroupWarmPoolConfig</a></code> | warm_pool_config block. |
 
 ---
@@ -1678,7 +1678,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}.
 
 ---
 
@@ -1690,7 +1690,7 @@ NodeRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}.
 
 ---
 
@@ -1704,7 +1704,7 @@ ScalingConfig EksNodeGroupScalingConfig
 
 scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
 
 ---
 
@@ -1716,7 +1716,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}.
 
 ---
 
@@ -1728,7 +1728,7 @@ AmiType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}.
 
 ---
 
@@ -1740,7 +1740,7 @@ CapacityType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}.
 
 ---
 
@@ -1752,7 +1752,7 @@ DiskSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}.
 
 ---
 
@@ -1764,7 +1764,7 @@ ForceUpdateVersion interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}.
 
 ---
 
@@ -1776,7 +1776,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#id EksNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1791,7 +1791,7 @@ InstanceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}.
 
 ---
 
@@ -1803,7 +1803,7 @@ Labels *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#labels EksNodeGroup#labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}.
 
 ---
 
@@ -1817,7 +1817,7 @@ LaunchTemplate EksNodeGroupLaunchTemplate
 
 launch_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
 
 ---
 
@@ -1829,7 +1829,7 @@ NodeGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}.
 
 ---
 
@@ -1841,7 +1841,7 @@ NodeGroupNamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}.
 
 ---
 
@@ -1855,7 +1855,7 @@ NodeRepairConfig EksNodeGroupNodeRepairConfig
 
 node_repair_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_repair_config EksNodeGroup#node_repair_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_repair_config EksNodeGroup#node_repair_config}
 
 ---
 
@@ -1869,7 +1869,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#region EksNodeGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#region EksNodeGroup#region}
 
 ---
 
@@ -1881,7 +1881,7 @@ ReleaseVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}.
 
 ---
 
@@ -1895,7 +1895,7 @@ RemoteAccess EksNodeGroupRemoteAccess
 
 remote_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
 
 ---
 
@@ -1907,7 +1907,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#tags EksNodeGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}.
 
 ---
 
@@ -1919,7 +1919,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}.
 
 ---
 
@@ -1933,7 +1933,7 @@ Taint interface{}
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#taint EksNodeGroup#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
 
 ---
 
@@ -1947,7 +1947,7 @@ Timeouts EksNodeGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
 
 ---
 
@@ -1961,7 +1961,7 @@ UpdateConfig EksNodeGroupUpdateConfig
 
 update_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
 
 ---
 
@@ -1973,7 +1973,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#version EksNodeGroup#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
 
 ---
 
@@ -1987,7 +1987,7 @@ WarmPoolConfig EksNodeGroupWarmPoolConfig
 
 warm_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#warm_pool_config EksNodeGroup#warm_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#warm_pool_config EksNodeGroup#warm_pool_config}
 
 ---
 
@@ -2009,9 +2009,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksnodegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#version EksNodeGroup#version}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#id EksNodeGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#name EksNodeGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#version EksNodeGroup#version}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#id EksNodeGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#name EksNodeGroup#name}. |
 
 ---
 
@@ -2023,7 +2023,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#version EksNodeGroup#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
 
 ---
 
@@ -2035,7 +2035,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#id EksNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2050,7 +2050,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#name EksNodeGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#name EksNodeGroup#name}.
 
 ---
 
@@ -2075,11 +2075,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksnodegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxParallelNodesRepairedCount">MaxParallelNodesRepairedCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_parallel_nodes_repaired_count EksNodeGroup#max_parallel_nodes_repaired_count}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxParallelNodesRepairedPercentage">MaxParallelNodesRepairedPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_parallel_nodes_repaired_percentage EksNodeGroup#max_parallel_nodes_repaired_percentage}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxUnhealthyNodeThresholdCount">MaxUnhealthyNodeThresholdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_unhealthy_node_threshold_count EksNodeGroup#max_unhealthy_node_threshold_count}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxUnhealthyNodeThresholdPercentage">MaxUnhealthyNodeThresholdPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_unhealthy_node_threshold_percentage EksNodeGroup#max_unhealthy_node_threshold_percentage}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxParallelNodesRepairedCount">MaxParallelNodesRepairedCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_count EksNodeGroup#max_parallel_nodes_repaired_count}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxParallelNodesRepairedPercentage">MaxParallelNodesRepairedPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_percentage EksNodeGroup#max_parallel_nodes_repaired_percentage}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxUnhealthyNodeThresholdCount">MaxUnhealthyNodeThresholdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_count EksNodeGroup#max_unhealthy_node_threshold_count}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxUnhealthyNodeThresholdPercentage">MaxUnhealthyNodeThresholdPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_percentage EksNodeGroup#max_unhealthy_node_threshold_percentage}. |
 | <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.nodeRepairConfigOverrides">NodeRepairConfigOverrides</a></code> | <code>interface{}</code> | node_repair_config_overrides block. |
 
 ---
@@ -2092,7 +2092,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}.
 
 ---
 
@@ -2104,7 +2104,7 @@ MaxParallelNodesRepairedCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_parallel_nodes_repaired_count EksNodeGroup#max_parallel_nodes_repaired_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_count EksNodeGroup#max_parallel_nodes_repaired_count}.
 
 ---
 
@@ -2116,7 +2116,7 @@ MaxParallelNodesRepairedPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_parallel_nodes_repaired_percentage EksNodeGroup#max_parallel_nodes_repaired_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_percentage EksNodeGroup#max_parallel_nodes_repaired_percentage}.
 
 ---
 
@@ -2128,7 +2128,7 @@ MaxUnhealthyNodeThresholdCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_unhealthy_node_threshold_count EksNodeGroup#max_unhealthy_node_threshold_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_count EksNodeGroup#max_unhealthy_node_threshold_count}.
 
 ---
 
@@ -2140,7 +2140,7 @@ MaxUnhealthyNodeThresholdPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_unhealthy_node_threshold_percentage EksNodeGroup#max_unhealthy_node_threshold_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_percentage EksNodeGroup#max_unhealthy_node_threshold_percentage}.
 
 ---
 
@@ -2154,7 +2154,7 @@ NodeRepairConfigOverrides interface{}
 
 node_repair_config_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_repair_config_overrides EksNodeGroup#node_repair_config_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_repair_config_overrides EksNodeGroup#node_repair_config_overrides}
 
 ---
 
@@ -2177,10 +2177,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksnodegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.minRepairWaitTimeMins">MinRepairWaitTimeMins</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#min_repair_wait_time_mins EksNodeGroup#min_repair_wait_time_mins}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.nodeMonitoringCondition">NodeMonitoringCondition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_monitoring_condition EksNodeGroup#node_monitoring_condition}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.nodeUnhealthyReason">NodeUnhealthyReason</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_unhealthy_reason EksNodeGroup#node_unhealthy_reason}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.repairAction">RepairAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#repair_action EksNodeGroup#repair_action}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.minRepairWaitTimeMins">MinRepairWaitTimeMins</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#min_repair_wait_time_mins EksNodeGroup#min_repair_wait_time_mins}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.nodeMonitoringCondition">NodeMonitoringCondition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_monitoring_condition EksNodeGroup#node_monitoring_condition}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.nodeUnhealthyReason">NodeUnhealthyReason</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_unhealthy_reason EksNodeGroup#node_unhealthy_reason}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.repairAction">RepairAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#repair_action EksNodeGroup#repair_action}. |
 
 ---
 
@@ -2192,7 +2192,7 @@ MinRepairWaitTimeMins *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#min_repair_wait_time_mins EksNodeGroup#min_repair_wait_time_mins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#min_repair_wait_time_mins EksNodeGroup#min_repair_wait_time_mins}.
 
 ---
 
@@ -2204,7 +2204,7 @@ NodeMonitoringCondition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_monitoring_condition EksNodeGroup#node_monitoring_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_monitoring_condition EksNodeGroup#node_monitoring_condition}.
 
 ---
 
@@ -2216,7 +2216,7 @@ NodeUnhealthyReason *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#node_unhealthy_reason EksNodeGroup#node_unhealthy_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#node_unhealthy_reason EksNodeGroup#node_unhealthy_reason}.
 
 ---
 
@@ -2228,7 +2228,7 @@ RepairAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#repair_action EksNodeGroup#repair_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#repair_action EksNodeGroup#repair_action}.
 
 ---
 
@@ -2249,8 +2249,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksnodegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess.property.ec2SshKey">Ec2SshKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess.property.sourceSecurityGroupIds">SourceSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess.property.ec2SshKey">Ec2SshKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess.property.sourceSecurityGroupIds">SourceSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}. |
 
 ---
 
@@ -2262,7 +2262,7 @@ Ec2SshKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}.
 
 ---
 
@@ -2274,7 +2274,7 @@ SourceSecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}.
 
 ---
 
@@ -2322,9 +2322,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksnodegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.desiredSize">DesiredSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.maxSize">MaxSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.minSize">MinSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.desiredSize">DesiredSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.maxSize">MaxSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.minSize">MinSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}. |
 
 ---
 
@@ -2336,7 +2336,7 @@ DesiredSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}.
 
 ---
 
@@ -2348,7 +2348,7 @@ MaxSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}.
 
 ---
 
@@ -2360,7 +2360,7 @@ MinSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}.
 
 ---
 
@@ -2382,9 +2382,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksnodegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.effect">Effect</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#effect EksNodeGroup#effect}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#key EksNodeGroup#key}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#value EksNodeGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.effect">Effect</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#effect EksNodeGroup#effect}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#key EksNodeGroup#key}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#value EksNodeGroup#value}. |
 
 ---
 
@@ -2396,7 +2396,7 @@ Effect *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#effect EksNodeGroup#effect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#effect EksNodeGroup#effect}.
 
 ---
 
@@ -2408,7 +2408,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#key EksNodeGroup#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#key EksNodeGroup#key}.
 
 ---
 
@@ -2420,7 +2420,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#value EksNodeGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#value EksNodeGroup#value}.
 
 ---
 
@@ -2442,9 +2442,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksnodegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#create EksNodeGroup#create}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#delete EksNodeGroup#delete}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#update EksNodeGroup#update}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#create EksNodeGroup#create}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#update EksNodeGroup#update}. |
 
 ---
 
@@ -2456,7 +2456,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#create EksNodeGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#create EksNodeGroup#create}.
 
 ---
 
@@ -2468,7 +2468,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#delete EksNodeGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}.
 
 ---
 
@@ -2480,7 +2480,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#update EksNodeGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#update EksNodeGroup#update}.
 
 ---
 
@@ -2502,9 +2502,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksnodegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.property.maxUnavailable">MaxUnavailable</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.property.maxUnavailablePercentage">MaxUnavailablePercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.property.updateStrategy">UpdateStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#update_strategy EksNodeGroup#update_strategy}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.property.maxUnavailable">MaxUnavailable</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.property.maxUnavailablePercentage">MaxUnavailablePercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.property.updateStrategy">UpdateStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#update_strategy EksNodeGroup#update_strategy}. |
 
 ---
 
@@ -2516,7 +2516,7 @@ MaxUnavailable *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}.
 
 ---
 
@@ -2528,7 +2528,7 @@ MaxUnavailablePercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}.
 
 ---
 
@@ -2540,7 +2540,7 @@ UpdateStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#update_strategy EksNodeGroup#update_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#update_strategy EksNodeGroup#update_strategy}.
 
 ---
 
@@ -2563,10 +2563,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksnodegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupWarmPoolConfig.property.maxGroupPreparedCapacity">MaxGroupPreparedCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_group_prepared_capacity EksNodeGroup#max_group_prepared_capacity}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupWarmPoolConfig.property.minSize">MinSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupWarmPoolConfig.property.poolState">PoolState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#pool_state EksNodeGroup#pool_state}. |
-| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupWarmPoolConfig.property.reuseOnScaleIn">ReuseOnScaleIn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#reuse_on_scale_in EksNodeGroup#reuse_on_scale_in}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupWarmPoolConfig.property.maxGroupPreparedCapacity">MaxGroupPreparedCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_group_prepared_capacity EksNodeGroup#max_group_prepared_capacity}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupWarmPoolConfig.property.minSize">MinSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupWarmPoolConfig.property.poolState">PoolState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#pool_state EksNodeGroup#pool_state}. |
+| <code><a href="#@cdktn/provider-aws.eksNodeGroup.EksNodeGroupWarmPoolConfig.property.reuseOnScaleIn">ReuseOnScaleIn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#reuse_on_scale_in EksNodeGroup#reuse_on_scale_in}. |
 
 ---
 
@@ -2578,7 +2578,7 @@ MaxGroupPreparedCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#max_group_prepared_capacity EksNodeGroup#max_group_prepared_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#max_group_prepared_capacity EksNodeGroup#max_group_prepared_capacity}.
 
 ---
 
@@ -2590,7 +2590,7 @@ MinSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}.
 
 ---
 
@@ -2602,7 +2602,7 @@ PoolState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#pool_state EksNodeGroup#pool_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#pool_state EksNodeGroup#pool_state}.
 
 ---
 
@@ -2614,7 +2614,7 @@ ReuseOnScaleIn interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/eks_node_group#reuse_on_scale_in EksNodeGroup#reuse_on_scale_in}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_node_group#reuse_on_scale_in EksNodeGroup#reuse_on_scale_in}.
 
 ---
 

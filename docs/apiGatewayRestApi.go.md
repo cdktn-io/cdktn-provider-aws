@@ -4,7 +4,7 @@
 
 ### ApiGatewayRestApi <a name="ApiGatewayRestApi" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.putEndpointConfiguration">PutEndpointConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.resetApiKeySource">ResetApiKeySource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.resetBinaryMediaTypes">ResetBinaryMediaTypes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.resetBody">ResetBody</a></code> | *No description.* |
@@ -92,6 +93,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.resetSecurityPolicy">ResetSecurityPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -416,6 +418,18 @@ func PutEndpointConfiguration(value ApiGatewayRestApiEndpointConfiguration)
 
 ---
 
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.putTimeouts"></a>
+
+```go
+func PutTimeouts(value ApiGatewayRestApiTimeouts)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts">ApiGatewayRestApiTimeouts</a>
+
+---
+
 ##### `ResetApiKeySource` <a name="ResetApiKeySource" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.resetApiKeySource"></a>
 
 ```go
@@ -516,6 +530,12 @@ func ResetTags()
 
 ```go
 func ResetTagsAll()
+```
+
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.resetTimeouts"></a>
+
+```go
+func ResetTimeouts()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -621,7 +641,7 @@ The construct id used in the generated config for the ApiGatewayRestApi to impor
 
 The id of the existing ApiGatewayRestApi that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,6 +676,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.endpointConfiguration">EndpointConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfigurationOutputReference">ApiGatewayRestApiEndpointConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.executionArn">ExecutionArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.rootResourceId">RootResourceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference">ApiGatewayRestApiTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.apiKeySourceInput">ApiKeySourceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.binaryMediaTypesInput">BinaryMediaTypesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.bodyInput">BodyInput</a></code> | <code>*string</code> | *No description.* |
@@ -674,6 +695,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.securityPolicyInput">SecurityPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.apiKeySource">ApiKeySource</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.binaryMediaTypes">BinaryMediaTypes</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.body">Body</a></code> | <code>*string</code> | *No description.* |
@@ -886,6 +908,16 @@ func RootResourceId() *string
 
 ---
 
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.timeouts"></a>
+
+```go
+func Timeouts() ApiGatewayRestApiTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference">ApiGatewayRestApiTimeoutsOutputReference</a>
+
+---
+
 ##### `ApiKeySourceInput`<sup>Optional</sup> <a name="ApiKeySourceInput" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.apiKeySourceInput"></a>
 
 ```go
@@ -1063,6 +1095,16 @@ func TagsInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.property.timeoutsInput"></a>
+
+```go
+func TimeoutsInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1289,6 +1331,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayrestapi"
 	SecurityPolicy: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.apiGatewayRestApi.ApiGatewayRestApiTimeouts,
 }
 ```
 
@@ -1303,24 +1346,25 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayrestapi"
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#name ApiGatewayRestApi#name}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.apiKeySource">ApiKeySource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#api_key_source ApiGatewayRestApi#api_key_source}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.binaryMediaTypes">BinaryMediaTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#binary_media_types ApiGatewayRestApi#binary_media_types}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.body">Body</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#body ApiGatewayRestApi#body}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#description ApiGatewayRestApi#description}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.disableExecuteApiEndpoint">DisableExecuteApiEndpoint</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#disable_execute_api_endpoint ApiGatewayRestApi#disable_execute_api_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.endpointAccessMode">EndpointAccessMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#endpoint_access_mode ApiGatewayRestApi#endpoint_access_mode}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#name ApiGatewayRestApi#name}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.apiKeySource">ApiKeySource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#api_key_source ApiGatewayRestApi#api_key_source}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.binaryMediaTypes">BinaryMediaTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#binary_media_types ApiGatewayRestApi#binary_media_types}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.body">Body</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#body ApiGatewayRestApi#body}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#description ApiGatewayRestApi#description}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.disableExecuteApiEndpoint">DisableExecuteApiEndpoint</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#disable_execute_api_endpoint ApiGatewayRestApi#disable_execute_api_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.endpointAccessMode">EndpointAccessMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#endpoint_access_mode ApiGatewayRestApi#endpoint_access_mode}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.endpointConfiguration">EndpointConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration">ApiGatewayRestApiEndpointConfiguration</a></code> | endpoint_configuration block. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.failOnWarnings">FailOnWarnings</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#id ApiGatewayRestApi#id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.minimumCompressionSize">MinimumCompressionSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#minimum_compression_size ApiGatewayRestApi#minimum_compression_size}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#parameters ApiGatewayRestApi#parameters}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#policy ApiGatewayRestApi#policy}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.putRestApiMode">PutRestApiMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#put_rest_api_mode ApiGatewayRestApi#put_rest_api_mode}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.failOnWarnings">FailOnWarnings</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#id ApiGatewayRestApi#id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.minimumCompressionSize">MinimumCompressionSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#minimum_compression_size ApiGatewayRestApi#minimum_compression_size}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#parameters ApiGatewayRestApi#parameters}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#policy ApiGatewayRestApi#policy}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.putRestApiMode">PutRestApiMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#put_rest_api_mode ApiGatewayRestApi#put_rest_api_mode}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.securityPolicy">SecurityPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#security_policy ApiGatewayRestApi#security_policy}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#tags ApiGatewayRestApi#tags}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#tags_all ApiGatewayRestApi#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.securityPolicy">SecurityPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#security_policy ApiGatewayRestApi#security_policy}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#tags ApiGatewayRestApi#tags}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#tags_all ApiGatewayRestApi#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts">ApiGatewayRestApiTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1402,7 +1446,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#name ApiGatewayRestApi#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#name ApiGatewayRestApi#name}.
 
 ---
 
@@ -1414,7 +1458,7 @@ ApiKeySource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#api_key_source ApiGatewayRestApi#api_key_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#api_key_source ApiGatewayRestApi#api_key_source}.
 
 ---
 
@@ -1426,7 +1470,7 @@ BinaryMediaTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#binary_media_types ApiGatewayRestApi#binary_media_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#binary_media_types ApiGatewayRestApi#binary_media_types}.
 
 ---
 
@@ -1438,7 +1482,7 @@ Body *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#body ApiGatewayRestApi#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#body ApiGatewayRestApi#body}.
 
 ---
 
@@ -1450,7 +1494,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#description ApiGatewayRestApi#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#description ApiGatewayRestApi#description}.
 
 ---
 
@@ -1462,7 +1506,7 @@ DisableExecuteApiEndpoint interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#disable_execute_api_endpoint ApiGatewayRestApi#disable_execute_api_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#disable_execute_api_endpoint ApiGatewayRestApi#disable_execute_api_endpoint}.
 
 ---
 
@@ -1474,7 +1518,7 @@ EndpointAccessMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#endpoint_access_mode ApiGatewayRestApi#endpoint_access_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#endpoint_access_mode ApiGatewayRestApi#endpoint_access_mode}.
 
 ---
 
@@ -1488,7 +1532,7 @@ EndpointConfiguration ApiGatewayRestApiEndpointConfiguration
 
 endpoint_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#endpoint_configuration ApiGatewayRestApi#endpoint_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#endpoint_configuration ApiGatewayRestApi#endpoint_configuration}
 
 ---
 
@@ -1500,7 +1544,7 @@ FailOnWarnings interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}.
 
 ---
 
@@ -1512,7 +1556,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#id ApiGatewayRestApi#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#id ApiGatewayRestApi#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1527,7 +1571,7 @@ MinimumCompressionSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#minimum_compression_size ApiGatewayRestApi#minimum_compression_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#minimum_compression_size ApiGatewayRestApi#minimum_compression_size}.
 
 ---
 
@@ -1539,7 +1583,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#parameters ApiGatewayRestApi#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#parameters ApiGatewayRestApi#parameters}.
 
 ---
 
@@ -1551,7 +1595,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#policy ApiGatewayRestApi#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#policy ApiGatewayRestApi#policy}.
 
 ---
 
@@ -1563,7 +1607,7 @@ PutRestApiMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#put_rest_api_mode ApiGatewayRestApi#put_rest_api_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#put_rest_api_mode ApiGatewayRestApi#put_rest_api_mode}.
 
 ---
 
@@ -1577,7 +1621,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#region ApiGatewayRestApi#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#region ApiGatewayRestApi#region}
 
 ---
 
@@ -1589,7 +1633,7 @@ SecurityPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#security_policy ApiGatewayRestApi#security_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#security_policy ApiGatewayRestApi#security_policy}.
 
 ---
 
@@ -1601,7 +1645,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#tags ApiGatewayRestApi#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#tags ApiGatewayRestApi#tags}.
 
 ---
 
@@ -1613,7 +1657,21 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#tags_all ApiGatewayRestApi#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#tags_all ApiGatewayRestApi#tags_all}.
+
+---
+
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.timeouts"></a>
+
+```go
+Timeouts ApiGatewayRestApiTimeouts
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts">ApiGatewayRestApiTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#timeouts ApiGatewayRestApi#timeouts}
 
 ---
 
@@ -1635,9 +1693,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayrestapi"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.types">Types</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#types ApiGatewayRestApi#types}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#ip_address_type ApiGatewayRestApi#ip_address_type}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.vpcEndpointIds">VpcEndpointIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#vpc_endpoint_ids ApiGatewayRestApi#vpc_endpoint_ids}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.types">Types</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#types ApiGatewayRestApi#types}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#ip_address_type ApiGatewayRestApi#ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.vpcEndpointIds">VpcEndpointIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#vpc_endpoint_ids ApiGatewayRestApi#vpc_endpoint_ids}. |
 
 ---
 
@@ -1649,7 +1707,7 @@ Types *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#types ApiGatewayRestApi#types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#types ApiGatewayRestApi#types}.
 
 ---
 
@@ -1661,7 +1719,7 @@ IpAddressType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#ip_address_type ApiGatewayRestApi#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#ip_address_type ApiGatewayRestApi#ip_address_type}.
 
 ---
 
@@ -1673,7 +1731,67 @@ VpcEndpointIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.57.1/docs/resources/api_gateway_rest_api#vpc_endpoint_ids ApiGatewayRestApi#vpc_endpoint_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#vpc_endpoint_ids ApiGatewayRestApi#vpc_endpoint_ids}.
+
+---
+
+### ApiGatewayRestApiTimeouts <a name="ApiGatewayRestApiTimeouts" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayrestapi"
+
+&apigatewayrestapi.ApiGatewayRestApiTimeouts {
+	Create: *string,
+	Delete: *string,
+	Update: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#create ApiGatewayRestApi#create}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#delete ApiGatewayRestApi#delete}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#update ApiGatewayRestApi#update}. |
+
+---
+
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.create"></a>
+
+```go
+Create *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#create ApiGatewayRestApi#create}.
+
+---
+
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.delete"></a>
+
+```go
+Delete *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#delete ApiGatewayRestApi#delete}.
+
+---
+
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.update"></a>
+
+```go
+Update *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_rest_api#update ApiGatewayRestApi#update}.
 
 ---
 
@@ -2004,6 +2122,342 @@ func InternalValue() ApiGatewayRestApiEndpointConfiguration
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration">ApiGatewayRestApiEndpointConfiguration</a>
+
+---
+
+
+### ApiGatewayRestApiTimeoutsOutputReference <a name="ApiGatewayRestApiTimeoutsOutputReference" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayrestapi"
+
+apigatewayrestapi.NewApiGatewayRestApiTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayRestApiTimeoutsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.resetCreate"></a>
+
+```go
+func ResetCreate()
+```
+
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.resetDelete"></a>
+
+```go
+func ResetDelete()
+```
+
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.resetUpdate"></a>
+
+```go
+func ResetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.createInput"></a>
+
+```go
+func CreateInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.deleteInput"></a>
+
+```go
+func DeleteInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.updateInput"></a>
+
+```go
+func UpdateInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.create"></a>
+
+```go
+func Create() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.delete"></a>
+
+```go
+func Delete() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.update"></a>
+
+```go
+func Update() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeoutsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
