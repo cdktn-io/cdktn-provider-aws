@@ -670,6 +670,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
 
   // client_id_wo - computed: false, optional: true, required: false
   private _clientIdWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientIdWo() {
     return this.getStringAttribute('client_id_wo');
   }
@@ -702,6 +705,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
 
   // client_secret_wo - computed: false, optional: true, required: false
   private _clientSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientSecretWo() {
     return this.getStringAttribute('client_secret_wo');
   }
@@ -1105,6 +1111,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
 
   // client_id_wo - computed: false, optional: true, required: false
   private _clientIdWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientIdWo() {
     return this.getStringAttribute('client_id_wo');
   }
@@ -1137,6 +1146,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
 
   // client_secret_wo - computed: false, optional: true, required: false
   private _clientSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientSecretWo() {
     return this.getStringAttribute('client_secret_wo');
   }
@@ -1530,6 +1542,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
 
   // client_id_wo - computed: false, optional: true, required: false
   private _clientIdWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientIdWo() {
     return this.getStringAttribute('client_id_wo');
   }
@@ -1562,6 +1577,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
 
   // client_secret_wo - computed: false, optional: true, required: false
   private _clientSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientSecretWo() {
     return this.getStringAttribute('client_secret_wo');
   }
@@ -1955,6 +1973,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
 
   // client_id_wo - computed: false, optional: true, required: false
   private _clientIdWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientIdWo() {
     return this.getStringAttribute('client_id_wo');
   }
@@ -1987,6 +2008,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
 
   // client_secret_wo - computed: false, optional: true, required: false
   private _clientSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientSecretWo() {
     return this.getStringAttribute('client_secret_wo');
   }
@@ -2380,6 +2404,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
 
   // client_id_wo - computed: false, optional: true, required: false
   private _clientIdWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientIdWo() {
     return this.getStringAttribute('client_id_wo');
   }
@@ -2412,6 +2439,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
 
   // client_secret_wo - computed: false, optional: true, required: false
   private _clientSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientSecretWo() {
     return this.getStringAttribute('client_secret_wo');
   }
@@ -2805,6 +2835,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
 
   // client_id_wo - computed: false, optional: true, required: false
   private _clientIdWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientIdWo() {
     return this.getStringAttribute('client_id_wo');
   }
@@ -2837,6 +2870,9 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
 
   // client_secret_wo - computed: false, optional: true, required: false
   private _clientSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientSecretWo() {
     return this.getStringAttribute('client_secret_wo');
   }

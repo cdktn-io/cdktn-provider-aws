@@ -342,7 +342,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.kmsCiphertext.KmsCiphertext.moveFromId.parameter.id"></a>
 
@@ -841,7 +841,9 @@ func Plaintext() *string
 
 ---
 
-##### `PlaintextWo`<sup>Required</sup> <a name="PlaintextWo" id="@cdktn/provider-aws.kmsCiphertext.KmsCiphertext.property.plaintextWo"></a>
+##### ~~`PlaintextWo`~~<sup>Required</sup> <a name="PlaintextWo" id="@cdktn/provider-aws.kmsCiphertext.KmsCiphertext.property.plaintextWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```go
 func PlaintextWo() *string

@@ -532,6 +532,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.functions">Functions</a></code> | <code>github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.providerFunctions.AwsProviderFunctions</code> | Provider-defined functions of the aws provider. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.accessKeyInput">AccessKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.allowedAccountIdsInput">AllowedAccountIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -695,6 +696,18 @@ func Alias() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Functions`<sup>Required</sup> <a name="Functions" id="@cdktn/provider-aws.provider.AwsProvider.property.functions"></a>
+
+```go
+func Functions() AwsProviderFunctions
+```
+
+- *Type:* github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.providerFunctions.AwsProviderFunctions
+
+Provider-defined functions of the aws provider.
 
 ---
 

@@ -983,6 +983,9 @@ export class RedshiftCluster extends cdktn.TerraformResource {
 
   // master_password_wo - computed: false, optional: true, required: false
   private _masterPasswordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get masterPasswordWo() {
     return this.getStringAttribute('master_password_wo');
   }
@@ -1313,7 +1316,7 @@ export class RedshiftCluster extends cdktn.TerraformResource {
       manual_snapshot_retention_period: cdktn.numberToTerraform(this._manualSnapshotRetentionPeriod),
       master_password: cdktn.stringToTerraform(this._masterPassword),
       master_password_secret_kms_key_id: cdktn.stringToTerraform(this._masterPasswordSecretKmsKeyId),
-      master_password_wo: cdktn.stringToTerraform(this._masterPasswordWo),
+      master_password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._masterPasswordWo)),
       master_password_wo_version: cdktn.numberToTerraform(this._masterPasswordWoVersion),
       master_username: cdktn.stringToTerraform(this._masterUsername),
       multi_az: cdktn.booleanToTerraform(this._multiAz),
@@ -1488,7 +1491,7 @@ export class RedshiftCluster extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       master_password_wo: {
-        value: cdktn.stringToHclTerraform(this._masterPasswordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._masterPasswordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

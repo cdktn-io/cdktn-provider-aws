@@ -142,6 +142,9 @@ export class TransferHostKey extends cdktn.TerraformResource {
 
   // host_key_body_wo - computed: false, optional: true, required: false
   private _hostKeyBodyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get hostKeyBodyWo() {
     return this.getStringAttribute('host_key_body_wo');
   }
@@ -225,7 +228,7 @@ export class TransferHostKey extends cdktn.TerraformResource {
     return {
       description: cdktn.stringToTerraform(this._description),
       host_key_body: cdktn.stringToTerraform(this._hostKeyBody),
-      host_key_body_wo: cdktn.stringToTerraform(this._hostKeyBodyWo),
+      host_key_body_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._hostKeyBodyWo)),
       region: cdktn.stringToTerraform(this._region),
       server_id: cdktn.stringToTerraform(this._serverId),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
@@ -247,7 +250,7 @@ export class TransferHostKey extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       host_key_body_wo: {
-        value: cdktn.stringToHclTerraform(this._hostKeyBodyWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._hostKeyBodyWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

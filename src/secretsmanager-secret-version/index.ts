@@ -210,6 +210,9 @@ export class SecretsmanagerSecretVersion extends cdktn.TerraformResource {
 
   // secret_string_wo - computed: false, optional: true, required: false
   private _secretStringWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get secretStringWo() {
     return this.getStringAttribute('secret_string_wo');
   }
@@ -272,7 +275,7 @@ export class SecretsmanagerSecretVersion extends cdktn.TerraformResource {
       secret_binary: cdktn.stringToTerraform(this._secretBinary),
       secret_id: cdktn.stringToTerraform(this._secretId),
       secret_string: cdktn.stringToTerraform(this._secretString),
-      secret_string_wo: cdktn.stringToTerraform(this._secretStringWo),
+      secret_string_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._secretStringWo)),
       secret_string_wo_version: cdktn.numberToTerraform(this._secretStringWoVersion),
       version_stages: cdktn.listMapper(cdktn.stringToTerraform, false)(this._versionStages),
     };
@@ -311,7 +314,7 @@ export class SecretsmanagerSecretVersion extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       secret_string_wo: {
-        value: cdktn.stringToHclTerraform(this._secretStringWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._secretStringWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

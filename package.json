@@ -53,10 +53,10 @@
     "@actions/core": "^3.0.0",
     "@cdktn/provider-project": "^0.9.0",
     "@types/node": "^22",
-    "cdktn": "^0.23.0",
-    "cdktn-cli": "^0.23.0",
+    "cdktn": "^0.24.0",
+    "cdktn-cli": "^0.24.0",
     "commit-and-tag-version": "^12",
-    "constructs": "^10.6.0",
+    "constructs": ">=10.6.0 <10.8.0",
     "dot-prop": "^5.2.0",
     "jsii": "~5.9.0",
     "jsii-diff": "^1.139.0",
@@ -68,8 +68,8 @@
     "typescript": "~5.9.0"
   },
   "peerDependencies": {
-    "cdktn": "^0.23.0",
-    "constructs": "^10.6.0"
+    "cdktn": "^0.24.0",
+    "constructs": ">=10.6.0 <10.8.0"
   },
   "pnpm": {
     "overrides": {

@@ -2368,5 +2368,16 @@ export * as dataAwsWorkspacesBundle from './data-aws-workspaces-bundle/index';
 export * as dataAwsWorkspacesDirectory from './data-aws-workspaces-directory/index';
 export * as dataAwsWorkspacesImage from './data-aws-workspaces-image/index';
 export * as dataAwsWorkspacesWorkspace from './data-aws-workspaces-workspace/index';
+export * as ephemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity from './ephemeral-aws-cognito-identity-openid-token-for-developer-identity/index';
+export * as ephemeralAwsEcrAuthorizationToken from './ephemeral-aws-ecr-authorization-token/index';
+export * as ephemeralAwsEcrpublicAuthorizationToken from './ephemeral-aws-ecrpublic-authorization-token/index';
+export * as ephemeralAwsEksClusterAuth from './ephemeral-aws-eks-cluster-auth/index';
+export * as ephemeralAwsKmsSecrets from './ephemeral-aws-kms-secrets/index';
+export * as ephemeralAwsLambdaInvocation from './ephemeral-aws-lambda-invocation/index';
+export * as ephemeralAwsSecretsmanagerRandomPassword from './ephemeral-aws-secretsmanager-random-password/index';
+export * as ephemeralAwsSecretsmanagerSecretVersion from './ephemeral-aws-secretsmanager-secret-version/index';
+export * as ephemeralAwsSsmParameter from './ephemeral-aws-ssm-parameter/index';
+export * as ephemeralAwsStsWebIdentityToken from './ephemeral-aws-sts-web-identity-token/index';
 export * as provider from './provider/index';
+export * as providerFunctions from './provider-functions/index';
 

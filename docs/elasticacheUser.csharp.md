@@ -348,7 +348,7 @@ private void MoveFromId(string Id)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.moveFromId.parameter.id"></a>
 
@@ -1009,7 +1009,9 @@ public string[] Passwords { get; }
 
 ---
 
-##### `PasswordsWo`<sup>Required</sup> <a name="PasswordsWo" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.property.passwordsWo"></a>
+##### ~~`PasswordsWo`~~<sup>Required</sup> <a name="PasswordsWo" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.property.passwordsWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public string PasswordsWo { get; }

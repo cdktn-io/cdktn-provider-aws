@@ -993,6 +993,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.functions">functions</a></code> | <code>cdktn_provider_aws.providerFunctions.AwsProviderFunctions</code> | Provider-defined functions of the aws provider. |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.accessKeyInput">access_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.allowedAccountIdsInput">allowed_account_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1156,6 +1157,18 @@ alias: str
 ```
 
 - *Type:* str
+
+---
+
+##### `functions`<sup>Required</sup> <a name="functions" id="@cdktn/provider-aws.provider.AwsProvider.property.functions"></a>
+
+```python
+functions: AwsProviderFunctions
+```
+
+- *Type:* cdktn_provider_aws.providerFunctions.AwsProviderFunctions
+
+Provider-defined functions of the aws provider.
 
 ---
 

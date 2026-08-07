@@ -402,6 +402,9 @@ export class SsmParameter extends cdktn.TerraformResource {
 
   // value_wo - computed: false, optional: true, required: false
   private _valueWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get valueWo() {
     return this.getStringAttribute('value_wo');
   }
@@ -458,7 +461,7 @@ export class SsmParameter extends cdktn.TerraformResource {
       tier: cdktn.stringToTerraform(this._tier),
       type: cdktn.stringToTerraform(this._type),
       value: cdktn.stringToTerraform(this._value),
-      value_wo: cdktn.stringToTerraform(this._valueWo),
+      value_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._valueWo)),
       value_wo_version: cdktn.numberToTerraform(this._valueWoVersion),
     };
   }
@@ -556,7 +559,7 @@ export class SsmParameter extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       value_wo: {
-        value: cdktn.stringToHclTerraform(this._valueWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._valueWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
