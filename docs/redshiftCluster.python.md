@@ -912,7 +912,7 @@ def move_from_id(
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.moveFromId.parameter.id"></a>
 
@@ -2418,7 +2418,9 @@ master_password_secret_kms_key_id: str
 
 ---
 
-##### `master_password_wo`<sup>Required</sup> <a name="master_password_wo" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.property.masterPasswordWo"></a>
+##### ~~`master_password_wo`~~<sup>Required</sup> <a name="master_password_wo" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.property.masterPasswordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 master_password_wo: str

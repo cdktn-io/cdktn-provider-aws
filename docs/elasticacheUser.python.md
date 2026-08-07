@@ -583,7 +583,7 @@ def move_from_id(
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.moveFromId.parameter.id"></a>
 
@@ -1304,7 +1304,9 @@ passwords: typing.List[str]
 
 ---
 
-##### `passwords_wo`<sup>Required</sup> <a name="passwords_wo" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.property.passwordsWo"></a>
+##### ~~`passwords_wo`~~<sup>Required</sup> <a name="passwords_wo" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.property.passwordsWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 passwords_wo: str
