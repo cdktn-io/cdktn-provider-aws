@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreresourcepolicy"
 
 bedrockagentcoreresourcepolicy.NewBedrockagentcoreResourcePolicy(scope Construct, id *string, config BedrockagentcoreResourcePolicyConfig) BedrockagentcoreResourcePolicy
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreresourcepolicy"
 
 bedrockagentcoreresourcepolicy.BedrockagentcoreResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreresourcepolicy"
 
 bedrockagentcoreresourcepolicy.BedrockagentcoreResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ bedrockagentcoreresourcepolicy.BedrockagentcoreResourcePolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreresourcepolicy"
 
 bedrockagentcoreresourcepolicy.BedrockagentcoreResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ bedrockagentcoreresourcepolicy.BedrockagentcoreResourcePolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreresourcepolicy"
 
 bedrockagentcoreresourcepolicy.BedrockagentcoreResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreResourcePolicy.BedrockagentcoreResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreresourcepolicy"
 
 &bedrockagentcoreresourcepolicy.BedrockagentcoreResourcePolicyConfig {
 	Connection: interface{},

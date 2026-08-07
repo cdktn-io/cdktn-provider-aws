@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerframeworkshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerframeworkshare"
 
 auditmanagerframeworkshare.NewAuditmanagerFrameworkShare(scope Construct, id *string, config AuditmanagerFrameworkShareConfig) AuditmanagerFrameworkShare
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerframeworkshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerframeworkshare"
 
 auditmanagerframeworkshare.AuditmanagerFrameworkShare_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerframeworkshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerframeworkshare"
 
 auditmanagerframeworkshare.AuditmanagerFrameworkShare_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ auditmanagerframeworkshare.AuditmanagerFrameworkShare_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerframeworkshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerframeworkshare"
 
 auditmanagerframeworkshare.AuditmanagerFrameworkShare_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ auditmanagerframeworkshare.AuditmanagerFrameworkShare_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerframeworkshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerframeworkshare"
 
 auditmanagerframeworkshare.AuditmanagerFrameworkShare_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerframeworkshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagerframeworkshare"
 
 &auditmanagerframeworkshare.AuditmanagerFrameworkShareConfig {
 	Connection: interface{},

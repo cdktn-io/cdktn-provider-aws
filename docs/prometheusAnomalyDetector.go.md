@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetector(scope Construct, id *string, config PrometheusAnomalyDetectorConfig) PrometheusAnomalyDetector
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.PrometheusAnomalyDetector_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.PrometheusAnomalyDetector_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ prometheusanomalydetector.PrometheusAnomalyDetector_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.PrometheusAnomalyDetector_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ prometheusanomalydetector.PrometheusAnomalyDetector_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.PrometheusAnomalyDetector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1019,7 +1019,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 &prometheusanomalydetector.PrometheusAnomalyDetectorConfig {
 	Connection: interface{},
@@ -1037,7 +1037,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetec
 	MissingDataAction: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.prometheusAnomalyDetector.PrometheusAnomalyDetectorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.prometheusAnomalyDetector.PrometheusAnomalyDetectorTimeouts,
 }
 ```
 
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 &prometheusanomalydetector.PrometheusAnomalyDetectorConfiguration {
 	RandomCutForest: interface{},
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationRandomCutForest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 &prometheusanomalydetector.PrometheusAnomalyDetectorConfigurationRandomCutForest {
 	Query: *string,
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromAbove.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 &prometheusanomalydetector.PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromAbove {
 	Amount: *f64,
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromBelow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 &prometheusanomalydetector.PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromBelow {
 	Amount: *f64,
@@ -1473,7 +1473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorMissingDataAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 &prometheusanomalydetector.PrometheusAnomalyDetectorMissingDataAction {
 	MarkAsAnomaly: interface{},
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 &prometheusanomalydetector.PrometheusAnomalyDetectorTimeouts {
 	Create: *string,
@@ -1587,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusAnomalyDetectorConfigurationList
 ```
@@ -1747,7 +1747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusAnomalyDetectorConfigurationOutputReference
 ```
@@ -2056,7 +2056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromAboveList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromAboveList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromAboveList
 ```
@@ -2216,7 +2216,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromAboveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromAboveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromAboveOutputReference
 ```
@@ -2541,7 +2541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromBelowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromBelowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromBelowList
 ```
@@ -2701,7 +2701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromBelowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromBelowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusAnomalyDetectorConfigurationRandomCutForestIgnoreNearExpectedFromBelowOutputReference
 ```
@@ -3026,7 +3026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationRandomCutForestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorConfigurationRandomCutForestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusAnomalyDetectorConfigurationRandomCutForestList
 ```
@@ -3186,7 +3186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorConfigurationRandomCutForestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorConfigurationRandomCutForestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusAnomalyDetectorConfigurationRandomCutForestOutputReference
 ```
@@ -3617,7 +3617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorMissingDataActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorMissingDataActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusAnomalyDetectorMissingDataActionList
 ```
@@ -3777,7 +3777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorMissingDataActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorMissingDataActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusAnomalyDetectorMissingDataActionOutputReference
 ```
@@ -4102,7 +4102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAnomalyDetector.PrometheusAnomalyDetectorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusanomalydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusanomalydetector"
 
 prometheusanomalydetector.NewPrometheusAnomalyDetectorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrometheusAnomalyDetectorTimeoutsOutputReference
 ```

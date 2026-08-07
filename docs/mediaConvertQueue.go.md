@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mediaconvertqueue"
 
 mediaconvertqueue.NewMediaConvertQueue(scope Construct, id *string, config MediaConvertQueueConfig) MediaConvertQueue
 ```
@@ -476,7 +476,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mediaconvertqueue"
 
 mediaconvertqueue.MediaConvertQueue_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mediaconvertqueue"
 
 mediaconvertqueue.MediaConvertQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ mediaconvertqueue.MediaConvertQueue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mediaconvertqueue"
 
 mediaconvertqueue.MediaConvertQueue_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ mediaconvertqueue.MediaConvertQueue_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mediaconvertqueue"
 
 mediaconvertqueue.MediaConvertQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -996,7 +996,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mediaconvertqueue"
 
 &mediaconvertqueue.MediaConvertQueueConfig {
 	Connection: interface{},
@@ -1012,7 +1012,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mediaconvertqueue"
 	Id: *string,
 	PricingPlan: *string,
 	Region: *string,
-	ReservationPlanSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mediaConvertQueue.MediaConvertQueueReservationPlanSettings,
+	ReservationPlanSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mediaConvertQueue.MediaConvertQueueReservationPlanSettings,
 	Status: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mediaconvertqueue"
 
 &mediaconvertqueue.MediaConvertQueueReservationPlanSettings {
 	Commitment: *string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mediaconvertqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mediaconvertqueue"
 
 mediaconvertqueue.NewMediaConvertQueueReservationPlanSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MediaConvertQueueReservationPlanSettingsOutputReference
 ```

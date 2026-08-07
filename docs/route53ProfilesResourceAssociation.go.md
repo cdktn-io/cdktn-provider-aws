@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ProfilesResourceAssociation.Route53ProfilesResourceAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53profilesresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesresourceassociation"
 
 route53profilesresourceassociation.NewRoute53ProfilesResourceAssociation(scope Construct, id *string, config Route53ProfilesResourceAssociationConfig) Route53ProfilesResourceAssociation
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route53ProfilesResourceAssociation.Route53ProfilesResourceAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53profilesresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesresourceassociation"
 
 route53profilesresourceassociation.Route53ProfilesResourceAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route53ProfilesResourceAssociation.Route53ProfilesResourceAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53profilesresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesresourceassociation"
 
 route53profilesresourceassociation.Route53ProfilesResourceAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ route53profilesresourceassociation.Route53ProfilesResourceAssociation_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route53ProfilesResourceAssociation.Route53ProfilesResourceAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53profilesresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesresourceassociation"
 
 route53profilesresourceassociation.Route53ProfilesResourceAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ route53profilesresourceassociation.Route53ProfilesResourceAssociation_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route53ProfilesResourceAssociation.Route53ProfilesResourceAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53profilesresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesresourceassociation"
 
 route53profilesresourceassociation.Route53ProfilesResourceAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53ProfilesResourceAssociation.Route53ProfilesResourceAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53profilesresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesresourceassociation"
 
 &route53profilesresourceassociation.Route53ProfilesResourceAssociationConfig {
 	Connection: interface{},
@@ -925,7 +925,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53profilesresourc
 	ResourceArn: *string,
 	Region: *string,
 	ResourceProperties: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53ProfilesResourceAssociation.Route53ProfilesResourceAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53ProfilesResourceAssociation.Route53ProfilesResourceAssociationTimeouts,
 }
 ```
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53ProfilesResourceAssociation.Route53ProfilesResourceAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53profilesresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesresourceassociation"
 
 &route53profilesresourceassociation.Route53ProfilesResourceAssociationTimeouts {
 	Create: *string,
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ProfilesResourceAssociation.Route53ProfilesResourceAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53profilesresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesresourceassociation"
 
 route53profilesresourceassociation.NewRoute53ProfilesResourceAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53ProfilesResourceAssociationTimeoutsOutputReference
 ```

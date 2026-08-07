@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipampoolcidr"
 
 vpcipampoolcidr.NewVpcIpamPoolCidr(scope Construct, id *string, config VpcIpamPoolCidrConfig) VpcIpamPoolCidr
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipampoolcidr"
 
 vpcipampoolcidr.VpcIpamPoolCidr_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipampoolcidr"
 
 vpcipampoolcidr.VpcIpamPoolCidr_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ vpcipampoolcidr.VpcIpamPoolCidr_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipampoolcidr"
 
 vpcipampoolcidr.VpcIpamPoolCidr_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ vpcipampoolcidr.VpcIpamPoolCidr_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipampoolcidr"
 
 vpcipampoolcidr.VpcIpamPoolCidr_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -922,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipampoolcidr"
 
 &vpcipampoolcidr.VpcIpamPoolCidrCidrAuthorizationContext {
 	Message: *string,
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipampoolcidr"
 
 &vpcipampoolcidr.VpcIpamPoolCidrConfig {
 	Connection: interface{},
@@ -980,11 +980,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
 	Provisioners: *[]interface{},
 	IpamPoolId: *string,
 	Cidr: *string,
-	CidrAuthorizationContext: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext,
+	CidrAuthorizationContext: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext,
 	Id: *string,
 	NetmaskLength: *f64,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts,
 }
 ```
 
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipampoolcidr"
 
 &vpcipampoolcidr.VpcIpamPoolCidrTimeouts {
 	Create: *string,
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipampoolcidr"
 
 vpcipampoolcidr.NewVpcIpamPoolCidrCidrAuthorizationContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcIpamPoolCidrCidrAuthorizationContextOutputReference
 ```
@@ -1532,7 +1532,7 @@ func InternalValue() VpcIpamPoolCidrCidrAuthorizationContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcipampoolcidr"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipampoolcidr"
 
 vpcipampoolcidr.NewVpcIpamPoolCidrTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcIpamPoolCidrTimeoutsOutputReference
 ```

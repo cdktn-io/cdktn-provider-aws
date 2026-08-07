@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectPhoneNumberContactFlowAssociation.ConnectPhoneNumberContactFlowAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectphonenumbercontactflowassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectphonenumbercontactflowassociation"
 
 connectphonenumbercontactflowassociation.NewConnectPhoneNumberContactFlowAssociation(scope Construct, id *string, config ConnectPhoneNumberContactFlowAssociationConfig) ConnectPhoneNumberContactFlowAssociation
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.connectPhoneNumberContactFlowAssociation.ConnectPhoneNumberContactFlowAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectphonenumbercontactflowassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectphonenumbercontactflowassociation"
 
 connectphonenumbercontactflowassociation.ConnectPhoneNumberContactFlowAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.connectPhoneNumberContactFlowAssociation.ConnectPhoneNumberContactFlowAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectphonenumbercontactflowassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectphonenumbercontactflowassociation"
 
 connectphonenumbercontactflowassociation.ConnectPhoneNumberContactFlowAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ connectphonenumbercontactflowassociation.ConnectPhoneNumberContactFlowAssociatio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.connectPhoneNumberContactFlowAssociation.ConnectPhoneNumberContactFlowAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectphonenumbercontactflowassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectphonenumbercontactflowassociation"
 
 connectphonenumbercontactflowassociation.ConnectPhoneNumberContactFlowAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ connectphonenumbercontactflowassociation.ConnectPhoneNumberContactFlowAssociatio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.connectPhoneNumberContactFlowAssociation.ConnectPhoneNumberContactFlowAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectphonenumbercontactflowassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectphonenumbercontactflowassociation"
 
 connectphonenumbercontactflowassociation.ConnectPhoneNumberContactFlowAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectPhoneNumberContactFlowAssociation.ConnectPhoneNumberContactFlowAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectphonenumbercontactflowassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectphonenumbercontactflowassociation"
 
 &connectphonenumbercontactflowassociation.ConnectPhoneNumberContactFlowAssociationConfig {
 	Connection: interface{},

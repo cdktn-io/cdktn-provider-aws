@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlists"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2managedprefixlists"
 
 dataawsec2managedprefixlists.NewDataAwsEc2ManagedPrefixLists(scope Construct, id *string, config DataAwsEc2ManagedPrefixListsConfig) DataAwsEc2ManagedPrefixLists
 ```
@@ -339,7 +339,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlists"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2managedprefixlists"
 
 dataawsec2managedprefixlists.DataAwsEc2ManagedPrefixLists_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlists"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2managedprefixlists"
 
 dataawsec2managedprefixlists.DataAwsEc2ManagedPrefixLists_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsec2managedprefixlists.DataAwsEc2ManagedPrefixLists_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlists"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2managedprefixlists"
 
 dataawsec2managedprefixlists.DataAwsEc2ManagedPrefixLists_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataawsec2managedprefixlists.DataAwsEc2ManagedPrefixLists_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlists"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2managedprefixlists"
 
 dataawsec2managedprefixlists.DataAwsEc2ManagedPrefixLists_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixListsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlists"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2managedprefixlists"
 
 &dataawsec2managedprefixlists.DataAwsEc2ManagedPrefixListsConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixListsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlists"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2managedprefixlists"
 
 &dataawsec2managedprefixlists.DataAwsEc2ManagedPrefixListsFilter {
 	Name: *string,
@@ -918,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixListsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlists"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2managedprefixlists"
 
 dataawsec2managedprefixlists.NewDataAwsEc2ManagedPrefixListsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ManagedPrefixListsFilterList
 ```
@@ -1078,7 +1078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixListsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlists"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2managedprefixlists"
 
 dataawsec2managedprefixlists.NewDataAwsEc2ManagedPrefixListsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ManagedPrefixListsFilterOutputReference
 ```

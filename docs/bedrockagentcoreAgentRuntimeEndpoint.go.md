@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreAgentRuntimeEndpoint.BedrockagentcoreAgentRuntimeEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreagentruntimeendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreagentruntimeendpoint"
 
 bedrockagentcoreagentruntimeendpoint.NewBedrockagentcoreAgentRuntimeEndpoint(scope Construct, id *string, config BedrockagentcoreAgentRuntimeEndpointConfig) BedrockagentcoreAgentRuntimeEndpoint
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreAgentRuntimeEndpoint.BedrockagentcoreAgentRuntimeEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreagentruntimeendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreagentruntimeendpoint"
 
 bedrockagentcoreagentruntimeendpoint.BedrockagentcoreAgentRuntimeEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreAgentRuntimeEndpoint.BedrockagentcoreAgentRuntimeEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreagentruntimeendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreagentruntimeendpoint"
 
 bedrockagentcoreagentruntimeendpoint.BedrockagentcoreAgentRuntimeEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ bedrockagentcoreagentruntimeendpoint.BedrockagentcoreAgentRuntimeEndpoint_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreAgentRuntimeEndpoint.BedrockagentcoreAgentRuntimeEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreagentruntimeendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreagentruntimeendpoint"
 
 bedrockagentcoreagentruntimeendpoint.BedrockagentcoreAgentRuntimeEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ bedrockagentcoreagentruntimeendpoint.BedrockagentcoreAgentRuntimeEndpoint_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreAgentRuntimeEndpoint.BedrockagentcoreAgentRuntimeEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreagentruntimeendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreagentruntimeendpoint"
 
 bedrockagentcoreagentruntimeendpoint.BedrockagentcoreAgentRuntimeEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreAgentRuntimeEndpoint.BedrockagentcoreAgentRuntimeEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreagentruntimeendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreagentruntimeendpoint"
 
 &bedrockagentcoreagentruntimeendpoint.BedrockagentcoreAgentRuntimeEndpointConfig {
 	Connection: interface{},
@@ -940,7 +940,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreagentr
 	Description: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentcoreAgentRuntimeEndpoint.BedrockagentcoreAgentRuntimeEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentcoreAgentRuntimeEndpoint.BedrockagentcoreAgentRuntimeEndpointTimeouts,
 }
 ```
 
@@ -1128,7 +1128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreAgentRuntimeEndpoint.BedrockagentcoreAgentRuntimeEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreagentruntimeendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreagentruntimeendpoint"
 
 &bedrockagentcoreagentruntimeendpoint.BedrockagentcoreAgentRuntimeEndpointTimeouts {
 	Create: *string,
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreAgentRuntimeEndpoint.BedrockagentcoreAgentRuntimeEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcoreagentruntimeendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcoreagentruntimeendpoint"
 
 bedrockagentcoreagentruntimeendpoint.NewBedrockagentcoreAgentRuntimeEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreAgentRuntimeEndpointTimeoutsOutputReference
 ```

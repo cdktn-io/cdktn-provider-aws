@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksCluster(scope Construct, id *string, config DataAwsEksClusterConfig) DataAwsEksCluster
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.DataAwsEksCluster_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.DataAwsEksCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsekscluster.DataAwsEksCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.DataAwsEksCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsekscluster.DataAwsEksCluster_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.DataAwsEksCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -916,7 +916,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterAccessConfig {
 
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterCertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterCertificateAuthority {
 
@@ -942,7 +942,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterComputeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterComputeConfig {
 
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterConfig {
 	Connection: interface{},
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterControlPlaneScalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterControlPlaneScalingConfig {
 
@@ -1131,7 +1131,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterIdentity {
 
@@ -1144,7 +1144,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterIdentityOidc {
 
@@ -1157,7 +1157,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterKubernetesNetworkConfig {
 
@@ -1170,7 +1170,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancing {
 
@@ -1183,7 +1183,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterOutpostConfig {
 
@@ -1196,7 +1196,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigControlPlanePlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterOutpostConfigControlPlanePlacement {
 
@@ -1209,7 +1209,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigEtcdPlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterOutpostConfigEtcdPlacement {
 
@@ -1222,7 +1222,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterRemoteNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterRemoteNetworkConfig {
 
@@ -1235,7 +1235,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworks {
 
@@ -1248,7 +1248,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterRemoteNetworkConfigRemotePodNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterRemoteNetworkConfigRemotePodNetworks {
 
@@ -1261,7 +1261,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterStorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterStorageConfig {
 
@@ -1274,7 +1274,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterStorageConfigBlockStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterStorageConfigBlockStorage {
 
@@ -1287,7 +1287,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterUpgradePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterUpgradePolicy {
 
@@ -1300,7 +1300,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterVpcConfig {
 
@@ -1313,7 +1313,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterZonalShiftConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 &dataawsekscluster.DataAwsEksClusterZonalShiftConfig {
 
@@ -1328,7 +1328,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterAccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterAccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterAccessConfigList
 ```
@@ -1477,7 +1477,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterAccessConfigOutputReference
 ```
@@ -1766,7 +1766,7 @@ func InternalValue() DataAwsEksClusterAccessConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterCertificateAuthorityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterCertificateAuthorityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterCertificateAuthorityList
 ```
@@ -1915,7 +1915,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterCertificateAuthorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterCertificateAuthorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterCertificateAuthorityOutputReference
 ```
@@ -2193,7 +2193,7 @@ func InternalValue() DataAwsEksClusterCertificateAuthority
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterComputeConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterComputeConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterComputeConfigList
 ```
@@ -2342,7 +2342,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterComputeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterComputeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterComputeConfigOutputReference
 ```
@@ -2642,7 +2642,7 @@ func InternalValue() DataAwsEksClusterComputeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterControlPlaneScalingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterControlPlaneScalingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterControlPlaneScalingConfigList
 ```
@@ -2791,7 +2791,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterControlPlaneScalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterControlPlaneScalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterControlPlaneScalingConfigOutputReference
 ```
@@ -3069,7 +3069,7 @@ func InternalValue() DataAwsEksClusterControlPlaneScalingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterIdentityList
 ```
@@ -3218,7 +3218,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityOidcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterIdentityOidcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterIdentityOidcList
 ```
@@ -3367,7 +3367,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterIdentityOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterIdentityOidcOutputReference
 ```
@@ -3645,7 +3645,7 @@ func InternalValue() DataAwsEksClusterIdentityOidc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterIdentityOutputReference
 ```
@@ -3923,7 +3923,7 @@ func InternalValue() DataAwsEksClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingList
 ```
@@ -4072,7 +4072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference
 ```
@@ -4350,7 +4350,7 @@ func InternalValue() DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancin
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterKubernetesNetworkConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterKubernetesNetworkConfigList
 ```
@@ -4499,7 +4499,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterKubernetesNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterKubernetesNetworkConfigOutputReference
 ```
@@ -4810,7 +4810,7 @@ func InternalValue() DataAwsEksClusterKubernetesNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigControlPlanePlacementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterOutpostConfigControlPlanePlacementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterOutpostConfigControlPlanePlacementList
 ```
@@ -4959,7 +4959,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigControlPlanePlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterOutpostConfigControlPlanePlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterOutpostConfigControlPlanePlacementOutputReference
 ```
@@ -5248,7 +5248,7 @@ func InternalValue() DataAwsEksClusterOutpostConfigControlPlanePlacement
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigEtcdPlacementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterOutpostConfigEtcdPlacementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterOutpostConfigEtcdPlacementList
 ```
@@ -5397,7 +5397,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigEtcdPlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterOutpostConfigEtcdPlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterOutpostConfigEtcdPlacementOutputReference
 ```
@@ -5675,7 +5675,7 @@ func InternalValue() DataAwsEksClusterOutpostConfigEtcdPlacement
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterOutpostConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterOutpostConfigList
 ```
@@ -5824,7 +5824,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterOutpostConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterOutpostConfigOutputReference
 ```
@@ -6146,7 +6146,7 @@ func InternalValue() DataAwsEksClusterOutpostConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterRemoteNetworkConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterRemoteNetworkConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterRemoteNetworkConfigList
 ```
@@ -6295,7 +6295,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterRemoteNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterRemoteNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterRemoteNetworkConfigOutputReference
 ```
@@ -6584,7 +6584,7 @@ func InternalValue() DataAwsEksClusterRemoteNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworksList
 ```
@@ -6733,7 +6733,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworksOutputReference
 ```
@@ -7011,7 +7011,7 @@ func InternalValue() DataAwsEksClusterRemoteNetworkConfigRemoteNodeNetworks
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterRemoteNetworkConfigRemotePodNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterRemoteNetworkConfigRemotePodNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterRemoteNetworkConfigRemotePodNetworksList
 ```
@@ -7160,7 +7160,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterRemoteNetworkConfigRemotePodNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterRemoteNetworkConfigRemotePodNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterRemoteNetworkConfigRemotePodNetworksOutputReference
 ```
@@ -7438,7 +7438,7 @@ func InternalValue() DataAwsEksClusterRemoteNetworkConfigRemotePodNetworks
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterStorageConfigBlockStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterStorageConfigBlockStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterStorageConfigBlockStorageList
 ```
@@ -7587,7 +7587,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterStorageConfigBlockStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterStorageConfigBlockStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterStorageConfigBlockStorageOutputReference
 ```
@@ -7865,7 +7865,7 @@ func InternalValue() DataAwsEksClusterStorageConfigBlockStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterStorageConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterStorageConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterStorageConfigList
 ```
@@ -8014,7 +8014,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterStorageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterStorageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterStorageConfigOutputReference
 ```
@@ -8292,7 +8292,7 @@ func InternalValue() DataAwsEksClusterStorageConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterUpgradePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterUpgradePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterUpgradePolicyList
 ```
@@ -8441,7 +8441,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterUpgradePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterUpgradePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterUpgradePolicyOutputReference
 ```
@@ -8719,7 +8719,7 @@ func InternalValue() DataAwsEksClusterUpgradePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterVpcConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterVpcConfigList
 ```
@@ -8868,7 +8868,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterVpcConfigOutputReference
 ```
@@ -9223,7 +9223,7 @@ func InternalValue() DataAwsEksClusterVpcConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterZonalShiftConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterZonalShiftConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterZonalShiftConfigList
 ```
@@ -9372,7 +9372,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksCluster.DataAwsEksClusterZonalShiftConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsekscluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsekscluster"
 
 dataawsekscluster.NewDataAwsEksClusterZonalShiftConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterZonalShiftConfigOutputReference
 ```

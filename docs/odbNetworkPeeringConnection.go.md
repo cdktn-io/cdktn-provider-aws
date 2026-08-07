@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetworkpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetworkpeeringconnection"
 
 odbnetworkpeeringconnection.NewOdbNetworkPeeringConnection(scope Construct, id *string, config OdbNetworkPeeringConnectionConfig) OdbNetworkPeeringConnection
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetworkpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetworkpeeringconnection"
 
 odbnetworkpeeringconnection.OdbNetworkPeeringConnection_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetworkpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetworkpeeringconnection"
 
 odbnetworkpeeringconnection.OdbNetworkPeeringConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ odbnetworkpeeringconnection.OdbNetworkPeeringConnection_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetworkpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetworkpeeringconnection"
 
 odbnetworkpeeringconnection.OdbNetworkPeeringConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ odbnetworkpeeringconnection.OdbNetworkPeeringConnection_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetworkpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetworkpeeringconnection"
 
 odbnetworkpeeringconnection.OdbNetworkPeeringConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1019,7 +1019,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetworkpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetworkpeeringconnection"
 
 &odbnetworkpeeringconnection.OdbNetworkPeeringConnectionConfig {
 	Connection: interface{},
@@ -1036,7 +1036,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetworkpeeringconne
 	PeerNetworkCidrs: *[]*string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionTimeouts,
 }
 ```
 
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetworkpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetworkpeeringconnection"
 
 &odbnetworkpeeringconnection.OdbNetworkPeeringConnectionTimeouts {
 	Create: *string,
@@ -1317,7 +1317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/odbnetworkpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbnetworkpeeringconnection"
 
 odbnetworkpeeringconnection.NewOdbNetworkPeeringConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OdbNetworkPeeringConnectionTimeoutsOutputReference
 ```

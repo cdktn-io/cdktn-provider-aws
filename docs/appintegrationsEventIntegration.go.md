@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appintegrationseventintegration"
 
 appintegrationseventintegration.NewAppintegrationsEventIntegration(scope Construct, id *string, config AppintegrationsEventIntegrationConfig) AppintegrationsEventIntegration
 ```
@@ -448,7 +448,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appintegrationseventintegration"
 
 appintegrationseventintegration.AppintegrationsEventIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appintegrationseventintegration"
 
 appintegrationseventintegration.AppintegrationsEventIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ appintegrationseventintegration.AppintegrationsEventIntegration_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appintegrationseventintegration"
 
 appintegrationseventintegration.AppintegrationsEventIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ appintegrationseventintegration.AppintegrationsEventIntegration_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appintegrationseventintegration"
 
 appintegrationseventintegration.AppintegrationsEventIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appintegrationseventintegration"
 
 &appintegrationseventintegration.AppintegrationsEventIntegrationConfig {
 	Connection: interface{},
@@ -935,7 +935,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appintegrationseventin
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	EventbridgeBus: *string,
-	EventFilter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilter,
+	EventFilter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilter,
 	Name: *string,
 	Description: *string,
 	Id: *string,
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appintegrationseventintegration"
 
 &appintegrationseventintegration.AppintegrationsEventIntegrationEventFilter {
 	Source: *string,
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appintegrationseventintegration"
 
 appintegrationseventintegration.NewAppintegrationsEventIntegrationEventFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppintegrationsEventIntegrationEventFilterOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDmsReplicationTask.DataAwsDmsReplicationTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdmsreplicationtask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdmsreplicationtask"
 
 dataawsdmsreplicationtask.NewDataAwsDmsReplicationTask(scope Construct, id *string, config DataAwsDmsReplicationTaskConfig) DataAwsDmsReplicationTask
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDmsReplicationTask.DataAwsDmsReplicationTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdmsreplicationtask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdmsreplicationtask"
 
 dataawsdmsreplicationtask.DataAwsDmsReplicationTask_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDmsReplicationTask.DataAwsDmsReplicationTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdmsreplicationtask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdmsreplicationtask"
 
 dataawsdmsreplicationtask.DataAwsDmsReplicationTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsdmsreplicationtask.DataAwsDmsReplicationTask_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDmsReplicationTask.DataAwsDmsReplicationTask.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdmsreplicationtask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdmsreplicationtask"
 
 dataawsdmsreplicationtask.DataAwsDmsReplicationTask_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsdmsreplicationtask.DataAwsDmsReplicationTask_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDmsReplicationTask.DataAwsDmsReplicationTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdmsreplicationtask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdmsreplicationtask"
 
 dataawsdmsreplicationtask.DataAwsDmsReplicationTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDmsReplicationTask.DataAwsDmsReplicationTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdmsreplicationtask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdmsreplicationtask"
 
 &dataawsdmsreplicationtask.DataAwsDmsReplicationTaskConfig {
 	Connection: interface{},

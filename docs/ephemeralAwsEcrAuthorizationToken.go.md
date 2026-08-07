@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawsecrauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrauthorizationtoken"
 
 ephemeralawsecrauthorizationtoken.NewEphemeralAwsEcrAuthorizationToken(scope Construct, id *string, config EphemeralAwsEcrAuthorizationTokenConfig) EphemeralAwsEcrAuthorizationToken
 ```
@@ -302,7 +302,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawsecrauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrauthorizationtoken"
 
 ephemeralawsecrauthorizationtoken.EphemeralAwsEcrAuthorizationToken_IsConstruct(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawsecrauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrauthorizationtoken"
 
 ephemeralawsecrauthorizationtoken.EphemeralAwsEcrAuthorizationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ ephemeralawsecrauthorizationtoken.EphemeralAwsEcrAuthorizationToken_IsTerraformE
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationToken.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawsecrauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrauthorizationtoken"
 
 ephemeralawsecrauthorizationtoken.EphemeralAwsEcrAuthorizationToken_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawsecrauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrauthorizationtoken"
 
 &ephemeralawsecrauthorizationtoken.EphemeralAwsEcrAuthorizationTokenConfig {
 	Count: interface{},

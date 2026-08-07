@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2Cluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudhsmv2cluster"
 
 dataawscloudhsmv2cluster.NewDataAwsCloudhsmV2Cluster(scope Construct, id *string, config DataAwsCloudhsmV2ClusterConfig) DataAwsCloudhsmV2Cluster
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2Cluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudhsmv2cluster"
 
 dataawscloudhsmv2cluster.DataAwsCloudhsmV2Cluster_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2Cluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudhsmv2cluster"
 
 dataawscloudhsmv2cluster.DataAwsCloudhsmV2Cluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawscloudhsmv2cluster.DataAwsCloudhsmV2Cluster_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2Cluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudhsmv2cluster"
 
 dataawscloudhsmv2cluster.DataAwsCloudhsmV2Cluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawscloudhsmv2cluster.DataAwsCloudhsmV2Cluster_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2Cluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudhsmv2cluster"
 
 dataawscloudhsmv2cluster.DataAwsCloudhsmV2Cluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudhsmv2cluster"
 
 &dataawscloudhsmv2cluster.DataAwsCloudhsmV2ClusterClusterCertificates {
 
@@ -731,7 +731,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudhsmv2clust
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudhsmv2cluster"
 
 &dataawscloudhsmv2cluster.DataAwsCloudhsmV2ClusterConfig {
 	Connection: interface{},
@@ -896,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudhsmv2cluster"
 
 dataawscloudhsmv2cluster.NewDataAwsCloudhsmV2ClusterClusterCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudhsmV2ClusterClusterCertificatesList
 ```
@@ -1045,7 +1045,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudhsmv2cluster"
 
 dataawscloudhsmv2cluster.NewDataAwsCloudhsmV2ClusterClusterCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalog(scope Construct, id *string, config DataAwsGlueCatalogConfig) DataAwsGlueCatalog
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.DataAwsGlueCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.DataAwsGlueCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsgluecatalog.DataAwsGlueCatalog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalog.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.DataAwsGlueCatalog_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsgluecatalog.DataAwsGlueCatalog_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.DataAwsGlueCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCatalogProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 &dataawsgluecatalog.DataAwsGlueCatalogCatalogProperties {
 
@@ -772,7 +772,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCatalogPropertiesDataLakeAccessProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 &dataawsgluecatalog.DataAwsGlueCatalogCatalogPropertiesDataLakeAccessProperties {
 
@@ -785,7 +785,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCatalogPropertiesIcebergOptimizationProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 &dataawsgluecatalog.DataAwsGlueCatalogCatalogPropertiesIcebergOptimizationProperties {
 
@@ -798,7 +798,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 &dataawsgluecatalog.DataAwsGlueCatalogConfig {
 	Connection: interface{},
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateDatabaseDefaultPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 &dataawsgluecatalog.DataAwsGlueCatalogCreateDatabaseDefaultPermissions {
 
@@ -943,7 +943,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 &dataawsgluecatalog.DataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipal {
 
@@ -956,7 +956,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateTableDefaultPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 &dataawsgluecatalog.DataAwsGlueCatalogCreateTableDefaultPermissions {
 
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateTableDefaultPermissionsPrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 &dataawsgluecatalog.DataAwsGlueCatalogCreateTableDefaultPermissionsPrincipal {
 
@@ -982,7 +982,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogFederatedCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 &dataawsgluecatalog.DataAwsGlueCatalogFederatedCatalog {
 
@@ -995,7 +995,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogTargetRedshiftCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 &dataawsgluecatalog.DataAwsGlueCatalogTargetRedshiftCatalog {
 
@@ -1010,7 +1010,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCatalogPropertiesDataLakeAccessPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCatalogPropertiesDataLakeAccessPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogCatalogPropertiesDataLakeAccessPropertiesList
 ```
@@ -1159,7 +1159,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCatalogPropertiesDataLakeAccessPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCatalogPropertiesDataLakeAccessPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogCatalogPropertiesDataLakeAccessPropertiesOutputReference
 ```
@@ -1514,7 +1514,7 @@ func InternalValue() DataAwsGlueCatalogCatalogPropertiesDataLakeAccessProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCatalogPropertiesIcebergOptimizationPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCatalogPropertiesIcebergOptimizationPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogCatalogPropertiesIcebergOptimizationPropertiesList
 ```
@@ -1663,7 +1663,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCatalogPropertiesIcebergOptimizationPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCatalogPropertiesIcebergOptimizationPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogCatalogPropertiesIcebergOptimizationPropertiesOutputReference
 ```
@@ -1974,7 +1974,7 @@ func InternalValue() DataAwsGlueCatalogCatalogPropertiesIcebergOptimizationPrope
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCatalogPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCatalogPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogCatalogPropertiesList
 ```
@@ -2123,7 +2123,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCatalogPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCatalogPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogCatalogPropertiesOutputReference
 ```
@@ -2423,7 +2423,7 @@ func InternalValue() DataAwsGlueCatalogCatalogProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateDatabaseDefaultPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCreateDatabaseDefaultPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogCreateDatabaseDefaultPermissionsList
 ```
@@ -2572,7 +2572,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateDatabaseDefaultPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCreateDatabaseDefaultPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogCreateDatabaseDefaultPermissionsOutputReference
 ```
@@ -2861,7 +2861,7 @@ func InternalValue() DataAwsGlueCatalogCreateDatabaseDefaultPermissions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipalList
 ```
@@ -3010,7 +3010,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipalOutputReference
 ```
@@ -3288,7 +3288,7 @@ func InternalValue() DataAwsGlueCatalogCreateDatabaseDefaultPermissionsPrincipal
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateTableDefaultPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCreateTableDefaultPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogCreateTableDefaultPermissionsList
 ```
@@ -3437,7 +3437,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateTableDefaultPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCreateTableDefaultPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogCreateTableDefaultPermissionsOutputReference
 ```
@@ -3726,7 +3726,7 @@ func InternalValue() DataAwsGlueCatalogCreateTableDefaultPermissions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateTableDefaultPermissionsPrincipalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCreateTableDefaultPermissionsPrincipalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogCreateTableDefaultPermissionsPrincipalList
 ```
@@ -3875,7 +3875,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogCreateTableDefaultPermissionsPrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogCreateTableDefaultPermissionsPrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogCreateTableDefaultPermissionsPrincipalOutputReference
 ```
@@ -4153,7 +4153,7 @@ func InternalValue() DataAwsGlueCatalogCreateTableDefaultPermissionsPrincipal
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogFederatedCatalogList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogFederatedCatalogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogFederatedCatalogList
 ```
@@ -4302,7 +4302,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogFederatedCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogFederatedCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogFederatedCatalogOutputReference
 ```
@@ -4602,7 +4602,7 @@ func InternalValue() DataAwsGlueCatalogFederatedCatalog
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogTargetRedshiftCatalogList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogTargetRedshiftCatalogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTargetRedshiftCatalogList
 ```
@@ -4751,7 +4751,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueCatalog.DataAwsGlueCatalogTargetRedshiftCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsgluecatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsgluecatalog"
 
 dataawsgluecatalog.NewDataAwsGlueCatalogTargetRedshiftCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTargetRedshiftCatalogOutputReference
 ```

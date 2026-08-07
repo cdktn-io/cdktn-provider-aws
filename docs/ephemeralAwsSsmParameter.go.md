@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsSsmParameter.EphemeralAwsSsmParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawsssmparameter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsssmparameter"
 
 ephemeralawsssmparameter.NewEphemeralAwsSsmParameter(scope Construct, id *string, config EphemeralAwsSsmParameterConfig) EphemeralAwsSsmParameter
 ```
@@ -309,7 +309,7 @@ func ResetWithDecryption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsSsmParameter.EphemeralAwsSsmParameter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawsssmparameter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsssmparameter"
 
 ephemeralawsssmparameter.EphemeralAwsSsmParameter_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsSsmParameter.EphemeralAwsSsmParameter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawsssmparameter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsssmparameter"
 
 ephemeralawsssmparameter.EphemeralAwsSsmParameter_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeralawsssmparameter.EphemeralAwsSsmParameter_IsTerraformElement(x interface
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsSsmParameter.EphemeralAwsSsmParameter.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawsssmparameter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsssmparameter"
 
 ephemeralawsssmparameter.EphemeralAwsSsmParameter_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsSsmParameter.EphemeralAwsSsmParameterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawsssmparameter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsssmparameter"
 
 &ephemeralawsssmparameter.EphemeralAwsSsmParameterConfig {
 	Count: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsService(scope Construct, id *string, config EcsServiceConfig) EcsService
 ```
@@ -841,7 +841,7 @@ func ResetWaitForSteadyState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecsService.EcsService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.EcsService_IsConstruct(x interface{}) *bool
 ```
@@ -873,7 +873,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecsService.EcsService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.EcsService_IsTerraformElement(x interface{}) *bool
 ```
@@ -887,7 +887,7 @@ ecsservice.EcsService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecsService.EcsService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.EcsService_IsTerraformResource(x interface{}) *bool
 ```
@@ -901,7 +901,7 @@ ecsservice.EcsService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecsService.EcsService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.EcsService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1977,7 +1977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceAlarms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceAlarms {
 	AlarmNames: *[]*string,
@@ -2037,7 +2037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceCapacityProviderStrategy {
 	CapacityProvider: *string,
@@ -2097,7 +2097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceConfig {
 	Connection: interface{},
@@ -2108,13 +2108,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Alarms: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceAlarms,
+	Alarms: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceAlarms,
 	AvailabilityZoneRebalancing: *string,
 	CapacityProviderStrategy: interface{},
 	Cluster: *string,
-	DeploymentCircuitBreaker: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceDeploymentCircuitBreaker,
-	DeploymentConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceDeploymentConfiguration,
-	DeploymentController: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceDeploymentController,
+	DeploymentCircuitBreaker: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceDeploymentCircuitBreaker,
+	DeploymentConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceDeploymentConfiguration,
+	DeploymentController: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceDeploymentController,
 	DeploymentMaximumPercent: *f64,
 	DeploymentMinimumHealthyPercent: *f64,
 	DesiredCount: *f64,
@@ -2127,22 +2127,22 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
 	Id: *string,
 	LaunchType: *string,
 	LoadBalancer: interface{},
-	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceNetworkConfiguration,
+	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceNetworkConfiguration,
 	OrderedPlacementStrategy: interface{},
 	PlacementConstraints: interface{},
 	PlatformVersion: *string,
 	PropagateTags: *string,
 	Region: *string,
 	SchedulingStrategy: *string,
-	ServiceConnectConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceServiceConnectConfiguration,
-	ServiceRegistries: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceServiceRegistries,
+	ServiceConnectConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceServiceConnectConfiguration,
+	ServiceRegistries: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceServiceRegistries,
 	SigintRollback: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TaskDefinition: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceTimeouts,
 	Triggers: *map[string]*string,
-	VolumeConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceVolumeConfiguration,
+	VolumeConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceVolumeConfiguration,
 	VpcLatticeConfigurations: interface{},
 	WaitForSteadyState: interface{},
 }
@@ -2764,7 +2764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceDeploymentCircuitBreaker {
 	Enable: interface{},
@@ -2810,13 +2810,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceDeploymentConfiguration {
 	BakeTimeInMinutes: *string,
-	CanaryConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceDeploymentConfigurationCanaryConfiguration,
+	CanaryConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceDeploymentConfigurationCanaryConfiguration,
 	LifecycleHook: interface{},
-	LinearConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceDeploymentConfigurationLinearConfiguration,
+	LinearConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceDeploymentConfigurationLinearConfiguration,
 	Strategy: *string,
 }
 ```
@@ -2904,7 +2904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentConfigurationCanaryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceDeploymentConfigurationCanaryConfiguration {
 	CanaryBakeTimeInMinutes: *string,
@@ -2950,7 +2950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceDeploymentConfigurationLifecycleHook {
 	HookTargetArn: *string,
@@ -3024,7 +3024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentConfigurationLinearConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceDeploymentConfigurationLinearConfiguration {
 	StepBakeTimeInMinutes: *string,
@@ -3070,7 +3070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentController.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceDeploymentController {
 	Type: *string,
@@ -3102,12 +3102,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceLoadBalancer {
 	ContainerName: *string,
 	ContainerPort: *f64,
-	AdvancedConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceLoadBalancerAdvancedConfiguration,
+	AdvancedConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceLoadBalancerAdvancedConfiguration,
 	ElbName: *string,
 	TargetGroupArn: *string,
 }
@@ -3192,7 +3192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceLoadBalancerAdvancedConfiguration {
 	AlternateTargetGroupArn: *string,
@@ -3266,7 +3266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceNetworkConfiguration {
 	Subnets: *[]*string,
@@ -3326,7 +3326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceOrderedPlacementStrategy {
 	Type: *string,
@@ -3372,7 +3372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServicePlacementConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServicePlacementConstraints {
 	Type: *string,
@@ -3418,12 +3418,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfiguration {
 	Enabled: interface{},
-	AccessLogConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceServiceConnectConfigurationAccessLogConfiguration,
-	LogConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration,
+	AccessLogConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceServiceConnectConfigurationAccessLogConfiguration,
+	LogConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration,
 	Namespace: *string,
 	Service: interface{},
 }
@@ -3512,7 +3512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationAccessLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationAccessLogConfiguration {
 	Format: *string,
@@ -3558,7 +3558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationLogConfiguration {
 	LogDriver: *string,
@@ -3620,7 +3620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption {
 	Name: *string,
@@ -3666,15 +3666,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationService {
 	PortName: *string,
-	ClientAlias: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias,
+	ClientAlias: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias,
 	DiscoveryName: *string,
 	IngressPortOverride: *f64,
-	Timeout: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceServiceConnectConfigurationServiceTimeout,
-	Tls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceServiceConnectConfigurationServiceTls,
+	Timeout: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceServiceConnectConfigurationServiceTimeout,
+	Tls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceServiceConnectConfigurationServiceTls,
 }
 ```
 
@@ -3774,7 +3774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationServiceClientAlias {
 	Port: *f64,
@@ -3836,10 +3836,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules {
-	Header: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader,
+	Header: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader,
 }
 ```
 
@@ -3870,11 +3870,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader {
 	Name: *string,
-	Value: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue,
+	Value: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue,
 }
 ```
 
@@ -3918,7 +3918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue {
 	Exact: *string,
@@ -3950,7 +3950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationServiceTimeout {
 	IdleTimeoutSeconds: *f64,
@@ -3996,10 +3996,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationServiceTls {
-	IssuerCertAuthority: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority,
+	IssuerCertAuthority: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority,
 	KmsKey: *string,
 	RoleArn: *string,
 }
@@ -4058,7 +4058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority {
 	AwsPcaAuthorityArn: *string,
@@ -4090,7 +4090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceServiceRegistries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceServiceRegistries {
 	RegistryArn: *string,
@@ -4164,7 +4164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceTimeouts {
 	Create: *string,
@@ -4224,10 +4224,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceVolumeConfiguration {
-	ManagedEbsVolume: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume,
+	ManagedEbsVolume: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume,
 	Name: *string,
 }
 ```
@@ -4272,7 +4272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceVolumeConfigurationManagedEbsVolume {
 	RoleArn: *string,
@@ -4446,7 +4446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications {
 	ResourceType: *string,
@@ -4506,7 +4506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 &ecsservice.EcsServiceVpcLatticeConfigurations {
 	PortName: *string,
@@ -4568,7 +4568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceAlarmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceAlarmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceAlarmsOutputReference
 ```
@@ -4883,7 +4883,7 @@ func InternalValue() EcsServiceAlarms
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsServiceCapacityProviderStrategyList
 ```
@@ -5043,7 +5043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsServiceCapacityProviderStrategyOutputReference
 ```
@@ -5390,7 +5390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceDeploymentCircuitBreakerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceDeploymentCircuitBreakerOutputReference
 ```
@@ -5683,7 +5683,7 @@ func InternalValue() EcsServiceDeploymentCircuitBreaker
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceDeploymentConfigurationCanaryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference
 ```
@@ -5990,7 +5990,7 @@ func InternalValue() EcsServiceDeploymentConfigurationCanaryConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceDeploymentConfigurationLifecycleHookList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsServiceDeploymentConfigurationLifecycleHookList
 ```
@@ -6150,7 +6150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceDeploymentConfigurationLifecycleHookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsServiceDeploymentConfigurationLifecycleHookOutputReference
 ```
@@ -6512,7 +6512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentConfigurationLinearConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceDeploymentConfigurationLinearConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceDeploymentConfigurationLinearConfigurationOutputReference
 ```
@@ -6819,7 +6819,7 @@ func InternalValue() EcsServiceDeploymentConfigurationLinearConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceDeploymentConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceDeploymentConfigurationOutputReference
 ```
@@ -7252,7 +7252,7 @@ func InternalValue() EcsServiceDeploymentConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceDeploymentControllerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceDeploymentControllerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceDeploymentControllerOutputReference
 ```
@@ -7530,7 +7530,7 @@ func InternalValue() EcsServiceDeploymentController
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceLoadBalancerAdvancedConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceLoadBalancerAdvancedConfigurationOutputReference
 ```
@@ -7874,7 +7874,7 @@ func InternalValue() EcsServiceLoadBalancerAdvancedConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceLoadBalancerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceLoadBalancerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsServiceLoadBalancerList
 ```
@@ -8034,7 +8034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsServiceLoadBalancerOutputReference
 ```
@@ -8445,7 +8445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceNetworkConfigurationOutputReference
 ```
@@ -8774,7 +8774,7 @@ func InternalValue() EcsServiceNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceOrderedPlacementStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsServiceOrderedPlacementStrategyList
 ```
@@ -8934,7 +8934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceOrderedPlacementStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsServiceOrderedPlacementStrategyOutputReference
 ```
@@ -9252,7 +9252,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServicePlacementConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServicePlacementConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsServicePlacementConstraintsList
 ```
@@ -9412,7 +9412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServicePlacementConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsServicePlacementConstraintsOutputReference
 ```
@@ -9730,7 +9730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationAccessLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationAccessLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceServiceConnectConfigurationAccessLogConfigurationOutputReference
 ```
@@ -10030,7 +10030,7 @@ func InternalValue() EcsServiceServiceConnectConfigurationAccessLogConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceServiceConnectConfigurationLogConfigurationOutputReference
 ```
@@ -10372,7 +10372,7 @@ func InternalValue() EcsServiceServiceConnectConfigurationLogConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList
 ```
@@ -10532,7 +10532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference
 ```
@@ -10843,7 +10843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceServiceConnectConfigurationOutputReference
 ```
@@ -11269,7 +11269,7 @@ func InternalValue() EcsServiceServiceConnectConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationServiceClientAliasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference
 ```
@@ -11611,7 +11611,7 @@ func InternalValue() EcsServiceServiceConnectConfigurationServiceClientAlias
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference
 ```
@@ -11917,7 +11917,7 @@ func InternalValue() EcsServiceServiceConnectConfigurationServiceClientAliasTest
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueOutputReference
 ```
@@ -12188,7 +12188,7 @@ func InternalValue() EcsServiceServiceConnectConfigurationServiceClientAliasTest
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList
 ```
@@ -12348,7 +12348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference
 ```
@@ -12657,7 +12657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsServiceServiceConnectConfigurationServiceList
 ```
@@ -12817,7 +12817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsServiceServiceConnectConfigurationServiceOutputReference
 ```
@@ -13290,7 +13290,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationServiceTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference
 ```
@@ -13597,7 +13597,7 @@ func InternalValue() EcsServiceServiceConnectConfigurationServiceTimeout
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityOutputReference
 ```
@@ -13868,7 +13868,7 @@ func InternalValue() EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceConnectConfigurationServiceTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceServiceConnectConfigurationServiceTlsOutputReference
 ```
@@ -14210,7 +14210,7 @@ func InternalValue() EcsServiceServiceConnectConfigurationServiceTls
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceServiceRegistriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceServiceRegistriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceServiceRegistriesOutputReference
 ```
@@ -14568,7 +14568,7 @@ func InternalValue() EcsServiceServiceRegistries
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceTimeoutsOutputReference
 ```
@@ -14904,7 +14904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceVolumeConfigurationManagedEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference
 ```
@@ -15478,7 +15478,7 @@ func InternalValue() EcsServiceVolumeConfigurationManagedEbsVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList
 ```
@@ -15638,7 +15638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsOutputReference
 ```
@@ -15985,7 +15985,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsServiceVolumeConfigurationOutputReference
 ```
@@ -16291,7 +16291,7 @@ func InternalValue() EcsServiceVolumeConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceVpcLatticeConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsServiceVpcLatticeConfigurationsList
 ```
@@ -16451,7 +16451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsservice"
 
 ecsservice.NewEcsServiceVpcLatticeConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsServiceVpcLatticeConfigurationsOutputReference
 ```

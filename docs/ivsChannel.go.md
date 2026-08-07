@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ivsChannel.IvsChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ivschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ivschannel"
 
 ivschannel.NewIvsChannel(scope Construct, id *string, config IvsChannelConfig) IvsChannel
 ```
@@ -483,7 +483,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ivsChannel.IvsChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ivschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ivschannel"
 
 ivschannel.IvsChannel_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ivsChannel.IvsChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ivschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ivschannel"
 
 ivschannel.IvsChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ ivschannel.IvsChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ivsChannel.IvsChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ivschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ivschannel"
 
 ivschannel.IvsChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ ivschannel.IvsChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ivsChannel.IvsChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ivschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ivschannel"
 
 ivschannel.IvsChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1025,7 +1025,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ivsChannel.IvsChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ivschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ivschannel"
 
 &ivschannel.IvsChannelConfig {
 	Connection: interface{},
@@ -1043,7 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ivschannel"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ivsChannel.IvsChannelTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ivsChannel.IvsChannelTimeouts,
 	Type: *string,
 }
 ```
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ivsChannel.IvsChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ivschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ivschannel"
 
 &ivschannel.IvsChannelTimeouts {
 	Create: *string,
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ivsChannel.IvsChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ivschannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ivschannel"
 
 ivschannel.NewIvsChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsChannelTimeoutsOutputReference
 ```

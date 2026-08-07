@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsguarddutyfindingids"
 
 dataawsguarddutyfindingids.NewDataAwsGuarddutyFindingIds(scope Construct, id *string, config DataAwsGuarddutyFindingIdsConfig) DataAwsGuarddutyFindingIds
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsguarddutyfindingids"
 
 dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsguarddutyfindingids"
 
 dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsguarddutyfindingids"
 
 dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsguarddutyfindingids"
 
 dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsguarddutyfindingids"
 
 &dataawsguarddutyfindingids.DataAwsGuarddutyFindingIdsConfig {
 	Connection: interface{},

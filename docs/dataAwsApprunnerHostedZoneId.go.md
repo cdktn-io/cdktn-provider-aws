@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapprunnerhostedzoneid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapprunnerhostedzoneid"
 
 dataawsapprunnerhostedzoneid.NewDataAwsApprunnerHostedZoneId(scope Construct, id *string, config DataAwsApprunnerHostedZoneIdConfig) DataAwsApprunnerHostedZoneId
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapprunnerhostedzoneid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapprunnerhostedzoneid"
 
 dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapprunnerhostedzoneid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapprunnerhostedzoneid"
 
 dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapprunnerhostedzoneid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapprunnerhostedzoneid"
 
 dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapprunnerhostedzoneid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapprunnerhostedzoneid"
 
 dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsapprunnerhostedzoneid"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsapprunnerhostedzoneid"
 
 &dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneIdConfig {
 	Connection: interface{},

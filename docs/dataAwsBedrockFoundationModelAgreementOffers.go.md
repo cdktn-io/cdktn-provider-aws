@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffers(scope Construct, id *string, config DataAwsBedrockFoundationModelAgreementOffersConfig) DataAwsBedrockFoundationModelAgreementOffers
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffers.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffers_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffers_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreem
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreem
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 &dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffersConfig {
 	Connection: interface{},
@@ -802,7 +802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 &dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffersOffers {
 
@@ -815,7 +815,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundati
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 &dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetails {
 
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundati
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsLegalTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 &dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsLegalTerm {
 
@@ -841,7 +841,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundati
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsSupportTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 &dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsSupportTerm {
 
@@ -854,7 +854,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundati
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 &dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTerm {
 
@@ -867,7 +867,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundati
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermRateCard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 &dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermRateCard {
 
@@ -880,7 +880,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundati
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsValidityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 &dataawsbedrockfoundationmodelagreementoffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsValidityTerm {
 
@@ -895,7 +895,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersList
 ```
@@ -1044,7 +1044,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersOutputReference
 ```
@@ -1344,7 +1344,7 @@ func InternalValue() DataAwsBedrockFoundationModelAgreementOffersOffers
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsLegalTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsLegalTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsLegalTermList
 ```
@@ -1493,7 +1493,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsLegalTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsLegalTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsLegalTermOutputReference
 ```
@@ -1771,7 +1771,7 @@ func InternalValue() DataAwsBedrockFoundationModelAgreementOffersOffersTermDetai
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsList
 ```
@@ -1920,7 +1920,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsOutputReference
 ```
@@ -2231,7 +2231,7 @@ func InternalValue() DataAwsBedrockFoundationModelAgreementOffersOffersTermDetai
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsSupportTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsSupportTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsSupportTermList
 ```
@@ -2380,7 +2380,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsSupportTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsSupportTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsSupportTermOutputReference
 ```
@@ -2658,7 +2658,7 @@ func InternalValue() DataAwsBedrockFoundationModelAgreementOffersOffersTermDetai
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermList
 ```
@@ -2807,7 +2807,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermOutputReference
 ```
@@ -3085,7 +3085,7 @@ func InternalValue() DataAwsBedrockFoundationModelAgreementOffersOffersTermDetai
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermRateCardList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermRateCardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermRateCardList
 ```
@@ -3234,7 +3234,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermRateCardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermRateCardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsUsageBasedPricingTermRateCardOutputReference
 ```
@@ -3545,7 +3545,7 @@ func InternalValue() DataAwsBedrockFoundationModelAgreementOffersOffersTermDetai
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsValidityTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsValidityTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsValidityTermList
 ```
@@ -3694,7 +3694,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModelAgreementOffers.DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsValidityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockfoundationmodelagreementoffers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodelagreementoffers"
 
 dataawsbedrockfoundationmodelagreementoffers.NewDataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsValidityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockFoundationModelAgreementOffersOffersTermDetailsValidityTermOutputReference
 ```

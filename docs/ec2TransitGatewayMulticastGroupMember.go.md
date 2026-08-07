@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaymulticastgroupmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewaymulticastgroupmember"
 
 ec2transitgatewaymulticastgroupmember.NewEc2TransitGatewayMulticastGroupMember(scope Construct, id *string, config Ec2TransitGatewayMulticastGroupMemberConfig) Ec2TransitGatewayMulticastGroupMember
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaymulticastgroupmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewaymulticastgroupmember"
 
 ec2transitgatewaymulticastgroupmember.Ec2TransitGatewayMulticastGroupMember_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaymulticastgroupmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewaymulticastgroupmember"
 
 ec2transitgatewaymulticastgroupmember.Ec2TransitGatewayMulticastGroupMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ ec2transitgatewaymulticastgroupmember.Ec2TransitGatewayMulticastGroupMember_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaymulticastgroupmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewaymulticastgroupmember"
 
 ec2transitgatewaymulticastgroupmember.Ec2TransitGatewayMulticastGroupMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ ec2transitgatewaymulticastgroupmember.Ec2TransitGatewayMulticastGroupMember_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaymulticastgroupmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewaymulticastgroupmember"
 
 ec2transitgatewaymulticastgroupmember.Ec2TransitGatewayMulticastGroupMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaymulticastgroupmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2transitgatewaymulticastgroupmember"
 
 &ec2transitgatewaymulticastgroupmember.Ec2TransitGatewayMulticastGroupMemberConfig {
 	Connection: interface{},

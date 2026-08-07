@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsLambdaInvocation.EphemeralAwsLambdaInvocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawslambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawslambdainvocation"
 
 ephemeralawslambdainvocation.NewEphemeralAwsLambdaInvocation(scope Construct, id *string, config EphemeralAwsLambdaInvocationConfig) EphemeralAwsLambdaInvocation
 ```
@@ -323,7 +323,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsLambdaInvocation.EphemeralAwsLambdaInvocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawslambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawslambdainvocation"
 
 ephemeralawslambdainvocation.EphemeralAwsLambdaInvocation_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsLambdaInvocation.EphemeralAwsLambdaInvocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawslambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawslambdainvocation"
 
 ephemeralawslambdainvocation.EphemeralAwsLambdaInvocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ ephemeralawslambdainvocation.EphemeralAwsLambdaInvocation_IsTerraformElement(x i
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsLambdaInvocation.EphemeralAwsLambdaInvocation.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawslambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawslambdainvocation"
 
 ephemeralawslambdainvocation.EphemeralAwsLambdaInvocation_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsLambdaInvocation.EphemeralAwsLambdaInvocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawslambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawslambdainvocation"
 
 &ephemeralawslambdainvocation.EphemeralAwsLambdaInvocationConfig {
 	Count: interface{},

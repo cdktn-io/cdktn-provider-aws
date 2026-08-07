@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayStage.ApiGatewayStage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaystage"
 
 apigatewaystage.NewApiGatewayStage(scope Construct, id *string, config ApiGatewayStageConfig) ApiGatewayStage
 ```
@@ -517,7 +517,7 @@ func ResetXrayTracingEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apiGatewayStage.ApiGatewayStage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaystage"
 
 apigatewaystage.ApiGatewayStage_IsConstruct(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apiGatewayStage.ApiGatewayStage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaystage"
 
 apigatewaystage.ApiGatewayStage_IsTerraformElement(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ apigatewaystage.ApiGatewayStage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apiGatewayStage.ApiGatewayStage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaystage"
 
 apigatewaystage.ApiGatewayStage_IsTerraformResource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ apigatewaystage.ApiGatewayStage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apiGatewayStage.ApiGatewayStage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaystage"
 
 apigatewaystage.ApiGatewayStage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1202,7 +1202,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayStage.ApiGatewayStageAccessLogSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaystage"
 
 &apigatewaystage.ApiGatewayStageAccessLogSettings {
 	DestinationArn: *string,
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayStage.ApiGatewayStageCanarySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaystage"
 
 &apigatewaystage.ApiGatewayStageCanarySettings {
 	DeploymentId: *string,
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayStage.ApiGatewayStageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaystage"
 
 &apigatewaystage.ApiGatewayStageConfig {
 	Connection: interface{},
@@ -1335,10 +1335,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
 	DeploymentId: *string,
 	RestApiId: *string,
 	StageName: *string,
-	AccessLogSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.apiGatewayStage.ApiGatewayStageAccessLogSettings,
+	AccessLogSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.apiGatewayStage.ApiGatewayStageAccessLogSettings,
 	CacheClusterEnabled: interface{},
 	CacheClusterSize: *string,
-	CanarySettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.apiGatewayStage.ApiGatewayStageCanarySettings,
+	CanarySettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.apiGatewayStage.ApiGatewayStageCanarySettings,
 	ClientCertificateId: *string,
 	Description: *string,
 	DocumentationVersion: *string,
@@ -1659,7 +1659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayStage.ApiGatewayStageAccessLogSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaystage"
 
 apigatewaystage.NewApiGatewayStageAccessLogSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayStageAccessLogSettingsOutputReference
 ```
@@ -1952,7 +1952,7 @@ func InternalValue() ApiGatewayStageAccessLogSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayStage.ApiGatewayStageCanarySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaystage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaystage"
 
 apigatewaystage.NewApiGatewayStageCanarySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayStageCanarySettingsOutputReference
 ```

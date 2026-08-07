@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapability.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapability(scope Construct, id *string, config EksCapabilityConfig) EksCapability
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.eksCapability.EksCapability.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.EksCapability_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.eksCapability.EksCapability.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.EksCapability_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ ekscapability.EksCapability_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.eksCapability.EksCapability.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.EksCapability_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ ekscapability.EksCapability_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.eksCapability.EksCapability.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.EksCapability_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -974,7 +974,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 &ekscapability.EksCapabilityConfig {
 	Connection: interface{},
@@ -992,7 +992,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
 	Configuration: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.eksCapability.EksCapabilityTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.eksCapability.EksCapabilityTimeouts,
 }
 ```
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 &ekscapability.EksCapabilityConfiguration {
 	ArgoCd: interface{},
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 &ekscapability.EksCapabilityConfigurationArgoCd {
 	AwsIdc: interface{},
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdAwsIdc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 &ekscapability.EksCapabilityConfigurationArgoCdAwsIdc {
 	IdcInstanceArn: *string,
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdNetworkAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 &ekscapability.EksCapabilityConfigurationArgoCdNetworkAccess {
 	VpceIds: *[]*string,
@@ -1400,7 +1400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 &ekscapability.EksCapabilityConfigurationArgoCdRbacRoleMapping {
 	Role: *string,
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 &ekscapability.EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity {
 	Id: *string,
@@ -1497,7 +1497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCapability.EksCapabilityTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 &ekscapability.EksCapabilityTimeouts {
 	Create: *string,
@@ -1565,7 +1565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdAwsIdcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationArgoCdAwsIdcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksCapabilityConfigurationArgoCdAwsIdcList
 ```
@@ -1725,7 +1725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdAwsIdcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationArgoCdAwsIdcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksCapabilityConfigurationArgoCdAwsIdcOutputReference
 ```
@@ -2054,7 +2054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationArgoCdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksCapabilityConfigurationArgoCdList
 ```
@@ -2214,7 +2214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdNetworkAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationArgoCdNetworkAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksCapabilityConfigurationArgoCdNetworkAccessList
 ```
@@ -2374,7 +2374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdNetworkAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationArgoCdNetworkAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksCapabilityConfigurationArgoCdNetworkAccessOutputReference
 ```
@@ -2670,7 +2670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationArgoCdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksCapabilityConfigurationArgoCdOutputReference
 ```
@@ -3103,7 +3103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationArgoCdRbacRoleMappingIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityList
 ```
@@ -3263,7 +3263,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationArgoCdRbacRoleMappingIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksCapabilityConfigurationArgoCdRbacRoleMappingIdentityOutputReference
 ```
@@ -3574,7 +3574,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationArgoCdRbacRoleMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksCapabilityConfigurationArgoCdRbacRoleMappingList
 ```
@@ -3734,7 +3734,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationArgoCdRbacRoleMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksCapabilityConfigurationArgoCdRbacRoleMappingOutputReference
 ```
@@ -4065,7 +4065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksCapabilityConfigurationList
 ```
@@ -4225,7 +4225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksCapabilityConfigurationOutputReference
 ```
@@ -4534,7 +4534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapabilityTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekscapability"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekscapability"
 
 ekscapability.NewEksCapabilityTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksCapabilityTimeoutsOutputReference
 ```

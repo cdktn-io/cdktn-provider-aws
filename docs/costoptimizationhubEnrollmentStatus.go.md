@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/costoptimizationhubenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/costoptimizationhubenrollmentstatus"
 
 costoptimizationhubenrollmentstatus.NewCostoptimizationhubEnrollmentStatus(scope Construct, id *string, config CostoptimizationhubEnrollmentStatusConfig) CostoptimizationhubEnrollmentStatus
 ```
@@ -407,7 +407,7 @@ func ResetIncludeMemberAccounts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/costoptimizationhubenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/costoptimizationhubenrollmentstatus"
 
 costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/costoptimizationhubenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/costoptimizationhubenrollmentstatus"
 
 costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/costoptimizationhubenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/costoptimizationhubenrollmentstatus"
 
 costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/costoptimizationhubenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/costoptimizationhubenrollmentstatus"
 
 costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/costoptimizationhubenrollmentstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/costoptimizationhubenrollmentstatus"
 
 &costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatusConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 bedrockagentcorepolicy.NewBedrockagentcorePolicy(scope Construct, id *string, config BedrockagentcorePolicyConfig) BedrockagentcorePolicy
 ```
@@ -461,7 +461,7 @@ func ResetValidationMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 bedrockagentcorepolicy.BedrockagentcorePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 bedrockagentcorepolicy.BedrockagentcorePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ bedrockagentcorepolicy.BedrockagentcorePolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 bedrockagentcorepolicy.BedrockagentcorePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ bedrockagentcorepolicy.BedrockagentcorePolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 bedrockagentcorepolicy.BedrockagentcorePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -926,7 +926,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 &bedrockagentcorepolicy.BedrockagentcorePolicyConfig {
 	Connection: interface{},
@@ -941,7 +941,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy
 	Definition: interface{},
 	Description: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentcorePolicy.BedrockagentcorePolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentcorePolicy.BedrockagentcorePolicyTimeouts,
 	ValidationMode: *string,
 }
 ```
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicyDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 &bedrockagentcorepolicy.BedrockagentcorePolicyDefinition {
 	Cedar: interface{},
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicyDefinitionCedar.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 &bedrockagentcorepolicy.BedrockagentcorePolicyDefinitionCedar {
 	Statement: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 &bedrockagentcorepolicy.BedrockagentcorePolicyTimeouts {
 	Create: *string,
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicyDefinitionCedarList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 bedrockagentcorepolicy.NewBedrockagentcorePolicyDefinitionCedarList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcorePolicyDefinitionCedarList
 ```
@@ -1426,7 +1426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicyDefinitionCedarOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 bedrockagentcorepolicy.NewBedrockagentcorePolicyDefinitionCedarOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcorePolicyDefinitionCedarOutputReference
 ```
@@ -1715,7 +1715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicyDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 bedrockagentcorepolicy.NewBedrockagentcorePolicyDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcorePolicyDefinitionList
 ```
@@ -1875,7 +1875,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicyDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 bedrockagentcorepolicy.NewBedrockagentcorePolicyDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcorePolicyDefinitionOutputReference
 ```
@@ -2184,7 +2184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcorePolicy.BedrockagentcorePolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentcorepolicy"
 
 bedrockagentcorepolicy.NewBedrockagentcorePolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcorePolicyTimeoutsOutputReference
 ```

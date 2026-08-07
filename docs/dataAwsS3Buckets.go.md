@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 
 dataawss3buckets.NewDataAwsS3Buckets(scope Construct, id *string, config DataAwsS3BucketsConfig) DataAwsS3Buckets
 ```
@@ -326,7 +326,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 
 dataawss3buckets.DataAwsS3Buckets_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 
 dataawss3buckets.DataAwsS3Buckets_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawss3buckets.DataAwsS3Buckets_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 
 dataawss3buckets.DataAwsS3Buckets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawss3buckets.DataAwsS3Buckets_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 
 dataawss3buckets.DataAwsS3Buckets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 
 &dataawss3buckets.DataAwsS3BucketsBuckets {
 
@@ -705,7 +705,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3buckets"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 
 &dataawss3buckets.DataAwsS3BucketsConfig {
 	Connection: interface{},
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 
 dataawss3buckets.NewDataAwsS3BucketsBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketsBucketsList
 ```
@@ -1016,7 +1016,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 
 dataawss3buckets.NewDataAwsS3BucketsBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketsBucketsOutputReference
 ```

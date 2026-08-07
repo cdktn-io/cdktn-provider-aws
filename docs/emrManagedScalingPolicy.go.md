@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrmanagedscalingpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.NewEmrManagedScalingPolicy(scope Construct, id *string, config EmrManagedScalingPolicyConfig) EmrManagedScalingPolicy
 ```
@@ -441,7 +441,7 @@ func ResetUtilizationPerformanceIndex()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrmanagedscalingpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.EmrManagedScalingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrmanagedscalingpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.EmrManagedScalingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ emrmanagedscalingpolicy.EmrManagedScalingPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrmanagedscalingpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.EmrManagedScalingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ emrmanagedscalingpolicy.EmrManagedScalingPolicy_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrmanagedscalingpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.EmrManagedScalingPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrmanagedscalingpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrmanagedscalingpolicy"
 
 &emrmanagedscalingpolicy.EmrManagedScalingPolicyComputeLimits {
 	MaximumCapacityUnits: *f64,
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrmanagedscalingpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrmanagedscalingpolicy"
 
 &emrmanagedscalingpolicy.EmrManagedScalingPolicyConfig {
 	Connection: interface{},
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrmanagedscalingpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.NewEmrManagedScalingPolicyComputeLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrManagedScalingPolicyComputeLimitsList
 ```
@@ -1305,7 +1305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrmanagedscalingpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.NewEmrManagedScalingPolicyComputeLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrManagedScalingPolicyComputeLimitsOutputReference
 ```

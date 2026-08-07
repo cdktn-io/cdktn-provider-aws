@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersion.DataAwsSyntheticsRuntimeVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssyntheticsruntimeversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversion"
 
 dataawssyntheticsruntimeversion.NewDataAwsSyntheticsRuntimeVersion(scope Construct, id *string, config DataAwsSyntheticsRuntimeVersionConfig) DataAwsSyntheticsRuntimeVersion
 ```
@@ -319,7 +319,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersion.DataAwsSyntheticsRuntimeVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssyntheticsruntimeversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversion"
 
 dataawssyntheticsruntimeversion.DataAwsSyntheticsRuntimeVersion_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersion.DataAwsSyntheticsRuntimeVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssyntheticsruntimeversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversion"
 
 dataawssyntheticsruntimeversion.DataAwsSyntheticsRuntimeVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawssyntheticsruntimeversion.DataAwsSyntheticsRuntimeVersion_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersion.DataAwsSyntheticsRuntimeVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssyntheticsruntimeversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversion"
 
 dataawssyntheticsruntimeversion.DataAwsSyntheticsRuntimeVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawssyntheticsruntimeversion.DataAwsSyntheticsRuntimeVersion_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersion.DataAwsSyntheticsRuntimeVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssyntheticsruntimeversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversion"
 
 dataawssyntheticsruntimeversion.DataAwsSyntheticsRuntimeVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersion.DataAwsSyntheticsRuntimeVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssyntheticsruntimeversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversion"
 
 &dataawssyntheticsruntimeversion.DataAwsSyntheticsRuntimeVersionConfig {
 	Connection: interface{},

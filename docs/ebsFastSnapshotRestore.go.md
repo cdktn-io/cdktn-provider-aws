@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ebsFastSnapshotRestore.EbsFastSnapshotRestore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsfastsnapshotrestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsfastsnapshotrestore"
 
 ebsfastsnapshotrestore.NewEbsFastSnapshotRestore(scope Construct, id *string, config EbsFastSnapshotRestoreConfig) EbsFastSnapshotRestore
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ebsFastSnapshotRestore.EbsFastSnapshotRestore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsfastsnapshotrestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsfastsnapshotrestore"
 
 ebsfastsnapshotrestore.EbsFastSnapshotRestore_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ebsFastSnapshotRestore.EbsFastSnapshotRestore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsfastsnapshotrestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsfastsnapshotrestore"
 
 ebsfastsnapshotrestore.EbsFastSnapshotRestore_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ ebsfastsnapshotrestore.EbsFastSnapshotRestore_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ebsFastSnapshotRestore.EbsFastSnapshotRestore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsfastsnapshotrestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsfastsnapshotrestore"
 
 ebsfastsnapshotrestore.EbsFastSnapshotRestore_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ ebsfastsnapshotrestore.EbsFastSnapshotRestore_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ebsFastSnapshotRestore.EbsFastSnapshotRestore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsfastsnapshotrestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsfastsnapshotrestore"
 
 ebsfastsnapshotrestore.EbsFastSnapshotRestore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ebsFastSnapshotRestore.EbsFastSnapshotRestoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsfastsnapshotrestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsfastsnapshotrestore"
 
 &ebsfastsnapshotrestore.EbsFastSnapshotRestoreConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsfastsnapshotrestore
 	AvailabilityZone: *string,
 	SnapshotId: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ebsFastSnapshotRestore.EbsFastSnapshotRestoreTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ebsFastSnapshotRestore.EbsFastSnapshotRestoreTimeouts,
 }
 ```
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ebsFastSnapshotRestore.EbsFastSnapshotRestoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsfastsnapshotrestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsfastsnapshotrestore"
 
 &ebsfastsnapshotrestore.EbsFastSnapshotRestoreTimeouts {
 	Create: *string,
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ebsFastSnapshotRestore.EbsFastSnapshotRestoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsfastsnapshotrestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ebsfastsnapshotrestore"
 
 ebsfastsnapshotrestore.NewEbsFastSnapshotRestoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EbsFastSnapshotRestoreTimeoutsOutputReference
 ```

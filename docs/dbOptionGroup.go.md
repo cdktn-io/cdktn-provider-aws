@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroup(scope Construct, id *string, config DbOptionGroupConfig) DbOptionGroup
 ```
@@ -496,7 +496,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 dboptiongroup.DbOptionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 dboptiongroup.DbOptionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ dboptiongroup.DbOptionGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 dboptiongroup.DbOptionGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ dboptiongroup.DbOptionGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 dboptiongroup.DbOptionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1060,7 +1060,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 &dboptiongroup.DbOptionGroupConfig {
 	Connection: interface{},
@@ -1081,7 +1081,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
 	SkipDestroy: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dbOptionGroup.DbOptionGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dbOptionGroup.DbOptionGroupTimeouts,
 }
 ```
 
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroupOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 &dboptiongroup.DbOptionGroupOption {
 	OptionName: *string,
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 &dboptiongroup.DbOptionGroupOptionOptionSettings {
 	Name: *string,
@@ -1489,7 +1489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 &dboptiongroup.DbOptionGroupTimeouts {
 	Delete: *string,
@@ -1523,7 +1523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroupOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroupOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbOptionGroupOptionList
 ```
@@ -1683,7 +1683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroupOptionOptionSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbOptionGroupOptionOptionSettingsList
 ```
@@ -1843,7 +1843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroupOptionOptionSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbOptionGroupOptionOptionSettingsOutputReference
 ```
@@ -2154,7 +2154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroupOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroupOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbOptionGroupOptionOutputReference
 ```
@@ -2601,7 +2601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbOptionGroup.DbOptionGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dboptiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbOptionGroupTimeoutsOutputReference
 ```

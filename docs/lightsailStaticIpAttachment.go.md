@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailstaticipattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsailstaticipattachment"
 
 lightsailstaticipattachment.NewLightsailStaticIpAttachment(scope Construct, id *string, config LightsailStaticIpAttachmentConfig) LightsailStaticIpAttachment
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailstaticipattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailstaticipattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailstaticipattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailstaticipattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailstaticipattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lightsailstaticipattachment"
 
 &lightsailstaticipattachment.LightsailStaticIpAttachmentConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicator(scope Construct, id *string, config MskReplicatorConfig) MskReplicator
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.mskReplicator.MskReplicator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.MskReplicator_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.mskReplicator.MskReplicator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.MskReplicator_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ mskreplicator.MskReplicator_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.mskReplicator.MskReplicator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.MskReplicator_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ mskreplicator.MskReplicator_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.mskReplicator.MskReplicator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.MskReplicator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1054,7 +1054,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorConfig {
 	Connection: interface{},
@@ -1065,16 +1065,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	KafkaCluster: interface{},
-	ReplicationInfoList: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorReplicationInfoListStruct,
+	ReplicationInfoList: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorReplicationInfoListStruct,
 	ReplicatorName: *string,
 	ServiceExecutionRoleArn: *string,
 	Description: *string,
 	Id: *string,
-	LogDelivery: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorLogDelivery,
+	LogDelivery: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorLogDelivery,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorTimeouts,
 }
 ```
 
@@ -1323,11 +1323,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorKafkaCluster {
-	AmazonMskCluster: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster,
-	VpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorKafkaClusterVpcConfig,
+	AmazonMskCluster: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster,
+	VpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorKafkaClusterVpcConfig,
 }
 ```
 
@@ -1373,7 +1373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorKafkaClusterAmazonMskCluster {
 	MskClusterArn: *string,
@@ -1405,7 +1405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorKafkaClusterVpcConfig {
 	SubnetIds: *[]*string,
@@ -1451,10 +1451,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorLogDelivery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorLogDelivery {
-	ReplicatorLogDelivery: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDelivery,
+	ReplicatorLogDelivery: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDelivery,
 }
 ```
 
@@ -1485,12 +1485,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDelivery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorLogDeliveryReplicatorLogDelivery {
-	CloudwatchLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs,
-	Firehose: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose,
-	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3,
+	CloudwatchLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs,
+	Firehose: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose,
+	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3,
 }
 ```
 
@@ -1551,7 +1551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs {
 	Enabled: interface{},
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose {
 	Enabled: interface{},
@@ -1643,7 +1643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3 {
 	Enabled: interface{},
@@ -1703,7 +1703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorReplicationInfoListConsumerGroupReplication {
 	ConsumerGroupsToReplicate: *[]*string,
@@ -1791,7 +1791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorReplicationInfoListStruct {
 	ConsumerGroupReplication: interface{},
@@ -1883,15 +1883,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorReplicationInfoListTopicReplication {
 	TopicsToReplicate: *[]*string,
 	CopyAccessControlListsForTopics: interface{},
 	CopyTopicConfigurations: interface{},
 	DetectAndCopyNewTopics: interface{},
-	StartingPosition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationStartingPosition,
-	TopicNameConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration,
+	StartingPosition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationStartingPosition,
+	TopicNameConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration,
 	TopicsToExclude: *[]*string,
 }
 ```
@@ -2003,7 +2003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationStartingPosition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorReplicationInfoListTopicReplicationStartingPosition {
 	Type: *string,
@@ -2035,7 +2035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration {
 	Type: *string,
@@ -2067,7 +2067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 &mskreplicator.MskReplicatorTimeouts {
 	Create: *string,
@@ -2129,7 +2129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorKafkaClusterAmazonMskClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorKafkaClusterAmazonMskClusterOutputReference
 ```
@@ -2400,7 +2400,7 @@ func InternalValue() MskReplicatorKafkaClusterAmazonMskCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorKafkaClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskReplicatorKafkaClusterList
 ```
@@ -2560,7 +2560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorKafkaClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskReplicatorKafkaClusterOutputReference
 ```
@@ -2897,7 +2897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorKafkaClusterVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorKafkaClusterVpcConfigOutputReference
 ```
@@ -3197,7 +3197,7 @@ func InternalValue() MskReplicatorKafkaClusterVpcConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorLogDeliveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorLogDeliveryOutputReference
 ```
@@ -3488,7 +3488,7 @@ func InternalValue() MskReplicatorLogDelivery
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogsOutputReference
 ```
@@ -3788,7 +3788,7 @@ func InternalValue() MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorLogDeliveryReplicatorLogDeliveryFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorLogDeliveryReplicatorLogDeliveryFirehoseOutputReference
 ```
@@ -4088,7 +4088,7 @@ func InternalValue() MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorLogDeliveryReplicatorLogDeliveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorLogDeliveryReplicatorLogDeliveryOutputReference
 ```
@@ -4463,7 +4463,7 @@ func InternalValue() MskReplicatorLogDeliveryReplicatorLogDelivery
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorLogDeliveryReplicatorLogDeliveryS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorLogDeliveryReplicatorLogDeliveryS3OutputReference
 ```
@@ -4792,7 +4792,7 @@ func InternalValue() MskReplicatorLogDeliveryReplicatorLogDeliveryS3
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListConsumerGroupReplicationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskReplicatorReplicationInfoListConsumerGroupReplicationList
 ```
@@ -4952,7 +4952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListConsumerGroupReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskReplicatorReplicationInfoListConsumerGroupReplicationOutputReference
 ```
@@ -5357,7 +5357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorReplicationInfoListStructOutputReference
 ```
@@ -5764,7 +5764,7 @@ func InternalValue() MskReplicatorReplicationInfoListStruct
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListTopicReplicationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskReplicatorReplicationInfoListTopicReplicationList
 ```
@@ -5924,7 +5924,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListTopicReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskReplicatorReplicationInfoListTopicReplicationOutputReference
 ```
@@ -6413,7 +6413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationStartingPositionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListTopicReplicationStartingPositionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorReplicationInfoListTopicReplicationStartingPositionOutputReference
 ```
@@ -6691,7 +6691,7 @@ func InternalValue() MskReplicatorReplicationInfoListTopicReplicationStartingPos
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference
 ```
@@ -6969,7 +6969,7 @@ func InternalValue() MskReplicatorReplicationInfoListTopicReplicationTopicNameCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskreplicator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskreplicator"
 
 mskreplicator.NewMskReplicatorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskReplicatorTimeoutsOutputReference
 ```

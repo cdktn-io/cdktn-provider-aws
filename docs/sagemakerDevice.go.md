@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDevice.SagemakerDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerdevice"
 
 sagemakerdevice.NewSagemakerDevice(scope Construct, id *string, config SagemakerDeviceConfig) SagemakerDevice
 ```
@@ -427,7 +427,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerDevice.SagemakerDevice.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerdevice"
 
 sagemakerdevice.SagemakerDevice_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerDevice.SagemakerDevice.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerdevice"
 
 sagemakerdevice.SagemakerDevice_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ sagemakerdevice.SagemakerDevice_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerDevice.SagemakerDevice.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerdevice"
 
 sagemakerdevice.SagemakerDevice_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ sagemakerdevice.SagemakerDevice_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerDevice.SagemakerDevice.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerdevice"
 
 sagemakerdevice.SagemakerDevice_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDevice.SagemakerDeviceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerdevice"
 
 &sagemakerdevice.SagemakerDeviceConfig {
 	Connection: interface{},
@@ -836,7 +836,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerdevice"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Device: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerDevice.SagemakerDeviceDevice,
+	Device: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerDevice.SagemakerDeviceDevice,
 	DeviceFleetName: *string,
 	Id: *string,
 	Region: *string,
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDevice.SagemakerDeviceDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerdevice"
 
 &sagemakerdevice.SagemakerDeviceDevice {
 	DeviceName: *string,
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDevice.SagemakerDeviceDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerdevice"
 
 sagemakerdevice.NewSagemakerDeviceDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDeviceDeviceOutputReference
 ```

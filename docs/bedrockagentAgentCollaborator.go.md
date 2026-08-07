@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaborator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 bedrockagentagentcollaborator.NewBedrockagentAgentCollaborator(scope Construct, id *string, config BedrockagentAgentCollaboratorConfig) BedrockagentAgentCollaborator
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaborator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 bedrockagentagentcollaborator.BedrockagentAgentCollaborator_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaborator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 bedrockagentagentcollaborator.BedrockagentAgentCollaborator_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ bedrockagentagentcollaborator.BedrockagentAgentCollaborator_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaborator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 bedrockagentagentcollaborator.BedrockagentAgentCollaborator_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ bedrockagentagentcollaborator.BedrockagentAgentCollaborator_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaborator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 bedrockagentagentcollaborator.BedrockagentAgentCollaborator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -977,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaboratorAgentDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 &bedrockagentagentcollaborator.BedrockagentAgentCollaboratorAgentDescriptor {
 	AliasArn: *string,
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaboratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 &bedrockagentagentcollaborator.BedrockagentAgentCollaboratorConfig {
 	Connection: interface{},
@@ -1027,7 +1027,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcolla
 	PrepareAgent: interface{},
 	Region: *string,
 	RelayConversationHistory: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentAgentCollaborator.BedrockagentAgentCollaboratorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentAgentCollaborator.BedrockagentAgentCollaboratorTimeouts,
 }
 ```
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaboratorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 &bedrockagentagentcollaborator.BedrockagentAgentCollaboratorTimeouts {
 	Create: *string,
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaboratorAgentDescriptorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 bedrockagentagentcollaborator.NewBedrockagentAgentCollaboratorAgentDescriptorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentAgentCollaboratorAgentDescriptorList
 ```
@@ -1471,7 +1471,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaboratorAgentDescriptorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 bedrockagentagentcollaborator.NewBedrockagentAgentCollaboratorAgentDescriptorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentAgentCollaboratorAgentDescriptorOutputReference
 ```
@@ -1760,7 +1760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentAgentCollaborator.BedrockagentAgentCollaboratorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentagentcollaborator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentagentcollaborator"
 
 bedrockagentagentcollaborator.NewBedrockagentAgentCollaboratorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentAgentCollaboratorTimeoutsOutputReference
 ```

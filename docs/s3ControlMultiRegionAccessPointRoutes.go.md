@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlMultiRegionAccessPointRoutes.S3ControlMultiRegionAccessPointRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlmultiregionaccesspointroutes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3controlmultiregionaccesspointroutes"
 
 s3controlmultiregionaccesspointroutes.NewS3ControlMultiRegionAccessPointRoutes(scope Construct, id *string, config S3ControlMultiRegionAccessPointRoutesConfig) S3ControlMultiRegionAccessPointRoutes
 ```
@@ -434,7 +434,7 @@ func ResetRoute()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3ControlMultiRegionAccessPointRoutes.S3ControlMultiRegionAccessPointRoutes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlmultiregionaccesspointroutes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3controlmultiregionaccesspointroutes"
 
 s3controlmultiregionaccesspointroutes.S3ControlMultiRegionAccessPointRoutes_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3ControlMultiRegionAccessPointRoutes.S3ControlMultiRegionAccessPointRoutes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlmultiregionaccesspointroutes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3controlmultiregionaccesspointroutes"
 
 s3controlmultiregionaccesspointroutes.S3ControlMultiRegionAccessPointRoutes_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ s3controlmultiregionaccesspointroutes.S3ControlMultiRegionAccessPointRoutes_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3ControlMultiRegionAccessPointRoutes.S3ControlMultiRegionAccessPointRoutes.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlmultiregionaccesspointroutes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3controlmultiregionaccesspointroutes"
 
 s3controlmultiregionaccesspointroutes.S3ControlMultiRegionAccessPointRoutes_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ s3controlmultiregionaccesspointroutes.S3ControlMultiRegionAccessPointRoutes_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3ControlMultiRegionAccessPointRoutes.S3ControlMultiRegionAccessPointRoutes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlmultiregionaccesspointroutes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3controlmultiregionaccesspointroutes"
 
 s3controlmultiregionaccesspointroutes.S3ControlMultiRegionAccessPointRoutes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlMultiRegionAccessPointRoutes.S3ControlMultiRegionAccessPointRoutesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlmultiregionaccesspointroutes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3controlmultiregionaccesspointroutes"
 
 &s3controlmultiregionaccesspointroutes.S3ControlMultiRegionAccessPointRoutesConfig {
 	Connection: interface{},
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlMultiRegionAccessPointRoutes.S3ControlMultiRegionAccessPointRoutesRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlmultiregionaccesspointroutes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3controlmultiregionaccesspointroutes"
 
 &s3controlmultiregionaccesspointroutes.S3ControlMultiRegionAccessPointRoutesRoute {
 	Bucket: *string,
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlMultiRegionAccessPointRoutes.S3ControlMultiRegionAccessPointRoutesRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlmultiregionaccesspointroutes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3controlmultiregionaccesspointroutes"
 
 s3controlmultiregionaccesspointroutes.NewS3ControlMultiRegionAccessPointRoutesRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3ControlMultiRegionAccessPointRoutesRouteList
 ```
@@ -1195,7 +1195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlMultiRegionAccessPointRoutes.S3ControlMultiRegionAccessPointRoutesRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlmultiregionaccesspointroutes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3controlmultiregionaccesspointroutes"
 
 s3controlmultiregionaccesspointroutes.NewS3ControlMultiRegionAccessPointRoutesRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3ControlMultiRegionAccessPointRoutesRouteOutputReference
 ```

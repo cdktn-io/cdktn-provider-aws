@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekspodidentityassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekspodidentityassociation"
 
 ekspodidentityassociation.NewEksPodIdentityAssociation(scope Construct, id *string, config EksPodIdentityAssociationConfig) EksPodIdentityAssociation
 ```
@@ -435,7 +435,7 @@ func ResetTargetRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekspodidentityassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekspodidentityassociation"
 
 ekspodidentityassociation.EksPodIdentityAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekspodidentityassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekspodidentityassociation"
 
 ekspodidentityassociation.EksPodIdentityAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ ekspodidentityassociation.EksPodIdentityAssociation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekspodidentityassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekspodidentityassociation"
 
 ekspodidentityassociation.EksPodIdentityAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ ekspodidentityassociation.EksPodIdentityAssociation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekspodidentityassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekspodidentityassociation"
 
 ekspodidentityassociation.EksPodIdentityAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -977,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksPodIdentityAssociation.EksPodIdentityAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ekspodidentityassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ekspodidentityassociation"
 
 &ekspodidentityassociation.EksPodIdentityAssociationConfig {
 	Connection: interface{},

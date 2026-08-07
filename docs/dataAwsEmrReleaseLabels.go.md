@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsemrreleaselabels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsemrreleaselabels"
 
 dataawsemrreleaselabels.NewDataAwsEmrReleaseLabels(scope Construct, id *string, config DataAwsEmrReleaseLabelsConfig) DataAwsEmrReleaseLabels
 ```
@@ -332,7 +332,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsemrreleaselabels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsemrreleaselabels"
 
 dataawsemrreleaselabels.DataAwsEmrReleaseLabels_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsemrreleaselabels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsemrreleaselabels"
 
 dataawsemrreleaselabels.DataAwsEmrReleaseLabels_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsemrreleaselabels.DataAwsEmrReleaseLabels_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsemrreleaselabels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsemrreleaselabels"
 
 dataawsemrreleaselabels.DataAwsEmrReleaseLabels_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataawsemrreleaselabels.DataAwsEmrReleaseLabels_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsemrreleaselabels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsemrreleaselabels"
 
 dataawsemrreleaselabels.DataAwsEmrReleaseLabels_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsemrreleaselabels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsemrreleaselabels"
 
 &dataawsemrreleaselabels.DataAwsEmrReleaseLabelsConfig {
 	Connection: interface{},
@@ -686,7 +686,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsemrreleaselabel
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFilters,
+	Filters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFilters,
 	Id: *string,
 	Region: *string,
 }
@@ -827,7 +827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsemrreleaselabels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsemrreleaselabels"
 
 &dataawsemrreleaselabels.DataAwsEmrReleaseLabelsFilters {
 	Application: *string,
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsemrreleaselabels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsemrreleaselabels"
 
 dataawsemrreleaselabels.NewDataAwsEmrReleaseLabelsFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEmrReleaseLabelsFiltersOutputReference
 ```

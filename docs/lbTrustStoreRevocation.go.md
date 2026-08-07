@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
 
 lbtruststorerevocation.NewLbTrustStoreRevocation(scope Construct, id *string, config LbTrustStoreRevocationConfig) LbTrustStoreRevocation
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
 
 lbtruststorerevocation.LbTrustStoreRevocation_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
 
 lbtruststorerevocation.LbTrustStoreRevocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ lbtruststorerevocation.LbTrustStoreRevocation_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
 
 lbtruststorerevocation.LbTrustStoreRevocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ lbtruststorerevocation.LbTrustStoreRevocation_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
 
 lbtruststorerevocation.LbTrustStoreRevocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
 
 &lbtruststorerevocation.LbTrustStoreRevocationConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtruststorerevocation
 	Id: *string,
 	Region: *string,
 	RevocationsS3ObjectVersion: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lbTrustStoreRevocation.LbTrustStoreRevocationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.lbTrustStoreRevocation.LbTrustStoreRevocationTimeouts,
 }
 ```
 
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
 
 &lbtruststorerevocation.LbTrustStoreRevocationTimeouts {
 	Create: *string,
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
 
 lbtruststorerevocation.NewLbTrustStoreRevocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbTrustStoreRevocationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkAclRule.NetworkAclRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkaclrule"
 
 networkaclrule.NewNetworkAclRule(scope Construct, id *string, config NetworkAclRuleConfig) NetworkAclRule
 ```
@@ -463,7 +463,7 @@ func ResetToPort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkAclRule.NetworkAclRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkaclrule"
 
 networkaclrule.NetworkAclRule_IsConstruct(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkAclRule.NetworkAclRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkaclrule"
 
 networkaclrule.NetworkAclRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ networkaclrule.NetworkAclRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkAclRule.NetworkAclRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkaclrule"
 
 networkaclrule.NetworkAclRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ networkaclrule.NetworkAclRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkAclRule.NetworkAclRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkaclrule"
 
 networkaclrule.NetworkAclRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1038,7 +1038,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkAclRule.NetworkAclRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkaclrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkaclrule"
 
 &networkaclrule.NetworkAclRuleConfig {
 	Connection: interface{},

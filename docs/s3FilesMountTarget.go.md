@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
 
 s3filesmounttarget.NewS3FilesMountTarget(scope Construct, id *string, config S3FilesMountTargetConfig) S3FilesMountTarget
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
 
 s3filesmounttarget.S3FilesMountTarget_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
 
 s3filesmounttarget.S3FilesMountTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ s3filesmounttarget.S3FilesMountTarget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
 
 s3filesmounttarget.S3FilesMountTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ s3filesmounttarget.S3FilesMountTarget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
 
 s3filesmounttarget.S3FilesMountTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
 
 &s3filesmounttarget.S3FilesMountTargetConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesmounttarget"
 	Ipv6Address: *string,
 	Region: *string,
 	SecurityGroups: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3FilesMountTarget.S3FilesMountTargetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3FilesMountTarget.S3FilesMountTargetTimeouts,
 }
 ```
 
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTargetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
 
 &s3filesmounttarget.S3FilesMountTargetTimeouts {
 	Create: *string,
@@ -1295,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTargetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
 
 s3filesmounttarget.NewS3FilesMountTargetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3FilesMountTargetTimeoutsOutputReference
 ```

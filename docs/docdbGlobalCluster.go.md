@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 docdbglobalcluster.NewDocdbGlobalCluster(scope Construct, id *string, config DocdbGlobalClusterConfig) DocdbGlobalCluster
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 docdbglobalcluster.DocdbGlobalCluster_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 docdbglobalcluster.DocdbGlobalCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ docdbglobalcluster.DocdbGlobalCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 docdbglobalcluster.DocdbGlobalCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ docdbglobalcluster.DocdbGlobalCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 docdbglobalcluster.DocdbGlobalCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1029,7 +1029,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 &docdbglobalcluster.DocdbGlobalClusterConfig {
 	Connection: interface{},
@@ -1048,7 +1048,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
 	Region: *string,
 	SourceDbClusterIdentifier: *string,
 	StorageEncrypted: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.docdbGlobalCluster.DocdbGlobalClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.docdbGlobalCluster.DocdbGlobalClusterTimeouts,
 }
 ```
 
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 &docdbglobalcluster.DocdbGlobalClusterGlobalClusterMembers {
 
@@ -1291,7 +1291,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 &docdbglobalcluster.DocdbGlobalClusterTimeouts {
 	Create: *string,
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 docdbglobalcluster.NewDocdbGlobalClusterGlobalClusterMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DocdbGlobalClusterGlobalClusterMembersList
 ```
@@ -1502,7 +1502,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 docdbglobalcluster.NewDocdbGlobalClusterGlobalClusterMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DocdbGlobalClusterGlobalClusterMembersOutputReference
 ```
@@ -1791,7 +1791,7 @@ func InternalValue() DocdbGlobalClusterGlobalClusterMembers
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbGlobalCluster.DocdbGlobalClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/docdbglobalcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/docdbglobalcluster"
 
 docdbglobalcluster.NewDocdbGlobalClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DocdbGlobalClusterTimeoutsOutputReference
 ```

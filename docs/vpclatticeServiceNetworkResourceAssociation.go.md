@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 vpclatticeservicenetworkresourceassociation.NewVpclatticeServiceNetworkResourceAssociation(scope Construct, id *string, config VpclatticeServiceNetworkResourceAssociationConfig) VpclatticeServiceNetworkResourceAssociation
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 vpclatticeservicenetworkresourceassociation.VpclatticeServiceNetworkResourceAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 vpclatticeservicenetworkresourceassociation.VpclatticeServiceNetworkResourceAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ vpclatticeservicenetworkresourceassociation.VpclatticeServiceNetworkResourceAsso
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 vpclatticeservicenetworkresourceassociation.VpclatticeServiceNetworkResourceAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ vpclatticeservicenetworkresourceassociation.VpclatticeServiceNetworkResourceAsso
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 vpclatticeservicenetworkresourceassociation.VpclatticeServiceNetworkResourceAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 &vpclatticeservicenetworkresourceassociation.VpclatticeServiceNetworkResourceAssociationConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetwo
 	PrivateDnsEnabled: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociationTimeouts,
 }
 ```
 
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociationDnsEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 &vpclatticeservicenetworkresourceassociation.VpclatticeServiceNetworkResourceAssociationDnsEntry {
 
@@ -1109,7 +1109,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetwo
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 &vpclatticeservicenetworkresourceassociation.VpclatticeServiceNetworkResourceAssociationTimeouts {
 	Create: *string,
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociationDnsEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 vpclatticeservicenetworkresourceassociation.NewVpclatticeServiceNetworkResourceAssociationDnsEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeServiceNetworkResourceAssociationDnsEntryList
 ```
@@ -1310,7 +1310,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociationDnsEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 vpclatticeservicenetworkresourceassociation.NewVpclatticeServiceNetworkResourceAssociationDnsEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeServiceNetworkResourceAssociationDnsEntryOutputReference
 ```
@@ -1599,7 +1599,7 @@ func InternalValue() VpclatticeServiceNetworkResourceAssociationDnsEntry
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeServiceNetworkResourceAssociation.VpclatticeServiceNetworkResourceAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeservicenetworkresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservicenetworkresourceassociation"
 
 vpclatticeservicenetworkresourceassociation.NewVpclatticeServiceNetworkResourceAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeServiceNetworkResourceAssociationTimeoutsOutputReference
 ```

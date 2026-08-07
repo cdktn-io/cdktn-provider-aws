@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 paymentcryptographykey.NewPaymentcryptographyKey(scope Construct, id *string, config PaymentcryptographyKeyConfig) PaymentcryptographyKey
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 paymentcryptographykey.PaymentcryptographyKey_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 paymentcryptographykey.PaymentcryptographyKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ paymentcryptographykey.PaymentcryptographyKey_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 paymentcryptographykey.PaymentcryptographyKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ paymentcryptographykey.PaymentcryptographyKey_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 paymentcryptographykey.PaymentcryptographyKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1006,7 +1006,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 &paymentcryptographykey.PaymentcryptographyKeyConfig {
 	Connection: interface{},
@@ -1023,7 +1023,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey
 	KeyCheckValueAlgorithm: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.paymentcryptographyKey.PaymentcryptographyKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.paymentcryptographyKey.PaymentcryptographyKeyTimeouts,
 }
 ```
 
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyKeyAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 &paymentcryptographykey.PaymentcryptographyKeyKeyAttributes {
 	KeyAlgorithm: *string,
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyKeyAttributesKeyModesOfUse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 &paymentcryptographykey.PaymentcryptographyKeyKeyAttributesKeyModesOfUse {
 	Decrypt: interface{},
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 &paymentcryptographykey.PaymentcryptographyKeyTimeouts {
 	Create: *string,
@@ -1514,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyKeyAttributesKeyModesOfUseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 paymentcryptographykey.NewPaymentcryptographyKeyKeyAttributesKeyModesOfUseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PaymentcryptographyKeyKeyAttributesKeyModesOfUseList
 ```
@@ -1674,7 +1674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 paymentcryptographykey.NewPaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference
 ```
@@ -2202,7 +2202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyKeyAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 paymentcryptographykey.NewPaymentcryptographyKeyKeyAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PaymentcryptographyKeyKeyAttributesList
 ```
@@ -2362,7 +2362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyKeyAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 paymentcryptographykey.NewPaymentcryptographyKeyKeyAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PaymentcryptographyKeyKeyAttributesOutputReference
 ```
@@ -2737,7 +2737,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/paymentcryptographykey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey"
 
 paymentcryptographykey.NewPaymentcryptographyKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaymentcryptographyKeyTimeoutsOutputReference
 ```

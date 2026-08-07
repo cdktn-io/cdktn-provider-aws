@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3directorybuckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3directorybuckets"
 
 dataawss3directorybuckets.NewDataAwsS3DirectoryBuckets(scope Construct, id *string, config DataAwsS3DirectoryBucketsConfig) DataAwsS3DirectoryBuckets
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3directorybuckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3directorybuckets"
 
 dataawss3directorybuckets.DataAwsS3DirectoryBuckets_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3directorybuckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3directorybuckets"
 
 dataawss3directorybuckets.DataAwsS3DirectoryBuckets_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawss3directorybuckets.DataAwsS3DirectoryBuckets_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3directorybuckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3directorybuckets"
 
 dataawss3directorybuckets.DataAwsS3DirectoryBuckets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawss3directorybuckets.DataAwsS3DirectoryBuckets_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3directorybuckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3directorybuckets"
 
 dataawss3directorybuckets.DataAwsS3DirectoryBuckets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBucketsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3directorybuckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3directorybuckets"
 
 &dataawss3directorybuckets.DataAwsS3DirectoryBucketsConfig {
 	Connection: interface{},

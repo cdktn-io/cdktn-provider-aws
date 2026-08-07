@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslakeformationresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslakeformationresource"
 
 dataawslakeformationresource.NewDataAwsLakeformationResource(scope Construct, id *string, config DataAwsLakeformationResourceConfig) DataAwsLakeformationResource
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslakeformationresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslakeformationresource"
 
 dataawslakeformationresource.DataAwsLakeformationResource_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslakeformationresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslakeformationresource"
 
 dataawslakeformationresource.DataAwsLakeformationResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawslakeformationresource.DataAwsLakeformationResource_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslakeformationresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslakeformationresource"
 
 dataawslakeformationresource.DataAwsLakeformationResource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawslakeformationresource.DataAwsLakeformationResource_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslakeformationresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslakeformationresource"
 
 dataawslakeformationresource.DataAwsLakeformationResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawslakeformationresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslakeformationresource"
 
 &dataawslakeformationresource.DataAwsLakeformationResourceConfig {
 	Connection: interface{},

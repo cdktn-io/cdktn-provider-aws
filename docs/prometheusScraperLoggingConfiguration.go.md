@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 prometheusscraperloggingconfiguration.NewPrometheusScraperLoggingConfiguration(scope Construct, id *string, config PrometheusScraperLoggingConfigurationConfig) PrometheusScraperLoggingConfiguration
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 prometheusscraperloggingconfiguration.PrometheusScraperLoggingConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 prometheusscraperloggingconfiguration.PrometheusScraperLoggingConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ prometheusscraperloggingconfiguration.PrometheusScraperLoggingConfiguration_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 prometheusscraperloggingconfiguration.PrometheusScraperLoggingConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ prometheusscraperloggingconfiguration.PrometheusScraperLoggingConfiguration_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 prometheusscraperloggingconfiguration.PrometheusScraperLoggingConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 &prometheusscraperloggingconfiguration.PrometheusScraperLoggingConfigurationConfig {
 	Connection: interface{},
@@ -867,7 +867,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggi
 	LoggingDestination: interface{},
 	Region: *string,
 	ScraperComponents: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationTimeouts,
 }
 ```
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationLoggingDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 &prometheusscraperloggingconfiguration.PrometheusScraperLoggingConfigurationLoggingDestination {
 	CloudwatchLogs: interface{},
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationLoggingDestinationCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 &prometheusscraperloggingconfiguration.PrometheusScraperLoggingConfigurationLoggingDestinationCloudwatchLogs {
 	LogGroupArn: *string,
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 &prometheusscraperloggingconfiguration.PrometheusScraperLoggingConfigurationTimeouts {
 	Create: *string,
@@ -1165,7 +1165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationLoggingDestinationCloudwatchLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 prometheusscraperloggingconfiguration.NewPrometheusScraperLoggingConfigurationLoggingDestinationCloudwatchLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusScraperLoggingConfigurationLoggingDestinationCloudwatchLogsList
 ```
@@ -1325,7 +1325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationLoggingDestinationCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 prometheusscraperloggingconfiguration.NewPrometheusScraperLoggingConfigurationLoggingDestinationCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusScraperLoggingConfigurationLoggingDestinationCloudwatchLogsOutputReference
 ```
@@ -1614,7 +1614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationLoggingDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 prometheusscraperloggingconfiguration.NewPrometheusScraperLoggingConfigurationLoggingDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusScraperLoggingConfigurationLoggingDestinationList
 ```
@@ -1774,7 +1774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationLoggingDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 prometheusscraperloggingconfiguration.NewPrometheusScraperLoggingConfigurationLoggingDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusScraperLoggingConfigurationLoggingDestinationOutputReference
 ```
@@ -2083,7 +2083,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraperLoggingConfiguration.PrometheusScraperLoggingConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusscraperloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusscraperloggingconfiguration"
 
 prometheusscraperloggingconfiguration.NewPrometheusScraperLoggingConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrometheusScraperLoggingConfigurationTimeoutsOutputReference
 ```

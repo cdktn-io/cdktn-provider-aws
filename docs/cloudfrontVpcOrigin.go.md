@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 cloudfrontvpcorigin.NewCloudfrontVpcOrigin(scope Construct, id *string, config CloudfrontVpcOriginConfig) CloudfrontVpcOrigin
 ```
@@ -447,7 +447,7 @@ func ResetVpcOriginEndpointConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOrigin.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 cloudfrontvpcorigin.CloudfrontVpcOrigin_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOrigin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 cloudfrontvpcorigin.CloudfrontVpcOrigin_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ cloudfrontvpcorigin.CloudfrontVpcOrigin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOrigin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 cloudfrontvpcorigin.CloudfrontVpcOrigin_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ cloudfrontvpcorigin.CloudfrontVpcOrigin_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOrigin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 cloudfrontvpcorigin.CloudfrontVpcOrigin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 &cloudfrontvpcorigin.CloudfrontVpcOriginConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.cloudfrontVpcOrigin.CloudfrontVpcOriginTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.cloudfrontVpcOrigin.CloudfrontVpcOriginTimeouts,
 	VpcOriginEndpointConfig: interface{},
 }
 ```
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOriginTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 &cloudfrontvpcorigin.CloudfrontVpcOriginTimeouts {
 	Create: *string,
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOriginVpcOriginEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 &cloudfrontvpcorigin.CloudfrontVpcOriginVpcOriginEndpointConfig {
 	Arn: *string,
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 &cloudfrontvpcorigin.CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocols {
 	Items: *[]*string,
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOriginTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 cloudfrontvpcorigin.NewCloudfrontVpcOriginTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontVpcOriginTimeoutsOutputReference
 ```
@@ -1548,7 +1548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOriginVpcOriginEndpointConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 cloudfrontvpcorigin.NewCloudfrontVpcOriginVpcOriginEndpointConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontVpcOriginVpcOriginEndpointConfigList
 ```
@@ -1708,7 +1708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 cloudfrontvpcorigin.NewCloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsList
 ```
@@ -1868,7 +1868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 cloudfrontvpcorigin.NewCloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontVpcOriginVpcOriginEndpointConfigOriginSslProtocolsOutputReference
 ```
@@ -2179,7 +2179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontVpcOrigin.CloudfrontVpcOriginVpcOriginEndpointConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontvpcorigin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontvpcorigin"
 
 cloudfrontvpcorigin.NewCloudfrontVpcOriginVpcOriginEndpointConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontVpcOriginVpcOriginEndpointConfigOutputReference
 ```

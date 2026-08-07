@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsclustercapacityproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsclustercapacityproviders"
 
 ecsclustercapacityproviders.NewEcsClusterCapacityProviders(scope Construct, id *string, config EcsClusterCapacityProvidersConfig) EcsClusterCapacityProviders
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsclustercapacityproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsclustercapacityproviders"
 
 ecsclustercapacityproviders.EcsClusterCapacityProviders_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsclustercapacityproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsclustercapacityproviders"
 
 ecsclustercapacityproviders.EcsClusterCapacityProviders_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ ecsclustercapacityproviders.EcsClusterCapacityProviders_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsclustercapacityproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsclustercapacityproviders"
 
 ecsclustercapacityproviders.EcsClusterCapacityProviders_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ ecsclustercapacityproviders.EcsClusterCapacityProviders_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsclustercapacityproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsclustercapacityproviders"
 
 ecsclustercapacityproviders.EcsClusterCapacityProviders_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsclustercapacityproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsclustercapacityproviders"
 
 &ecsclustercapacityproviders.EcsClusterCapacityProvidersConfig {
 	Connection: interface{},
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsclustercapacityproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsclustercapacityproviders"
 
 &ecsclustercapacityproviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategy {
 	CapacityProvider: *string,
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsclustercapacityproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsclustercapacityproviders"
 
 ecsclustercapacityproviders.NewEcsClusterCapacityProvidersDefaultCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList
 ```
@@ -1241,7 +1241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsclustercapacityproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsclustercapacityproviders"
 
 ecsclustercapacityproviders.NewEcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference
 ```

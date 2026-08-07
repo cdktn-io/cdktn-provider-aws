@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 
 gameliftalias.NewGameliftAlias(scope Construct, id *string, config GameliftAliasConfig) GameliftAlias
 ```
@@ -448,7 +448,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 
 gameliftalias.GameliftAlias_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 
 gameliftalias.GameliftAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ gameliftalias.GameliftAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 
 gameliftalias.GameliftAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ gameliftalias.GameliftAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 
 gameliftalias.GameliftAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 
 &gameliftalias.GameliftAliasConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gameliftalias"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	RoutingStrategy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.gameliftAlias.GameliftAliasRoutingStrategy,
+	RoutingStrategy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.gameliftAlias.GameliftAliasRoutingStrategy,
 	Description: *string,
 	Id: *string,
 	Region: *string,
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 
 &gameliftalias.GameliftAliasRoutingStrategy {
 	Type: *string,
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 
 gameliftalias.NewGameliftAliasRoutingStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftAliasRoutingStrategyOutputReference
 ```

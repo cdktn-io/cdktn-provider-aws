@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogDeliveryDestinationPolicy.CloudwatchLogDeliveryDestinationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogdeliverydestinationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogdeliverydestinationpolicy"
 
 cloudwatchlogdeliverydestinationpolicy.NewCloudwatchLogDeliveryDestinationPolicy(scope Construct, id *string, config CloudwatchLogDeliveryDestinationPolicyConfig) CloudwatchLogDeliveryDestinationPolicy
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchLogDeliveryDestinationPolicy.CloudwatchLogDeliveryDestinationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogdeliverydestinationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogdeliverydestinationpolicy"
 
 cloudwatchlogdeliverydestinationpolicy.CloudwatchLogDeliveryDestinationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchLogDeliveryDestinationPolicy.CloudwatchLogDeliveryDestinationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogdeliverydestinationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogdeliverydestinationpolicy"
 
 cloudwatchlogdeliverydestinationpolicy.CloudwatchLogDeliveryDestinationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ cloudwatchlogdeliverydestinationpolicy.CloudwatchLogDeliveryDestinationPolicy_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchLogDeliveryDestinationPolicy.CloudwatchLogDeliveryDestinationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogdeliverydestinationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogdeliverydestinationpolicy"
 
 cloudwatchlogdeliverydestinationpolicy.CloudwatchLogDeliveryDestinationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ cloudwatchlogdeliverydestinationpolicy.CloudwatchLogDeliveryDestinationPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchLogDeliveryDestinationPolicy.CloudwatchLogDeliveryDestinationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogdeliverydestinationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogdeliverydestinationpolicy"
 
 cloudwatchlogdeliverydestinationpolicy.CloudwatchLogDeliveryDestinationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogDeliveryDestinationPolicy.CloudwatchLogDeliveryDestinationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudwatchlogdeliverydestinationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogdeliverydestinationpolicy"
 
 &cloudwatchlogdeliverydestinationpolicy.CloudwatchLogDeliveryDestinationPolicyConfig {
 	Connection: interface{},

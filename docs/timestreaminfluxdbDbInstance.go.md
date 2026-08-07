@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.NewTimestreaminfluxdbDbInstance(scope Construct, id *string, config TimestreaminfluxdbDbInstanceConfig) TimestreaminfluxdbDbInstance
 ```
@@ -516,7 +516,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstance_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstance_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1322,7 +1322,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 &timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstanceConfig {
 	Connection: interface{},
@@ -1351,7 +1351,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbin
 	PubliclyAccessible: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceTimeouts,
 }
 ```
 
@@ -1772,7 +1772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceLogDeliveryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 &timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstanceLogDeliveryConfiguration {
 	S3Configuration: interface{},
@@ -1806,7 +1806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 &timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3Configuration {
 	BucketName: *string,
@@ -1856,7 +1856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceMaintenanceSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 &timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstanceMaintenanceSchedule {
 	PreferredMaintenanceWindow: *string,
@@ -1902,7 +1902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 &timestreaminfluxdbdbinstance.TimestreaminfluxdbDbInstanceTimeouts {
 	Create: *string,
@@ -1970,7 +1970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceLogDeliveryConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.NewTimestreaminfluxdbDbInstanceLogDeliveryConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreaminfluxdbDbInstanceLogDeliveryConfigurationList
 ```
@@ -2130,7 +2130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceLogDeliveryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.NewTimestreaminfluxdbDbInstanceLogDeliveryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreaminfluxdbDbInstanceLogDeliveryConfigurationOutputReference
 ```
@@ -2439,7 +2439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.NewTimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationList
 ```
@@ -2599,7 +2599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.NewTimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationOutputReference
 ```
@@ -2910,7 +2910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceMaintenanceScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.NewTimestreaminfluxdbDbInstanceMaintenanceScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreaminfluxdbDbInstanceMaintenanceScheduleList
 ```
@@ -3070,7 +3070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceMaintenanceScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.NewTimestreaminfluxdbDbInstanceMaintenanceScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreaminfluxdbDbInstanceMaintenanceScheduleOutputReference
 ```
@@ -3381,7 +3381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreaminfluxdbDbInstance.TimestreaminfluxdbDbInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreaminfluxdbdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreaminfluxdbdbinstance"
 
 timestreaminfluxdbdbinstance.NewTimestreaminfluxdbDbInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TimestreaminfluxdbDbInstanceTimeoutsOutputReference
 ```

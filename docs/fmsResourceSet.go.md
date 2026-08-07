@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 fmsresourceset.NewFmsResourceSet(scope Construct, id *string, config FmsResourceSetConfig) FmsResourceSet
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 fmsresourceset.FmsResourceSet_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 fmsresourceset.FmsResourceSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ fmsresourceset.FmsResourceSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 fmsresourceset.FmsResourceSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ fmsresourceset.FmsResourceSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 fmsresourceset.FmsResourceSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 &fmsresourceset.FmsResourceSetConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
 	Region: *string,
 	ResourceSet: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.fmsResourceSet.FmsResourceSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.fmsResourceSet.FmsResourceSetTimeouts,
 }
 ```
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 &fmsresourceset.FmsResourceSetResourceSet {
 	Name: *string,
@@ -1116,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 &fmsresourceset.FmsResourceSetTimeouts {
 	Create: *string,
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSetResourceSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 fmsresourceset.NewFmsResourceSetResourceSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FmsResourceSetResourceSetList
 ```
@@ -1344,7 +1344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSetResourceSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 fmsresourceset.NewFmsResourceSetResourceSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FmsResourceSetResourceSetOutputReference
 ```
@@ -1771,7 +1771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fmsResourceSet.FmsResourceSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fmsresourceset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fmsresourceset"
 
 fmsresourceset.NewFmsResourceSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsResourceSetTimeoutsOutputReference
 ```

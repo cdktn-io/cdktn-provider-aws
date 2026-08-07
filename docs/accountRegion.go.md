@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountRegion.AccountRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/accountregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountregion"
 
 accountregion.NewAccountRegion(scope Construct, id *string, config AccountRegionConfig) AccountRegion
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.accountRegion.AccountRegion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/accountregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountregion"
 
 accountregion.AccountRegion_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.accountRegion.AccountRegion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/accountregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountregion"
 
 accountregion.AccountRegion_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ accountregion.AccountRegion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.accountRegion.AccountRegion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/accountregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountregion"
 
 accountregion.AccountRegion_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ accountregion.AccountRegion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.accountRegion.AccountRegion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/accountregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountregion"
 
 accountregion.AccountRegion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.accountRegion.AccountRegionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/accountregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountregion"
 
 &accountregion.AccountRegionConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/accountregion"
 	RegionName: *string,
 	AccountId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.accountRegion.AccountRegionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.accountRegion.AccountRegionTimeouts,
 }
 ```
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.accountRegion.AccountRegionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/accountregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountregion"
 
 &accountregion.AccountRegionTimeouts {
 	Create: *string,
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountRegion.AccountRegionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/accountregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountregion"
 
 accountregion.NewAccountRegionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountRegionTimeoutsOutputReference
 ```

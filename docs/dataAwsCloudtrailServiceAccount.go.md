@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudtrailserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudtrailserviceaccount"
 
 dataawscloudtrailserviceaccount.NewDataAwsCloudtrailServiceAccount(scope Construct, id *string, config DataAwsCloudtrailServiceAccountConfig) DataAwsCloudtrailServiceAccount
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudtrailserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudtrailserviceaccount"
 
 dataawscloudtrailserviceaccount.DataAwsCloudtrailServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudtrailserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudtrailserviceaccount"
 
 dataawscloudtrailserviceaccount.DataAwsCloudtrailServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawscloudtrailserviceaccount.DataAwsCloudtrailServiceAccount_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudtrailserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudtrailserviceaccount"
 
 dataawscloudtrailserviceaccount.DataAwsCloudtrailServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawscloudtrailserviceaccount.DataAwsCloudtrailServiceAccount_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudtrailserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudtrailserviceaccount"
 
 dataawscloudtrailserviceaccount.DataAwsCloudtrailServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudtrailserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudtrailserviceaccount"
 
 &dataawscloudtrailserviceaccount.DataAwsCloudtrailServiceAccountConfig {
 	Connection: interface{},

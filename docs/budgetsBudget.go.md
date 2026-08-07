@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudget(scope Construct, id *string, config BudgetsBudgetConfig) BudgetsBudget
 ```
@@ -604,7 +604,7 @@ func ResetTimePeriodStart()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_IsConstruct(x interface{}) *bool
 ```
@@ -636,7 +636,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_IsTerraformElement(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ budgetsbudget.BudgetsBudget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_IsTerraformResource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ budgetsbudget.BudgetsBudget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1344,11 +1344,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetAutoAdjustData {
 	AutoAdjustType: *string,
-	HistoricalOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions,
+	HistoricalOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions,
 }
 ```
 
@@ -1392,7 +1392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetAutoAdjustDataHistoricalOptions {
 	BudgetAdjustmentPeriod: *f64,
@@ -1424,7 +1424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetConfig {
 	Connection: interface{},
@@ -1437,11 +1437,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
 	BudgetType: *string,
 	TimeUnit: *string,
 	AccountId: *string,
-	AutoAdjustData: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetAutoAdjustData,
+	AutoAdjustData: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetAutoAdjustData,
 	BillingViewArn: *string,
 	CostFilter: interface{},
-	CostTypes: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetCostTypes,
-	FilterExpression: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpression,
+	CostTypes: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetCostTypes,
+	FilterExpression: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpression,
 	Id: *string,
 	LimitAmount: *string,
 	LimitUnit: *string,
@@ -1821,7 +1821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetCostFilter {
 	Name: *string,
@@ -1867,7 +1867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetCostTypes {
 	IncludeCredit: interface{},
@@ -2039,15 +2039,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpression {
 	And: interface{},
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionDimensions,
-	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNot,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionDimensions,
+	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNot,
 	Or: interface{},
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionTags,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionTags,
 }
 ```
 
@@ -2153,15 +2153,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAnd {
 	And: interface{},
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndDimensions,
-	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndNot,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndDimensions,
+	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndNot,
 	Or: interface{},
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndTags,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndTags,
 }
 ```
 
@@ -2267,12 +2267,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndAnd {
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensions,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndAndTags,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensions,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndAndTags,
 }
 ```
 
@@ -2333,7 +2333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndAndCostCategories {
 	Key: *string,
@@ -2393,7 +2393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndAndDimensions {
 	Key: *string,
@@ -2453,7 +2453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndAndTags {
 	Key: *string,
@@ -2513,7 +2513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndCostCategories {
 	Key: *string,
@@ -2573,7 +2573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndDimensions {
 	Key: *string,
@@ -2633,12 +2633,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndNot {
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensions,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndNotTags,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensions,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndNotTags,
 }
 ```
 
@@ -2699,7 +2699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndNotCostCategories {
 	Key: *string,
@@ -2759,7 +2759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndNotDimensions {
 	Key: *string,
@@ -2819,7 +2819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndNotTags {
 	Key: *string,
@@ -2879,12 +2879,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndOr {
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensions,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionAndOrTags,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensions,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionAndOrTags,
 }
 ```
 
@@ -2945,7 +2945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndOrCostCategories {
 	Key: *string,
@@ -3005,7 +3005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndOrDimensions {
 	Key: *string,
@@ -3065,7 +3065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndOrTags {
 	Key: *string,
@@ -3125,7 +3125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionAndTags {
 	Key: *string,
@@ -3185,7 +3185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionCostCategories {
 	Key: *string,
@@ -3245,7 +3245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionDimensions {
 	Key: *string,
@@ -3305,15 +3305,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNot {
 	And: interface{},
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotDimensions,
-	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotNot,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotDimensions,
+	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotNot,
 	Or: interface{},
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotTags,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotTags,
 }
 ```
 
@@ -3419,12 +3419,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotAnd {
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensions,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotAndTags,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensions,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotAndTags,
 }
 ```
 
@@ -3485,7 +3485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotAndCostCategories {
 	Key: *string,
@@ -3545,7 +3545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotAndDimensions {
 	Key: *string,
@@ -3605,7 +3605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotAndTags {
 	Key: *string,
@@ -3665,7 +3665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotCostCategories {
 	Key: *string,
@@ -3725,7 +3725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotDimensions {
 	Key: *string,
@@ -3785,12 +3785,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotNot {
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensions,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotNotTags,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensions,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotNotTags,
 }
 ```
 
@@ -3851,7 +3851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotNotCostCategories {
 	Key: *string,
@@ -3911,7 +3911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotNotDimensions {
 	Key: *string,
@@ -3971,7 +3971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotNotTags {
 	Key: *string,
@@ -4031,12 +4031,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotOr {
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensions,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionNotOrTags,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensions,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionNotOrTags,
 }
 ```
 
@@ -4097,7 +4097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotOrCostCategories {
 	Key: *string,
@@ -4157,7 +4157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotOrDimensions {
 	Key: *string,
@@ -4217,7 +4217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotOrTags {
 	Key: *string,
@@ -4277,7 +4277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionNotTags {
 	Key: *string,
@@ -4337,15 +4337,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOr {
 	And: interface{},
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrDimensions,
-	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrNot,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrDimensions,
+	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrNot,
 	Or: interface{},
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrTags,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrTags,
 }
 ```
 
@@ -4451,12 +4451,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrAnd {
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensions,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrAndTags,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensions,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrAndTags,
 }
 ```
 
@@ -4517,7 +4517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrAndCostCategories {
 	Key: *string,
@@ -4577,7 +4577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrAndDimensions {
 	Key: *string,
@@ -4637,7 +4637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrAndTags {
 	Key: *string,
@@ -4697,7 +4697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrCostCategories {
 	Key: *string,
@@ -4757,7 +4757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrDimensions {
 	Key: *string,
@@ -4817,12 +4817,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrNot {
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensions,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrNotTags,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensions,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrNotTags,
 }
 ```
 
@@ -4883,7 +4883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrNotCostCategories {
 	Key: *string,
@@ -4943,7 +4943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrNotDimensions {
 	Key: *string,
@@ -5003,7 +5003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrNotTags {
 	Key: *string,
@@ -5063,12 +5063,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrOr {
-	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategories,
-	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensions,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.budgetsBudget.BudgetsBudgetFilterExpressionOrOrTags,
+	CostCategories: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategories,
+	Dimensions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensions,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.budgetsBudget.BudgetsBudgetFilterExpressionOrOrTags,
 }
 ```
 
@@ -5129,7 +5129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrOrCostCategories {
 	Key: *string,
@@ -5189,7 +5189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrOrDimensions {
 	Key: *string,
@@ -5249,7 +5249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrOrTags {
 	Key: *string,
@@ -5309,7 +5309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionOrTags {
 	Key: *string,
@@ -5369,7 +5369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetFilterExpressionTags {
 	Key: *string,
@@ -5429,7 +5429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetNotification {
 	ComparisonOperator: *string,
@@ -5531,7 +5531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetPlannedLimit {
 	Amount: *string,
@@ -5593,7 +5593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference
 ```
@@ -5875,7 +5875,7 @@ func InternalValue() BudgetsBudgetAutoAdjustDataHistoricalOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetAutoAdjustDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetAutoAdjustDataOutputReference
 ```
@@ -6199,7 +6199,7 @@ func InternalValue() BudgetsBudgetAutoAdjustData
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetCostFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetCostFilterList
 ```
@@ -6359,7 +6359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetCostFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetCostFilterOutputReference
 ```
@@ -6670,7 +6670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetCostTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetCostTypesOutputReference
 ```
@@ -7238,7 +7238,7 @@ func InternalValue() BudgetsBudgetCostTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndAndCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndAndCostCategoriesOutputReference
 ```
@@ -7574,7 +7574,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndAndCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndAndDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndAndDimensionsOutputReference
 ```
@@ -7896,7 +7896,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndAndDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetFilterExpressionAndAndList
 ```
@@ -8056,7 +8056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetFilterExpressionAndAndOutputReference
 ```
@@ -8449,7 +8449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndAndTagsOutputReference
 ```
@@ -8785,7 +8785,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndAndTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndCostCategoriesOutputReference
 ```
@@ -9121,7 +9121,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndDimensionsOutputReference
 ```
@@ -9443,7 +9443,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetFilterExpressionAndList
 ```
@@ -9603,7 +9603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndNotCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndNotCostCategoriesOutputReference
 ```
@@ -9939,7 +9939,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndNotCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndNotDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndNotDimensionsOutputReference
 ```
@@ -10261,7 +10261,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndNotDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndNotOutputReference
 ```
@@ -10636,7 +10636,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndNotTagsOutputReference
 ```
@@ -10972,7 +10972,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndNotTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndOrCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndOrCostCategoriesOutputReference
 ```
@@ -11308,7 +11308,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndOrCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndOrDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndOrDimensionsOutputReference
 ```
@@ -11630,7 +11630,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndOrDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetFilterExpressionAndOrList
 ```
@@ -11790,7 +11790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetFilterExpressionAndOrOutputReference
 ```
@@ -12183,7 +12183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndOrTagsOutputReference
 ```
@@ -12519,7 +12519,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndOrTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetFilterExpressionAndOutputReference
 ```
@@ -13038,7 +13038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionAndTagsOutputReference
 ```
@@ -13374,7 +13374,7 @@ func InternalValue() BudgetsBudgetFilterExpressionAndTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionCostCategoriesOutputReference
 ```
@@ -13710,7 +13710,7 @@ func InternalValue() BudgetsBudgetFilterExpressionCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionDimensionsOutputReference
 ```
@@ -14032,7 +14032,7 @@ func InternalValue() BudgetsBudgetFilterExpressionDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotAndCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotAndCostCategoriesOutputReference
 ```
@@ -14368,7 +14368,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotAndCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotAndDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotAndDimensionsOutputReference
 ```
@@ -14690,7 +14690,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotAndDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetFilterExpressionNotAndList
 ```
@@ -14850,7 +14850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetFilterExpressionNotAndOutputReference
 ```
@@ -15243,7 +15243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotAndTagsOutputReference
 ```
@@ -15579,7 +15579,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotAndTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotCostCategoriesOutputReference
 ```
@@ -15915,7 +15915,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotDimensionsOutputReference
 ```
@@ -16237,7 +16237,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotNotCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotNotCostCategoriesOutputReference
 ```
@@ -16573,7 +16573,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotNotCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotNotDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotNotDimensionsOutputReference
 ```
@@ -16895,7 +16895,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotNotDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotNotOutputReference
 ```
@@ -17270,7 +17270,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotNotTagsOutputReference
 ```
@@ -17606,7 +17606,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotNotTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotOrCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotOrCostCategoriesOutputReference
 ```
@@ -17942,7 +17942,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotOrCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotOrDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotOrDimensionsOutputReference
 ```
@@ -18264,7 +18264,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotOrDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetFilterExpressionNotOrList
 ```
@@ -18424,7 +18424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetFilterExpressionNotOrOutputReference
 ```
@@ -18817,7 +18817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotOrTagsOutputReference
 ```
@@ -19153,7 +19153,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotOrTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotOutputReference
 ```
@@ -19654,7 +19654,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionNotTagsOutputReference
 ```
@@ -19990,7 +19990,7 @@ func InternalValue() BudgetsBudgetFilterExpressionNotTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrAndCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrAndCostCategoriesOutputReference
 ```
@@ -20326,7 +20326,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrAndCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrAndDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrAndDimensionsOutputReference
 ```
@@ -20648,7 +20648,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrAndDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetFilterExpressionOrAndList
 ```
@@ -20808,7 +20808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetFilterExpressionOrAndOutputReference
 ```
@@ -21201,7 +21201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrAndTagsOutputReference
 ```
@@ -21537,7 +21537,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrAndTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrCostCategoriesOutputReference
 ```
@@ -21873,7 +21873,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrDimensionsOutputReference
 ```
@@ -22195,7 +22195,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetFilterExpressionOrList
 ```
@@ -22355,7 +22355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrNotCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrNotCostCategoriesOutputReference
 ```
@@ -22691,7 +22691,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrNotCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrNotDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrNotDimensionsOutputReference
 ```
@@ -23013,7 +23013,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrNotDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrNotOutputReference
 ```
@@ -23388,7 +23388,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrNotTagsOutputReference
 ```
@@ -23724,7 +23724,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrNotTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrCostCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrOrCostCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrOrCostCategoriesOutputReference
 ```
@@ -24060,7 +24060,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrOrCostCategories
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrOrDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrOrDimensionsOutputReference
 ```
@@ -24382,7 +24382,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrOrDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetFilterExpressionOrOrList
 ```
@@ -24542,7 +24542,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetFilterExpressionOrOrOutputReference
 ```
@@ -24935,7 +24935,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrOrTagsOutputReference
 ```
@@ -25271,7 +25271,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrOrTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetFilterExpressionOrOutputReference
 ```
@@ -25790,7 +25790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOrTagsOutputReference
 ```
@@ -26126,7 +26126,7 @@ func InternalValue() BudgetsBudgetFilterExpressionOrTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionOutputReference
 ```
@@ -26627,7 +26627,7 @@ func InternalValue() BudgetsBudgetFilterExpression
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetFilterExpressionTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetFilterExpressionTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetFilterExpressionTagsOutputReference
 ```
@@ -26963,7 +26963,7 @@ func InternalValue() BudgetsBudgetFilterExpressionTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetNotificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetNotificationList
 ```
@@ -27123,7 +27123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetNotificationOutputReference
 ```
@@ -27536,7 +27536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetPlannedLimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetPlannedLimitList
 ```
@@ -27696,7 +27696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/budgetsbudget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetPlannedLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetPlannedLimitOutputReference
 ```

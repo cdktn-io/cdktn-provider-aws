@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinition(scope Construct, id *string, config EcsDaemonTaskDefinitionConfig) EcsDaemonTaskDefinition
 ```
@@ -482,7 +482,7 @@ func ResetVolume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.EcsDaemonTaskDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.EcsDaemonTaskDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ ecsdaemontaskdefinition.EcsDaemonTaskDefinition_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.EcsDaemonTaskDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ ecsdaemontaskdefinition.EcsDaemonTaskDefinition_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.EcsDaemonTaskDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1013,7 +1013,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionConfig {
 	Connection: interface{},
@@ -1247,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinition {
 	Image: *string,
@@ -1697,7 +1697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionDependsOn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionDependsOn {
 	Condition: *string,
@@ -1743,7 +1743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionEnvironment {
 	Name: *string,
@@ -1789,7 +1789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionEnvironmentFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionEnvironmentFile {
 	Type: *string,
@@ -1835,7 +1835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionFirelensConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionFirelensConfiguration {
 	Type: *string,
@@ -1881,7 +1881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionHealthCheck {
 	Command: *[]*string,
@@ -1969,7 +1969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParameters {
 	Capabilities: interface{},
@@ -2049,7 +2049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersCapabilities {
 	Add: *[]*string,
@@ -2095,7 +2095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersDevice {
 	HostPath: *string,
@@ -2155,7 +2155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersTmpfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersTmpfs {
 	ContainerPath: *string,
@@ -2215,7 +2215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionLogConfiguration {
 	LogDriver: *string,
@@ -2277,7 +2277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLogConfigurationSecretOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionLogConfigurationSecretOption {
 	Name: *string,
@@ -2323,7 +2323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionMountPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionMountPoint {
 	ContainerPath: *string,
@@ -2383,7 +2383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionRepositoryCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionRepositoryCredentials {
 	CredentialsParameter: *string,
@@ -2415,7 +2415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionRestartPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionRestartPolicy {
 	Enabled: interface{},
@@ -2475,7 +2475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionSecret {
 	Name: *string,
@@ -2521,7 +2521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionSystemControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionSystemControl {
 	Namespace: *string,
@@ -2567,7 +2567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionUlimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionContainerDefinitionUlimit {
 	HardLimit: *f64,
@@ -2627,7 +2627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionVolume {
 	Name: *string,
@@ -2675,7 +2675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionVolumeHost.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 &ecsdaemontaskdefinition.EcsDaemonTaskDefinitionVolumeHost {
 	SourcePath: *string,
@@ -2709,7 +2709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionDependsOnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionDependsOnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionDependsOnList
 ```
@@ -2869,7 +2869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionDependsOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionDependsOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionDependsOnOutputReference
 ```
@@ -3180,7 +3180,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionEnvironmentFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionEnvironmentFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionEnvironmentFileList
 ```
@@ -3340,7 +3340,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionEnvironmentFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionEnvironmentFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionEnvironmentFileOutputReference
 ```
@@ -3651,7 +3651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionEnvironmentList
 ```
@@ -3811,7 +3811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionEnvironmentOutputReference
 ```
@@ -4136,7 +4136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionFirelensConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionFirelensConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionFirelensConfigurationList
 ```
@@ -4296,7 +4296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionFirelensConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionFirelensConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionFirelensConfigurationOutputReference
 ```
@@ -4614,7 +4614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionHealthCheckList
 ```
@@ -4774,7 +4774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionHealthCheckOutputReference
 ```
@@ -5179,7 +5179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersCapabilitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLinuxParametersCapabilitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersCapabilitiesList
 ```
@@ -5339,7 +5339,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLinuxParametersCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersCapabilitiesOutputReference
 ```
@@ -5664,7 +5664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLinuxParametersDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersDeviceList
 ```
@@ -5824,7 +5824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLinuxParametersDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersDeviceOutputReference
 ```
@@ -6171,7 +6171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLinuxParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersList
 ```
@@ -6331,7 +6331,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLinuxParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersOutputReference
 ```
@@ -6753,7 +6753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersTmpfsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLinuxParametersTmpfsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersTmpfsList
 ```
@@ -6913,7 +6913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersTmpfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLinuxParametersTmpfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLinuxParametersTmpfsOutputReference
 ```
@@ -7253,7 +7253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionList
 ```
@@ -7413,7 +7413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLogConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLogConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLogConfigurationList
 ```
@@ -7573,7 +7573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLogConfigurationOutputReference
 ```
@@ -7933,7 +7933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLogConfigurationSecretOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLogConfigurationSecretOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLogConfigurationSecretOptionList
 ```
@@ -8093,7 +8093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionLogConfigurationSecretOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionLogConfigurationSecretOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionLogConfigurationSecretOptionOutputReference
 ```
@@ -8404,7 +8404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionMountPointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionMountPointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionMountPointList
 ```
@@ -8564,7 +8564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionMountPointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionMountPointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionMountPointOutputReference
 ```
@@ -8918,7 +8918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionOutputReference
 ```
@@ -10188,7 +10188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionRepositoryCredentialsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionRepositoryCredentialsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionRepositoryCredentialsList
 ```
@@ -10348,7 +10348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionRepositoryCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionRepositoryCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionRepositoryCredentialsOutputReference
 ```
@@ -10637,7 +10637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionRestartPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionRestartPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionRestartPolicyList
 ```
@@ -10797,7 +10797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionRestartPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionRestartPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionRestartPolicyOutputReference
 ```
@@ -11144,7 +11144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionSecretList
 ```
@@ -11304,7 +11304,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionSecretOutputReference
 ```
@@ -11615,7 +11615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionSystemControlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionSystemControlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionSystemControlList
 ```
@@ -11775,7 +11775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionSystemControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionSystemControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionSystemControlOutputReference
 ```
@@ -12100,7 +12100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionUlimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionUlimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionContainerDefinitionUlimitList
 ```
@@ -12260,7 +12260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionContainerDefinitionUlimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionContainerDefinitionUlimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionContainerDefinitionUlimitOutputReference
 ```
@@ -12593,7 +12593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionVolumeHostList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionVolumeHostList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionVolumeHostList
 ```
@@ -12753,7 +12753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionVolumeHostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionVolumeHostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionVolumeHostOutputReference
 ```
@@ -13049,7 +13049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsDaemonTaskDefinitionVolumeList
 ```
@@ -13209,7 +13209,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsDaemonTaskDefinition.EcsDaemonTaskDefinitionVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecsdaemontaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecsdaemontaskdefinition"
 
 ecsdaemontaskdefinition.NewEcsDaemonTaskDefinitionVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsDaemonTaskDefinitionVolumeOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 s3bucketanalyticsconfiguration.NewS3BucketAnalyticsConfiguration(scope Construct, id *string, config S3BucketAnalyticsConfigurationConfig) S3BucketAnalyticsConfiguration
 ```
@@ -454,7 +454,7 @@ func ResetStorageClassAnalysis()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 s3bucketanalyticsconfiguration.S3BucketAnalyticsConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 s3bucketanalyticsconfiguration.S3BucketAnalyticsConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ s3bucketanalyticsconfiguration.S3BucketAnalyticsConfiguration_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 s3bucketanalyticsconfiguration.S3BucketAnalyticsConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ s3bucketanalyticsconfiguration.S3BucketAnalyticsConfiguration_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 s3bucketanalyticsconfiguration.S3BucketAnalyticsConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 &s3bucketanalyticsconfiguration.S3BucketAnalyticsConfigurationConfig {
 	Connection: interface{},
@@ -887,10 +887,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfi
 	Provisioners: *[]interface{},
 	Bucket: *string,
 	Name: *string,
-	Filter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationFilter,
+	Filter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationFilter,
 	Id: *string,
 	Region: *string,
-	StorageClassAnalysis: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysis,
+	StorageClassAnalysis: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysis,
 }
 ```
 
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 &s3bucketanalyticsconfiguration.S3BucketAnalyticsConfigurationFilter {
 	Prefix: *string,
@@ -1116,10 +1116,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 &s3bucketanalyticsconfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysis {
-	DataExport: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport,
+	DataExport: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport,
 }
 ```
 
@@ -1150,10 +1150,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 &s3bucketanalyticsconfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport {
-	Destination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination,
+	Destination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination,
 	OutputSchemaVersion: *string,
 }
 ```
@@ -1198,10 +1198,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 &s3bucketanalyticsconfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination {
-	S3BucketDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination,
+	S3BucketDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination,
 }
 ```
 
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 &s3bucketanalyticsconfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination {
 	BucketArn: *string,
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 s3bucketanalyticsconfiguration.NewS3BucketAnalyticsConfigurationFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAnalyticsConfigurationFilterOutputReference
 ```
@@ -1615,7 +1615,7 @@ func InternalValue() S3BucketAnalyticsConfigurationFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 s3bucketanalyticsconfiguration.NewS3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference
 ```
@@ -1899,7 +1899,7 @@ func InternalValue() S3BucketAnalyticsConfigurationStorageClassAnalysisDataExpor
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 s3bucketanalyticsconfiguration.NewS3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference
 ```
@@ -2257,7 +2257,7 @@ func InternalValue() S3BucketAnalyticsConfigurationStorageClassAnalysisDataExpor
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 s3bucketanalyticsconfiguration.NewS3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference
 ```
@@ -2570,7 +2570,7 @@ func InternalValue() S3BucketAnalyticsConfigurationStorageClassAnalysisDataExpor
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3bucketanalyticsconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketanalyticsconfiguration"
 
 s3bucketanalyticsconfiguration.NewS3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference
 ```

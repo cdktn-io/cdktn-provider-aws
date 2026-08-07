@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexpatternset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexpatternset"
 
 wafregionalregexpatternset.NewWafregionalRegexPatternSet(scope Construct, id *string, config WafregionalRegexPatternSetConfig) WafregionalRegexPatternSet
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexpatternset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexpatternset"
 
 wafregionalregexpatternset.WafregionalRegexPatternSet_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexpatternset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexpatternset"
 
 wafregionalregexpatternset.WafregionalRegexPatternSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ wafregionalregexpatternset.WafregionalRegexPatternSet_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexpatternset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexpatternset"
 
 wafregionalregexpatternset.WafregionalRegexPatternSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ wafregionalregexpatternset.WafregionalRegexPatternSet_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexpatternset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexpatternset"
 
 wafregionalregexpatternset.WafregionalRegexPatternSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafregionalregexpatternset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalregexpatternset"
 
 &wafregionalregexpatternset.WafregionalRegexPatternSetConfig {
 	Connection: interface{},

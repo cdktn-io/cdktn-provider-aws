@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.NewDataAwsSavingsplansOfferings(scope Construct, id *string, config DataAwsSavingsplansOfferingsConfig) DataAwsSavingsplansOfferings
 ```
@@ -388,7 +388,7 @@ func ResetUsageTypes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.DataAwsSavingsplansOfferings_IsConstruct(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.DataAwsSavingsplansOfferings_IsTerraformElement(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ dataawssavingsplansofferings.DataAwsSavingsplansOfferings_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.DataAwsSavingsplansOfferings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ dataawssavingsplansofferings.DataAwsSavingsplansOfferings_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.DataAwsSavingsplansOfferings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -908,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 &dataawssavingsplansofferings.DataAwsSavingsplansOfferingsConfig {
 	Connection: interface{},
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferingsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 &dataawssavingsplansofferings.DataAwsSavingsplansOfferingsFilter {
 	Name: *string,
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferingsOfferings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 &dataawssavingsplansofferings.DataAwsSavingsplansOfferingsOfferings {
 
@@ -1225,7 +1225,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansoff
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferingsOfferingsProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 &dataawssavingsplansofferings.DataAwsSavingsplansOfferingsOfferingsProperties {
 
@@ -1240,7 +1240,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansoff
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferingsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.NewDataAwsSavingsplansOfferingsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSavingsplansOfferingsFilterList
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferingsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.NewDataAwsSavingsplansOfferingsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSavingsplansOfferingsFilterOutputReference
 ```
@@ -1711,7 +1711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferingsOfferingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.NewDataAwsSavingsplansOfferingsOfferingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSavingsplansOfferingsOfferingsList
 ```
@@ -1860,7 +1860,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferingsOfferingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.NewDataAwsSavingsplansOfferingsOfferingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSavingsplansOfferingsOfferingsOutputReference
 ```
@@ -2248,7 +2248,7 @@ func InternalValue() DataAwsSavingsplansOfferingsOfferings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferingsOfferingsPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.NewDataAwsSavingsplansOfferingsOfferingsPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSavingsplansOfferingsOfferingsPropertiesList
 ```
@@ -2397,7 +2397,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSavingsplansOfferings.DataAwsSavingsplansOfferingsOfferingsPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssavingsplansofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssavingsplansofferings"
 
 dataawssavingsplansofferings.NewDataAwsSavingsplansOfferingsOfferingsPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSavingsplansOfferingsOfferingsPropertiesOutputReference
 ```

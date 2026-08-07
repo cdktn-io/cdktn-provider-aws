@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeygroup"
 
 cloudfrontkeygroup.NewCloudfrontKeyGroup(scope Construct, id *string, config CloudfrontKeyGroupConfig) CloudfrontKeyGroup
 ```
@@ -414,7 +414,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeygroup"
 
 &cloudfrontkeygroup.CloudfrontKeyGroupConfig {
 	Connection: interface{},

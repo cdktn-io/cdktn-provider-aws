@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicediscoverypublicdnsnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicediscoverypublicdnsnamespace"
 
 servicediscoverypublicdnsnamespace.NewServiceDiscoveryPublicDnsNamespace(scope Construct, id *string, config ServiceDiscoveryPublicDnsNamespaceConfig) ServiceDiscoveryPublicDnsNamespace
 ```
@@ -435,7 +435,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicediscoverypublicdnsnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicediscoverypublicdnsnamespace"
 
 servicediscoverypublicdnsnamespace.ServiceDiscoveryPublicDnsNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicediscoverypublicdnsnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicediscoverypublicdnsnamespace"
 
 servicediscoverypublicdnsnamespace.ServiceDiscoveryPublicDnsNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ servicediscoverypublicdnsnamespace.ServiceDiscoveryPublicDnsNamespace_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicediscoverypublicdnsnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicediscoverypublicdnsnamespace"
 
 servicediscoverypublicdnsnamespace.ServiceDiscoveryPublicDnsNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ servicediscoverypublicdnsnamespace.ServiceDiscoveryPublicDnsNamespace_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicediscoverypublicdnsnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicediscoverypublicdnsnamespace"
 
 servicediscoverypublicdnsnamespace.ServiceDiscoveryPublicDnsNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -878,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicediscoverypublicdnsnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/servicediscoverypublicdnsnamespace"
 
 &servicediscoverypublicdnsnamespace.ServiceDiscoveryPublicDnsNamespaceConfig {
 	Connection: interface{},

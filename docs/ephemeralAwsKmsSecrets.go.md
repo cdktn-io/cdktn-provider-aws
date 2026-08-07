@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsKmsSecrets.EphemeralAwsKmsSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawskmssecrets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawskmssecrets"
 
 ephemeralawskmssecrets.NewEphemeralAwsKmsSecrets(scope Construct, id *string, config EphemeralAwsKmsSecretsConfig) EphemeralAwsKmsSecrets
 ```
@@ -322,7 +322,7 @@ func ResetSecret()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsKmsSecrets.EphemeralAwsKmsSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawskmssecrets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawskmssecrets"
 
 ephemeralawskmssecrets.EphemeralAwsKmsSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsKmsSecrets.EphemeralAwsKmsSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawskmssecrets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawskmssecrets"
 
 ephemeralawskmssecrets.EphemeralAwsKmsSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ ephemeralawskmssecrets.EphemeralAwsKmsSecrets_IsTerraformElement(x interface{}) 
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsKmsSecrets.EphemeralAwsKmsSecrets.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawskmssecrets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawskmssecrets"
 
 ephemeralawskmssecrets.EphemeralAwsKmsSecrets_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -600,7 +600,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsKmsSecrets.EphemeralAwsKmsSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawskmssecrets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawskmssecrets"
 
 &ephemeralawskmssecrets.EphemeralAwsKmsSecretsConfig {
 	Count: interface{},
@@ -710,7 +710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsKmsSecrets.EphemeralAwsKmsSecretsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawskmssecrets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawskmssecrets"
 
 &ephemeralawskmssecrets.EphemeralAwsKmsSecretsSecret {
 	Name: *string,
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsKmsSecrets.EphemeralAwsKmsSecretsSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawskmssecrets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawskmssecrets"
 
 ephemeralawskmssecrets.NewEphemeralAwsKmsSecretsSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsKmsSecretsSecretList
 ```
@@ -974,7 +974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsKmsSecrets.EphemeralAwsKmsSecretsSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawskmssecrets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawskmssecrets"
 
 ephemeralawskmssecrets.NewEphemeralAwsKmsSecretsSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsKmsSecretsSecretOutputReference
 ```

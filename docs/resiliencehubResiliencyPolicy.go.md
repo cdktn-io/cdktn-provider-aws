@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicy(scope Construct, id *string, config ResiliencehubResiliencyPolicyConfig) ResiliencehubResiliencyPolicy
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicy_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicy_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 &resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicyConfig {
 	Connection: interface{},
@@ -983,7 +983,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresilienc
 	Policy: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyTimeouts,
 }
 ```
 
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 &resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicyPolicy {
 	Az: interface{},
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyAz.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 &resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicyPolicyAz {
 	Rpo: *string,
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyHardware.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 &resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicyPolicyHardware {
 	Rpo: *string,
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 &resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicyPolicyRegion {
 	Rpo: *string,
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicySoftware.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 &resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicyPolicySoftware {
 	Rpo: *string,
@@ -1476,7 +1476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 &resiliencehubresiliencypolicy.ResiliencehubResiliencyPolicyTimeouts {
 	Create: *string,
@@ -1544,7 +1544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyAzList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyPolicyAzList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResiliencehubResiliencyPolicyPolicyAzList
 ```
@@ -1704,7 +1704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyAzOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyPolicyAzOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResiliencehubResiliencyPolicyPolicyAzOutputReference
 ```
@@ -2015,7 +2015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyHardwareList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyPolicyHardwareList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResiliencehubResiliencyPolicyPolicyHardwareList
 ```
@@ -2175,7 +2175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyHardwareOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyPolicyHardwareOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResiliencehubResiliencyPolicyPolicyHardwareOutputReference
 ```
@@ -2486,7 +2486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResiliencehubResiliencyPolicyPolicyList
 ```
@@ -2646,7 +2646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResiliencehubResiliencyPolicyPolicyOutputReference
 ```
@@ -3081,7 +3081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyPolicyRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResiliencehubResiliencyPolicyPolicyRegionList
 ```
@@ -3241,7 +3241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyPolicyRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResiliencehubResiliencyPolicyPolicyRegionOutputReference
 ```
@@ -3566,7 +3566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicySoftwareList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyPolicySoftwareList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResiliencehubResiliencyPolicyPolicySoftwareList
 ```
@@ -3726,7 +3726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicySoftwareOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyPolicySoftwareOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResiliencehubResiliencyPolicyPolicySoftwareOutputReference
 ```
@@ -4037,7 +4037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resiliencehubresiliencypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubresiliencypolicy"
 
 resiliencehubresiliencypolicy.NewResiliencehubResiliencyPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResiliencehubResiliencyPolicyTimeoutsOutputReference
 ```
