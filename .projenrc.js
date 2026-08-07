@@ -12,8 +12,12 @@ const project = new CdktnProviderProject({
   // every provider should use unless it has demonstrably OOMed on the default.
   nodeHeapSizeMb: undefined,
   terraformProvider: "hashicorp/aws@~> 6.0",
-  cdktnVersion: "^0.23.0",
-  constructsVersion: "^10.6.0",
+  cdktnVersion: "^0.24.0",
+  // cdktn 0.24's constructs peer range verbatim -- NOT caret-style. cdk-terrain
+  // disallows constructs 10.8 until support lands (open-constructs/cdk-terrain#363),
+  // and a caret here would defeat that upper bound. upgrade-cdktf.yml blindly
+  // prepends "^" when it rewrites this line; fixed to pass ranges through as-is.
+  constructsVersion: ">=10.6.0 <10.8.0",
   // engines.node -- the compat floor we publish to CONSUMERS, not a CI knob.
   // projen's own docs: "Most projects should not use this option ... Setting this
   // option has very high impact on the consumers of your package, as package

@@ -2368,5 +2368,16 @@ Object.defineProperty(exports, 'dataAwsWorkspacesBundle', { get: function () { r
 Object.defineProperty(exports, 'dataAwsWorkspacesDirectory', { get: function () { return require('./data-aws-workspaces-directory'); } });
 Object.defineProperty(exports, 'dataAwsWorkspacesImage', { get: function () { return require('./data-aws-workspaces-image'); } });
 Object.defineProperty(exports, 'dataAwsWorkspacesWorkspace', { get: function () { return require('./data-aws-workspaces-workspace'); } });
+Object.defineProperty(exports, 'ephemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity', { get: function () { return require('./ephemeral-aws-cognito-identity-openid-token-for-developer-identity'); } });
+Object.defineProperty(exports, 'ephemeralAwsEcrAuthorizationToken', { get: function () { return require('./ephemeral-aws-ecr-authorization-token'); } });
+Object.defineProperty(exports, 'ephemeralAwsEcrpublicAuthorizationToken', { get: function () { return require('./ephemeral-aws-ecrpublic-authorization-token'); } });
+Object.defineProperty(exports, 'ephemeralAwsEksClusterAuth', { get: function () { return require('./ephemeral-aws-eks-cluster-auth'); } });
+Object.defineProperty(exports, 'ephemeralAwsKmsSecrets', { get: function () { return require('./ephemeral-aws-kms-secrets'); } });
+Object.defineProperty(exports, 'ephemeralAwsLambdaInvocation', { get: function () { return require('./ephemeral-aws-lambda-invocation'); } });
+Object.defineProperty(exports, 'ephemeralAwsSecretsmanagerRandomPassword', { get: function () { return require('./ephemeral-aws-secretsmanager-random-password'); } });
+Object.defineProperty(exports, 'ephemeralAwsSecretsmanagerSecretVersion', { get: function () { return require('./ephemeral-aws-secretsmanager-secret-version'); } });
+Object.defineProperty(exports, 'ephemeralAwsSsmParameter', { get: function () { return require('./ephemeral-aws-ssm-parameter'); } });
+Object.defineProperty(exports, 'ephemeralAwsStsWebIdentityToken', { get: function () { return require('./ephemeral-aws-sts-web-identity-token'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
+Object.defineProperty(exports, 'providerFunctions', { get: function () { return require('./provider-functions'); } });
 

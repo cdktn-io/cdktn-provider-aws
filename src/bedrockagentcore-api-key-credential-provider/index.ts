@@ -202,6 +202,9 @@ export class BedrockagentcoreApiKeyCredentialProvider extends cdktn.TerraformRes
 
   // api_key_wo - computed: false, optional: true, required: false
   private _apiKeyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get apiKeyWo() {
     return this.getStringAttribute('api_key_wo');
   }
@@ -295,7 +298,7 @@ export class BedrockagentcoreApiKeyCredentialProvider extends cdktn.TerraformRes
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_key: cdktn.stringToTerraform(this._apiKey),
-      api_key_wo: cdktn.stringToTerraform(this._apiKeyWo),
+      api_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._apiKeyWo)),
       api_key_wo_version: cdktn.numberToTerraform(this._apiKeyWoVersion),
       name: cdktn.stringToTerraform(this._name),
       region: cdktn.stringToTerraform(this._region),
@@ -312,7 +315,7 @@ export class BedrockagentcoreApiKeyCredentialProvider extends cdktn.TerraformRes
         storageClassType: "string",
       },
       api_key_wo: {
-        value: cdktn.stringToHclTerraform(this._apiKeyWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._apiKeyWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

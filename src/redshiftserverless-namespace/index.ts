@@ -195,6 +195,9 @@ export class RedshiftserverlessNamespace extends cdktn.TerraformResource {
 
   // admin_user_password_wo - computed: false, optional: true, required: false
   private _adminUserPasswordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get adminUserPasswordWo() {
     return this.getStringAttribute('admin_user_password_wo');
   }
@@ -432,7 +435,7 @@ export class RedshiftserverlessNamespace extends cdktn.TerraformResource {
     return {
       admin_password_secret_kms_key_id: cdktn.stringToTerraform(this._adminPasswordSecretKmsKeyId),
       admin_user_password: cdktn.stringToTerraform(this._adminUserPassword),
-      admin_user_password_wo: cdktn.stringToTerraform(this._adminUserPasswordWo),
+      admin_user_password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._adminUserPasswordWo)),
       admin_user_password_wo_version: cdktn.numberToTerraform(this._adminUserPasswordWoVersion),
       admin_username: cdktn.stringToTerraform(this._adminUsername),
       db_name: cdktn.stringToTerraform(this._dbName),
@@ -464,7 +467,7 @@ export class RedshiftserverlessNamespace extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       admin_user_password_wo: {
-        value: cdktn.stringToHclTerraform(this._adminUserPasswordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._adminUserPasswordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

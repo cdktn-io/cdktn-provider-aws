@@ -543,6 +543,9 @@ export class ElasticacheUser extends cdktn.TerraformResource {
 
   // passwords_wo - computed: false, optional: true, required: false
   private _passwordsWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordsWo() {
     return this.getStringAttribute('passwords_wo');
   }
@@ -690,7 +693,7 @@ export class ElasticacheUser extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       no_password_required: cdktn.booleanToTerraform(this._noPasswordRequired),
       passwords: cdktn.listMapper(cdktn.stringToTerraform, false)(this._passwords),
-      passwords_wo: cdktn.stringToTerraform(this._passwordsWo),
+      passwords_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._passwordsWo)),
       passwords_wo_version: cdktn.numberToTerraform(this._passwordsWoVersion),
       region: cdktn.stringToTerraform(this._region),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
@@ -735,7 +738,7 @@ export class ElasticacheUser extends cdktn.TerraformResource {
         storageClassType: "stringList",
       },
       passwords_wo: {
-        value: cdktn.stringToHclTerraform(this._passwordsWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._passwordsWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

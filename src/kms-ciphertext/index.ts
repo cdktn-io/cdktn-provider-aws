@@ -179,6 +179,9 @@ export class KmsCiphertext extends cdktn.TerraformResource {
 
   // plaintext_wo - computed: false, optional: true, required: false
   private _plaintextWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get plaintextWo() {
     return this.getStringAttribute('plaintext_wo');
   }
@@ -235,7 +238,7 @@ export class KmsCiphertext extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       key_id: cdktn.stringToTerraform(this._keyId),
       plaintext: cdktn.stringToTerraform(this._plaintext),
-      plaintext_wo: cdktn.stringToTerraform(this._plaintextWo),
+      plaintext_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._plaintextWo)),
       plaintext_wo_version: cdktn.stringToTerraform(this._plaintextWoVersion),
       region: cdktn.stringToTerraform(this._region),
     };
@@ -268,7 +271,7 @@ export class KmsCiphertext extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       plaintext_wo: {
-        value: cdktn.stringToHclTerraform(this._plaintextWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._plaintextWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
